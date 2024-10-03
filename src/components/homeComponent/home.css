@@ -1,0 +1,185 @@
+.planHead-con{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #596780; 
+}
+
+.card-title{
+font-size: 22px;
+font-weight: 800;
+color: #0D121F;
+}
+
+.card-title span{
+    color: #F6355A;
+    font-style: italic;
+}
+.plan-text{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #596780;
+
+}
+.card-price{
+font-size: 35px;
+font-weight: 800;
+color: #0D121F;
+}
+.card-price span{
+font-size: 18px;
+font-weight: 500;
+color: #596780;
+}
+
+.popular-card {
+    background-color: #F6355A;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .popular-card .card-title, .popular-card .card-title span, .popular-card .card-text,
+  .popular-card .card-price, .popular-card .save,
+  .popular-card .save-price, .popular-card .features, .popular-card .check, .popular-card .card-price span {
+    color: white;
+  }
+  
+  .popular-card .plan-btn {
+    background-color: white;
+    color: #F6355A;
+    border: none;
+  }
+  
+  .popular-card .plan-btn a {
+    color: #F6355A;
+    text-decoration: none;
+  }
+
+  .popular-badge{
+    box-shadow: -2px -2px 14.6px 0px #0000000D;
+    border: 1px solid #fff;
+    top: -19px;
+    left: 104px;
+    padding: 6px 50px;
+    background-color: #fff;
+    color: #F6355A;
+    border-radius: 30px;
+  }
+  .consult{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+color: #596780;
+  }
+
+  .consult a{
+    color: #F6355A;
+    font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-weight: 800;
+  }
+
+  .qloudfeatures{
+    background: #F6355A;
+    color: #fff;
+  }
+  .feature-row{
+    width: 85%;
+  }
+
+  .feature-card{
+    display: grid;
+    background: #FFFFFF;
+    color: #333333;
+    padding: 30px 20px;
+    height: 280px;
+    border-radius: 11px;
+  }
+
+  .feature-card h3{
+font-size: 22px;
+font-weight: 800;
+line-height: 19.8px;
+color: #333333;
+  }
+
+  .feature-card span{
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+color: #2C2C2C;
+  }
+
+  .blog-card{
+    border: 0px;
+  }
+
+  .blog-body{
+    padding: 0px;
+    box-shadow: none;
+    border: 0px;
+  }
+  .card-img-top{
+    border-radius: 32px;
+  }
+
+  .blog-title1{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+  }
+
+  .resource-section{
+    background: #FFF7F7;
+
+  }
+
+  .resource-card{
+    border: 1px solid #E7E9ED
+  }
+
+  .resource-body{
+    padding: 35px 15px 15px;
+  }
+
+  .badge-title{
+    background: #FFF7F7;
+    color: #F6355A;
+    padding: 5px 18px;
+    border-radius: 30px;
+font-size: 13px;
+font-weight: 700;
+  }
+
+  .hosting-price{
+font-size: 35px;
+font-weight: 800;
+color: #0D121F;
+  }
+
+  .hosting-price small{
+font-size: 18px;
+font-weight: 500;
+color: #596780;
+
+  }
+
+  .plan-resource-desc{
+font-size: 17px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: -0.20000000298023224px;
+color:  #0D121F;
+width: 80%;
+margin: auto;
+  }
+
+  .start-free-btn{
+    background: #F6355A;
+    color: #fff;
+font-size: 16px;
+padding: 10px 30px;
+  }
+  

@@ -1,0 +1,167 @@
+import React from 'react';
+import logo from '../../assets/footerlogo.png';
+import maskgroup from '../../assets/Maskgroup.png'
+import { FaFacebookF } from "react-icons/fa";
+import './common.css';
+// import { IoIosArrowForward } from "react-icons/io";
+
+const Footer = () => {
+  const ourServices = [
+    {
+      title: "Our Services",
+      links: [
+        { name: "Offshore Web Hosting", url: "" },
+        { name: "Offshore WordPress Hosting", url: "" },
+        { name: "Offshore VPS Hosting", url: "" },
+        { name: "Offshore Dedicated Server", url: "" },
+        { name: "Offshore Video Hosting", url: "" },
+        { name: "Offshore Streaming Server", url: "" },
+        { name: "Adult Hosting", url: "" },
+        { name: "Netherlands Offshore VPS", url: "" },
+        { name: "High Performance VPS", url: "" },
+        { name: "DMCA Ignored Dedicated Servers", url: "" },
+        { name: "Russia Offshore Server", url: "" },
+
+      ],
+    },
+  ];
+
+  const myAccount = [
+    {
+      title: "My Account",
+      links: [
+        { name: "Client Login", url: "" },
+        { name: "Create Account", url: "" },
+        { name: "Forget Password", url: "" },
+      ],
+    },
+    {
+      title: "My Account",
+      links: [
+        { name: "Become an affilliate", url: "" },
+        { name: "Affiliate Login", url: "" },
+        
+      ],
+    },
+  ];
+
+  const Policies = [
+    {
+      title: "Policies",
+      links: [
+        { name: "Privacy Policy", url: "" },
+        { name: "Terms of Service", url: "" },
+        { name: "Fair Usage Policy", url: "" },
+        { name: "Refund Policy", url: "" },
+      ],
+    },
+  ];
+
+  const ourCompany = [
+    {
+      title: "Company",
+      links: [
+        { name: "About QloudHost", url: "" },
+        { name: "Official Blog", url: "" },
+        { name: "Contact Us", url: "" },
+        { name: "Sitemap", url: "" },
+        { name: "Abuse Report", url: "" },
+        { name: "Knowledge Base", url: "" },
+        { name: "Speed Test", url: "" },
+      ],
+    },
+  ];
+
+  return (
+    <footer className="text-light pt-5 pb-4 footer-sec">
+      <div className="container-fluid px-5">
+        <div className="row">
+          {/* First Column with Social Media */}
+          <div className="col-md-3 mb-4">
+            <img src={logo} alt='logo' className='mb-4'/>
+            <p className='footer-con'>
+              Host your website with the best Offshore hosting server at QloudHost and get full privacy assurance. We understand the value of your data privacy that’s why we provide you services with impenetrable security!
+            </p>
+            <div>
+            <FaFacebookF />
+
+            </div>
+          </div>
+          <div className='col-md-9'>
+          <div className='container'>
+          <div className='row'>
+
+          {/* Footer Links */}
+          <div className="col-md-4 mb-4">
+            <h5 className='menu-head'>{ourServices[0].title}</h5>
+            <ul className="list-unstyled">
+              {ourServices[0].links.map((link, index) => (
+                <li key={index}><img src={maskgroup} alt='' className='me-1'/>
+                  <a href={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="col-md-3 mb-4">
+            <h5 className='menu-head'>{myAccount[0].title}</h5>
+            <ul className="list-unstyled">
+              {myAccount[0].links.map((link, index) => (
+                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
+                  <a href={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h5 className='menu-head mt-5'>{myAccount[1].title}</h5>
+            <ul className="list-unstyled">
+              {myAccount[1].links.map((link, index) => (
+                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
+                  <a href={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+
+          </div>
+
+          <div className="col-md-2 mb-4">
+            <h5 className='menu-head'>{Policies[0].title}</h5>
+            <ul className="list-unstyled">
+              {Policies[0].links.map((link, index) => (
+                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
+                  <a href={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="col-md-3 mb-4">
+            <h5 className='menu-head'>{ourCompany[0].title}</h5>
+            <ul className="list-unstyled">
+              {ourCompany[0].links.map((link, index) => (
+                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
+                  <a href={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

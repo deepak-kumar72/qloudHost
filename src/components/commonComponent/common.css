@@ -1,0 +1,133 @@
+.top-content, .top-content a{
+    font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+}
+
+.navbar-nav li a{
+    font-family: DM Sans;
+font-size: 16px;
+font-weight: 500;
+color: #0B100D;
+}
+
+.signIn-btn{
+padding: 9px 21px;
+border-radius: 8px;
+border: 1px solid #0B100D;
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 500;
+}
+
+.footer-sec{
+    background: #0D121F;
+}
+
+.footer-menu{
+font-size: 14px;
+font-weight: 500;
+line-height: 30px;
+}
+.footer-con{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    }
+.footer-arrow-icon{
+    color: #F6355A;
+    font-size: 14px;
+font-weight: 500;
+width: 13px;   
+}
+
+.menu-head{
+font-size: 16px;
+font-weight: 800;
+margin-bottom: 25px;
+}
+
+/* service */
+
+.service-section{
+    background: #F6355A;
+}
+
+.service-desc{
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}
+
+.start-now{
+    padding: 6px 20px;
+}
+.start-now a{
+font-size: 12px;
+font-weight: 700;
+
+}
+
+
+
+/* carousel */
+/* Carousel Wrapper */
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2px 0;
+
+  }
+
+  .carousel-right-slide{
+    direction: rtl;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    padding: 18px 35px;
+    border: 1px solid #F6355A;
+    color: #F6355A;
+    border-radius: 66px;
+font-size: 18px;
+font-weight: 400;
+
+  }
+  
+  /* Left-moving scroll for the first row */
+  .carousel.left {
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  /* Right-moving scroll for the second row */
+  .carousel.right {
+    animation: scroll-right 15s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Keyframes for right-moving scroll */
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
