@@ -44,11 +44,11 @@ const QloudHostFeatures = () => {
   return (
     <div className='qloudfeatures'>
     <div className='container'>
-    <h2 className="text-center text-white mb-3 mt-5 pt-5">QloudHost Features</h2>
+    <h2 className="text-center text-white mb-3 mt-5 m-auto pt-5">QloudHost Features</h2>
     <p className="text-center text-white w-50 mb-5 planHead-con m-auto">Enjoy your privacy on the internet with our powerful features that let you host your website with Impenetrable security.</p>
     <div className='row g-3 feature-row m-auto  pb-5'>
     {qloudFeature.map((feature)=>(
-    <div key={feature.id} className='col-4'>
+    <div key={feature.id} className='col-12 col-md-6 col-lg-4'>
     <div className='feature-card'>
         <img src={feature.imgsrc} alt={feature.title} className='mb-4'/>
         <h3 className='mb-3'>{feature.title}</h3>

@@ -41,10 +41,10 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="container my-5">
+    <div className="container blog-section my-5">
       <header className="text-center mb-5">
-        <h2 className='mb-3'>Resources and Insights</h2>
-        <p className='w-75 m-auto mb-3 sub-heading'>
+        <h2 className='mb-3 m-auto'>Resources and Insights</h2>
+        <p className='w-75 m-auto mb-3 sub-heading text-center'>
           Experience our superior support, robust infrastructure, and unmatched
           reliability. We are the trusted choice for DMCA ignored critical websites and apps.
         </p>
@@ -72,7 +72,7 @@ const BlogSection = () => {
         <div className="col-md-6">
           <div className="row">
             {articles.slice(1).map((article, index) => (
-              <div className="col-md-6 mb-4" key={index}>
+              <div className="col-6 mb-4" key={index}>
                 <div className="card blog-card">
                   <img
                     src={article.imgSrc}
@@ -80,7 +80,7 @@ const BlogSection = () => {
                     alt={article.title}
                   />
                   <div className="card-body blog-body">
-                  <small className="text-muted">{article.type} - {article.date}</small>
+                  <small className="text-muted blog-date">{article.type} - {article.date}</small>
                     <h5 className="card-title blog-title1">{article.title}</h5>
                   </div>
                 </div>

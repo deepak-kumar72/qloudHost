@@ -1,6 +1,6 @@
 import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
-import heroImage from "../../assets/Frame/hero1.png";
+import heroImage from "../../assets/Frame/heroFrame.png";
 import HostingPlans from "./components/hostingPlans";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import QloudHostFeatures from "./components/qloudHostFeatures";
@@ -11,6 +11,7 @@ import Services from "../commonComponent/services";
 import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
+import Testimonials from "../commonComponent/testimonial";
 
 
 const features = [
@@ -84,6 +85,7 @@ that you can manage your website files with full control!"
       <Services/>
       <BlogSection/>
       <Resources/>
+      <Testimonials/>
       <FAQsSection/>
     </div>
   );

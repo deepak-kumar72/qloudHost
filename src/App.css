@@ -5,208 +5,286 @@ body {
   margin: 0px;
 }
 
-*{
+* {
   font-family: Plus Jakarta Sans;
 }
 
-.bg{
-  background-color: #F6355A;
+.bg {
+  background-color: #f6355a;
   color: #fff;
 }
 
-.mb-50{
+.mb-50 {
   margin-bottom: 50px;
 }
 
-.mt-50{
+.mt-50 {
   margin-top: 50px;
 }
-.p-80{
+.p-80 {
   padding: 80px 0px 80px 0px;
 }
-.pb-80{
+.pb-80 {
   padding-bottom: 80px;
 }
-.w-85{
-width: 85%;
-margin: auto;
+.w-85 {
+  width: 85%;
+  margin: auto;
 }
 
-.hero-container{
+.hero-container {
   padding: 20px 0px;
   overflow-x: clip;
 }
 
-h1{
-font-size: 50px;
-font-weight: 800;
-line-height: 55px;
-color: #0B100D;
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 55px;
+  color: #0b100d;
 }
 
-h2{
-
-font-size: 35px;
-font-weight: 800;
-color: #0B100D;
+h2 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #0b100d;
+  width: 75%;
 }
 
-.hero-content p{
+.hero-content p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
-  color: #3A3A3A;
-
+  line-height: 26px;
+  color: #3a3a3a;
 }
 
-.start-now-btn{
-  background: #F6355A;
-  padding: 13px 21px;;
-  border: 1px solid #F6355A;
+.start-now-btn {
+  background: #f6355a;
+  padding: 13px 21px;
+  border: 1px solid #f6355a;
   border-radius: 10px;
 }
 
-.start-now-btn a{
+.start-now-btn a {
   font-size: 16px;
-  font-weight: 700;  
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
 }
 
-.explore-btn{
-  padding: 13px 21px;;
-  border: 1px solid #0B100D;
+.explore-btn {
+  padding: 13px 21px;
+  border: 1px solid #0b100d;
   border-radius: 10px;
   background-color: #fff;
 }
-.explore-btn a{
+.explore-btn a {
   font-size: 16px;
-  font-weight: 700;  
-  color: #0B100D;
+  font-weight: 700;
+  color: #0b100d;
   text-decoration: none;
 }
 
-.money-back-text{
+.money-back-text {
   font-family: DM Sans;
-font-size: 16px;
-font-weight: 400;
-color:  #F6355A;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f6355a;
 }
-.hero-frame{
-  right: -121px;
-  top: -18px;
-  width: 100%;
+.hero-frame {
+  right: 0px;
+  top: 146px;
+  width: 37%;
 }
 
-.hero-image{
+.hero-image {
   width: 75%;
   right: -36px;
 }
 
-.plan-body{
-  border: 1px solid #F1F1F1;
-  box-shadow: -4px 4px 30px 0px #0000000A;
+.plan-body {
+  border: 1px solid #f1f1f1;
+  box-shadow: -4px 4px 30px 0px #0000000a;
   padding: 35px;
   border-radius: 10px;
 }
 
-.save{
+.save {
   font-size: 16px;
   font-weight: 700;
-  color: #F03F3D;
-  }
-  .save-price{
-      font-family: Jost;
+  color: #f03f3d;
+}
+.save-price {
+  font-family: Jost;
   font-size: 18px;
   font-weight: 500;
   color: #776568;
-  
-  }
+}
 
-  .features{
-font-size: 18px;
-font-weight: 500;
-  }
+.features {
+  font-size: 18px;
+  font-weight: 500;
+}
 
-  .check{
-    color:  #F03F3D;
-    margin-right: 8px;
-  }
+.check {
+  color: #f03f3d;
+  margin-right: 8px;
+}
 
-  .plan-btn{
+.plan-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 37px;
+  background: #f6355a;
+  border: 1px solid #f6355a;
+}
+
+.plan-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.install-panel {
+  background: #fff7f7;
+}
+
+.panel-sec {
+  width: 85%;
+}
+
+.panel-opt {
+  background: #f6355a;
+  border: 1px solid #ffffff;
+  border-radius: 55px 0pc 108px 55px;
+  padding: 10px 20px;
+  width: 208px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+}
+.panel-opt img {
+  width: 14%;
+  margin-right: 20px;
+}
+.service-card-body {
+  height: 100%;
+  border: 1px solid #ebeef2;
+  box-shadow: 0px 1px 4px 0px #0000000d;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.service-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #f6355a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #596780;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .start-now-btn a {
+    font-size: 14px;
+  }
+  .start-now-btn {
+    padding: 10px 10px;
+  }
+  .explore-btn a {
+    font-size: 14px;
+  }
+  .explore-btn {
+    padding: 10px 12px;
+  }
+  .panel-sec {
     width: 100%;
-    padding: 14px;
-    border-radius: 37px;
-    background: #F6355A;
-    border: 1px solid #F6355A;
+}
+}
 
+@media (max-width: 767px) {
+  .mt-50 {
+    margin-top: 30px;
   }
 
-  .plan-btn a{
-    color: #fff;
-    text-decoration: none;
-font-size: 16px;
-font-weight: 600;
+  .hero-container {
+    padding: 10px 0px;
   }
 
-  .install-panel{
-    background: #FFF7F7;
+  .hero-image-container {
+    display: none;
   }
 
-  .panel-sec{
-    width: 85%;
+  h1 {
+    text-align: center;
+  }
+  .hero-content p {
+    text-align: center;
+  }
+  .hero-buttons {
+    text-align: center;
   }
 
-  .panel-opt{
-    background: #F6355A;
-    border: 1px solid #FFFFFF;
-    border-radius: 55px 0pc 108px 55px;
-    padding: 8px 20px;
-    width: 52%;
-font-size: 16px;
-font-weight: 700;
-text-align: left;
-color: #fff;
-
+  h2 {
+    font-size: 28px;
+    width: 100% !important;
   }
-  .panel-opt img{
-    width: 14%;
-    margin-right: 20px;
+  .sub-heading {
+    font-size: 16px;
+    width: 100% !important;
+    margin-bottom: 2rem !important;
   }
-  .service-card-body{
-    height:290px;
-    border: 1px solid #EBEEF2;
-    box-shadow: 0px 1px 4px 0px #0000000D;
-
+  .planHead-con {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
   }
 
-  .service-title{
-font-size: 18px;
-font-weight: 700;
-line-height: 26px;
+  .plan-sec {
+    margin-top: 2rem !important;
   }
+.panel-item{
+  display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center !important;
+    justify-content: center;
+}
+}
 
-  .service-text{
-font-size: 15px;
-font-weight: 500;
-line-height: 24px;
-  }
-
-  .read-more{
-    text-decoration: none;
-    color: #F6355A;
-    font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-
-  }
-
-  .sub-heading{
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-color: #596780;
-
-  }
-
-
+@media(max-width:425px){
+  .panel-opt {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 155px;
+}
+.panel-opt img {
+  width: 14%;
+  margin-right: 10px;
+}
+}

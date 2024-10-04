@@ -4,6 +4,7 @@ import TopHeader from './components/commonComponent/topHeader';
 import Navbar from './components/commonComponent/navbar';
 import Footer from './components/commonComponent/footer';
 import Home from './components/homeComponent/home';
+import OffshoreVps from './components/offShoreVps/offshoreVps';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
    <div className="main-body">
         <Routes>
           <Route exact path="/" element={<Home/>} />
+          <Route exact path="/offshoreVps" element={<OffshoreVps/>} />
         </Routes>
       </div>
 

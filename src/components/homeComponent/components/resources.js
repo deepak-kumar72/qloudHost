@@ -32,13 +32,13 @@ const Resources = () => {
   return (
     <div className='resource-section p-1'>
     <div className="container my-4">
-      <h2 className="text-center mb-3">Resources and Insights</h2>
+      <h2 className="text-center mb-3 m-auto">Resources and Insights</h2>
       <p className="text-center w-75 m-auto mb-5 sub-heading">
         Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA ignored critical websites and apps.
       </p>
-      <div className="row">
+      <div className="row justify-content-center">
         {hostingPlans.map((plan) => (
-          <div key={plan.id} className="col-md-4 mb-4">
+          <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card text-center resource-card">
               <div className="card-body resource-body">
                 <span className="badge-title">{plan.title}</span>

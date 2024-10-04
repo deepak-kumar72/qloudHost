@@ -45,13 +45,13 @@ const plansData = [
 const HostingPlans = () => {
   return (
     <div className="hosting-plan mb-5">
-    <div className="container mt-5">
-      <h2 className="text-center mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center w-75 mb-5 planHead-con m-auto">Get award-winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at the cheapest price in the market.</p>
+    <div className="container plan-sec mt-5">
+      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Get award-winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at the cheapest price in the market.</p>
       
-      <div className="row">
+      <div className="row flex-unset">
         {plansData.map((plan) => (
-          <div key={plan.id} className="col-4 mb-4 ">
+          <div key={plan.id} className="col-4 mb-4 explore-plan-col">
           <div className={`${plan.popular ? "popular-card" : ""}`}>
   <div className="card-body plan-body position-relative">
     {plan.popular && (
@@ -85,7 +85,7 @@ const HostingPlans = () => {
         ))}
         
       </div>
-      <div className="text-center mt-4">
+      <div className="text-center mt-3">
         <span className="consult">Not sure which Offshore DMCA Ignored hosting plan is right for you? We can help. <Link to="" className=" fw-bold">GET FREE CONSULTATION</Link></span>
       </div>
     </div>

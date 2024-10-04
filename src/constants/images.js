@@ -9,6 +9,8 @@ import migration from '../assets/icon/migration.png';
 import blogImg1 from '../assets/blogImg1.png';
 import blogImg2 from '../assets/blogImg2.png';
 import blogImg3 from '../assets/blogImg3.png';
+import anubhav from '../assets/anubhav.png';
+import heroImage2 from '../assets/Frame/heroFrame.png';
 
 const images ={
     cpanel,
@@ -22,6 +24,8 @@ const images ={
     blogImg1,
     blogImg2,
     blogImg3,
+    anubhav,
+    heroImage2,
 
 };
 

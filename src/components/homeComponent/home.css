@@ -3,6 +3,7 @@
     font-weight: 400;
     line-height: 25px;
     color: #596780; 
+    width: 75%;
 }
 
 .card-title{
@@ -182,4 +183,61 @@ margin: auto;
 font-size: 16px;
 padding: 10px 30px;
   }
+
+  @media(max-width: 1200px){
+    .row.flex-unset {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    
+      scroll-behavior: smooth;
+  }
+  .explore-plan-col{
+    width: 390px;
+  }
+  }
+
+  @media(max-width:991px){
+    .blog-date{
+      font-size: 12px;
+    }
+    .blog-title1 {
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  .qloudService-section{
+    margin-top: 2rem !important;
+  }
+
+  .consult{
+      font-size: 16px;
+  }
+  .consult a {
+    font-size: 16px;
+}
+.hosting-plan{
+  margin-bottom: 2rem !important;
+}
+.planHead-con {
+  width: 100% !important;
+  margin-bottom: 2rem !important;
+}
+  }
+
+  @media(max-width:768px){
+    .feature-card {
+      height: 265px;
+  }
+  .blog-section{
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  .plan-resource-desc {
+    width: 100%;
+}
+  
+  }
+
+
+
   

@@ -1,65 +1,75 @@
-import React from "react";
+
+import React, { useState } from 'react';
+import { FaPlus, FaMinus } from 'react-icons/fa';
 import './common.css';
 
 
-
 const FAQsSection = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-    const faqData = [
-        {
-          question: 'What is DMCA ignore hosting?',
-          answer: 'We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website.',
-        },
-        {
-          question: 'Where are your servers based?',
-          answer: 'Our servers are based in secure data centers around the globe to provide you with the best hosting services.',
-        },
-        {
-          question: 'Which countries follow DMCA?',
-          answer: 'DMCA regulations are followed in many countries, primarily in the United States and other developed regions.',
-        },
-        {
-          question: 'How do you handle DMCA complaints?',
-          answer: 'We handle DMCA complaints by carefully reviewing them and taking appropriate action based on the claim and the legal requirements.',
-        },
-        {
-          question: 'What is your Uptime Guarantee?',
-          answer: 'We provide a 99.9% uptime guarantee to ensure your website remains available to users at all times.',
-        },
-      ];
-    
-      return (
-        <div className="container mt-5">
-          <h2 className="mb-4 text-center">Frequently Asked Questions</h2>
-          <div className="accordion" id="faqAccordion">
-            {faqData.map((faq, index) => (
-              <div className="accordion-item" key={index}>
-                <h2 className="accordion-header" id={`heading${index}`}>
-                  <button
-                    className={`accordion-button ${index === 0 ? '' : 'collapsed'}`}
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#collapse${index}`}
-                    aria-expanded={index === 0 ? 'true' : 'false'}
-                    aria-controls={`collapse${index}`}
-                  >
-                    {faq.question}
-                  </button>
-                </h2>
-                <div
-                  id={`collapse${index}`}
-                  className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                  aria-labelledby={`heading${index}`}
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">{faq.answer}</div>
-                </div>
-              </div>
-            ))}
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is DMCA ignore hosting?",
+      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+    },
+    {
+      question: "Where are your servers based?",
+      answer: "Our servers are strategically located to provide the best performance for your needs."
+    },
+    {
+      question: "Which countries follow DMCA?",
+      answer: "The countries where DMCA regulations apply include the United States and others adhering to similar laws."
+    },
+    {
+      question: "How do you handle DMCA complaints?",
+      answer: "Our team ensures that all DMCA complaints are handled in accordance with our privacy policies and legal obligations."
+    },
+    {
+      question: "What is your Uptime Guarantee?",
+      answer: "We guarantee a 99.9% uptime for all services hosted on our platform."
+    },
+  ];
+
+  return (
+    <div className='testimonial p-5'>
+    <div className='container'>
+    <div className='row'>
+    <div className='col-md-5 position-relative'>
+    <h2 class="text-center mb-3 m-auto faq-heading">Frequently Asked Questions</h2>
+    <div className='faq-header circle-3 position-absolute'></div>
+    <div className='faq-header circle-2'></div>
+    <div className='faq-header d-flex justify-content-center align-items-center z-1 position-relative'>
+    <h2 >Frequently <br/> Asked <br/> Questions</h2>
+    </div>
+    </div>
+    <div className='col-md-7'>
+    <div className="accordion">
+      {faqs.map((faq, index) => (
+        <div key={index} className="accordion-item">
+          <div className="accordion-header d-flex justify-content-between" onClick={() => toggleAccordion(index)}>
+            <h3>{faq.question}</h3>
+            <span>
+              {activeIndex === index ? <FaMinus /> : <FaPlus />}
+            </span>
           </div>
+          {activeIndex === index && (
+            <div className="accordion-body">
+              <p>{faq.answer}</p>
+            </div>
+          )}
         </div>
-      );
-    };
-    
+      ))}
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  );
+};
 
 export default FAQsSection;
+

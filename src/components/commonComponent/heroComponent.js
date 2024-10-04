@@ -38,10 +38,9 @@ const HeroComponent = ({
               <div className="money-back-text"><LuShieldCheck className="me-2"/>14-Day Money-Back Guarantee</div>
             </div>
           </div>
-          <div className="col-md-6 position-relative">
-            <div className="hero-image-container position-relative">
+          <div className="col-md-6 ">
+            <div className="hero-image-container">
             <img src={heroFrame} alt="frame" className="hero-frame position-absolute"/>
-              <img src={imageSrc} alt="Hero" className="hero-image position-absolute" />
               <div className="features"></div>
             </div>
           </div>
