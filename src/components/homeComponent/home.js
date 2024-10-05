@@ -12,6 +12,7 @@ import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
 import Testimonials from "../commonComponent/testimonial";
+import ChatNow from "../commonComponent/chatNow";
 
 
 const features = [
@@ -46,6 +47,25 @@ const features = [
     link: "/read-more",
   },
   
+];
+
+const faqsData = [
+  {
+    question: "What is DMCA ignore hosting?",
+    answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+  },
+  {
+    question: "Where are your servers based?",
+    answer: "Our servers are strategically located to provide the best performance for your needs."
+  },
+  {
+    question: "Where are your servers based?",
+    answer: "Our servers are strategically located to provide the best performance for your needs."
+  },
+  {
+    question: "Where are your servers based?",
+    answer: "Our servers are strategically located to provide the best performance for your needs."
+  },
 ];
 
 const Home = () => {
@@ -86,7 +106,10 @@ that you can manage your website files with full control!"
       <BlogSection/>
       <Resources/>
       <Testimonials/>
-      <FAQsSection/>
+      <FAQsSection
+        faqs={faqsData} 
+      />
+      <ChatNow/>
     </div>
   );
 };

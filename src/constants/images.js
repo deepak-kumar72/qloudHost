@@ -11,6 +11,9 @@ import blogImg2 from '../assets/blogImg2.png';
 import blogImg3 from '../assets/blogImg3.png';
 import anubhav from '../assets/anubhav.png';
 import heroImage2 from '../assets/Frame/heroFrame.png';
+import hardwareImg from '../assets/enterprise-grade-hardware.png';
+import privacyImg from '../assets/privacy-image.png';
+import vpsServer from '../assets/vpsServer.png';
 
 const images ={
     cpanel,
@@ -26,6 +29,9 @@ const images ={
     blogImg3,
     anubhav,
     heroImage2,
+    hardwareImg,
+    privacyImg,
+    vpsServer,
 
 };
 

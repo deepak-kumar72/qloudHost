@@ -23,6 +23,11 @@ line-height: 24px;
 color: #596780;
 
 }
+.plan-desc{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
 .card-price{
 font-size: 35px;
 font-weight: 800;
@@ -185,15 +190,15 @@ padding: 10px 30px;
   }
 
   @media(max-width: 1200px){
-    .row.flex-unset {
+    /* .home-plan {
       flex-wrap: nowrap;
       overflow-x: auto;
     
       scroll-behavior: smooth;
-  }
-  .explore-plan-col{
+  } */
+  /* .explore-plan-col{
     width: 390px;
-  }
+  } */
   }
 
   @media(max-width:991px){

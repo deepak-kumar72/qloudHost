@@ -14,7 +14,7 @@ const plansData = [
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ["1 Website", "1 GB RAM", "10 GB NVMe SSD", "150 GB Bandwidth", "Direct Admin Panel"],
-    buttonText: "Get Started",
+    url: "",
     popular: false,
   },
   {
@@ -25,7 +25,7 @@ const plansData = [
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ["1 Website", "1 GB RAM", "10 GB NVMe SSD", "150 GB Bandwidth", "Direct Admin Panel"],
-    buttonText: "Get Started",
+    url: "",
     popular: true, // This plan is marked as popular
   },
   {
@@ -49,9 +49,9 @@ const HostingPlans = () => {
       <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
       <p className="text-center mb-5 planHead-con m-auto">Get award-winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at the cheapest price in the market.</p>
       
-      <div className="row flex-unset">
+      <div className="row home-plan justify-content-center">
         {plansData.map((plan) => (
-          <div key={plan.id} className="col-4 mb-4 explore-plan-col">
+          <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
           <div className={`${plan.popular ? "popular-card" : ""}`}>
   <div className="card-body plan-body position-relative">
     {plan.popular && (
@@ -60,7 +60,7 @@ const HostingPlans = () => {
     <div className="">
       <h5 className="card-title mb-3">OFFSHORE <span>{plan.title}</span>
       </h5>
-      <p className="card-text mb-2">{plan.description}</p>
+      <p className="card-text plan-desc mb-2">{plan.description}</p>
       <h3 className="card-price">{plan.price} <span className="price-unit">/month</span></h3>
       <p className="save">{plan.save}</p>
       <p className="save-price mb-4">Yearly at <del>{plan.yearlyPrice}</del></p>

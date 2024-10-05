@@ -2,10 +2,12 @@ import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
 import images from "../../constants/images";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
-import OffshoreVpsPlan from "./offshoreVpsPlan";
+import OffshoreVpsPlan from "./components/offshoreVpsPlan";
 import InstallationPanel from "../commonComponent/installationPanel";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import Testimonials from "../commonComponent/testimonial";
+import PrivacyHardwarePage from "../offShoreVps/components/privacyHardwarePage";
+import FeaturesYouGet from "./components/featuresYouGet";
 
 const features = [
     {img: images.ssd,
@@ -67,10 +69,12 @@ const OffshoreVps = () => {
           { name: 'Windows', img: images.centos },
         ]}
       />
+      <PrivacyHardwarePage/>
       <QlodHostServices
       heading="What You Get with Your Offshore VPS Server"
       content="Looking for some good reasons to choose Qloudhost?  Here’s the reason of our confidence. "
       features={features} />
+      <FeaturesYouGet/>
       <Testimonials/>
     </div>
   );

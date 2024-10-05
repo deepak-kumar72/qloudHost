@@ -27,7 +27,7 @@ const servicesData = [
 const Services = () => {
   return (
     <div className='service-section'>
-    <div className="container  my-5 p-5">
+    <div className="container  my-5 py-5">
       <h2 className="text-center text-white mb-3 m-auto w-100">We’ve got your new/existing website needs covered!</h2>
       <p className="text-center text-white w-75 mb-5 planHead-con m-auto">
         Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA ignored critical websites and apps. Count on us to deliver excellence every step of the way. <strong>Join our satisfied customers today!</strong>
