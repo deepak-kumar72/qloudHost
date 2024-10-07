@@ -68,6 +68,30 @@ const faqsData = [
   },
 ];
 
+
+const servicesData1 = [
+  {
+    id: 1,
+    imgUrl: images.web,
+    title: "New Website?",
+    description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
+    buttonText: "Get Started Now",
+    buttonLink: "#",
+    iconClass: "bi-globe",
+  },
+  {
+    id: 1,
+    imgUrl: images.migration,
+    title: "Migration?",
+    description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
+    buttonText: "Get Started Now",
+    buttonLink: "#",
+    iconClass: "bi-arrow-repeat",
+  },
+
+];
+
+
 const Home = () => {
   return (
     <div>
@@ -102,7 +126,7 @@ that you can manage your website files with full control!"
       heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
       content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
       features={features} />
-      <Services/>
+      <Services servicesData={servicesData1} />;
       <BlogSection/>
       <Resources/>
       <Testimonials/>

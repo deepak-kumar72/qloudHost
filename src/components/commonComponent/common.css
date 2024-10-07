@@ -243,6 +243,30 @@
   z-index: 1;
 }
 
+.chat-now-btn{
+  background: #FFF7F7;
+  border: 1px solid #fff7f7;
+}
+
+.chat-now-btn a{
+  color: #f6355a;
+}
+
+.chat-sec h3{
+font-size: 28px;
+font-weight: 700;
+color: #161C2D;
+}
+
+.chat-sec p{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: #596780;
+}
+
+
+
 @media(max-width: 991px){
   .item {
     margin: 0 5px;
@@ -293,4 +317,10 @@ testimonial-role {
   .faq-heading{
     display: none;
   }
+}
+
+@media(min-width:1400px){
+  .hero-frame {
+    width: 501px;
+}
 }

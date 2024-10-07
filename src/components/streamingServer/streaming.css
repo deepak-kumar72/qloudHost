@@ -1,0 +1,81 @@
+.best-streaming {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #289e0a;
+}
+
+.streaming-server-feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.streaming-badge {
+  background-color: #f6355a;
+  color: #fff;
+  left: 142px;
+}
+
+.streaming-image-icon {
+  background-color: #f6355a;
+  height: 50px;
+  width: 50px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.custom-sol {
+  background-color: #f6355a;
+}
+.customSol-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff;
+}
+.customSol-text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff;
+}
+
+.custom-sol-btn {
+  background-color: #fff;
+}
+.custom-sol-btn a {
+  color: #f6355a;
+}
+
+.guarantees-box{
+    border: 1px solid #f6355a;
+    border-radius: 45px !important;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .qloud-plan-body {
+    padding: 10px;
+  }
+  .qloudHostPlan-features {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .customSol-text {
+    text-align: center;
+  }
+  .customSol-text h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .customSol-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

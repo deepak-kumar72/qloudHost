@@ -42,9 +42,38 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li className="nav-item pe-4">
-                  <Link className="nav-link active" aria-current="page" to="#">
+
+                <li className="nav-item dropdown pe-4">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="#"
+                    // role="button"
+                    // data-bs-toggle="dropdown"
+                    // aria-expanded="false"
+                  >
                     Hosting
+                  </Link>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link className="dropdown-item" to="">
+                        Action
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="#">
+                        Another action
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="#">
+                        Something else here
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item pe-4">
+                  <Link className="nav-link active" aria-current="page" to="/offshoreVps">
+                    Offshore VPS
                   </Link>
                 </li>
 
@@ -56,17 +85,17 @@ const Navbar = () => {
                     // data-bs-toggle="dropdown"
                     // aria-expanded="false"
                   >
-                    Offshore VPS
+                    Server
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="/offshoreVps">
-                        Offshore VPS
+                      <Link className="dropdown-item" to="/dedicated-Server">
+                        Dedicated Server
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
-                        Another action
+                      <Link className="dropdown-item" to="/streaming-server">
+                        Streaming Server
                       </Link>
                     </li>
                     <li>

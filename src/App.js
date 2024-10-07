@@ -5,6 +5,8 @@ import Navbar from './components/commonComponent/navbar';
 import Footer from './components/commonComponent/footer';
 import Home from './components/homeComponent/home';
 import OffshoreVps from './components/offShoreVps/offshoreVps';
+import DedicatedServer from './components/dedicatedServer/dedicatedServer';
+import Streaming from './components/streamingServer/streaming';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
    <div className="main-body">
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route exact path="/offshoreVps" element={<OffshoreVps/>} />
+          <Route path="/offshoreVps" element={<OffshoreVps/>} />
+          <Route path="/dedicated-Server" element={<DedicatedServer/>}/>
+          <Route path="/streaming-server" element={<Streaming/>}/>
         </Routes>
       </div>
 

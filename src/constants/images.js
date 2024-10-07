@@ -14,6 +14,13 @@ import heroImage2 from '../assets/Frame/heroFrame.png';
 import hardwareImg from '../assets/enterprise-grade-hardware.png';
 import privacyImg from '../assets/privacy-image.png';
 import vpsServer from '../assets/vpsServer.png';
+import quality from '../assets/Quality.png';
+import videoStreaming from '../assets/video-streaming.png';
+import youTube from '../assets/icon/youTube.png';
+import iptv from '../assets/icon/iptv.png';
+import gaming from '../assets/icon/gaming.png'
+import neitherland from '../assets/icon/netherlands.png';
+import support from '../assets/icon/support.png';
 
 const images ={
     cpanel,
@@ -32,6 +39,13 @@ const images ={
     hardwareImg,
     privacyImg,
     vpsServer,
+    quality,
+    videoStreaming,
+    youTube,
+    iptv,
+    gaming,
+    neitherland,
+    support,
 
 };
 
