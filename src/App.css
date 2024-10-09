@@ -151,6 +151,7 @@ color: #0D121F;
 .features {
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .check {
@@ -160,7 +161,7 @@ color: #0D121F;
 
 .plan-btn {
   width: 100%;
-  padding: 14px;
+  padding: 12px;
   border-radius: 37px;
   background: #f6355a;
   border: 1px solid #f6355a;
@@ -229,6 +230,48 @@ color: #0D121F;
   color: #596780;
 }
 
+.starting-at{
+  font-size: 18px;
+  font-weight: 500;
+  color: #596780;
+}
+
+.qloud-popular-badge{
+  background-color: #f6355a !important;
+    color: #fff !important;
+}
+
+.popular-qloudhost-card{
+  border: 1px solid #f6355a;
+  border-radius: 10px;
+}
+
+.plan-group-btn{
+  width: 50%;
+  margin: auto;
+}
+
+.choose-plan-btn{
+  width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0 !important;
+    border: 1px solid #f6355a;
+    color: #292929;
+    background: #fff;
+    color: #f6355a;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #f6355a;
+  color: #fff;
+}
+.nav-link:focus, .nav-link:hover {
+  background: #FFF7F7;
+  color: #f6355a;
+}
 /* dedicated-Server */
 
 .AffordableCon-card{
@@ -258,6 +301,12 @@ color: #fff;
   font-size: 16px;
   font-weight: 700;
   color: #144229;  
+}
+
+.gurantee-seprator{
+  border: 1px solid #f6355a;
+  height: 160px;
+  margin: auto;
 }
 
 @media (max-width: 991px) {
@@ -332,6 +381,17 @@ color: #fff;
     grid-template-rows: repeat(2, 1fr);
     align-items: center !important;
     justify-content: center;
+}
+
+.gurantee-seprator {
+  border: 1px solid #f6355a;
+  height: 0px;
+  margin: auto;
+  width: 325px;
+}
+
+.guarantee-item{
+  display: grid !important;
 }
 }
 

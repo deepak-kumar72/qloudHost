@@ -47,7 +47,7 @@ const StreamingServerPlan = () => {
                 )}
                
                 <div>
-                  <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span></h5>
+                  <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price qloudHostplan-price mb-3">{plan.price} <span className="price-unit">{plan.time}</span></h3>
 
                   {plan.onDemand && (

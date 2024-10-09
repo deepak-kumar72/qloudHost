@@ -16,6 +16,8 @@ const DedicatedServerPlan = () => {
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
           {dedicatedplansData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
+            <div className={`${plan.popular ? "popular-qloudhost-card" : ""} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""}`}>
+            
               <div className="card-body offshore-plan-body position-relative">
                 {plan.popular && (
                   <div className="popular-badge vps-badge position-absolute">Popular</div>
@@ -41,6 +43,7 @@ const DedicatedServerPlan = () => {
                   </ul>
                 </div>
               </div>
+            </div>
             </div>
           ))}
         </div>

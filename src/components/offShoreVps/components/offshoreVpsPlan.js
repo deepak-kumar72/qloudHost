@@ -63,7 +63,7 @@ const OffshoreVpsPlan = () => {
       <div className="popular-badge vps-badge position-absolute">Popular</div>
     )}
     <div className="">
-      <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span>
+      <h5 className="card-title mt-3 mb-3">{plan.name}
       </h5>
       <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
       <p className="save mb-1">{plan.save}</p>

@@ -82,7 +82,10 @@ const Streaming = () => {
       />
       <StreamingServerPlan/>
       <CustomSolution/>
-      <Guarantees/>
+      <Guarantees
+        subHeading="Boost your website performance with world-class Best & Cheap offshore streaming servers
+          and guaranteed performance."
+      />
       <TechnicalSpecification/>
       <InstallationPanel
         title="Fast OS/Admin Panel Installation!"

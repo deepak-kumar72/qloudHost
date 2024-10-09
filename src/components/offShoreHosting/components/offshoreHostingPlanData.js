@@ -1,0 +1,211 @@
+const offshoreplanData = {
+    threeYearPlans: [
+      {
+        id: 1,
+        name: "Basic",
+        price: "$3.50",
+        discount: "You Save 30%",
+        duration: "3 Year",
+        features: [
+          "1 Website",
+          "10 GB NVMe SSD",
+          "1 GB RAM",
+          "3 Email",
+          "150 GB Bandwidth",
+          "5 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: false,
+      },
+      {
+        id: 2,
+        name: "Pro",
+        price: "$5.50",
+        discount: "You Save 30%",
+        duration: "3 Year",
+        features: [
+          "2 Website",
+          "20 GB NVMe SSD",
+          "2 GB RAM",
+          "5 Email",
+          "300 GB Bandwidth",
+          "10 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: true,
+      },
+      {
+        id: 3,
+        name: "Grow",
+        price: "$9.09",
+        discount: "You Save 30%",
+        duration: "3 Year",
+        features: [
+          "10 Website",
+          "50 GB NVMe SSD",
+          "3 GB RAM",
+          "15 Email",
+          "500 GB Bandwidth",
+          "20 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: false,
+      }
+    ],
+  
+    oneYearPlans: [
+      {
+        id: 4,
+        name: "Basic",
+        price: "$4.00",
+        discount: "You Save 20%",
+        duration: "1 Year",
+        features: [
+          "1 Website",
+          "10 GB NVMe SSD",
+          "1 GB RAM",
+          "3 Email",
+          "150 GB Bandwidth",
+          "5 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: false,
+      },
+      {
+        id: 5,
+        name: "Pro",
+        price: "$6.29",
+        discount: "You Save 20%",
+        duration: "1 Year",
+        features: [
+          "2 Website",
+          "20 GB NVMe SSD",
+          "2 GB RAM",
+          "5 Email",
+          "300 GB Bandwidth",
+          "10 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: true,
+      },
+      {
+        id: 6,
+        name: "Grow",
+        price: "$10.39",
+        discount: "You Save 20%",
+        duration: "1 Year",
+        features: [
+          "10 Website",
+          "50 GB NVMe SSD",
+          "3 GB RAM",
+          "15 Email",
+          "500 GB Bandwidth",
+          "20 Subdomain",
+          "DirectAdmin Panel",
+          "LiteSpeed",
+          "Softaculous 1-click Install",
+          "Support",
+          "Security"
+        ],
+        url: "",
+        popular: false,
+      }
+    ],
+
+    oneMonthPlans: [
+        {
+          id: 7,
+          name: "Basic",
+          price: "$4.00",
+          discount: "You Save 20%",
+          duration: "1 Month",
+          features: [
+            "1 Website",
+            "10 GB NVMe SSD",
+            "1 GB RAM",
+            "3 Email",
+            "150 GB Bandwidth",
+            "5 Subdomain",
+            "DirectAdmin Panel",
+            "LiteSpeed",
+            "Softaculous 1-click Install",
+            "Support",
+            "Security"
+          ],
+          url: "",
+          popular: false,
+        },
+        {
+          id: 8,
+          name: "Pro",
+          price: "$6.29",
+          discount: "You Save 20%",
+          duration: "1 Month",
+          features: [
+            "2 Website",
+            "20 GB NVMe SSD",
+            "2 GB RAM",
+            "5 Email",
+            "300 GB Bandwidth",
+            "10 Subdomain",
+            "DirectAdmin Panel",
+            "LiteSpeed",
+            "Softaculous 1-click Install",
+            "Support",
+            "Security"
+          ],
+          url: "",
+          popular: true,
+        },
+        {
+          id: 9,
+          name: "Grow",
+          price: "$10.39",
+          discount: "You Save 20%",
+          duration: "1 Month",
+          features: [
+            "10 Website",
+            "50 GB NVMe SSD",
+            "3 GB RAM",
+            "15 Email",
+            "500 GB Bandwidth",
+            "20 Subdomain",
+            "DirectAdmin Panel",
+            "LiteSpeed",
+            "Softaculous 1-click Install",
+            "Support",
+            "Security"
+          ],
+          url: "",
+        popular: false,
+        }
+      ]
+  };
+  
+  export default offshoreplanData;
+  

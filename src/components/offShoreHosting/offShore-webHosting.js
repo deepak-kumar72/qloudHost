@@ -1,18 +1,14 @@
-import React from "react";
-import HeroComponent from "../commonComponent/heroComponent";
+import React from 'react'
+import HeroComponent from '../commonComponent/heroComponent';
 import heroImage from "../../assets/Frame/heroFrame.png";
-import HostingPlans from "./components/hostingPlans";
-import TechnicalSpecification from "../commonComponent/technicalSpecification";
-import QloudHostFeatures from "./components/qloudHostFeatures";
-import QlodHostServices from "../commonComponent/qlodHostServices";
-import InstallationPanel from "../commonComponent/installationPanel";
+import OffShoreHostingPlan from './components/offShoreHostingPlan';
+import Guarantees from '../streamingServer/components/qloudHostGurantees';
+import TechnicalSpecification from '../commonComponent/technicalSpecification';
+import OffshoreFeatureElement from './components/offshoreFeatureElement';
+import QlodHostServices from '../commonComponent/qlodHostServices';
 import images from '../../constants/images';
-import Services from "../commonComponent/services";
-import Resources from "./components/resources";
-import FAQsSection from "../commonComponent/faqSection";
-import BlogSection from "./components/blogSection";
-import Testimonials from "../commonComponent/testimonial";
-
+import Testimonials from '../commonComponent/testimonial';
+import FAQsSection from '../commonComponent/faqSection';
 
 const features = [
   {img: images.ssd,
@@ -67,36 +63,12 @@ const faqsData = [
   },
 ];
 
-
-const servicesData1 = [
-  {
-    id: 1,
-    imgUrl: images.web,
-    title: "New Website?",
-    description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-globe",
-  },
-  {
-    id: 1,
-    imgUrl: images.migration,
-    title: "Migration?",
-    description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-arrow-repeat",
-  },
-
-];
-
-
-const Home = () => {
+const OffShorewebHosting = () => {
   return (
     <div>
       <HeroComponent
-        title="Powerful Secure & Best DMCA Ignored Hosting"
-        description="Get the Best for your website with QloudHost’s DMCA Ignored hosting packages. Join over 3000+ customers who rely on us for a robust offshore DMCA Ignored server foundation."
+        title="100% DMCA Cheap Offshore Web Hosting"
+        description="Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands"
         button1Text="Get Started Now"
         button1Link=""
         button2Text="Explore Features"
@@ -104,37 +76,22 @@ const Home = () => {
         imageSrc={heroImage}
         moneyBackText="14-Day Money-Back Guarantee"
       />
-      <HostingPlans />
-      <TechnicalSpecification />
-      <QloudHostFeatures />
-      <InstallationPanel
-        title="Fast OS/Admin Panel Installation!"
-        description="No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server
-with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so
-that you can manage your website files with full control!"
-        buttonText="Get Started Now"
-        panelOptions={[
-          { name: 'cPanel', img: images.cpanel },
-          { name: 'DirectAdmin', img: images.directAdmin },
-          { name: 'CyberPanel', img: images.cyberPanel},
-          { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'CentOS', img: images.centos },
-        ]}
+      <OffShoreHostingPlan/>
+      <Guarantees
+        subHeading="Looking to upgrade resources? Check our Offshore WordPress Hosting Plans or Looking for more power? Check out our Offshore VPS Hosting "
       />
+      <TechnicalSpecification/>
+      <OffshoreFeatureElement/>
       <QlodHostServices 
       heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
       content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
       features={features} />
-      <Services servicesData={servicesData1} />;
-      <BlogSection/>
-      <Resources/>
       <Testimonials/>
       <FAQsSection
         faqs={faqsData} 
       />
-  
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default OffShorewebHosting;

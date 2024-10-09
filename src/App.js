@@ -7,6 +7,8 @@ import Home from './components/homeComponent/home';
 import OffshoreVps from './components/offShoreVps/offshoreVps';
 import DedicatedServer from './components/dedicatedServer/dedicatedServer';
 import Streaming from './components/streamingServer/streaming';
+import ChatNow from './components/commonComponent/chatNow';
+import OffShorewebHosting from './components/offShoreHosting/offShore-webHosting';
 
 function App() {
   return (
@@ -19,9 +21,10 @@ function App() {
           <Route path="/offshoreVps" element={<OffshoreVps/>} />
           <Route path="/dedicated-Server" element={<DedicatedServer/>}/>
           <Route path="/streaming-server" element={<Streaming/>}/>
+          <Route path="/offshore-web-hosting" element={<OffShorewebHosting/>}/>
         </Routes>
       </div>
-
+   <ChatNow/>
    <Footer/>
    </Router>
   );

@@ -55,8 +55,8 @@ const Navbar = () => {
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="">
-                        Action
+                      <Link className="dropdown-item" to="/offshore-web-hosting">
+                        Offshore Hosting
                       </Link>
                     </li>
                     <li>
