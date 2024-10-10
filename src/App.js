@@ -9,6 +9,13 @@ import DedicatedServer from './components/dedicatedServer/dedicatedServer';
 import Streaming from './components/streamingServer/streaming';
 import ChatNow from './components/commonComponent/chatNow';
 import OffShorewebHosting from './components/offShoreHosting/offShore-webHosting';
+import OffshoreWordPressHosting from './components/offshoreWordpressHosting/offshoreWordPressHosting';
+import OffshoreVideoHosting from './components/videoHosting/offshoreVideoHosting';
+import AdultHosting from './components/adultHosting/adultHosting';
+import DmcaIgnoredVps from './components/dmcaIgnoredVps/dmcaIgnoredVps';
+import NeitherLandOffshoreVps from './components/neitherlandOffshoreVps/neitherLandOffshoreVps';
+import HighPerformanceVps from './components/highPerformanceVps/highPerformanceVps';
+import DmcaDedicatedServer from './components/dmcaDedicatedServers/dmcaDedicatedServer';
 
 function App() {
   return (
@@ -22,6 +29,13 @@ function App() {
           <Route path="/dedicated-Server" element={<DedicatedServer/>}/>
           <Route path="/streaming-server" element={<Streaming/>}/>
           <Route path="/offshore-web-hosting" element={<OffShorewebHosting/>}/>
+          <Route path="/offshore-wordpress-hosting/" element={<OffshoreWordPressHosting/>}/>
+          <Route path='/offshore-video-hosting/' element={<OffshoreVideoHosting/>}/>
+          <Route path='/adult-hosting/' element={<AdultHosting/>}/>
+          <Route path='/dmca-ignored-vps/' element={<DmcaIgnoredVps/>}/>
+          <Route path='/offshore-vps-hosting/netherlands/' element={<NeitherLandOffshoreVps/>}/>
+          <Route path='/high-performance-vps-hosting/' element={<HighPerformanceVps/>}/>
+          <Route path='/dmca-ignored-dedicated-servers/' element={<DmcaDedicatedServer/>}/>
         </Routes>
       </div>
    <ChatNow/>

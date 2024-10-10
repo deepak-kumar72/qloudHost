@@ -309,6 +309,17 @@ color: #fff;
   margin: auto;
 }
 
+.wordpress-features{
+  font-size: 16px;
+}
+
+.qloudHost-plan-body {
+  box-shadow: 0px 0px 24.2px 0px #00000012;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 30px;

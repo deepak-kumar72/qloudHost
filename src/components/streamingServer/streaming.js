@@ -81,7 +81,10 @@ const Streaming = () => {
         moneyBackText="14-Day Money-Back Guarantee"
       />
       <StreamingServerPlan/>
-      <CustomSolution/>
+      <CustomSolution
+        solTitle="Need Custom Solution Media Streaming Offshore Servers"
+        solText="Server solutions that scale with your business to deliver exceptional performance on even the most demanding Streaming, IPTV media streaming projects."
+      />
       <Guarantees
         subHeading="Boost your website performance with world-class Best & Cheap offshore streaming servers
           and guaranteed performance."

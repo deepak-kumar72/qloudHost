@@ -1,16 +1,16 @@
-import React from "react";
-import HeroComponent from "../commonComponent/heroComponent";
-import images from "../../constants/images";
-import TechnicalSpecification from "../commonComponent/technicalSpecification";
-import OffshoreVpsPlan from "./components/offshoreVpsPlan";
-import InstallationPanel from "../commonComponent/installationPanel";
-import QlodHostServices from "../commonComponent/qlodHostServices";
-import Testimonials from "../commonComponent/testimonial";
-import PrivacyHardwarePage from "../offShoreVps/components/privacyHardwarePage";
-import FeaturesYouGet from "./components/featuresYouGet";
-import Services from "../commonComponent/services";
-import FAQsSection from "../commonComponent/faqSection";
-import ChatNow from "../commonComponent/chatNow";
+import React from 'react'
+import HeroComponent from '../commonComponent/heroComponent';
+import images from '../../constants/images';
+import AdultHostingPlans from './components/adultHostingPlans';
+import DedicatedAdultPlan from './components/dedicatedAdultPlans';
+import CustomSolution from '../streamingServer/components/customSolution';
+import Guarantees from '../streamingServer/components/qloudHostGurantees';
+import TechnicalSpecification from '../commonComponent/technicalSpecification';
+import InstallationPanel from '../commonComponent/installationPanel';
+import QlodHostServices from '../commonComponent/qlodHostServices';
+import Testimonials from '../commonComponent/testimonial';
+import FAQsSection from '../commonComponent/faqSection';
+import AdultHostingFeatureElement from './components/AdultHostingFeatureElement';
 
 const features = [
     {img: images.ssd,
@@ -45,7 +45,6 @@ const features = [
     },
     
   ];
-
   const faqsData = [
     {
       question: "What is DMCA ignore hosting?",
@@ -65,34 +64,12 @@ const features = [
     },
   ];
 
-  const servicesData1 = [
-    {
-      id: 1,
-      imgUrl: images.web,
-      title: "New Website?",
-      description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
-      buttonText: "Get Started Now",
-      buttonLink: "#",
-      iconClass: "bi-globe",
-    },
-    {
-      id: 1,
-      imgUrl: images.migration,
-      title: "Migration?",
-      description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
-      buttonText: "Get Started Now",
-      buttonLink: "#",
-      iconClass: "bi-arrow-repeat",
-    },
-  
-  ];
-
-const OffshoreVps = () => {
+const AdultHosting = () => {
   return (
     <div>
       <HeroComponent
-        title="Best Cheap Offshore VPS Hosting"
-        description="Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times."
+         title="High Performance Adult VPS and Dedicated Servers"
+        description="Unlock 100% reliable and secure Adult Hosting in the Netherlands with 99.99% uptime and 24/7 support. Perfect for Adult Tube, Adult Streaming Websites. Host your adult website today!"
         button1Text="Get Started Now"
         button1Link=""
         button2Text="Explore Features"
@@ -100,34 +77,40 @@ const OffshoreVps = () => {
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
       />
-      <OffshoreVpsPlan/>
+      <AdultHostingPlans/>
+      <DedicatedAdultPlan/>
+      <CustomSolution
+        solTitle="Need Custom Solutions Adult Dedicated Servers?"
+        solText="Expand Adult Websit’s with DMCA Ignored Servers across your entire Organization. Enjoy unbeatable features, dedicated account and priority support."
+      />
+      <Guarantees
+        subHeading="Boost your website performance with world-class Best & Cheap Adult Web Hosting servers and guaranteed performance."
+      />
       <TechnicalSpecification/>
       <InstallationPanel
-        title="Available Operating Systems"
+        title="Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
         panelOptions={[
           { name: 'AlmaLinux', img: images.cpanel },
-          { name: 'Rockey Linux', img: images.directAdmin },
+          { name: 'RockeyLinux', img: images.directAdmin },
           { name: 'Debian', img: images.cyberPanel},
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'Windows', img: images.centos },
         ]}
       />
-      <PrivacyHardwarePage/>
+      <AdultHostingFeatureElement/>
       <QlodHostServices
-      heading="What You Get with Your Offshore VPS Server"
-      content="Looking for some good reasons to choose Qloudhost?  Here’s the reason of our confidence. "
+      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
+      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
       features={features} />
-      <Services servicesData={servicesData1} />
-      <FeaturesYouGet/>
       <Testimonials/>
       <FAQsSection
-        faqs={faqsData} 
+      faqs={faqsData} 
       />
-      <ChatNow/>
-    </div>
-  );
-};
 
-export default OffshoreVps;
+    </div>
+  )
+}
+
+export default AdultHosting;

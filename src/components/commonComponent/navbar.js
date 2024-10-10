@@ -60,13 +60,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
-                        Another action
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Something else here
+                      <Link className="dropdown-item" to="/offshore-wordpress-hosting/">
+                        Offshore Wordpress
                       </Link>
                     </li>
                   </ul>
@@ -81,9 +76,6 @@ const Navbar = () => {
                   <Link
                     className="nav-link dropdown-toggle"
                     to="#"
-                    // role="button"
-                    // data-bs-toggle="dropdown"
-                    // aria-expanded="false"
                   >
                     Server
                   </Link>
@@ -99,8 +91,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
-                        Something else here
+                      <Link className="dropdown-item" to="/offshore-video-hosting/">
+                        Video Hosting
                       </Link>
                     </li>
                   </ul>

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCheck } from "react-icons/fa6";
-import '../offshoreVps.css';
 
 const plansData = [
   {
     id: 1,
     name: 'VPS ENTRY',
-    price: '18.99',
+    price: '$18.99',
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
@@ -16,7 +15,7 @@ const plansData = [
   {
     id: 2,
     name: 'VPS VALUE',
-    price: '46.99',
+    price: '$46.99',
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
@@ -26,7 +25,7 @@ const plansData = [
   {
     id: 3,
     name: 'VPS BUSINESS',
-    price: '55.99',
+    price: '$55.99',
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
@@ -35,7 +34,7 @@ const plansData = [
   {
     id: 4,
     name: 'VPS ENTERPRISE',
-    price: '79.99',
+    price: '$79.99',
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
@@ -44,15 +43,14 @@ const plansData = [
 ];
 
 
-const OffshoreVpsPlan = () => {
+const AdultHostingPlans = () => {
 
 
   return (
     <div className="hosting-plan mb-5">
     <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Choose Offshore VPS server configuration that suits you</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get unbeatable performance with our Best & Cheap offshore VPS Hosting Servers without paying any extra bucks!
-      Pay only for what you use</p>
+      <h2 className="text-center m-auto mb-3">Adult VPS Hosting Plans & Pricing</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Unlock Peak Performance and Unparalleled Security with VPS Hosting for Adult Websites. Choose from Linux or Windows Operating Systems and experience the ultimate hosting solution for your website or application.</p>
       
       <div className="row offshoreVps-plan justify-content-center" id='plan1'>
         {plansData.map((plan) => (
@@ -90,7 +88,7 @@ const OffshoreVpsPlan = () => {
         
       </div>
       <div className="text-center mt-3">
-        <span className="consult">Looking for more power? Check our DMCA <Link to="" className=" fw-bold">Ignored OffShore Dedicated Server </Link>Plans</span>
+        <span className="consult">Looking for more power? Check our DMCA Ignored Offshore Dedicated Server Plans <Link to="" className=" fw-bold">Dedicated Server</Link>Plans</span>
       </div>
     </div>
     </div>
@@ -98,4 +96,4 @@ const OffshoreVpsPlan = () => {
 };
 
 
-export default OffshoreVpsPlan;
+export default AdultHostingPlans;
