@@ -10,7 +10,7 @@ const FAQsSection = ({ faqs }) => {
   };
 
   return (
-    <div className='testimonial p-5'>
+    <div className='testimonial py-5'>
       <div className='container'>
         <div className='row'>
           <div className='col-md-5 position-relative'>
@@ -32,7 +32,7 @@ const FAQsSection = ({ faqs }) => {
                     </span>
                   </div>
                   {activeIndex === index && (
-                    <div className="accordion-body">
+                    <div className="accordion-body faq-answer">
                       <p>{faq.answer}</p>
                     </div>
                   )}

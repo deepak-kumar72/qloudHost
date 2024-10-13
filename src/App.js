@@ -16,6 +16,7 @@ import DmcaIgnoredVps from './components/dmcaIgnoredVps/dmcaIgnoredVps';
 import NeitherLandOffshoreVps from './components/neitherlandOffshoreVps/neitherLandOffshoreVps';
 import HighPerformanceVps from './components/highPerformanceVps/highPerformanceVps';
 import DmcaDedicatedServer from './components/dmcaDedicatedServers/dmcaDedicatedServer';
+import RussiaDedicatedServer from './components/russiaDedicatedServer/russiaDedicatedServer';
 
 function App() {
   return (
@@ -25,10 +26,10 @@ function App() {
    <div className="main-body">
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route path="/offshoreVps" element={<OffshoreVps/>} />
-          <Route path="/dedicated-Server" element={<DedicatedServer/>}/>
+          <Route path="/offshore-vps-hosting/" element={<OffshoreVps/>} />
+          <Route path="/offshore-dedicated-servers/" element={<DedicatedServer/>}/>
           <Route path="/streaming-server" element={<Streaming/>}/>
-          <Route path="/offshore-web-hosting" element={<OffShorewebHosting/>}/>
+          <Route path="/offshore-web-hosting/" element={<OffShorewebHosting/>}/>
           <Route path="/offshore-wordpress-hosting/" element={<OffshoreWordPressHosting/>}/>
           <Route path='/offshore-video-hosting/' element={<OffshoreVideoHosting/>}/>
           <Route path='/adult-hosting/' element={<AdultHosting/>}/>
@@ -36,6 +37,7 @@ function App() {
           <Route path='/offshore-vps-hosting/netherlands/' element={<NeitherLandOffshoreVps/>}/>
           <Route path='/high-performance-vps-hosting/' element={<HighPerformanceVps/>}/>
           <Route path='/dmca-ignored-dedicated-servers/' element={<DmcaDedicatedServer/>}/>
+          <Route path='/offshore-dedicated-servers/russia/' element={<RussiaDedicatedServer/>}/>
         </Routes>
       </div>
    <ChatNow/>

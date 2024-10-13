@@ -6,7 +6,7 @@ const  qloudFeature =[
         id: 1,
         imgsrc: featureImg,
         title: "Data Privacy",
-        description: "Your website is completely safe in our  hands because we understand the  value of your privacy. That’s why we use smart features to ensure it.",
+        description: "Your website is completely safe in our hands because we understand the value of your privacy. That’s why we use smart features to ensure that you are untraceable on the internet.",
     },
     {
         id: 2,

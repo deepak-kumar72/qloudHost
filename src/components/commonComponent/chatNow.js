@@ -8,12 +8,12 @@ const ChatNow = () => {
     <div className='p-5'>
     <div className='container'>
         <div className='row'>
-            <div className='col-6 chat-sec'>
+            <div className='col-md-6 chat-sec'>
             <h3>Get your hosting now!</h3>
             <p>Start your online journey with Best DMCA Ignored Hosting Company today!</p>
 
             </div>
-            <div className='col-6 m-auto text-center'>
+            <div className='col-md-6 m-auto text-center'>
                 <button className='chat-now-btn start-now-btn me-3 '><Link to="">
                     Chat Now <FaArrowRight className="ms-2" />
                 </Link>

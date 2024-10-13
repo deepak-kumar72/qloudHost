@@ -14,10 +14,10 @@ const Footer = () => {
     {
       title: "Our Services",
       links: [
-        { name: "Offshore Web Hosting", url: "/offshore-web-hosting" },
+        { name: "Offshore Web Hosting", url: "/offshore-web-hosting/" },
         { name: "Offshore WordPress Hosting", url: "/offshore-wordpress-hosting/" },
-        { name: "Offshore VPS Hosting", url: "/offshoreVps" },
-        { name: "Offshore Dedicated Server", url: "/dedicated-Server" },
+        { name: "Offshore VPS Hosting", url: "/offshore-vps-hosting/" },
+        { name: "Offshore Dedicated Server", url: "/offshore-dedicated-servers/" },
         { name: "Offshore Video Hosting", url: "/offshore-video-hosting/" },
         { name: "Offshore Streaming Server", url: "/streaming-server" },
         { name: "Adult Hosting", url: "/adult-hosting/" },
@@ -25,7 +25,7 @@ const Footer = () => {
         { name: "Netherlands Offshore VPS", url: "/offshore-vps-hosting/netherlands/" },
         { name: "High Performance VPS", url: "/high-performance-vps-hosting/" },
         { name: "DMCA Ignored Dedicated Servers", url: "/dmca-ignored-dedicated-servers/" },
-        { name: "Russia Offshore Server", url: "" },
+        { name: "Russia Offshore Server", url: "/offshore-dedicated-servers/russia/" },
 
       ],
     },

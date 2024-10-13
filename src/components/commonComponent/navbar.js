@@ -100,12 +100,6 @@ const Navbar = () => {
 
                 <li className="nav-item pe-4">
                   <Link className="nav-link" to="#">
-                    Cloud Server
-                  </Link>
-                </li>
-
-                <li className="nav-item pe-4">
-                  <Link className="nav-link" to="#">
                     Affiliate
                   </Link>
                 </li>

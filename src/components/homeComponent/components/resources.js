@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const hostingPlans = [
   {
@@ -9,6 +10,7 @@ const hostingPlans = [
     period: '/month',
     description: 'Best & Cheap offshore hosting for bloggers, businesses, and Startups site.',
     buttonText: 'Get started for free',
+    url: "/offshore-web-hosting/",
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const hostingPlans = [
     period: '/month',
     description: 'Best & Cheap offshore hosting for bloggers, businesses, and Startups site.',
     buttonText: 'Get started for free',
+    url: "/offshore-wordpress-hosting/",
   },
   {
     id: 3,
@@ -25,6 +28,7 @@ const hostingPlans = [
     period: '/month',
     description: 'Best & Cheap offshore hosting for bloggers, businesses, and Startups site.',
     buttonText: 'Get started for free',
+    url: "/offshore-vps-hosting/",
   },
 ];
 
@@ -48,7 +52,10 @@ const Resources = () => {
                 </h3>
                 <p className="text-muted mb-4">One time purchase</p>
                 <p className='plan-resource-desc mb-4'>{plan.description}</p>
-                <button className="btn w-100 start-free-btn fw-blod">{plan.buttonText}</button>
+                <Link 
+          to={plan.url}> <button className="btn w-100 start-free-btn fw-blod">
+                
+        {plan.buttonText}</button></Link>
               </div>
             </div>
           </div>

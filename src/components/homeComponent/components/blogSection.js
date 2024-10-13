@@ -43,10 +43,9 @@ const BlogSection = () => {
   return (
     <div className="container blog-section my-5">
       <header className="text-center mb-5">
-        <h2 className='mb-3 m-auto'>Resources and Insights</h2>
+        <h2 className='mb-3 m-auto'>Blog & Support Section</h2>
         <p className='w-75 m-auto mb-3 sub-heading text-center'>
-          Experience our superior support, robust infrastructure, and unmatched
-          reliability. We are the trusted choice for DMCA ignored critical websites and apps.
+        Facing issues with your website? Get precise solutions from our extensive knowledge base.
         </p>
       </header>
 

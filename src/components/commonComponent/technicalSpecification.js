@@ -8,14 +8,20 @@ const TechnicalSpecification = () => {
     'Softaculous Premium',
     'CloudLinux OS',
     'GD Graphics Library',
-    'DirectAdmin Control Panel',
-    'Softaculous Premium',
-    'CloudLinux OS',
-    'GD Graphics Library',
-  
+    'LiteSpeed Web Server',
+
+    'Zend Guard Loader',
+    'ionCube PHP Loader',
+    'Subversion',
+    'DNS Zone Editor',
+    'Mail Exchange (MX) Editor',
+    'Secure Shell (SSH) Access',
+    'PHP Extension Manager',
+    'Free Managed Migration',
+  '  Unlimited DirectAdmin Support',
+    '24/7/365 Support Coverage',
+   ' Proactive Host Monitoring'
   ];
-
-
 
   // Duplicate the items array to create the infinite loop illusion
   const duplicatedItems = [...items, ...items];

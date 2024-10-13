@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./common.css";
 import { FaArrowRight } from "react-icons/fa";
 import { LuShieldCheck } from "react-icons/lu";
-import heroFrame from '../../assets/Frame/heroFrame.png';
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 const HeroComponent = ({
   title,
@@ -13,6 +13,7 @@ const HeroComponent = ({
   imageSrc,
   button1Link,
   button2Link,
+  options=[], // New prop for the options
 }) => {
   return (
     <div className="hero-container mt-50 mb-50">
@@ -22,25 +23,40 @@ const HeroComponent = ({
             <div className="hero-content">
               <h1 className="mb-4">{title}</h1>
               <p className="mb-4">{description}</p>
+              <div className="hero-options-container mb-4">
+                {options.map((option, index) => (
+                  <div key={index} className="option-item d-flex align-items-center mb-2">
+                  <FaRegCircleCheck className="me-2 option-icon" />
+                    <span>{option}</span>
+                  </div>
+                ))}
+              </div>
               <div className="hero-buttons mb-4">
-                <button className="btn-primary start-now-btn me-3">
-                  <Link to={button1Link} className="btn-primary">
+                <a href={button1Link} className="btn-primary">
+                  <button className="btn-primary start-now-btn me-3">
                     {button1Text}
-                    <FaArrowRight className="ms-4"/>
-                  </Link>
-                </button>
+                    <FaArrowRight className="ms-4" />
+                  </button>
+                </a>
                 <button className="btn-secondary explore-btn">
                   <Link to={button2Link} className="btn-secondary">
                     {button2Text}
                   </Link>
                 </button>
               </div>
-              <div className="money-back-text"><LuShieldCheck className="me-2"/>14-Day Money-Back Guarantee</div>
+              <div className="money-back-text">
+                <LuShieldCheck className="me-2" />
+                14-Day Money-Back Guarantee
+              </div>
             </div>
           </div>
           <div className="col-md-6 ">
             <div className="hero-image-container">
-            <img src={heroFrame} alt="frame" className="hero-frame position-absolute"/>
+              <img
+                src={imageSrc}
+                alt="frame"
+                className="hero-frame position-absolute"
+              />
               <div className="features"></div>
             </div>
           </div>
