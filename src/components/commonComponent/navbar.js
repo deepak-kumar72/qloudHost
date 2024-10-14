@@ -67,7 +67,7 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li className="nav-item pe-4">
-                  <Link className="nav-link active" aria-current="page" to="/offshoreVps">
+                  <Link className="nav-link active" aria-current="page" to="/offshore-vps-hosting/">
                     Offshore VPS
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ const Navbar = () => {
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="/dedicated-Server">
+                      <Link className="dropdown-item" to="/offshore-dedicated-servers/">
                         Dedicated Server
                       </Link>
                     </li>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item pe-4">
-                  <Link className="nav-link" to="#">
+                  <Link className="nav-link" to="/affiliates/">
                     Affiliate
                   </Link>
                 </li>

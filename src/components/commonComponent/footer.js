@@ -54,9 +54,9 @@ const Footer = () => {
     {
       title: "Policies",
       links: [
-        { name: "Privacy Policy", url: "" },
-        { name: "Terms of Service", url: "" },
-        { name: "Fair Usage Policy", url: "" },
+        { name: "Privacy Policy", url: "/privacy-policy/" },
+        { name: "Terms of Service", url: "/terms/" },
+        { name: "Fair Usage Policy", url: "/fair-usage-policy/" },
         { name: "Refund Policy", url: "" },
       ],
     },

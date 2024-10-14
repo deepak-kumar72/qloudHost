@@ -78,7 +78,7 @@ const faqsData = [
   },
   {
     question: "What Are The Benefits Of DMCA Ignored Hosting?​​",
-    answer: "DMCA ignored hosting may be the right choice for you if you’re looking for a reliable host. This type of hosting service can offer a variety of benefits that can help protect your website and ensure smooth operation. DMCA ignored VPS has one of its main benefits: it offers greater privacy and security for your site. These providers aren’t bound by the Digital Millennium Copyright Act, which means they have more flexibility and freedom in hosting content. This allows you to host any content without fear of legal consequences. To understand more in detail, refer this blogpost: https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/"
+    answer: `DMCA ignored hosting may be the right choice for you if you’re looking for a reliable host. This type of hosting service can offer a variety of benefits that can help protect your website and ensure smooth operation. DMCA ignored VPS has one of its main benefits: it offers greater privacy and security for your site. These providers aren’t bound by the Digital Millennium Copyright Act, which means they have more flexibility and freedom in hosting content. This allows you to host any content without fear of legal consequences. To understand more in detail, refer this blogpost: <a href="https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`
   },
   {
     question: "How do you handle DMCA complaints?​",

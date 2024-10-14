@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import TopHeader from './components/commonComponent/topHeader';
 import Navbar from './components/commonComponent/navbar';
 import Footer from './components/commonComponent/footer';
@@ -17,13 +17,31 @@ import NeitherLandOffshoreVps from './components/neitherlandOffshoreVps/neitherL
 import HighPerformanceVps from './components/highPerformanceVps/highPerformanceVps';
 import DmcaDedicatedServer from './components/dmcaDedicatedServers/dmcaDedicatedServer';
 import RussiaDedicatedServer from './components/russiaDedicatedServer/russiaDedicatedServer';
+import NetherlandStreamingServer from './components/netherlandStreamingServer/netherlandStreamingServer';
+import DedicatedServerNetherland from './components/dedicatedServerNetherland.js/dedicatedServerNetherland';
+import WindowsRdp from './components/windowsRdp/windowsRdp';
+import Coupons from './components/coupons/coupons';
+import Affiliate from './components/affiliate/affiliate';
+import PrivacyPolicy from './components/privacyPolicy/privacyPolicy';
+import Terms from './components/terms/terms';
+import FairUsage from './components/fairUsage/fairUsage';
 
 function App() {
   return (
-   <Router>
-   <TopHeader/>
-   <Navbar/>
-   <div className="main-body">
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <>
+      <TopHeader/>
+      <Navbar/>
+      <div className="main-body">
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route path="/offshore-vps-hosting/" element={<OffshoreVps/>} />
@@ -38,11 +56,20 @@ function App() {
           <Route path='/high-performance-vps-hosting/' element={<HighPerformanceVps/>}/>
           <Route path='/dmca-ignored-dedicated-servers/' element={<DmcaDedicatedServer/>}/>
           <Route path='/offshore-dedicated-servers/russia/' element={<RussiaDedicatedServer/>}/>
+          <Route path='/offshore-streaming-server/netherlands/' element={<NetherlandStreamingServer/>}/>
+          <Route path='/offshore-dedicated-servers/netherlands/' element={<DedicatedServerNetherland/>}/>
+          <Route path='/offshore-vps-hosting/windows-rdp/' element={<WindowsRdp/>}/>
+          <Route path='/coupons/' element={<Coupons/>}/>
+          <Route path='/affiliates/' element={<Affiliate/>}/>
+          <Route path='/privacy-policy/' element={<PrivacyPolicy/>}/>
+          <Route path='/terms/' element={<Terms/>}/>
+          <Route path='/fair-usage-policy/' element={<FairUsage/>}/>
         </Routes>
       </div>
-   <ChatNow/>
-   <Footer/>
-   </Router>
+      {/* Hide ChatNow component if the current path is '/coupons/' */}
+      {location.pathname !== '/coupons/' && location.pathname !== '/privacy-policy/'&& location.pathname !== '/terms/' &&  <ChatNow/>}
+      <Footer/>
+    </>
   );
 }
 
