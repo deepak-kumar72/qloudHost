@@ -8,8 +8,9 @@ const OffShoreHostingPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-        <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-        <p className="text-center mb-5 planHead-con m-auto">Get award-winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at the cheapest price in the market.</p>
+        <h2 className="text-center m-auto mb-3">Best Cheap Offshore Web Hosting Plans</h2>
+        <p className="text-center mb-5 planHead-con m-auto">Browse through our offshore Web Hosting Packages designed for simplicity, High Performance and top-notch security.
+          Get started with a plan that suits your requirements the best!</p>
 
         {/* Pill Navigation */}
         <div className="row nav nav-pills mb-5 plan-group-btn" id="pills-tab" role="tablist">
@@ -45,7 +46,7 @@ const OffShoreHostingPlan = () => {
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className="mb-2 features">
-                            <FaCheck className="check" />{feature}
+                              <FaCheck className="check" />{feature}
                             </li>
                           ))}
                         </ul>
@@ -71,7 +72,7 @@ const OffShoreHostingPlan = () => {
                         <div className="popular-badge qloud-popular-badge position-absolute">Popular</div>
                       )}
                       <div className="">
-                      <h5 className="card-title text-center mb-3">{plan.name}</h5>
+                        <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
@@ -79,7 +80,7 @@ const OffShoreHostingPlan = () => {
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className=" features">
-                            <FaCheck className="check" /> {feature}
+                              <FaCheck className="check" /> {feature}
                             </li>
                           ))}
                         </ul>
@@ -105,7 +106,7 @@ const OffShoreHostingPlan = () => {
                         <div className="popular-badge qloud-popular-badge position-absolute">Popular</div>
                       )}
                       <div className="">
-                      <h5 className="card-title text-center mb-3">{plan.name}</h5>
+                        <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
@@ -113,7 +114,7 @@ const OffShoreHostingPlan = () => {
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className=" features">
-                            <FaCheck className="check" />{feature}
+                              <FaCheck className="check" />{feature}
                             </li>
                           ))}
                         </ul>

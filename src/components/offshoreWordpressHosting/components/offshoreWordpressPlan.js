@@ -24,7 +24,7 @@ const plansData = [
     ],
   },
   {
-    id:2,
+    id: 2,
     title: "WordPress Business",
     description: "A growth businesses with more room to play.",
     price: "$6.96",
@@ -68,51 +68,51 @@ const plansData = [
 const OffWordpressPlan = () => {
   return (
     <div className="hosting-plan mb-5">
-    <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Powerfull Offshore WordPress Hosting Plans</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Grow your business with hassle-free Cheap Offshore WordPress Hosting, reliable performance.
-      Our WordPress-optimized hosting is designed to scale as your website grows.</p>
-      
-      <div className="row home-plan justify-content-center">
-        {plansData.map((plan) => (
-          <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
-          <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
-  <div className="card-body plan-body position-relative">
-    {plan.popular && (
-      <div className="popular-badge position-absolute">Popular</div>
-    )}
-    <div className="">
-      <h5 className="card-title mb-3">{plan.title}
-      </h5>
-      <p className="card-text plan-desc mb-2">{plan.description}</p>
-      <h3 className="card-price">{plan.price} <span className="price-unit">/month</span></h3>
-      <p className="save">{plan.save}</p>
-      <p className="save-price mb-4">Yearly at <del>{plan.originalPrice}</del></p>
-      <ul className="list-unstyled mb-4">
-        {plan.features.map((feature, index) => (
-          <li key={index} className="mb-2 features wordpress-features">
-            <i className="bi bi-check-circle-fill"></i><FaCheck className="check"/> {feature}
-          </li>
-        ))}
-      </ul>
-      <button className="plan-btn">
-        <Link 
-          to={plan.url} 
-        >
-          Get Started
-        </Link>
-      </button>
-    </div>
-  </div>
-</div>
-</div>
-        ))}
-        
+      <div className="container plan-sec mt-5">
+        <h2 className="text-center m-auto mb-3">Powerfull Offshore WordPress Hosting Plans</h2>
+        <p className="text-center mb-5 planHead-con m-auto">Grow your business with hassle-free Cheap Offshore WordPress Hosting, reliable performance.
+          Our WordPress-optimized hosting is designed to scale as your website grows.</p>
+
+        <div className="row home-plan justify-content-center">
+          {plansData.map((plan) => (
+            <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
+              <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
+                <div className="card-body plan-body position-relative">
+                  {plan.popular && (
+                    <div className="popular-badge position-absolute">Popular</div>
+                  )}
+                  <div className="">
+                    <h5 className="card-title mb-3">{plan.title}
+                    </h5>
+                    <p className="card-text plan-desc mb-2">{plan.description}</p>
+                    <h3 className="card-price">{plan.price} <span className="price-unit">/month</span></h3>
+                    <p className="save">{plan.save}</p>
+                    <p className="save-price mb-4">Yearly at <del>{plan.originalPrice}</del></p>
+                    <ul className="list-unstyled mb-4">
+                      {plan.features.map((feature, index) => (
+                        <li key={index} className="mb-2 features wordpress-features">
+                          <i className="bi bi-check-circle-fill"></i><FaCheck className="check" /> {feature}
+                        </li>
+                      ))}
+                    </ul>
+                    <button className="plan-btn">
+                      <Link
+                        to={plan.url}
+                      >
+                        Get Started
+                      </Link>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+
+        </div>
+        <div className="text-center mt-3">
+          <span className="consult">Looking to upgrade resources? Check our Offshore VPS Hosting Plans or Looking for more power? Check out our <Link to="" className=" fw-bold">Offshore Dedicated Servers →</Link></span>
+        </div>
       </div>
-      <div className="text-center mt-3">
-        <span className="consult">Looking to upgrade resources? Check our Offshore VPS Hosting Plans or Looking for more power? Check out our <Link to="" className=" fw-bold">Offshore Dedicated Servers →</Link></span>
-      </div>
-    </div>
     </div>
   );
 };
