@@ -14,45 +14,51 @@ import BlogSection from "./components/blogSection";
 import Testimonials from "../commonComponent/testimonial";
 
 const options = [
-  "NVMe SSD Drive", 
-  "Privacy Protected", 
-  "Free Migration", 
+  "NVMe SSD Drive",
+  "Privacy Protected",
+  "Free Migration",
   "24/7 Assistance"
 ];
 
 
 const features = [
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "Hosted in Netherlands",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
     link: "/read-more",
   },
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "Fastest SSD Servers",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
     link: "/read-more",
   },
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "Free Website Migration",
     description: "If you already have a website, let us make your life easier by transferring it for free!",
     link: "/read-more",
   },
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "Money-Back Guarantee",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
     link: "/read-more",
   },
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "99.9% Uptime Commitment",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
     link: "/read-more",
   },
-  {img: images.ssd,
+  {
+    img: images.ssd,
     title: "Hosted in Neitherlands",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
     link: "/read-more",
   },
-  
+
 ];
 
 const faqsData = [
@@ -141,24 +147,24 @@ that you can manage your website files with full control!"
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
           { name: 'DirectAdmin', img: images.directAdmin },
-          { name: 'CyberPanel', img: images.cyberPanel},
+          { name: 'CyberPanel', img: images.cyberPanel },
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'CentOS', img: images.centos },
           { name: 'Debian', img: images.centos },
         ]}
       />
-      <QlodHostServices 
-      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
-      features={features} />
+      <QlodHostServices
+        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
+        content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+        features={features} />
       <Services servicesData={servicesData1} />;
-      <BlogSection/>
-      <Resources/>
-      <Testimonials/>
+      <BlogSection />
+      <Resources />
+      <Testimonials />
       <FAQsSection
-        faqs={faqsData} 
+        faqs={faqsData}
       />
-  
+
     </div>
   );
 };

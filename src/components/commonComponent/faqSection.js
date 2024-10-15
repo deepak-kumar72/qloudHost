@@ -33,7 +33,7 @@ const FAQsSection = ({ faqs }) => {
                   </div>
                   {activeIndex === index && (
                     <div className="accordion-body faq-answer">
-                      <p>{faq.answer}</p>
+                      <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
                     </div>
                   )}
                 </div>
