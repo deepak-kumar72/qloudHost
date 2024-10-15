@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../privacyPolicy/heroSection'
+import FairUsagePolicies from './fairUsagePolicies'
 
 const FairUsage = () => {
   return (
@@ -10,6 +11,7 @@ const FairUsage = () => {
         description=""
         imageSrc=""      
       />
+      <FairUsagePolicies/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const fairUsagePolicies = () => {
+const FairUsagePolicies = () => {
   return (
     <div className="container mb-50">
       <div className="content-sec m-auto">
@@ -64,4 +64,4 @@ const fairUsagePolicies = () => {
   );
 };
 
-export default fairUsagePolicies;
+export default FairUsagePolicies;
