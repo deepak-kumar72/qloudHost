@@ -43,7 +43,7 @@ const Footer = () => {
     {
       title: "My Account",
       links: [
-        { name: "Become an affilliate", url: "" },
+        { name: "Become an affilliate", url: "https://my.qloudhost.com/register.php" },
         { name: "Affiliate Login", url: "" },
         
       ],
@@ -54,10 +54,10 @@ const Footer = () => {
     {
       title: "Policies",
       links: [
-        { name: "Privacy Policy", url: "" },
-        { name: "Terms of Service", url: "" },
-        { name: "Fair Usage Policy", url: "" },
-        { name: "Refund Policy", url: "" },
+        { name: "Privacy Policy", url: "/privacy-policy/" },
+        { name: "Terms of Service", url: "/terms/" },
+        { name: "Fair Usage Policy", url: "/fair-usage-policy/" },
+        { name: "Refund Policy", url: "/refund/" },
       ],
     },
   ];
@@ -66,13 +66,13 @@ const Footer = () => {
     {
       title: "Company",
       links: [
-        { name: "About QloudHost", url: "" },
-        { name: "Official Blog", url: "" },
-        { name: "Contact Us", url: "" },
+        { name: "About QloudHost", url: "/about/" },
+        { name: "Official Blog", url: "https://qloudhost.com/blog/" },
+        { name: "Contact Us", url: "/contact-us/" },
         { name: "Sitemap", url: "" },
-        { name: "Abuse Report", url: "" },
-        { name: "Knowledge Base", url: "" },
-        { name: "Speed Test", url: "" },
+        { name: "Abuse Report", url: "/report-abuse/" },
+        { name: "Knowledge Base", url: "https://qloudhost.com/blog/knowledgebase/" },
+        { name: "Speed Test", url: "https://qloudhost.com/speed-test" },
       ],
     },
   ];

@@ -339,6 +339,83 @@ color: #fff;
   padding: 20px 0px 0px;
 }
 
+.custom-sol-btn{
+  color: #f6355a;
+}
+
+.os-opt{
+  border: 1px solid #f6355a;
+  background-color: #fff;
+  color: #f6355a;
+  padding: 20px;
+  border-radius: 10px;
+}
+.paid-method-banner{
+background: #FFF7F7;
+}
+
+.check-symbol{
+  font-size: 35px;
+}
+
+.method-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hero-subTitle{
+  font-size: 15px;
+  font-weight: 700;
+  color: #616365;
+
+}
+
+.content-sec{
+  width: 90%;
+}
+
+.content-sec p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #616365;
+  line-height: 22px;
+}
+
+.content-sec-list{
+  font-size: 16px;
+  font-weight: 400;
+  color: #616365;
+  line-height: 22px;
+}
+
+.content-sec h4{
+  font-size: 18px;
+  font-weight: 700;
+  color:#000;
+  margin: 20px 0px;
+}
+
+.content-sec h5{
+  font-size: 16px;
+  font-weight: 700;
+  color:#000;
+  margin: 20px 0px;
+}
+.about-sec h4{
+  font-size: 18px;
+  font-weight: 700;
+  color:#000;
+  margin: 20px 0px;
+}
+
+.about-sec p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #616365;
+  line-height: 22px;
+}
+
+
 @media(max-width:1199px){
   .popular-badge{
     left: 70px !important;
@@ -445,6 +522,12 @@ color: #fff;
 .service-text {
   font-size: 14px;
   line-height: 20px;
+}
+.content-sec {
+  width: 100%;
+}
+.hero-subTitle {
+  text-align: center;
 }
 }
 

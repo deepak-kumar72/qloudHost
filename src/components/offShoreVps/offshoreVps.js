@@ -10,7 +10,6 @@ import PrivacyHardwarePage from "../offShoreVps/components/privacyHardwarePage";
 import FeaturesYouGet from "./components/featuresYouGet";
 import Services from "../commonComponent/services";
 import FAQsSection from "../commonComponent/faqSection";
-import ChatNow from "../commonComponent/chatNow";
 
 const features = [
     {img: images.ssd,
@@ -125,7 +124,6 @@ const OffshoreVps = () => {
       <FAQsSection
         faqs={faqsData} 
       />
-      <ChatNow/>
     </div>
   );
 };

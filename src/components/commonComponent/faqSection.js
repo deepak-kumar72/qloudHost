@@ -13,7 +13,7 @@ const FAQsSection = ({ faqs }) => {
     <div className='testimonial py-5'>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-5 position-relative'>
+          <div className='col-md-5 position-relative text-center m-auto'>
             <h2 className="text-center mb-3 m-auto faq-heading">Frequently Asked Questions</h2>
             <div className='faq-header circle-3 position-absolute'></div>
             <div className='faq-header circle-2'></div>
@@ -33,7 +33,10 @@ const FAQsSection = ({ faqs }) => {
                   </div>
                   {activeIndex === index && (
                     <div className="accordion-body faq-answer">
-                      <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
+
+
+                      <p dangerouslySetInnerHTML={{ __html: faq.answer }} ></p>
+
                     </div>
                   )}
                 </div>
