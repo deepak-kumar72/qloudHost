@@ -2,15 +2,15 @@ const dedicatedAdultPlanData = [
     {
       id: 1,
       name: 'Ryzen 9 3900X (12c/24t)',
-      price: '$3.50',
-      yearlyPrice: "$159.99/mo",
-      save: "SAVE 30%",
+      price: '$129.00',
+      yearlyPrice: "$159.00/mo",
+      save: "Save19%",
       features: ['3.8 GHz', '64 GB DDR4', '960 GB NVMe SSD', '50 TB Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
-      url: ""
+      url: "https://my.qloudhost.com/store/dedicated/amd-ryzen-9-3900x12c24t"
     },
     {
       id: 2,
-      name: 'Ryzen 9 3900X (12c/24t)',
+      name: 'AMD Ryzen 9 5900X(12c/24t)',
       price: '$3.50',
       yearlyPrice: "$159.99/mo",
       save: "SAVE 30%",

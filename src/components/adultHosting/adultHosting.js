@@ -12,6 +12,13 @@ import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
 import AdultHostingFeatureElement from './components/AdultHostingFeatureElement';
 
+const options = [
+  "Dedicated IP",
+  "Weekly Backup",
+  "Netherlands Location",
+  "24/7 Expert Support",
+];
+
 const features = [
     {img: images.ssd,
       title: "Hosted in Netherlands",
@@ -76,6 +83,7 @@ const AdultHosting = () => {
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
+         options={options} // Pass the options to the HeroComponent
       />
       <AdultHostingPlans/>
       <DedicatedAdultPlan/>
