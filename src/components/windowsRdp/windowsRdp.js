@@ -11,61 +11,73 @@ import Testimonials from '../commonComponent/testimonial';
 import RdpFeatureBanner from './components/rdpfeaturebanner';
 
 const options = [
-    "NVMe SSD Drive", 
-    "Privacy Protected", 
-    "Free Migration", 
-    "24/7 Assistance"
+    "Netherlands Location", 
+    "Full Admin Access", 
+    "Strong Infrastructure", 
+    "Instant Setup"
   ];
 
   const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "100% Privacy Protection",
+      description:"Get impenetrable security and full data privacy with QloudHost offshore Windows VPS hosting. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Fair & Affordable",
+      description:"QloudHost provides you with the most affordable DMCA Ignored Windows VPS plans to run your offshore servers because we understand the value of your hard-earned money. Our plans focus on providing you with well-balanced features to exclude unnecessary things and decrease costs.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "Full Root Access",
+      description: "Get root-level control of your windows server to customize it according to your needs and requirements. Isn’t that amazing? But how will this feature benefit your website? Simple: With root access, you are allowed to create, modify, customize, or delete files on your website without seeking our permission.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "99.9% uptime guaranteed.",
+      description: "Our first priority is to provide you with quality services, so all our plans come with a guaranteed uptime of 99.99%. So, let us take care of your website and ensure its availability on the Internet.",
+      link: "",
     },
     {img: images.ssd,
       title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      description: "Had a really bad experience with your previous Windows VPS service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
-    },
-    {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
-    },
-    {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
+      title: "Weekly Backup",
+      description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple: We provide an alternate-day backup for 7 Days for VPS. A weekly backup (1 snapshot per week) is available, and it will charge extra.",
+      link: "",
     },
     
   ];
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "What are the benefits of Offshore Windows VPS hosting?",
+      answer: "The benefits of Offshore Windows VPS Hosting services are that you get DMCA–ignored servers with enhanced privacy, you can host content without any copyright issue, get Full root admin access and incredible scalability as well."
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Will the Windows License be activated in my VPS?",
+      answer: "Absolutely Yes! The Windows License will be activated soon in your virtual server as soon as the payment is processed and VPS is deployed. "
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Can I host unlimited sites with the Offshore DMCA Ignored Windows VPS plan?",
+      answer: "Yes! You can host unlimited websites with the Offshore DMCA ignored Windows VPS plan. "
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Do you offer Microsoft RDP?",
+      answer: "Absolutely Yes! We do offer Microsoft RDP plans letting the users remotely access the servers and make configurations without any hassle."
+    },
+    {
+      question: "Will I get a Dedicated IP and full admin access?",
+      answer: "Yes! Along with dedicated RAM and NVMe storage drive, users even get a dedicated IP address ensuring an isolated hosting environment plus Full root admin access for making configuration as per the need. "
+    },
+    {
+      question: "Can I downgrade or upgrade my offshore VPS plan for Windows any time?",
+      answer: "Yes! Our offshore Windows VPS plans are highly scalable. You can upgrade or downgrade the web resources any time to meet the growing needs of your websites. "
+    },
+    {
+      question: "I bought your offshore Windows VPS Hosting, when will they be activated?",
+      answer: "Great! Your Offshore Windows VPS hosting service gets activated soon after the payment is done. "
     },
   ];
 
@@ -88,8 +100,8 @@ const WindowsRdp = () => {
       <TechnicalSpecification/>
       <AvailableWos/>
       <QlodHostServices
-        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+        heading="What You Get with Your Offshore Windows VPS Hosting"
+      content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence."
       features={features} 
       />
       <RdpFeatureBanner/>

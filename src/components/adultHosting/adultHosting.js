@@ -12,56 +12,84 @@ import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
 import AdultHostingFeatureElement from './components/AdultHostingFeatureElement';
 
+const options = [
+  "Dedicated IP",
+  "Weekly Backup",
+  "Netherlands Location",
+  "24/7 Expert Support",
+];
+
 const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "100% Privacy Protection",
+      description:"Get impenetrable security and full data privacy with QloudHost Adult hosting servers. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Fair & Affordable",
+      description:"QloudHost provides you the most affordable Offshore DMCA Ignored Adult Hosting plans to run your Adult Websites because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "Full Root Access",
+      description:"Get root level control to your server to customize it according to your needs and requirements. Isn’t it amazing? But how will this feature benefit your website? Simple, with root access, you are allowed to create, modify, customize or delete files of your website without seeking our permission.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "99.99% uptime guaranteed.",
+      description:"Our first priority is to provide you services with quality that’s why our all plans come with a guaranteed uptime of 99.99%. So let your website into our safe hands and we will ensure the availability of your website on the internet.",
+      link: "",
     },
     {img: images.ssd,
       title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      description:"Had a really bad experience with your previous service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Weekly Backup",
+      description:"QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple, For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
+      link: "",
     },
-    {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
-    },
-    {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
-    },
+    
+    
     
   ];
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "What is Adult Web Hosting and it's benefits ?",
+      answer: `Adult Web Hosting refers to a specialized hosting service designed to cater to the unique needs of websites that contain adult content. It provides a secure and optimized environment for hosting explicit material, ensuring compliance with legal regulations and industry standards.
+<br>
+The benefits of Adult Web Hosting include- Enhanced Performance, Improved Security, Content Flexibility and Expert Support
+<br>
+Experience the advantages of Adult Web Hosting with QloudHost, where we combine reliability, performance, and privacy to empower your adult website’s success.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Which Adult server will suit my project best?",
+      answer: `At Qloudhost, we understand the importance of choosing the right Adult Web Hosting server for your project. Consider factors like performance, scalability, operating system compatibility, control panel options, network connectivity, security measures, and customer support. 
+<br>
+Our team is here to guide you in finding the ideal VPS server that meets your project’s requirements.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Can I upgrade my Adult Web Hosting plan later?",
+      answer: `Yes! At QloudHost, we understand that your hosting needs may evolve over time. That’s why we provide the flexibility to upgrade your Adult Web Hosting plan whenever you require additional resources or features.
+<br>
+Whether you need more storage, increased bandwidth, or enhanced performance, our scalable hosting solutions allow for seamless upgrades.
+<br>
+Simply get in touch with our support team, and they will assist you in upgrading your plan to accommodate your growing needs.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Do I need technical knowledge to benefit from QloudHost Adult Web Hosting Plans?",
+      answer: `No, you do not necessarily need technical knowledge to benefit from QloudHost Adult hosting. QloudHost provides a user-friendly control panel with it’s VPS hosting Plans, which means you can handle a maximum number of tasks for yourself also.
+<br>
+However, it can be helpful to have some technical knowledge or experience in managing servers, especially if you want to customize your VPS hosting environment or troubleshoot any issues that may arise. In any case, QloudHost offers support and resources to assist you with any technical concerns.`
     },
+    {
+      question: "Can I host multiple websites within one Adult VPS Hosting plan?",
+      answer: `Absolutely! With our Adult VPS Hosting plan, you can effortlessly host multiple websites under one roof. 
+<br>
+Enjoy the convenience and flexibility of managing all your adult websites within a single hosting solution`
+    },
+   
   ];
 
 const AdultHosting = () => {
@@ -76,6 +104,7 @@ const AdultHosting = () => {
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
+         options={options} // Pass the options to the HeroComponent
       />
       <AdultHostingPlans/>
       <DedicatedAdultPlan/>
@@ -101,8 +130,8 @@ const AdultHosting = () => {
       />
       <AdultHostingFeatureElement/>
       <QlodHostServices
-      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+      heading="Why Choose QloudHost Adult Web Hosting?"
+      content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
       features={features} />
       <Testimonials/>
       <FAQsSection

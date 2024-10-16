@@ -7,39 +7,39 @@ const plansData = [
   {
     id: 1,
     name: 'VPS ENTRY',
-    price: '18.99',
-    yearlyPrice: "$4.99/mo",
-    save: "SAVE 30%",
-    features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-    url: ""
+    price: '$18.99',
+    yearlyPrice: "$21.99/mo",
+    save: "Save14%",
+    features: ['2 CPU', '4 GB RAM', '50 GB NVMe SSD', '1 TB Bandwidth', 'Windows 2019/22', 'Hosted in Netherlands'],
+    url: "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan"
   },
   {
     id: 2,
     name: 'VPS VALUE',
-    price: '46.99',
-    yearlyPrice: "$4.99/mo",
-    save: "SAVE 30%",
-    features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-    url: "",
+    price: '$46.99',
+    yearlyPrice: "$54.99/mo",
+    save: "Save14%",
+    features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Windows 2019/22', 'Hosted in Netherlands'],
+    url: "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan",
     popular: true
   },
   {
     id: 3,
     name: 'VPS BUSINESS',
-    price: '55.99',
-    yearlyPrice: "$4.99/mo",
-    save: "SAVE 30%",
-    features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-    url: "",
+    price: '$55.99',
+    yearlyPrice: " $65.99/mo",
+    save: "Save14%",
+    features: ['6 CPU', '12 GB RAM', '150 GB NVMe SSD', '2 TB Bandwidth', 'Windows 2019/22', 'Hosted in Netherlands'],
+    url: "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan",
   },
   {
     id: 4,
     name: 'VPS ENTERPRISE',
-    price: '79.99',
-    yearlyPrice: "$4.99/mo",
-    save: "SAVE 30%",
-    features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-    url: ""
+    price: '$79.99',
+    yearlyPrice: "$88.99/mo",
+    save: "Save14%",
+    features: ['8 CPU', '16 GB RAM', '200 GB NVMe SSD', '2.5 TB Bandwidth', 'Windows 2019/22', 'Hosted in Netherlands'],
+    url: "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan"
   },
 ];
 
@@ -50,9 +50,8 @@ const WindowsRdpPlan = () => {
   return (
     <div className="hosting-plan mb-5">
     <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Choose Offshore VPS server configuration that suits you</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get unbeatable performance with our Best & Cheap offshore VPS Hosting Servers without paying any extra bucks!
-      Pay only for what you use</p>
+      <h2 className="text-center m-auto mb-3">Choose Offshore WordPress VPS plan that suits you.</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Choose from various Windows VPS configurations for a reliable and secure hosting environment.</p>
       
       <div className="row offshoreVps-plan justify-content-center" id='plan1'>
         {plansData.map((plan) => (
@@ -67,7 +66,7 @@ const WindowsRdpPlan = () => {
       </h5>
       <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
       <p className="save mb-1">{plan.save}</p>
-      <p className="save-price mb-4">Yearly at <del>{plan.yearlyPrice}</del></p>
+      <p className="save-price mb-4">Was <del>{plan.yearlyPrice}</del></p>
       <ul className="list-unstyled mb-4">
         {plan.features.map((feature, index) => (
           <li key={index} className="mb-2 offshoreVps-features">

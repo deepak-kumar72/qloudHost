@@ -62,11 +62,11 @@ const AdultHostingFeatureElement = () => {
           <p className="">
           With our exclusive focus on your growing Adult Website’s Dedicated Servers Plans, we guarantee lightning-fast loading for your adult website.
           </p>
-          {/* <button className="btn start-now-btn mt-3">
+          <button className="btn start-now-btn mt-3">
           <Link to="">
             Get Started Now <FaArrowRight className="ms-2" />
             </Link>
-          </button> */}
+          </button>
         </div>
       </div>
     </div>

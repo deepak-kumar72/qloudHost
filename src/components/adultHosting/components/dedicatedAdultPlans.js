@@ -25,13 +25,13 @@ const DedicatedAdultPlan = () => {
                   <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>
                 )}
                 <div>
-                  <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span></h5>
+                  <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
-                  <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
-                  
-                  <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
-                  </button>
+                  <p className="save mb-3">{plan.save} <span className="save-price ms-3">was <del> {plan.yearlyPrice}</del></span></p>
+                  <Link to={plan.url} className='dedicated-plan-btn'>
+                  <button className="plan-btn  d-flex justify-content-between mb-4">
+                    Order Now<FaArrowRight className=""/>
+                  </button></Link> 
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
@@ -46,10 +46,10 @@ const DedicatedAdultPlan = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-3">
+        {/* <div className="text-center mt-3">
           <span className="consult">Looking for high-performance and custom resources? Our friendly <Link to="" className="fw-bold">support sales team</Link> is here to help! 
           <Link to="" className="fw-bold">Get in touch</Link> with us today.</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
