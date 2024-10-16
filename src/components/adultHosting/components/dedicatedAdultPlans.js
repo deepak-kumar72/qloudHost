@@ -46,10 +46,10 @@ const DedicatedAdultPlan = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-3">
+        {/* <div className="text-center mt-3">
           <span className="consult">Looking for high-performance and custom resources? Our friendly <Link to="" className="fw-bold">support sales team</Link> is here to help! 
           <Link to="" className="fw-bold">Get in touch</Link> with us today.</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
