@@ -9,9 +9,8 @@ const DedicatedServerPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
-      the cheapest price in the market.</p>
+      <h2 className="text-center m-auto mb-3">Choose Your Offshore Dedicated Server Hosting plan</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Find your Ideal Managed Offshore Dedicated Servers! Get blazing-fast speed, top-notch security, and maximum uptime for your urgent apps. Our 100% DMCA Ignored hosting plans are designed to support your resource-heavy projects perfectly.</p>
       
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
           {dedicatedplansData.map((plan) => (
@@ -21,6 +20,9 @@ const DedicatedServerPlan = () => {
               <div className="card-body offshore-plan-body position-relative">
                 {plan.popular && (
                   <div className="popular-badge vps-badge position-absolute">Popular</div>
+                )}
+                {plan.newServer && (
+                  <div className="popular-badge qloud-popular-badge position-absolute">New Server</div>
                 )}
                 {plan.bestForStreaming && (
                   <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>

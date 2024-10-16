@@ -7,71 +7,75 @@ import GetPaidMethod from './getPaidMethod';
 
 const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Free Registration",
+      description:"Anyone can join our affiliate programme, refer to their audience or friends and earn real money directly to their bank account under a transparent method.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "High Conversion Rate",
+      description:"Since we are a reputed brand people prefer our services more than any other service provider. That service has a really impressive conversion rate.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      title: "Advanced Tracking URLs",
+      description:"We provide you with powerful Real time tracking tools that will provide you insightful report with every details so that you can monitor your progress and withdraw your amount",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Eye-Catchy Ads Banners",
+      description:"You will also get attractive ad banners that you can use on your blog, video or any content to promote our services and gain more audience.",
+      link: "",
     },
     {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Easy to Use Dashboard",
+      description:"We have built our affiliate dashboard very easy to use and well labeled. Hence no matter whether you are a beginner or a pro marketer, you can easily start your earnings.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
+      title: "24/7 Affiliate Support",
+      description:"But what if you are still stuck in your journey? Well, No problem! We will provide you with a dedicated affiliate manager that guides you at every step of your journey.",
+      link: "",
     },
+    
+    
     
   ];
   
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "DMCA ignored web hosting is especially popular when privacy and data security are concerned. It allows you to host your website with untraceable footprints and post any content(DMCA ignored content) without getting any arbitrary troubles"
+      question: "What is an Affiliate Referral Program?",
+      answer: `Affiliate referral programmes allow you to earn real money with every sale you make. In simple words, it is a form of mouth to mouth advertisement/promotion technique that is made via a unique referral link and the partner get paid or rewarded with every successful referral.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "We have created our servers in the Netherlands to provide you with untraceable hosting services and let you enjoy your full privacy. We chose the Netherlands because it is one of the best and most popular DMCA Ignored countries."
+      question: "How does QloudHost Affiliate Program Work?",
+      answer: `Its working is very easy to understand, suppose you joined our affiliate programme and promoted us on your platform where you have a huge audience base. In that case you will get paid 20% for every qualified sale as a commission. Without paying any money as investment or enrollment!`
     },
     {
-      question: "Which countries follow DMCA?",
-      answer: "Since the World Intellectual Property Organization backs DMCA, it is strictly followed in almost every country, including the USA, Europe, Japan, India, China etc. In simple words, approximately 95% of countries take DMCA law very seriously."
+      question: "Do I need to pay to join the QloudHost referral program?",
+      answer: `No, we don’t charge any kind of investment enrollment, security or additional charges because our affiliate programmes are designed to support you and make you capable of earning real money to fulfill your dreams without looking at your wallet or bank account.`
     },
     {
-      question: "What can you host with our Offshore Hosting Services?​",
-      answer: "Our cheapest offshore hosting plans are specially designed to protect your identity and privacy. So that you can host any DMCA ignored content on your website, and we will ensure that your identity is untraceable on the internet"
+      question: "How to refer to a client using affiliate links?",
+      answer: `Simple, you just sign up on an affiliate page with genuine details such as email address, contact, account details etc., create your own referral links and paste it on your blog, video or any other content where you have a good amount of audience. After that you just have to count your money on our console!`
     },
     {
-      question: "Which country ignores DMCA?​​",
-      answer: "Despite DMCA being an international law, many countries do not follow it and let you create DMCA Ignored hosting servers to bypass the country-specific restrictions and host your website with untraceable footprints. Some of which are mentioned below. Netherlands, Luxembourg Bulgaria, Russia, Hong Kong, Singapore, Malaysia"
+      question: "Can I ever get a discount coupon for my clients?",
+      answer: `Yes, We will also provide you with a discount coupon that you can use to attract more audience to click on your links. One more interesting aspect it is that you can any time request for a coupon and our team will design a coupon for your audience*.`
     },
     {
-      question: "What Are The Benefits Of DMCA Ignored Hosting?​​",
-      answer: `DMCA ignored hosting may be the right choice for you if you’re looking for a reliable host. This type of hosting service can offer a variety of benefits that can help protect your website and ensure smooth operation. DMCA ignored VPS has one of its main benefits: it offers greater privacy and security for your site. These providers aren’t bound by the Digital Millennium Copyright Act, which means they have more flexibility and freedom in hosting content. This allows you to host any content without fear of legal consequences. To understand more in detail, refer this blogpost: <a href="https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`
+      question: "I'm still confused and need some human help?",
+      answer: `We have built a dedicated team of experts that guide you at every step of your journey to ensure that you get better reach and more clicks to your referral links for a good payment. The more audience you will get the more money you can earn.`
     },
     {
-      question: "How do you handle DMCA complaints?​",
-      answer: "To provide you with a Best & Cheap DMCA Ignored Server, we created offshore servers in the Netherlands to ignore all the DMCA Takedown notices against your website. In simple words, we do not take any action unless we find anything suspicious."
+      question: "For Which Services do I get a 20% Commission?",
+      answer: `We offer a 20% Affiliate Commission on all Hosting plans. This includes Shared Hosting, WordPress Hosting and VPS.`
     },
     {
-      question: "What is your Uptime Guarantee?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "If the client placed the order using my referral link, will I get the commission?",
+      answer: `Yes, You will get an instant commission of 20% for each qualified sale directly to your Affiliate Dashboard account.`
     },
+    
+    
   
   ];
 

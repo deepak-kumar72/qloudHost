@@ -2,10 +2,11 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent'
 import images from '../../constants/images'
 import OffWordpressPlan from './components/offshoreWordpressPlan'
-import Guarantees from '../streamingServer/components/qloudHostGurantees'
 import WordpressFeatureElement from './components/wordpressFeatureElement'
 import QlodHostServices from '../commonComponent/qlodHostServices'
 import FAQsSection from '../commonComponent/faqSection'
+import WebHostingGurantees from '../offShoreHosting/components/webHostingGurantees'
+
 const options = [
   "Dedicated IP",
   "1 Click WP Install",
@@ -55,11 +56,11 @@ const features = [
 const faqsData = [
   {
     question: "What is Offshore WordPress Hosting?",
-    answer: `<a href="" style="color: #f6355a;text-decoration:none;"> Offshore WordPress hosting</a> is a type of web hosting where your WordPress website is hosted outside of your country of residence. This means that the hosting company is located in a different country, often with different laws and regulations than your own. This type of hosting is often used by website owners who want to protect their privacy or who need to host content that may not be legal in their own country.`
+    answer: `<a href="" class="faq-link"> Offshore WordPress hosting</a> is a type of web hosting where your WordPress website is hosted outside of your country of residence. This means that the hosting company is located in a different country, often with different laws and regulations than your own. This type of hosting is often used by website owners who want to protect their privacy or who need to host content that may not be legal in their own country.`
   },
   {
     question: "How can I set up WordPress hosting?",
-    answer: `It’s simple: <a href="" style="color: #f6355a; text-decoration: none; ">sign up</a>, pick the right Offshore WP plan, and let our system do the rest work for you. You’ll be immediately redirected to the latest version of the WordPress platform, and through there, log in with your QloudHost DirectAdmin Panel Details. Now all you need to do is pick a lightweight WordPress theme and start downloading any of the hundreds of plugins available to start customising your website.`
+    answer: `It’s simple: <a href="" class="faq-link">sign up</a>, pick the right Offshore WP plan, and let our system do the rest work for you. You’ll be immediately redirected to the latest version of the WordPress platform, and through there, log in with your QloudHost DirectAdmin Panel Details. Now all you need to do is pick a lightweight WordPress theme and start downloading any of the hundreds of plugins available to start customising your website.`
   },
   {
     question: "Why should I choose Offshore WordPress hosting?",
@@ -90,7 +91,7 @@ const OffshoreWordPressHosting = () => {
         title="Enhanced Privacy Offshore WordPress Hosting"
         description="Whether WordPress powers your blog, web App or Business site, our Affordable 100% DMCA Ignored Offshore WordPress Hosting is fully optimised for top speed and reliability."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -98,7 +99,7 @@ const OffshoreWordPressHosting = () => {
         options={options} // Pass the options to the HeroComponent
       />
       <OffWordpressPlan />
-      <Guarantees
+      <WebHostingGurantees
         subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
       <WordpressFeatureElement />

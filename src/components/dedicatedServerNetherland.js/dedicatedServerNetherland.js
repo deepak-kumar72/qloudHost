@@ -9,42 +9,42 @@ import Services from '../commonComponent/services';
 import FAQsSection from '../commonComponent/faqSection';
 
 const options = [
-  "Free Migration Available", 
-  "Fast NVMe SSD Storage", 
-  "Up to 10 Gbps Uplink Port", 
-  "24/7 Technical Support"
+  "Strong Infrastructure", 
+  "NVMe SSD Storage", 
+  "Enhanced Security", 
+  "Fast, Accurate Responses"
 ];
 
 const features = [
   {img: images.ssd,
-    title: "Hosted in Netherlands",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    title: "Powerful Configurations",
+    description:"We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
+    link: "",
   },
   {img: images.ssd,
-    title: "Fastest SSD Servers",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    title: "Full Root Access",
+    description:"QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
+    link: "",
   },
   {img: images.ssd,
-    title: "Free Website Migration",
-    description: "If you already have a website, let us make your life easier by transferring it for free!",
-    link: "/read-more",
+    title: "Free Setup with All Servers",
+    description:"No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!",
+    link: "",
   },
   {img: images.ssd,
-    title: "Money-Back Guarantee",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    title: "Amsterdam, Netherlands Data Center",
+    description:"We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance.",
+    link: "",
   },
   {img: images.ssd,
-    title: "99.9% Uptime Commitment",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    title: "24/7 Server monitoring",
+    description:"We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status.",
+    link: "",
   },
   {img: images.ssd,
-    title: "Hosted in Neitherlands",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-    link: "/read-more",
+    title: "Managed with DirectAdmin",
+    description:"Experience exceptional technical support for your DMCA Ignored Server hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.",
+    link: "",
   },
   
 ];
@@ -94,8 +94,8 @@ const DedicatedServerNetherland = () => {
   return (
     <div>
       <HeroComponent
-        title="Cheap Offshore Dedicated Server"
-        description="Maximum power and security with 100% DMCA Ignored Offshore Dedicated Servers. Reliable and cheap, hosted in Amsterdam, Netherlands for unparalleled performance."
+        title="Cheap Netherlands Offshore dedicated Server"
+        description="Host on a powerful offshore dedicated server in the Netherlands with 99.99% uptime, full root access, low latency, Intel AMD Ryzen, top security, and multiple OS/control panel choices. Expertly assembled."
         button1Text="Get Started Now"
         button1Link="#hostingPlan"
         button2Text="Explore Features"
@@ -107,8 +107,9 @@ const DedicatedServerNetherland = () => {
       <DedicatedNetherlandPlan/>
       <AffordableDedicatedCon/>
       <QlodHostServices
-        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+        heading="Why Choose QloudHost Dedicated Offshore Hosting?"
+      content="Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.
+Utilize advanced technology security measures to ensure accurate information dissemination."
       features={features} 
       />
       <InstallationPanel
@@ -123,6 +124,7 @@ that you can manage your website files with full control!"
           { name: 'CyberPanel', img: images.cyberPanel},
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'CentOS', img: images.centos },
+          { name: 'Debian', img: images.centos },
         ]}
       />
       <Services servicesData={servicesData1} />

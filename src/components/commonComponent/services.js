@@ -22,8 +22,8 @@ const Services = ({ servicesData }) => {
                   <div>
                     <div className='card-title'>{service.title}</div>
                     <div className='card-text service-desc mb-3'>{service.description}</div>
-                    <div className='btn start-now-btn start-now'>
-                      <Link to={service.buttonLink}>
+                    <div>
+                      <Link to={service.buttonLink} className='btn start-now-btn start-now'>
                         {service.buttonText} <FaArrowRight className="ms-2"/>
                       </Link>
                     </div>

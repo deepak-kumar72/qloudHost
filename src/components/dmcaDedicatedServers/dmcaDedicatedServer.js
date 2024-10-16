@@ -1,55 +1,73 @@
-import React from 'react'
-import HeroComponent from '../commonComponent/heroComponent';
-import images from '../../constants/images';
-import DmcaDedicatedPlan from './components/dmcaDedicatedServerPlan';
-import AffordableDedicatedServer from './components/affordablededicatedServer';
-import QlodHostServices from '../commonComponent/qlodHostServices';
-import FAQsSection from '../commonComponent/faqSection';
-import DedicatedHostingSolution from './components/dedicatedHostingSolution';
-import InstallationPanel from '../commonComponent/installationPanel';
-import Services from '../commonComponent/services';
+import React from "react";
+import HeroComponent from "../commonComponent/heroComponent";
+import images from "../../constants/images";
+import DmcaDedicatedPlan from "./components/dmcaDedicatedServerPlan";
+import AffordableDedicatedServer from "./components/affordablededicatedServer";
+import QlodHostServices from "../commonComponent/qlodHostServices";
+import FAQsSection from "../commonComponent/faqSection";
+import DedicatedHostingSolution from "./components/dedicatedHostingSolution";
+import InstallationPanel from "../commonComponent/installationPanel";
+import Services from "../commonComponent/services";
 
-const features = [
-  {img: images.ssd,
-    title: "Hosted in Netherlands",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
-  },
-  {img: images.ssd,
-    title: "Fastest SSD Servers",
-    description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
-  },
-  {img: images.ssd,
-    title: "Free Website Migration",
-    description: "If you already have a website, let us make your life easier by transferring it for free!",
-    link: "/read-more",
-  },
-  {img: images.ssd,
-    title: "Money-Back Guarantee",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
-  },
-  {img: images.ssd,
-    title: "99.9% Uptime Commitment",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
-  },
-  {img: images.ssd,
-    title: "Hosted in Neitherlands",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-    link: "/read-more",
-  },
-  
+const options = [
+  "Flexibility and Control",
+  "Multiple OS Options",
+  "Fast, Secure, Reliable",
+  "Multi-Layer Defense",
 ];
 
+const features = [
+  {
+    img: images.ssd,
+    title: "Powerful Configurations",
+    description:
+      "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
+    link: "/read-more",
+  },
+  {
+    img: images.ssd,
+    title: "Full Root Access",
+    description:
+      "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
+    link: "/read-more",
+  },
+  {
+    img: images.ssd,
+    title: "Free Setup with All Servers",
+    description:
+      "No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!",
+    link: "/read-more",
+  },
+  {
+    img: images.ssd,
+    title: "Amsterdam, Netherlands Data Center",
+    description:
+      "We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance.",
+    link: "/read-more",
+  },
+  {
+    img: images.ssd,
+    title: "24/7 Server monitoring",
+    description:
+      "We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status.",
+    link: "/read-more",
+  },
+  {
+    img: images.ssd,
+    title: "Managed with DirectAdmin",
+    description:
+      "Experience exceptional technical support for your DMCA Ignored Hosting hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.",
+    link: "/read-more",
+  },
+];
 
 const servicesData1 = [
   {
     id: 1,
     imgUrl: images.web,
     title: "New Website?",
-    description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
+    description:
+      "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
     buttonText: "Get Started Now",
     buttonLink: "#",
   },
@@ -57,29 +75,57 @@ const servicesData1 = [
     id: 1,
     imgUrl: images.migration,
     title: "Migration?",
-    description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
+    description:
+      "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
     buttonText: "Get Started Now",
     buttonLink: "#",
   },
-
 ];
 
 const faqsData = [
   {
-    question: "What is DMCA ignore hosting?",
-    answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+    question: "What is DMCA Ignored Dedicated Server?",
+    answer:
+      "A DMCA Ignored Dedicated Server, also known as a copyright-ignored dedicated server, is a hosting solution that disregards the Digital Millennium Copyright Act (DMCA) regulations.Unlike shared hosting, where resources are divided among multiple users, a dedicated server offers exclusive resources for a single user. This isolation helps ensure optimal speed, reliability, and privacy.",
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question: "Can I upgrade my VPS to an DMCA Ignored dedicated servers?",
+    answer: `Yes, We provide completely flexible offshore VPS servers that can be easily upgraded to as many resources as possible! You just need to contact our team of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed DMCA Ignored dedicated server without any hidden charges.`,
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question:
+      "Do you offer free migration for your DMCA Ignored dedicated server?",
+    answer: `Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our policies.`,
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question: "How many websites can I host on an DMCA dedicated server?",
+    answer: `It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our DMCA Ignored Dedicated servers in Netherlands Offshore Location.`,
+  },
+  {
+    question: "What can QloudHost DMCA Ignored dedicated Hosting be used for?",
+    answer: `QloudHost offshore dedicated hosting provider with high performance at a low price while being suitable for a number of use cases: Hosting business applications and websites, pre-production environments, gaming, Pharmaceutical Websites and more. For resource-intensive production needs, we recommend our next-generation Cheapest Offshore best DMCA Dedicated server hosting. These include more services, offering more options, and an advanced network.`,
+  },
+  {
+    question: "What are the Benefits of DMCA Offshore dedicated server hosting?",
+    answer: `f you are planning to host your website without losing your anonymity, then choosing an offshore DMCA Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
+<ul><ol>Full privacy assurance</ol>
+<ol>Unmetered resources</ol>
+<ol>Full content flexibility</ol>
+<ol>Fully DMCA ignored</ol>
+<ol>No arbitrary actions caused</ol>
+<ol>Freedom of Speech</ol></ul>`,
+  },
+  {
+    question: "How do I get started with DMCA Ignored dedicated server?",
+    answer: `To get started with our DMCA Server, you just need to choose your favourite reliable offshore web hosting plan, enter your authentic details and checkout! Your servers will be ready to use in just a few days, all thanks to our instant activation policy.`,
+  },
+  {
+    question: "Does QloudHost provide managed DMCA Ignored dedicated servers?",
+    answer: `On account of providing full flexibility and root access with our cheap dmca dedicated server hosting solution, we don’t provide Fully managed dedicated servers. Hence, you completely customise your servers as per your needs and requirements.`,
+  },
+  {
+    question: "How long will it take for my cheap DMCA Ignored dedicated server to be ready?",
+    answer: `As explained above in the above FAQ, we offer our services to the market with an instant activation policy. Hence, after you finished the payment, your DMCA Ignored hosting services will be ready to use in 5-7 Working days.`,
   },
 ];
 
@@ -88,21 +134,24 @@ const DmcaDedicatedServer = () => {
     <div>
       <HeroComponent
         title="Best DMCA Ignored Dedicated Server"
-        description="Host your IPTV or movie site offshore in Amsterdam with powerful DMCA-ignored streaming servers. Get 100% uptime, unmetered ports, white-label IP, and a fully redundant network. Secure, reliable, and unshared."
+        description="Supercharge your site with QloudHost’s DMCA Ignored dedicated servers! Enjoy top-tier security, performance, and control—all at an unbeatable price. Focus on growth while we handle the rest."
         button1Text="Get Started Now"
         button1Link=""
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
+        options={options}
       />
-      <DmcaDedicatedPlan/>
-      <AffordableDedicatedServer/>
+      <DmcaDedicatedPlan />
+      <AffordableDedicatedServer />
       <QlodHostServices
-      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
-      features={features} />
-      <DedicatedHostingSolution/>
+        heading="Why Choose QloudHost DMCA Ignored Server?"
+        content="Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.
+Utilize advanced technology security measures to ensure accurate information dissemination."
+        features={features}
+      />
+      <DedicatedHostingSolution />
       <InstallationPanel
         title="Fast OS/Admin Panel Installation!"
         description="No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server
@@ -110,20 +159,18 @@ with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible 
 that you can manage your website files with full control!"
         buttonText="Get Started Now"
         panelOptions={[
-          { name: 'cPanel', img: images.cpanel },
-          { name: 'DirectAdmin', img: images.directAdmin },
-          { name: 'CyberPanel', img: images.cyberPanel},
-          { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'CentOS', img: images.centos },
+          { name: "cPanel", img: images.cpanel },
+          { name: "DirectAdmin", img: images.directAdmin },
+          { name: "CyberPanel", img: images.cyberPanel },
+          { name: "Ubuntu", img: images.ubuntu },
+          { name: "CentOS", img: images.centos },
+          { name: "Debian", img: images.centos },
         ]}
       />
       <Services servicesData={servicesData1} />;
-      <FAQsSection
-        faqs={faqsData} 
-      />
+      <FAQsSection faqs={faqsData} />
     </div>
-    
-  )
-}
+  );
+};
 
-export default DmcaDedicatedServer
+export default DmcaDedicatedServer;

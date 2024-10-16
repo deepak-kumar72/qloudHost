@@ -9,9 +9,9 @@ const DedicatedNetherlandPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
-      the cheapest price in the market.</p>
+      <h2 className="text-center m-auto mb-3">Netherlands Offshore Dedicated Server plans</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Buy dedicated servers in Amsterdam, Netherlands with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance.
+      </p>
       
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
           {netherlandplansData.map((plan) => (

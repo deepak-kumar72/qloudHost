@@ -66,10 +66,30 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item pe-4">
+                {/* <li className="nav-item pe-4">
                   <Link className="nav-link active" aria-current="page" to="/offshore-vps-hosting/">
                     Offshore VPS
                   </Link>
+                </li> */}
+                <li className="nav-item dropdown pe-4">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="#"
+                  >
+                    VPS
+                  </Link>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link className="dropdown-item" to="/offshore-vps-hosting/">
+                      Offshore VPS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/offshore-vps-hosting/windows-rdp/">
+                        Offshore Window VPS
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
 
                 <li className="nav-item dropdown pe-4">

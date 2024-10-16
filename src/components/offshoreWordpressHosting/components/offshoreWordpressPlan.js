@@ -22,6 +22,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
+    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-starter"
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
+    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-business"
   },
   {
     id: 3,
@@ -62,6 +64,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
+    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-premium"
   },
 ];
 
@@ -73,10 +76,10 @@ const OffWordpressPlan = () => {
         <p className="text-center mb-5 planHead-con m-auto">Grow your business with hassle-free Cheap Offshore WordPress Hosting, reliable performance.
           Our WordPress-optimized hosting is designed to scale as your website grows.</p>
 
-        <div className="row home-plan justify-content-center">
+        <div className="row home-plan justify-content-center" id='explore'>
           {plansData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
-              <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
+              <div className={`${plan.popular ? "popular-qloudhost-card h-100" : "h-100"}`}>
                 <div className="card-body plan-body position-relative">
                   {plan.popular && (
                     <div className="popular-badge position-absolute">Popular</div>
@@ -86,8 +89,10 @@ const OffWordpressPlan = () => {
                     </h5>
                     <p className="card-text plan-desc mb-2">{plan.description}</p>
                     <h3 className="card-price">{plan.price} <span className="price-unit">/month</span></h3>
-                    <p className="save">{plan.save}</p>
-                    <p className="save-price mb-4">Yearly at <del>{plan.originalPrice}</del></p>
+                    <div className="d-flex">
+                    <p className="save me-3">{plan.save}</p>
+                    <p className="save-price mb-4"> <del>{plan.originalPrice}</del></p>
+                    </div>
                     <ul className="list-unstyled mb-4">
                       {plan.features.map((feature, index) => (
                         <li key={index} className="mb-2 features wordpress-features">
@@ -95,13 +100,13 @@ const OffWordpressPlan = () => {
                         </li>
                       ))}
                     </ul>
+                    <Link
+                        to={plan.url}>
                     <button className="plan-btn">
-                      <Link
-                        to={plan.url}
-                      >
+                      
                         Get Started
-                      </Link>
-                    </button>
+                      
+                    </button></Link>
                   </div>
                 </div>
               </div>

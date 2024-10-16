@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 
 
-const QlodHostServices = ({ heading, content,features, img }) => {
+const QlodHostServices = ({ heading, content,features}) => {
   return (
     <div className="container my-5 qloudService-section">
       <h2 className="text-center mb-3 m-auto">{heading}</h2>

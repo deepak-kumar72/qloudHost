@@ -31,12 +31,10 @@ const AffordableDedicatedCon = () => {
   return (
     <div className='service-section'>
       <div className="container my-5 py-5">
-        <h2 className="text-center text-white mb-3 m-auto w-100">We’ve got your new/existing website needs covered!</h2>
-        <p className="text-center text-white w-75 mb-3 planHead-con m-auto">
-        Lease a dependable and cheap dedicated offshore server with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. 
-        </p>
-        <p className="text-center text-white w-75 mb-5 planHead-con m-auto">
-        We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:
+        <h2 className="text-center text-white mb-3 m-auto w-100">
+        Enterprise-Grade Affordable Offshore Dedicated Servers</h2>
+        <p className="text-center text-white mb-4 planHead-con m-auto">
+        Lease a dependable and cheap dedicated offshore server with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:
         </p>
 
         <div className='row'>

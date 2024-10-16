@@ -9,6 +9,7 @@ import InstallationPanel from '../commonComponent/installationPanel';
 import FAQsSection from '../commonComponent/faqSection';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import PopularStreamingUse from '../streamingServer/components/popularStreamingUse';
+import NetherLandStreamingFeature from './components/netherlandStreamingFeature';
 
 const options = [
     "Scalable Resources", 
@@ -19,70 +20,63 @@ const options = [
 
   const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "No Buffer & Stream Live",
+      description:"Our Enterprise streaming servers and Netherlands location, we guarantee a buffer-free streaming experience. Our offshore DMCA Ignored streaming servers are meticulously engineered to manage high volumes of traffic, ensuring swift and efficient streaming performance.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "100% Anonymous Service",
+      description:"We are running our offshore streaming servers at the best locations that are especially popular for offshore hosting services and help us to decrease your visibility on the internet making you untraceable.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      title: "OS Choice",
+      description:"All thanks to our resilient server that is compatible with all the Operating systems, we can offer you a wide range of options to choose and work with your desired OS anytime and anywhere!!",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "DDoS Protection",
+      description:"Our servers come with the best and industry-standard security features that will help you to save your website against illegitimate traffic and ensure your maximum availability on the internet. .",
+      link: "",
     },
     {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "99.99% Uptime",
+      description:"Why go anywhere else when you get maximum uptime here? Yes!! Our services come with a 99.99% uptime guarantee to provide full assurance of your availability on the internet.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
+      title: "24/7 Tech Support",
+      description:"We have built a dedicated team of technical experts that are working 24*7 to help you at every stage of your journey and ensure that you can set up your offshore streaming servers without any errors!",
+      link: "",
     },
+    
     
   ];
   
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "DMCA ignored web hosting is especially popular when privacy and data security are concerned. It allows you to host your website with untraceable footprints and post any content(DMCA ignored content) without getting any arbitrary troubles"
+      question: "What is Netherlands Offshore streaming server?",
+      answer: `A Netherlands offshore streaming server typically refers to a server located in the Netherlands but operated by a company or individual from outside the country. These servers are often chosen for various reasons, such as privacy, legal considerations, or specific business requirements.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "We have created our servers in the Netherlands to provide you with untraceable hosting services and let you enjoy your full privacy. We chose the Netherlands because it is one of the best and most popular DMCA Ignored countries."
+      question: "Can I have an Additional IPv4 for Media IPTV Streaming?",
+      answer: `Yes, you can request an extra IPv4 address for your Media IPTV streaming. You Just need to open a Ticket for an Additional IPV4.`
     },
     {
-      question: "Which countries follow DMCA?",
-      answer: "Since the World Intellectual Property Organization backs DMCA, it is strictly followed in almost every country, including the USA, Europe, Japan, India, China etc. In simple words, approximately 95% of countries take DMCA law very seriously."
+      question: "How Long Does It Take for Offshore Streaming Server Setup?",
+      answer: `Once you finish the payment, our team of technical experts will immediately start working on your servers to complete the setup as soon as possible, and your servers will be ready to use within 3-5 days.`
     },
     {
-      question: "What can you host with our Offshore Hosting Services?​",
-      answer: "Our cheapest offshore hosting plans are specially designed to protect your identity and privacy. So that you can host any DMCA ignored content on your website, and we will ensure that your identity is untraceable on the internet"
+      question: "Are Your Offshore Streaming Servers Managed?",
+      answer: `No, our offshore media streaming servers are unmanaged to ensure that you get complete resilience and customisation options with your servers so that you can customise your resources as per your needs and requirements. `
     },
     {
-      question: "Which country ignores DMCA?​​",
-      answer: "Despite DMCA being an international law, many countries do not follow it and let you create DMCA Ignored hosting servers to bypass the country-specific restrictions and host your website with untraceable footprints. Some of which are mentioned below. Netherlands, Luxembourg Bulgaria, Russia, Hong Kong, Singapore, Malaysia"
+      question: "Can I Upgrade my DMCA Ignored Streaming Servers?",
+      answer: `Yes, Along with our normal offshore Hosting plans, we also offer you upgraded plans that comes with more powerful resources and features. You can anytime shift to our upgraded plans without any complex formalities. `
     },
     {
-      question: "What Are The Benefits Of DMCA Ignored Hosting?​​",
-      answer: `DMCA ignored hosting may be the right choice for you if you’re looking for a reliable host. This type of hosting service can offer a variety of benefits that can help protect your website and ensure smooth operation. DMCA ignored VPS has one of its main benefits: it offers greater privacy and security for your site. These providers aren’t bound by the Digital Millennium Copyright Act, which means they have more flexibility and freedom in hosting content. This allows you to host any content without fear of legal consequences. To understand more in detail, refer this blogpost: <a href="https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`
-    },
-    {
-      question: "How do you handle DMCA complaints?​",
-      answer: "To provide you with a Best & Cheap DMCA Ignored Server, we created offshore servers in the Netherlands to ignore all the DMCA Takedown notices against your website. In simple words, we do not take any action unless we find anything suspicious."
-    },
-    {
-      question: "What is your Uptime Guarantee?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "What Payment Methods Do You Accept?",
+      answer: `We use multiple payment methods such as PayPal, debit card, credit card, UPI and much more to ensure that you can easily avail our services from any country with any method you are comfortable!`
     },
   
   ];
@@ -106,23 +100,21 @@ const NetherlandStreamingServer = () => {
       <Guarantees/>
       <TechnicalSpecification/>
       <InstallationPanel
-        title="Fast OS/Admin Panel Installation!"
-        description="No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server
-with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so
-that you can manage your website files with full control!"
+        title="Operating Systems"
+        description="Install your desired OS in just a matter of seconds!"
         buttonText="Get Started Now"
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
-          { name: 'DirectAdmin', img: images.directAdmin },
           { name: 'CyberPanel', img: images.cyberPanel},
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'CentOS', img: images.centos },
           { name: 'Debian', img: images.centos },
         ]}
       />
+      <NetherLandStreamingFeature/>
       <QlodHostServices 
-      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+      heading="Why Choose Offshore Netherlands Streaming Servers"
+      content="Well, the clear and confident answer is our features that are mentioned below! "
       features={features} />
       <PopularStreamingUse/>
       <FAQsSection

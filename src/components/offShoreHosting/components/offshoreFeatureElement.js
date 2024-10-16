@@ -19,11 +19,13 @@ const OffshoreFeatureElement = () => {
               <br />  <br />
               All this at a price you will love – get any shared server up and running in under a minute with QloudHost!
             </p>
+            <Link to="#explore">
             <button className="btn start-now-btn mt-3">
-              <Link to="">
+              
                 Get Started Now <FaArrowRight className="ms-2" />
-              </Link>
+              
             </button>
+            </Link>
           </div>
         </div>
 

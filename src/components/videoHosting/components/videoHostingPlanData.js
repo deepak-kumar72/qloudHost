@@ -13,7 +13,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: ""
+      url: "https://my.qloudhost.com/store/dedicated/amd-ryzen-9-3900x12c24t"
     },
     { 
         id: 2,
@@ -29,7 +29,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: "",
+      url: "https://my.qloudhost.com/store/dedicated/ryzen-9-5900x",
       Popular: true,
     },
     {
@@ -46,7 +46,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: "",
+      url: "https://my.qloudhost.com/store/dedicated/2x-intel-xeon-e5-2620-v2",
     },
     
     {
@@ -63,7 +63,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url:"",
+      url:"https://my.qloudhost.com/store/dedicated/intel-xeon-e5-2680-v3",
     },
     {
         id:5,
@@ -79,7 +79,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: "",
+      url: "https://my.qloudhost.com/store/dedicated/compute-broadwell-ep-intel-xeon-e5-2683-v4",
     },
     {id:6,
       name: 'Dual Intel Xeon E5-2683 v4',
@@ -94,7 +94,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: '',
+      url: 'https://my.qloudhost.com/store/dedicated/dual-intel-xeon-e5-2683-v4-2x960gb',
       newServer: true,
     },
     {
@@ -111,7 +111,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: "",
+      url: "https://my.qloudhost.com/store/dedicated/dual-intel-xeon-e5-2680-v3-2x192tb",
       newServer: true,
     },
     {
@@ -128,7 +128,7 @@ const videoHostingplansData = [
         '1 Gbit Port Speed',
         '1 IPv4 IP Address',
       ],
-      url: '',
+      url: 'https://my.qloudhost.com/store/dedicated/amd-epyc-7502p',
       bestForStreaming: true,
     },
   ];

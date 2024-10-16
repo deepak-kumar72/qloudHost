@@ -9,8 +9,8 @@ const RussiaDedicatedPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
+      <h2 className="text-center m-auto mb-3">Russia Offshore Dedicated Servers plans</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Buy dedicated servers in Russia with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance.
       the cheapest price in the market.</p>
       
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
@@ -21,6 +21,9 @@ const RussiaDedicatedPlan = () => {
               <div className="card-body offshore-plan-body position-relative">
                 {plan.popular && (
                   <div className="popular-badge vps-badge position-absolute">Popular</div>
+                )}
+                {plan.newServer && (
+                  <div className="popular-badge qloud-popular-badge position-absolute">New Server</div>
                 )}
                 {plan.bestForStreaming && (
                   <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>

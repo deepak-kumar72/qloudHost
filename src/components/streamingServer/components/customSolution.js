@@ -16,7 +16,7 @@ const CustomSolution = ({solTitle, solText}) => {
             <div className='col-lg-4 col-sm-12 m-auto text-center'>
                 <button className=' start-now-btn custom-sol-btn'>
                 <Link to="">
-                    Get Started <FaArrowRight className="ms-2" />
+                    Contact Us <FaArrowRight className="ms-2" />
                 </Link>
                 </button>
             </div>

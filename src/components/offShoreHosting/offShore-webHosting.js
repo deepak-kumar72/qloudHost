@@ -2,13 +2,13 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
 import heroImage from "../../assets/Frame/heroFrame.png";
 import OffShoreHostingPlan from './components/offShoreHostingPlan';
-import Guarantees from '../streamingServer/components/qloudHostGurantees';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import OffshoreFeatureElement from './components/offshoreFeatureElement';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import images from '../../constants/images';
 import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
+import WebHostingGurantees from './components/webHostingGurantees';
 
 const options = [
   "NVMe SSD Storage",
@@ -102,7 +102,7 @@ const OffShorewebHosting = () => {
         title="100% DMCA Cheap Offshore Web Hosting"
         description="Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands"
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={heroImage}
@@ -110,14 +110,14 @@ const OffShorewebHosting = () => {
         options={options}
       />
       <OffShoreHostingPlan />
-      <Guarantees
-        subHeading="Looking to upgrade resources? Check our Offshore WordPress Hosting Plans or Looking for more power? Check out our Offshore VPS Hosting "
+      <WebHostingGurantees
+        subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
       <TechnicalSpecification />
       <OffshoreFeatureElement />
       <QlodHostServices
-        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-        content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+        heading="Why Choose QloudHost For Offshore Web Hosting?"
+        content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence."
         features={features} />
       <Testimonials />
       <FAQsSection

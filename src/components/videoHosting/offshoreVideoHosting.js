@@ -10,55 +10,72 @@ import QlodHostServices from '../commonComponent/qlodHostServices';
 import FAQsSection from '../commonComponent/faqSection';
 import VideoHostingFeatureElement from './components/videoHostingFeatureElement';
 
+const options = [
+  "Fast, Secure, Reliable",
+  "DDoS Protection",
+  "Strong Infrastructure",
+  "Netherlands Location"
+];
+
 const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "No Buffer Stream",
+      description:"Worried about the performance of your video streaming website? Just sit and relax! Because we run robust servers equipped with the latest and most powerful hardware technologies in the market.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Use Your Player",
+      description:"Although we provide you with a pre-built video player, our DMCA Ignored servers are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      title: "Unlimited Embeds & Plays",
+      description:"There is no limit on the number of videos you can post and play on your website, all thanks to the robust servers we are using for the services, which allows you to use unrestricted resources.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "100% Privacy Protection",
+      description:"QloudHost provides you with top-notch security features such firewall, offshore servers and much more to ensure your 100% privacy and untraceable footprints on the internet. .",
+      link: "",
     },
     {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "99.9% Uptime Guaranteed",
+      description:"We are confident to share with you that our server uptime is 99.9%, and we ensure that it should be maintained for maximum availability of your website on the internet.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
+      title: "24/7 Support",
+      description:"Our team of technical experts is working 24*7 to solve your queries and help you at every stage of your journey. In addition, they constantly monitor your website’s resources to ensure uptime and performance.",
+      link: "",
     },
+   
+   
     
   ];
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "What is video hosting?",
+      answer: "Video hosting is nothing but an optimized server, especially for video streaming websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience! "
+    },
+    {
+      question: "What are the content restrictions on offshore VPS servers?",
+      answer: "Normal web hosting services allow you to host a streaming website on their servers, but they do not allow you to post DMCA Ignored content or adult content and posting such kind of content on their servers can cause your website termination or arbitrary troubles too.  Hence, offshore video hosting services are used to host the website because they allow you to host DMCA Ignored content."
     },
     {
       question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      answer: "Our offshore  hosting services are specially built for DMCA Ignored content, so you can enjoy our services without facing any arbitrary actions. DMCA Ignored content includes copyrighted, illegal, adult content etc."
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Can I get full admin access to my offshore VPS servers?",
+      answer: "Definitely, our offshore hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Can I host Adult video content on QloudHost?",
+      answer: "Yes….!  We allow you to post adult content on our offshore video hosting server with untraceable footprints and impenetrable security."
+    },
+    {
+      question: "I bought your offshore VPS servers, when will they be activated?",
+      answer: "QloudHost provides you with an instant setup means that your servers will be ready to use right after you finish the purchase."
     },
   ];
 
@@ -66,14 +83,15 @@ const OffshoreVideoHosting = () => {
   return (
     <div>
       <HeroComponent
-      title="Cheap Offshore Dedicated Server"
-        description="Maximum power and security with 100% DMCA Ignored Offshore Dedicated Servers. Reliable and cheap, hosted in Amsterdam, Netherlands for unparalleled performance."
+      title="100% DMCA Offshore Video Hosting"
+        description="Optimize your adult, tube, copyrighted, and offshore content with our Offshore Video Hosting. Enjoy top speed and reliability for your web app, business site, or video platform."
         button1Text="Get Started Now"
         button1Link=""
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
+        options={options}
       />
       <VideoHostingPlan/>
       <VideocustomSolution/>
@@ -95,8 +113,8 @@ const OffshoreVideoHosting = () => {
       />
       <VideoHostingFeatureElement/>
       <QlodHostServices
-        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+        heading="Offshore Adult Video Hosting Unbelievable Features"
+      content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
       features={features} 
       />
       <FAQsSection

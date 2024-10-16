@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 const OffShoreHostingPlan = () => {
 
   return (
-    <div className="hosting-plan mb-5">
+    <div className="hosting-plan mb-5" id='explore'>
       <div className="container plan-sec mt-5">
         <h2 className="text-center m-auto mb-3">Best Cheap Offshore Web Hosting Plans</h2>
         <p className="text-center mb-5 planHead-con m-auto">Browse through our offshore Web Hosting Packages designed for simplicity, High Performance and top-notch security.

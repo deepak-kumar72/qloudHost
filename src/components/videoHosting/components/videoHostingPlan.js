@@ -9,9 +9,8 @@ const VideoHostingPlan= () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
-      the cheapest price in the market.</p>
+      <h2 className="text-center m-auto mb-3">Best Offshore Video Hosting Plans at the Lowest Cost!</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Get your offshore Adult video hosting server ready at a meagre cost. No hidden charges or conditions applied!</p>
       
         <div className="row offshoreVps-plan justify-content-center g-3" id='plan1'>
           {videoHostingplansData.map((plan) => (
@@ -33,9 +32,9 @@ const VideoHostingPlan= () => {
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.originalPrice}</del></span></p>
                   
-                  <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
-                  </button>
+                  <Link to={plan.url} class='dedicated-plan-btn'><button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
+                    Buy Now <FaArrowRight className=""/>
+                  </button></Link>
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (

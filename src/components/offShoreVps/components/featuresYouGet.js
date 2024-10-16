@@ -11,15 +11,16 @@ const FeaturesYouGet = () => {
     "Optimize costs and enhance user experience by hosting your cheap offshore VPS where your customers are located.",
     "Free up your time to focus on business management while we handle the intricacies of server management.",
     "Thanks to our Anti-DDoS Protected Offshore Hosting servers, our network is protected and secure, ensuring the safety of your data.",
-    "At QloudHost, we prioritize customer privacy and uphold their right to express themselves freely, offering absolute anonymity."
+    "At QloudHost, we prioritize customer privacy and uphold their right to express themselves freely, offering absolute anonymity.",
+    "Explore tailored solutions for unique requirements with our range of special plans"
   ];
 
   return (
     <div className="container vps-page">
       {/* Heading Section */}
       <div className="text-center my-5">
-      <h2 className="text-center m-auto mb-3 w-100">What You Get with Your Offshore VPS Server</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Looking for some good reasons to choose Qloudhost? Here’s the reason of our confidence.</p>
+      <h2 className="text-center m-auto mb-3 w-100">What Sets QloudHost Offshore VPS Hosting Apart?</h2>
+      
       </div>
 
       {/* Content Section */}

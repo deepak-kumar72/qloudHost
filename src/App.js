@@ -56,7 +56,7 @@ function AppContent() {
           <Route path="/offshore-vps-hosting/" element={<OffshoreVps />} />
           <Route
             path="/offshore-dedicated-servers/"
-            element={<DedicatedServer />}
+            element={<DedicatedServer/>}
           />
           <Route path="/streaming-server" element={<Streaming />} />
           <Route

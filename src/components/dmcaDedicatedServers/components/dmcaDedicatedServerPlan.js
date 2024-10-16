@@ -9,8 +9,8 @@ const DmcaDedicatedPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
+      <h2 className="text-center m-auto mb-3">DMCA Ignored Dedicated Server Hosting Plans and Prices</h2>
+      <p className="text-center mb-5 planHead-con m-auto">DMCA Ignored dedicated servers offer the best performance and the highest level of security for any website or application. Invest in a dedicated server with no resource sharing and experience top-notch performance at an affordable price.
       the cheapest price in the market.</p>
       
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
@@ -26,12 +26,12 @@ const DmcaDedicatedPlan = () => {
                   <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>
                 )}
                 <div>
-                  <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span></h5>
+                  <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
                   
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
+                    <Link to={plan.url}>Order Now</Link> <FaArrowRight className=""/>
                   </button>
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4">

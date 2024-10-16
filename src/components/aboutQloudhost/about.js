@@ -21,6 +21,7 @@ const About = () => {
       <InstallationPanel
         title="Operating Systems"
         description="Work with your desired Operating system without any errors!"
+       buttonText="Get Started Now"
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
           { name: 'debian', img: images.directAdmin },

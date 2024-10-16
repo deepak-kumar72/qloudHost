@@ -7,38 +7,38 @@ const dmcaplansData = [
       id: 1,
       name: 'VPS ENTRY',
       price: '18.99',
-      yearlyPrice: "$4.99/mo",
-      save: "SAVE 30%",
-      features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-      url: ""
+      yearlyPrice: "$21.99/mo",
+      save: "SAVE 14%",
+      features: ['4 CPU', '4 GB RAM', '50 GB NVMe SSD', '1 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan"
     },
     {
       id: 2,
       name: 'VPS VALUE',
       price: '46.99',
-      yearlyPrice: "$4.99/mo",
-      save: "SAVE 30%",
+      yearlyPrice: "$54.99/mo",
+      save: "SAVE 14%",
       features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-      url: "",
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan",
       popular: true
     },
     {
       id: 3,
       name: 'VPS BUSINESS',
       price: '55.99',
-      yearlyPrice: "$4.99/mo",
-      save: "SAVE 30%",
-      features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-      url: "",
+      yearlyPrice: "$65.99/mo",
+      save: "SAVE 14%",
+      features: ['6 CPU', '12 GB RAM', '150 GB NVMe SSD', '2 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan",
     },
     {
       id: 4,
       name: 'VPS ENTERPRISE',
       price: '79.99',
       yearlyPrice: "$4.99/mo",
-      save: "SAVE 30%",
-      features: ['4 CPU', '8 GB RAM', '120 GB NVMe SSD', '1.75 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
-      url: ""
+      save: "SAVE 14%",
+      features: ['8 CPU', '16 GB RAM', '200 GB NVMe SSD', '2.5 TB Bandwidth', 'Free Control Panel', 'Hosted in Netherlands'],
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan"
     },
   ];
 

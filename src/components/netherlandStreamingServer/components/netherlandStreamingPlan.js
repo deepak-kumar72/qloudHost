@@ -7,22 +7,22 @@ import { FaArrowRight } from "react-icons/fa";
 const streamingplansData = [
     {
       id: 1,
-      name: 'Ryzen 9 3900X (12c/24t)',
-      price: '$3.50',
+      name: 'AMD EPYC 7502P (32c/64t)',
+      price: '$349.00',
       time: '/month',
-      yearlyPrice: "$159.99/mo",
+      yearlyPrice: "$499.00/mo",
       save: "SAVE 30%",
-      features: ['3.8 GHz', '64 GB DDR4', '960 GB NVMe SSD', '50 TB Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
-      url: "",
+      features: ['2.0-3.0 GHz GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
+      url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
       popular: true
     },
     {
       id: 2,
-      name: 'Ryzen 9 3900X (12c/24t)',
-      yearlyPrice: "$159.99/mo",
+      name: 'AMD EPYC 7551P(32c/64t)',
+      yearlyPrice: "",
       save: "SAVE 30%",
       features: ['3.8 GHz', '64 GB DDR4', '960 GB NVMe SSD', '50 TB Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
-      url: "",
+      url: "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
       onDemand: true
       
     },   
@@ -35,7 +35,7 @@ const NetherLandStreamingPlan = () => {
       <div className="container plan-sec mt-5">
       <h2 className="text-center m-auto mb-3">Offshore Netherlands Streaming Servers Pricing!</h2>
       <p className="text-center mb-5 planHead-con m-auto">Tell us your needs, and we will prepare a Best Netherlands streaming servers according to your needs.
-      the cheapest price in the market.</p>
+      </p>
       
         <div className="row qloudHost-plan justify-content-center m-auto" id='plan1'>
           {streamingplansData.map((plan) => (
@@ -54,10 +54,10 @@ const NetherLandStreamingPlan = () => {
                 )}
 
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
-                  
+                  <Link to={plan.url} className='qloudPlans-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
-                  </button>
+                    Buy Now <FaArrowRight className=""/>
+                  </button></Link>
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4 streaming-server-feature">
                     {plan.features.map((feature, index) => (
