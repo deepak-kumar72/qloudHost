@@ -6,60 +6,74 @@ import Guarantees from '../streamingServer/components/qloudHostGurantees';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import InstallationPanel from '../commonComponent/installationPanel';
 import VpsFeatureElement from './components/vpsFeatureElement';
-import QloudHostFeatures from '../homeComponent/components/qloudHostFeatures';
+import QlodHostServices from '../commonComponent/qlodHostServices';
 import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
 
+const options = [
+  "Unparalleled Performance",
+  "Maximum Security",
+  "Weekly Backup",
+  "24*7 Expert Support"
+];
 const features = [
     {img: images.ssd,
-      title: "Hosted in Netherlands",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "100% Privacy Protection",
+      description:"Get impenetrable security and full data privacy with QloudHost offshore hosting servers. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Fastest SSD Servers",
-      description:"With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
+      title: "Fair & Affordable",
+      description:"QloudHost provides you the most affordable DMCA Ignored VPS plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "Full Root Access",
+      description: "Get root level control to your server to customize it according to your needs and requirements. Isn’t it amazing? But how will this feature benefit your website? Simple, with root access, you are allowed to create, modify, customize or delete files of your website without seeking our permission.",
+      link: "",
+    },
+    {img: images.ssd,
+      title: "99.9% uptime guaranteed.",
+      description: "Our first priority is to provide you services with quality that’s why our all plans come with a guaranteed uptime of 99.9%. So let your website into our safe hands and we will ensure the availability of your website on the internet.",
+      link: "",
     },
     {img: images.ssd,
       title: "Free Website Migration",
-      description: "If you already have a website, let us make your life easier by transferring it for free!",
-      link: "/read-more",
+      description: "Had a really bad experience with your previous service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      link: "",
     },
     {img: images.ssd,
-      title: "Money-Back Guarantee",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
-    },
-    {img: images.ssd,
-      title: "99.9% Uptime Commitment",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-      link: "/read-more",
-    },
-    {img: images.ssd,
-      title: "Hosted in Neitherlands",
-      description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-      link: "/read-more",
+      title: "Weekly Backup",
+      description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple, For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
+      link: "",
     },
     
   ];
 
   const faqsData = [
     {
-      question: "What is DMCA ignore hosting?",
-      answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+      question: "Why choose QloudHost's High-Performance VPS Hosting?",
+      answer: `QloudHost’s VPS hosting is built on state-of-the-art AMD EPYC platforms with ultra-fast NVMe SSD storage, offering exceptional speed and reliability. Perfect for businesses needing robust hosting unaffected by DMCA constraints.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "What are the benefits of high performace vps hosting?",
+      answer: `Offshore High performance VPS with QloudHost provides enhanced privacy, data security, and freedom from restrictive local regulations. This is ideal for hosting content that requires more flexibility in terms of legal jurisdiction and DMCA policies.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "How does QloudHost ensure 99.99% uptime?",
+      answer: `We achieve 99.99% uptime through redundant infrastructure, including multiple data centers in Amsterdam, Netherlands locations, failover technology, and proactive server management to ensure that your VPS is always running smoothly.`
     },
     {
-      question: "Where are your servers based?",
-      answer: "Our servers are strategically located to provide the best performance for your needs."
+      question: "Can I customize my VPS hosting plan?",
+      answer: `Absolutely! QloudHost offers Customizable High-Performance VPS hosting plans to fit any requirement, including adjustable memory, CPU, and storage options. Tailor your server to match your specific needs and scale as your business grows.`
+    },
+    {
+      question: "What kind of support can I expect from QloudHost?",
+      answer: `QloudHost provides 24/7 customer support with a dedicated team of experts ready to assist you with any technical issues or queries you might have. Our goal is to ensure your hosting experience is seamless and trouble-free.`
+    },
+    {
+      question: "Can I get full admin access to my High-performance VPS Hosting Server?",
+      answer: `Definitely, our high-performance VPS hosting servers come with full root access, which allows you to customise your files and resources according to your needs. In addition, you can create, modify, upgrade, or delete your website with just a few clicks.`
     },
   ];
 
@@ -75,6 +89,7 @@ const HighPerformanceVps = () => {
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
+        options={options} // Pass the options to the HeroComponent
       />
       <HighPerformanceVpsPlan/>
       <Guarantees
@@ -87,17 +102,17 @@ const HighPerformanceVps = () => {
         buttonText="Get Started Now"
         panelOptions={[
           { name: 'AlmaLinux', img: images.cpanel },
-          { name: 'RockeyLinuc', img: images.directAdmin },
+          { name: 'RockyLinuc', img: images.directAdmin },
           { name: 'Debian', img: images.cyberPanel},
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'Windows', img: images.centos },
         ]}
       />
       <VpsFeatureElement/>
-      <QloudHostFeatures
-      heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-      content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
-      features={features} />
+      <QlodHostServices
+        heading="What You Get with Your High Performance VPS Server"
+        content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
+        features={features} />
       <Testimonials/>
       <FAQsSection
         faqs={faqsData} 

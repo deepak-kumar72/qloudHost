@@ -8,22 +8,22 @@ import '../streaming.css';
 const streamingplansData = [
     {
       id: 1,
-      name: 'Ryzen 9 3900X (12c/24t)',
-      price: '$3.50',
+      name: 'AMD EPYC 7502P (32c/64t)',
+      price: '$349.00',
       time: '/month',
-      yearlyPrice: "$159.99/mo",
-      save: "SAVE 30%",
-      features: ['3.8 GHz', '64 GB DDR4', '960 GB NVMe SSD', '50 TB Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
-      url: "",
+      yearlyPrice: "$499.00/mo",
+      save: "Save30%",
+      features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer(1GBPS)', '1 Gbit Port Speed', '1 IPv4 IP Address'],
+      url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
       popular: true
     },
     {
       id: 2,
-      name: 'Ryzen 9 3900X (12c/24t)',
-      yearlyPrice: "$159.99/mo",
-      save: "SAVE 30%",
-      features: ['3.8 GHz', '64 GB DDR4', '960 GB NVMe SSD', '50 TB Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
-      url: "",
+      name: 'AMD EPYC 7551P(32c/64t)',
+      yearlyPrice: "",
+      save: "",
+      features: ['2.0-3.0 GHz', '256 GB GB DDR4 ECC*', '100 TB Transfer', '2x 1.92 TB NVMe SSD', '1 Gbit Port Speed', '1 IPv4 IP Address'],
+      url: "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
       onDemand: true
       
     },   
@@ -34,9 +34,8 @@ const StreamingServerPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best DMCA Ignored Hosting Server Plans for You!</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get award winning Best Cheap DMCA Ignored hosting and protect your identity on the internet at
-      the cheapest price in the market.</p>
+      <h2 className="text-center m-auto mb-3">Reliable Offshore Streaming Servers Plans!</h2>
+      <p className="text-center mb-5 planHead-con m-auto">Tell us your needs, and we will prepare a Best offshore streaming servers according to your needs.</p>
       
         <div className="row qloudHost-plan justify-content-center m-auto" id='plan1'>
           {streamingplansData.map((plan) => (
@@ -55,10 +54,10 @@ const StreamingServerPlan = () => {
                 )}
 
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
-                  
+                  <Link to={plan.url}>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
-                  </button>
+                    Buy Now <FaArrowRight className=""/>
+                  </button></Link>
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4 streaming-server-feature">
                     {plan.features.map((feature, index) => (
