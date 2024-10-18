@@ -2,11 +2,11 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
 import images from '../../constants/images';
 import DedicatedNetherlandPlan from './component/dedicatedNetherlandPlan';
-import AffordableDedicatedCon from '../dedicatedServer/components/affordableDedicatedCon';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import InstallationPanel from '../commonComponent/installationPanel';
 import Services from '../commonComponent/services';
 import FAQsSection from '../commonComponent/faqSection';
+import EnterpriseGrade from '../commonComponent/enterpriseGrade';
 
 const options = [
   "Strong Infrastructure", 
@@ -73,20 +73,49 @@ const servicesData1 = [
 
 const faqsData = [
   {
-    question: "What is DMCA ignore hosting?",
-    answer: "We provide you with unhindered performance with 99.9% uptime guaranteed to ensure the maximum availability of your website."
+    question: "What is Netherlands Offshore dedicated server?",
+    answer: `An Netherlands Offshore dedicated server is refers to a type of web hosting service where an individual or organization rents an entire physical server that is located in the Netherlands,
+     and that server is used exclusively for their own website or applications. And the term offshore means your netherlands offshore dedicated server is located in offshore location where client 
+     host their site with data privacy and legal considerations or different rules regulation.`
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question: "Can I upgrade my Dedicated server to higher plan?",
+    answer: `Yes, you can upgrade your current Offshore dedicated server in Netherlands with your choice custom CPU, RAM, Storage and bandwidth.`
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question: "Do you offer free migration for your DMCA Ignored dedicated server?",
+    answer: `Yes, We do offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have more data then 5GB, then it will be chargeable as guided by our policies.`
   },
   {
-    question: "Where are your servers based?",
-    answer: "Our servers are strategically located to provide the best performance for your needs."
+    question: "How many Dedicated IP Offered by you?",
+    answer: `We Offer 1 IPv4 with Our Netherlands offshore dedicated server. Moreover if you need Additional IP Address then open a Support Ticket.`
+  },
+  {
+    question: "What can QloudHost Offshore dedicated Hosting be used for?",
+    answer: `QloudHost Offshore Netherlands Dedicated Server is used for many resource-intensive production needs- 
+    <ul>
+    <li>Desire for data security</li>
+    <li>evading government surveillance, and avoiding censorship.</li>
+    <li>Prioritize strong data protection and free speech.</li>
+    <li>Emphasize security and anonymity for the website.</li>
+    <li>Keep host location private.</li>
+    <li>Value speech freedom regardless of location.</li>
+    <li>Prefer hosting in a country with robust internet infrastructure.</li>
+    <li>Useful for blogs, forums, and content prone to censorship.</li>
+    <li>Pharmaceutical companies can use DMCA Ignored servers to comply with hosting rules.</li>
+    </ul>`
+  },
+  {
+    question: "How do I get started with Offshore dedicated server?",
+    answer: `To get started with our offshore Server, you just need to choose your favourite reliable offshore web hosting plan, enter your authentic details and checkout! Your servers will be ready to use in just a few days, all thanks to our instant activation policy.`
+  },
+  {
+    question: "Does QloudHost provide managed Offshore dedicated servers?",
+    answer: `On account of providing full flexibility and root access with our reliable dedicated server hosting solution, we don’t provide Fully managed dedicated servers. Hence, you completely customise your servers as per your needs and requirements.`
+  },
+  {
+    question: "How long does it take to activate my Offshore Server Netherlands",
+    answer: `We offer our Shared and VPS services to the market with an instant activation policy, Where as for DMCA Ignored Netherlands server will be ready to use in 5-7 Working Days.`
   },
 ];
 
@@ -105,7 +134,13 @@ const DedicatedServerNetherland = () => {
         options={options} // Pass the options to the HeroComponent
       />
       <DedicatedNetherlandPlan/>
-      <AffordableDedicatedCon/>
+      <EnterpriseGrade
+        heading="Enterprise-Grade Netherlands Offshore Servers"
+        subHeading="Lease a dependable and Affordable Netherlands offshore server with unmetered resources for your business, 
+        and enjoy unparalleled processing power coupled with top-tier security for your critical applications.
+         We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. 
+         Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:"
+      />
       <QlodHostServices
         heading="Why Choose QloudHost Dedicated Offshore Hosting?"
       content="Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.

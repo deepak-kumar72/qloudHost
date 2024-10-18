@@ -2,12 +2,12 @@ import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
 import images from "../../constants/images";
 import DmcaDedicatedPlan from "./components/dmcaDedicatedServerPlan";
-import AffordableDedicatedServer from "./components/affordablededicatedServer";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import FAQsSection from "../commonComponent/faqSection";
 import DedicatedHostingSolution from "./components/dedicatedHostingSolution";
 import InstallationPanel from "../commonComponent/installationPanel";
 import Services from "../commonComponent/services";
+import EnterpriseGrade from "../commonComponent/enterpriseGrade";
 
 const options = [
   "Flexibility and Control",
@@ -108,12 +108,12 @@ const faqsData = [
   {
     question: "What are the Benefits of DMCA Offshore dedicated server hosting?",
     answer: `f you are planning to host your website without losing your anonymity, then choosing an offshore DMCA Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
-<ul><ol>Full privacy assurance</ol>
-<ol>Unmetered resources</ol>
-<ol>Full content flexibility</ol>
-<ol>Fully DMCA ignored</ol>
-<ol>No arbitrary actions caused</ol>
-<ol>Freedom of Speech</ol></ul>`,
+<ul><li>Full privacy assurance</li>
+<li>Unmetered resources</li>
+<li>Full content flexibility</li>
+<li>Fully DMCA ignored</li>
+<li>No arbitrary actions caused</li>
+<li>Freedom of Speech</li></ul>`,
   },
   {
     question: "How do I get started with DMCA Ignored dedicated server?",
@@ -136,7 +136,7 @@ const DmcaDedicatedServer = () => {
         title="Best DMCA Ignored Dedicated Server"
         description="Supercharge your site with QloudHost’s DMCA Ignored dedicated servers! Enjoy top-tier security, performance, and control—all at an unbeatable price. Focus on growth while we handle the rest."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link=""s
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -144,7 +144,13 @@ const DmcaDedicatedServer = () => {
         options={options}
       />
       <DmcaDedicatedPlan />
-      <AffordableDedicatedServer />
+      <EnterpriseGrade
+        heading="Enterprise-Grade DMCA Ignored Dedicated Servers"
+        subHeading="Lease a dependable and cheap dmca ignored dedicated hosting with unmetered resources for your business, 
+        and enjoy unparalleled processing power coupled with top-tier security for your critical applications. 
+        We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates.
+         Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:"
+      />
       <QlodHostServices
         heading="Why Choose QloudHost DMCA Ignored Server?"
         content="Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.

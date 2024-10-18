@@ -34,6 +34,7 @@ import Refund from "./components/refundPolicy/refund";
 import ReportAbuse from "./components/reportAbuse/reportAbuse";
 import About from "./components/aboutQloudhost/about";
 import Contactus from "./components/contactUs/contactus";
+import ScrollToTop from "./constants/scrollToTop";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function AppContent() {
 
   return (
     <>
+    <ScrollToTop/>
       <TopHeader />
       <Navbar />
       <div className="main-body">

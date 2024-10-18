@@ -5,7 +5,7 @@ import '../streaming.css';
 function Guarantees({subHeading}) {
   return (
     <div className="container my-5">
-      <div className="p-4">
+      <div className="py-4">
         <h2 className="text-center mb-4 w-100">QloudHost Guarantees</h2>
         <p className="text-center mb-5">{subHeading}</p>
         <div className="row guarantees-box rounded">

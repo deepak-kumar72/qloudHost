@@ -76,10 +76,10 @@ const faqsData = [
          Hosting allows users to host content that may be considered controversial or may potentially infringe 
          on copyrighted material without the fear of their content being taken down. The Benefits of using a DMCA 
          ignored VPS hosting server include:
-         <ul><ol>Freedom of speech</ol>
-         <ol>Enhanced privacy</ol>
-         <ol>More lenient content policies</ol>
-         <ol>Lower costs</ol></ul>
+         <ul><li>Freedom of speech</li>
+         <li>Enhanced privacy</li>
+         <li>More lenient content policies</li>
+         <li>Lower costs</li></ul>
          Overall, DMCA Ignored VPS Hosting is a great option for users who want to host their content without any restrictions and want to ensure the privacy and security of their data.`,
 
   },

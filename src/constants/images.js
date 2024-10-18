@@ -1,3 +1,4 @@
+import logo from '../assets/logo.png';
 import cpanel from '../assets/icon/cPanel.png';
 import centos from '../assets/icon/centos.png';
 import cyberPanel from '../assets/icon/cyberPanel.png';
@@ -21,8 +22,10 @@ import iptv from '../assets/icon/iptv.png';
 import gaming from '../assets/icon/gaming.png'
 import neitherland from '../assets/icon/netherlands.png';
 import support from '../assets/icon/support.png';
+import payimage from '../assets/pay_img.png';
 
 const images ={
+    logo,
     cpanel,
     centos,
     cyberPanel,
@@ -46,6 +49,7 @@ const images ={
     gaming,
     neitherland,
     support,
+    payimage
 
 };
 

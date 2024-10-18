@@ -5,7 +5,7 @@ import '../commonComponent/common.css'
 
 const ChatNow = () => {
   return (
-    <div className='p-5'>
+    <div className='py-5'>
     <div className='container'>
         <div className='row'>
             <div className='col-md-6 chat-sec'>

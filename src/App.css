@@ -120,7 +120,16 @@ h2 {
   padding: 35px;
   border-radius: 10px;
   height: 100%;
+  transition: 0.4s;
 }
+
+.plan-body:hover{
+  transform: scale(1.03);}
+
+  .popular-card:hover{
+    transform: scale(1.03);
+  }
+
 .qloud-plan-body{
 box-shadow: 0px 0px 24.2px 0px #00000012;
     padding: 20px;
@@ -323,6 +332,7 @@ color: #fff;
   padding: 20px;
   border-radius: 10px;
   height: 100%;
+  border: 1px solid #F1F1F1
 }
 
 .hero-options-container{
@@ -446,20 +456,23 @@ background: #FFF7F7;
     font-size: 14px;
   }
   .start-now-btn {
-    padding: 10px;
+    padding: 10px 6px;
     margin-right: 10px !important;
   }
   .explore-btn a {
     font-size: 14px;
   }
   .explore-btn {
-    padding: 10px;
+    padding: 10px 6px;
   }
   .panel-sec {
     width: 100%;
 }
 .popular-badge{
   left: 85px !important;
+}
+.hero-options-container {
+  grid-template-columns: repeat(1, 1fr);
 }
 
 }
@@ -540,20 +553,32 @@ background: #FFF7F7;
 .hero-subTitle {
   text-align: center;
 }
+.hero-options-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.option-item span{
+  font-size: 14px;
+}
 }
 
 @media(max-width:425px){
   .panel-opt {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 13px;
     width: 155px;
 }
 .panel-opt img {
   width: 14%;
   margin-right: 10px;
 }
+.gurantee-seprator {
+  width: 260px;
 }
-
+.guarantees-box {
+  padding: 10px 2px !important;
+}
+}
 
 
 @media(min-width:1200px){

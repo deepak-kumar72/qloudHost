@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../../assets/footerlogo.png';
-import maskgroup from '../../assets/Maskgroup.png'
+// import maskgroup from '../../assets/Maskgroup.png'
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import images from '../../constants/images';
 import './common.css';
 // import { IoIosArrowForward } from "react-icons/io";
 
@@ -78,12 +78,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-light pt-5 pb-4 footer-sec">
-      <div className="container-fluid footer-menu-list px-5">
+    <footer className="text-light pt-5 footer-sec">
+      <div className="container-fluid footer-menu-list ps-5 pe-1 ">
         <div className="row">
           {/* First Column with Social Media */}
           <div className="col-md-12 col-lg-3 mb-4">
-            <img src={logo} alt='logo' className='mb-4'/>
+            <img src={images.logo} alt='logo' className='mb-4'/>
             <p className='footer-con'>
               Host your website with the best Offshore hosting server at QloudHost and get full privacy assurance. We understand the value of your data privacy that’s why we provide you services with impenetrable security!
             </p>
@@ -104,10 +104,11 @@ const Footer = () => {
             <h5 className='menu-head'>{ourServices[0].title}</h5>
             <ul className="list-unstyled">
               {ourServices[0].links.map((link, index) => (
-                <li key={index}><img src={maskgroup} alt='' className='me-1'/>
-                  <a href={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name}
-                  </a>
+                <li key={index}>
+                {/* <img src={maskgroup} alt='' className='me-1'/> */}
+                  <Link  to={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name.toUpperCase()}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -117,20 +118,22 @@ const Footer = () => {
             <h5 className='menu-head'>{myAccount[0].title}</h5>
             <ul className="list-unstyled">
               {myAccount[0].links.map((link, index) => (
-                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
-                  <a href={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name}
-                  </a>
+                <li key={index} >
+                {/* <img src={maskgroup} alt='' className='me-1'/> */}
+                  <Link to={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name.toUpperCase()}
+                  </Link>
                 </li>
               ))}
             </ul>
             <h5 className='menu-head mt-7'>{myAccount[1].title}</h5>
             <ul className="list-unstyled">
               {myAccount[1].links.map((link, index) => (
-                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
-                  <a href={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name}
-                  </a>
+                <li key={index} >
+                {/* <img src={maskgroup} alt='' className='me-1'/> */}
+                  <Link to={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name.toUpperCase()}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -138,27 +141,29 @@ const Footer = () => {
 
           </div>
 
-          <div className="col-7 col-lg-2 mb-4">
+          <div className="col-7 col-lg-3 mb-4">
             <h5 className='menu-head'>{Policies[0].title}</h5>
             <ul className="list-unstyled">
               {Policies[0].links.map((link, index) => (
-                <li key={index} ><img src={maskgroup} alt='' className='me-1 '/>
+                <li key={index} >
+                {/* <img src={maskgroup} alt='' className='me-1 '/> */}
                   <Link to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name}
+                    {link.name.toUpperCase()}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="col-5 col-lg-3 mb-4">
+          <div className="col-5 col-lg-2 mb-4 px-0">
             <h5 className='menu-head'>{ourCompany[0].title}</h5>
             <ul className="list-unstyled">
               {ourCompany[0].links.map((link, index) => (
-                <li key={index} ><img src={maskgroup} alt='' className='me-1'/>
-                  <a href={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name}
-                  </a>
+                <li key={index} >
+                {/* <img src={maskgroup} alt='' className='me-1'/> */}
+                  <Link to={link.url} className="text-light text-decoration-none footer-menu">
+                    {link.name.toUpperCase()}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -167,6 +172,23 @@ const Footer = () => {
         </div>
         </div>
         </div>
+      </div>
+      <div className='bottom-footer'>
+      <div className='container py-3 '>
+        <div className='row'>
+          <div className='col-lg-3 col-md-6 col-6 m-auto'>
+            <span className='copyrights'>© 2024 All rights reserved</span>
+          </div>
+          <div className='col-lg-3 col-md-6 col-6 terms-links m-auto'>
+            <Link to="" className='me-2'>Terms</Link>
+            <Link to="" className='me-2'>Privacy</Link>
+            <Link to="" className='me-2'>Cookies</Link>
+          </div>
+          <div className='col-lg-6 col-md-12 pay-optionimg'>
+            <img src={images.payimage} alt='payment_option'/>
+          </div>
+        </div>
+      </div>
       </div>
     </footer>
   );

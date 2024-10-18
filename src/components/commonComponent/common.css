@@ -33,8 +33,8 @@
 }
 
 .social-footer-icon{
-  background-color: #f6355a;
-  color: #fff;
+  background-color: #fff;
+  color: #f6355a;
   margin-left: 10px;
   font-size: 41px;
   padding: 10px;
@@ -54,10 +54,13 @@
   color: #fff !important; */
 }
 .footer-con {
+  font-family: Poppins;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;  
 }
+
 .footer-arrow-icon {
   color: #f6355a;
   font-size: 14px;
@@ -69,6 +72,33 @@
   font-size: 16px;
   font-weight: 800;
   margin-bottom: 25px;
+}
+
+.bottom-footer{
+    border-top: 1px solid #fff;
+}
+
+.pay-optionimg{
+  text-align: end;
+}
+
+.terms-links{
+  text-align: end;
+  align-items: center;
+}
+
+.terms-links a{
+  color: #fff;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.copyrights{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
 }
 
 /* service */
@@ -285,6 +315,16 @@ color: #596780;
 .circle-3{
   left: -291px;
 }
+.pay-optionimg{
+  text-align: center;
+}
+.footer-menu{
+  font-size: 12px;
+}
+.footer-icon{
+  margin-bottom: 12px;
+}
+
 }
 
 @media(max-width: 767px){
@@ -312,6 +352,19 @@ testimonial-role {
 }
 .feedback{
   line-height: 22px;
+}
+
+.pay-optionimg img{
+  width: 100%;
+}
+.terms-links a{
+  font-size: 11px;
+}
+.copyrights{
+  font-size: 11px;
+}
+.footer-menu{
+  font-size: 12px
 }
 }
 

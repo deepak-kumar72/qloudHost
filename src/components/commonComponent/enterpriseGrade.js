@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const sectionsData = [
     {
@@ -27,14 +27,13 @@ const sectionsData = [
       }
   ];
 
-const AffordableDedicatedCon = () => {
+const EnterpriseGrade = ({heading, subHeading}) => {
   return (
     <div className='service-section'>
       <div className="container my-5 py-5">
         <h2 className="text-center text-white mb-3 m-auto w-100">
-        Enterprise-Grade Affordable Offshore Dedicated Servers</h2>
-        <p className="text-center text-white mb-4 planHead-con m-auto">
-        Lease a dependable and cheap dedicated offshore server with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:
+        {heading}</h2>
+        <p className="text-center text-white mb-4 planHead-con m-auto">{subHeading}
         </p>
 
         <div className='row'>
@@ -52,4 +51,5 @@ const AffordableDedicatedCon = () => {
   );
 };
 
-export default AffordableDedicatedCon;
+
+export default EnterpriseGrade

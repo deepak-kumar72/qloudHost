@@ -2,11 +2,11 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent'
 import images from '../../constants/images'
 import RussiaDedicatedPlan from './components/russiaDedicatedPlan'
-import RussiaOffshoreServerFeature from './components/russiaOffshoreServerFeature'
 import QlodHostServices from '../commonComponent/qlodHostServices'
 import InstallationPanel from '../commonComponent/installationPanel'
 import Services from '../commonComponent/services'
 import FAQsSection from '../commonComponent/faqSection'
+import EnterpriseGrade from '../commonComponent/enterpriseGrade'
 
 const options = [
   "High-Speed Network",
@@ -133,7 +133,13 @@ const RussiaDedicatedServer = () => {
         options={options}
       />
       <RussiaDedicatedPlan/>
-      <RussiaOffshoreServerFeature/>
+      <EnterpriseGrade
+        heading="Enterprise-Grade DMCA Ignored Dedicated Servers"
+        subHeading="Lease a dependable and cheap dmca ignored dedicated hosting with unmetered resources for your business, 
+        and enjoy unparalleled processing power coupled with top-tier security for your critical applications. 
+        We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates.
+         Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:"
+      />
       <QlodHostServices
       heading="Why Choose QloudHost Dedicated Offshore Hosting?"
       content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"

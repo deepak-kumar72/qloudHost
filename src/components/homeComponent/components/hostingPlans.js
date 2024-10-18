@@ -52,12 +52,10 @@ const HostingPlans = () => {
       <div className="row home-plan justify-content-center">
         {plansData.map((plan) => (
           <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
-          <div className={`${plan.popular ? "popular-card h-100" : "h-100"}`}>
-  <div className="card-body plan-body position-relative" id="hostingPlan">
+          <div className={`${plan.popular ? "popular-card h-100  position-relative" : "h-100 card-body plan-body"}`}>
     {plan.popular && (
       <div className="popular-badge position-absolute">Popular</div>
     )}
-    <div className="">
       <h5 className="card-title mb-3">OFFSHORE <span>{plan.title}</span>
       </h5>
       <p className="card-text plan-desc mb-2">{plan.description}</p>
@@ -78,9 +76,7 @@ const HostingPlans = () => {
           Get Started
         </Link>
       </button>
-    </div>
   </div>
-</div>
 </div>
         ))}
         

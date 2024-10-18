@@ -43,6 +43,11 @@ color: #596780;
     background-color: #F6355A;
     color: white;
     border-radius: 10px;
+    border: 1px solid #F6355A;
+    box-shadow: -4px 4px 30px 0px #0000000a;
+    padding: 35px;
+    height: 100%;
+    transition: 0.4s;
   }
   
   .popular-card .card-title, .popular-card .card-title span, .popular-card .card-text,
