@@ -13,7 +13,7 @@ const NextArrow = (props) => {
     const { onClick } = props;
     return (
         <div className="slick-arrow slick-next" onClick={onClick}>
-            <span><FaArrowRight /></span>
+            <FaArrowLeft className='testimonial-arrow'/>
         </div>
     );
 };
@@ -22,7 +22,7 @@ const PrevArrow = (props) => {
     const { onClick } = props;
     return (
         <div className="slick-arrow slick-prev" onClick={onClick}>
-            <span><FaArrowLeft /></span>
+            <FaArrowRight className='testimonial-arrow' />
         </div>
     );
 };
@@ -71,17 +71,18 @@ const Testimonials = () => {
     ];
 
     return (
-        <div className='testimonial-sec p-5'>
+        <div className='testimonial-sec py-5'>
         <div className='container'>
         <div className="testimonial-section">
             <h2 className='testimonial-head'>What Our Clients Said About Us</h2>
-            <p className='w-50 mb-5 testimonial-subHeading'>We are loved by marketers, agencies, small business owners, and many more. Our customers’ testimonials are the best social proof we can get!</p>
+            <p className='w-75 mb-5 testimonial-subHeading'>We are loved by marketers, agencies, small business owners, and many more. Our customers’ testimonials are the best social proof we can get!</p>
+            <div className='container'>
             <Slider {...settings} className=''>
                 {testimonialsData.map((testimonial, index) => (
                     <div key={index} className=" ">
                         <div className="testimonial-content testimonial-card p-4">
                             <div className='d-flex mb-3'>
-                            <img src={testimonial.imgUrl} alt='' className='me-3'/>
+                            <img src={testimonial.imgUrl} alt='' className='me-3 testimonial-img'/>
                             <div>
                             <h3 className='testimonial-name'>{testimonial.name}</h3>
                             <p className="testimonial-role">{testimonial.role}</p>
@@ -92,6 +93,7 @@ const Testimonials = () => {
                     </div>
                 ))}
             </Slider>
+            </div>
         </div>
         </div>
         </div>

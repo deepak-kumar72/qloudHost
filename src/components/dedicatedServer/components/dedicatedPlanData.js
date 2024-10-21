@@ -75,7 +75,7 @@ const dedicatedplansData = [
         save: "SAVE 30%",
         features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
         url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
-        bestForStreaming: false
+        bestForStreaming: true,
       },
   ];
   

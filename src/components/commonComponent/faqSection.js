@@ -31,14 +31,9 @@ const FAQsSection = ({ faqs }) => {
                       {activeIndex === index ? <FaMinus /> : <FaPlus />}
                     </span>
                   </div>
-                  {activeIndex === index && (
-                    <div className="accordion-body faq-answer">
-
-
-                      <p dangerouslySetInnerHTML={{ __html: faq.answer }} ></p>
-
-                    </div>
-                  )}
+                  <div className={`accordion-body faq-answer ${activeIndex === index ? 'open' : ''}`}>
+                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
+                  </div>
                 </div>
               ))}
             </div>

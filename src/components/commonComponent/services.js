@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
 
 const Services = ({ servicesData }) => {
@@ -23,9 +23,9 @@ const Services = ({ servicesData }) => {
                     <div className='card-title'>{service.title}</div>
                     <div className='card-text service-desc mb-3'>{service.description}</div>
                     <div>
-                      <Link to={service.buttonLink} className='btn start-now-btn start-now'>
+                      <a href={service.buttonLink} className='btn start-now-btn start-now'>
                         {service.buttonText} <FaArrowRight className="ms-2"/>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

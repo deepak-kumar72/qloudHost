@@ -22,7 +22,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
-    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-starter"
+    url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
-    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-business"
+    url: "https://my.qloudhost.com/store/wordpress-hosting/wp-business",
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ const plansData = [
       "Support - Chat, Ticket & Email",
       "Softaculous",
     ],
-    url:"https://my.qloudhost.com/store/wordpress-hosting/wp-premium"
+    url: "https://my.qloudhost.com/store/wordpress-hosting/wp-premium",
   },
 ];
 
@@ -72,50 +72,75 @@ const OffWordpressPlan = () => {
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
-        <h2 className="text-center m-auto mb-3">Powerfull Offshore WordPress Hosting Plans</h2>
-        <p className="text-center mb-5 planHead-con m-auto">Grow your business with hassle-free Cheap Offshore WordPress Hosting, reliable performance.
-          Our WordPress-optimized hosting is designed to scale as your website grows.</p>
+        <h2 className="text-center m-auto mb-3">
+          Powerfull Offshore WordPress Hosting Plans
+        </h2>
+        <p className="text-center mb-5 planHead-con m-auto">
+          Grow your business with hassle-free Cheap Offshore WordPress Hosting,
+          reliable performance. Our WordPress-optimized hosting is designed to
+          scale as your website grows.
+        </p>
 
-        <div className="row home-plan justify-content-center" id='explore'>
+        <div className="row home-plan justify-content-center" id="explore">
           {plansData.map((plan) => (
-            <div key={plan.id} className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col">
-              <div className={`${plan.popular ? "popular-qloudhost-card h-100" : "h-100"}`}>
+            <div
+              key={plan.id}
+              className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col"
+            >
+              <div
+                className={`${
+                  plan.popular ? "popular-qloudhost-card h-100" : "h-100"
+                }`}
+              >
                 <div className="card-body plan-body position-relative">
                   {plan.popular && (
-                    <div className="popular-badge position-absolute">Popular</div>
+                    <div className="popular-badge position-absolute">
+                      Popular
+                    </div>
                   )}
                   <div className="">
-                    <h5 className="card-title mb-3">{plan.title}
-                    </h5>
-                    <p className="card-text plan-desc mb-2">{plan.description}</p>
-                    <h3 className="card-price">{plan.price} <span className="price-unit">/month</span></h3>
+                    <h5 className="card-title mb-3">{plan.title}</h5>
+                    <p className="card-text plan-desc mb-2">
+                      {plan.description}
+                    </p>
+                    <h3 className="card-price">
+                      {plan.price} <span className="price-unit">/month</span>
+                    </h3>
                     <div className="d-flex">
-                    <p className="save me-3">{plan.save}</p>
-                    <p className="save-price mb-4"> <del>{plan.originalPrice}</del></p>
+                      <p className="save me-3">{plan.save}</p>
+                      <p className="save-price mb-4">
+                        {" "}
+                        <del>{plan.originalPrice}</del>
+                      </p>
                     </div>
                     <ul className="list-unstyled mb-4">
                       {plan.features.map((feature, index) => (
-                        <li key={index} className="mb-2 features wordpress-features">
-                          <i className="bi bi-check-circle-fill"></i><FaCheck className="check" /> {feature}
+                        <li
+                          key={index}
+                          className="mb-2 features wordpress-features"
+                        >
+                          <i className="bi bi-check-circle-fill"></i>
+                          <FaCheck className="check" /> {feature}
                         </li>
                       ))}
                     </ul>
-                    <Link
-                        to={plan.url}>
-                    <button className="plan-btn">
-                      
-                        Get Started
-                      
-                    </button></Link>
+                    <Link to={plan.url}>
+                      <button className="plan-btn">Get Started</button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-
         </div>
         <div className="text-center mt-3">
-          <span className="consult">Looking to upgrade resources? Check our Offshore VPS Hosting Plans or Looking for more power? Check out our <Link to="" className=" fw-bold">Offshore Dedicated Servers →</Link></span>
+          <span className="consult">
+            Looking to upgrade resources? Check our Offshore VPS Hosting Plans
+            or Looking for more power? Check out our{" "}
+            <Link to="/offshore-dedicated-servers/" className=" fw-bold">
+              Offshore Dedicated Servers →
+            </Link>
+          </span>
         </div>
       </div>
     </div>

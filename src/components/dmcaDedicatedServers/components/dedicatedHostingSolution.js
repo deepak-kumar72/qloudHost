@@ -13,8 +13,8 @@ const DedicatedHostingSolution = () => {
 
         <div className='row'>
           
-            <div  className="col-md-12 col-lg-6 mb-4">
-              <ul className='text-white'>
+            <div  className="col-md-12 col-lg-6">
+              <ul className='text-white sol'>
                 <li>Want to keep their information secure from government surveillance
                 and censorship.</li>
                 <li>Security and anonymity are the top priorities for their site.</li>
@@ -25,7 +25,7 @@ const DedicatedHostingSolution = () => {
                 <li>Pharmaceutical companies can utilize DMCA Ignored servers to prevent violating their country’s terms of service when hosting their websites.</li>
               </ul>
             </div>
-            <div  className="col-md-12 col-lg-6 mb-4">
+            <div  className="col-md-12 col-lg-6">
              
             </div>
         </div>

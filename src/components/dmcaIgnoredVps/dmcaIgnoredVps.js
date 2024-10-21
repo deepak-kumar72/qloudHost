@@ -148,7 +148,7 @@ const DmcaIgnoredVps = () => {
         title="Best Cheap DMCA Ignored VPS Hosting"
         description="Explore high-performance with DMCA Ignored VPS Hosting in Amsterdam, Netherlands. Enjoy seamless management and an exceptional offshore hosting experience. Upgrade your hosting today!"
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -162,6 +162,7 @@ const DmcaIgnoredVps = () => {
         title="Available Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: "AlmaLinux", img: images.cpanel },
           { name: "RockeyLinuc", img: images.directAdmin },

@@ -14,16 +14,20 @@ const ChatNow = () => {
 
             </div>
             <div className='col-md-6 m-auto text-center'>
-                <button className='chat-now-btn start-now-btn me-3 '><Link to="">
+            <Link to="">
+                <button className='chat-now-btn start-now-btn me-3 '>
                     Chat Now <FaArrowRight className="ms-2" />
-                </Link>
+               
 
                 </button>
-                <button className=' start-now-btn'>
-                <Link to="">
-                    Get Started <FaArrowRight className="ms-2" />
                 </Link>
+                <Link to="">
+                <button className=' start-now-btn'>
+                
+                    Get Started <FaArrowRight className="ms-2" />
+                
                 </button>
+                </Link>
             </div>
         </div>
     </div>

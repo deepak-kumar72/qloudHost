@@ -32,12 +32,12 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.threeYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
-                    <div className="card-body plan-body position-relative">
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body plan-body position-relative h-100"}`}>
+                   
                       {plan.popular && (
-                        <div className="popular-badge qloud-popular-badge position-absolute">Best Value</div>
+                        <div className="qloud-popular-badge position-absolute">Best Value</div>
                       )}
-                      <div className="">
+
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
@@ -49,12 +49,10 @@ const OffShoreHostingPlan = () => {
                               <FaCheck className="check" />{feature}
                             </li>
                           ))}
-                        </ul>
+                        </ul><Link to={plan.url}>
                         <button className="plan-btn">
-                          <Link to={plan.url}>Get Started</Link>
-                        </button>
-                      </div>
-                    </div>
+                          Get Started
+                        </button></Link>
                   </div>
                 </div>
               ))}
@@ -66,12 +64,11 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
-                    <div className="card-body plan-body position-relative">
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
-                        <div className="popular-badge qloud-popular-badge position-absolute">Popular</div>
+                        <div className="qloud-popular-badge position-absolute">Popular</div>
                       )}
-                      <div className="">
+                    
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
@@ -83,12 +80,11 @@ const OffShoreHostingPlan = () => {
                               <FaCheck className="check" /> {feature}
                             </li>
                           ))}
-                        </ul>
+                        </ul><Link to={plan.url}>
                         <button className="plan-btn">
-                          <Link to={plan.url}>Get Started</Link>
+                          Get Started
                         </button>
-                      </div>
-                    </div>
+                        </Link>
                   </div>
                 </div>
               ))}
@@ -100,12 +96,10 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneMonthPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
-                    <div className="card-body plan-body position-relative">
+                  <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
-                        <div className="popular-badge qloud-popular-badge position-absolute">Popular</div>
+                        <div className=" qloud-popular-badge position-absolute">Popular</div>
                       )}
-                      <div className="">
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
@@ -118,11 +112,10 @@ const OffShoreHostingPlan = () => {
                             </li>
                           ))}
                         </ul>
+                        <Link to={plan.url}>
                         <button className="plan-btn">
-                          <Link to={plan.url}>Get Started</Link>
-                        </button>
-                      </div>
-                    </div>
+                          Get Started
+                        </button></Link>
                   </div>
                 </div>
               ))}

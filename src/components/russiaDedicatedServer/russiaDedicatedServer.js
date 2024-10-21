@@ -125,7 +125,7 @@ const RussiaDedicatedServer = () => {
         title="Best Cheap Russia Offshore dedicated Server"
         description="Host on our powerful DMCA Ignored Offshore dedicated server inAmsterdam, Netherlands location. Assembled by top engineers, it’s secure, budget-friendly, and robust—ideal for your enterprise’s online presence."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -149,6 +149,7 @@ const RussiaDedicatedServer = () => {
         description="Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.
 Utilize advanced technology security measures to ensure accurate information dissemination."
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
           { name: 'DirectAdmin', img: images.directAdmin },

@@ -13,29 +13,26 @@ const RussiaDedicatedPlan = () => {
       <p className="text-center mb-5 planHead-con m-auto">Buy dedicated servers in Russia with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance.
       the cheapest price in the market.</p>
       
-        <div className="row offshoreVps-plan justify-content-center" id='plan1'>
+        <div className="row offshoreVps-plan justify-content-center" id='explore'>
           {russiaDedicatedPlanData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-            <div className={`${plan.popular ? "popular-qloudhost-card" : ""} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""}`}>
-            
-              <div className="card-body offshore-plan-body position-relative">
+            <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body offshore-plan-body position-relative h-100"} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""} ${plan.newServer ? "popular-qloudhost-card" : ""}`}>
                 {plan.popular && (
-                  <div className="popular-badge vps-badge position-absolute">Popular</div>
+                  <div className=" qloud-popular-badge position-absolute">Popular</div>
                 )}
                 {plan.newServer && (
-                  <div className="popular-badge qloud-popular-badge position-absolute">New Server</div>
+                  <div className="new-server qloud-popular-badge position-absolute">New Server</div>
                 )}
                 {plan.bestForStreaming && (
-                  <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>
+                  <div className="qloud-streaming-badge position-absolute">Best for Streaming</div>
                 )}
-                <div>
                   <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span></h5>
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
-                  <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
-                  
+                  <p className="save mb-3">{plan.save} <span className="save-price ms-3">Was <del>{plan.yearlyPrice}</del></span></p>
+                  <Link to={plan.url} className='dedicated-plan-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
-                    <Link to={plan.url}>Buy Now</Link> <FaArrowRight className=""/>
-                  </button>
+                    Buy Now <FaArrowRight className=""/>
+                  </button></Link>
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
@@ -44,15 +41,13 @@ const RussiaDedicatedPlan = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
             </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-3">
           <span className="consult">Looking for high-performance and custom resources? Our friendly <Link to="" className="fw-bold">support sales team</Link> is here to help! 
-          <Link to="" className="fw-bold">Get in touch</Link> with us today.</span>
+          <Link to="/contact-us/" className="fw-bold">Get in touch</Link> with us today.</span>
         </div>
       </div>
     </div>

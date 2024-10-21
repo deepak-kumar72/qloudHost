@@ -59,13 +59,9 @@ const HeroComponent = ({
               </div>
             </div>
           </div>
-          <div className="col-md-6 ">
-            <div className="hero-image-container">
-              <img
-                src={imageSrc}
-                alt="frame"
-                className="hero-frame position-absolute"
-              />
+          <div className="col-md-6 m-auto">
+            <div className="hero-image-container position-relative">
+              <img src={imageSrc} alt="frame" className="hero-frame" />
               <div className="features"></div>
             </div>
           </div>

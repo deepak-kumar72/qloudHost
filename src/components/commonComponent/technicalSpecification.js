@@ -9,7 +9,6 @@ const TechnicalSpecification = () => {
     'CloudLinux OS',
     'GD Graphics Library',
     'LiteSpeed Web Server',
-
     'Zend Guard Loader',
     'ionCube PHP Loader',
     'Subversion',
@@ -36,7 +35,7 @@ const TechnicalSpecification = () => {
 
       <div className="row">
         {/* First Carousel - Moves to the Left */}
-        <div className="col-12 my-1">
+        <div className="col-12 my-2">
           <div className="carousel-wrapper">
             <div className="carousel left">
               {duplicatedItems.map((item, index) => (
@@ -49,7 +48,7 @@ const TechnicalSpecification = () => {
         </div>
 
         {/* Second Carousel - Moves to the Right */}
-        <div className="col-12 my-1">
+        <div className="col-12 my-2">
           <div className="carousel-wrapper carousel-right-slide">
             <div className="carousel right">
               {duplicatedItems.map((item, index) => (
@@ -60,7 +59,7 @@ const TechnicalSpecification = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 my-1">
+        <div className="col-12 my-2">
           <div className="carousel-wrapper">
             <div className="carousel left">
               {duplicatedItems.map((item, index) => (

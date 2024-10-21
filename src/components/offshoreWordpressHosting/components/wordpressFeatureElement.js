@@ -8,7 +8,7 @@ const WordpressFeatureElement = () => {
     <div className="privacy-hardware-container mt-5">
       <div className="container">
         {/* Privacy Section */}
-        <div className="row align-items-center mb-5">
+        <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
               src={images.videoStreaming}
@@ -16,7 +16,7 @@ const WordpressFeatureElement = () => {
               className="img-fluid m-auto"
             />
           </div>
-          <div className="col-md-6 privacyHardware-desc">
+          <div className="col-md-6 feature-element-sec">
             <h2 className="w-100 mb-3">
               Free & Effortless WordPress Migration
             </h2>
@@ -37,11 +37,11 @@ const WordpressFeatureElement = () => {
         </div>
 
         {/* Hardware Section */}
-        <div className="row align-items-center mb-5">
+        <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
             <img src={images.quality} alt="" className="img-fluid" />
           </div>
-          <div className="col-md-6 order-md-1 privacyHardware-desc">
+          <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DirectAdmin and Softaculous</h2>
             <p className="">
               No matter how tech-savvy you are, DirectAdmin provides you with
@@ -57,7 +57,7 @@ const WordpressFeatureElement = () => {
           </button> */}
           </div>
         </div>
-        <div className="row align-items-center mb-5">
+        <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
               src={images.videoStreaming}
@@ -65,7 +65,7 @@ const WordpressFeatureElement = () => {
               className="img-fluid m-auto"
             />
           </div>
-          <div className="col-md-6 privacyHardware-desc">
+          <div className="col-md-6 feature-element-sec">
             <h2 className="w-100 mb-3">
               WordPress Pre-Install & Free SSL Certificates
             </h2>

@@ -51,11 +51,11 @@ const DmcaIgnoredVpsPlan = () => {
       <p className="text-center mb-5 planHead-con m-auto">Get unbeatable performance with our Best Cheap offshore DMCA Ignored VPS hosting Servers without paying any extra bucks! Pay only for what you use!
       Pay only for what you use</p>
       
-      <div className="row offshoreVps-plan justify-content-center" id='plan1'>
+      <div className="row offshoreVps-plan justify-content-center" id='explore'>
         {dmcaplansData.map((plan) => (
           <div key={plan.id} className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col">
-          <div className={`${plan.popular ? "popular-qloudhost-card" : ""}`}>
-  <div className="card-body offshore-plan-body position-relative">
+          <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body offshore-plan-body position-relative h-100"}`}>
+  <div className="">
     {plan.popular && (
       <div className="popular-badge vps-badge position-absolute">Popular</div>
     )}
@@ -71,14 +71,11 @@ const DmcaIgnoredVpsPlan = () => {
             <i className="bi bi-check-circle-fill"></i><FaCheck className="check"/> {feature}
           </li>
         ))}
-      </ul>
+      </ul> <Link  to={plan.url}>
       <button className="plan-btn vps-plan-btn" >
-        <Link 
-          to={plan.url} 
-        >
+       
           Get Started
-        </Link>
-      </button>
+      </button></Link>
     </div>
   </div>
 </div>

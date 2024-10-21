@@ -9,7 +9,14 @@
   display: block;
   margin-top: 0; /* optional, adjusts the dropdown position */
   opacity: 1;
-    visibility: visible
+    visibility: visible;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: #fff7f7;
+  color: #f6355a;
 }
 
 .navbar-nav li a {
@@ -17,6 +24,10 @@
   font-size: 16px;
   font-weight: 500;
   color: #0b100d;
+}
+
+.plan-body .card-title span{
+  color:#f6355a
 }
 
 .signIn-btn {
@@ -28,8 +39,19 @@
   font-weight: 500;
 }
 
+.signIn-btn:hover{
+border: 1px solid #f6355a;
+color:#f6355a
+}
+
+.hero-frame {
+  width: 100%;
+}
+
+
 .footer-sec {
   background: #0d121f;
+  overflow: hidden;
 }
 
 .social-footer-icon{
@@ -186,49 +208,48 @@ font-weight: 400;
 
 /* testimonial */
 
-/* .slick-arrow {
-        position: absolute !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        z-index: 100 !important;
-        cursor: pointer !important;
-        font-size: 2rem !important;
-        color: #F6355A !important;
-    }
-    
-    .slick-next {
-        right: -25px !important; 
-    }
-    
-    .slick-prev {
-        left: -25px !important;
-    } */
 
 .testimonial-card {
   background: #fff7f7;
   margin-right: 20px;
   border-radius: 30px;
-  height: 100%;
+  height: 230px;
+  margin: 0px 20px;
 }
 
+.testimonial-card:hover{
+  background-color: #f6355a;
+  color: #fff;
+}
+.testimonial-card:hover .testimonial-name{
+
+  color: #fff;
+}
+
+
 .testimonial-name {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   color: #000;
 }
 
 .testimonial-role {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .feedback {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 22px;
 }
 
-/* testimonial */
+.testimonial-img{
+  width: 80px;
+  height: 80px;
+}
+
+
 
 .testimonial {
   background: #fff7f7;
@@ -252,6 +273,48 @@ font-weight: 400;
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+
+.slick-prev, .slick-next {
+ font-size: 20px !important;
+ padding: 10px;
+    line-height: 0;
+    position: absolute;
+    top: -136px !important;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+
+.slick-prev{
+  /* right: 22px !important; */
+left: 97% !important;
+}
+.slick-next {
+  right: 90px !important;
+}
+
+.testimonial-arrow {
+  color: #fff;
+  background-color:#FFF7F7;
+  color: #0000004D;
+  z-index: 1000;
+  padding: 18px;
+  font-size: 60px;
+  border-radius: 30px;
+} 
+
+.testimonial-arrow:hover, .testimonial-arrow:focus{
+  background-color: #f6355a !important;
+  color: #fff;
 }
 
 .faq-header {
@@ -278,6 +341,7 @@ font-weight: 400;
 .chat-now-btn{
   background: #FFF7F7;
   border: 1px solid #fff7f7;
+  color: #f6355a;
 }
 
 .chat-now-btn a{
@@ -295,6 +359,44 @@ font-size: 16px;
 font-weight: 400;
 line-height: 28px;
 color: #596780;
+}
+
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, transform 0.3s ease;
+  transform: scaleY(0);
+}
+
+.accordion-body.open {
+  max-height: 500px; /* Adjust this value based on the content size */
+  transform: scaleY(1);
+}
+
+.accordion-body.open .accordion-header{
+  margin-bottom: 20px;
+}
+
+
+
+/* tooltip */
+
+/* Tooltip styles */
+.custom-tooltip {
+  background-color: #fff !important;
+  border: 1px solid #f6355a !important;
+  color: #f6355a !important;
+  padding: 8px;
+}
+
+.custom-tooltip.show {
+  opacity: 1;
+}
+
+/* Make the tooltip stay visible on hover */
+.tooltip:hover {
+  opacity: 1 !important;
 }
 
 
@@ -325,6 +427,32 @@ color: #596780;
   margin-bottom: 12px;
 }
 
+.navbar-toggler{
+  padding: 3px 10px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+  border: 1px solid #f6355a;
+}
+
+.offcanvas-header{
+  border-bottom: 1px solid #f6355a;
+}
+
+.offcanvas-body, .offcanvas-body .navbar-nav{
+  padding: 0px !important;
+}
+
+.offcanvas-body .nav-item{
+  padding: 0px 20px !important;
+}
+
+.nav-item:hover{
+  background: #FFF7F7;
+
+}
+
 }
 
 @media(max-width: 767px){
@@ -338,7 +466,7 @@ color: #596780;
 .testimonial-name {
   font-size: 18px;
 }
-testimonial-role {
+.testimonial-role {
   font-size: 16px;
 }
 .testimonial-head{
@@ -366,6 +494,30 @@ testimonial-role {
 .footer-menu{
   font-size: 12px
 }
+
+.slick-prev, .slick-next {
+     top: 45% !important;
+ }
+ 
+ 
+ .slick-prev{
+   /* right: 22px !important; */
+ left: 93% !important;
+ z-index: 100;
+ }
+ .slick-next {
+   right: 97% !important;
+ }
+ .testimonial-arrow {
+  padding: 8px;
+  font-size: 35px;
+} 
+
+.testimonial-card {
+  width: 85%;
+  margin: auto;
+}
+ 
 }
 
 @media (min-width:768px){
@@ -377,5 +529,9 @@ testimonial-role {
 @media(min-width:1400px){
   .hero-frame {
     width: 501px;
+}
+
+.navbar-expand-lg{
+  justify-content: center;
 }
 }

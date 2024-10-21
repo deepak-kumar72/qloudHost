@@ -136,7 +136,7 @@ const DmcaDedicatedServer = () => {
         title="Best DMCA Ignored Dedicated Server"
         description="Supercharge your site with QloudHost’s DMCA Ignored dedicated servers! Enjoy top-tier security, performance, and control—all at an unbeatable price. Focus on growth while we handle the rest."
         button1Text="Get Started Now"
-        button1Link=""s
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -164,6 +164,7 @@ Utilize advanced technology security measures to ensure accurate information dis
 with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so
 that you can manage your website files with full control!"
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: "cPanel", img: images.cpanel },
           { name: "DirectAdmin", img: images.directAdmin },

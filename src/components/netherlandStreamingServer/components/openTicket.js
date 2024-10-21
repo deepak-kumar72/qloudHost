@@ -12,7 +12,7 @@ const OpenTicket = () => {
             <p>Need Custom Server solutions that scale with your business to Next-level deliver exceptional performance on even the most demanding Streaming, IPTV media streaming projects.</p>
             </div>
             <div className='col-lg-4 col-sm-12 m-auto text-center'>
-            <Link to=""><button className=' start-now-btn custom-sol-btn'>   
+            <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2"><button className=' start-now-btn custom-sol-btn'>   
                     Open Ticket <FaArrowRight className="ms-2" />
                 </button></Link>
             </div>

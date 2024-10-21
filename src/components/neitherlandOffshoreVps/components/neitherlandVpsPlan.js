@@ -83,22 +83,20 @@ const NeitherLandOffshoreVpsPlan = () => {
           application. Available with Linux or Windows operating systems.
         </p>
 
-        <div className="row offshoreVps-plan justify-content-center" id="plan1">
+        <div className="row offshoreVps-plan justify-content-center" id="explore">
           {neitherlandVpsplansData.map((plan) => (
             <div
               key={plan.id}
               className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col"
             >
               <div
-                className={`${plan.popular ? "popular-qloudhost-card" : ""}`}
+                className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body offshore-plan-body position-relative h-100"}`}
               >
-                <div className="card-body offshore-plan-body position-relative">
                   {plan.popular && (
                     <div className="popular-badge vps-badge position-absolute">
                       Popular
                     </div>
                   )}
-                  <div className="">
                     <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                     <h3 className="card-price vps-plan-price mb-3">
                       {plan.price} <span className="price-unit">/month</span>
@@ -120,8 +118,6 @@ const NeitherLandOffshoreVpsPlan = () => {
                         Get Started
                       </button>
                     </Link>
-                  </div>
-                </div>
               </div>
             </div>
           ))}
@@ -129,7 +125,7 @@ const NeitherLandOffshoreVpsPlan = () => {
         <div className="text-center mt-3">
           <span className="consult">
             Looking for more power? Check our DMCA
-            <Link to="" className=" fw-bold">
+            <Link to="/offshore-dedicated-servers/" className=" fw-bold">
               Ignored OffShore Dedicated Server
             </Link>
             Plans

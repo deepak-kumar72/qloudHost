@@ -12,25 +12,22 @@ const VideoHostingPlan= () => {
       <h2 className="text-center m-auto mb-3">Best Offshore Video Hosting Plans at the Lowest Cost!</h2>
       <p className="text-center mb-5 planHead-con m-auto">Get your offshore Adult video hosting server ready at a meagre cost. No hidden charges or conditions applied!</p>
       
-        <div className="row offshoreVps-plan justify-content-center g-3" id='plan1'>
+        <div className="row offshoreVps-plan justify-content-center gy-2" id='explore'>
           {videoHostingplansData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-            <div className={`${plan.Popular ? "popular-qloudhost-card" : ""} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""} ${plan.newServer ? "popular-qloudhost-card" : ""}`}>
-            
-              <div className="card-body qloudHost-plan-body position-relative">
+            <div className={`${plan.Popular ? "popular-qloudhost-card h-100 position-relative" : "card-body qloudHost-plan-body position-relative h-100"} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""} ${plan.newServer ? "popular-qloudhost-card" : ""}`}>
               {plan.Popular && (
-                  <div className="popular-badge qloud-popular-badge  position-absolute">Popular</div>
+                  <div className=" qloud-popular-badge  position-absolute">Popular</div>
                 )}
                 {plan.newServer && (
-                  <div className="popular-badge qloud-popular-badge position-absolute">New Server</div>
+                  <div className="qloud-popular-badge new-server  position-absolute">New Server</div>
                 )}
                 {plan.bestForStreaming && (
-                  <div className="popular-badge qloud-popular-badge position-absolute">Best for Streaming</div>
+                  <div className=" qloud-streaming-badge position-absolute">Best for Streaming</div>
                 )}
-                <div>
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
-                  <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.originalPrice}</del></span></p>
+                  <p className="save mb-3">{plan.save} <span className="save-price ms-3">was<del>{plan.originalPrice}</del></span></p>
                   
                   <Link to={plan.url} class='dedicated-plan-btn'><button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
                     Buy Now <FaArrowRight className=""/>
@@ -43,8 +40,6 @@ const VideoHostingPlan= () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
             </div>
             </div>
           ))}

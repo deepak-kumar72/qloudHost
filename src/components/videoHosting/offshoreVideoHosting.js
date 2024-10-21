@@ -86,7 +86,7 @@ const OffshoreVideoHosting = () => {
       title="100% DMCA Offshore Video Hosting"
         description="Optimize your adult, tube, copyrighted, and offshore content with our Offshore Video Hosting. Enjoy top speed and reliability for your web app, business site, or video platform."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -103,6 +103,7 @@ const OffshoreVideoHosting = () => {
         title="Operating Systems"
         description="QloudHost is offering you multiple OS options to choose from so that you can work with the Operating system you relish the most."
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: 'AlmaLinux', img: images.cpanel },
           { name: 'RockeyLinux', img: images.directAdmin },

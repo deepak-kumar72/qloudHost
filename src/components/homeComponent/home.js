@@ -26,37 +26,37 @@ const features = [
     img: images.ssd,
     title: "Hosted in Netherlands",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    link: "",
   },
   {
     img: images.ssd,
     title: "Fastest SSD Servers",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    link: "",
   },
   {
     img: images.ssd,
     title: "Free Website Migration",
     description: "If you already have a website, let us make your life easier by transferring it for free!",
-    link: "/read-more",
+    link: "",
   },
   {
     img: images.ssd,
     title: "Money-Back Guarantee",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    link: "",
   },
   {
     img: images.ssd,
     title: "99.9% Uptime Commitment",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
-    link: "/read-more",
+    link: "",
   },
   {
     img: images.ssd,
     title: "Hosted in Neitherlands",
     description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-    link: "/read-more",
+    link: "",
   },
 
 ];
@@ -105,7 +105,7 @@ const servicesData1 = [
     title: "New Website?",
     description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
     buttonText: "Get Started Now",
-    buttonLink: "#",
+    buttonLink: "#hostingPlan",
     iconClass: "bi-globe",
   },
   {
@@ -114,7 +114,7 @@ const servicesData1 = [
     title: "Migration?",
     description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
     buttonText: "Get Started Now",
-    buttonLink: "",
+    buttonLink: "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
     iconClass: "bi-arrow-repeat",
   },
 
@@ -128,7 +128,7 @@ const Home = () => {
         title="Powerful Secure & Best DMCA Ignored Hosting"
         description="Get the Best for your website with QloudHost’s DMCA Ignored hosting packages. Join over 3000+ customers who rely on us for a robust offshore DMCA Ignored server foundation."
         button1Text="Get Started Now"
-        button1Link="#hostingPlan"
+        button1Link="hostingPlan"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={heroImage}

@@ -37,10 +37,12 @@ const NetherLandStreamingPlan = () => {
       <p className="text-center mb-5 planHead-con m-auto">Tell us your needs, and we will prepare a Best Netherlands streaming servers according to your needs.
       </p>
       
-        <div className="row qloudHost-plan justify-content-center m-auto" id='plan1'>
+        <div className="row qloudHost-plan justify-content-center m-auto" id='explore'>
           {streamingplansData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-6 mb-4 explore-plan-col">
-              <div className="card-body qloud-plan-body position-relative">
+            <div
+                className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body offshore-plan-body position-relative h-100"}`}
+              >
                 {plan.popular && (
                   <div className="popular-badge streaming-badge position-absolute">Popular</div>
                 )}

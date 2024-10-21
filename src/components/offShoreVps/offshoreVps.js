@@ -127,9 +127,9 @@ const OffshoreVps = () => {
         title="Best Cheap Offshore VPS Hosting"
         description="Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times."
         button1Text="Get Started Now"
-        button1Link="explorePlan"
+        button1Link="explore"
         button2Text="Explore Features"
-        button2Link="/offshore-vps-hosting/windows-rdp/" // Link for the second button
+        button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
@@ -140,6 +140,7 @@ const OffshoreVps = () => {
         title="Available Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
+        url="explore"
         panelOptions={[
           { name: "AlmaLinux", img: images.cpanel },
           { name: "Rockey Linux", img: images.directAdmin },

@@ -15,21 +15,19 @@ const DedicatedAdultPlan = () => {
         <div className="row offshoreVps-plan justify-content-center" id='plan1'>
           {dedicatedAdultPlanData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-            <div className={`${plan.popular ? "popular-qloudhost-card" : ""} ${plan.bestForStreaming ? "popular-qloudhost-card" : ""}`}>
-            
-              <div className="card-body offshore-plan-body position-relative">
+            <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "h-100 card-body offshore-plan-body position-relative"} ${plan.bestForStreaming ? "popular-qloudhost-card h-100" : ""}`}>
                 {plan.popular && (
-                  <div className="popular-badge vps-badge position-absolute">Popular</div>
+                  <div className="text-center qloud-popular-badge position-absolute">Popular</div>
                 )}
                 {plan.bestForStreaming && (
-                  <div className="popular-badge vps-badge position-absolute">Best for Streaming</div>
+                  <div className="text-center qloud-streaming-badge position-absolute">Best for Streaming</div>
                 )}
-                <div>
+                
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price vps-plan-price mb-3">{plan.price} <span className="price-unit">/month</span></h3>
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3">was <del> {plan.yearlyPrice}</del></span></p>
                   <Link to={plan.url} className='dedicated-plan-btn'>
-                  <button className="plan-btn  d-flex justify-content-between mb-4">
+                  <button className="plan-btn dedicated-plan-btn   d-flex justify-content-between align-items-center mb-4">
                     Order Now<FaArrowRight className=""/>
                   </button></Link> 
                   <h4 className='mb-3 top-feature'>Top Features</h4>
@@ -40,8 +38,6 @@ const DedicatedAdultPlan = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
             </div>
             </div>
           ))}
