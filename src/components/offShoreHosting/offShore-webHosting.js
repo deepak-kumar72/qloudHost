@@ -60,38 +60,38 @@ const features = [
 const faqsData = [
   {
     question: "What is offshore Web Hosting?",
-    answer: "Offshore web hosting refers to the practice of hosting your website, data, or application in a data center located outside your country of origin. This approach offers numerous benefits, such as enhanced privacy, increased security, and the ability to host content that may be restricted in certain regions. Offshore hosting is particularly useful for those looking to host copyrighted or DMCA content, as well as websites that may be vulnerable to hacking attempts. By choosing an offshore web hosting, you can enjoy greater flexibility, increased security, and improved performance for your website or application."
+    answer: `<a href="https://qloudhost.com/offshore-web-hosting/" class="faq-link">Offshore web hosting</a> refers to the practice of hosting your website, data, or application in a data center located outside your country of origin.This approach offers numerous benefits, such as enhanced privacy, increased security, and the ability to host content that may be restricted in certain regions.Offshore hosting is particularly useful for those looking to host copyrighted or <a href="https://qloudhost.com/" class="faq-link">DMCA</a> content, as well as websites that may be vulnerable to hacking attempts.By choosing an offshore web hosting, you can enjoy greater flexibility, increased security, and improved performance for your website or application.`
   },
   {
     question: "How to know which web hosting plan I should choose?",
     answer: `Before you choose the best shared web hosting plan for your website, there are many things to take into consideration.
       <ul>
-          <li>What amount of traffic do you expect to see your site receive?</li>
-          <li>What information do you need from your website visitors?</li>
-          <li>How many websites are you able to host?</li>
-          <li>What technical skills are you able to use to manage your website server?</li>
-          <li>What is your website storage and bandwidth needs? What extra features/ support do your website require from your hosting plan ?</li>
+        <li>What amount of traffic do you expect to see your site receive?</li>
+        <li>What information do you need from your website visitors?</li>
+        <li>How many websites are you able to host?</li>
+        <li>What technical skills are you able to use to manage your website server?</li>
+        <li>What is your website storage and bandwidth needs? What extra features/ support do your website require from your hosting plan ?</li>
       </ul>   `
   },
   {
     question: "What is the difference between Shared vs Offshore VPS Hosting?",
-    answer: "Offshore Web Hosting plans allow you to host your website with other users. This means that your website will not receive a certain amount of resources (RAM or CPU). Offshore VPS Hosting offers more bandwidth and space to handle a greater traffic flow to your website. You can expand your website with Offshore VPS Hosting servers.  This allows you to easily scale up your website as it develops. VPS Hosting gives users more control, so you can modify your control configuration as much as you like."
+    answer: `Offshore Web Hosting plans allow you to host your website with other users. This means that your website will not receive a certain amount of resources (RAM or CPU). Offshore VPS Hosting offers more bandwidth and space to handle a greater traffic flow to your website. You can expand your website with <a href="https://qloudhost.com/offshore-vps-hosting/" class="faq-link">Offshore VPS Hosting</a> servers.  This allows you to easily scale up your website as it develops. VPS Hosting gives users more control, so you can modify your control configuration as much as you like.`
   },
   {
     question: "With all these hosting plans, how do I choose the right one?",
-    answer: "If you have a small website or you are just starting out, shared hosting is a good option. However, if you need more power, you may want to consider an offshore VPS. There are many choices available, which can be overwhelming, but we can help you find the best option for your business and website. You can speak with an expert today to get the answers you need."
+    answer: `If you have a small website or you are just starting out, shared hosting is a good option. However, if you need more power, you may want to consider an <a href="https://qloudhost.com/offshore-vps-hosting/" class="faq-link">offshore VPS</a>. There are many choices available, which can be overwhelming, but we can help you find the best option for your business and website. You can speak with an expert today to get the answers you need.`
   },
   {
     question: "How Can I Upgrade My Account if I Need To?",
-    answer: "QloudHost makes upgrading your web hosting service a breeze. Our upgrade process is seamless, ensuring that your website remains accessible without any downtime. Rest assured that you won’t have to deal with frustrating browsing experiences or revenue loss."
+    answer: `<a href="https://qloudhost.com/" class="faq-link">QloudHost</a> makes upgrading your web hosting service a breeze. Our <a href="https://qloudhost.com/offshore-vps-hosting/" class="faq-link">upgrade</a> process is seamless, ensuring that your website remains accessible without any downtime. Rest assured that you won’t have to deal with frustrating browsing experiences or revenue loss.`
   },
   {
     question: "Where are your servers located?",
-    answer: "As a leading Best & Cheap offshore web hosting provider, we take pride in delivering top-notch hosting solutions. Our servers are located in the Netherlands, in partnership with a trusted offshore data center."
+    answer: `As a leading Best & Cheap offshore web hosting provider, we take pride in delivering top-notch hosting solutions. Our servers are <a href="http://localhost:3000/offshore-web-hosting" class="faq-link">located in the Netherlands</a>, in partnership with a trusted offshore data center.`
   },
   {
     question: "Do You Offer a Script Auto-Installer?",
-    answer: "Yes, QloudHost has a custom-developed tool that allows you to install 400+ apps on your website in a One-click. Our auto-installer makes it faster and easier to try out different scripts and find the best ones for your website."
+    answer: `Yes, <a href="https://qloudhost.com/" class="faq-link">QloudHost</a> has a custom-developed tool that allows you to install 400+ apps on your website in a One-click. Our auto-installer makes it faster and easier to try out different scripts and find the best ones for your website.`
   },
 ];
 
