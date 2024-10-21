@@ -69,7 +69,7 @@ const faqsData = [
   {
     question: "What is offshore VPS Hosting?",
     answer:
-      "Offshore VPS is a special type of virtual private servers that is located outside of your country’s jurisdiction. This means that your data and your server are both physically and legally outside of your country’s control.",
+      `Offshore VPS is a special type of virtual private servers that is located outside of your country’s jurisdiction. This means that your data and your server are both physically and legally outside of your country’s control.`,
   },
   {
     question: "What is the cost for an offshore VPS Hosting?",
@@ -78,7 +78,7 @@ const faqsData = [
   },
   {
     question: "Will I be able to upgrade my offshore VPS Server?",
-    answer: `Yes, We provide you with resilient VPS hosting offshore plans which allow you to upgrade your server resources anytime with just a few clicks. In addition, you can also <a href="/offshore-dedicated-server/" class="faq-link">upgrade your plans</a> to get optimum performance and blazing fast loading speed.`,
+    answer: `Yes, We provide you with resilient VPS hosting offshore plans which allow you to upgrade your server resources anytime with just a few clicks. In addition, you can also <a href="https://qloudhost.com/offshore-dedicated-server/" class="faq-link">upgrade your plans</a> to get optimum performance and blazing fast loading speed.`,
   },
   {
     question:
@@ -88,7 +88,7 @@ const faqsData = [
   },
   {
     question: "What are the benefits of Offshore VPS hosting?",
-    answer: `Offshore VPS hosting is becoming increasingly popular for those looking for a reliable and secure hosting solution. By hosting a website or application on a virtual private server located outside of their country of residence, users can benefit from enhanced security, better performance, and greater flexibility. See the benefits of Offshore VPS Hosting Servers and decide for yourself if it’s the right call for you. <a href="" class="faq-link">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`,
+    answer: `Offshore VPS hosting is becoming increasingly popular for those looking for a reliable and secure hosting solution. By hosting a website or application on a virtual private server located outside of their country of residence, users can benefit from enhanced security, better performance, and greater flexibility. See the benefits of Offshore VPS Hosting Servers and decide for yourself if it’s the right call for you. <a href="https://qloudhost.com/blog/benefits-of-offshore-vps-hosting/" class="faq-link">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`,
   },
   {
     question: "Can I get full admin access to my offshore VPS Hosting Server?",

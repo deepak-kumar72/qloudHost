@@ -18,72 +18,78 @@ const options = [
 ];
 
 const features = [
-    {img: images.ssd,
-      title: "No Buffer Stream",
-      description:"Worried about the performance of your video streaming website? Just sit and relax! Because we run robust servers equipped with the latest and most powerful hardware technologies in the market.",
-      link: "",
-    },
-    {img: images.ssd,
-      title: "Use Your Player",
-      description:"Although we provide you with a pre-built video player, our DMCA Ignored servers are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.",
-      link: "",
-    },
-    {img: images.ssd,
-      title: "Unlimited Embeds & Plays",
-      description:"There is no limit on the number of videos you can post and play on your website, all thanks to the robust servers we are using for the services, which allows you to use unrestricted resources.",
-      link: "",
-    },
-    {img: images.ssd,
-      title: "100% Privacy Protection",
-      description:"QloudHost provides you with top-notch security features such firewall, offshore servers and much more to ensure your 100% privacy and untraceable footprints on the internet. .",
-      link: "",
-    },
-    {img: images.ssd,
-      title: "99.9% Uptime Guaranteed",
-      description:"We are confident to share with you that our server uptime is 99.9%, and we ensure that it should be maintained for maximum availability of your website on the internet.",
-      link: "",
-    },
-    {img: images.ssd,
-      title: "24/7 Support",
-      description:"Our team of technical experts is working 24*7 to solve your queries and help you at every stage of your journey. In addition, they constantly monitor your website’s resources to ensure uptime and performance.",
-      link: "",
-    },
-   
-   
-    
-  ];
-  const faqsData = [
-    {
-      question: "What is video hosting?",
-      answer: "Video hosting is nothing but an optimized server, especially for video streaming websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience! "
-    },
-    {
-      question: "What are the content restrictions on offshore VPS servers?",
-      answer: "Normal web hosting services allow you to host a streaming website on their servers, but they do not allow you to post DMCA Ignored content or adult content and posting such kind of content on their servers can cause your website termination or arbitrary troubles too.  Hence, offshore video hosting services are used to host the website because they allow you to host DMCA Ignored content."
-    },
-    {
-      question: "Where are your servers based?",
-      answer: "Our offshore  hosting services are specially built for DMCA Ignored content, so you can enjoy our services without facing any arbitrary actions. DMCA Ignored content includes copyrighted, illegal, adult content etc."
-    },
-    {
-      question: "Can I get full admin access to my offshore VPS servers?",
-      answer: "Definitely, our offshore hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
-    },
-    {
-      question: "Can I host Adult video content on QloudHost?",
-      answer: "Yes….!  We allow you to post adult content on our offshore video hosting server with untraceable footprints and impenetrable security."
-    },
-    {
-      question: "I bought your offshore VPS servers, when will they be activated?",
-      answer: "QloudHost provides you with an instant setup means that your servers will be ready to use right after you finish the purchase."
-    },
-  ];
+  {
+    img: images.ssd,
+    title: "No Buffer Stream",
+    description: "Worried about the performance of your video streaming website? Just sit and relax! Because we run robust servers equipped with the latest and most powerful hardware technologies in the market.",
+    link: "",
+  },
+  {
+    img: images.ssd,
+    title: "Use Your Player",
+    description: "Although we provide you with a pre-built video player, our DMCA Ignored servers are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.",
+    link: "",
+  },
+  {
+    img: images.ssd,
+    title: "Unlimited Embeds & Plays",
+    description: "There is no limit on the number of videos you can post and play on your website, all thanks to the robust servers we are using for the services, which allows you to use unrestricted resources.",
+    link: "",
+  },
+  {
+    img: images.ssd,
+    title: "100% Privacy Protection",
+    description: "QloudHost provides you with top-notch security features such firewall, offshore servers and much more to ensure your 100% privacy and untraceable footprints on the internet. .",
+    link: "",
+  },
+  {
+    img: images.ssd,
+    title: "99.9% Uptime Guaranteed",
+    description: "We are confident to share with you that our server uptime is 99.9%, and we ensure that it should be maintained for maximum availability of your website on the internet.",
+    link: "",
+  },
+  {
+    img: images.ssd,
+    title: "24/7 Support",
+    description: "Our team of technical experts is working 24*7 to solve your queries and help you at every stage of your journey. In addition, they constantly monitor your website’s resources to ensure uptime and performance.",
+    link: "",
+  },
+
+
+
+];
+const faqsData = [
+  {
+    question: "What is video hosting?",
+    answer: `Video hosting is nothing but an optimized server, especially for <a href="https://qloudhost.com/offshore-streaming-server/" class="faq-link">video streaming</a> websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience! `
+  },
+  {
+    question: "What are the content restrictions on offshore VPS servers?",
+    answer: "Normal web hosting services allow you to host a streaming website on their servers, but they do not allow you to post DMCA Ignored content or adult content and posting such kind of content on their servers can cause your website termination or arbitrary troubles too.  Hence, offshore video hosting services are used to host the website because they allow you to host DMCA Ignored content."
+  },
+  {
+    question: "Where are your servers based?",
+    answer: "Our offshore  hosting services are specially built for DMCA Ignored content, so you can enjoy our services without facing any arbitrary actions. DMCA Ignored content includes copyrighted, illegal, adult content etc."
+  },
+  {
+    question: "Can I get full admin access to my offshore VPS servers?",
+    answer: `Definitely, our <a href="https://qloudhost.com/offshore-hosting/" class="faq-link">offshore hosting servers</a> come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks.`
+  },
+  {
+    question: "Can I host Adult video content on QloudHost?",
+    answer: "Yes….!  We allow you to post adult content on our offshore video hosting server with untraceable footprints and impenetrable security."
+  },
+  {
+    question: "I bought your offshore VPS servers, when will they be activated?",
+    answer: "QloudHost provides you with an instant setup means that your servers will be ready to use right after you finish the purchase."
+  },
+];
 
 const OffshoreVideoHosting = () => {
   return (
     <div>
       <HeroComponent
-      title="100% DMCA Offshore Video Hosting"
+        title="100% DMCA Offshore Video Hosting"
         description="Optimize your adult, tube, copyrighted, and offshore content with our Offshore Video Hosting. Enjoy top speed and reliability for your web app, business site, or video platform."
         button1Text="Get Started Now"
         button1Link=""
@@ -93,12 +99,12 @@ const OffshoreVideoHosting = () => {
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
-      <VideoHostingPlan/>
-      <VideocustomSolution/>
+      <VideoHostingPlan />
+      <VideocustomSolution />
       <Guarantees
         subHeading="Boost your website performance with world-class offshore Video Hosting for Adult & DMCA Ignored Content and guaranteed performance."
       />
-      <TechnicalSpecification/>
+      <TechnicalSpecification />
       <InstallationPanel
         title="Operating Systems"
         description="QloudHost is offering you multiple OS options to choose from so that you can work with the Operating system you relish the most."
@@ -106,22 +112,22 @@ const OffshoreVideoHosting = () => {
         panelOptions={[
           { name: 'AlmaLinux', img: images.cpanel },
           { name: 'RockeyLinux', img: images.directAdmin },
-          { name: 'debian', img: images.cyberPanel},
+          { name: 'debian', img: images.cyberPanel },
           { name: 'Ubuntu', img: images.ubuntu },
           { name: 'Windows', img: images.centos },
         ]}
       />
-      <VideoHostingFeatureElement/>
+      <VideoHostingFeatureElement />
       <QlodHostServices
         heading="Offshore Adult Video Hosting Unbelievable Features"
-      content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
-      features={features} 
+        content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
+        features={features}
       />
       <FAQsSection
-        faqs={faqsData} 
+        faqs={faqsData}
       />
     </div>
-    
+
   )
 }
 

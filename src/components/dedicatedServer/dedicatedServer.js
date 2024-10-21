@@ -86,21 +86,21 @@ const servicesData1 = [
 const faqsData = [
   {
     question: "What is a Offshore dedicated server?",
-    answer: `An offshore dedicated server is a type of hosting service that provides you full privacy assurance, impenetrable security and untraceable footprints on the internet!! In addition, dedicated offshore server unmetered come with unmetered resources so that you can post any content on your website as per your wish!!`,
+    answer: `An <a href="https://qloudhost.com/blog/what-is-offshore-dedicated-server-hosting/" class="faq-link">offshore dedicated server</a> is a type of hosting service that provides you full privacy assurance, impenetrable security and untraceable footprints on the internet!! In addition, dedicated offshore server unmetered come with unmetered resources so that you can post any content on your website as per your wish!!`,
   },
   {
     question:
       "Can I upgrade my Offshore Virtual Private Server to an Offshore DMCA Ignored dedicated server?",
-    answer: `Yes, We provide completely flexible offshore VPS servers that can be easily upgraded to as many resources as possible! You just need to contact our team of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed dedicated server without any hidden charges.`,
+    answer: `Yes, We provide completely flexible <a href="https://qloudhost.com/offshore-vps-hosting/" class="faq-link">offshore VPS servers</a> that can be easily upgraded to as many resources as possible! You just need to <a href="https://qloudhost.com/contact" class="faq-link">contact our team</a> of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed dedicated server without any hidden charges.`,
   },
   {
     question:
       "Do you offer free migration for your DMCA Ignored dedicated server?",
-    answer: `Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our policies.`,
+    answer: `Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by  <a href="https://qloudhost.com/privacy-policy/" class="faq-link">our policies</a>.`,
   },
   {
     question: "How many websites can I host on an Offshore dedicated server?",
-    answer: `It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our Offshore Server in Netherlands Offshore Location.`,
+    answer: `It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our <a href="https://qloudhost.com/offshore-dedicated-servers/netherlands/" class="faq-link">Offshore Server in Netherlands</a> Offshore Location.`,
   },
   {
     question: "What can QloudHost Offshore dedicated Hosting be used for?",
@@ -109,7 +109,7 @@ const faqsData = [
   {
     question:
       "What are the Benefits of DMCA Offshore dedicated server hosting?",
-    answer: `If you are planning to host your website without losing your anonymity, then choosing an offshore Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
+    answer: `If you are planning to <a href="https://qloudhost.com/blog/host-a-website-anonymously/" class="faq-link"> host your website without losing your anonymity</a>, then choosing an offshore Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
       <ul class="p-0">
       <li>Full privacy assurance</li>
       <li>Unmetered resources</li>
@@ -118,7 +118,7 @@ const faqsData = [
       <li>No arbitrary actions caused</li>
       <li>Freedom of Speech</li>
       </ul>
-      See the benefits of DMCA Offshore Dedicated Servers and decide for yourself if it’s the right call for you.`,
+      See the <a href="https://qloudhost.com/blog/benefits-of-offshore-dedicated-server-hosting/" class="faq-link">benefits of DMCA Offshore Dedicated Servers </a> and decide for yourself if it’s the right call for you.`,
   },
   {
     question: "How do I get started with Offshore dedicated server?",
