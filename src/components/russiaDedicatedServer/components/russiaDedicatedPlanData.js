@@ -74,6 +74,16 @@ const russiaDedicatedPlanData = [
         features: ["2.0-3.0 GHz", "256 GB DDR4 ECC*", "2X1.92TB GB NVMe SSD", "Unmetered Transfer", "1 Gbit Port Speed", "1 IPv4 IP Address"],
         url: "/buy-now-dual-2683v4",
         bestForStreaming: true,
+    },
+    {
+        id: 9, 
+      name: "Intel Xeon Gold 6230",
+      price: "$399.00",
+      yearlyPrice: " $529.00/mo",
+      discount: "Save 30%",
+      features: ["2.1 GHz", "256GB RAM DDR4", "2X1.92TB NVMe SSD", "100TB Transfer", "1 Gbit Port Speed", "1 IPv4 IP Address"],
+    url: "https://my.qloudhost.com/store/dedicated/intel-xeon-gold-6230",
+      
     }
 
 ];

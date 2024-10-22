@@ -1,15 +1,19 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 const Policies = () => {
   return (
-    <div className="container mb-50">
-    <div className="content-sec m-auto">
+  <div className="policies">
+    <div className="container  py-5">
+    <div className="content-sec mx-auto">
       <p>
         QloudHost respects your privacy and is committed to ensure that you get
         a safe and secure online experience. And this privacy policy applies to
         all our web products to make sure that you get to experience reliable
         services.
       </p>
+      
+      
       <h4>Personal identification information</h4>
       <p>
         Use of QloudHost services includes the acceptance of our privacy policy
@@ -28,22 +32,26 @@ const Policies = () => {
         browser name, IP address, type of computer, and other technical-related
         data whenever a user interacts with our website.
       </p>
+      
+     
       <h4>Use and disclosure of your information</h4>
       <p>
         We will collect and use our user information for the following purposes:{" "}
       </p>
-      <ol className="content-sec-list">
-        <li>To improve our operations.</li>
-        <li>Deliver the product and services.</li>
-        <li>Communicate with the user.</li>
-        <li>Improve the quality of our products</li>
-        <li>Get more reach through you.</li>
-        <li>To perform surveys and promotions.</li>
-        <li>Deal with your enquiry and complaints, request and tickets.</li>
-        <li>Conduct research and development.</li>
-        <li>Process your refund and payments.</li>
-        <li>To maintain processing, invoicing, products and services.</li>
-      </ol>
+      <ul className="content-sec-list">
+        <li><FaCheck className="me-2 content-opt"/>To improve our operations.</li>
+        <li><FaCheck className="me-2 content-opt"/>Deliver the product and services.</li>
+        <li><FaCheck className="me-2 content-opt"/>Communicate with the user.</li>
+        <li><FaCheck className="me-2 content-opt"/>Improve the quality of our products</li>
+        <li><FaCheck className="me-2 content-opt"/>Get more reach through you.</li>
+        <li><FaCheck className="me-2 content-opt"/>To perform surveys and promotions.</li>
+        <li><FaCheck className="me-2 content-opt"/>Deal with your enquiry and complaints, request and tickets.</li>
+        <li><FaCheck className="me-2 content-opt"/>Conduct research and development.</li>
+        <li><FaCheck className="me-2 content-opt"/>Process your refund and payments.</li>
+        <li><FaCheck className="me-2 content-opt"/>To maintain processing, invoicing, products and services.</li>
+      </ul>
+      
+      
       <h4>Assurance of your privacy</h4>
       <p>
         We use the appropriate measures to collect, process, practise and
@@ -56,6 +64,8 @@ const Policies = () => {
         encryptions or SSL certificates to make sure that you get secured
         network communication.
       </p>
+      
+      
       <h4>Further Information</h4>
       <p>
         If the user wishes to access the details about the respective data we
@@ -65,7 +75,10 @@ const Policies = () => {
         its concerns.
       </p>
       </div>
-    </div>
+      </div>
+      </div>
+
+    
   );
 };
 

@@ -4,19 +4,19 @@ import images from '../../../constants/images';
 const servicesData = [
     {
       id: 1,
-      imgUrl: images.youTube,
-      title: "Fastest SSD Servers",
+      imgUrl: images.fastestSsdSever,
+      title: "Fastest Nvne SSD",
       description: "Get Super-fast performance with blazing-fast Nvme SSD drive storage! Our service comes with guaranteed quality, so we use industry-standard equipment to run our servers.",
     },
     {
       id: 1,
-      imgUrl: images.gaming,
+      imgUrl: images.hostedNetherland,
       title: "Hosted in Netherlands",
       description: "We have chosen the best data centers in Netherlands to ensure full privacy and security for your website on the Internet. It is especially useful for bypassing all the biased country-specific restrictions!",
     },
     {
         id: 1,
-        imgUrl: images.iptv,
+        imgUrl: images.DaysMoneyGurantee,
         title: "14 Days Money Back",
         description: "We understand the value of your hard-earned money! Get whole assurance with a 14-day money-back guarantee. And no questions will be asked!",
       },
@@ -37,7 +37,7 @@ const ChooseQloudHost = () => {
             <div key={service.id} className="col-md-12 col-lg-4 mb-4">
               <div className="card h-100 shadow-sm">
                 <div className='service-card d-flex p-4'>
-                  <div className="mb-3  text-center me-3">
+                  <div className="mb-3  text-center me-2">
                     <img src={service.imgUrl} alt='icon' className='streaming-image-icon'/>
                   </div>
                   <div>

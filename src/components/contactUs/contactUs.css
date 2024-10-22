@@ -1,0 +1,65 @@
+.contact-section h5{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+.contact-icon{
+    background: #f6355a;
+    color: #fff;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+}
+
+.contact-section h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-section p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-section h3 a{
+    margin-left: 5px;
+    color: #f6355a;
+}
+
+
+
+.contact-section h3 a:hover{
+    font-weight: 700;
+}
+
+.intro-offer{
+    background-color: #f6355a;
+
+}
+
+.contactSec-btn{
+    border: 1px solid #f6355a;
+    background-color: #fff;
+    color: #f6355a;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.contactSec-btn:hover{
+    background-color: #1E2944;
+    color: #fff;
+}
+
+.signupBanner{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro{
+    font-size: 24px;
+}
+.intro-price{
+    font-size: 18px;
+    font-weight: 500;
+}

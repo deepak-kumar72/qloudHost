@@ -1,6 +1,5 @@
 import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
-import heroImage from "../../assets/Frame/heroFrame.png";
 import HostingPlans from "./components/hostingPlans";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import QloudHostFeatures from "./components/qloudHostFeatures";
@@ -12,6 +11,7 @@ import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
 import Testimonials from "../commonComponent/testimonial";
+import image from "../../constants/images";
 
 const options = [
   "NVMe SSD Drive",
@@ -23,42 +23,36 @@ const options = [
 
 const features = [
   {
-    img: images.ssd,
+    img: images.hostedInNetherland,
     title: "Hosted in Netherlands",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet. Our carefully chosen data centers in the Netherlands ensure that your site stays safe and private, while also allowing you to bypass country-specific restrictions.",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.ssd1,
     title: "Fastest SSD Servers",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "Experience lightning-fast performance and boost your website’s rankings and conversion rates with our NVMe SSD drive storage! Rest assured, we only use top-of-the-line industry-standard equipment to power our servers, guaranteeing quality service for our valued clients.",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.freeWebsitemigration,
     title: "Free Website Migration",
-    description: "If you already have a website, let us make your life easier by transferring it for free!",
+    description: "If you already have a website, let us make your life easier by transferring it for free! Don’t worry if you’ve had a bad experience with your previous service provider, our dedicated team of technical experts can migrate your website to quality services without any data loss. Just ask us how!",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.moneyBack,
     title: "Money-Back Guarantee",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "We understand how important it is to invest your hard-earned money wisely. That’s why we offer a 14-day money-back guarantee on our high-speed hosting service – so you can try it out completely risk-free! Choose us with confidence and experience the difference!",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.uptime,
     title: "99.9% Uptime Commitment",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet.",
+    description: "Our DMCA Ignored Hosting guarantees an impressive 99.9% uptime, thanks to our solid infrastructure & enterprise-grade servers, strict security protocols, and industry-leading hardware and software components. Trust us to meet all of your hosting needs and exceed your expectations!",
     link: "",
   },
-  {
-    img: images.ssd,
-    title: "Hosted in Neitherlands",
-    description: "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet",
-    link: "",
-  },
-
+ 
 ];
 
 const faqsData = [
@@ -101,7 +95,7 @@ const faqsData = [
 const servicesData1 = [
   {
     id: 1,
-    imgUrl: images.web,
+    imgUrl: image.website,
     title: "New Website?",
     description: "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
     buttonText: "Get Started Now",
@@ -110,7 +104,7 @@ const servicesData1 = [
   },
   {
     id: 1,
-    imgUrl: images.migration,
+    imgUrl: image.migrations,
     title: "Migration?",
     description: "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
     buttonText: "Get Started Now",
@@ -124,6 +118,8 @@ const servicesData1 = [
 const Home = () => {
   return (
     <div>
+
+
       <HeroComponent
         title="Powerful Secure & Best DMCA Ignored Hosting"
         description="Get the Best for your website with QloudHost’s DMCA Ignored hosting packages. Join over 3000+ customers who rely on us for a robust offshore DMCA Ignored server foundation."
@@ -131,7 +127,7 @@ const Home = () => {
         button1Link="hostingPlan"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={heroImage}
+        imageSrc= {image.homeImage}
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} // Pass the options to the HeroComponent
       />
@@ -149,7 +145,6 @@ that you can manage your website files with full control!"
           { name: 'DirectAdmin', img: images.directAdmin },
           { name: 'CyberPanel', img: images.cyberPanel },
           { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'CentOS', img: images.centos },
           { name: 'Debian', img: images.centos },
         ]}
       />

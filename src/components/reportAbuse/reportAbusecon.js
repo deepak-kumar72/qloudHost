@@ -53,8 +53,9 @@ const ReportAbusecon = () => {
   ];
 
   return (
-    <div className="container mt-5">
-    <div className="content-sec m-auto">
+    <div className="policies">
+    <div className="container py-5">
+    <div className="content-sec mx-auto">
       <p>
         We are fighting against malware, phishing, botnets, and all the other
         forms of malicious attacks from the day of our establishment and have
@@ -80,27 +81,18 @@ const ReportAbusecon = () => {
             </tr>
           </thead>
           <tbody>
-            {abuseTypes.map((abuse, index) => (
-              <tr key={index}>
-                <td>{abuse.name}</td>
-                <td>{abuse.description}</td>
-                <td>{abuse.infoRequired}</td>
-                <td>{abuse.email}
-                  {/* {abuse.email === "Abuse report form" ? (
-                    <a href="/report-abuse-form" className="text-primary">
-                      Abuse report form
-                    </a>
-                  ) : (
-                    <a href={`mailto:${abuse.email}`} className="text-primary">
-                      {abuse.email}
-                    </a>
-                  )} */}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+  {abuseTypes.map((abuse, index) => (
+    <tr key={index}>
+      <td data-label="Name:">{abuse.name}</td>
+      <td data-label="Description:">{abuse.description}</td>
+      <td data-label="Information Required:">{abuse.infoRequired}</td>
+      <td data-label="Email:">{abuse.email}</td>
+    </tr>
+  ))}
+</tbody>
         </table>
       </div>
+    </div>
     </div>
     </div>
   );

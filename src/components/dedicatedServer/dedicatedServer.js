@@ -9,6 +9,7 @@ import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import DedicatedServerPlan from "./components/dedicatedServerPlan";
 import EnterpriseGrade from "../commonComponent/enterpriseGrade";
+import DedicatedHostingSolution from "../dmcaDedicatedServers/components/dedicatedHostingSolution";
 
 const options = [
   "Free Migration Available",
@@ -26,7 +27,7 @@ const features = [
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.fullRootAcces,
     title: "Full Root Access",
     description:
       "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
@@ -164,6 +165,7 @@ const DedicatedServer = () => {
 Utilize advanced technology security measures to ensure accurate information dissemination."
         features={features}
       />
+      <DedicatedHostingSolution/>
       <InstallationPanel
         title="Fast OS/Admin Panel Installation!"
         description="No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server

@@ -13,7 +13,7 @@ const streamingplansData = [
       time: '/month',
       yearlyPrice: "$499.00/mo",
       save: "Save30%",
-      features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer(1GBPS)', '1 Gbit Port Speed', '1 IPv4 IP Address'],
+      features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer', '1 Gbit Port Speed', '1 IPv4 IP Address'],
       url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
       popular: true
     },
@@ -37,10 +37,12 @@ const StreamingServerPlan = () => {
       <h2 className="text-center m-auto mb-3">Reliable Offshore Streaming Servers Plans!</h2>
       <p className="text-center mb-5 planHead-con m-auto">Tell us your needs, and we will prepare a Best offshore streaming servers according to your needs.</p>
       
-        <div className="row qloudHost-plan justify-content-center m-auto" id='plan1'>
+        <div className="row qloudHost-plan justify-content-center m-auto" id='explore'>
           {streamingplansData.map((plan) => (
-            <div key={plan.id} className="col-12 col-md-6 col-lg-6 mb-4 explore-plan-col">
-              <div className="card-body qloud-plan-body position-relative">
+            <div key={plan.id} className="col-12 col-md-6 col-lg-6 explore-plan-col">
+            <div
+                className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body offshore-plan-body position-relative h-100"}`}
+              >
                 {plan.popular && (
                   <div className="popular-badge streaming-badge position-absolute">Popular</div>
                 )}
@@ -54,7 +56,7 @@ const StreamingServerPlan = () => {
                 )}
 
                   <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
-                  <Link to={plan.url}>
+                  <Link to={plan.url} className='dedicated-plan-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
                     Buy Now <FaArrowRight className=""/>
                   </button></Link>

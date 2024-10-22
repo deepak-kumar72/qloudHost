@@ -19,13 +19,13 @@ const Footer = () => {
         { name: "Offshore VPS Hosting", url: "/offshore-vps-hosting/" },
         { name: "Offshore Dedicated Server", url: "/offshore-dedicated-servers/" },
         { name: "Offshore Video Hosting", url: "/offshore-video-hosting/" },
-        { name: "Offshore Streaming Server", url: "/streaming-server" },
+        { name: "Offshore Streaming Server", url: "/offshore-streaming-server/" },
         { name: "Adult Hosting", url: "/adult-hosting/" },
         { name: "DMCA Ignored VPS", url: "/dmca-ignored-vps/" },
         { name: "Netherlands Offshore VPS", url: "/offshore-vps-hosting/netherlands/" },
         { name: "High Performance VPS", url: "/high-performance-vps-hosting/" },
         { name: "DMCA Ignored Dedicated Servers", url: "/dmca-ignored-dedicated-servers/" },
-        { name: "Russia Offshore Server", url: "/offshore-dedicated-servers/russia/" },
+        { name: "Offshore Windows RDP", url: "/offshore-vps-hosting/windows-rdp" },
 
       ],
     },
@@ -69,7 +69,7 @@ const Footer = () => {
         { name: "About QloudHost", url: "/about/" },
         { name: "Official Blog", url: "https://qloudhost.com/blog/" },
         { name: "Contact Us", url: "/contact-us/" },
-        { name: "Sitemap", url: "" },
+        { name: "Sitemap", url: "http://next.qloudhost.com/sitemap.xml" },
         { name: "Abuse Report", url: "/report-abuse/" },
         { name: "Knowledge Base", url: "https://qloudhost.com/blog/knowledgebase/" },
         { name: "Speed Test", url: "https://qloudhost.com/speed-test" },
@@ -176,15 +176,11 @@ const Footer = () => {
       <div className='bottom-footer'>
       <div className='container py-3 '>
         <div className='row'>
-          <div className='col-lg-3 col-md-6 col-6 m-auto'>
+          <div className='col-lg-6  col-6 m-auto'>
             <span className='copyrights'>© 2024 All rights reserved</span>
           </div>
-          <div className='col-lg-3 col-md-6 col-6 terms-links m-auto'>
-            <Link to="" className='me-2'>Terms</Link>
-            <Link to="" className='me-2'>Privacy</Link>
-            <Link to="" className='me-2'>Cookies</Link>
-          </div>
-          <div className='col-lg-6 col-md-12 pay-optionimg'>
+          
+          <div className='col-lg-6 col-12 pay-optionimg'>
             <img src={images.payimage} alt='payment_option'/>
           </div>
         </div>

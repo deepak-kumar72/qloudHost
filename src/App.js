@@ -35,6 +35,8 @@ import ReportAbuse from "./components/reportAbuse/reportAbuse";
 import About from "./components/aboutQloudhost/about";
 import Contactus from "./components/contactUs/contactus";
 import ScrollToTop from "./constants/scrollToTop";
+import MetaTags from "./constants/meta";
+import TawkToChat from "./constants/tawkToChat";
 
 function App() {
   return (
@@ -49,6 +51,7 @@ function AppContent() {
 
   return (
     <>
+    <MetaTags/>
     <ScrollToTop/>
       <TopHeader />
       <Navbar />
@@ -60,7 +63,7 @@ function AppContent() {
             path="/offshore-dedicated-servers/"
             element={<DedicatedServer/>}
           />
-          <Route path="/streaming-server" element={<Streaming />} />
+          <Route path="/offshore-streaming-server/" element={<Streaming />} />
           <Route
             path="/offshore-web-hosting/"
             element={<OffShorewebHosting />}
@@ -121,8 +124,11 @@ function AppContent() {
         location.pathname !== "/refund/" &&
         location.pathname !== "/report-abuse/" &&
         location.pathname !== "/about/" &&
-        location.pathname !== "/fair-usage-policy/" && <ChatNow />}
+        location.pathname !== "/fair-usage-policy/" &&
+        location.pathname !== "/contact-us/" && <ChatNow />}
+        <TawkToChat/>
       <Footer />
+      
     </>
   );
 }

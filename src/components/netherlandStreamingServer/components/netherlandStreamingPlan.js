@@ -25,7 +25,19 @@ const streamingplansData = [
       url: "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
       onDemand: true
       
-    },   
+    },  
+    {
+      id: 3, 
+    name: "Intel Xeon Gold 6230",
+    price: "$399.00",
+    time: '/month',
+    yearlyPrice: " $529.00/mo",
+    discount: "Save 30%",
+    features: ["2.1 GHz", "256GB RAM DDR4", "2X1.92TB NVMe SSD", "100TB Transfer", "1 Gbit Port Speed", "1 IPv4 IP Address"],
+  url: "https://my.qloudhost.com/store/dedicated/intel-xeon-gold-6230",
+    
+  }
+     
   ];
   
 

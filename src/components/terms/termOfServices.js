@@ -1,8 +1,10 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 const TermOfServices = () => {
   return (
-    <div className="container mb-50">
+    <div className="policies">
+    <div className="container py-5">
       <div className="content-sec m-auto">
         <h4>(Last Revision:14 February 2024)</h4>
         <p>
@@ -17,13 +19,13 @@ const TermOfServices = () => {
           and it includes the following:
         </p>
         <ol className="content-sec-list">
-          <li>
-            Products and services during the initial and for any renewal terms.
+          <li><FaCheck className="me-2 content-opt"/><span>
+            Products and services during the initial and for any renewal terms.</span>
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/><span className="">
             Certain limited services may not be listed on the product’s list of
             QloudHost but come under the services such as add-ons, emergency
-            services or any supplemental services.
+            services or any supplemental services.</span>
           </li>
         </ol>
         <p>
@@ -62,12 +64,12 @@ const TermOfServices = () => {
         </p>
         <h5>The Non-acceptable list includes the followings:</h5>
         <ol className="content-sec-list">
-          <li>Child pornography</li>
-          <li>Illicit activities</li>
-          <li>Bulk email-related products</li>
-          <li>Phishing website or any malicious link containing a website</li>
-          <li>Fraudulent, Ponzi schemes or other scamming sites</li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>Child pornography</li>
+          <li><FaCheck className="me-2 content-opt"/>Illicit activities</li>
+          <li><FaCheck className="me-2 content-opt"/>Bulk email-related products</li>
+          <li><FaCheck className="me-2 content-opt"/>Phishing website or any malicious link containing a website</li>
+          <li><FaCheck className="me-2 content-opt"/>Fraudulent, Ponzi schemes or other scamming sites</li>
+          <li><FaCheck className="me-2 content-opt"/>
             Illegal Markets, Terrorsit-themed Activities, Realistic Depictions
             of turture, Necrophilia, bestiality or related content.
           </li>
@@ -84,13 +86,13 @@ const TermOfServices = () => {
         </p>
         <h5>Fees and payment</h5>
         <ol className="content-sec-list">
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Customers will pay the fees according to the plans and terms listed
             in the order form or in the services, including all the supplements,
             add–ons and emergency services. In addition, they also agree to the
             below-mentioned conditions.{" "}
           </li>
-          <li>Coupon and Promo Code will only Work on Shared and VPS Plans</li>
+          <li><FaCheck className="me-2 content-opt"/>Coupon and Promo Code will only Work on Shared and VPS Plans</li>
         </ol>
         <h5>Invoice notification</h5>
         <p>
@@ -102,14 +104,14 @@ const TermOfServices = () => {
         </p>
         <h5>Account Termination/Suspension</h5>
         <ol className="content-sec-list">
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             For any payment not received within 3 days of the invoice due date,
             QloudHost reserves the right to suspend the service without any
             prior notice. After 15 days of not receiving payment confirmation,
             QloudHost reserves the right to terminate the service and remove all
             existing content without further notice. Exceptions may apply{" "}
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             In addition, customers not under contract can cancel their account
             in any billing cycle. Account cancellations must be made at least 4
             days in advance via the Client area. QloudHost is not responsible
@@ -118,20 +120,20 @@ const TermOfServices = () => {
           <h4>Intellectual property rights</h4>
         </ol>
         <ol className="content-sec-list">
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             QloudHost does not transfer its technologies, intellectual property
             rights, confidential information or anything of which we have
             reserved the rights. And in case we found anything suspicious than
             that can lead to the direct termination of that respective customer
             in addition to arbitrary actions
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             All the rights related to QloudHost are reserved and any violation
             can directly cause serious actions. Both the customer and QloudHost
             agree to respect and maintain the dignity of both parties’
             intellectual property rights.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Customer agrees to neither directly nor indirectly decompose,
             reverse engineer, share or any other attempt to derive the source
             code.
@@ -152,7 +154,7 @@ const TermOfServices = () => {
         </p>
         <h4>Limitations of liabilities</h4>
         <ol className="content-sec-list">
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             In no case shall QloudHost be responsible for damages of any loss of
             data, profits, use of the QloudHost site or any QloudHost services
             for any incidental, indirect,direct, or consequential damages in
@@ -160,7 +162,7 @@ const TermOfServices = () => {
             services provided. In addition, QloudHost can charge extra fees in
             any case the resources exceeds to allocated limits.{" "}
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Customers agree to defend, and hold harmless QloudHost from any and
             all responsibilities, penalties, losses, damages, costs, expenses,
             cause of actions and/or claims caused by the customer or any third
@@ -172,7 +174,7 @@ const TermOfServices = () => {
         </ol>
         <h5>Abuse Of Resources</h5>
         <ol className="content-sec-list">
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Any attempts to compromise or actual compromise of a network device
             belonging to QloudHost or any other company, individual, or other
             entity is strictly prohibited. This offense also includes port
@@ -180,14 +182,14 @@ const TermOfServices = () => {
             infractions and or suspected infractions will be vigorously
             investigated and may result in immediate termination of service.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Denial of Service (DOS) attacks directed at QloudHost, or any
             attempts to launch a Denial of Service attack from our servers are
             strictly prohibited. All infractions and/or suspected infractions
             will be vigorously investigated and may result in immediate
             termination of service.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Hosting any software, source code, or any other material that is
             illegal or could be used to commit an illegal act is strictly
             prohibited. This includes but is not limited to software exploits;
@@ -196,31 +198,31 @@ const TermOfServices = () => {
             and or suspected infractions will be vigorously investigated and may
             result in immediate termination of service.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             The hosting of defamatory, scandalous, or private information about
             a person without their consent, intentionally inflicting emotional
             distress or violating trademarks, copyrights, or other intellectual
             property rights is strictly prohibited resulting in termination of
             service with immediate effect without any refund.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Any attempts to undermine or cause harm to any of our servers is
             strictly prohibited. We hold no responsibility for the use of our
             clients’ accounts. Any account that abuses the resources and actions
             are not taken to desist the activity, calls for immediate
             deactivation without any refund.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Any site using what we deem to be using excessive CPU cycles or any
             resources that cause strain to other sites will be suspended and
             offered the option to upgrade the plan.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Although we offer 99.9% uptime we can not fully guarantee this. This
             is due to the updates and up-gradation we carry out which is also a
             part of our maintenance.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             If any client is in any way disrespectful towards any member of the
             QloudHost staff we have full right to remove them from our services
             without any refund
@@ -238,25 +240,25 @@ const TermOfServices = () => {
           will no longer be available on the 15th after the invoice is emitted.
         </p>
         <h5>Cancellation</h5>
-        <ol className="content-sec-list">
-          <li>
+        <ul className="content-sec-list">
+          <li><FaCheck className="me-2 content-opt"/>
             Customers can anytime cancel the services through the client area or
             customer portal of the QloudHost website. Services can also be
             canceled through a ticket but the customer must be logged in to the
             website to perform a cancellation request.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             QloudHost does not contain access to your payment methods so we
             cannot and will not be responsible for any unintended payment to any
             of the services or the product.
           </li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>
             Canceling your accounts removes your website’s files from our
             database and services so the customers will not be able to retrieve
             data, backup or any information after the cancellation of the
             services.{" "}
           </li>
-        </ol>
+        </ul>
         <h5>Refund</h5>
         <p>
           QloudHost has a 14-day money-back guarantee for All Shared and VPS
@@ -267,6 +269,7 @@ const TermOfServices = () => {
           your License with other providers.
         </p>
       </div>
+    </div>
     </div>
   );
 };

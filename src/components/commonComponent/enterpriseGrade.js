@@ -41,7 +41,7 @@ const EnterpriseGrade = ({heading, subHeading}) => {
             <div key={index} className="col-md-12 col-lg-6 mb-4">
               <div className="card h-100 shadow-sm AffordableCon-card d-flex p-4">
                     <div className='affordable-card-title'>{section.title}</div>
-                    <div className='card-text affordable-card-desc mb-3'>{section.description}</div>
+                    <div className='card-text affordable-card-desc'>{section.description}</div>
               </div>
             </div>
           ))}

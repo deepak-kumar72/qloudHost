@@ -18,32 +18,32 @@ const options = [
   ];
 
   const features = [
-    {img: images.ssd,
+    {img: images.privacyprotection,
       title: "100% Privacy Protection",
       description:"Get impenetrable security and full data privacy with QloudHost offshore Windows VPS hosting. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.fairAndaffordable,
       title: "Fair & Affordable",
       description:"QloudHost provides you with the most affordable DMCA Ignored Windows VPS plans to run your offshore servers because we understand the value of your hard-earned money. Our plans focus on providing you with well-balanced features to exclude unnecessary things and decrease costs.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.fullRootAcces,
       title: "Full Root Access",
       description: "Get root-level control of your windows server to customize it according to your needs and requirements. Isn’t that amazing? But how will this feature benefit your website? Simple: With root access, you are allowed to create, modify, customize, or delete files on your website without seeking our permission.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.uptime,
       title: "99.9% uptime guaranteed.",
       description: "Our first priority is to provide you with quality services, so all our plans come with a guaranteed uptime of 99.99%. So, let us take care of your website and ensure its availability on the Internet.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.websiteMigration,
       title: "Free Website Migration",
       description: "Had a really bad experience with your previous Windows VPS service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.weeklyBackup1,
       title: "Weekly Backup",
       description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple: We provide an alternate-day backup for 7 Days for VPS. A weekly backup (1 snapshot per week) is available, and it will charge extra.",
       link: "",
@@ -88,7 +88,7 @@ const WindowsRdp = () => {
         title="Robust Offshore Windows VPS Hosting"
         description="Discover blazing-fast, secure offshore Windows VPS hosting with KVM virtualization, NVMe SSDs, and full root access. Instant RDP, seamless app performance, and 24/7 expert support—optimized for your needs."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}

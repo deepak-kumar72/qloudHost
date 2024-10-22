@@ -84,7 +84,7 @@ const AdultHostingPlans = () => {
           application.
         </p>
 
-        <div className="row offshoreVps-plan justify-content-center" id="plan1">
+        <div className="row offshoreVps-plan justify-content-center" id="explore">
           {plansData.map((plan) => (
             <div
               key={plan.id}

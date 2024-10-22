@@ -94,7 +94,7 @@ const Streaming = () => {
     title="Robust offshore Streaming Server"
         description="Host your IPTV or movie site offshore in Amsterdam with powerful DMCA-ignored streaming servers. Get 100% uptime, unmetered ports, white-label IP, and a fully redundant network. Secure, reliable, and unshared."
         button1Text="Get Started Now"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={heroImage}
@@ -115,6 +115,7 @@ const Streaming = () => {
         title="Operating Systems"
         description="Install your desired OS in just a matter of seconds!"
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: 'AlmaLinux', img: images.cpanel },
           { name: 'Rocky Linux', img: images.directAdmin },

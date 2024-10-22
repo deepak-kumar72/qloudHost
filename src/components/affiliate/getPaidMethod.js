@@ -30,7 +30,7 @@ const GetPaidMethod = () => {
           Follow the mentioned guide and get your first income today!
         </p>
 
-        <div className='row'>
+        <div className='row' id='explore'>
           {data.map((service) => (
             <div key={service.id} className="col-md-4">
               <div className="card shadow-sm h-100">

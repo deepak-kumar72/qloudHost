@@ -1,8 +1,10 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 const FairUsagePolicies = () => {
   return (
-    <div className="container mb-50">
+    <div className="policies">
+    <div className="container py-5">
       <div className="content-sec m-auto">
         <p>
           Our primary goal is to protect your privacy and maintain your freedom
@@ -13,40 +15,40 @@ const FairUsagePolicies = () => {
           the customer agrees with all the terms, conditions and policies, which
           will not be violated in any case.
         </p>
-        <p>Our fair usage policy restricts you to the following activities:</p>
+        <h5>Our fair usage policy restricts you to the following activities:</h5>
         <ol className="content-sec-list">
-          <li>Adult content involving real violence.</li>
-          <li>
+          <li><FaCheck className="me-2 content-opt"/>Adult content involving real violence.</li>
+          <li><FaCheck className="me-2 content-opt"/>
             Any content that includes violence on animals ( any creatures )
           </li>
-          <li>Child pornography</li>
-          <li>Any explicit content that involves underage nudity.</li>
+          <li><FaCheck className="me-2 content-opt"/>Child pornography</li>
+          <li><FaCheck className="me-2 content-opt"/>Any explicit content that involves underage nudity.</li>
         </ol>
-        <p>
+        <h5>
           Other than the adult website, we restrict the following activities:
-        </p>
+        </h5>
         <ol className="content-sec-list">
-          <li>Ponzi scheme based websites</li>
-          <li>Scamming websites</li>
-          <li>Pharmaceutical websites without an appropriate license</li>
-          <li>Mass mailing websites</li>
-          <li>Phishing websites</li>
-          <li>Proxy or reverse websites</li>
-          <li>Illegal product-containing websites</li>
-          <li>Botnet controllers or involved websites</li>
-          <li>Sites containing any malicious links</li>
-          <li>DDoS attack-abled websites</li>
-          <li>Trojan-containing websites</li>
-          <li>Malicious Script containers</li>
-          <li>Any act of terrorism via a website</li>
-          <li>Vulnerability scanners</li>
-          <li>SIP scanners</li>
-          <li>Any forex related websites</li>
-          <li>Sales, distribution or promotion of pirated products</li>
-          <li>Password guessing bots, tools or any kind of generators</li>
-          <li>Any activity that led to your IP block</li>
-          <li>IP spoofing tools containers</li>
-          <li>Any other activities that violates our any policy</li>
+          <li><FaCheck className="me-2 content-opt"/>Ponzi scheme based websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Scamming websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Pharmaceutical websites without an appropriate license</li>
+          <li><FaCheck className="me-2 content-opt"/>Mass mailing websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Phishing websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Proxy or reverse websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Illegal product-containing websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Botnet controllers or involved websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Sites containing any malicious links</li>
+          <li><FaCheck className="me-2 content-opt"/>DDoS attack-abled websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Trojan-containing websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Malicious Script containers</li>
+          <li><FaCheck className="me-2 content-opt"/>Any act of terrorism via a website</li>
+          <li><FaCheck className="me-2 content-opt"/>Vulnerability scanners</li>
+          <li><FaCheck className="me-2 content-opt"/>SIP scanners</li>
+          <li><FaCheck className="me-2 content-opt"/>Any forex related websites</li>
+          <li><FaCheck className="me-2 content-opt"/>Sales, distribution or promotion of pirated products</li>
+          <li><FaCheck className="me-2 content-opt"/>Password guessing bots, tools or any kind of generators</li>
+          <li><FaCheck className="me-2 content-opt"/>Any activity that led to your IP block</li>
+          <li><FaCheck className="me-2 content-opt"/>IP spoofing tools containers</li>
+          <li><FaCheck className="me-2 content-opt"/>Any other activities that violates our any policy</li>
         </ol>
         <p>
           Usage of our services means the customer agrees to all the points
@@ -60,6 +62,7 @@ const FairUsagePolicies = () => {
           as illegal and can directly cause account/service termination.
         </p>
       </div>
+    </div>
     </div>
   );
 };

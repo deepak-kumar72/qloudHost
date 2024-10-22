@@ -19,37 +19,37 @@ const options = [
 
 const features = [
   {
-    img: images.ssd,
+    img: images.oneClick,
     title: "One-click Installs",
     description: "Easily install popular apps like WordPress, Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications.",
     link: "/read-more",
   },
   {
-    img: images.ssd,
+    img: images.weeklyBackup1,
     title: "Weekly Backups",
     description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
     link: "/read-more",
   },
   {
-    img: images.ssd,
+    img: images.poweredByDirect,
     title: "Powered by DirectAdmin",
     description: "Easily manage your hosting account with our popular and powerful web hosting control panel. Enjoy user-friendly point-and-click management, updated security features, and more.",
     link: "/read-more",
   },
   {
-    img: images.ssd,
+    img: images.uptime,
     title: "99.9% uptime guaranteed.",
     description: "Our first priority is provide you industry-leading uptime performance with our business-class hosting solutions. Get a 99.9% uptime guarantee and the peace of mind that your website will always be up and running",
     link: "/read-more",
   },
   {
-    img: images.ssd,
+    img: images.lightningFastStorage,
     title: "Lightning-Fast Storage",
     description: "Experience lightning-fast data storage with our enterprise-class Nvme SSD storage arrays, which power our shared server plans for reliable performance. Enjoy fast and secure hosting with our state-of-the-art infrastructure.",
     link: "/read-more",
   },
   {
-    img: images.ssd,
+    img: images.privacyprotection,
     title: "100% Privacy Protection",
     description: "Data privacy is paramount. Our secure servers have advanced security features to protect your website from malicious attacks. Trust us for reliable and secure web hosting solutions.",
     link: "/read-more",

@@ -1,40 +1,41 @@
 import React from 'react';
-import featureImg from "../../../assets/feature/featureImg.png"
+import featureImg from "../../../assets/feature/featureImg.png";
+import images from '../../../constants/images';
 
 const  qloudFeature =[
     {
         id: 1,
-        imgsrc: featureImg,
+        imgsrc: images.dataPrivacy,
         title: "Data Privacy",
         description: "Your website is completely safe in our hands because we understand the value of your privacy. That’s why we use smart features to ensure that you are untraceable on the internet.",
     },
     {
         id: 2,
-        imgsrc: featureImg,
+        imgsrc: images.flexibiltyOfContent,
         title: "Flexibility of Content",
         description: "Post as much DMCA ignored content on your website as you want without restriction or interruption from our side!",
     },
     {
         id: 3,
-        imgsrc: featureImg,
+        imgsrc: images.antiddosProtection,
         title: "Anti-DDoS Protection",
         description: "QloudHost uses Anti-DDoS equipped servers to ensure impenetrable security and maximum availability of your website on the internet.",
     },
     {
         id: 4,
-        imgsrc: featureImg,
+        imgsrc: images.fullRootAccess,
         title: "Full Root Access",
         description: "Enjoy complete control over your server resources and customize it as per preferences without any restrictions or interruptions.",
     },
     {
         id: 5,
-        imgsrc: featureImg,
+        imgsrc: images.weeklyBackup,
         title: "Weekly Backup",
         description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure.",
     },
     {
         id: 6,
-        imgsrc: featureImg,
+        imgsrc: images.prioritizedSupport,
         title: "Prioritized Support",
         description: "Get instant solutions to your problem with a dedicated team of technical experts working 24*7 to support you at every step of your journey.",
     },

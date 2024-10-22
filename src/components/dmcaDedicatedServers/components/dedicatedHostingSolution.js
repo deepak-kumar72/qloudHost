@@ -26,7 +26,7 @@ const DedicatedHostingSolution = () => {
               </ul>
             </div>
             <div  className="col-md-12 col-lg-6">
-             
+             <img src='' alt='offshore-dedicated-server'/>
             </div>
         </div>
       </div>

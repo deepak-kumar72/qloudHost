@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../privacyPolicy/heroSection'
 import ContactSupport from './components/contactSupport'
 import ContactUsForm from './components/contactUsForm'
+import ContactCompo from './components/contactCompo'
 
 const Contactus = () => {
   return (
@@ -14,6 +15,7 @@ const Contactus = () => {
     />
     <ContactSupport/>
     <ContactUsForm/>
+    <ContactCompo/>
     </div>
   )
 }

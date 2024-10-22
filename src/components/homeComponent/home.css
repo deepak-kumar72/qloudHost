@@ -61,6 +61,11 @@ color: #596780;
     color: #F6355A;
     border: none;
   }
+
+  .popular-card .plan-btn:hover {
+   background-color: #1E2944;
+   color: #fff;
+  }
   
   .popular-card .plan-btn a {
     color: #F6355A;
@@ -105,10 +110,20 @@ font-weight: 800;
     padding: 30px 20px;
     height: 100%;
     border-radius: 11px;
+    transition: 0.4s;
+  }
+
+  .feature-card img{
+    width: 20%;
+  }
+
+  .feature-card:hover{
+    transform: scale(1.03);
+    background: #fff7f7;
   }
 
   .feature-card h3{
-font-size: 22px;
+font-size: 18px;
 font-weight: 800;
 line-height: 19.8px;
 color: #333333;
@@ -117,7 +132,7 @@ color: #333333;
   .feature-card span{
 font-size: 16px;
 font-weight: 400;
-line-height: 25px;
+line-height: 20px;
 color: #2C2C2C;
   }
 
@@ -147,7 +162,13 @@ line-height: 28px;
   }
 
   .resource-card{
-    border: 1px solid #E7E9ED
+    border: 1px solid #E7E9ED;
+    transition: 0.4s;
+  }
+
+  .resource-card:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .resource-body{

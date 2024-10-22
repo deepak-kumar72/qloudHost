@@ -87,7 +87,7 @@ const Affiliate = () => {
         description="An easy way of making some extra money. Sign up for free and earn extra revenue by promoting us!
 Each referred client will get 20% per sale!"
         button1Text="Get Started Now"
-        button1Link="#hostingPlan"
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}

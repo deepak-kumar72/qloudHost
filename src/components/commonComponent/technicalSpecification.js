@@ -22,8 +22,30 @@ const TechnicalSpecification = () => {
    ' Proactive Host Monitoring'
   ];
 
+  const items2 = [
+
+   ' Proactive Host Monitoring',
+   '24/7/365 Support Coverage',
+   '  Unlimited DirectAdmin Support',
+   'Free Managed Migration',
+   'PHP Extension Manager',
+   'Secure Shell (SSH) Access',
+   'Mail Exchange (MX) Editor',
+   'DNS Zone Editor',
+   'Subversion',
+   'ionCube PHP Loader',
+   'Zend Guard Loader',
+   'LiteSpeed Web Server',
+   'GD Graphics Library',
+   'CloudLinux OS',
+   'Softaculous Premium',
+   'DirectAdmin Control Panel',
+  ];
+
   // Duplicate the items array to create the infinite loop illusion
   const duplicatedItems = [...items, ...items];
+
+  const duplicatedItems2 = [...items2, ...items2];
 
 
   return (
@@ -62,7 +84,7 @@ const TechnicalSpecification = () => {
         <div className="col-12 my-2">
           <div className="carousel-wrapper">
             <div className="carousel left">
-              {duplicatedItems.map((item, index) => (
+              {duplicatedItems2.map((item, index) => (
                 <div key={index} className="item">
                   {item}
                 </div>

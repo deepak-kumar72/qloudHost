@@ -122,7 +122,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/streaming-server"
+                        to="/offshore-streaming-server/"
                         onClick={handleCloseOffcanvas}
                       >
                         Streaming Server

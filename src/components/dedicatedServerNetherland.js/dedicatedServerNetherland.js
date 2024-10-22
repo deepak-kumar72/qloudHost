@@ -126,7 +126,7 @@ const DedicatedServerNetherland = () => {
         title="Cheap Netherlands Offshore dedicated Server"
         description="Host on a powerful offshore dedicated server in the Netherlands with 99.99% uptime, full root access, low latency, Intel AMD Ryzen, top security, and multiple OS/control panel choices. Expertly assembled."
         button1Text="Get Started Now"
-        button1Link="#hostingPlan"
+        button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc={images.heroImage2}
@@ -153,6 +153,7 @@ Utilize advanced technology security measures to ensure accurate information dis
 with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so
 that you can manage your website files with full control!"
         buttonText="Get Started Now"
+        url='explore'
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
           { name: 'DirectAdmin', img: images.directAdmin },

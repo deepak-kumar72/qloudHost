@@ -19,14 +19,14 @@ const HeroSection = ({
             </div>
           </div>
           <div className="col-md-6 ">
-            <div className="hero-image-container">
+            
               <img
                 src={imageSrc}
                 alt="frame"
-                className="hero-frame position-absolute"
+                className="hero-frame"
               />
-              <div className="features"></div>
-            </div>
+              
+           
           </div>
         </div>
       </div>

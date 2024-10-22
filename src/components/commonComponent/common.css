@@ -64,6 +64,11 @@ color:#f6355a
 
 }
 
+.social-footer-icon:hover{
+  color: #fff;
+  background-color: #f6355a;
+}
+
 .footer-menu {
   font-size: 14px;
   font-weight: 500;
@@ -72,14 +77,14 @@ color:#f6355a
 
 .footer-menu:hover{
   border-bottom: 1px solid #fff;
-  /* text-decoration: underline !important;
-  color: #fff !important; */
+  font-weight: 600;
+
 }
 .footer-con {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 24px;
   text-align: left;  
 }
 
@@ -130,9 +135,9 @@ font-weight: 400;
 }
 
 .service-desc {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 .start-now {
@@ -141,6 +146,14 @@ font-weight: 400;
 .start-now a {
   font-size: 12px;
   font-weight: 700;
+}
+
+.card-banner{
+  transition: 0.4s;
+}
+
+.card-banner:hover{
+  transform: scale(1.03);
 }
 
 /* carousel */
@@ -171,6 +184,12 @@ font-weight: 400;
   border-radius: 66px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.item:hover{
+  background-color: #f6355a;
+  color: #fff;
+  /* box-shadow: 0 0.5rem 1rem #00000026; */
 }
 
 /* Left-moving scroll for the first row */
@@ -362,21 +381,30 @@ color: #596780;
 }
 
 
+/* .accordion-item {
+  
+  transition: transform 0.3s ease, max-height 0.3s ease; 
+} */
+
 .accordion-body {
   max-height: 0;
-  overflow: hidden;
+  
   transition: max-height 0.3s ease, transform 0.3s ease;
   transform: scaleY(0);
+  transition: max-height .9s ease;
 }
 
 .accordion-body.open {
-  max-height: 500px; /* Adjust this value based on the content size */
+  max-height: 500px; 
   transform: scaleY(1);
+  transition: max-height .9s ease;
 }
 
 .accordion-body.open .accordion-header{
   margin-bottom: 20px;
 }
+
+
 
 
 
@@ -399,6 +427,15 @@ color: #596780;
   opacity: 1 !important;
 }
 
+.service-section1{
+  width: 85%;
+  margin: auto;
+}
+
+.serviceCard-img{
+  width: 80%;
+}
+
 
 
 @media(max-width: 991px){
@@ -406,6 +443,10 @@ color: #596780;
     margin: 0 5px;
     padding: 10px 15px;
     font-size: 14px;
+}
+
+.service-section1{
+  width: 100%;
 }
 .faq-header{
   width: 280px;
@@ -527,9 +568,6 @@ color: #596780;
 }
 
 @media(min-width:1400px){
-  .hero-frame {
-    width: 501px;
-}
 
 .navbar-expand-lg{
   justify-content: center;

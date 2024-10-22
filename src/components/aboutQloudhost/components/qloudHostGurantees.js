@@ -32,11 +32,11 @@ const QloudHostGurantees = () => {
           {data.map((service) => (
             <div key={service.id} className="col-md-4">
               <div className="card shadow-sm h-100">
-                <div className='card-body'>
+                <div className='card-body about-gurantee'>
                   <div className="mb-3">
                     <span className='check-symbol'><FaRegCircleCheck className="me-2 option-icon" /></span> {/* Use a check icon */}
                   </div>
-                  <h5 className='method-title'>{service.title}</h5>
+                  <h5 className='method-title mb-3'>{service.title}</h5>
                   <p className='card-method-text'>{service.description}</p>
                 </div>
               </div>

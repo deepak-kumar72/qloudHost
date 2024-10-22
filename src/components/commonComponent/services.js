@@ -11,13 +11,13 @@ const Services = ({ servicesData }) => {
           Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA ignored critical websites and apps. Count on us to deliver excellence every step of the way. <strong>Join our satisfied customers today!</strong>
         </p>
 
-        <div className='row'>
+        <div className='row service-section1'>
           {servicesData.map((service) => (
             <div key={service.id} className="col-md-12 col-lg-6 mb-4">
-              <div className="card h-100 shadow-sm">
+              <div className="card card-banner h-100 shadow-sm">
                 <div className='service-card d-flex p-4'>
-                  <div className="mb-3">
-                    <img src={service.imgUrl} alt='icon' className='pe-3'/>
+                  <div className="mb-3 w-50">
+                    <img src={service.imgUrl} alt={service.title} className=' serviceCard-img'/>
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>
