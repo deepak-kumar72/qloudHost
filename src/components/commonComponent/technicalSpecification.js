@@ -10,11 +10,10 @@ const TechnicalSpecification = () => {
     'GD Graphics Library',
     'LiteSpeed Web Server',
     'Zend Guard Loader',
-    'ionCube PHP Loader',
-    'Subversion',
-    'DNS Zone Editor',
-    'Mail Exchange (MX) Editor',
-    'Secure Shell (SSH) Access',
+  ];
+
+  const items2 = [
+
     'PHP Extension Manager',
     'Free Managed Migration',
   '  Unlimited DirectAdmin Support',
@@ -22,30 +21,21 @@ const TechnicalSpecification = () => {
    ' Proactive Host Monitoring'
   ];
 
-  const items2 = [
+  const items3 =[
+    'ionCube PHP Loader',
+    'Subversion',
+    'DNS Zone Editor',
+    'Mail Exchange (MX) Editor',
+    'Secure Shell (SSH) Access',
 
-   ' Proactive Host Monitoring',
-   '24/7/365 Support Coverage',
-   '  Unlimited DirectAdmin Support',
-   'Free Managed Migration',
-   'PHP Extension Manager',
-   'Secure Shell (SSH) Access',
-   'Mail Exchange (MX) Editor',
-   'DNS Zone Editor',
-   'Subversion',
-   'ionCube PHP Loader',
-   'Zend Guard Loader',
-   'LiteSpeed Web Server',
-   'GD Graphics Library',
-   'CloudLinux OS',
-   'Softaculous Premium',
-   'DirectAdmin Control Panel',
-  ];
+  ]
 
   // Duplicate the items array to create the infinite loop illusion
-  const duplicatedItems = [...items, ...items];
+  const duplicatedItems = [...items, ...items, ...items];
 
-  const duplicatedItems2 = [...items2, ...items2];
+  const duplicatedItems2 = [...items2, ...items2, ...items2];
+
+  const duplicatedItems3 = [...items3, ...items3, ...items3, ...items3];
 
 
   return (
@@ -73,7 +63,7 @@ const TechnicalSpecification = () => {
         <div className="col-12 my-2">
           <div className="carousel-wrapper carousel-right-slide">
             <div className="carousel right">
-              {duplicatedItems.map((item, index) => (
+              {duplicatedItems3.map((item, index) => (
                 <div key={index} className="item">
                   {item}
                 </div>

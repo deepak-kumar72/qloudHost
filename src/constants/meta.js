@@ -36,7 +36,54 @@ const MetaTags = () => {
       description:
         "QloudHost offers best & Cheap offshore VPS hosting servers with 100% privacy protection,root access, 24*7 support and totally Anonymous Offshore hosting.",
       keyword: "",
+      schema: {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Offshore Web Hosting",
+            "category": "Web Hosting",
+            "url": "https://qloudhost.com/offshore-web-hosting/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://qloudhost.com/wp-content/uploads/2023/03/OFSHORE-HOSTING-01.png"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": "3.50",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "brand": {
+              "@type": "Brand",
+              "name": "YouStable"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "387",
+              "bestRating": "5",
+              "worstRating": "1.0"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Offshore Web Hosting",
+                  "item": "https://qloudhost.com/offshore-web-hosting/"
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
+ 
     "/offshore-dedicated-servers/": {
       title: "Buy Cheap Offshore Dedicated Servers✰Free setup,Unmetered",
       description:

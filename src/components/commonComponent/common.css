@@ -1,3 +1,11 @@
+.navbar-brand img{
+  width: 50%;
+}
+
+.footer-logo{
+  width: 50%;
+}
+
 .top-content,
 .top-content a {
   font-family: DM Sans;
@@ -137,7 +145,6 @@ font-weight: 400;
 .service-desc {
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
 }
 
 .start-now {
@@ -436,9 +443,26 @@ color: #596780;
   width: 80%;
 }
 
+.cover-opt{
+  color: #f6355a;
+}
 
+.grade-opt{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 75%;
+margin: auto;
+}
 
 @media(max-width: 991px){
+  .grade-opt{
+  width: 100%;
+  margin: auto;
+  }
+
   .item {
     margin: 0 5px;
     padding: 10px 15px;
@@ -497,6 +521,11 @@ color: #596780;
 }
 
 @media(max-width: 767px){
+  .grade-opt{
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+}
+
   .top-content, .top-content a {
     font-size: 14px;
 }

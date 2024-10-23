@@ -27,6 +27,19 @@ const sectionsData = [
       }
   ];
 
+  const featuresData = [
+    "Enterprise-Grade Infrastructure",
+    "99.99% uptime guarantee",
+    "IPv4 and IPv6 connectivity",
+    "Complete Privacy and Security",
+    "Realtime network monitoring",
+    "Reliable hardware",
+    "Stable global connectivity",
+    "Fast and effective support",
+    "Attractive pricing",
+    "Easy control panel",
+  ];
+
 const EnterpriseGrade = ({heading, subHeading}) => {
   return (
     <div className='service-section'>
@@ -35,11 +48,20 @@ const EnterpriseGrade = ({heading, subHeading}) => {
         {heading}</h2>
         <p className="text-center text-white mb-4 planHead-con m-auto">{subHeading}
         </p>
+        <div className='mb-3'>
+        <p className="text-white grade-opt">
+              {featuresData.map((feature, index) => (
+                <span key={index} className="d-block">
+                  ✓ {feature}
+                </span>
+              ))}
+            </p>
+        </div>
 
         <div className='row'>
           {sectionsData.map((section, index) => (
             <div key={index} className="col-md-12 col-lg-6 mb-4">
-              <div className="card h-100 shadow-sm AffordableCon-card d-flex p-4">
+              <div className="card h-100 shadow-sm AffordableCon-card d-flex p-3">
                     <div className='affordable-card-title'>{section.title}</div>
                     <div className='card-text affordable-card-desc'>{section.description}</div>
               </div>

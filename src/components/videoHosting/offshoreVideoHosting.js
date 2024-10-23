@@ -18,32 +18,32 @@ const options = [
 ];
 
 const features = [
-    {img: images.ssd,
+    {img: images.nobufferStream,
       title: "No Buffer Stream",
       description:"Worried about the performance of your video streaming website? Just sit and relax! Because we run robust servers equipped with the latest and most powerful hardware technologies in the market.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.useYourPlayer,
       title: "Use Your Player",
       description:"Although we provide you with a pre-built video player, our DMCA Ignored servers are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.embeds,
       title: "Unlimited Embeds & Plays",
       description:"There is no limit on the number of videos you can post and play on your website, all thanks to the robust servers we are using for the services, which allows you to use unrestricted resources.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.privacyprotection,
       title: "100% Privacy Protection",
       description:"QloudHost provides you with top-notch security features such firewall, offshore servers and much more to ensure your 100% privacy and untraceable footprints on the internet. .",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.uptime,
       title: "99.9% Uptime Guaranteed",
       description:"We are confident to share with you that our server uptime is 99.9%, and we ensure that it should be maintained for maximum availability of your website on the internet.",
       link: "",
     },
-    {img: images.ssd,
+    {img: images.support1,
       title: "24/7 Support",
       description:"Our team of technical experts is working 24*7 to solve your queries and help you at every stage of your journey. In addition, they constantly monitor your website’s resources to ensure uptime and performance.",
       link: "",
@@ -105,11 +105,11 @@ const OffshoreVideoHosting = () => {
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'AlmaLinux', img: images.cpanel },
-          { name: 'RockeyLinux', img: images.directAdmin },
-          { name: 'debian', img: images.cyberPanel},
+          { name: 'AlmaLinux', img: images.almaLinux },
+          { name: 'RockeyLinux', img: images.rockyLinux },
+          { name: 'debian', img: images.debian},
           { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Windows', img: images.centos },
+          { name: 'Windows', img: images.windowIcon },
         ]}
       />
       <VideoHostingFeatureElement/>

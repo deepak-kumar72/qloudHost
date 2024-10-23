@@ -6,7 +6,7 @@ import QloudHostFeatures from "./components/qloudHostFeatures";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import InstallationPanel from "../commonComponent/installationPanel";
 import images from '../../constants/images';
-import Services from "../commonComponent/services";
+import Services from "../homeComponent/components/services";
 import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
@@ -145,7 +145,7 @@ that you can manage your website files with full control!"
           { name: 'DirectAdmin', img: images.directAdmin },
           { name: 'CyberPanel', img: images.cyberPanel },
           { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Debian', img: images.centos },
+          { name: 'Debian', img: images.debian },
         ]}
       />
       <QlodHostServices

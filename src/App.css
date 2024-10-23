@@ -51,7 +51,7 @@ h2 {
   font-size: 35px;
   font-weight: 800;
   color: #0b100d;
-  width: 80%;
+  width: 85%;
 }
 
 .hero-content p {
@@ -398,7 +398,6 @@ color: #000 !important;
 .affordable-card-desc {
   font-size: 16px;
   font-weight: 500;
-  line-height: 25px;
   color: #fff;
 }
 
@@ -537,7 +536,7 @@ color: #000 !important;
 }
 
 .about-sec p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #616365;
   line-height: 20px;
@@ -632,6 +631,18 @@ font-weight: 700;
 
 .contact-link:hover{
   font-weight: 600;
+
+}
+
+.col-2_5{
+  width: 20%;
+}
+
+.techPartnerImg{
+  border: 1px solid #EBEEF2;
+  box-shadow: 0px 1px 4px 0px #0000000D;
+  padding: 2px 20px;
+  border-radius: 5px;
 
 }
 

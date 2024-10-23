@@ -8,7 +8,6 @@ import QlodHostServices from "../commonComponent/qlodHostServices";
 import Testimonials from "../commonComponent/testimonial";
 import PrivacyHardwarePage from "../offShoreVps/components/privacyHardwarePage";
 import FeaturesYouGet from "./components/featuresYouGet";
-import Services from "../commonComponent/services";
 import FAQsSection from "../commonComponent/faqSection";
 
 const options = [
@@ -97,28 +96,6 @@ const faqsData = [
   },
 ];
 
-const servicesData1 = [
-  {
-    id: 1,
-    imgUrl: images.web,
-    title: "New Website?",
-    description:
-      "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-globe",
-  },
-  {
-    id: 1,
-    imgUrl: images.migration,
-    title: "Migration?",
-    description:
-      "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-arrow-repeat",
-  },
-];
 
 const OffshoreVps = () => {
   return (
@@ -142,11 +119,11 @@ const OffshoreVps = () => {
         buttonText="Get Started Now"
         url="explore"
         panelOptions={[
-          { name: "AlmaLinux", img: images.cpanel },
-          { name: "Rockey Linux", img: images.directAdmin },
-          { name: "Debian", img: images.cyberPanel },
+          { name: "AlmaLinux", img: images.almaLinux },
+          { name: "Rockey Linux", img: images.rockyLinux },
+          { name: "Debian", img: images.debian },
           { name: "Ubuntu", img: images.ubuntu },
-          { name: "Windows", img: images.centos },
+          { name: "Windows", img: images.windowIcon },
         ]}
       />
       <PrivacyHardwarePage />
@@ -155,7 +132,6 @@ const OffshoreVps = () => {
         content="Looking for some good reasons to choose Qloudhost?  Here’s the reason of our confidence. "
         features={features}
       />
-      <Services servicesData={servicesData1} />
       <FeaturesYouGet />
       <Testimonials />
       <FAQsSection faqs={faqsData} />

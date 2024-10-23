@@ -21,32 +21,32 @@ const options = [
 ];
 
 const features = [
-    {img: images.ssd,
+    {img: images.secureOffshore,
       title: "Secure Offshore Location",
       description:`Our Offshore Dedicated server are built far away from the origin country to bypass all the country-specific restrictions and allow you to post your desired DMCA ignored content without any arbitrary restrictions or interruptions.`,
       link: "",
     },
-    {img: images.ssd,
+    {img: images.anonymousService,
       title: "100% Anonymous Service",
       description:`We are running our offshore streaming servers at the best locations that are especially popular for offshore hosting services and help us to decrease your visibility on the internet making you untraceable.`,
       link: "",
     },
-    {img: images.ssd,
+    {img: images.osChoice,
       title: "OS Choice",
       description: `All thanks to our resilient server that is compatible with all the Operating systems, we can offer you a wide range of options to choose and work with your desired OS anytime and anywhere!!`,
       link: "",
     },
-    {img: images.ssd,
+    {img: images.ddos,
       title: "DDoS Protection",
       description: `Our servers come with the best and industry-standard security features that will help you to save your website against illegitimate traffic and ensure your maximum availability on the internet. .`,
       link: "",
     },
-    {img: images.ssd,
+    {img: images.uptime,
       title: "99.99% Uptime",
       description: `Why go anywhere else when you get maximum uptime here? Yes!! Our services come with a 99.99% uptime guarantee to provide full assurance of your availability on the internet.`,
       link: "",
     },
-    {img: images.ssd,
+    {img: images.techSupport,
       title: "24/7 Tech Support",
       description: `We have built a dedicated team of technical experts that are working 24*7 to help you at every stage of your journey and ensure that you can set up your offshore streaming servers without any errors!`,
       link: "",
@@ -117,11 +117,11 @@ const Streaming = () => {
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'AlmaLinux', img: images.cpanel },
-          { name: 'Rocky Linux', img: images.directAdmin },
-          { name: 'Debian', img: images.cyberPanel},
+          { name: 'AlmaLinux', img: images.almaLinux },
+          { name: 'Rocky Linux', img: images.rockyLinux },
+          { name: 'Debian', img: images.debian},
           { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Windows', img: images.centos },
+          { name: 'Windows', img: images.windowIcon },
         ]}
       />
       <StreamingServerQuality/>

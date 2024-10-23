@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import images from "../../constants/images";
 import "./common.css";
 import { Offcanvas } from "bootstrap"; // Import the Offcanvas utility from Bootstrap
 
@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-xxl mx-5">
           <Link className="navbar-brand" to="/">
-            <img src={logo} alt="logo" />
+            <img src={images.logo} alt="logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 <Link className="navbar-brand" to="/" onClick={handleCloseOffcanvas}>
-                  <img src={logo} alt="logo" />
+                  <img src={images.logo} alt="logo" />
                 </Link>
               </h5>
               <button

@@ -4,12 +4,12 @@ import heroImage from "../../assets/Frame/heroFrame.png";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import images from "../../constants/images";
 import InstallationPanel from "../commonComponent/installationPanel";
-import Services from "../commonComponent/services";
 import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import DedicatedServerPlan from "./components/dedicatedServerPlan";
 import EnterpriseGrade from "../commonComponent/enterpriseGrade";
 import DedicatedHostingSolution from "../dmcaDedicatedServers/components/dedicatedHostingSolution";
+import WebsiteCover from "../commonComponent/websiteCover";
 
 const options = [
   "Free Migration Available",
@@ -20,7 +20,7 @@ const options = [
 
 const features = [
   {
-    img: images.ssd,
+    img: images.powerfulComfigration,
     title: "Powerful Configurations",
     description:
       "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
@@ -34,56 +34,35 @@ const features = [
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.freeSetup,
     title: "Free Setup with All Servers",
     description:
       "No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.dataCenter,
     title: "Amsterdam, Netherlands Data Center",
     description:
       "We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance.",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.serverMonitoring,
     title: "24/7 Server monitoring",
     description:
       "We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status.",
     link: "",
   },
   {
-    img: images.ssd,
+    img: images.poweredByDirect,
     title: "Managed with DirectAdmin",
     description:
       "Experience exceptional technical support for your DMCA Ignored Server hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.",
     link: "",
   },
 ];
-const servicesData1 = [
-  {
-    id: 1,
-    imgUrl: images.web,
-    title: "New Website?",
-    description:
-      "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-globe",
-  },
-  {
-    id: 1,
-    imgUrl: images.migration,
-    title: "Migration?",
-    description:
-      "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
-    buttonText: "Get Started Now",
-    buttonLink: "#",
-    iconClass: "bi-arrow-repeat",
-  },
-];
+
 const faqsData = [
   {
     question: "What is a Offshore dedicated server?",
@@ -182,7 +161,7 @@ that you can manage your website files with full control!"
           { name: "debian", img: images.centos },
         ]}
       />
-      <Services servicesData={servicesData1} />
+      <WebsiteCover/>
       <Testimonials />
       <FAQsSection faqs={faqsData} />
     </div>

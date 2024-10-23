@@ -1,13 +1,13 @@
 import React from 'react';
-// import maskgroup from '../../assets/Maskgroup.png'
 import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import images from '../../constants/images';
+import { FaPinterest } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 import './common.css';
-// import { IoIosArrowForward } from "react-icons/io";
 
 const Footer = () => {
   const ourServices = [
@@ -35,16 +35,16 @@ const Footer = () => {
     {
       title: "My Account",
       links: [
-        { name: "Client Login", url: "" },
-        { name: "Create Account", url: "" },
-        { name: "Forget Password", url: "" },
+        { name: "Client Login", url: "https://my.qloudhost.com/login" },
+        { name: "Create Account", url: "https://my.qloudhost.com/register.php" },
+        { name: "Forget Password", url: "https://my.qloudhost.com/password/reset" },
       ],
     },
     {
       title: "My Account",
       links: [
         { name: "Become an affilliate", url: "https://my.qloudhost.com/register.php" },
-        { name: "Affiliate Login", url: "" },
+        { name: "Affiliate Login", url: "https://my.qloudhost.com/login" },
         
       ],
     },
@@ -83,15 +83,17 @@ const Footer = () => {
         <div className="row">
           {/* First Column with Social Media */}
           <div className="col-md-12 col-lg-3 mb-4">
-            <img src={images.logo} alt='logo' className='mb-4'/>
+            <img src={images.logo} alt='logo' className='mb-4 footer-logo'/>
             <p className='footer-con'>
               Host your website with the best Offshore hosting server at QloudHost and get full privacy assurance. We understand the value of your data privacy that’s why we provide you services with impenetrable security!
             </p>
             <div className='footer-icon'>
-            <Link to=""><FaFacebookF className='social-footer-icon'/></Link>
-            <Link to=""><FaTwitter className='social-footer-icon'/></Link>
-            <Link to=""><FaInstagram className='social-footer-icon'/></Link>
-            <Link to=""><FaYoutube className='social-footer-icon'/></Link>
+            <Link to="https://www.facebook.com/qloudhost"><FaFacebookF className='social-footer-icon'/></Link>
+            <Link to='https://www.linkedin.com/company/qloudhost/'><FaLinkedinIn className='social-footer-icon'/></Link>
+            <Link to="https://instagram.com/qloudhost"><FaInstagram className='social-footer-icon'/></Link>
+            <Link to='https://www.pinterest.com/qloudhost/'><FaPinterest className='social-footer-icon'/></Link>
+
+            {/* <Link to=""><FaYoutube className='social-footer-icon'/></Link> */}
 
             </div>
           </div>

@@ -22,7 +22,7 @@ const QlodHostServices = ({ heading, content, features }) => {
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card service-card-body">
               <div className='p-3'>
-                <img src={feature.img} alt="" className='mb-3 qloudService-img'/>
+                <img src={feature.img} alt={feature.title} className='mb-3 qloudService-img'/>
                 <div className='service-title mb-2'>{feature.title}</div>
                 <div className='card-text service-text mb-3'>
                   {expandedFeatures[index] ? feature.description : `${feature.description.slice(0, 100)}...`}

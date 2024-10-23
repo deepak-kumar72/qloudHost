@@ -24,10 +24,9 @@ const About = () => {
        buttonText="Get Started Now"
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
-          { name: 'debian', img: images.directAdmin },
+          { name: 'debian', img: images.debian },
           { name: 'fedora', img: images.cyberPanel},
           { name: 'OpenSUSE', img: images.ubuntu },
-          { name: 'CentOS', img: images.centos },
           { name: 'plesk', img: images.centos },
         ]}
       />
