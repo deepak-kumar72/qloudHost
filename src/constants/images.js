@@ -29,8 +29,18 @@ import almaLinux from '../assets/icon/almaLinux.png';
 import rockyLinux from '../assets/icon/rockyLinux.png';
 import windowIcon from '../assets/icon/window-icon.png';
 
+// heroImage
+import homeImage from "../assets/Frame/home-img.webp";
+import reportAbuse from '../assets/Frame/heroImg-report-abuse.webp';
+import affiliate from '../assets/Frame/heroImg_affiliate.webp';
+import contactUs from '../assets/Frame/heroImg_contact-us.webp';
+import fairUsage from '../assets/Frame/heroImg_fair-usage.webp';
+import refund from '../assets/Frame/heroImg_refund.webp';
+import privacyPolicy from '../assets/Frame/heroImg_privacy-policy.webp';
+import services from '../assets/Frame/heroImg-services.webp';
+
 // Home Image
-import homeImage from "../assets/Frame/home-img.png";
+
 import antiddosProtection from "../assets/feature/antiddos-protection.svg";
 import dataPrivacy from "../assets/feature/data-privacy.svg";
 import flexibiltyOfContent from "../assets/feature/flexibility-of-content.svg";
@@ -46,16 +56,16 @@ import freeWebsitemigration from "../assets/feature/free-website-migration.svg";
 import hostedInNetherland from "../assets/feature/hosted-in-netherlands.svg";
 
 // offshorVps
-import fairAndaffordable from '../assets/serviceImg/offshore vps/fair-and-affordable.svg';
-import fullRootAcces from '../assets/serviceImg/offshore vps/full-root-access_1.svg';
-import privacyprotection from '../assets/serviceImg/offshore vps/privacy-protection_1.svg';
-import websiteMigration from '../assets/serviceImg/offshore vps/website-migration.svg';
-import weeklyBackup1 from '../assets/serviceImg/offshore vps/weekly-backup_1.svg';
+import fairAndaffordable from '../assets/serviceImg/fair-and-affordable.svg';
+import fullRootAcces from '../assets/serviceImg/full-root-access_1.svg';
+import privacyprotection from '../assets/serviceImg/privacy-protection_1.svg';
+import websiteMigration from '../assets/serviceImg/website-migration.svg';
+import weeklyBackup1 from '../assets/serviceImg/weekly-backup_1.svg';
 
 //offshoreWordpres
-import lightningFastStorage from '../assets/serviceImg/offshore wordpress icon/lightning-fast-storage.svg';
-import oneClick from '../assets/serviceImg/offshore wordpress icon/one-click-installs.svg';
-import poweredByDirect from '../assets/serviceImg/offshore wordpress icon/powered-by direct-admin.svg';
+import lightningFastStorage from '../assets/serviceImg/lightning-fast-storage.svg';
+import oneClick from '../assets/serviceImg/one-click-installs.svg';
+import poweredByDirect from '../assets/serviceImg/powered-by direct-admin.svg';
 import DaysMoneyGurantee from '../assets/icon/14-days-money-back.svg';
 import fastestSsdSever from '../assets/icon/nvme-ssd.svg';
 import hostedNetherland from '../assets/icon/hosted-in-netherland.svg';
@@ -64,31 +74,31 @@ import window2022 from '../assets/icon/windows-2022.png';
 
 import debian from '../assets/icon/debain.png';
 
-import serverMonitoring from '../assets/serviceImg/dedicated server/24x7-server-monitoring.svg';
-import dataCenter from '../assets/serviceImg/dedicated server/data-center.svg';
-import freeSetup from  '../assets/serviceImg/dedicated server/freesetup.svg';
-import powerfulComfigration from '../assets/serviceImg/dedicated server/powerful-configration.svg';
+import serverMonitoring from '../assets/serviceImg/24x7-server-monitoring.svg';
+import dataCenter from '../assets/serviceImg/data-center.svg';
+import freeSetup from  '../assets/serviceImg/freesetup.svg';
+import powerfulComfigration from '../assets/serviceImg/powerful-configration.svg';
 
 // streaming server
-import anonymousService from '../assets/serviceImg/streaming server/anonymous-service.svg';
-import ddos from '../assets/serviceImg/streaming server/ddos.svg';
-import osChoice from '../assets/serviceImg/streaming server/os-choice.svg';
-import secureOffshore from '../assets/serviceImg/streaming server/secure-offshore-location.svg';
-import techSupport from '../assets/serviceImg/streaming server/secure-offshore-location.svg';
+import anonymousService from '../assets/serviceImg/anonymous-service.svg';
+import ddos from '../assets/serviceImg/ddos.svg';
+import osChoice from '../assets/serviceImg/os-choice.svg';
+import secureOffshore from '../assets/serviceImg/secure-offshore-location.svg';
+import techSupport from '../assets/serviceImg/secure-offshore-location.svg';
 
 // video Hosting
-import embeds from '../assets/serviceImg/video streaming/embeds.svg';
-import nobufferStream from '../assets/serviceImg/video streaming/no-buffer-stream.svg';
-import support1 from '../assets/serviceImg/video streaming/support.svg';
-import useYourPlayer from '../assets/serviceImg/video streaming/use-your-player.svg';
+import embeds from '../assets/serviceImg/embeds.svg';
+import nobufferStream from '../assets/serviceImg/no-buffer-stream.svg';
+import support1 from '../assets/serviceImg/support.svg';
+import useYourPlayer from '../assets/serviceImg/use-your-player.svg';
 
 // affiliate
-import advanceTracking from '../assets/serviceImg/affiliate/advanced-tracking-url.svg';
-import affiliateSupport from '../assets/serviceImg/affiliate/affiliate-support.svg';
-import easyToUse from  '../assets/serviceImg/affiliate/easy-to-use.svg';
-import eyeCatchy from '../assets/serviceImg/affiliate/eye-catchy-ads.svg';
-import freeRegistration from '../assets/serviceImg/affiliate/free-registration.svg';
-import highConversion from '../assets/serviceImg/affiliate/high-conversion-rate.svg'
+import advanceTracking from '../assets/serviceImg/advanced-tracking-url.svg';
+import affiliateSupport from '../assets/serviceImg/affiliate-support.svg';
+import easyToUse from  '../assets/serviceImg/easy-to-use.svg';
+import eyeCatchy from '../assets/serviceImg/eye-catchy-ads.svg';
+import freeRegistration from '../assets/serviceImg/free-registration.svg';
+import highConversion from '../assets/serviceImg/high-conversion-rate.svg'
 
 // about
 import apache from '../assets/technology-Partners/apche.png';
@@ -150,6 +160,8 @@ const images = {
   neitherland,
   support,
   payimage,
+
+  reportAbuse, affiliate, contactUs, fairUsage, refund, privacyPolicy, services,
 
   // home
   homeImage, antiddosProtection, dataPrivacy, flexibiltyOfContent, fullRootAccess, migrations,

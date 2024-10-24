@@ -322,10 +322,10 @@ font-weight: 400;
 
 .slick-prev{
   /* right: 22px !important; */
-left: 97% !important;
+left: 90% !important;
 }
 .slick-next {
-  right: 90px !important;
+  right: 30px !important;
 }
 
 .testimonial-arrow {

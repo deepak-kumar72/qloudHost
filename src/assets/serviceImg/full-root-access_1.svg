@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f86b71;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #f86b71;
+      }
+
+      .cls-3 {
+        font-family: Corbel-Bold, Corbel;
+        font-size: 32.59px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #fff5f5;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="0" y="0" width="65" height="65" rx="5.31" ry="5.31"/>
+  <g>
+    <g>
+      <g>
+        <rect class="cls-1" x="10.55" y="17.37" width="43.89" height="30.18" rx=".9" ry=".9"/>
+        <circle class="cls-2" cx="13.23" cy="19.62" r=".79"/>
+        <circle class="cls-2" cx="15.34" cy="19.62" r=".79"/>
+        <circle class="cls-2" cx="17.53" cy="19.62" r=".79"/>
+      </g>
+      <g>
+        <text class="cls-3" transform="translate(18.31 42.31)"><tspan x="0" y="0">&gt;</tspan></text>
+        <text class="cls-3" transform="translate(35.32 41.8)"><tspan x="0" y="0">-</tspan></text>
+      </g>
+    </g>
+    <line class="cls-1" x1="10.55" y1="21.71" x2="54.45" y2="21.71"/>
+  </g>
+</svg>

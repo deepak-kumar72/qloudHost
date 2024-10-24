@@ -13,7 +13,7 @@ const NextArrow = (props) => {
     const { onClick } = props;
     return (
         <div className="slick-arrow slick-next" onClick={onClick}>
-            <FaArrowLeft className='testimonial-arrow'/>
+            <FaArrowRight className='testimonial-arrow' />
         </div>
     );
 };
@@ -22,7 +22,7 @@ const PrevArrow = (props) => {
     const { onClick } = props;
     return (
         <div className="slick-arrow slick-prev" onClick={onClick}>
-            <FaArrowRight className='testimonial-arrow' />
+            <FaArrowLeft className='testimonial-arrow'/>
         </div>
     );
 };

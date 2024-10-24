@@ -43,10 +43,10 @@ const MetaTags = () => {
             "@type": "Product",
             "name": "Offshore Web Hosting",
             "category": "Web Hosting",
-            "url": "https://qloudhost.com/offshore-web-hosting/",
+            "url": "http://next.qloudhost.com/offshore-vps-hosting/",
             "image": {
               "@type": "ImageObject",
-              "url": "https://qloudhost.com/wp-content/uploads/2023/03/OFSHORE-HOSTING-01.png"
+              "url": "https://next.qloudhost.com/wp-content/uploads/2023/03/OFSHORE-HOSTING-01.png"
             },
             "offers": {
               "@type": "AggregateOffer",
@@ -224,6 +224,11 @@ const MetaTags = () => {
       <title>{currentMetaTags.title}</title>
       <meta name="description" content={currentMetaTags.description} />
       <meta name="keywords" content={currentMetaTags.keywords} />
+      {currentMetaTags.schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(currentMetaTags.schema)}
+        </script>
+      )}
     </Helmet>
   );
 };

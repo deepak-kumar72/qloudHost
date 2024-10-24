@@ -84,13 +84,12 @@ const Affiliate = () => {
     <div>
       <HeroComponent
         title="Earn Money with QloudHost Affiliate Program"
-        description="An easy way of making some extra money. Sign up for free and earn extra revenue by promoting us!
-Each referred client will get 20% per sale!"
+        description="Make extra money easily! Sign up for free and start earning by promoting us. For every client you refer, you’ll get 20% per sale! It’s a simple way to boost your income—no hassle, just rewards! Don’t miss out on this opportunity. Join now and start making money today!"
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.heroImage2}
+        imageSrc={images.affiliate}
         moneyBackText="14-Day Money-Back Guarantee"
       />
       <GetPaidMethod/>

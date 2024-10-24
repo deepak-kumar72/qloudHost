@@ -17,7 +17,7 @@ const QlodHostServices = ({ heading, content, features }) => {
       <p className="text-center planHead-con m-auto mb-5">
         {content}
       </p>
-      <div className="row mt-4 w-85 justify-content-service">
+      <div className="row mt-4 w-85 justify-content-center">
         {features.map((feature, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card service-card-body">

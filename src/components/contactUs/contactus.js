@@ -2,7 +2,8 @@ import React from 'react'
 import HeroSection from '../privacyPolicy/heroSection'
 import ContactSupport from './components/contactSupport'
 import ContactUsForm from './components/contactUsForm'
-import ContactCompo from './components/contactCompo'
+import ContactCompo from './components/contactCompo';
+import images from '../../constants/images';
 
 const Contactus = () => {
   return (
@@ -11,7 +12,7 @@ const Contactus = () => {
     subTitle="We’re here 24/7"
       title="CONTACT OUR SUPPORT"
       description="Reach out with your questions, concerns and challenges. Or just to say hi. We’ll be happy to chat and help."
-      imageSrc=""      
+      imageSrc={images.contactUs}     
     />
     <ContactSupport/>
     <ContactUsForm/>

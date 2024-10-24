@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../privacyPolicy/heroSection'
-import RefundPolicies from './refundPolicies'
+import RefundPolicies from './refundPolicies';
+import images from '../../constants/images';
 
 const Refund = () => {
   return (
@@ -8,8 +9,8 @@ const Refund = () => {
       <HeroSection
       subTitle=""
         title="Refund Policy​"
-        description="Get your DMCA offshore hosting today! With instant setup, untraceable footprints and full data protection."
-        imageSrc=""      
+        description="We offer a hassle-free refund policy! If you’re not satisfied, contact us within 30 days of purchase for a full refund. Our team is here to assist you with any concerns. Please review our terms for eligibility details and let us know how we can help. Your satisfaction is our priority!"
+        imageSrc={images.refund}   
       />
       <RefundPolicies/>
     </div>
