@@ -14,7 +14,7 @@ const Coupons = () => {
         button1Link=""
         button2Text="Explore Coupons"
         button2Link="" // Link for the second button
-        imageSrc={images.heroImage2}
+        imageSrc={images.qloudHostCoupon}
         moneyBackText="14-Day Money-Back Guarantee"
         
       />

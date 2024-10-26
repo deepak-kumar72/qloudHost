@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
-import heroImage from "../../assets/Frame/heroFrame.png";
 import StreamingServerPlan from './components/streamingServerPlan';
 import InstallationPanel from '../commonComponent/installationPanel';
 import images from '../../constants/images';
@@ -97,7 +96,7 @@ const Streaming = () => {
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={heroImage}
+        imageSrc={images.streamingServer}
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} // Pass the options to the HeroComponent
       />

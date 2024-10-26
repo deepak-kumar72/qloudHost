@@ -36,6 +36,7 @@ const MetaTags = () => {
       description:
         "QloudHost offers best & Cheap offshore VPS hosting servers with 100% privacy protection,root access, 24*7 support and totally Anonymous Offshore hosting.",
       keyword: "",
+      // schema
       schema: {
         "@context": "https://schema.org",
         "@graph": [
@@ -82,6 +83,7 @@ const MetaTags = () => {
           }
         ]
       }
+      // schema close
     },
  
     "/offshore-dedicated-servers/": {

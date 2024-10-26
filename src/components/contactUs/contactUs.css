@@ -63,3 +63,77 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.con-support{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.email-us{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.con-billing{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.live-chat{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.support-icon{
+    font-size: 50px;
+    margin-bottom: 12px;
+    color: #f6355a;
+}
+
+.contact-link{
+    border: 1px solid #f6355a;
+    background-color: #f6355a;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 10px;
+
+    margin: 10px 0px;
+}
+
+.contact-container{
+    width: 85%;
+}
+
+.support-mail{
+    color: #f6355a;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.looking-more{
+    width: 85%;
+    margin: auto;
+    border: 1px solid #f6355a;
+    background-color: #f6355a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.more-btn{
+    background-color: #fff !important;
+    color: #f6355a;
+
+}

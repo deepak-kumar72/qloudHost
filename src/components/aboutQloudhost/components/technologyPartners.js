@@ -30,13 +30,13 @@ const TechnologyPartners = () => {
   return (
     <div className='container my-5'>
       <h2 className="mb-5 text-center m-auto">Our Business & Technology Partners</h2>
-      <div className='row g-3 d-flex justify-content-space-between justify-content-center'>
+      <div className='justify-content-space-between justify-content-center techPartner-banner '>
         {partnerImages.map((image, index) => (
-          <div key={index} className='col-4 col-md-3 col-lg-2 text-center '>
-            <div className='techPartnerImg'>
+          
+            <div key={index} className='techPartnerImg m-2'>
               <img src={image} alt={`Partner ${index + 1}`} className='img-fluid' />
             </div>
-          </div>
+          
         ))}
       </div>
     </div>

@@ -610,29 +610,20 @@ color: #000 !important;
 }
 
 .contact-method h4{
-font-size: 22px;
+font-size: 24px;
 font-weight: 700;
 }
 
 .contact-method p{
-  font-size: 14px;
+  font-size: 14
+  px;
   font-weight: 400;
-  width: 90%;
 }
 
-.contact-banner{
+/* .contact-banner{
   background: #FFF7F7;
 
-}
-
-.contact-link{
-  color: #f6355a;
-}
-
-.contact-link:hover{
-  font-weight: 600;
-
-}
+} */
 
 .col-2_5{
   width: 20%;
@@ -644,6 +635,14 @@ font-weight: 700;
   padding: 2px 20px;
   border-radius: 5px;
 
+}
+
+.techPartner-banner{
+  display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
 /* Add this CSS */
@@ -727,6 +726,11 @@ font-weight: 700;
   .content-sec {
     width: 100%;
   }
+
+  .techPartner-banner{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
@@ -808,6 +812,10 @@ font-weight: 700;
   }
   .plan-group-btn {
     width: 100%;
+  }
+  .techPartner-banner{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
   }
 }
 

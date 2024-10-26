@@ -13,7 +13,7 @@ const About = () => {
       subTitle=""
         title="About QloudHost"
         description="Founded in 2022, QloudHost has quickly risen to become a top contender in Offshore DMCA Ignored Hosting services. Our mission? To power your business with tailor-made hosting solutions and unbeatable 24/7 customer support. We go beyond expectations, fueled by a skilled team that keeps us leading the pack. Trust QloudHost for reliable, high-performance DMCA Ignored Hosting that drives your success forward!"
-        imageSrc=""      
+        imageSrc={images.aboutUs}      
       />
       <AboutFeatures/>
       <QloudHostGurantees/>

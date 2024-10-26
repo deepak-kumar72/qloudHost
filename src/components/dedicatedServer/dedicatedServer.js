@@ -1,6 +1,5 @@
 import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
-import heroImage from "../../assets/Frame/heroFrame.png";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import images from "../../constants/images";
 import InstallationPanel from "../commonComponent/installationPanel";
@@ -126,7 +125,7 @@ const DedicatedServer = () => {
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={heroImage}
+        imageSrc={images.dedicatedServer}
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />

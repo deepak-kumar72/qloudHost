@@ -11,7 +11,7 @@ const Contactus = () => {
     <HeroSection
     subTitle="We’re here 24/7"
       title="CONTACT OUR SUPPORT"
-      description="Reach out with your questions, concerns and challenges. Or just to say hi. We’ll be happy to chat and help."
+      description="Got questions, concerns, or challenges? Or just want to say hi? We're here to chat and help with anything you need. Don't hesitate to reach out—we're always happy to assist!"
       imageSrc={images.contactUs}     
     />
     <ContactSupport/>

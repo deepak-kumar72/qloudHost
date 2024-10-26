@@ -87,7 +87,7 @@ const HighPerformanceVps = () => {
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.heroImage2}
+        imageSrc={images.highPerformanceVpsServer}
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} // Pass the options to the HeroComponent
       />

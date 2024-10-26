@@ -10,7 +10,6 @@ import migration from "../assets/icon/migration.png";
 import blogImg1 from "../assets/blogImg1.png";
 import blogImg2 from "../assets/blogImg2.png";
 import blogImg3 from "../assets/blogImg3.png";
-import heroImage2 from "../assets/Frame/heroFrame.png";
 import hardwareImg from "../assets/enterprise-grade-hardware.png";
 import privacyImg from "../assets/privacy-image.png";
 import vpsServer from "../assets/vpsServer.png";
@@ -38,6 +37,25 @@ import fairUsage from '../assets/Frame/heroImg_fair-usage.webp';
 import refund from '../assets/Frame/heroImg_refund.webp';
 import privacyPolicy from '../assets/Frame/heroImg_privacy-policy.webp';
 import services from '../assets/Frame/heroImg-services.webp';
+import dedicatedServer from '../assets/Frame/cheap-offshore-dedicated-server.webp';
+import webHosting from '../assets/Frame/dmca-cheap-offshore-web-hosting_home img.webp';
+import dmcaIgnoredDedicated from '../assets/Frame/dmca-ignored-dedicated-server.webp';
+import dmcaIgnoredvpsHosting from '../assets/Frame/dmca-ignored-vps-hosting.webp';
+import dmcaVideoHosting from '../assets/Frame/DMCA-Offshore-video-hosting.webp';
+import adultVpsDedicatedServer from '../assets/Frame/high-performance-adult-vps-and-dedicated-server.webp';
+import highPerformanceVpsServer from '../assets/Frame/high-performance-vps-server.webp';
+import netherlandOffshoreVps from '../assets/Frame/netherland-offshore-vps.webp';
+import netherlandDedicatedServer from '../assets/Frame/netherlands-offshore-dedicated-server.webp';
+import netherlandStreamingServer from '../assets/Frame/netherlands-streming-server.webp';
+import vpsHosting from '../assets/Frame/offshore-vps-hosting.webp';
+import wordpressHosting from '../assets/Frame/offshore-wordpress-hosting.webp';
+import qloudHostCoupon from '../assets/Frame/qloudhost-coupon-codes.webp';
+import streamingServer from '../assets/Frame/robust-offshore-streaming-server.webp';
+import windowVpsHosting from '../assets/Frame/robust-offshore-windows-vps-hosting.webp';
+import russiaDedicatedServer from '../assets/Frame/russia-offshore-dedicated-server.webp';
+
+import aboutUs from '../assets/Frame/about-us.png';
+
 
 // Home Image
 
@@ -146,7 +164,6 @@ const images = {
   blogImg1,
   blogImg2,
   blogImg3,
-  heroImage2,
   hardwareImg,
   privacyImg,
   vpsServer,
@@ -188,7 +205,11 @@ advanceTracking, affiliateSupport, easyToUse, eyeCatchy, freeRegistration, highC
 apache, bitninja, bunnyCdn, cloudflare, cloudlinux, cpanel1, googieHost, hostAdvice, imunify360, jetBackup, letsEncrypt, litespeed, nodejs, php,
 softaculous, trustpilot, ubuntu1, virtualizor, whmcs, wordpress,
 
-testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, testimonial7, testimonial8
+testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, testimonial7, testimonial8,
+
+dedicatedServer, webHosting, dmcaIgnoredDedicated, dmcaIgnoredvpsHosting, dmcaVideoHosting, adultVpsDedicatedServer, highPerformanceVpsServer,
+netherlandOffshoreVps, netherlandDedicatedServer, netherlandStreamingServer, vpsHosting, wordpressHosting, qloudHostCoupon,
+streamingServer, windowVpsHosting, russiaDedicatedServer, aboutUs,
 
 };
 
