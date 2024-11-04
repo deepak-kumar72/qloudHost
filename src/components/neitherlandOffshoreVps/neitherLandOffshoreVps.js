@@ -2,13 +2,14 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
 import images from '../../constants/images';
 import NeitherLandOffshoreVpsPlan from './components/neitherlandVpsPlan';
-import Guarantees from '../streamingServer/components/qloudHostGurantees';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import InstallationPanel from '../commonComponent/installationPanel';
 import FAQsSection from '../commonComponent/faqSection';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import Testimonials from '../commonComponent/testimonial';
 import NeitherlandVpFeatureElement from './components/neitherlandVpsFeatureElement';
+import { Link } from 'react-router-dom';
+import QloudGuarantees from '../adultHosting/components/qloudGurantees';
 
 const options = [
   "NVMe SSD Storage",
@@ -25,7 +26,7 @@ const features = [
     },
     {img: images.fairAndaffordable,
       title: "Fair & Affordable",
-      description:"QloudHost provides you the most affordable DMCA Ignored Hosting plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+      description:`QloudHost provides you the most affordable <a href='/' class='faq-link'>DMCA Ignored Hosting</a>  plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.`,
       link: "",
     },
     {img: images.fullRootAcces,
@@ -40,7 +41,7 @@ const features = [
     },
     {img: images.freeWebsitemigration,
       title: "Free Website Migration",
-      description:"Had a really bad experience with your previous service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      description:`Had a really bad experience with your previous service provider? Don’t worry! We have built a <a href='/contact-us/' class='faq-link'> dedicated team </a> of technical experts to migrate your website to quality services without causing any data loss.`,
       link: "",
     },
     {img: images.weeklyBackup1,
@@ -55,15 +56,15 @@ const features = [
   const faqsData = [
     {
       question: "Can I host multiple websites within one NL VPS Hosting plan?",
-      answer: `Yes, you can host multiple websites within one Amsterdam, Netherlands VPS hosting plan from QloudHost. Our Netherlands offshore Virtual Private hosting plans are designed to provide
+      answer: <>Yes, you can host multiple websites within one Amsterdam, Netherlands VPS hosting plan from QloudHost. Our Netherlands offshore Virtual Private hosting plans are designed to provide
        ample resources and flexibility to host multiple websites, web applications, and other online projects.<br/>
-      You can use the provided control panel to manage your websites, create multiple domains and subdomains, and install popular content management systems like WordPress, Joomla, or Drupal.
+      You can use the provided control panel to manage your websites, create multiple domains and subdomains, and install popular content management systems like <Link to='/offshore-wordpress-hosting/' className='faq-link'>WordPress</Link> , Joomla, or Drupal.
        With full root access to your VPS server, you have complete control over your hosting environment and can customize it to suit your specific needs<br/>
-      QloudHost also offers reliable and high-speed network connectivity, ensuring that your websites are accessible and performant at all times.`
+      QloudHost also offers reliable and high-speed network connectivity, ensuring that your websites are accessible and performant at all times.</>
     },
     {
       question: "What is Netherlands VPS Hosting and it's benefits ?",
-      answer: `Netherlands offshore VPS hosting refers to a type of web hosting service where a virtual private server (VPS) is located in the Netherlands and hosted by a company that operates 
+      answer: <>Netherlands offshore VPS hosting refers to a type of web hosting service where a virtual private server (VPS) is located in the Netherlands and hosted by a company that operates 
       outside of Dutch jurisdiction. Offshore hosting provides users with greater privacy and security, as well as access to legal protections that may not be available in their home country.<br/>
       The benefits of Netherlands offshore VPS hosting include:
       <ul>
@@ -72,7 +73,7 @@ const features = [
       <li>Flexibility and scalability</li>
       <li>Better performance</li>
       <li>Affordable pricing</li></ul>
-      Overall, Our Netherlands offshore VPS hosting offers users a high level of privacy, security, flexibility, and affordability, making it an attractive option for those seeking reliable web hosting services.`
+      Overall, Our Netherlands offshore VPS hosting offers users a high level of privacy, security, flexibility, and affordability, making it an attractive option for those seeking reliable web hosting services.</>
     },
     {
       question: "Can I upgrade my Netherlands VPS hosting plan later?",
@@ -86,8 +87,8 @@ const features = [
     },
     {
       question: "What is the Money-back Guarantee?",
-      answer: `QloudHost offers a 14-day money-back guarantee for their Netherlands VPS hosting services. This means that if you are not satisfied with their service for any reason within the first 30 days of signing up, you can request a full refund of your hosting fees.<br/>
-      The money-back guarantee ensures that you can try out their hosting services risk-free and with complete peace of mind. If you encounter any issues or are not satisfied with their service, you can contact their support team to initiate the refund process.`
+      answer: <>QloudHost offers a 14-day money-back guarantee for their Netherlands VPS hosting services. This means that if you are not satisfied with their service for any reason within the first 30 days of signing up, you can request a full refund of your hosting fees.<br/>
+      The money-back guarantee ensures that you can try out their hosting services risk-free and with complete peace of mind. If you encounter any issues or are not satisfied with their service, you can contact their <Link to='https://my.qloudhost.com/submitticket.php?step=2&deptid=2' className='faq-link'>support team</Link>  to initiate the refund process.</>
     },
     {
       question: "Do I need technical knowledge to benefit from QloudHost Netherlands VPS hosting?",
@@ -112,7 +113,9 @@ const NeitherLandOffshoreVps = () => {
         options={options}
       />
       <NeitherLandOffshoreVpsPlan/>
-      <Guarantees/>
+      <QloudGuarantees
+        subHeading="Boost your website performance with world-class Best & Cheap Netherlands offshore VPS Hosting servers and guaranteed performance."
+      />
       <TechnicalSpecification/>
       <InstallationPanel
         title="Available Operating Systems"

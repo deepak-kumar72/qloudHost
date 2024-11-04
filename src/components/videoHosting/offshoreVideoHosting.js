@@ -9,6 +9,7 @@ import InstallationPanel from '../commonComponent/installationPanel';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import FAQsSection from '../commonComponent/faqSection';
 import VideoHostingFeatureElement from './components/videoHostingFeatureElement';
+import { Link } from 'react-router-dom';
 
 const options = [
   "Fast, Secure, Reliable",
@@ -25,7 +26,7 @@ const features = [
     },
     {img: images.useYourPlayer,
       title: "Use Your Player",
-      description:"Although we provide you with a pre-built video player, our DMCA Ignored servers are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.",
+      description:`Although we provide you with a pre-built video player, our <a href='/' class='faq-link'>DMCA Ignored servers</a> are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.`,
       link: "",
     },
     {img: images.embeds,
@@ -55,7 +56,7 @@ const features = [
   const faqsData = [
     {
       question: "What is video hosting?",
-      answer: "Video hosting is nothing but an optimized server, especially for video streaming websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience! "
+      answer: <>Video hosting is nothing but an optimized server, especially for <Link to='/offshore-streaming-server/' className='faq-link'>video streaming</Link>  websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience!</>
     },
     {
       question: "What are the content restrictions on offshore VPS servers?",
@@ -67,7 +68,7 @@ const features = [
     },
     {
       question: "Can I get full admin access to my offshore VPS servers?",
-      answer: "Definitely, our offshore hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
+      answer: <>Definitely, our <Link to='/offshore-vps-hosting/' className='faq-link'>offshore hosting servers</Link> come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks.</>
     },
     {
       question: "Can I host Adult video content on QloudHost?",

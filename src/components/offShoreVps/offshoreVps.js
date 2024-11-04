@@ -9,6 +9,8 @@ import Testimonials from "../commonComponent/testimonial";
 import PrivacyHardwarePage from "../offShoreVps/components/privacyHardwarePage";
 import FeaturesYouGet from "./components/featuresYouGet";
 import FAQsSection from "../commonComponent/faqSection";
+import { Link } from "react-router-dom";
+import WebHostingGurantees from "../offShoreHosting/components/webHostingGurantees";
 
 const options = [
   "Faster Site Speeds",
@@ -28,8 +30,7 @@ const features = [
   {
     img: images.fairAndaffordable,
     title: "Fair & Affordable",
-    description:
-      "QloudHost provides you the most affordable DMCA Ignored VPS plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+    description: `QloudHost provides you the most affordable <a href='/dmca-ignored-vps/' class="faq-link">DMCA Ignored VPS</a> plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.`,
     link: "",
   },
   {
@@ -49,14 +50,13 @@ const features = [
   {
     img: images.websiteMigration,
     title: "Free Website Migration",
-    description:
-      `Had a really bad experience with your previous service provider? Don’t worry! We have built a
-       dedicated team of technical experts to migrate your website to quality services without causing
+    description: `Had a really bad experience with your previous service provider? Don’t worry! We have built a
+       <a href="" class="faq-link">dedicated team</a> of technical experts to migrate your website to quality services without causing
         any data loss.`,
     link: "",
   },
   {
-    img: images.weeklyBackup1 ,
+    img: images.weeklyBackup1,
     title: "Weekly Backup",
     description:
       "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple, For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
@@ -77,7 +77,17 @@ const faqsData = [
   },
   {
     question: "Will I be able to upgrade my offshore VPS Server?",
-    answer: `Yes, We provide you with resilient VPS hosting offshore plans which allow you to upgrade your server resources anytime with just a few clicks. In addition, you can also <a href="/offshore-dedicated-server/" class="faq-link">upgrade your plans</a> to get optimum performance and blazing fast loading speed.`,
+    answer: (
+      <>
+        Yes, We provide you with resilient VPS hosting offshore plans which
+        allow you to upgrade your server resources anytime with just a few
+        clicks. In addition, you can also{" "}
+        <Link to="/offshore-dedicated-server/" className="faq-link">
+          upgrade your plans
+        </Link>{" "}
+        to get optimum performance and blazing fast loading speed.
+      </>
+    ),
   },
   {
     question:
@@ -87,7 +97,19 @@ const faqsData = [
   },
   {
     question: "What are the benefits of Offshore VPS hosting?",
-    answer: `Offshore VPS hosting is becoming increasingly popular for those looking for a reliable and secure hosting solution. By hosting a website or application on a virtual private server located outside of their country of residence, users can benefit from enhanced security, better performance, and greater flexibility. See the benefits of Offshore VPS Hosting Servers and decide for yourself if it’s the right call for you. <a href="" class="faq-link">https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/</a>`,
+    answer: (
+      <>
+        Offshore VPS hosting is becoming increasingly popular for those looking
+        for a reliable and secure hosting solution. By hosting a website or
+        application on a virtual private server located outside of their country
+        of residence, users can benefit from enhanced security, better
+        performance, and greater flexibility. See the benefits of Offshore VPS
+        Hosting Servers and decide for yourself if it’s the right call for you.{" "}
+        <Link to="" className="faq-link">
+          https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/
+        </Link>
+      </>
+    ),
   },
   {
     question: "Can I get full admin access to my offshore VPS Hosting Server?",
@@ -95,7 +117,6 @@ const faqsData = [
       "Definitely, our offshore VPS hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks.",
   },
 ];
-
 
 const OffshoreVps = () => {
   return (
@@ -112,6 +133,9 @@ const OffshoreVps = () => {
         options={options}
       />
       <OffshoreVpsPlan />
+      <WebHostingGurantees
+      title='Why choose QloudHost as your Offshore VPS provider?'
+      subHeading="Boost your website performance with world-class Best Offshore hosting DMCA Ignored servers and guaranteed performance."/>
       <TechnicalSpecification />
       <InstallationPanel
         title="Available Operating Systems"

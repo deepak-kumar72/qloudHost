@@ -25,9 +25,9 @@ const About = () => {
         panelOptions={[
           { name: 'cPanel', img: images.cpanel },
           { name: 'debian', img: images.debian },
-          { name: 'fedora', img: images.cyberPanel},
-          { name: 'OpenSUSE', img: images.ubuntu },
-          { name: 'plesk', img: images.centos },
+          { name: 'fedora', img: images.febora},
+          { name: 'OpenSUSE', img: images.opensuse},
+          { name: 'plesk', img: images.plesk},
         ]}
       />
     </div>

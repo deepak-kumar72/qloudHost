@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Policies = () => {
   return (
@@ -71,7 +72,7 @@ const Policies = () => {
         If the user wishes to access the details about the respective data we
         have stored or believes that we may not have adhered to our own policies
         by violating its right to privacy, in that case the user can immediately
-        contact our team at support@qloudhost.com and find a solution regarding
+        contact our team at <Link to='' className="faqp-link"> support@qloudhost.com</Link> and find a solution regarding
         its concerns.
       </p>
       </div>

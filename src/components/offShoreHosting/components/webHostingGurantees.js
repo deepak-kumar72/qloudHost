@@ -1,19 +1,19 @@
 import React from "react";
 import images from "../../../constants/images";
 
-function WebHostingGurantees({ subHeading }) {
+function WebHostingGurantees({title, subHeading }) {
   return (
     <div className="container my-5">
       <div className="p-4">
-        <h2 className="text-center mb-4 w-100">QloudHost Guarantees</h2>
+        <h2 className="text-center mb-4 w-100">{title}</h2>
         <p className="text-center mb-5">{subHeading}</p>
         <div className="row guarantees-box rounded">
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.ssd} alt="SSD Icon" />
+                <img src={images.ssd1} alt="SSD Icon" className='qloudGurantee-img'/>
               </div>
-              <h5>Fastest SSD Servers</h5>
+              <h5>Fastest NVMe SSD</h5>
               <p>
                 Get Super-fast performance with blazing fast NVMe SSD drive
                 storage! Our service comes with guaranteed quality, using
@@ -25,7 +25,7 @@ function WebHostingGurantees({ subHeading }) {
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.neitherland} alt="Netherlands Icon" />
+                <img src={images.neitherland} alt="Netherlands Icon" className='qloudGurantee-img'/>
               </div>
               <h5>Hosted in Netherlands</h5>
               <p>
@@ -40,7 +40,7 @@ function WebHostingGurantees({ subHeading }) {
             <div className="vertical-divider"></div>
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.support} alt="Support Icon" />
+                <img src={images.moneyBack1} alt="Support Icon" className='qloudGurantee-img'/>
               </div>
               <h5>14 Days Money Back</h5>
               <p>

@@ -8,6 +8,7 @@ import DedicatedHostingSolution from "./components/dedicatedHostingSolution";
 import InstallationPanel from "../commonComponent/installationPanel";
 import EnterpriseGrade from "../commonComponent/enterpriseGrade";
 import WebsiteCover from "../commonComponent/websiteCover";
+import { Link } from "react-router-dom";
 
 const options = [
   "Flexibility and Control",
@@ -56,7 +57,7 @@ const features = [
     img: images.directAdmin,
     title: "Managed with DirectAdmin",
     description:
-      "Experience exceptional technical support for your DMCA Ignored Hosting hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.",
+      `Experience exceptional technical support for your <a href='/' class='faq-link'> DMCA Ignored Hosting</a> hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.`,
     link: "/read-more",
   },
 ];
@@ -70,12 +71,12 @@ const faqsData = [
   },
   {
     question: "Can I upgrade my VPS to an DMCA Ignored dedicated servers?",
-    answer: `Yes, We provide completely flexible offshore VPS servers that can be easily upgraded to as many resources as possible! You just need to contact our team of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed DMCA Ignored dedicated server without any hidden charges.`,
+    answer: <>Yes, We provide completely flexible <Link to='/offshore-vps-hosting/' className="faq-link">offshore VPS servers</Link>  that can be easily upgraded to as many resources as possible! You just need to <Link to='/contact-us/' className="faq-link">contact our team</Link> of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed DMCA Ignored dedicated server without any hidden charges.</>,
   },
   {
     question:
       "Do you offer free migration for your DMCA Ignored dedicated server?",
-    answer: `Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our policies.`,
+    answer: <>Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our <Link to='/privacy-policy/' className="faq-link"> policies</Link>.</>,
   },
   {
     question: "How many websites can I host on an DMCA dedicated server?",
@@ -87,13 +88,14 @@ const faqsData = [
   },
   {
     question: "What are the Benefits of DMCA Offshore dedicated server hosting?",
-    answer: `f you are planning to host your website without losing your anonymity, then choosing an offshore DMCA Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
+    answer: <>If you are planning to <Link to='https://qloudhost.com/blog/host-a-website-anonymously/' className="faq-link"> host your website without losing your anonymity</Link>, then choosing an offshore DMCA Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
 <ul><li>Full privacy assurance</li>
 <li>Unmetered resources</li>
 <li>Full content flexibility</li>
 <li>Fully DMCA ignored</li>
 <li>No arbitrary actions caused</li>
-<li>Freedom of Speech</li></ul>`,
+<li>Freedom of Speech</li></ul>
+See the <Link to='https://qloudhost.com/blog/benefits-of-offshore-dedicated-server-hosting/' className="faq-link">benefits of DMCA Dedicated Servers</Link> and decide for yourself if it’s the right call for you.</>,
   },
   {
     question: "How do I get started with DMCA Ignored dedicated server?",

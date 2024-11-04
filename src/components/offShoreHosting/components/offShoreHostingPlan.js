@@ -124,10 +124,10 @@ const OffShoreHostingPlan = () => {
         </div>
 
         <div className="text-center mt-3">
-          {/* <span className="consult">
-            Not sure which Offshore DMCA Ignored hosting plan is right for you? We can help. 
-            <Link to="" className="fw-bold"> GET FREE CONSULTATION</Link>
-          </span> */}
+          <span className="consult">
+          Looking to upgrade resources? Check our
+            <Link to="/offshore-wordpress-hosting/" className="fw-bold"> Offshore WordPress Hosting</Link>Plans or Looking for more power? Check out our  <Link to='/offshore-vps-hosting/' className='fw-bold'>Offshore VPS Hosting</Link>
+          </span>
         </div>
       </div>
     </div>

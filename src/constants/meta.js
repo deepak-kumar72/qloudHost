@@ -99,7 +99,7 @@ const MetaTags = () => {
       keyword: "",
     },
 
-    "/offshore-web-hosting/": {
+    "/offshore-web-hosting": {
       title: "Buy Best Cheap Offshore Web Hosting✰100% DMCA Ignored, Secure",
       description: "Get the most out of your website with our Best Cheap offshore web hosting. Enjoy reliability & privacy with NVMe SSD, Be Always Online no matter what, Save 10% on Annual Plans.",
       keyword: "",

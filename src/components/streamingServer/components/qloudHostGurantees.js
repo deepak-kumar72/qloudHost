@@ -12,9 +12,9 @@ function Guarantees({subHeading}) {
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.ssd} alt="SSD Icon" />
+                <img src={images.ssd1} alt="SSD Icon"  className='qloudGurantee-img'/>
               </div>
-              <h5>Fastest SSD Servers</h5>
+              <h5>Fastest NVMe SSD</h5>
               <p>
                 Get Super-fast performance with blazing fast NVMe SSD drive storage! Our service comes
                 with guaranteed quality, using industry-standard equipment to run our servers.
@@ -25,7 +25,7 @@ function Guarantees({subHeading}) {
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.neitherland} alt="Netherlands Icon" />
+                <img src={images.neitherland} alt="Netherlands Icon" className='qloudGurantee-img'/>
               </div>
               <h5>Hosted in Netherlands</h5>
               <p>
@@ -39,12 +39,11 @@ function Guarantees({subHeading}) {
             <div className="vertical-divider"></div>
             <div className="p-3">
               <div className="icon mb-3">
-                <img src={images.support} alt="Support Icon" />
+                <img src={images.support1} alt="Support Icon" className='qloudGurantee-img'/>
               </div>
               <h5>24/7 Support</h5>
               <p>
-                Our team of experts is available 24/7 to provide technical expertise and support for every
-                step of your online journey.
+              We have a team of individuals who possess technical expertise and are working tirelessly 24/7 to provide support at every step of your online journey.
               </p>
             </div>
           </div>

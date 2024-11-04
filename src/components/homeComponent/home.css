@@ -214,24 +214,12 @@ padding: 10px 30px;
   }
 
   .start-free-btn:hover{
-    border: 1px solid #F6355A;
-    background-color: #fff;
-    color:#F6355A
+    border: 1px solid #1E2944;
+    background-color: #1E2944;
+    color:#fff
 
   }
 
-
-  @media(max-width: 1200px){
-    /* .home-plan {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    
-      scroll-behavior: smooth;
-  } */
-  /* .explore-plan-col{
-    width: 390px;
-  } */
-  }
 
   @media(max-width:991px){
     .blog-date{

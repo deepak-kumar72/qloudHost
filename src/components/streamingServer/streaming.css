@@ -42,15 +42,21 @@
 
 .custom-sol-btn {
   background-color: #fff;
-}
-.custom-sol-btn a {
   color: #f6355a;
 }
 
 .guarantees-box{
     border: 1px solid #f6355a;
-    border-radius: 45px !important;
-    padding: 20px;
+    border-radius: 35px !important;
+    padding: 12px;
+}
+
+.service-card{
+  transition: 0.4s;
+}
+
+.service-card:hover{
+  transform: scale(1.03);
 }
 
 

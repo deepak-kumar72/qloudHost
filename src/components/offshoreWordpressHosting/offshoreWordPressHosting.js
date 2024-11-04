@@ -6,6 +6,7 @@ import WordpressFeatureElement from './components/wordpressFeatureElement'
 import QlodHostServices from '../commonComponent/qlodHostServices'
 import FAQsSection from '../commonComponent/faqSection'
 import WebHostingGurantees from '../offShoreHosting/components/webHostingGurantees'
+import { Link } from 'react-router-dom'
 
 const options = [
   "Dedicated IP",
@@ -56,11 +57,11 @@ const features = [
 const faqsData = [
   {
     question: "What is Offshore WordPress Hosting?",
-    answer: `<a href="" class="faq-link"> Offshore WordPress hosting</a> is a type of web hosting where your WordPress website is hosted outside of your country of residence. This means that the hosting company is located in a different country, often with different laws and regulations than your own. This type of hosting is often used by website owners who want to protect their privacy or who need to host content that may not be legal in their own country.`
+    answer: <><Link to="/offshore-wordpress-hosting/" class="faq-link"> Offshore WordPress hosting</Link> is a type of web hosting where your WordPress website is hosted outside of your country of residence. This means that the hosting company is located in a different country, often with different laws and regulations than your own. This type of hosting is often used by website owners who want to protect their privacy or who need to host content that may not be legal in their own country.</>
   },
   {
     question: "How can I set up WordPress hosting?",
-    answer: `It’s simple: <a href="" class="faq-link">sign up</a>, pick the right Offshore WP plan, and let our system do the rest work for you. You’ll be immediately redirected to the latest version of the WordPress platform, and through there, log in with your QloudHost DirectAdmin Panel Details. Now all you need to do is pick a lightweight WordPress theme and start downloading any of the hundreds of plugins available to start customising your website.`
+    answer: <>It’s simple: <Link to="https://my.qloudhost.com/login" class="faq-link">sign up</Link>, pick the right Offshore WP plan, and let our system do the rest work for you. You’ll be immediately redirected to the latest version of the WordPress platform, and through there, log in with your QloudHost DirectAdmin Panel Details. Now all you need to do is pick a lightweight WordPress theme and start downloading any of the hundreds of plugins available to start customising your website.</>
   },
   {
     question: "Why should I choose Offshore WordPress hosting?",
@@ -68,7 +69,7 @@ const faqsData = [
   },
   {
     question: "How do I transfer my WordPress site to QloudHost?",
-    answer: `Good News, It’s an Easy Process. We offer <a href="" style="color: #f6355a; text-decoration: none; ">free Offshore Wordpress hosting migration</a>  and all the aspects related to migrating all your files from another web host to QloudHost WP Hosting for free. You simply need to provide us with the details of your current hosting account. For that, you can Just <a href="" style="color: #f6355a; text-decoration: none; ">Open a Ticket</a>  and provide your previous Hosting Login Details we will transfer them for you free of cost.`
+    answer: <>Good News, It’s an Easy Process. We offer <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2" className='faq-link'>free Offshore Wordpress hosting migration</Link>  and all the aspects related to migrating all your files from another web host to QloudHost WP Hosting for free. You simply need to provide us with the details of your current hosting account. For that, you can Just <Link to="" className='faq-link'>Open a Ticket</Link>  and provide your previous Hosting Login Details we will transfer them for you free of cost.</>
   },
   {
     question: "Is WordPress Premium the right plan for me?",
@@ -100,6 +101,7 @@ const OffshoreWordPressHosting = () => {
       />
       <OffWordpressPlan />
       <WebHostingGurantees
+      title='QloudHost Guarantees'
         subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
       <WordpressFeatureElement />

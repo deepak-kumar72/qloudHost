@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ReportAbusecon = () => {
   const abuseTypes = [
@@ -12,7 +13,7 @@ const ReportAbusecon = () => {
     {
       name: "Privacy concerns",
       description:
-        "You can go through the privacy policy to verify the privacy concerns.",
+        <>You can go through the <Link to='/privacy-policy/' className='faq-link'>privacy policy</Link> to verify the privacy concerns.</>,
       infoRequired: "Share the full live page URL",
       email: "support@qloudhost.com",
     },

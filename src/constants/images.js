@@ -4,7 +4,9 @@ import centos from "../assets/icon/centos.png";
 import cyberPanel from "../assets/icon/cyberPanel.png";
 import directAdmin from "../assets/icon/directAdmin.png";
 import ubuntu from "../assets/icon/ubuntu.png";
-import ssd from "../assets/icon/ssd.png";
+import febora from '../assets/icon/fedora.png';
+import opensuse from '../assets/icon/opensuse.png';
+import plesk from '../assets/icon/plesk.png';
 import web from "../assets/icon/web.png";
 import migration from "../assets/icon/migration.png";
 import blogImg1 from "../assets/blogImg1.png";
@@ -20,9 +22,10 @@ import youTube from "../assets/icon/youtube-streaming.svg";
 import iptv from "../assets/icon/iptv.svg";
 import gaming from "../assets/icon/game-streaming.svg";
 
-import neitherland from "../assets/icon/netherlands.png";
+import neitherland from "../assets/icon/netherlands.svg";
 import support from "../assets/icon/support.png";
 import payimage from "../assets/pay_img.png";
+import moneyBack1 from '../assets/icon/money-back.svg';
 
 import almaLinux from '../assets/icon/almaLinux.png';
 import rockyLinux from '../assets/icon/rockyLinux.png';
@@ -32,7 +35,7 @@ import windowIcon from '../assets/icon/window-icon.png';
 import homeImage from "../assets/Frame/home-img.webp";
 import reportAbuse from '../assets/Frame/heroImg-report-abuse.webp';
 import affiliate from '../assets/Frame/heroImg_affiliate.webp';
-import contactUs from '../assets/Frame/heroImg_contact-us.webp';
+import contactUs from '../assets/Frame/heroImg_contact-us.png';
 import fairUsage from '../assets/Frame/heroImg_fair-usage.webp';
 import refund from '../assets/Frame/heroImg_refund.webp';
 import privacyPolicy from '../assets/Frame/heroImg_privacy-policy.webp';
@@ -150,6 +153,34 @@ import testimonial6 from '../assets/testimonial6.png'
 import testimonial7 from '../assets/testimonial7.png'
 import testimonial8 from '../assets/testimonial8.png'
 
+import freeMigration from '../assets/feature/free-migration.png';
+import makeWebsite from '../assets/feature/make-your-website.png';
+import simpleAffordable from '../assets/feature/simple-affordable.png';
+import directAdmin1 from '../assets/feature/direct-admin_2.png';
+import freeEffortless from '../assets/feature/free-anf-effortless.png';
+import wordpressInstall from '../assets/feature/wordpress-pre-install.png';
+import yourPrivacy from '../assets/feature/your-privacy.png';
+import superPerforming from '../assets/feature/super-performing.png';
+import atQloudhost from '../assets/feature/at-qloudhost.png';
+import fastAndReliable from '../assets/feature/fast-and-reliable.png';
+import highPerformance from '../assets/feature/high-performance.png';
+import videoHosting from '../assets/feature/video-hosting.png';
+import uptime99 from '../assets/feature/99-uptime.png';
+import topNotch from '../assets/feature/top-notch-security.png';
+import lightiningFast from '../assets/feature/lighting-fast-loading-speed.png';
+import aboutImg from '../assets/feature/about-2.png';
+import StreamingProtection from '../assets/feature/netherlands-streaming-server.png';
+import netherlandStreaming from '../assets/feature/netherlands-streaming-server-02.png';
+import existingWebsite from '../assets/icon/existing-website.svg';
+import preinstall from '../assets/icon/pre-install-os.svg'
+import easyUpgrade from '../assets/feature/easy-upgrades.png';
+import fullDataPrivacy from '../assets/feature/full-data-privacy.png';
+import webHostingSol from '../assets/Offshore-Dedicated-Web-Hosting-Solutions.png';
+import highPerformanceAdultHosting from '../assets/feature/high-performance-dult-hosting_99-uptime.png';
+import migrateFastFree from '../assets/feature/migrate-fast-free.png';
+import onDemandScalibility from '../assets/feature/on-demand-scalibility.png';
+
+
 
 const images = {
   logo,
@@ -158,7 +189,6 @@ const images = {
   cyberPanel,
   directAdmin,
   ubuntu,
-  ssd,
   web,
   migration,
   blogImg1,
@@ -169,6 +199,19 @@ const images = {
   vpsServer,
   quality,
   videoStreaming,
+  moneyBack1,
+  existingWebsite,
+  preinstall,
+  febora,
+  opensuse,
+  plesk,
+  easyUpgrade,
+  fullDataPrivacy,
+webHostingSol,
+highPerformanceAdultHosting,
+migrateFastFree,
+onDemandScalibility,
+
 
   youTube,
   iptv,
@@ -211,6 +254,11 @@ dedicatedServer, webHosting, dmcaIgnoredDedicated, dmcaIgnoredvpsHosting, dmcaVi
 netherlandOffshoreVps, netherlandDedicatedServer, netherlandStreamingServer, vpsHosting, wordpressHosting, qloudHostCoupon,
 streamingServer, windowVpsHosting, russiaDedicatedServer, aboutUs,
 
+freeMigration, makeWebsite, simpleAffordable, directAdmin1, freeEffortless, wordpressInstall,
+yourPrivacy, superPerforming, atQloudhost, fastAndReliable, highPerformance, videoHosting,
+uptime99, topNotch, lightiningFast,
+
+aboutImg, StreamingProtection, netherlandStreaming
 };
 
 export default images;

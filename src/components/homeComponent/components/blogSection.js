@@ -1,6 +1,8 @@
 // ResourcesPage.jsx
 import React from "react";
 import images from "../../../constants/images";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const BlogSection = () => {
   const articles = [
@@ -11,24 +13,34 @@ const BlogSection = () => {
       description:
         "By information about design the world to the best instructors, heatc helping By information about design.",
       imgSrc: images.blogImg1,
+      urlText: 'Get Started',
+      url: 'https://qloudhost.com/blog/host-a-website-anonymously/',
     },
     {
       title: "Discover Our Blog And Know About Us More",
       imgSrc: images.blogImg2,
+      urlText: 'Get Started',
+      url: 'https://qloudhost.com/blog/',
     },
     {
-      title: "Discover Our Blog And Know About Us More",
+      title: "Migrate to Us!",
       imgSrc: images.blogImg3,
+      urlText: 'Get Started',
+      url: '',
+    },
+    {
+      title: "Migrate to Us!",
+
+      imgSrc: images.blogImg3,
+      urlText: 'Get Started',
+      url: '',
     },
     {
       title: "Discover Our Blog And Know About Us More",
 
       imgSrc: images.blogImg2,
-    },
-    {
-      title: "Discover Our Blog And Know About Us More",
-
-      imgSrc: images.blogImg3,
+      urlText: 'Get Started',
+      url: 'https://qloudhost.com/blog/',
     },
     // Add more articles as needed
   ];
@@ -53,9 +65,10 @@ const BlogSection = () => {
               alt={articles[0].title}
             />
             <div className="card-body blog-body">
-              {/* <small className="text-muted">{articles[0].type} - {articles[0].date}</small> */}
+              
               <h5 className="card-title blog-title">{articles[0].title}</h5>
               <p className="card-text blog-text">{articles[0].description}</p>
+              <Link to={articles[0].urlText} className='faq-link'>{articles[0].urlText} <FaArrowRight className="ms-2"/></Link>
             </div>
           </div>
         </div>
@@ -73,6 +86,7 @@ const BlogSection = () => {
                   />
                   <div className="card-body blog-body">
                     <h5 className="card-title blog-title1">{article.title}</h5>
+                    <Link to={article.url} className='faq-link'>{article.urlText} <FaArrowRight className="ms-2"/></Link>
                   </div>
                 </div>
               </div>

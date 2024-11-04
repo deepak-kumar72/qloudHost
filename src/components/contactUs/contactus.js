@@ -1,9 +1,10 @@
 import React from 'react'
 import HeroSection from '../privacyPolicy/heroSection'
 import ContactSupport from './components/contactSupport'
-import ContactUsForm from './components/contactUsForm'
+// import ContactUsForm from './components/contactUsForm'
 import ContactCompo from './components/contactCompo';
 import images from '../../constants/images';
+import './contactUs.css';
 
 const Contactus = () => {
   return (
@@ -15,7 +16,7 @@ const Contactus = () => {
       imageSrc={images.contactUs}     
     />
     <ContactSupport/>
-    <ContactUsForm/>
+    {/* <ContactUsForm/> */}
     <ContactCompo/>
     </div>
   )

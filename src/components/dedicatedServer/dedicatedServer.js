@@ -9,6 +9,7 @@ import DedicatedServerPlan from "./components/dedicatedServerPlan";
 import EnterpriseGrade from "../commonComponent/enterpriseGrade";
 import DedicatedHostingSolution from "../dmcaDedicatedServers/components/dedicatedHostingSolution";
 import WebsiteCover from "../commonComponent/websiteCover";
+import { Link } from "react-router-dom";
 
 const options = [
   "Free Migration Available",
@@ -65,21 +66,38 @@ const features = [
 const faqsData = [
   {
     question: "What is a Offshore dedicated server?",
-    answer: `An offshore dedicated server is a type of hosting service that provides you full privacy assurance, impenetrable security and untraceable footprints on the internet!! In addition, dedicated offshore server unmetered come with unmetered resources so that you can post any content on your website as per your wish!!`,
+    answer: (
+      <>
+        An <Link to="https://qloudhost.com/blog/what-is-offshore-dedicated-server-hosting/" className="faq-link">offshore dedicated server</Link>
+         is a type of hosting service that provides you
+        full privacy assurance, impenetrable security and untraceable footprints
+        on the internet!! In addition, dedicated offshore server unmetered come
+        with unmetered resources so that you can post any content on your
+        website as per your wish!!
+      </>
+    ),
   },
   {
     question:
       "Can I upgrade my Offshore Virtual Private Server to an Offshore DMCA Ignored dedicated server?",
-    answer: `Yes, We provide completely flexible offshore VPS servers that can be easily upgraded to as many resources as possible! You just need to contact our team of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed dedicated server without any hidden charges.`,
+    answer: (
+      <>
+        Yes, We provide completely flexible <Link to='/offshore-vps-hosting/' className="faq-link">offshore VPS servers</Link> that can be
+        easily upgraded to as many resources as possible! You just need to
+        <Link to='/contact-us/' className="faq-link">contact our team</Link>  of highly trained experts, explain your needs and they
+        will upgrade your servers easily to the best managed dedicated server
+        without any hidden charges.
+      </>
+    ),
   },
   {
     question:
       "Do you offer free migration for your DMCA Ignored dedicated server?",
-    answer: `Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our policies.`,
+    answer: <>Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by <Link to='/privacy-policy/' className="faq-link">our policies</Link> .</>,
   },
   {
     question: "How many websites can I host on an Offshore dedicated server?",
-    answer: `It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our Offshore Server in Netherlands Offshore Location.`,
+    answer: <>It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our <Link to='/offshore-dedicated-servers/netherlands/' className="faq-link">Offshore Server in Netherlands</Link>  Offshore Location.</>,
   },
   {
     question: "What can QloudHost Offshore dedicated Hosting be used for?",
@@ -88,16 +106,24 @@ const faqsData = [
   {
     question:
       "What are the Benefits of DMCA Offshore dedicated server hosting?",
-    answer: `If you are planning to host your website without losing your anonymity, then choosing an offshore Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail.
-      <ul class="p-0">
-      <li>Full privacy assurance</li>
-      <li>Unmetered resources</li>
-      <li>Full content flexibility</li>
-      <li>Full content flexibility</li>
-      <li>No arbitrary actions caused</li>
-      <li>Freedom of Speech</li>
-      </ul>
-      See the benefits of DMCA Offshore Dedicated Servers and decide for yourself if it’s the right call for you.`,
+    answer: (
+      <>
+        If you are planning to<Link to='https://qloudhost.com/blog/host-a-website-anonymously/' className="faq-link">host your website without losing your anonymity</Link> ,
+        then choosing an offshore Dedicated server will be the best pick for
+        you!! Moreover, we mentioned some more points below that will help you
+        to understand everything in detail.
+        <ul>
+          <li>Full privacy assurance</li>
+          <li>Unmetered resources</li>
+          <li>Full content flexibility</li>
+          <li>Full content flexibility</li>
+          <li>No arbitrary actions caused</li>
+          <li>Freedom of Speech</li>
+        </ul>
+        See the <Link to='https://qloudhost.com/blog/benefits-of-offshore-dedicated-server-hosting/' className="faq-link">benefits of DMCA Offshore Dedicated Servers</Link>  and decide for
+        yourself if it’s the right call for you.
+      </>
+    ),
   },
   {
     question: "How do I get started with Offshore dedicated server?",
@@ -143,24 +169,23 @@ const DedicatedServer = () => {
 Utilize advanced technology security measures to ensure accurate information dissemination."
         features={features}
       />
-      <DedicatedHostingSolution/>
+      <DedicatedHostingSolution />
       <InstallationPanel
         title="Fast OS/Admin Panel Installation!"
         description="No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server
 with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so
 that you can manage your website files with full control!"
         buttonText="Get Started Now"
-        url='explore'
+        url="explore"
         panelOptions={[
           { name: "cPanel", img: images.cpanel },
           { name: "DirectAdmin", img: images.directAdmin },
           { name: "CyberPanel", img: images.cyberPanel },
           { name: "Ubuntu", img: images.ubuntu },
-          { name: "CentOS", img: images.centos },
-          { name: "debian", img: images.centos },
+          { name: "debian", img: images.debian },
         ]}
       />
-      <WebsiteCover/>
+      <WebsiteCover />
       <Testimonials />
       <FAQsSection faqs={faqsData} />
     </div>

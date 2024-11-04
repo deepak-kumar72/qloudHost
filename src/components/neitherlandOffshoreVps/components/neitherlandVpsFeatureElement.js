@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NeitherlandVpFeatureElement = () => {
   return (
@@ -9,7 +10,7 @@ const NeitherlandVpFeatureElement = () => {
       <div className="container">
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.privacyImg} alt="" className="img-fluid" />
+            <img src={images.onDemandScalibility} alt="On-Demand Scalability" className="img-fluid" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2>On-Demand Scalability</h2>
@@ -24,7 +25,7 @@ const NeitherlandVpFeatureElement = () => {
             </p>
             <p className="">
               At any scale, we deliver high performance with our Netherlands
-              Offshore VPS Server. With a single click, you can upgrade or
+              Offshore VPS Server. With a single click, you can <Link to='/offshore-dedicated-server/' className="faq-link">upgrade</Link>  or
               downgrade your resources at any time.
             </p>
             <ScrollLink to="explore" smooth={true} duration={200}>
@@ -36,14 +37,14 @@ const NeitherlandVpFeatureElement = () => {
         </div>
 
         <div className="row align-items-center mb-3">
-          <div className="col-md-6 order-md-2 mb-3">
-            <img src={images.hardwareImg} alt="" className="img-fluid" />
+          <div className="col-md-6 order-md-2 mb-3 text-center">
+            <img src={images.migrateFastFree} alt="Migrate fast" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">Migrate fast and free</h2>
             <p className="">
               Our Offshore Web Hosting experts will migrate all your Netherlands
-              Offshore VPS Hosting websites at a date and time that suits you
+              <Link to='/offshore-vps-hosting/' className="faq-link">Offshore VPS Hosting</Link> websites at a date and time that suits you
               best, free of charge. Your website will remain live during the
               transfer.
             </p>

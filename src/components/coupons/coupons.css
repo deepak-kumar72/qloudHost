@@ -45,6 +45,12 @@
     padding: 10px 30px;
 }
 
+.coupon-btn:hover{
+    background-color: #1E2944;
+    border: 1px solid #1E2944;
+    color: #fff; 
+}
+
 @media(max-width:1200px){
     .coupon-card{
         width: 100% !important;

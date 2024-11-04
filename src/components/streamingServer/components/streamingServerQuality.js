@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const StreamingServerQuality = () => {
   return (
@@ -11,7 +12,7 @@ const StreamingServerQuality = () => {
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.videoStreaming}
+              src={images.fastAndReliable}
               alt=""
               className="img-fluid m-auto"
             />
@@ -21,7 +22,7 @@ const StreamingServerQuality = () => {
               Fast and Reliable Offshore Video Streaming Server
             </h2>
             <p className="">
-              QloudHost is offering you a wide range of offshore video streaming
+              <Link to='/' className='faq-link'>QloudHost</Link> is offering you a wide range of offshore video streaming
               servers with the best and latest hardware equipment. Our servers
               are especially optimized with higher load balancing features and
               unmetered resources to provide services that you can rely on! No
@@ -40,13 +41,13 @@ const StreamingServerQuality = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.quality} alt="" className="img-fluid" />
+            <img src={images.atQloudhost} alt="" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">At QloudHost, Quality Matters</h2>
             <p className="">
-              Our Cheap offshore streaming servers are running at the best
-              offshore hosting locations with robust hardware equipment and
+              Our Cheap offshore streaming servers are running at the <Link to='/offshore-hosting/' className="faq-link">best
+              offshore hosting</Link>  locations with robust hardware equipment and
               onsite technical experts to ensure that you get quality services
               and with uncompromised performance
             </p>

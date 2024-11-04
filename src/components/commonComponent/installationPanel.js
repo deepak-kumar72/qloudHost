@@ -18,7 +18,7 @@ const InstallationPanel = ({
               <h2 className="mb-4 w-100">{title}</h2>
               <p className="planHead-con w-100 mb-4">{description}</p>
               <ScrollLink to={url} smooth={true} duration={200}>
-                <button className="start-now-btn">
+                <button className="start-now-btn mb-4">
                   {buttonText}
                   <FaArrowRight className="ms-4" />
                 </button>

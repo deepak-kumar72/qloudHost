@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NetherLandStreamingFeature = () => {
   return (
@@ -11,7 +12,7 @@ const NetherLandStreamingFeature = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.videoStreaming}
+              src={images.StreamingProtection}
               alt=""
               className="img-fluid m-auto"
             />
@@ -21,7 +22,7 @@ const NetherLandStreamingFeature = () => {
               Guaranteed protection in the Netherlands
             </h2>
             <p className="">
-              QloudHost presents a diverse selection of Netherlands Media
+              <Link to='/' className='faq-link'>QloudHost</Link> presents a diverse selection of Netherlands Media
               Streaming Servers featuring cutting-edge hardware. Our servers are
               finely tuned for robust load balancing and unmetered resources,
               ensuring your dependable streaming services.
@@ -42,7 +43,7 @@ const NetherLandStreamingFeature = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.quality} alt="" className="img-fluid" />
+            <img src={images.netherlandStreaming} alt="" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DMCA Ignored Streaming Server</h2>

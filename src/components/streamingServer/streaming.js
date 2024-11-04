@@ -11,6 +11,7 @@ import FAQsSection from '../commonComponent/faqSection';
 import PopularStreamingUse from './components/popularStreamingUse';
 import CustomSolution from './components/customSolution';
 import Guarantees from './components/qloudHostGurantees';
+import { Link } from 'react-router-dom';
 
 const options = [
   "Fast, Secure, Reliable",
@@ -22,12 +23,12 @@ const options = [
 const features = [
     {img: images.secureOffshore,
       title: "Secure Offshore Location",
-      description:`Our Offshore Dedicated server are built far away from the origin country to bypass all the country-specific restrictions and allow you to post your desired DMCA ignored content without any arbitrary restrictions or interruptions.`,
+      description:`Our <a href='/offshore-dedicated-servers/' class='faq-link'>Offshore Dedicated server</a>  are built far away from the origin country to bypass all the country-specific restrictions and allow you to post your desired DMCA ignored content without any arbitrary restrictions or interruptions.`,
       link: "",
     },
     {img: images.anonymousService,
       title: "100% Anonymous Service",
-      description:`We are running our offshore streaming servers at the best locations that are especially popular for offshore hosting services and help us to decrease your visibility on the internet making you untraceable.`,
+      description:`We are running our offshore streaming servers at the best locations that are especially <a href='/' class='faq-link'>popular for offshore hosting services</a>  and help us to decrease your visibility on the internet making you untraceable.`,
       link: "",
     },
     {img: images.osChoice,
@@ -56,18 +57,18 @@ const features = [
   const faqsData = [
     {
       question: "What is Offshore streaming server?",
-      answer: `Offshore streaming servers are especially optimized servers that are used to perform bufferless online video or game streaming on the video platforms such as Discord, YouTube, 
-      Facebook streaming and much more.`
+      answer: <>Offshore streaming servers are especially optimized servers that are used to perform bufferless online video or game streaming on the video platforms such as <Link to='https://discord.com/' className='faq-link'>Discord</Link> , YouTube, 
+      Facebook streaming and much more.</>
     },
     {
       question: "How does Video Streaming Server Work?",
-      answer: `Offshore streaming servers work pretty much similar to regular servers but one aspect that creates the difference is that in streaming servers, 
-      audio and videos are broken into smaller data packets that are shared the same as the files are shared from the server to the client.`
+      answer: <>Offshore streaming servers work pretty much similar to regular servers but one aspect that creates the difference is that in streaming servers, 
+      audio and <Link to='' className='faq-link'>videos</Link> are broken into smaller data packets that are shared the same as the files are shared from the server to the client.</>
     },
     {
       question: "How Long Does It Take for Offshore Streaming Server Setup?",
-      answer: `Once you finish the payment, our team of technical experts will immediately start working on your servers to complete the setup as soon as possible,
-      and your servers will be ready to use within 2-3 days.`
+      answer: <>Once you finish the payment, <Link to='/contact-us/' className='faq-link'></Link>our team of technical experts will immediately start working on your servers to complete the setup as soon as possible,
+      and your servers will be ready to use within 2-3 days.</>
     },
     {
       question: "Are Your Offshore Streaming Servers Managed?",
@@ -76,13 +77,13 @@ const features = [
     },
     {
       question: "Can I upgrade my Offshore Streaming Servers?",
-      answer: `Yes…..! Along with our normal offshore hosting plans, we also offer you upgraded plans that comes with more powerful resources and features. 
-      You can anytime shift to our upgraded plans without any complex formalities.  `
+      answer: <>Yes…..! Along with our normal <Link to='/offshore-hosting/' className='faq-link'>offshore hosting plans</Link> , we also offer you upgraded plans that comes with more powerful resources and features. 
+      You can anytime shift to our upgraded plans without any complex formalities. </>
     },
     {
       question: "What Payment Methods Do You Accept?",
-      answer: `We use multiple payment methods such as PayPal, debit card, credit card, UPI and much more to ensure that you can easily avail our services 
-      from any country with any method you are comfortable! `
+      answer: <>We use multiple payment methods such as PayPal, debit card, credit card,<Link to='https://g.co/kgs/g41cnt' className='faq-link'>UPI</Link>  and much more to ensure that you can easily avail our services 
+      from any country with any method you are comfortable! </>
     },
   ];
 

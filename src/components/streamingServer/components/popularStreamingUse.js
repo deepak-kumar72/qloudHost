@@ -36,14 +36,14 @@ const PopularStreamingUse = () => {
         <div className='row'>
           {servicesData.map((service) => (
             <div key={service.id} className="col-md-12 col-lg-4 mb-4">
-              <div className="card h-100 shadow-sm">
-                <div className='service-card d-flex p-4'>
-                  <div className="mb-3  text-center me-3">
+              <div className="card h-100 shadow-sm service-card">
+                <div className=' d-flex p-4'>
+                  <div className="mb-0  text-center me-3">
                     <img src={service.imgUrl} alt='icon' className='streaming-image-icon'/>
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>
-                    <div className='card-text service-desc mb-3'>{service.description}</div>
+                    <div className='card-text service-desc mb-0'>{service.description}</div>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegCircleCheck } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const data = [
   {
@@ -25,7 +26,7 @@ const QloudHostGurantees = () => {
       <div className="container">
         <h2 className="text-center mb-3 m-auto">QloudHost Guarantees</h2>
         <p className="text-center mb-5">
-        Boost your website performance with world-class offshore dedicated servers and guaranteed performance.
+        Boost your website performance with world-class <Link to='/offshore-dedicated-server/' className='faq-link'>offshore dedicated servers</Link> and guaranteed performance.
         </p>
 
         <div className='row'>

@@ -4,13 +4,14 @@ import images from '../../constants/images';
 import AdultHostingPlans from './components/adultHostingPlans';
 import DedicatedAdultPlan from './components/dedicatedAdultPlans';
 import CustomSolution from '../streamingServer/components/customSolution';
-import Guarantees from '../streamingServer/components/qloudHostGurantees';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import InstallationPanel from '../commonComponent/installationPanel';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
 import AdultHostingFeatureElement from './components/AdultHostingFeatureElement';
+import { Link } from 'react-router-dom';
+import QloudGuarantees from './components/qloudGurantees';
 
 const options = [
   "Dedicated IP",
@@ -27,7 +28,7 @@ const features = [
     },
     {img: images.fairAndaffordable,
       title: "Fair & Affordable",
-      description:"QloudHost provides you the most affordable Offshore DMCA Ignored Adult Hosting plans to run your Adult Websites because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+      description:`QloudHost provides you the most affordable Offshore <a href='/' class='faq-link'>DMCA Ignored Adult Hosting plans</a>   to run your Adult Websites because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.`,
       link: "",
     },
     {img: images.fullRootAcces,
@@ -42,7 +43,7 @@ const features = [
     },
     {img: images.freeWebsitemigration,
       title: "Free Website Migration",
-      description:"Had a really bad experience with your previous service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      description:`Had a really bad experience with your previous service provider? Don’t worry! We have built a <a href='/contact-us/' class='faq-link'> dedicated team</a> of technical experts to migrate your website to quality services without causing any data loss.`,
       link: "",
     },
     {img: images.weeklyBackup1,
@@ -65,17 +66,17 @@ Experience the advantages of Adult Web Hosting with QloudHost, where we combine 
     },
     {
       question: "Which Adult server will suit my project best?",
-      answer: `At Qloudhost, we understand the importance of choosing the right Adult Web Hosting server for your project. Consider factors like performance, scalability, operating system compatibility, control panel options, network connectivity, security measures, and customer support. 
-<br>
-Our team is here to guide you in finding the ideal VPS server that meets your project’s requirements.`
+      answer: <>At Qloudhost, we understand the importance of choosing the right Adult Web Hosting server for your project. Consider factors like performance, scalability, operating system compatibility, control panel options, network connectivity, security measures, and customer support. 
+<br/>
+<Link to='/contact-us/' className='faq-link'>Our team</Link> is here to guide you in finding the ideal VPS server that meets your project’s requirements.</>
     },
     {
       question: "Can I upgrade my Adult Web Hosting plan later?",
-      answer: `Yes! At QloudHost, we understand that your hosting needs may evolve over time. That’s why we provide the flexibility to upgrade your Adult Web Hosting plan whenever you require additional resources or features.
-<br>
+      answer: <>Yes! At QloudHost, we understand that your hosting needs may evolve over time. That’s why we provide the flexibility to upgrade your Adult Web Hosting plan whenever you require additional resources or features.
+<br/>
 Whether you need more storage, increased bandwidth, or enhanced performance, our scalable hosting solutions allow for seamless upgrades.
-<br>
-Simply get in touch with our support team, and they will assist you in upgrading your plan to accommodate your growing needs.`
+<br/>
+Simply get in touch with our<Link to='/contact-us/' className='faq-link'> support team</Link>, and they will assist you in upgrading your plan to accommodate your growing needs.</>
     },
     {
       question: "Do I need technical knowledge to benefit from QloudHost Adult Web Hosting Plans?",
@@ -112,7 +113,7 @@ const AdultHosting = () => {
         solTitle="Need Custom Solutions Adult Dedicated Servers?"
         solText="Expand Adult Websit’s with DMCA Ignored Servers across your entire Organization. Enjoy unbeatable features, dedicated account and priority support."
       />
-      <Guarantees
+      <QloudGuarantees
         subHeading="Boost your website performance with world-class Best & Cheap Adult Web Hosting servers and guaranteed performance."
       />
       <TechnicalSpecification/>
@@ -122,11 +123,11 @@ const AdultHosting = () => {
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'AlmaLinux', img: images.cpanel },
-          { name: 'RockeyLinux', img: images.directAdmin },
-          { name: 'Debian', img: images.cyberPanel},
+          { name: 'AlmaLinux', img: images.almaLinux},
+          { name: 'RockeyLinux', img: images.rockyLinux },
+          { name: 'Debian', img: images.debian},
           { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Windows', img: images.centos },
+          { name: 'Windows', img: images.windowIcon },
         ]}
       />
       <AdultHostingFeatureElement/>

@@ -78,7 +78,7 @@ const AdultHostingPlans = () => {
           Adult VPS Hosting Plans & Pricing
         </h2>
         <p className="text-center mb-5 planHead-con m-auto">
-          Unlock Peak Performance and Unparalleled Security with VPS Hosting for
+          Unlock Peak Performance and Unparalleled Security with <Link to='/offshore-vps-hosting/' className="faq-link">VPS Hosting</Link>  for
           Adult Websites. Choose from Linux or Windows Operating Systems and
           experience the ultimate hosting solution for your website or
           application.
@@ -130,7 +130,7 @@ const AdultHostingPlans = () => {
           <span className="consult">
             Looking for more power? Check our DMCA Ignored Offshore Dedicated
             Server Plans{" "}
-            <Link to="" className=" fw-bold">
+            <Link to="/offshore-dedicated-servers/" className=" fw-bold">
               Dedicated Server
             </Link>
             Plans

@@ -3,6 +3,7 @@ import HeroComponent from '../commonComponent/heroComponent';
 import images from '../../constants/images';
 import CouponCard from './couponcard';
 import MoneyBack from './moneyBack';
+import { Link } from 'react-router-dom';
 
 const Coupons = () => {
   return (
@@ -21,7 +22,11 @@ const Coupons = () => {
       <CouponCard
          title="10% Off on All VPS Hosting Yearly Plans"
         discount="Flat 10% OFF on Annual VPS Plans"
-        description="New customers can save 10% on all yearly plans for any VPS hosting plans by using coupon code ADD10. Choose from a range of Offshore DMCA Ignored VPS plans to get reliable and efficient service at a discounted price. Don’t miss out on this limited-time offer and sign up today!"
+        description={
+    <>
+      New customers can save 10% on all yearly plans for any VPS hosting plans by using coupon code ADD10. Choose from a range of Offshore DMCA Ignored VPS plans to get reliable and efficient service at a discounted price. Don’t miss out on this limited-time offer and <Link to="https://my.qloudhost.com/login" className='faq-link'>sign up today!</Link>
+    </>
+  }
         subTitle="(New Customers Only)"
         buttonText="ADD10"
       />

@@ -1,4 +1,5 @@
 import React from 'react';
+import images from '../../../constants/images';
 
 
 
@@ -25,8 +26,8 @@ const DedicatedHostingSolution = () => {
                 <li>Pharmaceutical companies can utilize DMCA Ignored servers to prevent violating their country’s terms of service when hosting their websites.</li>
               </ul>
             </div>
-            <div  className="col-md-12 col-lg-6">
-             <img src='' alt='offshore-dedicated-server'/>
+            <div  className="col-md-12 col-lg-6 text-center">
+             <img src={images.webHostingSol} alt='offshore-dedicated-server' className='hostingSolImg'/>
             </div>
         </div>
       </div>

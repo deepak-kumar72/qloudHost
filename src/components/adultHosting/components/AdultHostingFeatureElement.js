@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import images from '../../../constants/images';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const AdultHostingFeatureElement = () => {
   return (
@@ -10,18 +11,16 @@ const AdultHostingFeatureElement = () => {
       {/* Privacy Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 mb-4 text-center">
-          <img src={images.videoStreaming} alt="" className="img-fluid m-auto" />
+          <img src={images.easyUpgrade} alt="Easy Upgrade" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
-          <h2 className='w-100 mb-3'>
-          
-           Easy Upgrades</h2>
+          <h2 className='w-100 mb-3'>Easy Upgrades</h2>
           <p className="">
           Our VPS services are built on enterprise-level hardware, ensuring that your website operates at optimal performance levels.</p>
           <p className="">
           Combined with innovative software and tuning, your website will load faster, 24/7/365, improving your overall SEO score and global visibility.</p>
           <p className="">
-          At any scale, we deliver high performance with our Netherlands Adult VPS & Dedicated Servers. With a single click, you can upgrade or downgrade your resources at any time.</p>
+          At any scale, we deliver high performance with our Netherlands Adult VPS & Dedicated Servers. With a single click, you can <Link to='/offshore-dedicated-server/' className='faq-link'>upgrade</Link>  or downgrade your resources at any time.</p>
           <ScrollLink to="explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
@@ -33,7 +32,7 @@ const AdultHostingFeatureElement = () => {
       {/* Hardware Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 order-md-2 mb-3 text-center">
-          <img src={images.quality} alt="" className="img-fluid" />
+          <img src={images.fullDataPrivacy} alt="Data Privacy" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 feature-element-sec">
           <h2 className='mb-3 w-100'>Full Data Privacy</h2>
@@ -48,7 +47,7 @@ const AdultHostingFeatureElement = () => {
       </div>
       <div className="row align-items-center mb-3">
         <div className="col-md-6 mb-4 text-center">
-          <img src={images.videoStreaming} alt="" className="img-fluid m-auto" />
+          <img src={images.highPerformanceAdultHosting} alt="High Performance Adult Hosting" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
           <h2 className='w-100 mb-3'>

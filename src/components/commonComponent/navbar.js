@@ -74,7 +74,7 @@ const Navbar = () => {
                         to="/offshore-wordpress-hosting/"
                         onClick={handleCloseOffcanvas}
                       >
-                        Offshore Wordpress
+                        Offshore WordPress
                       </Link>
                     </li>
                   </ul>
@@ -99,7 +99,7 @@ const Navbar = () => {
                         to="/offshore-vps-hosting/windows-rdp/"
                         onClick={handleCloseOffcanvas}
                       >
-                        Offshore Window VPS
+                        Offshore Windows VPS
                       </Link>
                     </li>
                   </ul>

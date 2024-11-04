@@ -2,13 +2,13 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
 import images from '../../constants/images';
 import HighPerformanceVpsPlan from './components/highPerformanceVpsPlan';
-import Guarantees from '../streamingServer/components/qloudHostGurantees';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import InstallationPanel from '../commonComponent/installationPanel';
 import VpsFeatureElement from './components/vpsFeatureElement';
 import QlodHostServices from '../commonComponent/qlodHostServices';
 import Testimonials from '../commonComponent/testimonial';
 import FAQsSection from '../commonComponent/faqSection';
+import WebHostingGurantees from '../offShoreHosting/components/webHostingGurantees';
 
 const options = [
   "Unparalleled Performance",
@@ -24,7 +24,7 @@ const features = [
     },
     {img: images.fairAndaffordable,
       title: "Fair & Affordable",
-      description:"QloudHost provides you the most affordable DMCA Ignored VPS plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.",
+      description:`QloudHost provides you the most affordable <a href='/dmca-ignored-vps/' class='faq-link'>DMCA Ignored VPS</a> plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.`,
       link: "",
     },
     {img: images.fullRootAcces,
@@ -39,7 +39,7 @@ const features = [
     },
     {img: images.freeWebsitemigration,
       title: "Free Website Migration",
-      description: "Had a really bad experience with your previous service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
+      description: `Had a really bad experience with your previous service provider? Don’t worry! We have built a <a href='https://qloudhost.com/contact-us/' class='faq-link'>dedicated team</a> of technical experts to migrate your website to quality services without causing any data loss.`,
       link: "",
     },
     {img: images.weeklyBackup1,
@@ -92,7 +92,8 @@ const HighPerformanceVps = () => {
         options={options} // Pass the options to the HeroComponent
       />
       <HighPerformanceVpsPlan/>
-      <Guarantees
+      <WebHostingGurantees
+      title='Why choose QloudHost as your High Performance VPS?'
         subHeading="Boost your website performance with world-class Best High-Performance DMCA Ignored servers and guaranteed performance."
       />
       <TechnicalSpecification/>

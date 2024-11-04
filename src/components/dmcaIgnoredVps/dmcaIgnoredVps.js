@@ -2,13 +2,13 @@ import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
 import images from "../../constants/images";
 import DmcaIgnoredVpsPlan from "./components/dmcaIgnoredVpsPlan";
-import Guarantees from "../streamingServer/components/qloudHostGurantees";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import InstallationPanel from "../commonComponent/installationPanel";
 import DmcaFeatureElement from "./components/dmcaFeatureElement";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
+import WebHostingGurantees from "../offShoreHosting/components/webHostingGurantees";
 
 const options = [
   "NVMe SSD Storage",
@@ -69,7 +69,7 @@ const faqsData = [
   {
     question: "What is DMCA ignore hosting?",
     answer:
-      `DMCA ignored VPS hosting server is a type of virtual private server (VPS) that is hosted in a 
+      <>DMCA ignored VPS hosting server is a type of virtual private server (VPS) that is hosted in a 
       location where the Digital Millennium Copyright Act (DMCA) is not enforced or is not taken seriously.
        This means that the hosting provider is not bound by the DMCA rules and regulations, and is not obligated
         to remove content that is found to be in violation of copyright laws. In simple terms, DMCA Ignored VPS
@@ -80,7 +80,7 @@ const faqsData = [
          <li>Enhanced privacy</li>
          <li>More lenient content policies</li>
          <li>Lower costs</li></ul>
-         Overall, DMCA Ignored VPS Hosting is a great option for users who want to host their content without any restrictions and want to ensure the privacy and security of their data.`,
+         Overall, DMCA Ignored VPS Hosting is a great option for users who want to host their content without any restrictions and want to ensure the privacy and security of their data.</>,
 
   },
   {
@@ -156,7 +156,10 @@ const DmcaIgnoredVps = () => {
         options={options}
       />
       <DmcaIgnoredVpsPlan />
-      <Guarantees />
+      <WebHostingGurantees
+        title='QloudHost Guarantees'
+        subHeading='Boost your website performance with world-class Best DMCA Ignored VPS Hosting servers and guaranteed performance.'
+      />
       <TechnicalSpecification />
       <InstallationPanel
         title="Available Operating Systems"

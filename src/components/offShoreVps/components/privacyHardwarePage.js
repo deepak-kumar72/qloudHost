@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
 import "../offshoreVps.css";
+import { Link } from 'react-router-dom'
 
 const PrivacyHardwarePage = () => {
   return (
@@ -11,7 +12,7 @@ const PrivacyHardwarePage = () => {
         {/* Privacy Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.privacyImg} alt="" className="img-fluid" />
+            <img src={images.yourPrivacy} alt="" className="img-fluid" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2>Your Privacy is Our Priority!</h2>
@@ -21,9 +22,9 @@ const PrivacyHardwarePage = () => {
               untraceable footprints and impenetrable security.
             </p>
             <p className="">
-              In addition, we provide services based on anonymous offshore
-              hosting that lets you stay anonymous on the internet and guard
-              your data against being tracked.
+              In addition, we provide you services based on Anonymous offshore
+              hosting that let you <Link to='https://qloudhost.com/blog/host-a-website-anonymously/' className='faq-link'>be anonymous on the internet </Link>and guard your
+              data against being tracked
             </p>
             <p className="">
               So what are you waiting for? Get your offshore hosting today and
@@ -39,8 +40,8 @@ const PrivacyHardwarePage = () => {
 
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
-          <div className="col-md-6 order-md-2 mb-3">
-            <img src={images.hardwareImg} alt="" className="img-fluid" />
+          <div className="col-md-6 order-md-2 mb-3 text-center">
+            <img src={images.superPerforming} alt="Super Performing Enterprise-Grade" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">
@@ -57,11 +58,9 @@ const PrivacyHardwarePage = () => {
               makes any type of website compatible with the servers.
             </p>
             <ScrollLink to="explore" smooth={true} duration={200}>
-            <button className="btn start-now-btn mt-3">
-              
+              <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
-            
-            </button>
+              </button>
             </ScrollLink>
           </div>
         </div>

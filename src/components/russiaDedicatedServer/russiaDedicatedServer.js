@@ -70,7 +70,7 @@ const features = [
     },
     {
       question: "What can QloudHost Offshore dedicated Hosting be used for?",
-      answer: `QloudHost Offshore Russia Dedicated Server is used for many resource-intensive production needs- 
+      answer: <>QloudHost Offshore Russia Dedicated Server is used for many resource-intensive production needs- 
       <ul>
       <li>Desire for data security</li>
       <li>evading government surveillance, and avoiding censorship.</li>
@@ -81,7 +81,7 @@ const features = [
       <li>Prefer hosting in a country with robust internet infrastructure.</li>
       <li>Useful for blogs, forums, and content prone to censorship.</li>
       <li>Pharmaceutical companies can use DMCA Ignored servers to comply with hosting rules.</li>
-      </ul>`
+      </ul></>
     },
     {
       question: "How do I get started with Russia Offshore dedicated server?",

@@ -118,7 +118,7 @@ const HostingPlans = () => {
           <span className="consult">
             Not sure which Offshore DMCA Ignored hosting plan is right for you?
             We can help.{" "}
-            <Link to="" className=" fw-bold">
+            <Link to="/contact-us/" className=" fw-bold">
               GET FREE CONSULTATION
             </Link>
           </span>

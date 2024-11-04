@@ -12,15 +12,15 @@ const WebsiteCover = () => {
       imgUrl: images.website, // Replace with the actual image path
       title: 'New Website',
       description: ["Immediate Activation", "Free installation by a specialist", "FREE Privacy Protection", "Step by step tutorials", "24/7/365 Premium Support",],
-      buttonLink: '', // Replace with the actual link
+      buttonLink: '#hostingPlan', 
       buttonText: 'Get Started',
     },
     {
       id: 2,
-      imgUrl: images.website,
+      imgUrl: images.existingWebsite,
       title: 'Existing Website',
       description: ["Free transfer by a specialist", "Zero downtime", "Free databases transfer", "Free Setup", "24/7/365 Premium Support",],
-      buttonLink: '', // Replace with the actual link
+      buttonLink: 'https://my.qloudhost.com/submitticket.php?step=2&deptid=2', 
       buttonText: 'Get Started',
     },
   ];

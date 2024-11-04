@@ -11,7 +11,7 @@ const WordpressFeatureElement = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.videoStreaming}
+              src={images.freeEffortless}
               alt=""
               className="img-fluid m-auto"
             />
@@ -39,7 +39,7 @@ const WordpressFeatureElement = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.quality} alt="" className="img-fluid" />
+            <img src={images.directAdmin1} alt="" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DirectAdmin and Softaculous</h2>
@@ -60,7 +60,7 @@ const WordpressFeatureElement = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.videoStreaming}
+              src={images.wordpressInstall}
               alt=""
               className="img-fluid m-auto"
             />

@@ -28,7 +28,7 @@ const ContactSupport = () => {
                   support@qloudhost.com
                 </Link></p><br/>
 
-              <Link to="" className="contact-link">
+              <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2" className="contact-link">
                 Submit Tcket
               </Link>
             </div>
@@ -42,11 +42,11 @@ const ContactSupport = () => {
                   <div className="email-us">
                     <h4>Sales</h4>
                     <p className="mb-2">
-                    <Link to="" className="support-mail">
+                    <Link to="Support@qloudhost.com" className="support-mail">
                       support@qloudhost.com
                     </Link></p><br/>
 
-                    <Link to="" className="contact-link">
+                    <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2" className="contact-link">
                       Submit Tcket
                     </Link>
                    
@@ -54,7 +54,7 @@ const ContactSupport = () => {
                 </div>
 
 
-                <div className="col-6 contact-method mb-3">
+                <div className="col-md-6 contact-method mb-3">
                   <div className="con-billing">
                     <h4 className="mb-4">Contact Billing</h4>
                     

@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const DmcaFeatureElement = () => {
   return (
@@ -9,7 +10,7 @@ const DmcaFeatureElement = () => {
       <div className="container">
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.privacyImg} alt="" className="img-fluid" />
+            <img src={images.yourPrivacy} alt="Privacy" className="img-fluid" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2>Your Privacy is Our Priority!</h2>
@@ -17,8 +18,14 @@ const DmcaFeatureElement = () => {
               We Understand the value of your privacy and fundamental rights
               that’s why we enable you to make your online presence with
               untraceable footprints and impenetrable security. In addition, we
-              provide you services based on offshore servers that let you be
-              anonymous on the internet and guard your data against being
+              provide you services based on offshore servers that let you{" "}
+              <Link
+                to="https://qloudhost.com/blog/host-a-website-anonymously/"
+                className="faq-link"
+              >
+                be anonymous on the internet
+              </Link>
+              be anonymous on the internet and guard your data against being
               tracked. So what are you waiting for? Get your offshore hosting
               today and protect your data privacy with industry-standard
               security!
@@ -37,8 +44,8 @@ const DmcaFeatureElement = () => {
         </div>
 
         <div className="row align-items-center mb-3">
-          <div className="col-md-6 order-md-2 mb-3">
-            <img src={images.hardwareImg} alt="" className="img-fluid" />
+          <div className="col-md-6 order-md-2 mb-3 text-center">
+            <img src={images.superPerforming} alt="Super Performing" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">
