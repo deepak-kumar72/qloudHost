@@ -50,12 +50,12 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-3">
+                  <h3 className="card-price vps-plan-price mb-5">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save mb-1">{plan.save}</p>
+                  <p className="save save-badge mb-1">{plan.save}</p>
                   <p className="save-price mb-4">
-                    Was <del>{plan.yearlyPrice}</del>
+                    Renews at {plan.yearlyPrice}
                   </p>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
@@ -100,12 +100,12 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-3">
+                  <h3 className="card-price vps-plan-price mb-5">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save mb-1">{plan.save}</p>
+                  <p className="save save-badge mb-1">{plan.save}</p>
                   <p className="save-price mb-4">
-                    Was <del>{plan.yearlyPrice}</del>
+                    Renews at {plan.yearlyPrice}
                   </p>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
@@ -151,12 +151,12 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-3">
+                  <h3 className="card-price vps-plan-price mb-5">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save mb-1">{plan.save}</p>
+                  <p className="save save-badge mb-1">{plan.save}</p>
                   <p className="save-price mb-4">
-                    Was <del>{plan.yearlyPrice}</del>
+                   Renews at {plan.yearlyPrice}
                   </p>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
@@ -200,12 +200,12 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-3">
+                  <h3 className="card-price vps-plan-price mb-5">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save mb-1">{plan.save}</p>
+                  <p className="save save-badge mb-1">{plan.save}</p>
                   <p className="save-price mb-4">
-                    Was <del>{plan.yearlyPrice}</del>
+                    Renews at {plan.yearlyPrice}
                   </p>
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (

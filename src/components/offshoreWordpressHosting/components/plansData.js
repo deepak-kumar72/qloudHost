@@ -6,7 +6,7 @@ const plansData = {
       title: "WordPress Starter",
       description: "The ideal WP Hosting for Started Website!",
       price: "$4.39",
-      originalPrice: "$6.28",
+      originalPrice: "$4.39/mo",
       save: "Save 30%",
       features: [
         "1 Website",
@@ -26,9 +26,9 @@ const plansData = {
     {
       id: 2,
       title: "WordPress Business",
-      description: "A growth businesses with more room to play.",
+      description: "More room to grow your business.",
       price: "$6.96",
-      originalPrice: "$9.94",
+      originalPrice: "$6.96/mo",
       save: "Save 30%",
       features: [
         "2 Websites",
@@ -48,9 +48,9 @@ const plansData = {
     {
       id: 3,
       title: "WordPress Premium",
-      description: "Advanced features for running an High-traffic WP website.",
+      description: "Optimized for high-traffic sites.",
       price: "$11.89",
-      originalPrice: "$16.98",
+      originalPrice: "$11.89/mo",
       save: "Save 30%",
       features: [
         "10 Websites",
@@ -74,8 +74,8 @@ const plansData = {
       title: "WordPress Starter",
       description: "The ideal WP Hosting for Started Website!",
       price: "$5.02",
-      originalPrice: "$6.28",
-      save: "Save 30%",
+      originalPrice: "$5.02/mo",
+      save: "Save 20%",
       features: [
         "1 Website",
         "10 GB NVMe SSD",
@@ -94,10 +94,10 @@ const plansData = {
     {
       id: 5,
       title: "WordPress Business",
-      description: "A growth businesses with more room to play.",
+      description: "More room to grow your business.",
       price: "$7.95",
-      originalPrice: "$9.94",
-      save: "Save 30%",
+      originalPrice: "$7.95/mo",
+      save: "Save 20%",
       features: [
         "2 Websites",
         "20 GB NVMe SSD",
@@ -116,10 +116,10 @@ const plansData = {
     {
       id: 6,
       title: "WordPress Premium",
-      description: "Advanced features for running an High-traffic WP website.",
+      description: "Optimized for high-traffic sites.",
       price: "$13.59",
-      originalPrice: "$16.98",
-      save: "Save 30%",
+      originalPrice: "$13.59/mo",
+      save: "Save 20%",
       features: [
         "10 Websites",
         "50 GB NVMe SSD",
@@ -142,8 +142,8 @@ const plansData = {
       title: "WordPress Starter",
       description: "The ideal WP Hosting for Started Website!",
       price: "$6.28",
-      originalPrice: "$6.28",
-      save: "Save 30%",
+      originalPrice: "$6.28/mo",
+      save: "Save 0%",
       features: [
         "1 Website",
         "10 GB NVMe SSD",
@@ -162,10 +162,10 @@ const plansData = {
     {
       id: 8,
       title: "WordPress Business",
-      description: "A growth businesses with more room to play.",
+      description: "More room to grow your business.",
       price: "$6.94",
-      originalPrice: "$9.94",
-      save: "Save 30%",
+      originalPrice: "$9.94/mo",
+      save: "Save 0%",
       features: [
         "2 Websites",
         "20 GB NVMe SSD",
@@ -184,10 +184,10 @@ const plansData = {
     {
       id: 9,
       title: "WordPress Premium",
-      description: "Advanced features for running an High-traffic WP website.",
+      description: "Optimized for high-traffic sites.",
       price: "$16.98",
-      originalPrice: "$16.98",
-      save: "Save 30%",
+      originalPrice: "$16.98/mo",
+      save: "Save 0%",
       features: [
         "10 Websites",
         "50 GB NVMe SSD",

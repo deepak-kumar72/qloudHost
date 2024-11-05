@@ -13,7 +13,7 @@ const OffShoreHostingPlan = () => {
           Get started with a plan that suits your requirements the best!</p>
 
         {/* Pill Navigation */}
-        <div className="row nav nav-pills mb-5 plan-group-btn" id="pills-tab" role="tablist">
+        <div className="row nav nav-pills mb-5 plan-group-btn w-50" id="pills-tab" role="tablist">
           <div className="col-4 nav-item px-3" role="presentation">
             <button className="nav-link active choose-plan-btn" id="pills-three-year-tab" data-bs-toggle="pill" data-bs-target="#pills-three-year" type="button" role="tab" aria-controls="pills-three-year" aria-selected="true">3 Year</button>
           </div>
@@ -32,7 +32,7 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.threeYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-5" : "card-body plan-body position-relative h-100"}`}>
                    
                       {plan.popular && (
                         <div className="qloud-popular-badge position-absolute">Best Value</div>
@@ -40,7 +40,7 @@ const OffShoreHostingPlan = () => {
 
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Buy And Renew At Same Cost</p>
                         <ul className="list-unstyled mb-4">
@@ -64,14 +64,14 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-5" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
                         <div className="qloud-popular-badge position-absolute">Popular</div>
                       )}
                     
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Buy And Renew At Same Cost</p>
                         <ul className="list-unstyled mb-4">
@@ -96,13 +96,13 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneMonthPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative p-5" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
                         <div className=" qloud-popular-badge position-absolute">Popular</div>
                       )}
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Buy And Renew At Same Cost</p>
                         <ul className="list-unstyled mb-4">

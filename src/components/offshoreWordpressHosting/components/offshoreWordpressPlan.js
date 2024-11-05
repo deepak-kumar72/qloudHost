@@ -55,16 +55,15 @@ const OffWordpressPlan = () => {
                     <p className="card-text plan-desc mb-2">
                       {plan.description}
                     </p>
-                    <h3 className="card-price">
+                    <h3 className="card-price mb-5">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
-                    <div className="d-flex">
-                      <p className="save me-3">{plan.save}</p>
+                    
+                      <p className="save mb-1">{plan.save}</p>
                       <p className="save-price mb-4">
-                        {" "}
-                        <del>{plan.originalPrice}</del>
+                        Renews at {plan.originalPrice}
                       </p>
-                    </div>
+                    
                     <ul className="list-unstyled mb-4">
                       {plan.features.map((feature, index) => (
                         <li
@@ -111,16 +110,14 @@ const OffWordpressPlan = () => {
                     <p className="card-text plan-desc mb-2">
                       {plan.description}
                     </p>
-                    <h3 className="card-price">
+                    <h3 className="card-price mb-5">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
-                    <div className="d-flex">
-                      <p className="save me-3">{plan.save}</p>
+                    <p className="save mb-1">{plan.save}</p>
                       <p className="save-price mb-4">
-                        {" "}
-                        <del>{plan.originalPrice}</del>
+                        Renews at {plan.originalPrice}
                       </p>
-                    </div>
+
                     <ul className="list-unstyled mb-4">
                       {plan.features.map((feature, index) => (
                         <li
@@ -167,16 +164,13 @@ const OffWordpressPlan = () => {
                     <p className="card-text plan-desc mb-2">
                       {plan.description}
                     </p>
-                    <h3 className="card-price">
+                    <h3 className="card-price mb-5">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
-                    <div className="d-flex">
-                      <p className="save me-3">{plan.save}</p>
+                     <p className="save mb-1">{plan.save}</p>
                       <p className="save-price mb-4">
-                        {" "}
-                        <del>{plan.originalPrice}</del>
+                        Renews at {plan.originalPrice}
                       </p>
-                    </div>
                     <ul className="list-unstyled mb-4">
                       {plan.features.map((feature, index) => (
                         <li

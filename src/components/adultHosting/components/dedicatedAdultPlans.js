@@ -1,9 +1,7 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaCheck } from "react-icons/fa6";
-import dedicatedAdultPlanData from  './dedicatedAdultPlanData'; // Importing the plan data
-import { FaArrowRight } from "react-icons/fa";
+
+import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 
 const DedicatedAdultPlan = () => {
   return (
@@ -12,7 +10,8 @@ const DedicatedAdultPlan = () => {
       <h2 className="text-center m-auto mb-3">Adult Dedicated Server Hosting Plans & Pricing</h2>
       <p className="text-center mb-5 planHead-con m-auto">Unleash your adult website’s potential with our Adult dedicated server hosting plans. Powerful, reliable, and tailored for the industry, choose the perfect solution at competitive pricing.</p>
       
-        <div className="row offshoreVps-plan justify-content-center" id='plan1'>
+      <DedicatedPlan/>
+        {/* <div className="row offshoreVps-plan justify-content-center" id='plan1'>
           {dedicatedAdultPlanData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
             <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "h-100 card-body offshore-plan-body position-relative"} ${plan.bestForStreaming ? "popular-qloudhost-card h-100" : ""}`}>
@@ -41,7 +40,7 @@ const DedicatedAdultPlan = () => {
             </div>
             </div>
           ))}
-        </div>
+        </div> */}
         {/* <div className="text-center mt-3">
           <span className="consult">Looking for high-performance and custom resources? Our friendly <Link to="" className="fw-bold">support sales team</Link> is here to help! 
           <Link to="" className="fw-bold">Get in touch</Link> with us today.</span>

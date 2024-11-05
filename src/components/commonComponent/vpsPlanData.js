@@ -6,8 +6,8 @@ const vpsPlanData ={
       id: 1,
       name: "VPS ENTRY",
       price: "18.99",
-      yearlyPrice: "$21.99/mo",
-      save: "Save14%",
+      yearlyPrice: "$18.99/mo",
+      save: "Save 14%",
       features: [
         "2 CPU",
         "4 GB RAM",
@@ -22,8 +22,8 @@ const vpsPlanData ={
       id: 2,
       name: "VPS VALUE",
       price: "46.99",
-      yearlyPrice: "$54.99/mo",
-      save: "Save14%",
+      yearlyPrice: "$46.99/mo",
+      save: "Save 14%",
       features: [
         "4 CPU",
         "8 GB RAM",
@@ -39,8 +39,8 @@ const vpsPlanData ={
       id: 3,
       name: "VPS BUSINESS",
       price: "55.99",
-      yearlyPrice: "$65.99/mo",
-      save: "Save14%",
+      yearlyPrice: "$55.99/mo",
+      save: "Save 14%",
       features: [
         "6 CPU",
         "12 GB RAM",
@@ -55,8 +55,8 @@ const vpsPlanData ={
       id: 4,
       name: "VPS ENTERPRISE",
       price: "75.99",
-      yearlyPrice: "$88.99/mo",
-      save: "Save14%",
+      yearlyPrice: "$75.99/mo",
+      save: "Save 14%",
       features: [
         "8 CPU",
         "16 GB RAM",
@@ -74,8 +74,8 @@ sixMonthPlans:[
       id: 5,
       name: "VPS ENTRY",
       price: "19.99",
-      yearlyPrice: "$21.99/mo",
-      save: "Save14%",
+      yearlyPrice: "$19.99/mo",
+      save: "Save 9%",
       features: [
         "2 CPU",
         "4 GB RAM",
@@ -89,9 +89,9 @@ sixMonthPlans:[
     {
       id: 6,
       name: "VPS VALUE",
-      price: "48.99",
+      price: "54.99",
       yearlyPrice: "$54.99/mo",
-      save: "Save14%",
+      save: "Save 9%",
       features: [
         "4 CPU",
         "8 GB RAM",
@@ -106,9 +106,9 @@ sixMonthPlans:[
     {
       id: 7,
       name: "VPS BUSINESS",
-      price: "58.99",
+      price: "65.99",
       yearlyPrice: "$65.99/mo",
-      save: "Save14%",
+      save: "Save 9%",
       features: [
         "6 CPU",
         "12 GB RAM",
@@ -122,9 +122,9 @@ sixMonthPlans:[
     {
       id: 8,
       name: "VPS ENTERPRISE",
-      price: "79.99",
+      price: "88.99",
       yearlyPrice: "$88.99/mo",
-      save: "Save14%",
+      save: "Save 9%",
       features: [
         "8 CPU",
         "16 GB RAM",
@@ -141,9 +141,9 @@ threeMonthPlans:[
     {
       id: 9,
       name: "VPS ENTRY",
-      price: "20.99",
+      price: "21.99",
       yearlyPrice: "$21.99/mo",
-      save: "Save14%",
+      save: "Save 5%",
       features: [
         "2 CPU",
         "4 GB RAM",
@@ -157,9 +157,9 @@ threeMonthPlans:[
     {
       id: 10,
       name: "VPS VALUE",
-      price: "51.99",
+      price: "54.99",
       yearlyPrice: "$54.99/mo",
-      save: "Save14%",
+      save: "Save 5%",
       features: [
         "4 CPU",
         "8 GB RAM",
@@ -174,9 +174,9 @@ threeMonthPlans:[
     {
       id: 11,
       name: "VPS BUSINESS",
-      price: "52.99",
+      price: "65.99",
       yearlyPrice: "$65.99/mo",
-      save: "Save14%",
+      save: "Save 5%",
       features: [
         "6 CPU",
         "12 GB RAM",
@@ -190,9 +190,9 @@ threeMonthPlans:[
     {
       id: 12,
       name: "VPS ENTERPRISE",
-      price: "84.99",
+      price: "88.99",
       yearlyPrice: "$88.99/mo",
-      save: "Save14%",
+      save: "Save 5%",
       features: [
         "8 CPU",
         "16 GB RAM",
@@ -211,7 +211,7 @@ oneMonthPlans:[
       name: "VPS ENTRY",
       price: "21.99",
       yearlyPrice: "$21.99/mo",
-      save: "Save14%",
+      save: "Save 0%",
       features: [
         "2 CPU",
         "4 GB RAM",
@@ -227,7 +227,7 @@ oneMonthPlans:[
       name: "VPS VALUE",
       price: "54.99",
       yearlyPrice: "$54.99/mo",
-      save: "Save14%",
+      save: "Save 0%",
       features: [
         "4 CPU",
         "8 GB RAM",
@@ -244,7 +244,7 @@ oneMonthPlans:[
       name: "VPS BUSINESS",
       price: "65.99",
       yearlyPrice: "$65.99/mo",
-      save: "Save14%",
+      save: "Save 0%",
       features: [
         "6 CPU",
         "12 GB RAM",
@@ -258,9 +258,9 @@ oneMonthPlans:[
     {
       id: 16,
       name: "VPS ENTERPRISE",
-      price: "79.99",
+      price: "88.99",
       yearlyPrice: "$88.99/mo",
-      save: "Save14%",
+      save: "Save 0%",
       features: [
         "8 CPU",
         "16 GB RAM",
