@@ -11,12 +11,19 @@ const Navbar = () => {
     if (bsOffcanvas) {
       bsOffcanvas.hide();
     }
+
+      // Manually remove the backdrop if it remains
+  const backdrop = document.querySelector('.offcanvas-backdrop');
+  if (backdrop) {
+    backdrop.remove();
+  }
   };
+
 
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-white">
-        <div className="container-xxl mx-5">
+        <div className="container-xxl mx-5 nav-section">
           <Link className="navbar-brand" to="/">
             <img src={images.logo} alt="logo" />
           </Link>

@@ -10,7 +10,7 @@ const plansData = [
     id: 1,
     title: "SHARED",
     description:
-      "The easiest and most affordable way to start and grow your website.",
+      "Easy and affordable for website growth.",
     price: "$3.50",
     yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
@@ -82,7 +82,7 @@ const HostingPlans = () => {
                 className={`${
                   plan.popular
                     ? "popular-card h-100  position-relative"
-                    : "h-100 card-body plan-body"
+                    : "h-100 card-body plan-body position-relative"
                 }`}
               >
                 {plan.popular && (
@@ -92,16 +92,20 @@ const HostingPlans = () => {
                   OFFSHORE <span>{plan.title}</span>
                 </h5>
                 <p className="card-text plan-desc mb-2">{plan.description}</p>
-                <h3 className="card-price">
+                <h3 className="card-price mb-5">
                   {plan.price} <span className="price-unit">/month</span>
                 </h3>
-                <p className="save">{plan.save}</p>
+                <p className={`${
+                  plan.popular
+                    ? "save save-popular"
+                    : "save"
+                }`}>{plan.save}</p>
                 <p className="save-price mb-4">
                   Yearly at <del>{plan.yearlyPrice}</del>
                 </p>
                 <ul className="list-unstyled mb-4">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="mb-3 features">
+                    <li key={index} className="mb-2 features">
                       <i className="bi bi-check-circle-fill"></i>
                       <FaCheck className="check" /> {feature}
                     </li>

@@ -8,16 +8,16 @@ const VpsPlan = () => {
         <div className="container plan-sec mt-5">
 
 <div className="row nav nav-pills mb-5 plan-group-btn" id="pills-tab" role="tablist">
-          <div className="col-3 nav-item px-3" role="presentation">
+          <div className="col-6 col-md-3 nav-item px-3 mb-3" role="presentation">
             <button className="nav-link active choose-plan-btn" id="pills-one-year-tab" data-bs-toggle="pill" data-bs-target="#pills-one-year" type="button" role="tab" aria-controls="pills-one-year" aria-selected="true">1 Year</button>
           </div>
-          <div className="col-3 nav-item  px-3" role="presentation">
+          <div className="col-6 col-md-3 nav-item  px-3" role="presentation">
             <button className="nav-link choose-plan-btn" id="pills-six-month-year-tab" data-bs-toggle="pill" data-bs-target="#pills-six-month" type="button" role="tab" aria-controls="pills-six-month" aria-selected="false">6 Month</button>
           </div>
-          <div className="col-3 nav-item px-3" role="presentation">
+          <div className="col-6 col-md-3 nav-item px-3" role="presentation">
             <button className="nav-link choose-plan-btn" id="pills-three-month-tab" data-bs-toggle="pill" data-bs-target="#pills-three-month" type="button" role="tab" aria-controls="pills-three-month" aria-selected="false">3 Month</button>
           </div>
-          <div className="col-3 nav-item px-3" role="presentation">
+          <div className="col-6 col-md-3 nav-item px-3" role="presentation">
             <button className="nav-link choose-plan-btn" id="pills-one-month-tab" data-bs-toggle="pill" data-bs-target="#pills-one-month" type="button" role="tab" aria-controls="pills-one-month" aria-selected="false">1 Month</button>
           </div>
         </div>

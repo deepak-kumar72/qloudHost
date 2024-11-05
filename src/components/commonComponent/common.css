@@ -568,6 +568,10 @@ margin: auto;
 }
 
 @media(max-width: 767px){
+  .nav-section{
+    flex-wrap: nowrap !important;
+    margin: 0px 0px !important;
+  }
   .testimonial-card{
     height: 270px;
   } 
