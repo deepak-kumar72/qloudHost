@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
+import images from "../../../constants/images";
 
 const ContactSupport = () => {
   return (
@@ -38,8 +39,9 @@ const ContactSupport = () => {
           <div className="col-12 col-md-6 col-lg-8 contact-method mb-3">
             <div className="container-fluid">
               <div className="row gy-4">
-                <div className="col-12">
-                  <div className="email-us">
+                <div className="col-12 mb-4 d-flex">
+                <div className="email-us d-flex justify-content-between">
+                  <div className="">
                     <h4>Sales</h4>
                     <p className="mb-2">
                     <Link to="Support@qloudhost.com" className="support-mail">
@@ -51,10 +53,16 @@ const ContactSupport = () => {
                     </Link>
                    
                   </div>
+                  <div>
+                    <img src={images.sales} alt="sales" className="w-50"/>
+                  </div>
+                  </div>
                 </div>
+                </div>
+                <div className="row">
 
 
-                <div className="col-md-6 contact-method mb-3">
+                <div className="col-12 col-lg-6 contact-method mb-3">
                   <div className="con-billing">
                     <h4 className="mb-4">Contact Billing</h4>
                     
@@ -66,7 +74,7 @@ const ContactSupport = () => {
 
 
 
-                <div className="col-6 contact-method mb-3">
+                <div className="col-12 col-lg-6 contact-method mb-3">
                   <div className="live-chat">
                     <h4>Live Chat</h4>
                     <p className="mb-4">
@@ -83,20 +91,20 @@ const ContactSupport = () => {
         </div>
 
         <div className="row looking-more">
-          <div className="col-8">
+          <div className="col-md-8">
 
             <div className="">
-              <h3 className="text-white fw-bold">
+              <h3 className=" fw-bold">
               Looking for More
               </h3>
-              <p className="text-white">Whatever your hosting needs, we've got the perfect solution! Explore our wide range of services and plans, and kickstart your Offshore DMCA Ignored Hosting Server journey with QloudHost today!</p>
+              <p className="">Whatever your hosting needs, we've got the perfect solution! Explore our wide range of services and plans, and kickstart your Offshore DMCA Ignored Hosting Server journey with QloudHost today!</p>
               <Link to='' className="btn more-btn"> Get Started</Link>
             </div>
           </div>
-          <div className="col-4">
-            <img src="" alt="">
+          <div className="col-md-4 text-center">
+            <img src={images.lookingForMore} alt="looking more" className="w-75"/>
 
-            </img>
+           
           </div>
         </div>
       </div>

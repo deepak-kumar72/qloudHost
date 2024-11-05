@@ -44,7 +44,7 @@ const HeroComponent = ({
                 >
                   <button className="btn-primary start-now-btn me-3">
                     {button1Text}
-                    <FaArrowRight className="ms-4" />
+                    <FaArrowRight className="ms-4 start-now-icon"/>
                   </button>
                 </ScrollLink>
                 <Link to={button2Link} className="btn-secondary">

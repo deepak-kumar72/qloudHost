@@ -32,7 +32,7 @@ import rockyLinux from '../assets/icon/rockyLinux.png';
 import windowIcon from '../assets/icon/window-icon.png';
 
 // heroImage
-import homeImage from "../assets/Frame/home-img.webp";
+import homeImage from "../assets/Frame/home-dmca-ignored-hosting.webp";
 import reportAbuse from '../assets/Frame/heroImg-report-abuse.webp';
 import affiliate from '../assets/Frame/heroImg_affiliate.webp';
 import contactUs from '../assets/Frame/heroImg_contact-us.png';
@@ -41,7 +41,7 @@ import refund from '../assets/Frame/heroImg_refund.webp';
 import privacyPolicy from '../assets/Frame/heroImg_privacy-policy.webp';
 import services from '../assets/Frame/heroImg-services.webp';
 import dedicatedServer from '../assets/Frame/cheap-offshore-dedicated-server.webp';
-import webHosting from '../assets/Frame/dmca-cheap-offshore-web-hosting_home img.webp';
+import webHosting from '../assets/Frame/dmca-cheap-offshore-web-hosting.webp';
 import dmcaIgnoredDedicated from '../assets/Frame/dmca-ignored-dedicated-server.webp';
 import dmcaIgnoredvpsHosting from '../assets/Frame/dmca-ignored-vps-hosting.webp';
 import dmcaVideoHosting from '../assets/Frame/DMCA-Offshore-video-hosting.webp';
@@ -179,10 +179,16 @@ import webHostingSol from '../assets/Offshore-Dedicated-Web-Hosting-Solutions.pn
 import highPerformanceAdultHosting from '../assets/feature/high-performance-dult-hosting_99-uptime.png';
 import migrateFastFree from '../assets/feature/migrate-fast-free.png';
 import onDemandScalibility from '../assets/feature/on-demand-scalibility.png';
+import windowsvps from '../assets/windows-vps.png';
+import sales from '../assets/sales.svg';
+import lookingForMore from '../assets/looking-for-more.svg';
 
 
 
 const images = {
+  lookingForMore,
+  sales,
+  windowsvps,
   logo,
   cpanel,
   centos,

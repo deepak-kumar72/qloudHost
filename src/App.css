@@ -66,10 +66,13 @@ h2 {
   border: 1px solid #f6355a;
   border-radius: 10px;
   color: #fff;
+  transition: background-color 0.9s ease, border-color 0.9s ease;
 }
 
 .start-now-icon{
-  display: none;
+
+  transition: opacity 0.9s ease; /* Smooth transition for icon appearance */
+  opacity: 1;
 }
 
 
@@ -80,8 +83,9 @@ h2 {
   border: 1px solid #1E2944;
 }
 
-.start-now-btn:hover, .start-now-icon{
-  display: block;
+.start-now-btn:hover .start-now-icon{
+  display: inline-block;
+  opacity: 1;
 }
 
 .start-now-btn a {
@@ -89,6 +93,7 @@ h2 {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+  transition: all 0.9s;
 }
 
 .explore-btn {
@@ -349,7 +354,7 @@ width: 30%;
 }
 
 .plan-group-btn {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 

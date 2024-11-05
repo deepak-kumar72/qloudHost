@@ -37,8 +37,8 @@ const RdpFeatureBanner = () => {
         {/* VPS Image Section */}
         <div className="col-lg-5 text-center mb-4">
           <img
-            src={images.vpsServer}
-            alt="VPS Server"
+            src={images.windowsvps}
+            alt="window Vps"
             className="vps-image"
           />
         </div>

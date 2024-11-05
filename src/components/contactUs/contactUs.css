@@ -126,14 +126,20 @@
 .looking-more{
     width: 85%;
     margin: auto;
-    border: 1px solid #f6355a;
-    background-color: #f6355a;
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
     padding: 20px;
     border-radius: 20px;
 }
 
 .more-btn{
-    background-color: #fff !important;
-    color: #f6355a;
+    background-color: #f6355a !important;
+    color: #fff;
 
+}
+
+@media(max-width:767px){
+    .contact-container{
+        width: 100%;
+    }
 }
