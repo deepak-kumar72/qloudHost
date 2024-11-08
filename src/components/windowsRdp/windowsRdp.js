@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent'
-import images from '../../constants/images';
 import WindowsRdpPlan from './components/windowsRdpPlan';
 import ChooseQloudHost from './components/chooseQloudHost';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
@@ -18,32 +17,32 @@ const options = [
   ];
 
   const features = [
-    {img: images.privacyprotection,
+    {img: '/assets/serviceImg/privacy-protection_1.svg',
       title: "100% Privacy Protection",
       description:"Get impenetrable security and full data privacy with QloudHost offshore Windows VPS hosting. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
       link: "",
     },
-    {img: images.fairAndaffordable,
+    {img: '/assets/serviceImg/fair-and-affordable.svg',
       title: "Fair & Affordable",
       description:"QloudHost provides you with the most affordable DMCA Ignored Windows VPS plans to run your offshore servers because we understand the value of your hard-earned money. Our plans focus on providing you with well-balanced features to exclude unnecessary things and decrease costs.",
       link: "",
     },
-    {img: images.fullRootAcces,
+    {img: '/assets/serviceImg/full-root-access_1.svg',
       title: "Full Root Access",
       description: "Get root-level control of your windows server to customize it according to your needs and requirements. Isn’t that amazing? But how will this feature benefit your website? Simple: With root access, you are allowed to create, modify, customize, or delete files on your website without seeking our permission.",
       link: "",
     },
-    {img: images.uptime,
+    {img: '/assets/feature/uptime.svg',
       title: "99.9% uptime guaranteed.",
       description: "Our first priority is to provide you with quality services, so all our plans come with a guaranteed uptime of 99.99%. So, let us take care of your website and ensure its availability on the Internet.",
       link: "",
     },
-    {img: images.websiteMigration,
+    {img: '/assets/serviceImg/website-migration.svg',
       title: "Free Website Migration",
       description: "Had a really bad experience with your previous Windows VPS service provider? Don’t worry! We have built a dedicated team of technical experts to migrate your website to quality services without causing any data loss.",
       link: "",
     },
-    {img: images.weeklyBackup1,
+    {img: '/assets/serviceImg/weekly-backup_1.svg',
       title: "Weekly Backup",
       description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple: We provide an alternate-day backup for 7 Days for VPS. A weekly backup (1 snapshot per week) is available, and it will charge extra.",
       link: "",
@@ -85,13 +84,14 @@ const WindowsRdp = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Offshore Windows VPS RDP'
         title="Robust Offshore Windows VPS Hosting"
         description="Discover blazing-fast, secure offshore Windows VPS hosting with KVM virtualization, NVMe SSDs, and full root access. Instant RDP, seamless app performance, and 24/7 expert support—optimized for your needs."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.windowVpsHosting}
+        imageSrc='/assets/Frame/robust-offshore-windows-vps-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} 
       />

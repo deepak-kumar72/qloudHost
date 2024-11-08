@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent'
-import images from '../../constants/images'
 import RussiaDedicatedPlan from './components/russiaDedicatedPlan'
 import QlodHostServices from '../commonComponent/qlodHostServices'
 import InstallationPanel from '../commonComponent/installationPanel'
@@ -16,32 +15,32 @@ const options = [
 ];
 
 const features = [
-    {img: images.powerfulComfigration,
+    {img: '/assets/serviceImg/powerful-configration.svg',
       title: "Powerful Configurations",
       description:"We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
       link: "",
     },
-    {img: images.fullRootAcces,
+    {img: '/assets/serviceImg/full-root-access_1.svg',
       title: "Full Root Access",
       description:"QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
       link: "",
     },
-    {img: images.freeSetup,
+    {img: '/assets/serviceImg/freesetup.svg',
       title: "Free Setup with All Servers",
       description:"No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!",
       link: "",
     },
-    {img: images.dataCenter,
+    {img: '/assets/serviceImg/data-center.svg',
       title: "Amsterdam, Netherlands Data Center",
       description:"We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance.",
       link: "",
     },
-    {img: images.serverMonitoring,
+    {img: '/assets/serviceImg/24x7-server-monitoring.svg',
       title: "24/7 Server monitoring",
       description:"We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status.",
       link: "",
     },
-    {img: images.directAdmin,
+    {img: '/assets/serviceImg/powered-by-direct-admin.svg',
       title: "Managed with DirectAdmin",
       description:"Experience exceptional technical support for your DMCA Ignored Server hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.",
       link: "",
@@ -102,13 +101,14 @@ const RussiaDedicatedServer = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Russia Offshore Dedicated Server'
         title="Best Cheap Russia Offshore dedicated Server"
         description="Host on our powerful DMCA Ignored Offshore dedicated server inAmsterdam, Netherlands location. Assembled by top engineers, it’s secure, budget-friendly, and robust—ideal for your enterprise’s online presence."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.russiaDedicatedServer}
+        imageSrc='/assets/Frame/russia-offshore-dedicated-server.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
@@ -131,11 +131,11 @@ Utilize advanced technology security measures to ensure accurate information dis
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'cPanel', img: images.cpanel },
-          { name: 'DirectAdmin', img: images.directAdmin },
-          { name: 'CyberPanel', img: images.cyberPanel},
-          { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'debian', img: images.debian },
+          { name: 'cPanel', img: '/assets/icon/cPanel.png' },
+          { name: 'DirectAdmin', img: '/assets/icon/directAdmin.png' },
+          { name: 'CyberPanel', img: '/assets/icon/cyberPanel.png'},
+          { name: 'Ubuntu', img: '/assets/icon/ubuntu.png' },
+          { name: 'debian', img: '/assets/icon/debain.png' },
         ]}
       />
       <WebsiteCover/>

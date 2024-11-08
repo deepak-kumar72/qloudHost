@@ -1,49 +1,9 @@
 // ResourcesPage.jsx
 import React from "react";
-import images from "../../../constants/images";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
 const BlogSection = () => {
-  const articles = [
-    {
-      title: "Start a Blog",
-
-      type: "Blog",
-      description:
-        "By information about design the world to the best instructors, heatc helping By information about design.",
-      imgSrc: images.blogImg1,
-      urlText: 'Get Started',
-      url: 'https://qloudhost.com/blog/host-a-website-anonymously/',
-    },
-    {
-      title: "Discover Our Blog And Know About Us More",
-      imgSrc: images.blogImg2,
-      urlText: 'Get Started',
-      url: 'https://qloudhost.com/blog/',
-    },
-    {
-      title: "Migrate to Us!",
-      imgSrc: images.blogImg3,
-      urlText: 'Get Started',
-      url: '',
-    },
-    {
-      title: "Migrate to Us!",
-
-      imgSrc: images.blogImg3,
-      urlText: 'Get Started',
-      url: '',
-    },
-    {
-      title: "Discover Our Blog And Know About Us More",
-
-      imgSrc: images.blogImg2,
-      urlText: 'Get Started',
-      url: 'https://qloudhost.com/blog/',
-    },
-    // Add more articles as needed
-  ];
 
   return (
     <div className="container blog-section my-5">
@@ -55,46 +15,53 @@ const BlogSection = () => {
         </p>
       </header>
 
-      <div className="row">
-        {/* Main Featured Article */}
-        <div className="col-md-6 mb-4">
-          <div className="card blog-card">
-            <img
-              src={articles[0].imgSrc}
-              className="card-img-top mb-2"
-              alt={articles[0].title}
-            />
-            <div className="card-body blog-body">
-              
-              <h5 className="card-title blog-title">{articles[0].title}</h5>
-              <p className="card-text blog-text">{articles[0].description}</p>
-              <Link to={articles[0].urlText} className='faq-link'>{articles[0].urlText} <FaArrowRight className="ms-2"/></Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Secondary Articles */}
-        <div className="col-md-6">
-          <div className="row">
-            {articles.slice(1).map((article, index) => (
-              <div className="col-6 mb-4" key={index}>
+      
+        
+  
+          <div className="row mb-4">
+            
+              <div className="col-md-5 mb-4" >
                 <div className="card blog-card">
                   <img
-                    src={article.imgSrc}
+                    src='/assets/blogImg1.jpg'
                     className="card-img-top mb-2"
-                    alt={article.title}
+                    alt=''
                   />
-                  <div className="card-body blog-body">
-                    <h5 className="card-title blog-title1">{article.title}</h5>
-                    <Link to={article.url} className='faq-link'>{article.urlText} <FaArrowRight className="ms-2"/></Link>
-                  </div>
+                  
                 </div>
               </div>
-            ))}
+              <div className="col-md-7 mb-4 blog-sec d-flex align-items-center" >
+              <div className="card-body blog-body">
+                    <h5 className="card-title blog-title1 mb-4">How to Start a Adult Blog?</h5>
+                    <p className="mb-4 blog-con">Learn how to start an adult blog, covering essential steps like choosing a niche, setting up hosting, content creation tips, SEO, and marketing strategies to build a successful adult website.</p>
+                    <Link to='https://qloudhost.com/blog/host-a-website-anonymously/'  className='start-now-btn blog-link'>Get Started <FaArrowRight className="ms-2"/></Link>
+                  </div>
+              </div>
+           
+          </div>
+          <div className="row">
+          <div className="col-md-5 order-md-2 mb-4" >
+                <div className="card blog-card">
+                  <img
+                    src='/assets/blogImg2.jpg'
+                    className="card-img-top mb-2"
+                    alt=''
+                  />
+                  
+                </div>
+              </div>
+          <div className="col-md-7 order-md-1 mb-4 blog-sec d-flex align-items-center" >
+          <div className="card-body blog-body">
+                    <h5 className="card-title blog-title1 mb-4">Discover Our Blog And Know About Us More</h5>
+                    <p className="mb-4 blog-con">Dive into our blog to explore who we are! From industry insights to our journey, discover stories, tips, and updates that bring you closer to our world. Stay informed, inspired, and connected with us!</p>
+                    <Link to='https://qloudhost.com/blog/'  className=' start-now-btn blog-link'>Get Started <FaArrowRight className="ms-2"/></Link>
+                  </div>
+          </div>
+           
+              
+          
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 

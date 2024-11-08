@@ -20,9 +20,9 @@ const DedicatedPlan = () => {
                 {plan.bestForStreaming && (
                   <div className="qloud-streaming-badge position-absolute">Best for Streaming</div>
                 )}
-                  <h5 className="card-title mt-3 mb-3"><span>{plan.name}</span></h5>
+                  <h5 className="dedicated-card-title mt-3 mb-3">{plan.name}</h5>
                   <h3 className="card-price vps-plan-price mb-5">{plan.price} <span className="price-unit">/month</span></h3>
-                  <p className="save dedicated-save-badge mb-3">{plan.save} </p>
+                  <p className="save dedicated-save-badge  mb-3">{plan.save} </p>
                   <p className="save-price mb-3">Renews at {plan.yearlyPrice}</p>
                   <Link to={plan.url} className='dedicated-plan-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">

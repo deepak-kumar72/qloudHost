@@ -10,7 +10,7 @@ const streamingplansData = [
       name: 'AMD EPYC 7502P (32c/64t)',
       price: '$349.00',
       time: '/month',
-      yearlyPrice: "$499.00/mo",
+      yearlyPrice: "Renew at $349.00/mo",
       save: "SAVE 30%",
       features: ['2.0-3.0 GHz GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer', '1 Gbit Port Speed', '1 IPv4 Address'],
       url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
@@ -31,7 +31,7 @@ const streamingplansData = [
     name: "Intel Xeon Gold 6230",
     price: "$399.00",
     time: '/month',
-    yearlyPrice: " $529.00/mo",
+    yearlyPrice: "Renew at $399.00/mo",
     discount: "Save 30%",
     features: ["2.1 GHz", "256GB RAM DDR4", "2X1.92TB NVMe SSD", "100TB Transfer", "1 Gbit Port Speed", "1 IPv4 IP Address"],
   url: "https://my.qloudhost.com/store/dedicated/intel-xeon-gold-6230",
@@ -51,9 +51,9 @@ const NetherLandStreamingPlan = () => {
       
         <div className="row qloudHost-plan justify-content-center m-auto" id='explore'>
           {streamingplansData.map((plan) => (
-            <div key={plan.id} className="col-12 col-md-6 col-lg-6 mb-4 explore-plan-col">
+            <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
             <div
-                className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body offshore-plan-body position-relative h-100"}`}
+                className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative p-3" : "card-body offshore-plan-body position-relative h-100"}`}
               >
                 {plan.popular && (
                   <div className="popular-badge streaming-badge position-absolute">Popular</div>
@@ -67,7 +67,7 @@ const NetherLandStreamingPlan = () => {
                   <div className="best-streaming mb-2">On Demand</div>
                 )}
 
-                  <p className="save mb-3">{plan.save} <span className="save-price ms-3"><del>{plan.yearlyPrice}</del></span></p>
+                  <p className="save-streaming fw-bold mb-3">{plan.save} <span className="save-price ms-3"> {plan.yearlyPrice}</span></p>
                   <Link to={plan.url} className='qloudPlans-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
                     Buy Now <FaArrowRight className=""/>
@@ -75,7 +75,7 @@ const NetherLandStreamingPlan = () => {
                   <h4 className='mb-3 top-feature'>Top Features</h4>
                   <ul className="list-unstyled mb-4 streaming-server-feature">
                     {plan.features.map((feature, index) => (
-                      <li key={index} className="mb-2 qloudHostPlan-features">
+                      <li key={index} className="mb-2 streaming-features">
                         <FaCheck className="check" /> {feature}
                       </li>
                     ))}

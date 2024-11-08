@@ -1,19 +1,20 @@
 
 import React from 'react';
-import images from '../../../constants/images';
+import { Link as ScrollLink } from "react-scroll";
+import { FaArrowRight } from "react-icons/fa";
 
 
 const AvailableWos = () => {
 
     const osOption = [{
 title: 'Windows Server 2019',
-imgUrl: images.window2019
+imgUrl: '/assets/icon/windows-2019.png'
 
     },
     {
       
       title: 'Windows Server 2022',
-      imgUrl: images.window2022
+      imgUrl: '/assets/icon/windows-2022.png'
 
     }
     ];
@@ -25,6 +26,12 @@ imgUrl: images.window2019
         <div className="col-md-7 mb-4">
           <h2 className='mb-4 w-100'>Available Windows Operating Systems</h2>
           <p className='planHead-con w-100 mb-4'>Work with your desired Operating system without any errors!</p>
+          <ScrollLink to='explore' smooth={true} duration={200}>
+                <button className="start-now-btn mb-4">
+                  Get Started Now
+                  <FaArrowRight className="ms-4" />
+                </button>
+              </ScrollLink>
         </div>
         <div className="col-md-5">
           <div className="d-flex flex-column align-items-center gap-3 panel-item">

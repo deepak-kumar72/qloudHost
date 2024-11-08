@@ -4,7 +4,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 // import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import images from '../../constants/images';
 import { FaPinterest } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import './common.css';
@@ -83,7 +82,7 @@ const Footer = () => {
         <div className="row">
           {/* First Column with Social Media */}
           <div className="col-md-12 col-lg-3 mb-4">
-            <img src={images.logo} alt='logo' className='mb-4 footer-logo'/>
+            <img src='/assets/logo.svg' alt='logo' className='mb-4 footer-logo'/>
             <p className='footer-con'>
               Host your website with the best Offshore hosting server at QloudHost and get full privacy assurance. We understand the value of your data privacy that’s why we provide you services with impenetrable security!
             </p>
@@ -183,7 +182,7 @@ const Footer = () => {
           </div>
           
           <div className='col-lg-6 col-12 pay-optionimg'>
-            <img src={images.payimage} alt='payment_option'/>
+            <img src='/assets/pay_img.png' alt='payment_option'/>
           </div>
         </div>
       </div>

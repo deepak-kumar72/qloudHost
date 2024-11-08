@@ -5,7 +5,7 @@ const vpsPlanData ={
     {
       id: 1,
       name: "VPS ENTRY",
-      price: "18.99",
+      price: "$18.99",
       yearlyPrice: "$18.99/mo",
       save: "Save 14%",
       features: [
@@ -21,7 +21,7 @@ const vpsPlanData ={
     {
       id: 2,
       name: "VPS VALUE",
-      price: "46.99",
+      price: "$46.99",
       yearlyPrice: "$46.99/mo",
       save: "Save 14%",
       features: [
@@ -38,7 +38,7 @@ const vpsPlanData ={
     {
       id: 3,
       name: "VPS BUSINESS",
-      price: "55.99",
+      price: "$55.99",
       yearlyPrice: "$55.99/mo",
       save: "Save 14%",
       features: [
@@ -54,7 +54,7 @@ const vpsPlanData ={
     {
       id: 4,
       name: "VPS ENTERPRISE",
-      price: "75.99",
+      price: "$75.99",
       yearlyPrice: "$75.99/mo",
       save: "Save 14%",
       features: [
@@ -73,7 +73,7 @@ sixMonthPlans:[
     {
       id: 5,
       name: "VPS ENTRY",
-      price: "19.99",
+      price: "$19.99",
       yearlyPrice: "$19.99/mo",
       save: "Save 9%",
       features: [
@@ -89,8 +89,8 @@ sixMonthPlans:[
     {
       id: 6,
       name: "VPS VALUE",
-      price: "54.99",
-      yearlyPrice: "$54.99/mo",
+      price: "$48.99",
+      yearlyPrice: "$48.99/mo",
       save: "Save 9%",
       features: [
         "4 CPU",
@@ -106,8 +106,8 @@ sixMonthPlans:[
     {
       id: 7,
       name: "VPS BUSINESS",
-      price: "65.99",
-      yearlyPrice: "$65.99/mo",
+      price: "$58.99",
+      yearlyPrice: "$58.99/mo",
       save: "Save 9%",
       features: [
         "6 CPU",
@@ -122,8 +122,8 @@ sixMonthPlans:[
     {
       id: 8,
       name: "VPS ENTERPRISE",
-      price: "88.99",
-      yearlyPrice: "$88.99/mo",
+      price: "$79.98",
+      yearlyPrice: "$79.98/mo",
       save: "Save 9%",
       features: [
         "8 CPU",
@@ -141,8 +141,8 @@ threeMonthPlans:[
     {
       id: 9,
       name: "VPS ENTRY",
-      price: "21.99",
-      yearlyPrice: "$21.99/mo",
+      price: "$20.99",
+      yearlyPrice: "$20.99/mo",
       save: "Save 5%",
       features: [
         "2 CPU",
@@ -157,8 +157,8 @@ threeMonthPlans:[
     {
       id: 10,
       name: "VPS VALUE",
-      price: "54.99",
-      yearlyPrice: "$54.99/mo",
+      price: "$51.99",
+      yearlyPrice: "$51.99/mo",
       save: "Save 5%",
       features: [
         "4 CPU",
@@ -174,8 +174,8 @@ threeMonthPlans:[
     {
       id: 11,
       name: "VPS BUSINESS",
-      price: "65.99",
-      yearlyPrice: "$65.99/mo",
+      price: "$62.99",
+      yearlyPrice: "$62.99/mo",
       save: "Save 5%",
       features: [
         "6 CPU",
@@ -190,8 +190,8 @@ threeMonthPlans:[
     {
       id: 12,
       name: "VPS ENTERPRISE",
-      price: "88.99",
-      yearlyPrice: "$88.99/mo",
+      price: "$84.99",
+      yearlyPrice: "$84.99/mo",
       save: "Save 5%",
       features: [
         "8 CPU",
@@ -209,7 +209,7 @@ oneMonthPlans:[
     {
       id: 13,
       name: "VPS ENTRY",
-      price: "21.99",
+      price: "$21.99",
       yearlyPrice: "$21.99/mo",
       save: "Save 0%",
       features: [
@@ -225,7 +225,7 @@ oneMonthPlans:[
     {
       id: 14,
       name: "VPS VALUE",
-      price: "54.99",
+      price: "$54.99",
       yearlyPrice: "$54.99/mo",
       save: "Save 0%",
       features: [
@@ -242,7 +242,7 @@ oneMonthPlans:[
     {
       id: 15,
       name: "VPS BUSINESS",
-      price: "65.99",
+      price: "$65.99",
       yearlyPrice: "$65.99/mo",
       save: "Save 0%",
       features: [
@@ -258,7 +258,7 @@ oneMonthPlans:[
     {
       id: 16,
       name: "VPS ENTERPRISE",
-      price: "88.99",
+      price: "$88.99",
       yearlyPrice: "$88.99/mo",
       save: "Save 0%",
       features: [

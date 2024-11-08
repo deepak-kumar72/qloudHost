@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import images from "../../../constants/images";
 import { FaArrowRight } from "react-icons/fa";
 
 const WordpressFeatureElement = () => {
@@ -11,8 +10,8 @@ const WordpressFeatureElement = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.freeEffortless}
-              alt=""
+              src='/assets/feature/free-anf-effortless.png'
+              alt=" Free & Effortless WordPress Migration"
               className="img-fluid m-auto"
             />
           </div>
@@ -39,7 +38,7 @@ const WordpressFeatureElement = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.directAdmin1} alt="" className="img-fluid" />
+            <img src='/assets/feature/direct-admin_2.png' alt="DirectAdmin and Softaculous" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DirectAdmin and Softaculous</h2>
@@ -60,8 +59,8 @@ const WordpressFeatureElement = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.wordpressInstall}
-              alt=""
+              src='/assets/feature/wordpress-pre-install.png'
+              alt="WordPress Pre-Install & Free SSL Certificates"
               className="img-fluid m-auto"
             />
           </div>

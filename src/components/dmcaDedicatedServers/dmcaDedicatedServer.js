@@ -1,6 +1,5 @@
 import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
-import images from "../../constants/images";
 import DmcaDedicatedPlan from "./components/dmcaDedicatedServerPlan";
 import QlodHostServices from "../commonComponent/qlodHostServices";
 import FAQsSection from "../commonComponent/faqSection";
@@ -19,42 +18,42 @@ const options = [
 
 const features = [
   {
-    img: images.powerfulComfigration,
+    img: '/assets/serviceImg/powerful-configration.svg',
     title: "Powerful Configurations",
     description:
       "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
     link: "/read-more",
   },
   {
-    img: images.fullRootAcces,
+    img: '/assets/serviceImg/full-root-access_1.svg',
     title: "Full Root Access",
     description:
       "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
     link: "/read-more",
   },
   {
-    img: images.freeSetup,
+    img: '/assets/serviceImg/powerful-configration.svg',
     title: "Free Setup with All Servers",
     description:
       "No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!",
     link: "/read-more",
   },
   {
-    img: images.dataCenter,
+    img: '/assets/serviceImg/data-center.svg',
     title: "Amsterdam, Netherlands Data Center",
     description:
       "We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance.",
     link: "/read-more",
   },
   {
-    img: images.serverMonitoring,
+    img: '/assets/serviceImg/24x7-server-monitoring.svg',
     title: "24/7 Server monitoring",
     description:
       "We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status.",
     link: "/read-more",
   },
   {
-    img: images.directAdmin,
+    img: '/assets/serviceImg/powered-by-direct-admin.svg',
     title: "Managed with DirectAdmin",
     description:
       `Experience exceptional technical support for your <a href='/' class='faq-link'> DMCA Ignored Hosting</a> hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates.`,
@@ -115,13 +114,14 @@ const DmcaDedicatedServer = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Buy DMCA Ignored Dedicated Server'
         title="Best DMCA Ignored Dedicated Server"
         description="Supercharge your site with QloudHost’s DMCA Ignored dedicated servers! Enjoy top-tier security, performance, and control—all at an unbeatable price. Focus on growth while we handle the rest."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.dmcaIgnoredDedicated}
+        imageSrc='/assets/Frame/dmca-ignored-dedicated-server.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
@@ -148,11 +148,11 @@ that you can manage your website files with full control!"
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: "cPanel", img: images.cpanel },
-          { name: "DirectAdmin", img: images.directAdmin },
-          { name: "CyberPanel", img: images.cyberPanel },
-          { name: "Ubuntu", img: images.ubuntu },
-          { name: "Debian", img: images.debian},
+          { name: "cPanel", img: '/assets/icon/cPanel.png' },
+          { name: "DirectAdmin", img: '/assets/icon/directAdmin.png' },
+          { name: "CyberPanel", img: '/assets/icon/cyberPanel.png'},
+          { name: "Ubuntu", img: '/assets/icon/ubuntu.png'},
+          { name: "Debian", img: '/assets/icon/debain.png'},
         ]}
       />
       <WebsiteCover/>

@@ -1,6 +1,5 @@
 import React from "react";
 import HeroComponent from "../commonComponent/heroComponent";
-import images from "../../constants/images";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import OffshoreVpsPlan from "./components/offshoreVpsPlan";
 import InstallationPanel from "../commonComponent/installationPanel";
@@ -12,6 +11,7 @@ import FAQsSection from "../commonComponent/faqSection";
 import { Link } from "react-router-dom";
 import WebHostingGurantees from "../offShoreHosting/components/webHostingGurantees";
 
+
 const options = [
   "Faster Site Speeds",
   "Maximum Security",
@@ -21,34 +21,34 @@ const options = [
 
 const features = [
   {
-    img: images.privacyprotection,
+    img: '/assets/serviceImg/privacy-protection_1.svg',
     title: "100% Privacy Protection",
     description:
       "Get impenetrable security and full data privacy with QloudHost offshore hosting servers. Sounds quite an affirmative statement, Right? But that’s true because we minimize our customer’s visibility to make your footprints untraceable on the internet.",
     link: "",
   },
   {
-    img: images.fairAndaffordable,
+    img: '/assets/serviceImg/fair-and-affordable.svg',
     title: "Fair & Affordable",
     description: `QloudHost provides you the most affordable <a href='/dmca-ignored-vps/' class="faq-link">DMCA Ignored VPS</a> plans to run your offshore hosting servers because we understand the value of your hard-earned money. Our plans are focused on providing you with well-balanced features to exclude unnecessary things and decrease the cost.`,
     link: "",
   },
   {
-    img: images.fullRootAcces,
+    img: '/assets/serviceImg/full-root-access_1.svg',
     title: "Full Root Access",
     description:
       "Get root level control to your server to customize it according to your needs and requirements. Isn’t it amazing? But how will this feature benefit your website? Simple, with root access, you are allowed to create, modify, customize or delete files of your website without seeking our permission.",
     link: "",
   },
   {
-    img: images.uptime,
+    img: '/assets/feature/uptime.svg',
     title: "99.99% uptime guaranteed.",
     description:
       "Our first priority is to provide you services with quality that’s why our all plans come with a guaranteed uptime of 99.9%. So let your website into our safe hands and we will ensure the availability of your website on the internet.",
     link: "",
   },
   {
-    img: images.websiteMigration,
+    img: '/assets/serviceImg/website-migration.svg',
     title: "Free Website Migration",
     description: `Had a really bad experience with your previous service provider? Don’t worry! We have built a
        <a href="" class="faq-link">dedicated team</a> of technical experts to migrate your website to quality services without causing
@@ -56,7 +56,7 @@ const features = [
     link: "",
   },
   {
-    img: images.weeklyBackup1,
+    img: '/assets/serviceImg/weekly-backup_1.svg',
     title: "Weekly Backup",
     description:
       "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. But how? Simple, For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
@@ -122,13 +122,14 @@ const OffshoreVps = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Powerful Offshore VPS'
         title="Best Cheap Offshore VPS Hosting"
         description="Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.vpsHosting}
+        imageSrc='/assets/Frame/offshore-vps-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
@@ -143,11 +144,11 @@ const OffshoreVps = () => {
         buttonText="Get Started Now"
         url="explore"
         panelOptions={[
-          { name: "AlmaLinux", img: images.almaLinux },
-          { name: "Rockey Linux", img: images.rockyLinux },
-          { name: "Debian", img: images.debian },
-          { name: "Ubuntu", img: images.ubuntu },
-          { name: "Windows", img: images.windowIcon },
+          { name: "AlmaLinux", img: '/assets/icon/almaLinux.png' },
+          { name: "Rockey Linux", img: '/assets/icon/rockyLinux.png'},
+          { name: "Debian", img: '/assets/icon/debain.png' },
+          { name: "Ubuntu", img: '/assets/icon/ubuntu.png'},
+          { name: "Windows", img: '/assets/icon/window-icon.png'},
         ]}
       />
       <PrivacyHardwarePage />

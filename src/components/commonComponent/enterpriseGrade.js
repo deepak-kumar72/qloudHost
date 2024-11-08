@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaArrowRight } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 const sectionsData = [
     {
@@ -68,6 +70,17 @@ const EnterpriseGrade = ({heading, subHeading}) => {
             </div>
           ))}
         </div>
+        <ScrollLink
+                  to='explore'
+                  smooth={true}
+                  duration={200}
+                  className="btn-primary m-auto d-flex justify-content-center"
+                >
+                  <button className="btn-primary start-now-btn enterprise-btn me-3">
+                    Get Started Now
+                    <FaArrowRight className="ms-4 start-now-icon"/>
+                  </button>
+                </ScrollLink>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
-import images from '../../constants/images';
 import VideoHostingPlan from './components/videoHostingPlan';
 import VideocustomSolution from './components/videoCustomSol';
 import Guarantees from '../streamingServer/components/qloudHostGurantees';
@@ -19,32 +18,32 @@ const options = [
 ];
 
 const features = [
-    {img: images.nobufferStream,
+    {img: '/assets/serviceImg/no-buffer-stream.svg',
       title: "No Buffer Stream",
       description:"Worried about the performance of your video streaming website? Just sit and relax! Because we run robust servers equipped with the latest and most powerful hardware technologies in the market.",
       link: "",
     },
-    {img: images.useYourPlayer,
+    {img: '/assets/serviceImg/use-your-player.svg',
       title: "Use Your Player",
       description:`Although we provide you with a pre-built video player, our <a href='/' class='faq-link'>DMCA Ignored servers</a> are resilient enough to allow you the installation of your favorite video player without any restriction and buffering neither.`,
       link: "",
     },
-    {img: images.embeds,
+    {img: '/assets/serviceImg/embeds.svg',
       title: "Unlimited Embeds & Plays",
       description:"There is no limit on the number of videos you can post and play on your website, all thanks to the robust servers we are using for the services, which allows you to use unrestricted resources.",
       link: "",
     },
-    {img: images.privacyprotection,
+    {img: '/assets/serviceImg/privacy-protection_1.svg',
       title: "100% Privacy Protection",
       description:"QloudHost provides you with top-notch security features such firewall, offshore servers and much more to ensure your 100% privacy and untraceable footprints on the internet. .",
       link: "",
     },
-    {img: images.uptime,
+    {img: '/assets/feature/uptime.svg',
       title: "99.9% Uptime Guaranteed",
       description:"We are confident to share with you that our server uptime is 99.9%, and we ensure that it should be maintained for maximum availability of your website on the internet.",
       link: "",
     },
-    {img: images.support1,
+    {img: '/assets/serviceImg/support.svg',
       title: "24/7 Support",
       description:"Our team of technical experts is working 24*7 to solve your queries and help you at every stage of your journey. In addition, they constantly monitor your website’s resources to ensure uptime and performance.",
       link: "",
@@ -84,13 +83,14 @@ const OffshoreVideoHosting = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Offshore Video Hosting'
       title="100% DMCA Offshore Video Hosting"
         description="Optimize your adult, tube, copyrighted, and offshore content with our Offshore Video Hosting. Enjoy top speed and reliability for your web app, business site, or video platform."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.dmcaVideoHosting}
+        imageSrc='/assets/Frame/DMCA-Offshore-video-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
@@ -106,11 +106,11 @@ const OffshoreVideoHosting = () => {
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'AlmaLinux', img: images.almaLinux },
-          { name: 'RockeyLinux', img: images.rockyLinux },
-          { name: 'debian', img: images.debian},
-          { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Windows', img: images.windowIcon },
+          { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png' },
+          { name: 'RockeyLinux', img: '/assets/icon/rockyLinux.png' },
+          { name: 'debian', img: '/assets/icon/debain.png'},
+          { name: 'Ubuntu', img: '/assets/icon/ubuntu.png'},
+          { name: 'Windows', img: '/assets/icon/window-icon.png' },
         ]}
       />
       <VideoHostingFeatureElement/>

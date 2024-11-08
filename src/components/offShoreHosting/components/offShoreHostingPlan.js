@@ -42,7 +42,7 @@ const OffShoreHostingPlan = () => {
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
-                        <p class="save-price mb-3">Buy And Renew At Same Cost</p>
+                        <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className="mb-2 features">
@@ -73,7 +73,7 @@ const OffShoreHostingPlan = () => {
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
-                        <p class="save-price mb-3">Buy And Renew At Same Cost</p>
+                        <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className=" features">
@@ -104,7 +104,7 @@ const OffShoreHostingPlan = () => {
                         <h3 className='text-center starting-at'>Starting At</h3>
                         <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
-                        <p class="save-price mb-3">Buy And Renew At Same Cost</p>
+                        <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className=" features">
@@ -126,7 +126,7 @@ const OffShoreHostingPlan = () => {
         <div className="text-center mt-3">
           <span className="consult">
           Looking to upgrade resources? Check our
-            <Link to="/offshore-wordpress-hosting/" className="fw-bold"> Offshore WordPress Hosting</Link>Plans or Looking for more power? Check out our  <Link to='/offshore-vps-hosting/' className='fw-bold'>Offshore VPS Hosting</Link>
+            <Link to="/offshore-wordpress-hosting/" className="fw-bold"> Offshore WordPress Hosting</Link> Plans or Looking for more power? Check out our  <Link to='/offshore-vps-hosting/' className='fw-bold'> Offshore VPS Hosting</Link>
           </span>
         </div>
       </div>

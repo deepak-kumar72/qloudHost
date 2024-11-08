@@ -1,22 +1,21 @@
 import React from 'react';
-import images from '../../../constants/images';
 
 const servicesData = [
     {
       id: 1,
-      imgUrl: images.youTube,
+      imgUrl: '/assets/icon/youtube-streaming.svg',
       title: "YouTube Streaming",
       description: "Are you a YouTuber and Looking for powerful streaming servers? If Yes, then QloudHost will be the right pick for you, thanks to our powerful servers that provide you with a bufferless streaming experience",
     },
     {
       id: 1,
-      imgUrl: images.gaming,
+      imgUrl: '/assets/icon/game-streaming.svg',
       title: "Game Streaming",
       description: "Boost your gaming experience with our reliable servers that allow you to perform unhindered streaming for as long as you want! In addition, you will get unmetered resources for uninterrupted performance.",
     },
     {
         id: 1,
-        imgUrl: images.iptv,
+        imgUrl: '/assets/icon/iptv.svg',
         title: "IPTV",
         description: "QloudHost provides you with the offshore streaming server that you can use to enjoy you country’s television channels from anywhere without any restrictions or arbitrary troubles. ",
       },

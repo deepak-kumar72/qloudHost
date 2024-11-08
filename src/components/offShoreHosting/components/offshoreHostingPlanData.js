@@ -4,6 +4,7 @@ const offshoreplanData = {
       id: 1,
       name: "Basic",
       price: "$3.50",
+      samePrice: '$3.50',
       discount: "You Save 30%",
       duration: "3 Year",
       features: [
@@ -16,7 +17,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=triennially&currency=1",
@@ -26,6 +27,7 @@ const offshoreplanData = {
       id: 2,
       name: "Pro",
       price: "$5.50",
+      samePrice: '$5.50',
       discount: "You Save 30%",
       duration: "3 Year",
       features: [
@@ -38,7 +40,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=triennially&currency=1",
@@ -48,6 +50,7 @@ const offshoreplanData = {
       id: 3,
       name: "Grow",
       price: "$9.09",
+      samePrice: '$9.09',
       discount: "You Save 30%",
       duration: "3 Year",
       features: [
@@ -60,7 +63,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=triennially&currency=1",
@@ -73,6 +76,7 @@ const offshoreplanData = {
       id: 4,
       name: "Basic",
       price: "$4.00",
+      samePrice: '$4.00',
       discount: "You Save 20%",
       duration: "1 Year",
       features: [
@@ -85,7 +89,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=annually&currency=1",
@@ -95,6 +99,7 @@ const offshoreplanData = {
       id: 5,
       name: "Pro",
       price: "$6.29",
+      samePrice: '$6.29',
       discount: "You Save 20%",
       duration: "1 Year",
       features: [
@@ -107,7 +112,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=annually&currency=1",
@@ -117,6 +122,7 @@ const offshoreplanData = {
       id: 6,
       name: "Grow",
       price: "$10.39",
+      samePrice: '$10.39',
       discount: "You Save 20%",
       duration: "1 Year",
       features: [
@@ -129,7 +135,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=annually&currency=1",
@@ -142,6 +148,7 @@ const offshoreplanData = {
       id: 7,
       name: "Basic",
       price: "$4.99",
+      samePrice: '$4.99',
       discount: "You Save 0%",
       duration: "1 Month",
       features: [
@@ -154,7 +161,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=monthly&currency=1",
@@ -164,6 +171,7 @@ const offshoreplanData = {
       id: 8,
       name: "Pro",
       price: "$7.86",
+      samePrice: '$7.86',
       discount: "You Save 0%",
       duration: "1 Month",
       features: [
@@ -176,7 +184,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=monthly&currency=1",
@@ -186,6 +194,7 @@ const offshoreplanData = {
       id: 9,
       name: "Grow",
       price: "$12.98",
+      samePrice: '$12.98',
       discount: "You Save 0%",
       duration: "1 Month",
       features: [
@@ -198,7 +207,7 @@ const offshoreplanData = {
         "DirectAdmin Panel",
         "LiteSpeed",
         "Softaculous 1-click Install",
-        "Support",
+        "24*7 Support",
         "Security"
       ],
       url: "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=monthly&currency=1",

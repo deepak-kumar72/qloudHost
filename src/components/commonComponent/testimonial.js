@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import './common.css'; // Optional: For custom styles
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import images from '../../constants/images';
 
 
 // Custom Arrow Components
@@ -51,50 +50,50 @@ const Testimonials = () => {
 
     // Testimonial data array
     const testimonialsData = [
-        {   imgUrl: images.testimonial1,
+        {   imgUrl: '/assets/testimonial1.png',
             name: 'Peters',
             role: 'Qloud Host is the best Offshore hosting…',
             feedback: 'Qloud Host is the best Offshore hosting one will always desire to have. Their support is always very much ready to help most especially Isha who handled my little hitches like a professional that he is. I will always recommend Qloud Host at all times to friends and Family.'
         },
         {
-            imgUrl: images.testimonial2,
+            imgUrl: '/assets/testimonial2.png',
             name: 'Vihari Anand',
             role: 'qloud host is the best hosting service…',
             feedback: 'qloud host is the best hosting service provides excellent when its matter of safety and security. isha pandey guiding me in and every step to make the hosting process simple and succesful. she is best in handling the customer issues 24x7.'
         },
         {
-            imgUrl: images.testimonial3,
+            imgUrl: '/assets/testimonial3.png',
             name: 'With Niolex',
             role: 'These guys are excellent',
             feedback: 'These guys are excellent. After purchasing the service yawin has assigned me a dedicated support member who setup my server in quick and helped me to setup my apps. Any issue that i had was resolved quick. Their speed is very developer friendly. I recommend them unreservedly.'
         },
 
         {
-            imgUrl: images.testimonial4,
+            imgUrl: '/assets/testimonial4.png',
             name: 'Joram Dymisster',
             role: 'BEST HOSTING SERVICE',
             feedback: 'Thanks to the Ranjeet,Aisha and Whole Team of Qloudhost.Am happy with there support and understanding.At some point i was having problems with my payment gateway.I ask them and they agree to extend my overdue invoice time to let me solve the problem without suspend my services.'
         },
         {
-            imgUrl: images.testimonial5,
+            imgUrl: '/assets/testimonial5.png',
             name: 'Adam Johnson',
             role: 'Qloud host is the best',
             feedback: 'Qloud is the best hosting service. Servers are super fast, the support team is fantastic just a fantastic service you also do not have to wait for someone to activate the service after purchase the system immediately activates it for you which is amazing and also I love the pricing. Highly recommended A++++++++'
         },
         {
-            imgUrl: images.testimonial6,
+            imgUrl: '/assets/testimonial6.png',
             name: 'Lucifer XVI',
             role: 'Definitely would suggest to other friends of mine who have their own companies',
             feedback: 'Well the server was never really out of order except for once when I was not even able to login or even open the site. So I figured that there must be some maintenance going on. I was still able to access my admin panel so all is good.'
         },
         {
-            imgUrl: images.testimonial7,
+            imgUrl: '/assets/testimonial7.png',
             name: 'ADITYA KUMAR',
             role: 'Great server speed & affordable',
             feedback: 'These servers are fast and there team even resolved my plugin issues.I was hesitant at first, as not a well known company. But the dedicated servers were so cheap that I purchased just to give it a shot. Now I regret wasting so much more money on less powerful vps servers for so long',
         },
         {
-            imgUrl: images.testimonial8,
+            imgUrl: '/assets/testimonial8.png',
             name: 'With Niolex',
             role: 'These guys are excellent',
             feedback: 'These guys are excellent. After purchasing the service yawin has assigned me a dedicated support member who setup my server in quick and helped me to setup my apps. Any issue that i had was resolved quick. Their speed is very developer friendly. I recommend them unreservedly.'

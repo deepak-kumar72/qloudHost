@@ -1,7 +1,4 @@
 import React from 'react';
-import images from '../../../constants/images';
-
-
 
 const DedicatedHostingSolution = () => {
   return (
@@ -27,7 +24,7 @@ const DedicatedHostingSolution = () => {
               </ul>
             </div>
             <div  className="col-md-12 col-lg-6 text-center">
-             <img src={images.webHostingSol} alt='offshore-dedicated-server' className='hostingSolImg'/>
+             <img src='/assets/Offshore-Dedicated-Web-Hosting-Solutions.png' alt='offshore-dedicated-server' className='hostingSolImg'/>
             </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import images from '../../../constants/images';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 
@@ -11,7 +10,7 @@ const OffshoreFeatureElement = () => {
         {/* Privacy Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.simpleAffordable} alt="" className="img-fluid m-auto" />
+            <img src='/assets/feature/simple-affordable.png' alt="Simple, Affordable, Hosting You Can Trust" className="img-fluid m-auto" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2 className='w-100 mb-3'>Simple, Affordable, Hosting You Can Trust</h2>
@@ -33,7 +32,7 @@ const OffshoreFeatureElement = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.makeWebsite} alt="" className="img-fluid" />
+            <img src='/assets/feature/make-your-website.png' alt="Make Your Website Faster with LiteSpeed" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className='mb-3 w-100'>Make Your Website Faster with LiteSpeed</h2>
@@ -48,7 +47,7 @@ const OffshoreFeatureElement = () => {
 
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.freeMigration} alt="" className="img-fluid m-auto" />
+            <img src='/assets/feature/free-migration.png' alt="Free Migration Services" className="img-fluid m-auto" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2 className='w-100 mb-3'>Free Migration Services</h2>
@@ -57,7 +56,7 @@ const OffshoreFeatureElement = () => {
             </p>
             <p className="">
               Our staff will provide personalized service to you with minimal disruption to your website or email services. Everything related to your site is perfectly replicated, reinstalled and reconfigured on the new server.
-            </p><Link to="/contact-us/">
+            </p><Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2">
             <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               

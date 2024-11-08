@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link as ScrollLink } from "react-scroll";
-import images from '../../../constants/images';
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -11,7 +10,7 @@ const AdultHostingFeatureElement = () => {
       {/* Privacy Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 mb-4 text-center">
-          <img src={images.easyUpgrade} alt="Easy Upgrade" className="img-fluid m-auto" />
+          <img src='/assets/feature/easy-upgrades.png' alt="Easy Upgrade" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
           <h2 className='w-100 mb-3'>Easy Upgrades</h2>
@@ -32,7 +31,7 @@ const AdultHostingFeatureElement = () => {
       {/* Hardware Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 order-md-2 mb-3 text-center">
-          <img src={images.fullDataPrivacy} alt="Data Privacy" className="img-fluid" />
+          <img src='/assets/feature/full-data-privacy.png' alt="Data Privacy" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 feature-element-sec">
           <h2 className='mb-3 w-100'>Full Data Privacy</h2>
@@ -47,7 +46,7 @@ const AdultHostingFeatureElement = () => {
       </div>
       <div className="row align-items-center mb-3">
         <div className="col-md-6 mb-4 text-center">
-          <img src={images.highPerformanceAdultHosting} alt="High Performance Adult Hosting" className="img-fluid m-auto" />
+          <img src='/assets/feature/high-performance-dult-hosting_99-uptime.png' alt="High Performance Adult Hosting" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
           <h2 className='w-100 mb-3'>

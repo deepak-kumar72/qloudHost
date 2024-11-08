@@ -4,7 +4,7 @@ const plansData = {
     {
       id: 1,
       title: "WordPress Starter",
-      description: "The ideal WP Hosting for Started Website!",
+      description: "The ideal WP Hosting for  Website!",
       price: "$4.39",
       originalPrice: "$4.39/mo",
       save: "Save 30%",
@@ -72,7 +72,7 @@ const plansData = {
     {
       id: 4,
       title: "WordPress Starter",
-      description: "The ideal WP Hosting for Started Website!",
+      description: "The ideal WP Hosting for  Website!",
       price: "$5.02",
       originalPrice: "$5.02/mo",
       save: "Save 20%",
@@ -140,7 +140,7 @@ const plansData = {
     {
       id: 7,
       title: "WordPress Starter",
-      description: "The ideal WP Hosting for Started Website!",
+      description: "The ideal WP Hosting for Website!",
       price: "$6.28",
       originalPrice: "$6.28/mo",
       save: "Save 0%",

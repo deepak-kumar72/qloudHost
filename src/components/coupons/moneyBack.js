@@ -8,7 +8,7 @@ const MoneyBack = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-7 chat-sec">
-            <h3>30-Day Money-Back Guarantee</h3>
+            <h3>14-Day Money-Back Guarantee</h3>
             <p>
               Customer satisfaction is guaranteed! Get a hassle-free refund
               within 30 days if you’re not 100% happy with our service. Our
@@ -16,7 +16,7 @@ const MoneyBack = () => {
             </p>
           </div>
           <div className="col-md-5 m-auto text-center">
-            <Link to="">
+            <Link to="/">
               <button className=" start-now-btn">
                 Get Started Now
                 <FaArrowRight className="ms-2" />

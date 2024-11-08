@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
 import "../offshoreVps.css";
 import { Link } from 'react-router-dom'
@@ -12,7 +11,7 @@ const PrivacyHardwarePage = () => {
         {/* Privacy Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src={images.yourPrivacy} alt="" className="img-fluid" />
+            <img src='/assets/feature/your-privacy.png' alt="" className="img-fluid" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2>Your Privacy is Our Priority!</h2>
@@ -41,7 +40,7 @@ const PrivacyHardwarePage = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.superPerforming} alt="Super Performing Enterprise-Grade" className="img-fluid" />
+            <img src='/assets/feature/super-performing.png' alt="Super Performing Enterprise-Grade" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">

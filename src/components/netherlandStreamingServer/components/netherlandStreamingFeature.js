@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import images from "../../../constants/images";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 
@@ -12,8 +11,8 @@ const NetherLandStreamingFeature = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src={images.StreamingProtection}
-              alt=""
+              src='/assets/feature/netherlands-streaming-server.png'
+              alt="Guaranteed protection in the Netherlands"
               className="img-fluid m-auto"
             />
           </div>
@@ -43,7 +42,7 @@ const NetherLandStreamingFeature = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src={images.netherlandStreaming} alt="" className="img-fluid" />
+            <img src='/assets/feature/netherlands-streaming-server-02.png' alt="DMCA Ignored Streaming Server" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DMCA Ignored Streaming Server</h2>

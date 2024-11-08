@@ -13,7 +13,7 @@ const CustomSolution = ({ solTitle, solText }) => {
             <p>{solText}</p>
           </div>
           <div className="col-lg-4 col-sm-12 m-auto text-center">
-            <Link to="/contact-us/">
+            <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2">
               <button className=" start-now-btn custom-sol-btn">
                 Contact Us <FaArrowRight className="ms-2" />
               </button>

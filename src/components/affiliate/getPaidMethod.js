@@ -48,7 +48,7 @@ const GetPaidMethod = () => {
 
         {/* Signup Button */}
         <div className="mt-4 text-center">
-          <Link to="" className="btn start-now-btn ">
+          <Link to="https://my.qloudhost.com/register.php" className="btn start-now-btn ">
             Signup Now <FaArrowRight className="ms-4" />
           </Link>
         </div>

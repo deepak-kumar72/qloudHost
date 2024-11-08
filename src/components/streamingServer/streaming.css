@@ -16,7 +16,6 @@
 .streaming-badge {
   background-color: #f6355a;
   color: #fff;
-  left: 142px;
 }
 
 .streaming-image-icon {
@@ -59,6 +58,11 @@
   transform: scale(1.03);
 }
 
+.streaming-features{
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   .qloud-plan-body {
@@ -81,5 +85,11 @@
   .customSol-text p {
     font-size: 16px;
     line-height: 28px;
+  }
+}
+
+@media(min-width:1200px){
+  .streaming-plan{
+    width: 75%;
   }
 }

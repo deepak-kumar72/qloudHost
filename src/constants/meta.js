@@ -20,7 +20,7 @@ const MetaTags = () => {
             "name": "DMCA Ignored Hosting",
             "category": "Web Hosting",
             "url": "https://qloudhost.com",
-            "image": { "@type": "ImageObject", "url": "http://qloudhost.com/static/media/home-dmca-ignored-hosting.3507e987c4ccecac38e4.webp"},
+            "image": { "@type": "ImageObject", "url": "http://qloudhost.com/assets/Frame/home-dmca-ignored-hosting.webp"},
             "offers": {
               "@type": "AggregateOffer",
               "lowPrice": "3.50",
@@ -56,7 +56,7 @@ const MetaTags = () => {
           “@context”: “https://schema.org”,
 		“@type”: “ProfessionalService”,
 		“name”: “QloudHost”,
-		“image”: “https://qloudhost.com/static/media/logo.28477807ac8ca120a17c19f0bbd558d4.svg”,
+		“image”: “https://qloudhost.com/assets/logo.svg”,
 		“@id”: “https://qloudhost.com”,
 		“url”: “https://qloudhost.com/”,
 		“priceRange”: “$3.50-$399.00”,
@@ -90,7 +90,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE VPS HOSTING”,
   “description”: “QloudHost offers best & Cheap offshore VPS hosting servers with 100% privacy protection,root access, 24*7 support and totally Anonymous Offshore hosting.“,
-  “image”: “https://qloudhost.com/static/media/offshore-vps-hosting.3c1f76b3120d8ac49c80.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/offshore-vps-hosting.webp”,
   “sku”: “OFFSHORE VPS HOSTING”,
   “mpn”: “OFFSHORE VPS HOSTING”,
   “offers”: {
@@ -135,7 +135,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE DEDICATED SERVER”,
   “description”: “Maximize your website’s speed and security with our Best Cheap offshore dedicated servers DMCA Ignored. Get power & reliability with your business needs to succeed.“,
-  “image”: “https://qloudhost.com/static/media/cheap-offshore-dedicated-server.797396ece0a36cefbc50.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/cheap-offshore-dedicated-server.webp”,
   “sku”: “OFFSHORE DEDICATED SERVER”,
   “mpn”: “OFFSHORE DEDICATED SERVER”,
   “offers”: {
@@ -178,7 +178,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE STREAMING SERVER”,
   “description”: “Experience fast and reliable streaming with our offshore streaming server. Get more powerful resources, full privacy, and a bufferless streaming experience.“,
-  “image”: “https://qloudhost.com/static/media/robust-offshore-streaming-server.80d54a0d62810ae584e7.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/robust-offshore-streaming-server.webp”,
   “sku”: “OFFSHORE STREAMING SERVER”,
   “mpn”: “OFFSHORE STREAMING SERVER”,
   “offers”: {
@@ -222,7 +222,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE WEB HOSTING”,
   “description”: “Get the most out of your website with our Best Cheap offshore web hosting. Enjoy reliability & privacy with NVMe SSD, Be Always Online no matter what, Save 10% on Annual Plans.“,
-  “image”: “https://qloudhost.com/static/media/dmca-cheap-offshore-web-hosting.e655eeed542bfc52f126.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/dmca-cheap-offshore-web-hosting.webp”,
   “sku”: “OFFSHORE WEB HOSTING”,
   “mpn”: “OFFSHORE WEB HOSTING”,
   “offers”: {
@@ -268,7 +268,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE WORDPRESS HOSTING”,
   “description”: “Looking for fast and affordable Offshore WordPress hosting? Our secure, Privacy friendly offshore hosting service is your solution. Get #1 performance today!“,
-  “image”: “https://qloudhost.com/static/media/offshore-wordpress-hosting.260f06a05a6831ad1186.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/offshore-wordpress-hosting.webp”,
   “sku”: “OFFSHORE WORDPRESS HOSTING”,
   “mpn”: “OFFSHORE WORDPRESS HOSTING”,
   “offers”: {
@@ -310,7 +310,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE VIDEO HOSTING”,
   “description”: “To provide you with untraceable security and strong privacy protection offshore video hosting services are generally based on DMCA Ignored servers.“,
-  “image”: “https://qloudhost.com/static/media/DMCA-Offshore-video-hosting.51e708a464092056dbe9.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/DMCA-Offshore-video-hosting.webp”,
   “sku”: “OFFSHORE VIDEO HOSTING”,
   “mpn”: “OFFSHORE VIDEO HOSTING”,
   “offers”: {
@@ -354,7 +354,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “ADULT HOSTING”,
   “description”: “Get top-tier High Performace VPS hosting on AMD Epyc CPUs at just $18.99/mo. Fast, reliable, and perfect for demanding applications!“,
-  “image”: “https://qloudhost.com/static/media/high-performance-adult-vps-and-dedicated-server.02a141201a5736abaf31.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/high-performance-adult-vps-and-dedicated-server.webp”,
   “sku”: “ADULT HOSTING”,
   “mpn”: “ADULT HOSTING”,
   “offers”: {
@@ -397,7 +397,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “DMCA IGNORED VPS”,
   “description”: “Best DMCA Ignored VPS Hosting Servers On A Budget! Performance, power, and flexibility is just a click away. complete protection against copyright complaints.“,
-  “image”: “https://qloudhost.com/static/media/dmca-ignored-vps-hosting.4ccfd91ade684be2f7cd.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/dmca-ignored-vps-hosting.webp”,
   “sku”: “DMCA IGNORED VPS”,
   “mpn”: “DMCA IGNORED VPS”,
   “offers”: {
@@ -441,7 +441,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “NETHERLANDS OFFSHORE VPS”,
   “description”: “Looking for Best and Cheap Netherlands Offshore VPS hosting. Get lightning-fast reliable uptime and top-notch support for your website or app.“,
-  “image”: “https://qloudhost.com/static/media/netherland-offshore-vps.4b8b27c8ea4059499090.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/netherland-offshore-vps.webp”,
   “sku”: “NETHERLANDS OFFSHORE VPS”,
   “mpn”: “NETHERLANDS OFFSHORE VPS”,
   “offers”: {
@@ -484,7 +484,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “High-Performance VPS”,
   “description”: “Get top-tier High Performace VPS hosting on AMD Epyc CPUs at just $18.99/mo. Fast, reliable, and perfect for demanding applications!“,
-  “image”: “https://qloudhost.com/static/media/high-performance-vps-server.44bf9477d419c462d7a9.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/high-performance-vps-server.webp”,
   “sku”: “High-Performance VPS”,
   “mpn”: “High-Performance VPS”,
   “offers”: {
@@ -527,7 +527,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “DMCA IGNORED DEDICATED SERVER”,
   “description”: “Maximize your site’s potential with our DMCA Ignored Dedicated Server. Enjoy lightning-fast performance, NVMe SSD storage, and full root access for enhanced security.“,
-  “image”: “https://qloudhost.com/static/media/dmca-ignored-dedicated-server.1109de6c3e1e073bcce7.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/dmca-ignored-dedicated-server.webp”,
   “sku”: “DMCA IGNORED DEDICATED SERVER”,
   “mpn”: “DMCA IGNORED DEDICATED SERVER”,
   “offers”: {
@@ -570,7 +570,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “RUSSIA OFFSHORE DEDICATED SERVER”,
   “description”: “Maximize your website’s speed & privacy with cheap Russia offshore dedicated servers. NVMe SSD Drive, DDoS Protection and 24*7 Support.“,
-  “image”: “https://qloudhost.com/static/media/russia-offshore-dedicated-server.0c1a3bc8c75c1744e818.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/russia-offshore-dedicated-server.webp”,
   “sku”: “RUSSIA OFFSHORE DEDICATED SERVER”,
   “mpn”: “RUSSIA OFFSHORE DEDICATED SERVER”,
   “offers”: {
@@ -613,7 +613,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “NETHERLANDS OFFSHORE DEDICATED SERVER”,
   “description”: “Maximize your website’s speed & privacy with cheap Netherlands offshore dedicated server. NVMe SSD Drive, DDoS Protection and 24*7 Support.“,
-  “image”: “http://next.qloudhost.com/static/media/netherlands-offshore-dedicated-server.cbc719002a1342ef6b56.webp”,
+  “image”: “http://qloudhost.com/assets/Frame/netherlands-offshore-dedicated-server.webp”,
   “sku”: “NETHERLANDS OFFSHORE DEDICATED SERVER”,
   “mpn”: “NETHERLANDS OFFSHORE DEDICATED SERVER”,
   “offers”: {
@@ -656,7 +656,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “NETHERLANDS OFFSHORE STREAMING SERVER”,
   “description”: “Experience fast and reliable streaming with our Netherlands Offshore streaming server. Get more powerful resources, full privacy, and a bufferless streaming experience.“,
-  “image”: “https://qloudhost.com/static/media/netherlands-streming-server.11921e7afd36445a10b9.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/netherlands-streming-server.webp”,
   “sku”: “NETHERLANDS OFFSHORE STREAMING SERVER”,
   “mpn”: “NETHERLANDS OFFSHORE STREAMING SERVER”,
   “offers”: {
@@ -699,7 +699,7 @@ const MetaTags = () => {
   “@type”: “Product”,
   “name”: “OFFSHORE WINDOWS VPS RDP”,
   “description”: “QloudHost offers best Cheap offshore windows VPS DMCA Ignored servers with 100% privacy protection,root access, 24*7 support.“,
-  “image”: “https://qloudhost.com/static/media/robust-offshore-windows-vps-hosting.fc56fad54bf7f06542dd.webp”,
+  “image”: “https://qloudhost.com/assets/Frame/robust-offshore-windows-vps-hosting.webp”,
   “sku”: “OFFSHORE WINDOWS VPS RDP”,
   “mpn”: “OFFSHORE WINDOWS VPS RDP”,
   “offers”: {

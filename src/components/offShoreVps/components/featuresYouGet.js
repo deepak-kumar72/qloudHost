@@ -1,5 +1,4 @@
 import React from 'react';
-import images from '../../../constants/images';
 
 const FeaturesYouGet = () => {
 
@@ -38,7 +37,7 @@ const FeaturesYouGet = () => {
         {/* VPS Image Section */}
         <div className="col-lg-5 text-center mb-4">
           <img
-            src={images.vpsServer}
+            src='/assets/vpsServer.png'
             alt="VPS Server"
             className="vps-image"
           />

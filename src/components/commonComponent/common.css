@@ -2,6 +2,80 @@
   width: 50%;
 }
 
+.top-nav{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.nav-banner{
+  position: sticky;
+  top: 38px;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-banner.scrolled {
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+
+}
+
+.nav-option.dropdown-toggle .arrow-icon {
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.nav-item.dropdown.show .arrow-icon {
+  transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+
+/* .nav-option:hover .arrow-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+} */
+
+
+.hero-subTitle{
+  font-size: 18px;
+}
+
+@keyframes moveLeftRight {
+  0% { transform: rotate(0); }
+  1% { transform: rotate(30deg); }
+  3% { transform: rotate(-28deg); }
+  5% { transform: rotate(34deg); }
+  7% { transform: rotate(-32deg); }
+  9% { transform: rotate(30deg); }
+  11% { transform: rotate(-28deg); }
+  13% { transform: rotate(26deg); }
+  15% { transform: rotate(-24deg); }
+  17% { transform: rotate(22deg); }
+  19% { transform: rotate(-20deg); }
+  21% { transform: rotate(18deg); }
+  23% { transform: rotate(-16deg); }
+  25% { transform: rotate(14deg); }
+  27% { transform: rotate(-12deg); }
+  29% { transform: rotate(10deg); }
+  31% { transform: rotate(-8deg); }
+  33% { transform: rotate(6deg); }
+  35% { transform: rotate(-4deg); }
+  37% { transform: rotate(2deg); }
+  39% { transform: rotate(-1deg); }
+  41% { transform: rotate(1deg); }
+  43% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+.sub-title-icon{
+  color: #f6355a;
+  animation: moveLeftRight 1s ease-in-out infinite;
+  font-size: 26px;
+}
+
 .footer-logo{
   width: 50%;
 }
@@ -487,6 +561,32 @@ width: 75%;
 margin: auto;
 }
 
+.enterprise-btn{
+  background-color: #fff;
+  color: #f6355a;
+  text-decoration: none;
+}
+
+.btn-primary{
+  text-decoration: none;
+}
+
+.dedicated-card-title{
+  font-size: 18px;
+  font-weight: 800;
+  color: #0D121F;
+}
+
+.accordion-button{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordion-body {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 @media(max-width:1199px){
   .testimonial-card{
     height: 295px;
@@ -498,6 +598,17 @@ margin: auto;
 }
 
 @media(max-width: 991px){
+  .top-content, .top-content a {
+    font-size: 14px;
+}
+
+ .footer-logo{
+  width: 20%;
+ }
+                
+  .nav-signIn{
+    margin-left: 12px;
+  }
   .testimonial-card{
     height: 380px;
   } 
@@ -568,12 +679,28 @@ margin: auto;
 }
 
 @media(max-width: 767px){
+  .navbar-brand img {
+    width: 35%;
+}
+  .accordion-button {
+    font-size: 16px;
+  }
+  
+  .accordion-body {
+    font-size: 14px;
+  }
+  .footer-logo{
+    width: 25%;
+  }
+  .footer-sec{
+    padding-top: 20px !important;
+  }
   .nav-section{
     flex-wrap: nowrap !important;
     margin: 0px 0px !important;
   }
   .testimonial-card{
-    height: 270px;
+    height: 100%;
   } 
 
   .grade-opt{
@@ -665,5 +792,22 @@ grid-template-rows: repeat(5, 1fr);
   .testimonial-card{
     height: 300px;
   }
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+  
+  .dedicated-card-title{
+      font-size: 24px !important;
+  }
+  .dedicated-save-badge{
+    top: 147px;
+  }
+}
+
+@media (max-width: 749px){
+  .nav-banner {
+    top: 57px;
+}
+  
 }
 

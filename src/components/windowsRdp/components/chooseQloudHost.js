@@ -1,22 +1,21 @@
 import React from 'react';
-import images from '../../../constants/images';
 
 const servicesData = [
     {
       id: 1,
-      imgUrl: images.fastestSsdSever,
-      title: "Fastest Nvne SSD",
+      imgUrl: '/assets/icon/nvme-ssd.svg',
+      title: "Fastest NVMe SSD",
       description: "Get Super-fast performance with blazing-fast Nvme SSD drive storage! Our service comes with guaranteed quality, so we use industry-standard equipment to run our servers.",
     },
     {
       id: 1,
-      imgUrl: images.hostedNetherland,
+      imgUrl: '/assets/icon/hosted-in-netherland.svg',
       title: "Hosted in Netherlands",
       description: "We have chosen the best data centers in Netherlands to ensure full privacy and security for your website on the Internet. It is especially useful for bypassing all the biased country-specific restrictions!",
     },
     {
         id: 1,
-        imgUrl: images.DaysMoneyGurantee,
+        imgUrl: '/assets/icon/14-days-money-back.svg',
         title: "14 Days Money Back",
         description: "We understand the value of your hard-earned money! Get whole assurance with a 14-day money-back guarantee. And no questions will be asked!",
       },

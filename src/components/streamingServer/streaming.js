@@ -2,7 +2,6 @@ import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent';
 import StreamingServerPlan from './components/streamingServerPlan';
 import InstallationPanel from '../commonComponent/installationPanel';
-import images from '../../constants/images';
 import TechnicalSpecification from '../commonComponent/technicalSpecification';
 import StreamingServerQuality from './components/streamingServerQuality';
 import QlodHostServices from '../commonComponent/qlodHostServices';
@@ -21,32 +20,32 @@ const options = [
 ];
 
 const features = [
-    {img: images.secureOffshore,
+    {img: '/assets/serviceImg/secure-offshore-location.svg',
       title: "Secure Offshore Location",
       description:`Our <a href='/offshore-dedicated-servers/' class='faq-link'>Offshore Dedicated server</a>  are built far away from the origin country to bypass all the country-specific restrictions and allow you to post your desired DMCA ignored content without any arbitrary restrictions or interruptions.`,
       link: "",
     },
-    {img: images.anonymousService,
+    {img: '/assets/serviceImg/anonymous-service.svg',
       title: "100% Anonymous Service",
       description:`We are running our offshore streaming servers at the best locations that are especially <a href='/' class='faq-link'>popular for offshore hosting services</a>  and help us to decrease your visibility on the internet making you untraceable.`,
       link: "",
     },
-    {img: images.osChoice,
+    {img: '/assets/serviceImg/os-choice.svg',
       title: "OS Choice",
       description: `All thanks to our resilient server that is compatible with all the Operating systems, we can offer you a wide range of options to choose and work with your desired OS anytime and anywhere!!`,
       link: "",
     },
-    {img: images.ddos,
+    {img: '/assets/serviceImg/ddos.svg',
       title: "DDoS Protection",
       description: `Our servers come with the best and industry-standard security features that will help you to save your website against illegitimate traffic and ensure your maximum availability on the internet. .`,
       link: "",
     },
-    {img: images.uptime,
+    {img: '/assets/feature/uptime.svg',
       title: "99.99% Uptime",
       description: `Why go anywhere else when you get maximum uptime here? Yes!! Our services come with a 99.99% uptime guarantee to provide full assurance of your availability on the internet.`,
       link: "",
     },
-    {img: images.techSupport,
+    {img: '/assets/serviceImg/secure-offshore-location.svg',
       title: "24/7 Tech Support",
       description: `We have built a dedicated team of technical experts that are working 24*7 to help you at every stage of your journey and ensure that you can set up your offshore streaming servers without any errors!`,
       link: "",
@@ -91,13 +90,14 @@ const Streaming = () => {
   return (
     <div>
     <HeroComponent
+    subTitle='Offshore Streaming Server'
     title="Robust offshore Streaming Server"
         description="Host your IPTV or movie site offshore in Amsterdam with powerful DMCA-ignored streaming servers. Get 100% uptime, unmetered ports, white-label IP, and a fully redundant network. Secure, reliable, and unshared."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.streamingServer}
+        imageSrc='/assets/Frame/robust-offshore-streaming-server.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} // Pass the options to the HeroComponent
       />
@@ -117,11 +117,11 @@ const Streaming = () => {
         buttonText="Get Started Now"
         url='explore'
         panelOptions={[
-          { name: 'AlmaLinux', img: images.almaLinux },
-          { name: 'Rocky Linux', img: images.rockyLinux },
-          { name: 'Debian', img: images.debian},
-          { name: 'Ubuntu', img: images.ubuntu },
-          { name: 'Windows', img: images.windowIcon },
+          { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png'},
+          { name: 'Rocky Linux', img: '/assets/icon/rockyLinux.png'},
+          { name: 'Debian', img: '/assets/icon/debain.png'},
+          { name: 'Ubuntu', img: '/assets/icon/ubuntu.png' },
+          { name: 'Windows', img: '/assets/icon/window-icon.png' },
         ]}
       />
       <StreamingServerQuality/>

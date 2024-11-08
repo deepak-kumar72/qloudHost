@@ -138,6 +138,12 @@
 
 }
 
+.more-btn:hover{
+    background-color: #fff !important;
+    color: #f6355a;
+    border: 1px solid #f6355a;
+}
+
 @media(max-width:767px){
     .contact-container{
         width: 100%;

@@ -1,10 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import images from "../../constants/images";
+import { useEffect } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
 import "./common.css";
 import { Offcanvas } from "bootstrap"; // Import the Offcanvas utility from Bootstrap
 
 const Navbar = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navBanner = document.querySelector(".nav-banner");
+      if (window.scrollY > 0) {
+        navBanner.classList.add("scrolled");
+      } else {
+        navBanner.classList.remove("scrolled");
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleCloseOffcanvas = () => {
     const offcanvasElement = document.getElementById("offcanvasNavbar");
     const bsOffcanvas = Offcanvas.getInstance(offcanvasElement);
@@ -21,11 +41,11 @@ const Navbar = () => {
 
 
   return (
-    <div>
+    <div className="nav-banner">
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-xxl mx-5 nav-section">
           <Link className="navbar-brand" to="/">
-            <img src={images.logo} alt="logo" />
+            <img src='/assets/logo.svg' alt="logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -46,7 +66,7 @@ const Navbar = () => {
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 <Link className="navbar-brand" to="/" onClick={handleCloseOffcanvas}>
-                  <img src={images.logo} alt="logo" />
+                  <img src='/assets/logo.svg' alt="logo" />
                 </Link>
               </h5>
               <button
@@ -63,7 +83,7 @@ const Navbar = () => {
                     className="nav-link nav-option dropdown-toggle"
                     to="#"
                   >
-                    Hosting
+                    Hosting <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
@@ -88,7 +108,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item dropdown pe-4">
                   <Link className="nav-link nav-option dropdown-toggle" to="#">
-                    VPS
+                    VPS <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
@@ -114,7 +134,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown pe-4">
                   <Link className="nav-link nav-option dropdown-toggle" to="#">
-                    Server
+                    Server <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
@@ -159,8 +179,8 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
-              <Link to="https://my.qloudhost.com/login" className="m-auto" onClick={handleCloseOffcanvas}>
-                <button className="btn signIn-btn">Sign In</button>
+              <Link to="https://my.qloudhost.com/login" className="" onClick={handleCloseOffcanvas}>
+                <button className="btn signIn-btn nav-signIn">Sign In</button>
               </Link>
             </div>
           </div>

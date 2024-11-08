@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CouponCard = ({ title, discount, description, subTitle, buttonText }) => {
     return (
-        <div className="container coupon-card my-4 p-3 shadow-sm rounded-3 w-75">
+        <div className="container coupon-card my-4 p-3 shadow-sm rounded-3 w-75" id='explore'>
       <div className="row g-0 ">
         <div className="col-md-4 coupon-code-sec">
         

@@ -1,5 +1,4 @@
 import React from 'react';
-import images from '../../../constants/images';
 
 const RdpFeatureBanner = () => {
 
@@ -37,7 +36,7 @@ const RdpFeatureBanner = () => {
         {/* VPS Image Section */}
         <div className="col-lg-5 text-center mb-4">
           <img
-            src={images.windowsvps}
+            src='/assets/windows-vps.png'
             alt="window Vps"
             className="vps-image"
           />

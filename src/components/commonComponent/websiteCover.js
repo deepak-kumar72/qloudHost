@@ -1,15 +1,15 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
-import images from '../../constants/images';
 import { FaCheck } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const WebsiteCover = () => {
   // Define the array of service data
   const servicesData = [
     {
       id: 1,
-      imgUrl: images.website, // Replace with the actual image path
+      imgUrl: '/assets/feature/website.svg', // Replace with the actual image path
       title: 'New Website',
       description: ["Immediate Activation", "Free installation by a specialist", "FREE Privacy Protection", "Step by step tutorials", "24/7/365 Premium Support",],
       buttonLink: '#hostingPlan', 
@@ -17,7 +17,7 @@ const WebsiteCover = () => {
     },
     {
       id: 2,
-      imgUrl: images.existingWebsite,
+      imgUrl: '/assets/icon/existing-website.svg',
       title: 'Existing Website',
       description: ["Free transfer by a specialist", "Zero downtime", "Free databases transfer", "Free Setup", "24/7/365 Premium Support",],
       buttonLink: 'https://my.qloudhost.com/submitticket.php?step=2&deptid=2', 
@@ -45,9 +45,9 @@ const WebsiteCover = () => {
                     ))}
                     
                     <div>
-                      <a href={service.buttonLink} className='btn start-now-btn start-now mt-3'>
+                      <Link to={service.buttonLink} className='btn start-now-btn start-now mt-3'>
                         {service.buttonText} <FaArrowRight className="ms-2" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

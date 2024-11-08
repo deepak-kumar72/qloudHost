@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroComponent from '../commonComponent/heroComponent';
-import images from '../../constants/images';
 import CouponCard from './couponcard';
 import MoneyBack from './moneyBack';
 import { Link } from 'react-router-dom';
@@ -12,10 +11,10 @@ const Coupons = () => {
         title="QloudHost Coupon Codes and Promotions"
         description="Save big on DMCA Ignored web hosting with QloudHost! Check out our coupon codes and promotions for discounts on shared, VPS Servers. Don’t miss out – check out QloudHost today!"
         button1Text="Explore Coupons"
-        button1Link=""
+        button1Link="explore"
         button2Text="Explore Coupons"
         button2Link="" // Link for the second button
-        imageSrc={images.qloudHostCoupon}
+        imageSrc='/assets/Frame/qloudhost-coupon-codes.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         
       />

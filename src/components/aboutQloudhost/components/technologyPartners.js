@@ -1,30 +1,29 @@
 import React from 'react';
-import images from '../../../constants/images';
 
 const TechnologyPartners = () => {
   // Array of image URLs (replace these with actual image paths)
   const partnerImages = [
     
-    images.apache,
-    images.bitninja,
-    images.bunnyCdn,
-    images.cloudflare,
-    images.cloudlinux,
-    images.cpanel1,
-    images.googieHost,
-    images.hostAdvice,
-    images.imunify360,
-    images.jetBackup,
-    images.letsEncrypt,
-    images.litespeed,
-    images.nodejs,
-    images.php,
-    images.softaculous,
-    images.trustpilot,
-    images.ubuntu1,
-    images.virtualizor,
-    images.whmcs,
-    images.wordpress
+    '/assets/technology-Partners/apche.png',
+    '/assets/technology-Partners/bitninja.png',
+    '/assets/technology-Partners/bunny-cdn.png',
+    '/assets/technology-Partners/cloudflare.png',
+    '/assets/technology-Partners/cloudlinux.png',
+    '/assets/technology-Partners/cpanel.png',
+    '/assets/technology-Partners/googiehost.png',
+    '/assets/technology-Partners/hostadvice.png',
+    '/assets/technology-Partners/imunify360.png',
+    '/assets/technology-Partners/lets-encrypt.png',
+    '/assets/technology-Partners/litespeed.png',
+    '/assets/technology-Partners/nodejs.png',
+    '/assets/technology-Partners/php.png',
+    '/assets/technology-Partners/softaculous.png',
+    '/assets/technology-Partners/trustpilot.png',
+    '/assets/technology-Partners/ubuntu.png',
+    '/assets/technology-Partners/virtualizer.png',
+    '/assets/technology-Partners/whmcs.png',
+    '/assets/technology-Partners/wordpress.png',
+    '/assets/technology-Partners/jetbackup.png'
   ];
 
   return (

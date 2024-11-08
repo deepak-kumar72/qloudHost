@@ -1,41 +1,40 @@
 import React from 'react';
-import featureImg from "../../../assets/feature/featureImg.png";
-import images from '../../../constants/images';
+
 
 const  qloudFeature =[
     {
         id: 1,
-        imgsrc: images.dataPrivacy,
+        imgsrc: '/assets/feature/data-privacy.svg',
         title: "Data Privacy",
         description: "Your website is completely safe in our hands because we understand the value of your privacy. That’s why we use smart features to ensure that you are untraceable on the internet.",
     },
     {
         id: 2,
-        imgsrc: images.flexibiltyOfContent,
+        imgsrc: '/assets/feature/flexibility-of-content.svg',
         title: "Flexibility of Content",
         description: "Post as much DMCA ignored content on your website as you want without restriction or interruption from our side!",
     },
     {
         id: 3,
-        imgsrc: images.antiddosProtection,
+        imgsrc: '/assets/feature/antiddos-protection.svg',
         title: "Anti-DDoS Protection",
         description: "QloudHost uses Anti-DDoS equipped servers to ensure impenetrable security and maximum availability of your website on the internet.",
     },
     {
         id: 4,
-        imgsrc: images.fullRootAccess,
+        imgsrc: '/assets/feature/full-root-access.svg',
         title: "Full Root Access",
         description: "Enjoy complete control over your server resources and customize it as per preferences without any restrictions or interruptions.",
     },
     {
         id: 5,
-        imgsrc: images.weeklyBackup,
+        imgsrc: '/assets/feature/weekly-backup.svg',
         title: "Weekly Backup",
         description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure.",
     },
     {
         id: 6,
-        imgsrc: images.prioritizedSupport,
+        imgsrc: '/assets/feature/prioritized-support.svg',
         title: "Prioritized Support",
         description: "Get instant solutions to your problem with a dedicated team of technical experts working 24*7 to support you at every step of your journey.",
     },

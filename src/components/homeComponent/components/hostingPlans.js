@@ -12,7 +12,7 @@ const plansData = [
     description:
       "Easy and affordable for website growth.",
     price: "$3.50",
-    yearlyPrice: "$4.99/mo",
+    // yearlyPrice: "$4.99/mo",
     save: "SAVE 30%",
     features: [
       "1 Website",
@@ -29,7 +29,7 @@ const plansData = [
     title: "VPS",
     description: "The perfect pairing of power and resources.",
     price: "$18.99",
-    yearlyPrice: "$21.99/mo",
+    // yearlyPrice: "$21.99/mo",
     save: "SAVE 14%",
     features: [
       "2 CPU",
@@ -46,7 +46,7 @@ const plansData = [
     title: "DEDICATED",
     description: "Perfect Custom Solution for your Needs",
     price: "$129",
-    yearlyPrice: "$159.00/mo",
+    // yearlyPrice: "$159.00/mo",
     save: "SAVE 19%",
     features: [
       "Ryzen 9 3900X(12c/24t)",
@@ -63,7 +63,7 @@ const plansData = [
 const HostingPlans = () => {
   return (
     <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5" id="hostingPlan">
+      <div className="container plan-sec mt-5" id="explore">
         <h2 className="text-center m-auto mb-3">
           Best DMCA Ignored Hosting Server Plans for You!
         </h2>
@@ -76,7 +76,7 @@ const HostingPlans = () => {
           {plansData.map((plan) => (
             <div
               key={plan.id}
-              className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col"
+              className="col-12 col-md-6 col-lg-4   mb-5 explore-plan-col"
             >
               <div
                 className={`${
@@ -97,12 +97,13 @@ const HostingPlans = () => {
                 </h3>
                 <p className={`${
                   plan.popular
-                    ? "save save-popular"
-                    : "save"
+                    ? "save save-popular save-popular"
+                    : "save save-home-plan"
                 }`}>{plan.save}</p>
-                <p className="save-price mb-4">
+                {/* <p className="save-price mb-4">
                   Yearly at <del>{plan.yearlyPrice}</del>
-                </p>
+                </p> */}
+                <h4 className='mb-3 top-specification'>Specifications</h4>
                 <ul className="list-unstyled mb-4">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="mb-2 features">

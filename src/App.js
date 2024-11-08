@@ -36,7 +36,8 @@ import About from "./components/aboutQloudhost/about";
 import Contactus from "./components/contactUs/contactus";
 import ScrollToTop from "./constants/scrollToTop";
 import MetaTags from "./constants/meta";
-// import TawkToChat from "./constants/tawkToChat";
+import TawkToScript from "./constants/tawkTo";
+
 
 function App() {
   return (
@@ -126,8 +127,9 @@ function AppContent() {
         location.pathname !== "/about/" &&
         location.pathname !== "/fair-usage-policy/" &&
         location.pathname !== "/contact-us/" && <ChatNow />}
-        {/* <TawkToChat/> */}
+        
       <Footer />
+      <TawkToScript/>
       
     </>
   );

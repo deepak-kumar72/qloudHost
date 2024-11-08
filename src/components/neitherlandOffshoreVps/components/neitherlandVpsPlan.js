@@ -21,11 +21,9 @@ const NeitherLandOffshoreVpsPlan = () => {
 
         <div className="text-center mt-3">
           <span className="consult">
-            Looking for more power? Check our DMCA
-            <Link to="/offshore-dedicated-servers/" className=" fw-bold">
-              Ignored OffShore Dedicated Server
-            </Link>
-            Plans
+            Looking for more power? Check our DMCA Ignored
+            <Link to="/offshore-dedicated-servers/" className=" fw-bold">  OffShore Dedicated Server
+            </Link> Plans
           </span>
         </div>
       </div>

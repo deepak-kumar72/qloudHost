@@ -754,7 +754,7 @@ grid-row-gap: 0px;
     font-size: 14px;
   }
   .start-now-btn {
-    padding: 10px 6px;
+    padding: 6px 12px;
     margin-right: 10px !important;
   }
   .explore-btn a {
@@ -888,12 +888,6 @@ grid-row-gap: 0px;
   }
   .guarantees-box {
     padding: 10px 2px !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .qloudHost-plan {
-    width: 80%;
   }
 }
 

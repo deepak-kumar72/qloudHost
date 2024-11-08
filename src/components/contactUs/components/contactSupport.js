@@ -2,9 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
-import images from "../../../constants/images";
+
+
 
 const ContactSupport = () => {
+  const handleTawkToggle = (e) => {
+    e.preventDefault(); // Prevents default navigation behavior
+    if (window.Tawk_API && typeof window.Tawk_API.toggle === 'function') {
+      window.Tawk_API.toggle();
+    }
+  };
   return (
     <div className="contact-banner">
       <div className="container py-5">
@@ -23,11 +30,11 @@ const ContactSupport = () => {
             
                 <p className="mb-2">
                   <FaCheck className="me-2 content-opt" /> 24*7 Support
-                </p><p className="mb-5">
-                <Link to='' className="support-mail">
+                </p><p className="mb-5 support-mail">
+                
                   <FaCheck className="me-2 " />
                   support@qloudhost.com
-                </Link></p><br/>
+               </p><br/>
 
               <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2" className="contact-link">
                 Submit Tcket
@@ -40,21 +47,21 @@ const ContactSupport = () => {
             <div className="container-fluid">
               <div className="row gy-4">
                 <div className="col-12 mb-4 d-flex">
-                <div className="email-us d-flex justify-content-between">
+                <div className="email-us d-flex justify-content-between w-100">
                   <div className="">
                     <h4>Sales</h4>
-                    <p className="mb-2">
-                    <Link to="Support@qloudhost.com" className="support-mail">
+                    <p className="mb-2 support-mail">
+                    
                       support@qloudhost.com
-                    </Link></p><br/>
+                    </p><br/>
 
-                    <Link to="https://my.qloudhost.com/submitticket.php?step=2&deptid=2" className="contact-link">
-                      Submit Tcket
+                    <Link to="#" onClick={handleTawkToggle} className="contact-link">
+                      Connect with Sale #
                     </Link>
                    
                   </div>
                   <div>
-                    <img src={images.sales} alt="sales" className="w-50"/>
+                    <img src='/assets/sales.svg' alt="sales" className="w-50"/>
                   </div>
                   </div>
                 </div>
@@ -66,9 +73,10 @@ const ContactSupport = () => {
                   <div className="con-billing">
                     <h4 className="mb-4">Contact Billing</h4>
                     
-                    <Link to="" className="support-mail">
-                    support@qloudhost.com
-                    </Link>
+                    <p className="mb-2 support-mail">
+                    
+                      support@qloudhost.com
+                    </p>
                   </div>
                 </div>
 
@@ -80,7 +88,7 @@ const ContactSupport = () => {
                     <p className="mb-4">
                     Get expert support from our trained team via chat. Log in to your client area for technical help.
                     </p>
-                    <Link to="" className="contact-link">
+                    <Link to="#" onClick={handleTawkToggle} className="contact-link">
                       Live Chat
                     </Link>
                   </div>
@@ -98,11 +106,11 @@ const ContactSupport = () => {
               Looking for More
               </h3>
               <p className="">Whatever your hosting needs, we've got the perfect solution! Explore our wide range of services and plans, and kickstart your Offshore DMCA Ignored Hosting Server journey with QloudHost today!</p>
-              <Link to='' className="btn more-btn"> Get Started</Link>
+              <Link to='/about/' className="btn more-btn"> Get Started</Link>
             </div>
           </div>
           <div className="col-md-4 text-center">
-            <img src={images.lookingForMore} alt="looking more" className="w-75"/>
+            <img src='/assets/looking-for-more.svg' alt="looking more" className="w-75"/>
 
            
           </div>

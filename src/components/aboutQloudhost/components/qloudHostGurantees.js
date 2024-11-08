@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa";
 
 const data = [
   {
@@ -29,7 +30,7 @@ const QloudHostGurantees = () => {
         Boost your website performance with world-class <Link to='/offshore-dedicated-server/' className='faq-link'>offshore dedicated servers</Link> and guaranteed performance.
         </p>
 
-        <div className='row'>
+        <div className='row mb-4'>
           {data.map((service) => (
             <div key={service.id} className="col-md-4">
               <div className="card shadow-sm h-100">
@@ -44,6 +45,15 @@ const QloudHostGurantees = () => {
             </div>
           ))}
         </div>
+        <a href='/#explore'
+                 
+                  className="btn-primary  m-auto d-flex justify-content-center"
+                >
+                  <button className="btn-primary start-now-btn enterprise-btn me-3">
+                    Get Started Now
+                    <FaArrowRight className="ms-4 start-now-icon"/>
+                  </button>
+                </a>
       </div>
     </div>
   );

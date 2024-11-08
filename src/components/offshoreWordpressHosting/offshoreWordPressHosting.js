@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroComponent from '../commonComponent/heroComponent'
-import images from '../../constants/images'
 import OffWordpressPlan from './components/offshoreWordpressPlan'
 import WordpressFeatureElement from './components/wordpressFeatureElement'
 import QlodHostServices from '../commonComponent/qlodHostServices'
@@ -16,37 +15,37 @@ const options = [
 ];
 const features = [
   {
-    img: images.oneClick,
+    img: '/assets/serviceImg/one-click-installs.svg',
     title: "One-click Installs",
     description: "Easily install popular apps like WordPress, Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications.",
     link: "/read-more",
   },
   {
-    img: images.weeklyBackup1,
+    img: '/assets/serviceImg/weekly-backup_1.svg',
     title: "Weekly Backups",
     description: "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. For Shared Hosting, we provide alternate day backup for 7 Days.(Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
     link: "/read-more",
   },
   {
-    img: images.poweredByDirect,
+    img: '/assets/serviceImg/powered-by-direct-admin.svg',
     title: "Powered by DirectAdmin",
     description: "Easily manage your hosting account with our popular and powerful web hosting control panel. Enjoy user-friendly point-and-click management, updated security features, and more.",
     link: "/read-more",
   },
   {
-    img: images.uptime,
+    img: '/assets/feature/uptime.svg',
     title: "99.9% uptime guaranteed.",
     description: "Our first priority is provide you industry-leading uptime performance with our business-class hosting solutions. Get a 99.9% uptime guarantee and the peace of mind that your website will always be up and running.",
     link: "/read-more",
   },
   {
-    img: images.lightningFastStorage,
+    img: '/assets/serviceImg/lightning-fast-storage.svg',
     title: "Lightning-Fast Storage",
     description: "Experience lightning-fast data storage with our enterprise-class Nvme SSD storage arrays, which power our shared server plans for reliable performance. Enjoy fast and secure hosting with our state-of-the-art infrastructure.",
     link: "/read-more",
   },
   {
-    img: images.privacyprotection,
+    img: '/assets/serviceImg/privacy-protection_1.svg',
     title: "100% Privacy Protection",
     description: "Data privacy is paramount. Our secure servers have advanced security features to protect your website from malicious attacks. Trust us for reliable and secure web hosting solutions.",
     link: "/read-more",
@@ -89,13 +88,14 @@ const OffshoreWordPressHosting = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='WordPress Optimized Hosting '
         title="Enhanced Privacy Offshore WordPress Hosting"
         description="Whether WordPress powers your blog, web App or Business site, our Affordable 100% DMCA Ignored Offshore WordPress Hosting is fully optimised for top speed and reliability."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.wordpressHosting}
+        imageSrc='/assets/Frame/offshore-wordpress-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options} // Pass the options to the HeroComponent
       />

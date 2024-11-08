@@ -4,7 +4,6 @@ import OffShoreHostingPlan from "./components/offShoreHostingPlan";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import OffshoreFeatureElement from "./components/offshoreFeatureElement";
 import QlodHostServices from "../commonComponent/qlodHostServices";
-import images from "../../constants/images";
 import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import WebHostingGurantees from "./components/webHostingGurantees";
@@ -20,7 +19,7 @@ const options = [
 
 const features = [
   {
-    img: images.oneClick,
+    img: '/assets/serviceImg/one-click-installs.svg',
     title: "One-click Installs",
     description: (
     
@@ -31,35 +30,35 @@ const features = [
     link: "/read-more",
   },
   {
-    img: images.weeklyBackup1,
+    img: '/assets/serviceImg/weekly-backup_1.svg',
     title: "Weekly Backups",
     description:
       "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra.",
     link: "/read-more",
   },
   {
-    img: images.poweredByDirect,
+    img: '/assets/serviceImg/powered-by-direct-admin.svg',
     title: "Powered by DirectAdmin",
     description:
       "Easily manage your hosting account with our popular and powerful web hosting control panel. Enjoy user-friendly point-and-click management, updated security features, and more.",
     link: "/read-more",
   },
   {
-    img: images.uptime,
+    img: '/assets/feature/uptime.svg',
     title: "99.9% uptime guaranteed.",
     description:
       "Our first priority is provide you industry-leading uptime performance with our business-class hosting solutions. Get a 99.9% uptime guarantee and the peace of mind that your website will always be up and running",
     link: "/read-more",
   },
   {
-    img: images.lightningFastStorage,
+    img: '/assets/serviceImg/lightning-fast-storage.svg',
     title: "Lightning-Fast Storage",
     description:
       "Experience lightning-fast data storage with our enterprise-class Nvme SSD storage arrays, which power our shared server plans for reliable performance. Enjoy fast and secure hosting with our state-of-the-art infrastructure.",
     link: "/read-more",
   },
   {
-    img: images.privacyprotection,
+    img: '/assets/serviceImg/privacy-protection_1.svg',
     title: "100% Privacy Protection",
     description:
       "Data privacy is paramount. Our secure servers have advanced security features to protect your website from malicious attacks. Trust us for reliable and secure web hosting solutions.",
@@ -92,7 +91,7 @@ const faqsData = [
   {
     question: "With all these hosting plans, how do I choose the right one?",
     answer:
-      <>If you have a small website or you are just starting out, shared hosting is a good option. However, if you need more power, you may want to consider an <Link to='/offshore-vps-hosting/' className="faq-Link">offshore VPS</Link>. There are many choices available, which can be overwhelming, but we can help you find the best option for your business and website. You can speak with an expert today to get the answers you need.</>,
+      <>If you have a small website or you are just starting out, shared hosting is a good option. However, if you need more power, you may want to consider an <Link to='/offshore-vps-hosting' className="faq-link">offshore VPS</Link>. There are many choices available, which can be overwhelming, but we can help you find the best option for your business and website. You can speak with an expert today to get the answers you need.</>,
   },
   {
     question: "How Can I Upgrade My Account if I Need To?",
@@ -115,13 +114,14 @@ const OffShorewebHosting = () => {
   return (
     <div>
       <HeroComponent
+      subTitle='Buy Offshore Web Hosting'
         title="100% DMCA Cheap Offshore Web Hosting"
         description="Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands"
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc={images.webHosting}
+        imageSrc='assets/Frame/dmca-cheap-offshore-web-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
