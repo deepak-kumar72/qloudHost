@@ -2,8 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import offshoreplanData from './offshoreHostingPlanData'; // Importing your plan data
 import { FaCheck } from "react-icons/fa6";
+// import { useEffect } from 'react';
+// import { Tooltip } from "bootstrap";
 
 const OffShoreHostingPlan = () => {
+  // useEffect(() => {
+  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  //   tooltipTriggerList.forEach(tooltipTriggerEl => {
+  //     new Tooltip(tooltipTriggerEl, {
+  //       html: true, // Enable HTML content in tooltip
+  //     });
+  //   });
+  // }, []);
 
   return (
     <div className="hosting-plan mb-5" id='explore'>
@@ -32,7 +42,7 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.threeYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-5" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-4" : "card-body plan-body position-relative h-100"}`}>
                    
                       {plan.popular && (
                         <div className="qloud-popular-badge position-absolute">Best Value</div>
@@ -43,6 +53,16 @@ const OffShoreHostingPlan = () => {
                         <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
+
+                        {/* <p  className="btn d-flex tooltip-btn justify-content-center"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title={plan.tooltipContent}>
+                  <span className="blink">{plan.freeTooltip}</span>
+                  
+                </p> */}
+
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (
                             <li key={index} className="mb-2 features">
@@ -64,7 +84,7 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneYearPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-5" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card position-relative h-100 p-4" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
                         <div className="qloud-popular-badge position-absolute">Popular</div>
                       )}
@@ -96,7 +116,7 @@ const OffShoreHostingPlan = () => {
             <div className="row home-plan justify-content-center">
               {offshoreplanData.oneMonthPlans.map((plan) => (
                 <div key={plan.id} className="col-12 col-md-6 col-lg-4 mb-4 explore-plan-col">
-                  <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative p-5" : "card-body plan-body position-relative h-100"}`}>
+                  <div className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative p-4" : "card-body plan-body position-relative h-100"}`}>
                       {plan.popular && (
                         <div className=" qloud-popular-badge position-absolute">Popular</div>
                       )}

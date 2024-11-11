@@ -45,7 +45,7 @@ const QloudHostGurantees = () => {
             </div>
           ))}
         </div>
-        <a href='/#explore'
+        <Link to='/'
                  
                   className="btn-primary  m-auto d-flex justify-content-center"
                 >
@@ -53,7 +53,7 @@ const QloudHostGurantees = () => {
                     Get Started Now
                     <FaArrowRight className="ms-4 start-now-icon"/>
                   </button>
-                </a>
+                </Link>
       </div>
     </div>
   );

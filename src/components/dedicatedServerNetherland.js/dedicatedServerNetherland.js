@@ -103,7 +103,7 @@ const DedicatedServerNetherland = () => {
       <HeroComponent
       subTitle='Netherlands Offshore Dedicated Server '
         title="Cheap Netherlands Offshore dedicated Server"
-        description="Host on a powerful offshore dedicated server in the Netherlands with 99.99% uptime, full root access, low latency, Intel AMD Ryzen, top security, and multiple OS/control panel choices. Expertly assembled."
+        description="Host on a powerful offshore dedicated server in the Netherlands with 99.9% uptime, full root access, low latency, Intel AMD Ryzen, top security, and multiple OS/control panel choices. Expertly assembled."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"

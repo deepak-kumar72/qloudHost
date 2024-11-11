@@ -11,7 +11,7 @@ const MoneyBack = () => {
             <h3>14-Day Money-Back Guarantee</h3>
             <p>
               Customer satisfaction is guaranteed! Get a hassle-free refund
-              within 30 days if you’re not 100% happy with our service. Our
+              within 14 days if you’re not 100% happy with our service. Our
               seamless process ensures risk-free hosting.
             </p>
           </div>

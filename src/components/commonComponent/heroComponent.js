@@ -1,5 +1,5 @@
 import React from "react";
-import {  useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./common.css";
 import { FaArrowRight } from "react-icons/fa";
 import { LuShieldCheck } from "react-icons/lu";
@@ -12,23 +12,27 @@ const HeroComponent = ({
   title,
   description,
   button1Text,
-  // button2Text,
   imageSrc,
   button1Link,
-  // button2Link,
-  options = [], // New prop for the options
+  options = [],
 }) => {
   const location = useLocation();
+
+  const isBlackFridayPage =
+    location.pathname === "/deals/black-friday-cyber-monday-web-hosting-deals";
+
   return (
-    <div className="hero-container mt-50 mb-50">
+    <div className={`hero-container p-50 ${isBlackFridayPage ? "hero-black-friday" : ""}`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 m-auto">
             <div className="hero-content">
-            {location.pathname !== "/coupons/" && (
-            <h4 className="mb-3 hero-subTitle">
-            <MdNotificationsActive className="me-2 sub-title-icon"/>{subTitle}
-            </h4>)}
+              {location.pathname !== "/coupons/" && (
+                <h4 className="mb-3 hero-subTitle">
+                  <MdNotificationsActive className="me-2 sub-title-icon" />
+                  {subTitle}
+                </h4>
+              )}
               <h1 className="mb-4">{title}</h1>
               <p className="mb-4">{description}</p>
               <div className="hero-options-container mb-4">
@@ -51,14 +55,9 @@ const HeroComponent = ({
                 >
                   <button className="btn-primary start-now-btn me-3">
                     {button1Text}
-                    <FaArrowRight className="ms-4 start-now-icon"/>
+                    <FaArrowRight className="ms-4 start-now-icon" />
                   </button>
                 </ScrollLink>
-                {/* <Link to={button2Link} className="btn-secondary">
-                  <button className="btn-secondary explore-btn">
-                    {button2Text}
-                  </button>
-                </Link> */}
               </div>
               <div className="money-back-text">
                 <LuShieldCheck className="me-2" />

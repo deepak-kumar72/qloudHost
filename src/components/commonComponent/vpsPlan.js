@@ -2,8 +2,18 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa6";
 import vpsPlanData from './vpsPlanData'; 
+// import { useEffect } from 'react';
+// import { Tooltip } from "bootstrap";
 
 const VpsPlan = () => {
+  // useEffect(() => {
+  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  //   tooltipTriggerList.forEach(tooltipTriggerEl => {
+  //     new Tooltip(tooltipTriggerEl, {
+  //       html: true, // Enable HTML content in tooltip
+  //     });
+  //   });
+  // }, []);
     return (
         <div className="container plan-sec mt-5">
 
@@ -57,6 +67,17 @@ const VpsPlan = () => {
                   <p className="save-price mb-4">
                     Renews at {plan.yearlyPrice}
                   </p>
+
+                  {/* <p  className="btn d-flex tooltip-btn justify-content-center"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title={plan.tooltipContent}>
+                  <span className="blink">{plan.freeTooltip}</span>
+                  
+                </p> */}
+
+
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, index) => (
                       <li key={index} className="mb-2 offshoreVps-features">

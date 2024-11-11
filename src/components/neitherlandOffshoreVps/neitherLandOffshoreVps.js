@@ -86,7 +86,7 @@ const features = [
     },
     {
       question: "What is the Money-back Guarantee?",
-      answer: <>QloudHost offers a 14-day money-back guarantee for their Netherlands VPS hosting services. This means that if you are not satisfied with their service for any reason within the first 30 days of signing up, you can request a full refund of your hosting fees.<br/>
+      answer: <>QloudHost offers a 14-day money-back guarantee for their Netherlands VPS hosting services. This means that if you are not satisfied with their service for any reason within the first 14 days of signing up, you can request a full refund of your hosting fees.<br/>
       The money-back guarantee ensures that you can try out their hosting services risk-free and with complete peace of mind. If you encounter any issues or are not satisfied with their service, you can contact their <Link to='https://my.qloudhost.com/submitticket.php?step=2&deptid=2' className='faq-link'>support team</Link>  to initiate the refund process.</>
     },
     {

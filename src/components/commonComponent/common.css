@@ -1,5 +1,36 @@
+.hero-black-friday {
+  background-color: #000; /* Example: Black background */
+  color: #fff; /* Example: White text */
+}
+
+.hero-black-friday .hero-subTitle,
+.hero-black-friday h1,
+.hero-black-friday p,
+.hero-black-friday .money-back-text {
+  color: #fff; /* Ensures all text is white */
+}
+
+.hero-black-friday .hero-frame {
+  width: 80%;
+}
+
+.hero-black-friday .start-now-btn:hover{
+  border: 1px solid #f6355a;
+  background-color: #fff;
+  color: #f6355a;
+}
+
+
 .navbar-brand img{
   width: 50%;
+}
+
+.topHeader-link{
+  text-decoration: underline !important;
+}
+
+.topHeader-link:hover{
+  text-decoration: none !important;
 }
 
 .top-nav{
@@ -92,7 +123,7 @@
   margin-top: 0; /* optional, adjusts the dropdown position */
   opacity: 1;
     visibility: visible;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0px;
 }
 
@@ -106,6 +137,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #0b100d;
+  padding: 6px 30px 6px 15px;
 }
 
 .plan-body .card-title span{
@@ -119,6 +151,7 @@
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 500;
+  width: max-content;
 }
 
 .signIn-btn:hover{
@@ -523,10 +556,11 @@ color: #596780;
 
 /* Tooltip styles */
 .custom-tooltip {
-  background-color: #fff !important;
-  border: 1px solid #f6355a !important;
-  color: #f6355a !important;
-  padding: 8px;
+  background-color: #000 !important;
+  
+  color: #fff !important;
+  border-radius: 10px;
+  
 }
 
 .custom-tooltip.show {
@@ -614,7 +648,7 @@ margin: auto;
   } 
 
   .slick-next {
-    right: -35px !important;
+    right: -12px !important;
 }
   .grade-opt{
   width: 100%;

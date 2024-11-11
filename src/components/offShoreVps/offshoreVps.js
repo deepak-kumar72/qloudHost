@@ -42,7 +42,7 @@ const features = [
   },
   {
     img: '/assets/feature/uptime.svg',
-    title: "99.99% uptime guaranteed.",
+    title: "99.9% uptime guaranteed.",
     description:
       "Our first priority is to provide you services with quality that’s why our all plans come with a guaranteed uptime of 99.9%. So let your website into our safe hands and we will ensure the availability of your website on the internet.",
     link: "",

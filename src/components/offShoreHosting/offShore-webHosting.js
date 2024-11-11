@@ -121,12 +121,14 @@ const OffShorewebHosting = () => {
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
-        imageSrc='assets/Frame/dmca-cheap-offshore-web-hosting.webp'
+        imageSrc='/assets/Frame/dmca-cheap-offshore-web-hosting.webp'
         moneyBackText="14-Day Money-Back Guarantee"
         options={options}
       />
       <OffShoreHostingPlan />
-      <WebHostingGurantees subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations." />
+      <WebHostingGurantees 
+      title='QloudHost Guarantees'
+      subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations." />
       <TechnicalSpecification />
       <OffshoreFeatureElement />
       <QlodHostServices

@@ -1,3 +1,83 @@
+.tooltip_title {
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip .tooltip-inner {
+  background-color: #000;
+  text-align: left;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 10px;
+  background: #000;
+  border-radius: 0px;
+  box-shadow: 0 4px 20px -7px rgba(0,0,0,.65);
+  border-radius: 10px;
+  z-index: 10;
+  
+}
+
+.tooltip .tooltip-arrow::before {
+border-top-color: #000 !important;
+}
+
+.tooltip-Head{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.blink:hover {
+  animation: none;
+}
+.blink {
+  font-size: 18px;
+  font-weight: 700;
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.popular-card .blink {
+  color: #fff;
+}
+
+.tooltip-btn{
+  padding: 0px;
+}
+.tooltip-btn:active{
+  border: none;
+}
+/* .tooltip-btn{
+  border: 1px solid #F6355A;
+  color: #fff;
+  background-color: #F6355A;
+  width:-webkit-fill-available;
+  margin: auto;
+} */
+
+/* .popular-card .tooltip-btn{
+  background-color: #fff;
+  color: #F6355A;
+}
+
+.tooltip-btn:hover{
+  background-color: #1E2944;
+  border: 1px solid #1E2944;
+  color: #fff;
+} */
+
 .planHead-con{
     font-size: 16px;
     font-weight: 400;
@@ -295,7 +375,7 @@ padding: 10px 30px;
 
   @media(max-width:1200px){
     .card-title{
-      font-size: 22px;
+      font-size: 20px;
     }
 
     .blog-title1{

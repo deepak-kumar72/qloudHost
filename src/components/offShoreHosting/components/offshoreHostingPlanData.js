@@ -7,6 +7,8 @@ const offshoreplanData = {
       samePrice: '$3.50',
       discount: "You Save 30%",
       duration: "3 Year",
+    //   freeTooltip: "+3 Months Free",
+    // tooltipContent: `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 3 years and get an additional 3 months for Free.`,
       features: [
         "1 Website",
         "10 GB NVMe SSD",
@@ -30,6 +32,8 @@ const offshoreplanData = {
       samePrice: '$5.50',
       discount: "You Save 30%",
       duration: "3 Year",
+    //   freeTooltip: "+3 Months Free",
+    // tooltipContent: `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 3 years and get an additional 3 months for Free.`,
       features: [
         "2 Website",
         "20 GB NVMe SSD",
@@ -53,6 +57,8 @@ const offshoreplanData = {
       samePrice: '$9.09',
       discount: "You Save 30%",
       duration: "3 Year",
+    //   freeTooltip: "+3 Months Free",
+    // tooltipContent: `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 3 years and get an additional 3 months for Free.`,
       features: [
         "10 Website",
         "50 GB NVMe SSD",

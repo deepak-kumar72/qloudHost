@@ -39,12 +39,12 @@ const VpsFeatureElement = () => {
       </div>
       <div className="row align-items-center mb-5">
         <div className="col-md-6 mb-4 text-center">
-          <img src='/assets/feature/99-uptime.png' alt="99.99% Uptime Guarantee" className="img-fluid m-auto" />
+          <img src='/assets/feature/99-uptime.png' alt="99.9% Uptime Guarantee" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
-          <h2 className='w-100 mb-3'>99.99% Uptime Guarantee</h2>
+          <h2 className='w-100 mb-3'>99.9% Uptime Guarantee</h2>
           <p className="">
-          You can count on a 99.99% uptime guarantee with our high performance VPS hosting service! Our virtual private servers are equipped with top-notch SSD storage, ensuring smooth and flawless performance.
+          You can count on a 99.9% uptime guarantee with our high performance VPS hosting service! Our virtual private servers are equipped with top-notch SSD storage, ensuring smooth and flawless performance.
           </p>
           <ScrollLink to="explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">

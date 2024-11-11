@@ -37,7 +37,7 @@ const OffWordpressPlan = () => {
           {plansData.threeYearPlans.map((plan) => (
             <div
               key={plan.id}
-              className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col"
+              className="col-12 col-md-6 col-lg-4  mb-4 explore-plan-col"
             >
               <div
                 className={`${

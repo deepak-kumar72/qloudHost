@@ -31,7 +31,7 @@ const sectionsData = [
 
   const featuresData = [
     "Enterprise-Grade Infrastructure",
-    "99.99% uptime guarantee",
+    "99.9% uptime guarantee",
     "IPv4 and IPv6 connectivity",
     "Complete Privacy and Security",
     "Realtime network monitoring",

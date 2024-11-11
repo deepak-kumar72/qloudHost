@@ -8,6 +8,8 @@ const vpsPlanData ={
       price: "$18.99",
       yearlyPrice: "$18.99/mo",
       save: "Save 14%",
+    //   freeTooltip: "+1 Month Free",
+    // tooltipContent:  `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 1 year and get additional 1 Month for Free.`,
       features: [
         "2 CPU",
         "4 GB RAM",
@@ -24,6 +26,8 @@ const vpsPlanData ={
       price: "$46.99",
       yearlyPrice: "$46.99/mo",
       save: "Save 14%",
+    //   freeTooltip: "+1 Month Free",
+    // tooltipContent:  `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 1 year and get additional 1 Month for Free.`,
       features: [
         "4 CPU",
         "8 GB RAM",
@@ -41,6 +45,8 @@ const vpsPlanData ={
       price: "$55.99",
       yearlyPrice: "$55.99/mo",
       save: "Save 14%",
+    //   freeTooltip: "+1 Month Free",
+    // tooltipContent:  `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 1 year and get additional 1 Month for Free.`,
       features: [
         "6 CPU",
         "12 GB RAM",
@@ -57,6 +63,8 @@ const vpsPlanData ={
       price: "$75.99",
       yearlyPrice: "$75.99/mo",
       save: "Save 14%",
+    //   freeTooltip: "+1 Month Free",
+    // tooltipContent:  `<h5 class='tooltip-Head text-center'>Black Friday Cyber Monday Deal</h5>Signup for 1 year and get additional 1 Month for Free.`,
       features: [
         "8 CPU",
         "16 GB RAM",
@@ -152,7 +160,7 @@ threeMonthPlans:[
         "Free Control Panel*",
         "Hosted in Netherlands",
       ],
-      url: "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=annually",
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=quarterly",
     },
     {
       id: 10,
@@ -168,7 +176,7 @@ threeMonthPlans:[
         "Free Control Panel*",
         "Hosted in Netherlands",
       ],
-      url: "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=annually",
+      url: "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan&billingcycle=quarterly",
       popular: true,
     },
     {

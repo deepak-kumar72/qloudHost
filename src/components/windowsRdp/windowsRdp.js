@@ -34,7 +34,7 @@ const options = [
     },
     {img: '/assets/feature/uptime.svg',
       title: "99.9% uptime guaranteed.",
-      description: "Our first priority is to provide you with quality services, so all our plans come with a guaranteed uptime of 99.99%. So, let us take care of your website and ensure its availability on the Internet.",
+      description: "Our first priority is to provide you with quality services, so all our plans come with a guaranteed uptime of 99.9%. So, let us take care of your website and ensure its availability on the Internet.",
       link: "",
     },
     {img: '/assets/serviceImg/website-migration.svg',

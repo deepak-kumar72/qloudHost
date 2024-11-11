@@ -21,7 +21,7 @@ const plansData = {
         "Support - Chat, Ticket & Email",
         "Softaculous",
       ],
-      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter&billingcycle=triennially&currency=1",
+      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=triennially",
     },
     {
       id: 2,
@@ -89,7 +89,7 @@ const plansData = {
         "Support - Chat, Ticket & Email",
         "Softaculous",
       ],
-      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter&billingcycle=annually&currency=1",
+      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=annually",
     },
     {
       id: 5,
@@ -157,7 +157,7 @@ const plansData = {
         "Support - Chat, Ticket & Email",
         "Softaculous",
       ],
-      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter&billingcycle=monthly&currency=1",
+      url: "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=monthly",
     },
     {
       id: 8,

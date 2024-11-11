@@ -59,8 +59,8 @@ const features = [
       answer: `Offshore High performance VPS with QloudHost provides enhanced privacy, data security, and freedom from restrictive local regulations. This is ideal for hosting content that requires more flexibility in terms of legal jurisdiction and DMCA policies.`
     },
     {
-      question: "How does QloudHost ensure 99.99% uptime?",
-      answer: `We achieve 99.99% uptime through redundant infrastructure, including multiple data centers in Amsterdam, Netherlands locations, failover technology, and proactive server management to ensure that your VPS is always running smoothly.`
+      question: "How does QloudHost ensure 99.9% uptime?",
+      answer: `We achieve 99.9% uptime through redundant infrastructure, including multiple data centers in Amsterdam, Netherlands locations, failover technology, and proactive server management to ensure that your VPS is always running smoothly.`
     },
     {
       question: "Can I customize my VPS hosting plan?",
