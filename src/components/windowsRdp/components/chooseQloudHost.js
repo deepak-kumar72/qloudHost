@@ -37,7 +37,7 @@ const ChooseQloudHost = () => {
               <div className="card h-100 shadow-sm">
                 <div className='service-card d-flex p-4'>
                   <div className="mb-3  text-center me-2">
-                    <img src={service.imgUrl} alt='icon' className='streaming-image-icon'/>
+                    <img src={service.imgUrl} alt='icon' className='streaming-image-icon' />
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>

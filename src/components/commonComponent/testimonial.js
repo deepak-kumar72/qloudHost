@@ -112,7 +112,7 @@ const Testimonials = () => {
                     <div key={index} className=" ">
                         <div className="testimonial-content testimonial-card p-4">
                             <div className='d-flex mb-3'>
-                            <img src={testimonial.imgUrl} alt='' className='me-3 testimonial-img'/>
+                            <img src={testimonial.imgUrl} alt='' className='me-3 testimonial-img' />
                             <div>
                             <h3 className='testimonial-name'>{testimonial.name}</h3>
                             <p className="testimonial-role">{testimonial.role}</p>

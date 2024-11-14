@@ -17,7 +17,7 @@ const Services = ({ servicesData }) => {
               <div className="card card-banner h-100 shadow-sm">
                 <div className='service-card d-flex p-4'>
                   <div className="mb-3 w-50">
-                    <img src={service.imgUrl} alt={service.title} className=' serviceCard-img'/>
+                    <img src={service.imgUrl} alt={service.title} className=' serviceCard-img' />
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>

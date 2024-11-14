@@ -15,7 +15,7 @@ const TopHeader = () => {
         <div className="row text-center p-2 top-content">
           <span>
             <img src="/assets/fireImage.png" alt="fire" className="me-2" />
-            Limited Time Black Friday + Cyber Monday Discount: <Link to="/deals/black-friday-cyber-monday-web-hosting-deals" className="link-light">
+            Limited Time Black Friday + Cyber Monday Discount: <Link to="/deals/black-friday-cyber-monday-web-hosting-deals/" className="link-light">
             Grab Deal NOW
             </Link>{" "}
             

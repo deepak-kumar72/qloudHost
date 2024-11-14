@@ -40,6 +40,7 @@ const FeaturesYouGet = () => {
             src='/assets/vpsServer.png'
             alt="VPS Server"
             className="vps-image"
+            
           />
         </div>
       </div>

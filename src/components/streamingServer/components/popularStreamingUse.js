@@ -38,7 +38,7 @@ const PopularStreamingUse = () => {
               <div className="card h-100 shadow-sm service-card">
                 <div className=' d-flex p-4'>
                   <div className="mb-0  text-center me-3">
-                    <img src={service.imgUrl} alt='icon' className='streaming-image-icon'/>
+                    <img src={service.imgUrl} alt='icon' className='streaming-image-icon' />
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>

@@ -52,10 +52,10 @@ const OffWordpressPlan = () => {
                   )}
                   <div className="">
                     <h5 className="card-title mb-3">{plan.title}</h5>
-                    <p className="card-text plan-desc mb-2">
+                    <p className="card-text plan-desc mb-3">
                       {plan.description}
                     </p>
-                    <h3 className="card-price mb-5">
+                    <h3 className="card-price mb-3">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
                     
@@ -107,10 +107,10 @@ const OffWordpressPlan = () => {
                   )}
                   <div className="">
                     <h5 className="card-title mb-3">{plan.title}</h5>
-                    <p className="card-text plan-desc mb-2">
+                    <p className="card-text plan-desc mb-3">
                       {plan.description}
                     </p>
-                    <h3 className="card-price mb-5">
+                    <h3 className="card-price mb-3">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
                     <p className="save mb-1">{plan.save}</p>
@@ -161,10 +161,10 @@ const OffWordpressPlan = () => {
                   )}
                   <div className="">
                     <h5 className="card-title mb-3">{plan.title}</h5>
-                    <p className="card-text plan-desc mb-2">
+                    <p className="card-text plan-desc mb-3">
                       {plan.description}
                     </p>
-                    <h3 className="card-price mb-5">
+                    <h3 className="card-price mb-3">
                       {plan.price} <span className="price-unit">/month</span>
                     </h3>
                      <p className="save mb-1">{plan.save}</p>

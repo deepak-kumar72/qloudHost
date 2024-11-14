@@ -37,7 +37,7 @@ imgUrl: '/assets/icon/windows-2019.png'
           <div className="d-flex flex-column align-items-center gap-3 panel-item">
             {osOption.map((option, index) => (
               <button key={index}  size="lg" className=" os-opt">
-              <img src={option.imgUrl} alt={option.title}/>
+              <img src={option.imgUrl} alt={option.title} />
                 
               </button>
             ))}

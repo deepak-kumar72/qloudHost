@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { FaPinterest } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import './common.css';
+// import GTranslate from '../../constants/gtranslate';
 
 const Footer = () => {
   const ourServices = [
@@ -68,10 +69,10 @@ const Footer = () => {
         { name: "About QloudHost", url: "/about/" },
         { name: "Official Blog", url: "https://qloudhost.com/blog/" },
         { name: "Contact Us", url: "/contact-us/" },
-        { name: "Sitemap", url: "http://next.qloudhost.com/sitemap.xml" },
+        { name: "Sitemap", url: "https://qloudhost.com/sitemap.xml" },
         { name: "Abuse Report", url: "/report-abuse/" },
         { name: "Knowledge Base", url: "https://qloudhost.com/blog/knowledgebase/" },
-        { name: "Speed Test", url: "https://qloudhost.com/speed-test" },
+        { name: "Speed Test", url: "https://lg-nl.defaultserver.net/" },
       ],
     },
   ];
@@ -82,7 +83,7 @@ const Footer = () => {
         <div className="row">
           {/* First Column with Social Media */}
           <div className="col-md-12 col-lg-3 mb-4">
-            <img src='/assets/logo.svg' alt='logo' className='mb-4 footer-logo'/>
+            <img src='/assets/logo.svg' alt='logo' className='mb-4 footer-logo' />
             <p className='footer-con'>
               Host your website with the best Offshore hosting server at QloudHost and get full privacy assurance. We understand the value of your data privacy that’s why we provide you services with impenetrable security!
             </p>
@@ -93,8 +94,11 @@ const Footer = () => {
             <Link to='https://www.pinterest.com/qloudhost/'><FaPinterest className='social-footer-icon'/></Link>
 
             {/* <Link to=""><FaYoutube className='social-footer-icon'/></Link> */}
+            
 
             </div>
+
+           
           </div>
           <div className='col-md-12 col-lg-9'>
           <div className='container-fluid '>
@@ -108,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                 {/* <img src={maskgroup} alt='' className='me-1'/> */}
                   <Link  to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name.toUpperCase()}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -122,7 +126,7 @@ const Footer = () => {
                 <li key={index} >
                 {/* <img src={maskgroup} alt='' className='me-1'/> */}
                   <Link to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name.toUpperCase()}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -133,7 +137,7 @@ const Footer = () => {
                 <li key={index} >
                 {/* <img src={maskgroup} alt='' className='me-1'/> */}
                   <Link to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name.toUpperCase()}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -149,7 +153,7 @@ const Footer = () => {
                 <li key={index} >
                 {/* <img src={maskgroup} alt='' className='me-1 '/> */}
                   <Link to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name.toUpperCase()}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -163,7 +167,7 @@ const Footer = () => {
                 <li key={index} >
                 {/* <img src={maskgroup} alt='' className='me-1'/> */}
                   <Link to={link.url} className="text-light text-decoration-none footer-menu">
-                    {link.name.toUpperCase()}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -178,11 +182,12 @@ const Footer = () => {
       <div className='container py-3 '>
         <div className='row'>
           <div className='col-lg-6  col-6 m-auto'>
-            <span className='copyrights'>© 2024 All rights reserved</span>
+          {/* <GTranslate/> */}
+            <span className='copyrights'>© 2024 All Rights Reserved</span>
           </div>
           
           <div className='col-lg-6 col-12 pay-optionimg'>
-            <img src='/assets/pay_img.png' alt='payment_option'/>
+            <img src='/assets/pay_img.png' alt='payment_option' />
           </div>
         </div>
       </div>

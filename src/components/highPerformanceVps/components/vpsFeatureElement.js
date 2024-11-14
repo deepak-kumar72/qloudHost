@@ -9,7 +9,7 @@ const VpsFeatureElement = () => {
       {/* Privacy Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 mb-4 text-center">
-          <img src='/assets/feature/lighting-fast-loading-speed.png' alt="lightiningFast" className="img-fluid m-auto" />
+          <img src='/assets/feature/lighting-fast-loading-speed.webp' alt="lightiningFast" className="img-fluid m-auto"  />
         </div>
         <div className="col-md-6 feature-element-sec">
           <h2 className='w-100 mb-3'>
@@ -28,7 +28,7 @@ const VpsFeatureElement = () => {
       {/* Hardware Section */}
       <div className="row align-items-center mb-3">
         <div className="col-md-6 order-md-2 mb-3 text-center">
-          <img src='/assets/feature/top-notch-security.png' alt="Top-notch Security" className="img-fluid" />
+          <img src='/assets/feature/top-notch-security.webp' alt="Top-notch Security" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 privacyHardware-desc">
           <h2 className='mb-3 w-100'>Top-notch Security</h2>
@@ -39,7 +39,7 @@ const VpsFeatureElement = () => {
       </div>
       <div className="row align-items-center mb-5">
         <div className="col-md-6 mb-4 text-center">
-          <img src='/assets/feature/99-uptime.png' alt="99.9% Uptime Guarantee" className="img-fluid m-auto" />
+          <img src='/assets/feature/99-uptime.webp' alt="99.9% Uptime Guarantee" className="img-fluid m-auto" />
         </div>
         <div className="col-md-6 feature-element-sec">
           <h2 className='w-100 mb-3'>99.9% Uptime Guarantee</h2>

@@ -10,7 +10,7 @@ const OffshoreFeatureElement = () => {
         {/* Privacy Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src='/assets/feature/simple-affordable.png' alt="Simple, Affordable, Hosting You Can Trust" className="img-fluid m-auto" />
+            <img src='/assets/feature/simple-affordable.webp' alt="Simple, Affordable, Hosting You Can Trust" className="img-fluid m-auto" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2 className='w-100 mb-3'>Simple, Affordable, Hosting You Can Trust</h2>
@@ -32,7 +32,7 @@ const OffshoreFeatureElement = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src='/assets/feature/make-your-website.png' alt="Make Your Website Faster with LiteSpeed" className="img-fluid" />
+            <img src='/assets/feature/make-your-website.webp' alt="Make Your Website Faster with LiteSpeed" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className='mb-3 w-100'>Make Your Website Faster with LiteSpeed</h2>
@@ -47,7 +47,7 @@ const OffshoreFeatureElement = () => {
 
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src='/assets/feature/free-migration.png' alt="Free Migration Services" className="img-fluid m-auto" />
+            <img src='/assets/feature/free-migration.webp' alt="Free Migration Services" className="img-fluid m-auto" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2 className='w-100 mb-3'>Free Migration Services</h2>

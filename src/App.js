@@ -1,4 +1,6 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -38,6 +40,7 @@ import ScrollToTop from "./constants/scrollToTop";
 import MetaTags from "./constants/meta";
 import TawkToScript from "./constants/tawkTo";
 import Deal from "./components/eventSalePage/deal";
+
 
 
 function App() {
@@ -134,6 +137,7 @@ function AppContent() {
         
       <Footer />
       <TawkToScript/>
+      
       
     </>
   );

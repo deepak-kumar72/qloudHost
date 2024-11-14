@@ -25,7 +25,8 @@ const BlogSection = () => {
                   <img
                     src='/assets/blogImg1.jpg'
                     className="card-img-top mb-2"
-                    alt=''
+                    alt='Discover Our Blog'
+                    
                   />
                   
                 </div>
@@ -34,7 +35,7 @@ const BlogSection = () => {
               <div className="card-body blog-body">
                     <h5 className="card-title blog-title1 mb-4">How to Start a Adult Blog?</h5>
                     <p className="mb-4 blog-con">Learn how to start an adult blog, covering essential steps like choosing a niche, setting up hosting, content creation tips, SEO, and marketing strategies to build a successful adult website.</p>
-                    <Link to='https://qloudhost.com/blog/host-a-website-anonymously/'  className='start-now-btn blog-link'>Get Started <FaArrowRight className="ms-2"/></Link>
+                    <Link to='https://qloudhost.com/blog/how-to-start-an-adult-website/'  className='start-now-btn blog-link'>Get Started <FaArrowRight className="ms-2"/></Link>
                   </div>
               </div>
            
@@ -45,7 +46,8 @@ const BlogSection = () => {
                   <img
                     src='/assets/blogImg2.jpg'
                     className="card-img-top mb-2"
-                    alt=''
+                    alt='Discover Our Blog'
+                    
                   />
                   
                 </div>

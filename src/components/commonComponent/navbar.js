@@ -81,7 +81,7 @@ const Navbar = () => {
                 <li className="nav-item dropdown pe-4">
                   <Link
                     className="nav-link nav-option dropdown-toggle"
-                    to="#"
+                    to=""
                   >
                     Hosting <IoIosArrowDown className="arrow-icon"/>
                   </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li className="nav-item dropdown pe-4">
-                  <Link className="nav-link nav-option dropdown-toggle" to="#">
+                  <Link className="nav-link nav-option dropdown-toggle" to="">
                     VPS <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">

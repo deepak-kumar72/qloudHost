@@ -10,7 +10,7 @@ const VideoHostingFeatureElement = () => {
         {/* Privacy Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
-            <img src='/assets/Frame/DMCA-Offshore-video-hosting.webp' alt="Video Hosting for Business" className="img-fluid m-auto" />
+            <img src='/assets/feature/video-hosting.webp' alt="Video Hosting for Business" className="img-fluid m-auto" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2 className='w-100 mb-3'>Video Hosting for Business</h2>
@@ -29,7 +29,7 @@ const VideoHostingFeatureElement = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src='/assets/feature/high-performance.png' alt="High Performance Network" className="img-fluid" />
+            <img src='/assets/feature/high-performance.webp' alt="High Performance Network" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className='mb-3 w-100'>High Performance Network</h2>

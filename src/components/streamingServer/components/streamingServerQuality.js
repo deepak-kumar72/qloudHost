@@ -11,9 +11,10 @@ const StreamingServerQuality = () => {
         <div className="row align-items-center mb-5">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src='/assets/feature/fast-and-reliable.png'
+              src='/assets/feature/fast-and-reliable.webp'
               alt="Fast and Reliable Offshore Video Streaming Server"
               className="img-fluid m-auto"
+              
             />
           </div>
           <div className="col-md-6 feature-element-sec">
@@ -40,7 +41,7 @@ const StreamingServerQuality = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-5">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src='/assets/feature/at-qloudhost.png' alt="At QloudHost, Quality Matters" className="img-fluid" />
+            <img src='/assets/feature/at-qloudhost.webp' alt="At QloudHost, Quality Matters" className="img-fluid"  />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">At QloudHost, Quality Matters</h2>

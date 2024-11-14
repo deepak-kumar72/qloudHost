@@ -63,7 +63,7 @@ const VpsPlan = () => {
                   <h3 className="card-price vps-plan-price mb-5">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save save-badge mb-1">{plan.save}</p>
+                  <p className="save save-badge">{plan.save}</p>
                   <p className="save-price mb-4">
                     Renews at {plan.yearlyPrice}
                   </p>
@@ -121,10 +121,10 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-5">
+                  <h3 className="card-price vps-plan-price mb-3">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save save-badge mb-1">{plan.save}</p>
+                  <p className="save save-badge">{plan.save}</p>
                   <p className="save-price mb-4">
                     Renews at {plan.yearlyPrice}
                   </p>
@@ -172,10 +172,10 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-5">
+                  <h3 className="card-price vps-plan-price mb-3">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save save-badge mb-1">{plan.save}</p>
+                  <p className="save save-badge">{plan.save}</p>
                   <p className="save-price mb-4">
                    Renews at {plan.yearlyPrice}
                   </p>
@@ -221,10 +221,10 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-5">
+                  <h3 className="card-price vps-plan-price mb-3">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
-                  <p className="save save-badge mb-1">{plan.save}</p>
+                  <p className="save save-badge">{plan.save}</p>
                   <p className="save-price mb-4">
                     Renews at {plan.yearlyPrice}
                   </p>

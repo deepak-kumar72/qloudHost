@@ -7,7 +7,7 @@ const HeroSection = ({
   imageSrc,
 }) => {
   return (
-    <div className="hero-container mt-50 mb-50">
+    <div className="hero-container ">
       <div className="container">
         <div className="row">
           <div className="col-md-6 d-flex align-item-center m-auto">
@@ -24,6 +24,7 @@ const HeroSection = ({
                 src={imageSrc}
                 alt="frame"
                 className="hero-frame"
+                
               />
               
            

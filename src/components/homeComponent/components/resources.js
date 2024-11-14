@@ -15,18 +15,18 @@ const hostingPlans = [
   {
     id: 2,
     title: 'OFFSHORE WORDPRESS HOSTING',
-    price: '$3.50',
+    price: '$18.99',
     period: '/month',
-    description: 'Best & Cheap offshore hosting for bloggers, businesses, and Startups site.',
+    description: 'Fully Optimized for WordPress Offshore Hosting for top speed and cheap price',
     buttonText: 'Get started for free',
     url: "/offshore-wordpress-hosting/",
   },
   {
     id: 3,
     title: 'OFFSHORE VPS HOSTING',
-    price: '$3.50',
+    price: '$129',
     period: '/month',
-    description: 'Best & Cheap offshore hosting for bloggers, businesses, and Startups site.',
+    description: 'Robust and Flexible For large & growing Business sites with more room to Play.',
     buttonText: 'Get started for free',
     url: "/offshore-vps-hosting/",
   },
@@ -50,7 +50,7 @@ const Resources = () => {
                   {plan.price}
                   <small>{plan.period}</small>
                 </h3>
-                <p className="text-muted mb-4">One time purchase</p>
+                <p className="text-muted mb-4">Renews at Same Price</p>
                 <p className='plan-resource-desc mb-4'>{plan.description}</p>
                 <Link 
           to={plan.url}> <button className="btn w-100 start-free-btn fw-blod">

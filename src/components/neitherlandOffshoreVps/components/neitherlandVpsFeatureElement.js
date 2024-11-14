@@ -9,7 +9,7 @@ const NeitherlandVpFeatureElement = () => {
       <div className="container">
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
-            <img src='/assets/feature/on-demand-scalibility.png' alt="On-Demand Scalability" className="img-fluid" />
+            <img src='/assets/feature/on-demand-scalibility.webp' alt="On-Demand Scalability" className="img-fluid" />
           </div>
           <div className="col-md-6 feature-element-sec">
             <h2>On-Demand Scalability</h2>
@@ -37,7 +37,7 @@ const NeitherlandVpFeatureElement = () => {
 
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src='/assets/feature/migrate-fast-free.png' alt="Migrate fast" className="img-fluid" />
+            <img src='/assets/feature/migrate-fast-free.webp' alt="Migrate fast" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">Migrate fast and free</h2>

@@ -50,7 +50,7 @@ const OffShoreHostingPlan = () => {
 
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <h3 className="card-price text-center mb-3">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
 
@@ -91,7 +91,7 @@ const OffShoreHostingPlan = () => {
                     
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <h3 className="card-price text-center mb-3">{plan.price} <span className="price-unit">/mo</span></h3>
                         <p className="save">{plan.discount}</p>
                         <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
                         <ul className="list-unstyled mb-4">
@@ -122,8 +122,8 @@ const OffShoreHostingPlan = () => {
                       )}
                         <h5 className="card-title text-center mb-3">{plan.name}</h5>
                         <h3 className='text-center starting-at'>Starting At</h3>
-                        <h3 className="card-price text-center mb-5">{plan.price} <span className="price-unit">/mo</span></h3>
-                        <p className="save">{plan.discount}</p>
+                        <h3 className="card-price text-center mb-3">{plan.price} <span className="price-unit">/mo</span></h3>
+                        <p className="save web-save-badge">{plan.discount}</p>
                         <p class="save-price mb-3">Renews at {plan.samePrice}/mo</p>
                         <ul className="list-unstyled mb-4">
                           {plan.features.map((feature, index) => (

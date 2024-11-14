@@ -61,7 +61,7 @@ const ContactSupport = () => {
                    
                   </div>
                   <div>
-                    <img src='/assets/sales.svg' alt="sales" className="w-50"/>
+                    <img src='/assets/sales.svg' alt="sales" className="w-50" />
                   </div>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const ContactSupport = () => {
             </div>
           </div>
           <div className="col-md-4 text-center">
-            <img src='/assets/looking-for-more.svg' alt="looking more" className="w-75"/>
+            <img src='/assets/looking-for-more.svg' alt="looking more" className="w-75" />
 
            
           </div>

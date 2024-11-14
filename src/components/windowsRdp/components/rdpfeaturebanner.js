@@ -39,6 +39,7 @@ const RdpFeatureBanner = () => {
             src='/assets/windows-vps.png'
             alt="window Vps"
             className="vps-image"
+            
           />
         </div>
       </div>

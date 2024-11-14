@@ -90,6 +90,13 @@
 
 @media(min-width:1200px){
   .streaming-plan{
-    width: 75%;
+    width: 85%;
   }
+}
+
+@media(max-width:425px){
+  .streaming-server-feature {
+    grid-template-columns: repeat(1, 1fr);
+
+}
 }

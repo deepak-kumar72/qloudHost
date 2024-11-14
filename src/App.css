@@ -5,6 +5,7 @@ body {
   margin: 0px;
 }
 
+
 * {
   /* font-family: Plus Jakarta Sans; */
   /* font-family: "Inter", sans-serif; */
@@ -45,20 +46,24 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 800;
   line-height: 55px;
   color: #0b100d;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 800;
   color: #0b100d;
 }
 
+.option-item{
+  font-size: 18px;
+}
+
 .hero-content p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   color: #3a3a3a;
@@ -66,11 +71,13 @@ h2 {
 
 .start-now-btn {
   background: #f6355a;
-  padding: 12px 18px;
+  padding: 12px 16px;
   border: 1px solid #f6355a;
   border-radius: 10px;
   color: #fff;
   transition: background-color 0.9s ease, border-color 0.9s ease;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .start-now-icon{
@@ -93,7 +100,7 @@ h2 {
 }
 
 .start-now-btn a {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -112,7 +119,7 @@ h2 {
   color: #f6355a;
 }
 .explore-btn a {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #0b100d;
   text-decoration: none;
@@ -120,7 +127,7 @@ h2 {
 
 .money-back-text {
   font-family: DM Sans;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #f6355a;
 }
@@ -138,7 +145,7 @@ h2 {
 .plan-body {
   border: 1px solid #f1f1f1;
   box-shadow: -4px 4px 30px 0px #0000000a;
-  padding: 30px;
+  padding: 35px;
   border-radius: 10px;
   height: 100%;
   transition: 0.4s;
@@ -165,7 +172,7 @@ h2 {
 }
 
 .qloudHostPlan-features {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -176,21 +183,23 @@ h2 {
 }
 
 .save {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   border: 1px solid #f6355a;
   position: absolute;
-  left: 0px;
-  top: 150px;
-  border-radius: 0px 30px 30px 0px;
+  right: -49px;
+  top: 78px;
+  border-radius: 10px 10px 0px 0px;
   padding: 3px 25px;
   background-color: #f6355a;
   color: #fff;
+  transform: rotate(-90deg);
 
 }
 
 .save-badge{
-  top:118px;
+  top:116px;
+  right: -46px;
 }
 
 .save-price {
@@ -203,10 +212,13 @@ h2 {
 .save-popular{
   background-color: #fff;
   color: #f6355a !important;
-  border: 1px solid #fff;
+  border: 1px solid #f6355a;
+  right: -47px;
 }
 .dedicated-save-badge{
-  top: 116px;
+  top: 100px;
+  right: -47px;
+ 
 }
 
 .features {
@@ -222,23 +234,25 @@ h2 {
 
 .plan-btn {
   width: 100%;
-  padding: 12px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 37px;
-  background: #f6355a;
-  border: 1px solid #f6355a;
+  background: #1E2944;
+  border: 1px solid #1E2944;
   color: #fff;
 }
 
 .plan-btn:hover {
-  background-color: #1E2944;
-  border: 1px solid #1E2944;
+  background-color: #f6355a;
+  border: 1px solid #f6355a;
   color: #fff;
 }
 
 .plan-btn a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -256,7 +270,7 @@ h2 {
   border-radius: 55px 0pc 108px 55px;
   padding: 10px 20px;
   width: 208px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   text-align: left;
   color: #fff;
@@ -323,13 +337,13 @@ width: 30%;
 }
 
 .service-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 26px;
 }
 
 .service-text {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
@@ -338,7 +352,7 @@ width: 30%;
   text-decoration: none;
   color: #f6355a;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   z-index: 10;
   position: relative;
@@ -349,7 +363,7 @@ width: 30%;
 }
 
 .sub-heading {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   color: #596780;
@@ -440,7 +454,7 @@ color: #000 !important;
 }
 
 .affordable-card-desc {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
@@ -451,19 +465,19 @@ color: #000 !important;
   text-decoration: none;
 }
 .top-feature {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: #144229;
+  color: #0D121F;
 }
 
 .gurantee-seprator {
   border: 1px solid #f6355a;
-  height: 160px;
+  height: 180px;
   margin: auto;
 }
 
 .wordpress-features {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .qloudHost-plan-body {
@@ -527,20 +541,20 @@ color: #000 !important;
 .hero-subTitle {
   font-size: 15px;
   font-weight: 700;
-  color: #616365;
+  color: #3a3a3a;
 }
 
 .content-sec p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  color: #616365;
+  color: #3a3a3a;
   line-height: 22px;
 }
 
 .content-sec-list {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  color: #616365;
+  color: #3a3a3a;
   line-height: 22px;
   list-style: none;
   padding: 0px;
@@ -571,7 +585,7 @@ color: #000 !important;
 }
 
 .content-sec h5 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #000;
   margin: 20px 0px;
@@ -584,9 +598,9 @@ color: #000 !important;
 }
 
 .about-sec p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  color: #616365;
+  color: #3a3a3a;
   line-height: 20px;
 }
 
@@ -637,7 +651,7 @@ color: #000 !important;
 
 .feature-element-sec p {
   font-family: Poppins;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24.4px;
   color: #0d121f;
@@ -656,13 +670,13 @@ color: #000 !important;
 }
 
 .about-gurantee p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .table-responsive td {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -734,6 +748,10 @@ grid-row-gap: 0px;
   color: #fff;
 }
 
+.web-save-badge{
+  right: -64px;
+}
+
 .qloudDeal-btn:hover{
   background-color: #fff;
   color: #000;
@@ -772,7 +790,7 @@ grid-row-gap: 0px;
     text-align: left;
     padding: px;
     border-width: 1px !important;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 20px;
   }
@@ -792,18 +810,18 @@ grid-row-gap: 0px;
     line-height: 40px;
   }
   .hero-content p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .start-now-btn a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .start-now-btn {
-    padding: 6px 12px;
+    padding: 10px 12px;
     margin-right: 10px !important;
   }
   .explore-btn a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .explore-btn {
     padding: 10px 6px;
@@ -833,6 +851,13 @@ grid-row-gap: 0px;
 }
 
 @media (max-width: 767px) {
+  .card-title {
+    font-size: 24px;
+}
+
+.card-price {
+  font-size: 32px;
+}
   .mt-50 {
     margin-top: 30px;
   }
@@ -855,12 +880,16 @@ grid-row-gap: 0px;
     text-align: center;
   }
 
+  .planHead-con {
+    font-size: 18px !important;
+}
+
   h2 {
-    font-size: 22px;
+    font-size: 26px;
     width: 100% !important;
   }
   .sub-heading {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     width: 100% !important;
     margin-bottom: 2rem !important;
@@ -893,7 +922,7 @@ grid-row-gap: 0px;
   }
 
   .service-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .content-sec {
@@ -907,7 +936,7 @@ grid-row-gap: 0px;
   }
 
   .option-item span {
-    font-size: 14px;
+    font-size: 16px;
   }
   .plan-group-btn {
     width: 100% !important;

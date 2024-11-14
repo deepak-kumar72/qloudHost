@@ -50,7 +50,7 @@ const QloudHostFeatures = () => {
     {qloudFeature.map((feature)=>(
     <div key={feature.id} className='col-12 col-md-6 col-lg-4'>
     <div className='feature-card'>
-        <img src={feature.imgsrc} alt={feature.title} className='mb-4'/>
+        <img src={feature.imgsrc} alt={feature.title} className='mb-4' />
         <h3 className='mb-3'>{feature.title}</h3>
         <span className='mb-3'>{feature.description}</span>
         </div>

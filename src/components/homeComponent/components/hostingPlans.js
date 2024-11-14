@@ -29,7 +29,7 @@ const plansData = [
   {
     id: 2,
     title: "VPS",
-    description: "The perfect pairing of power and resources.",
+    description: "Perfect power and resources pair.",
     price: "$18.99",
     save: "SAVE 14%",
     // freeTooltip: "+1 Month Free",
@@ -99,16 +99,16 @@ const HostingPlans = () => {
                 {plan.popular && (
                   <div className="popular-badge position-absolute">Popular</div>
                 )}
-                <h5 className="card-title mb-3">
+                <h5 className="card-title mb-4">
                   OFFSHORE <span>{plan.title}</span>
                 </h5>
-                <p className="card-text plan-desc mb-2">{plan.description}</p>
-                <h3 className="card-price mb-5">
+                <p className="card-text plan-desc mb-3">{plan.description}</p>
+                <h3 className="card-price mb-4">
                   {plan.price} <span className="price-unit">/month</span>
                 </h3>
                 <p className={`${
                   plan.popular
-                    ? "save save-popular save-popular"
+                    ? "save save-popular save-popular-badge"
                     : "save save-home-plan"
                 }`}>{plan.save}</p>
                 {/* {plan.title !== "DEDICATED" && (
@@ -124,7 +124,7 @@ const HostingPlans = () => {
                 <h4 className='mb-3 top-specification'>Specifications</h4>
                 <ul className="list-unstyled mb-4">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="mb-2 features">
+                    <li key={index} className="mb-3 features">
                       <i className="bi bi-check-circle-fill"></i>
                       <FaCheck className="check" /> {feature}
                     </li>
@@ -143,7 +143,7 @@ const HostingPlans = () => {
             Not sure which Offshore DMCA Ignored hosting plan is right for you?
             We can help.{" "}
             <Link to="/contact-us/" className="fw-bold">
-              GET FREE CONSULTATION
+              GET FREE CONSULTATION NOW
             </Link>
           </span>
         </div>

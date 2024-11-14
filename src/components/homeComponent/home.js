@@ -158,7 +158,7 @@ const Home = () => {
       <HeroComponent
       subTitle='#1 DMCA Ignored Hosting '
         title="Powerful Secure & Best DMCA Ignored Hosting"
-        description="Get the Best for your website with QloudHost’s DMCA Ignored hosting packages. Join over 3000+ customers who rely on us for a robust offshore DMCA Ignored server foundation."
+        description="Get the Best for your website with QloudHost’s DMCA Ignored hosting packages. Join over 5000+ customers who rely on us for a robust offshore DMCA Ignored server foundation."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"

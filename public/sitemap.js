@@ -4,7 +4,7 @@ const { createWriteStream } = require('fs');
 const path = require('path');
 
 // Define the base URL for your site
-const BASE_URL = 'http://next.qloudhost.com';
+const BASE_URL = 'https://qloudhost.com';
 
 // Define all the paths you want to include in the sitemap
 const pages = [

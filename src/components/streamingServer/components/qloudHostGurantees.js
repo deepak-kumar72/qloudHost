@@ -11,7 +11,7 @@ function Guarantees({subHeading}) {
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src='/assets/feature/ssd.svg' alt="SSD Icon"  className='qloudGurantee-img'/>
+                <img src='/assets/feature/ssd.svg' alt="SSD Icon"  className='qloudGurantee-img' />
               </div>
               <h5>Fastest NVMe SSD</h5>
               <p>
@@ -24,7 +24,7 @@ function Guarantees({subHeading}) {
           <div className="col-md-4 mb-4 mb-md-0 guarantee-item d-flex">
             <div className="p-3">
               <div className="icon mb-3">
-                <img src='/assets/icon/netherlands.svg' alt="Netherlands Icon" className='qloudGurantee-img'/>
+                <img src='/assets/icon/netherlands.svg' alt="Netherlands Icon" className='qloudGurantee-img' />
               </div>
               <h5>Hosted in Netherlands</h5>
               <p>
@@ -38,7 +38,7 @@ function Guarantees({subHeading}) {
             <div className="vertical-divider"></div>
             <div className="p-3">
               <div className="icon mb-3">
-                <img src='/assets/serviceImg/support.svg' alt="Support Icon" className='qloudGurantee-img'/>
+                <img src='/assets/serviceImg/support.svg' alt="Support Icon" className='qloudGurantee-img' />
               </div>
               <h5>24/7 Support</h5>
               <p>

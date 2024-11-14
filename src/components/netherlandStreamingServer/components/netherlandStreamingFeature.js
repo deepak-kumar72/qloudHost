@@ -11,9 +11,10 @@ const NetherLandStreamingFeature = () => {
         <div className="row align-items-center mb-3">
           <div className="col-md-6 mb-4 text-center">
             <img
-              src='/assets/feature/netherlands-streaming-server.png'
+              src='/assets/feature/netherlands-streaming-server.webp'
               alt="Guaranteed protection in the Netherlands"
               className="img-fluid m-auto"
+              
             />
           </div>
           <div className="col-md-6 feature-element-sec">
@@ -42,7 +43,7 @@ const NetherLandStreamingFeature = () => {
         {/* Hardware Section */}
         <div className="row align-items-center mb-3">
           <div className="col-md-6 order-md-2 mb-3 text-center">
-            <img src='/assets/feature/netherlands-streaming-server-02.png' alt="DMCA Ignored Streaming Server" className="img-fluid" />
+            <img src='/assets/feature/netherlands-streaming-server-02.webp' alt="DMCA Ignored Streaming Server" className="img-fluid" />
           </div>
           <div className="col-md-6 order-md-1 feature-element-sec">
             <h2 className="mb-3 w-100">DMCA Ignored Streaming Server</h2>

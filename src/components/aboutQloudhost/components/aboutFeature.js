@@ -9,7 +9,7 @@ const AboutFeatures= () => {
       
         <div className="row align-items-center mb-5">
           <div className="col-md-6 text-center">
-            <img src='/assets/feature/about-2.png' alt="" className="img-fluid" />
+            <img src='/assets/feature/about-2.webp' alt="" className="img-fluid" />
           </div>
           <div className="col-md-6  about-sec">
           <h2 className="">Hosting that Respects Your Privacy!</h2>

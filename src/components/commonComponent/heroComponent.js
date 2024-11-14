@@ -19,7 +19,7 @@ const HeroComponent = ({
   const location = useLocation();
 
   const isBlackFridayPage =
-    location.pathname === "/deals/black-friday-cyber-monday-web-hosting-deals";
+    location.pathname === "/deals/black-friday-cyber-monday-web-hosting-deals/";
 
   return (
     <div className={`hero-container p-50 ${isBlackFridayPage ? "hero-black-friday" : ""}`}>
@@ -67,7 +67,7 @@ const HeroComponent = ({
           </div>
           <div className="col-md-6 m-auto">
             <div className="hero-image-container position-relative text-end">
-              <img src={imageSrc} alt={title} className="hero-frame" />
+              <img src={imageSrc} alt={title} className="hero-frame"  />
               <div className="features"></div>
             </div>
           </div>
