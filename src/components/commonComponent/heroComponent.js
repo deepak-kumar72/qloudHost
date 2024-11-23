@@ -19,7 +19,7 @@ const HeroComponent = ({
   const router = useRouter(); // Use Next.js useRouter hook
 
   const isBlackFridayPage =
-    router.pathname === "/deals/black-friday-cyber-monday-web-hosting-deals/";
+    router.pathname === "/deals/black-friday-cyber-monday-web-hosting-deals";
 
   return (
     <div className={`hero-container p-50 ${isBlackFridayPage ? "hero-black-friday" : ""}`}>

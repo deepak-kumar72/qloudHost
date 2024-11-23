@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import vpsPlanData from './vpsPlanData'; 
 // import { useEffect } from 'react';
@@ -86,7 +86,7 @@ const VpsPlan = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={plan.url}>
+                  <Link href={plan.url}>
                     <button className="plan-btn vps-plan-btn">Get Started</button>
                   </Link>
                 </div>
@@ -136,7 +136,7 @@ const VpsPlan = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={plan.url}>
+                  <Link href={plan.url}>
                     <button className="plan-btn vps-plan-btn">Get Started</button>
                   </Link>
                 </div>
@@ -187,7 +187,7 @@ const VpsPlan = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={plan.url}>
+                  <Link href={plan.url}>
                     <button className="plan-btn vps-plan-btn">Get Started</button>
                   </Link>
                 </div>
@@ -236,7 +236,7 @@ const VpsPlan = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={plan.url}>
+                  <Link href={plan.url}>
                     <button className="plan-btn vps-plan-btn">Get Started</button>
                   </Link>
                 </div>

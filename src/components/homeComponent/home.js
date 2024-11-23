@@ -9,7 +9,7 @@ import Services from "../homeComponent/components/services";
 import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
-// import Testimonials from "../commonComponent/testimonial";
+import Testimonials from "../commonComponent/testimonial";
 import Link from "next/link";
 
 const options = [
@@ -202,7 +202,7 @@ const Home = () => {
       <Services servicesData={servicesData1} />;
       <BlogSection />
       <Resources />
-      {/* <Testimonials /> */}
+      <Testimonials />
 
       
       

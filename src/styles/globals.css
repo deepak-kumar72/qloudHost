@@ -25,6 +25,15 @@
   src: url('../pages/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../pages/fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
 
 *,
@@ -1363,7 +1372,6 @@ font-weight: 400;
   background: #fff7f7;
   margin-right: 20px;
   border-radius: 30px;
-  height: 250px;
   margin: 0px 20px;
 }
 
@@ -2284,6 +2292,337 @@ padding: 10px 30px;
 
 
 
+  /* streamingcss */
+
+
+  .best-streaming {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #289e0a;
+  }
+  
+  .streaming-server-feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .streaming-badge {
+    background-color: #f6355a;
+    color: #fff;
+  }
+  
+  .streaming-image-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .custom-sol {
+    background-color: #f6355a;
+  }
+  .customSol-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #fff;
+  }
+  .customSol-text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #fff;
+  }
+  
+  .custom-sol-btn {
+    background-color: #fff;
+    color: #f6355a;
+  }
+  
+  .guarantees-box{
+      border: 1px solid #f6355a;
+      border-radius: 35px !important;
+      padding: 12px;
+  }
+  
+  .service-card{
+    transition: 0.4s;
+  }
+  
+  .service-card:hover{
+    transform: scale(1.03);
+  }
+  
+  .streaming-features{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .qloud-plan-body {
+      padding: 10px;
+    }
+    .qloudHostPlan-features {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .customSol-text {
+      text-align: center;
+    }
+    .customSol-text h3 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    .customSol-text p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  
+  @media(min-width:1200px){
+    .streaming-plan{
+      width: 85%;
+    }
+  }
+  
+  @media(max-width:425px){
+    .streaming-server-feature {
+      grid-template-columns: repeat(1, 1fr);
+  
+  }
+  }
+
+
+  /* contactus */
+
+  .contact-section h5{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+.contact-icon{
+    background: #f6355a;
+    color: #fff;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+}
+
+.contact-section h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-section p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-section h3 a{
+    margin-left: 5px;
+    color: #f6355a;
+}
+
+
+
+.contact-section h3 a:hover{
+    font-weight: 700;
+}
+
+.intro-offer{
+    background-color: #f6355a;
+
+}
+
+.contactSec-btn{
+    border: 1px solid #f6355a;
+    background-color: #fff;
+    color: #f6355a;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.contactSec-btn:hover{
+    background-color: #1E2944;
+    color: #fff;
+}
+
+.signupBanner{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro{
+    font-size: 24px;
+}
+.intro-price{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.con-support{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.email-us{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.con-billing{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.live-chat{
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.support-icon{
+    font-size: 50px;
+    margin-bottom: 12px;
+    color: #f6355a;
+}
+
+.contact-link{
+    border: 1px solid #f6355a;
+    background-color: #f6355a;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 10px;
+
+    margin: 10px 0px;
+}
+
+.contact-container{
+    width: 85%;
+}
+
+.support-mail{
+    color: #f6355a;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.looking-more{
+    width: 85%;
+    margin: auto;
+    border: 1px solid #fff7f7;
+    background-color: #fff7f7;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.more-btn{
+    background-color: #f6355a !important;
+    color: #fff;
+
+}
+
+.more-btn:hover{
+    background-color: #fff !important;
+    color: #f6355a;
+    border: 1px solid #f6355a;
+}
+
+@media(max-width:767px){
+    .contact-container{
+        width: 100%;
+    }
+}
+
+
+
+/* coupon */
+
+
+.coupon-card{
+  border: 1px solid #EBEEF2
+}
+
+.coupon-code-sec{
+  background-color: #FFF7F7;
+  padding: 37px 10px;
+  text-align: center;
+}
+
+.coupon-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.coupon-subtitle{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card-description{
+  color: #616365;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.discount-badge{
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #F6355A;
+  display: block;
+  background: #fff;
+  padding: 14px;
+}
+
+.coupon-btn{
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #F6355A;
+  border:  1px solid #F6355A;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.coupon-btn:hover{
+  background-color: #1E2944;
+  border: 1px solid #1E2944;
+  color: #fff; 
+}
+
+@media(max-width:1200px){
+  .coupon-card{
+      width: 100% !important;
+  }
+}
+
+@media(max-width:767px){
+  .coupon-code-sec {
+      margin-bottom: 15px;
+  }
+}
+  
   
 
 

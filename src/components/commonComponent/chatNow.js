@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { FaArrowRight } from 'react-icons/fa';
 import '../commonComponent/common.css'
-import { Link as ScrollLink } from "react-scroll";
+
 
 const ChatNow = () => {
     const handleTawkToggle = (e) => {
@@ -22,15 +22,15 @@ const ChatNow = () => {
 
             </div>
             <div className='col-md-6 m-auto text-center'>
-            <Link to="#" onClick={handleTawkToggle}>
+            <Link href="#" onClick={handleTawkToggle}>
                 <button className='chat-now-btn start-now-btn me-3 '>
                     Chat Now <FaArrowRight className="ms-2" />
                
 
                 </button>
                 </Link>
-                <ScrollLink
-                  to='explore'
+                <Link
+                  href='explore'
                   smooth={true}
                   duration={200}>
                 <button className=' start-now-btn'>
@@ -38,7 +38,7 @@ const ChatNow = () => {
                     Get Started <FaArrowRight className="ms-2" />
                 
                 </button>
-                </ScrollLink>
+                </Link>
             </div>
         </div>
     </div>

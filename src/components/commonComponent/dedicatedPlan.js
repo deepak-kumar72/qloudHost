@@ -1,6 +1,6 @@
 import React from 'react'
 import dedicatedplansData from './dedicatedPlanData'
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -26,7 +26,7 @@ const DedicatedPlan = () => {
                   <p className="save-price mb-4">Renews at {plan.yearlyPrice}</p>
                   
 
-                  <Link to={plan.url} className='dedicated-plan-btn'>
+                  <Link href={plan.url} className='dedicated-plan-btn'>
                   <button className="plan-btn dedicated-plan-btn d-flex justify-content-between mb-4">
                     Buy Now<FaArrowRight className=""/>
                   </button></Link> 

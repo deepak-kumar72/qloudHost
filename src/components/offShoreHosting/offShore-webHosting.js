@@ -4,7 +4,7 @@ import OffShoreHostingPlan from "./components/offShoreHostingPlan";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import OffshoreFeatureElement from "./components/offshoreFeatureElement";
 import QlodHostServices from "../commonComponent/qlodHostServices";
-// import Testimonials from "../commonComponent/testimonial";
+import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import WebHostingGurantees from "./components/webHostingGurantees";
 import Link from "next/link";
@@ -136,7 +136,7 @@ const OffShorewebHosting = () => {
         content="Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence."
         features={features}
       />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <FAQsSection faqs={faqsData} />
     </div>
   );

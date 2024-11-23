@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import Image from "next/image";
 
 const WebsiteCover = () => {
@@ -37,7 +37,7 @@ const WebsiteCover = () => {
               <div className="card card-banner h-100 shadow-sm">
                 <div className='service-card d-flex p-3'>
                   <div className="mb-3 w-25">
-                    <Image src={service.imgUrl} alt={service.title} className='serviceCard-img' width={1000}
+                    <Image src={service.imgUrl} alt={service.title} className='serviceCard-img h-100' width={1000}
               height={1000}/>
                   </div>
                   <div>
@@ -47,7 +47,7 @@ const WebsiteCover = () => {
                     ))}
                     
                     <div>
-                      <Link to={service.buttonLink} className='btn start-now-btn start-now mt-3'>
+                      <Link href={service.buttonLink} className='btn start-now-btn start-now mt-3'>
                         {service.buttonText} <FaArrowRight className="ms-2" />
                       </Link>
                     </div>
