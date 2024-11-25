@@ -1,0 +1,85 @@
+.offshore-plan-body{
+    box-shadow: 0px 0px 24.2px 0px #00000012;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 1px solid #F1F5F9
+}
+
+.offshore-plan-body:hover{
+    transform: scale(1.03);
+    border: 1px solid #F6355A;
+    background: #fff7f7;   
+}
+.offshore-plan-body:hover .card-title{
+   color: #F6355A;
+}
+
+.card-title span{
+font-size: 28px;
+font-weight: 800;
+color: #0D121F;
+}
+
+.vps-plan-price{
+    font-size: 24px;
+    font-weight: 800;
+color: #0D121F;
+}
+
+.vps-plan-price span{
+    font-size: 22px;
+    font-weight: 500;
+    color: #596780;
+}
+
+.vps-badge{
+    background-color:  #F6355A;
+    color: #fff;
+}
+
+.offshoreVps-features{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+
+    .vps-plan-btn{
+        padding: 10px;
+    }
+
+
+    .vps-features{
+        background: #fff7f7;
+        padding: 60px 30px;
+        border-radius: 20px;
+    }
+
+    .vps-features span{
+        color: #616365;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        
+    }
+
+    .vps-image{
+        width: 75%;
+    }
+
+    .feature-head{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .vps-feature-heading{
+        font-size: 40px;
+    }
+
+    @media(max-width:786px){
+        .vps-feature-heading{
+            font-size: 30px;
+        }
+    }
+
+    

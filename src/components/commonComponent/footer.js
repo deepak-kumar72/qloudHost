@@ -93,6 +93,8 @@ const Footer = () => {
             <Link href='https://www.pinterest.com/qloudhost/'><FaPinterest className='social-footer-icon'/></Link>
 
             {/* <Link href=""><FaYoutube className='social-footer-icon'/></Link> */}
+
+            <div className="gtranslate_wrapper"></div>
             
 
             </div>
@@ -192,6 +194,22 @@ const Footer = () => {
         </div>
       </div>
       </div>
+
+      {/* <script>window.gtranslateSettings = {"default_language"="en","detect_browser_language":true,"url_structure":"sub_directory","languages":["en","de","it","es","ar","lb","ru","bg","id","nl","pt","lt","th","uk","sv","ko","tr","cs"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en"="usa"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script> */}
+
+      <Script id="gtranslate-settings">
+        {`
+          window.gtranslateSettings = {
+            default_language: "en",
+            detect_browser_language: true,
+            url_structure: "sub_directory",
+            languages: ["en","de","it","es","ar","lb","ru","bg","id","nl","pt","lt","th","uk","sv","ko","tr","cs"],
+            wrapper_selector: ".gtranslate_wrapper",
+            alt_flags: { "en": "usa" }
+          };
+        `}
+      </Script>
       
       <Script
         strategy="afterInteractive"
