@@ -201,7 +201,7 @@ const Footer = () => {
         strategy="afterInteractive"
         src="https://embed.tawk.to/638476aeb0d6371309d17453/1giumv6vm"
       />
-      <
+      <script
         dangerouslySetInnerHTML={{
           __html: `
             window.gtranslateSettings = {
@@ -214,7 +214,7 @@ const Footer = () => {
             };
           `,
         }}
-      />
+      ></script>
     </footer>
   );
 };
