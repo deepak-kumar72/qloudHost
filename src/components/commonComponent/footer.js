@@ -201,20 +201,27 @@ const Footer = () => {
         strategy="afterInteractive"
         src="https://embed.tawk.to/638476aeb0d6371309d17453/1giumv6vm"
       />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.gtranslateSettings = {
-              default_language: "en",
-              detect_browser_language: true,
-              url_structure: "sub_directory",
-              languages: ["en", "de", "it", "es", "ar", "lb", "ru", "bg", "id", "nl", "pt", "lt", "th", "uk", "sv", "ko", "tr", "cs"],
-              wrapper_selector: ".gtranslate_wrapper",
-              alt_flags: { "en": "usa" }
-            };
-          `,
-        }}
-      ></script>
+    
+            <Script id="gtranslate-settings" strategy="afterInteractive">
+                {`
+                    window.gtranslateSettings = {
+                        "default_language": "en",
+                        "detect_browser_language": true,
+                        "url_structure": "sub_directory",
+                        "languages": [
+                            "en", "de", "it", "es", "ar", "lb", "ru", 
+                            "bg", "id", "nl", "pt", "lt", "th", "uk", 
+                            "sv", "ko", "tr", "cs"
+                        ],
+                        "wrapper_selector": ".gtranslate_wrapper",
+                        "alt_flags": { "en": "usa" }
+                    };
+                `}
+            </Script>
+            <Script
+                src="https://cdn.gtranslate.net/widgets/latest/popup.js"
+                strategy="lazyOnload"
+            />
     </footer>
   );
 };
