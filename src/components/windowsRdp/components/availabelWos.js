@@ -34,11 +34,11 @@ imgUrl: '/assets/icon/windows-2019.png'
                 </button>
               </Link>
         </div>
-        <div className="col-md-5">
+        <div className="col-md-5 m-auto">
           <div className="d-flex flex-column align-items-center gap-3 panel-item">
             {osOption.map((option, index) => (
-              <button key={index}  size="lg" className=" os-opt">
-              <Image src={option.imgUrl} alt={option.title} width={1000} height={1000}/>
+              <button key={index}  size="lg" className=" os-opt w-50">
+              <Image src={option.imgUrl} alt={option.title} width={1000} height={1000} className='h-100'/>
                 
               </button>
             ))}

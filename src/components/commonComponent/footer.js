@@ -188,34 +188,33 @@ const Footer = () => {
           </div>
           
           <div className='col-lg-6 col-12 pay-optionimg'>
-            {/* <Image src='/assets/pay_img.png' alt='payment_option' width={1000}
-              height={1000}/> */}
+            <Image src='/assets/pay_img.png' alt='payment_option' width={1000}
+              height={1000} className='h-100 w-75' />
+              
           </div>
         </div>
       </div>
       </div>
 
-      {/* <script>window.gtranslateSettings = {"default_language"="en","detect_browser_language":true,"url_structure":"sub_directory","languages":["en","de","it","es","ar","lb","ru","bg","id","nl","pt","lt","th","uk","sv","ko","tr","cs"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en"="usa"}}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script> */}
 
-      <Script id="gtranslate-settings">
-        {`
-          window.gtranslateSettings = {
-            default_language: "en",
-            detect_browser_language: true,
-            url_structure: "sub_directory",
-            languages: ["en","de","it","es","ar","lb","ru","bg","id","nl","pt","lt","th","uk","sv","ko","tr","cs"],
-            wrapper_selector: ".gtranslate_wrapper",
-            alt_flags: { "en": "usa" }
-          };
-        `}
-      </Script>
-      
       <Script
         strategy="afterInteractive"
         src="https://embed.tawk.to/638476aeb0d6371309d17453/1giumv6vm"
       />
-
+      <
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.gtranslateSettings = {
+              default_language: "en",
+              detect_browser_language: true,
+              url_structure: "sub_directory",
+              languages: ["en", "de", "it", "es", "ar", "lb", "ru", "bg", "id", "nl", "pt", "lt", "th", "uk", "sv", "ko", "tr", "cs"],
+              wrapper_selector: ".gtranslate_wrapper",
+              alt_flags: { "en": "usa" }
+            };
+          `,
+        }}
+      />
     </footer>
   );
 };

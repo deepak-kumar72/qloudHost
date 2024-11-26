@@ -33,7 +33,7 @@ const HeroComponent = ({
                   {subTitle}
                 </h4>
               )}
-              <h1 className="mb-4">{title}</h1>
+              <h1 className="mb-4 ">{title}</h1>
               <p className="mb-4">{description}</p>
               <div className="hero-options-container mb-4">
                 {options.map((option, index) => (

@@ -83,6 +83,13 @@ body {
   overflow-x: clip;
 }
 
+/* .main-heading{
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: #0b100d;
+} */
+
 h1 {
   font-size: 55px;
   font-weight: 800;
@@ -2690,6 +2697,7 @@ color: #0D121F;
 
   .vps-image{
       width: 75%;
+      height: 100%;
   }
 
   .feature-head{
