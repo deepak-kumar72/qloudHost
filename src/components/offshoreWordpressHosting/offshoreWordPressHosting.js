@@ -92,7 +92,7 @@ const OffshoreWordPressHosting = () => {
         title="Buy Offshore WordPress Hosting"
         description="Whether WordPress powers your blog, web App or Business site, our Affordable 100% DMCA Ignored Offshore WordPress Hosting is fully optimised for top speed and reliability."
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/offshore-wordpress-hosting.webp'

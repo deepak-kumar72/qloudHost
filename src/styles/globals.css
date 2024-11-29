@@ -2715,7 +2715,73 @@ color: #0D121F;
       }
   }
 
+  .dedicated-plan-responsive{
+    overflow: auto;
+  }
+
   
+
+  @media(max-width:1199px){
+    .plan-table-responsive{
+      width: 1100px;
+    }
+    
+  }
+
+  .plan-table-responsive{
+    border: 1px solid #ebeef2;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+  }
+
+  .table-light{
+    border-radius: 10px;
+  }
+  .table-bordered>:not(caption)>*>* {
+     border-width: 0px;
+}
+
+.plan-table-heading{
+  font-size: 18px;
+  padding: 20px 5px !important;
+  background-color: #f6355a !important;
+  color: #fff !important;
+}
+
+th, td{
+  border: 1px solid #ebeef2;
+}
+tr:nth-child(even) {background-color: #fff7f7;}
+
+tr:hover{
+  background-color: #f8d893;
+}
+
+.setup-fees{
+  position: absolute;
+  bottom: 0px;
+  left: 112px;
+  background: #1E2944;
+  padding: 0px 8px;
+  border-radius: 10px 10px 0px 0px;
+  color: #fff;
+}
+
+.plan-table-data{
+  padding: 12px 5px !important;
+}
+
+.end-radius{
+border-radius: 0px 10px 0px 0px;
+}
+
+.start-radius{
+  border-radius: 10px 0px 0px ;
+}
+  
+.table>:not(caption)>*>* {
+  background-color: transparent;
+}
   
   
 

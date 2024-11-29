@@ -116,7 +116,7 @@ const Streaming = () => {
         title="Operating Systems"
         description="Install your desired OS in just a matter of seconds!"
         buttonText="Get Started Now"
-        url='explore'
+        url='#explore'
         panelOptions={[
           { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png'},
           { name: 'Rocky Linux', img: '/assets/icon/rockyLinux.png'},

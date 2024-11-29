@@ -118,7 +118,7 @@ const OffShorewebHosting = () => {
         title="Best Offshore Web Hosting"
         description="Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands"
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/dmca-cheap-offshore-web-hosting.webp'

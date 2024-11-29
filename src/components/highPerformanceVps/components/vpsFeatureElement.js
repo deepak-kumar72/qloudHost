@@ -18,7 +18,7 @@ const VpsFeatureElement = () => {
           <p className="">
           Speed is a simple yet powerful benefit you’ll enjoy with our high performance VPS hosting. A quick-loading website means your competitors won’t stand a chance at wooing away your potential customers.
           </p>
-          <Link href="explore" smooth={true} duration={200}>
+          <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>
@@ -47,7 +47,7 @@ const VpsFeatureElement = () => {
           <p className="">
           You can count on a 99.9% uptime guarantee with our high performance VPS hosting service! Our virtual private servers are equipped with top-notch SSD storage, ensuring smooth and flawless performance.
           </p>
-          <Link href="explore" smooth={true} duration={200}>
+          <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>

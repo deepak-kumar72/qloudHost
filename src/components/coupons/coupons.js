@@ -11,7 +11,7 @@ const Coupons = () => {
         title="QloudHost Coupon Codes and Promotions"
         description="Save big on DMCA Ignored web hosting with QloudHost! Check out our coupon codes and promotions for discounts on shared, VPS Servers. Don’t miss out – check out QloudHost today!"
         button1Text="Explore Coupons"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Coupons"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/qloudhost-coupon-codes.webp'

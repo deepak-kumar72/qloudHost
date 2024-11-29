@@ -30,7 +30,7 @@ const ChatNow = () => {
                 </button>
                 </Link>
                 <Link
-                  href='explore'
+                  href='#explore'
                   smooth={true}
                   duration={200}>
                 <button className=' start-now-btn'>

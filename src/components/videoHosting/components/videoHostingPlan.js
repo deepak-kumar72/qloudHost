@@ -4,8 +4,8 @@ import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 
 const VideoHostingPlan= () => {
   return (
-    <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5">
+    <div className=" hosting-plan mb-5">
+      <div className=" plan-sec mt-5">
       <h2 className="text-center m-auto mb-3">Best Offshore Video Hosting Plans at the Lowest Cost!</h2>
       <p className="text-center mb-5 planHead-con m-auto">Get your offshore Adult video hosting server ready at a meagre cost. No hidden charges or conditions applied!</p>
       

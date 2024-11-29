@@ -96,7 +96,7 @@ const AdultHosting = () => {
          title="High Performance Adult VPS and Dedicated Servers"
         description="Unlock 100% reliable and secure Adult Hosting in the Netherlands with 99.99% uptime and 24/7 support. Perfect for Adult Tube, Adult Streaming Websites. Host your adult website today!"
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/high-performance-adult-vps-and-dedicated-server.webp'

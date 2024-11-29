@@ -7,7 +7,7 @@ import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 const DedicatedNetherlandPlan = () => {
   return (
     <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5">
+      <div className=" plan-sec mt-5">
       <h2 className="text-center m-auto mb-3">Netherlands Offshore Dedicated Server plans</h2>
       <p className="text-center mb-5 planHead-con m-auto">Buy dedicated servers in Amsterdam, Netherlands with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance.
       </p>

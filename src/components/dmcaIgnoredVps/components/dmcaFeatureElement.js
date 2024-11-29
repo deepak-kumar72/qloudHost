@@ -29,7 +29,7 @@ const DmcaFeatureElement = () => {
               security!
             </p>
             <lLink
-              href="explore"
+              href="#explore"
               smooth={true}
               duration={200}
               className="btn-primary"
@@ -60,7 +60,7 @@ const DmcaFeatureElement = () => {
               makes any type of website compatible with the servers.
             </p>
             <Link
-              href="explore"
+              href="#explore"
               smooth={true}
               duration={200}
               className="btn-primary"

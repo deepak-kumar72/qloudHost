@@ -84,7 +84,7 @@ const HighPerformanceVps = () => {
     title="Robust High-Performance VPS Server"
         description="Experience top-tier VPS hosting with QloudHost! Enjoy AMD EPYC servers, blazing NVMe storage, and premium Amsterdam connectivity. Customize freely and boost performance. Sign up now for unbeatable speed and reliability!"
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/high-performance-vps-server.webp'
@@ -101,7 +101,8 @@ const HighPerformanceVps = () => {
         title="Available Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
-        url='explore'
+        url='
+        #explore'
         panelOptions={[
           { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png' },
           { name: 'RockyLinuc', img: '/assets/icon/rockyLinux.png'},

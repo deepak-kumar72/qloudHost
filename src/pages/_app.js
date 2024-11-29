@@ -6,6 +6,7 @@ import TopHeader from "../components/commonComponent/topHeader";
 import Navbar from "../components/commonComponent/navbar";
 import Footer from "../components/commonComponent/footer";
 import '../styles/Home.module.css'
+import MetaTags from '@/constants/meta';
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
+    <MetaTags/>
       <TopHeader />
       <Navbar />
       <div className="main-body">

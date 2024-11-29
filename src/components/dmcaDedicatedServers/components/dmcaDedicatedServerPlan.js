@@ -7,7 +7,7 @@ import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 const DmcaDedicatedPlan = () => {
   return (
     <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5">
+      <div className=" plan-sec mt-5">
       <h2 className="text-center m-auto mb-3">DMCA Ignored Dedicated Server Hosting Plans and Prices</h2>
       <p className="text-center mb-5 planHead-con m-auto">DMCA Ignored dedicated servers offer the best performance and the highest level of security for any website or application. Invest in a dedicated server with no resource sharing and experience top-notch performance at an affordable price.
       the cheapest price in the market.</p>

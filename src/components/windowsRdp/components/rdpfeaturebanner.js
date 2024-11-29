@@ -47,7 +47,7 @@ const RdpFeatureBanner = () => {
                 </div>
               ))}
               <Link
-                    href='explore'
+                    href='#explore'
                     smooth={true}
                     duration={200}
                     className="btn-primary"

@@ -40,7 +40,7 @@ const VideoHostingFeatureElement = () => {
             One more interesting aspect is low-latency, that means our servers are especially optimized to perform faster even with high-load, making us capable enough to provide maximum uptime!
             </p>
             <Link
-                  href='explore'
+                  href='#explore'
                   smooth={true}
                   duration={200}
                 >

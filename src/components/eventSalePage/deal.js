@@ -58,7 +58,7 @@ const Deal = () => {
     title="Best Black Friday Cyber Monday Deal"
         description=""
         button1Text="Get the Deal "
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/BLACK-FRIDAY.jpg'

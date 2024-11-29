@@ -126,7 +126,7 @@ const OffshoreVps = () => {
         title="Best Offshore VPS Hosting"
         description="Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times."
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/offshore-vps-hosting.webp'
@@ -142,7 +142,7 @@ const OffshoreVps = () => {
         title="Available Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
-        url="explore"
+        url="#explore"
         panelOptions={[
           { name: "AlmaLinux", img: '/assets/icon/almaLinux.png' },
           { name: "Rockey Linux", img: '/assets/icon/rockyLinux.png'},

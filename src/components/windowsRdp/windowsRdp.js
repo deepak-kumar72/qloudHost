@@ -88,7 +88,7 @@ const WindowsRdp = () => {
         title="Best Offshore Windows VPS RDP"
         description="Discover blazing-fast, secure offshore Windows VPS hosting with KVM virtualization, NVMe SSDs, and full root access. Instant RDP, seamless app performance, and 24/7 expert support—optimized for your needs."
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/robust-offshore-windows-vps-hosting.webp'

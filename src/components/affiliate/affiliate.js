@@ -86,7 +86,7 @@ const Affiliate = () => {
         title="Earn Money with QloudHost"
         description="Make extra money easily! Sign up for free and start earning by promoting us. For every client you refer, you’ll get 20% per sale! It’s a simple way to boost your income—no hassle, just rewards! Don’t miss out on this opportunity. Join now and start making money today!"
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/heroImg_affiliate.webp'

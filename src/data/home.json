@@ -1,0 +1,190 @@
+{
+    "heroComponent": {
+      "subTitle": "Buy Offshore Dedicated Server",
+      "title": "Cheap Offshore Dedicated Server",
+      "description": "Maximum power and security with 100% DMCA Ignored Offshore Dedicated Servers. Reliable and cheap, hosted in Amsterdam, Netherlands for unparalleled performance.",
+      "button1Text": "Get Started Now",
+      "button1Link": "#explore",
+      "button2Text": "Explore Features",
+      "button2Link": "",
+      "imageSrc": "/assets/Frame/cheap-offshore-dedicated-server.webp",
+      "moneyBackText": "14-Day Money-Back Guarantee",
+      "options": [
+        "Free Migration Available",
+        "Fast NVMe SSD Storage",
+        "Up to 10 Gbps Uplink Port",
+        "24/7 Technical Support"
+      ]
+    },
+    "features": [
+      {
+        "img": "/assets/feature/hosted-in-netherlands.svg",
+        "title": "Hosted in Netherlands",
+        "description": "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet. Our carefully chosen data centers in the Netherlands ensure that your site stays safe and private, while also allowing you to bypass country-specific restrictions.",
+        "link": ""
+      },
+      {
+        "img": "/assets/feature/ssd.svg",
+        "title": "Fastest SSD Servers",
+        "description": "Experience lightning-fast performance and boost your website’s rankings and conversion rates with our NVMe SSD drive storage! Rest assured, we only use top-of-the-line industry-standard equipment to power our servers, guaranteeing quality service for our valued clients.",
+        "link": ""
+      },
+      {
+        "img": "/assets/feature/free-website-migration.svg",
+        "title": "Free Website Migration",
+        "description": "If you already have a website, let us make your life easier by transferring it for free! Don’t worry if you’ve had a bad experience with your previous service provider, our dedicated team of technical experts can migrate your website to quality services without any data loss. Just ask us how!",
+        "link": ""
+      },
+      {
+        "img": "/assets/feature/money-back-guarantee.svg",
+        "title": "Money-Back Gurantee",
+        "description": "We understand how important it is to invest your hard-earned money wisely. That’s why we offer a 14-day money-back guarantee on our high-speed hosting service – so you can try it out completely risk-free! Choose us with confidence and experience the difference!",
+        "link": ""
+      },
+      {
+        "img": "/assets/feature/uptime.svg",
+        "title": "99.9% Uptime Commitment",
+        "description": "Our DMCA Ignored Hosting guarantees an impressive 99.9% uptime, thanks to our solid infrastructure & enterprise-grade servers, strict security protocols, and industry-leading hardware and software components. Trust us to meet all of your hosting needs and exceed your expectations!",
+        "link": ""
+      }
+    ],
+    "faqsData": [
+      {
+        "question": "What is DMCA ignore hosting?",
+        "answer": "DMCA ignored web hosting is especially popular when privacy and data security are concerned. It allows you to host your website with untraceable footprints and post any content (DMCA ignored content) without getting any arbitrary troubles."
+      },
+      {
+        "question": "Where are your servers based?",
+        "answer": "We have created our servers in the Netherlands to provide you with untraceable hosting services and let you enjoy your full privacy. We chose the Netherlands because it is one of the best and most popular DMCA Ignored countries."
+      },
+      {
+        "question": "Which countries follow DMCA?",
+        "answer": "Since the World Intellectual Property Organization backs DMCA, it is strictly followed in almost every country, including the USA, Europe, Japan, India, China etc. In simple words, approximately 95% of countries take DMCA law very seriously."
+      },
+      {
+        "question": "What can you host with our Offshore Hosting Services?​",
+        "answer": "Our cheapest offshore hosting plans are specially designed to protect your identity and privacy. So that you can host any DMCA ignored content on your website, and we will ensure that your identity is untraceable on the internet."
+      },
+      {
+        "question": "Which country ignores DMCA?​​",
+        "answer": "Despite DMCA being an international law, many countries do not follow it and let you create DMCA Ignored hosting servers to bypass the country-specific restrictions and host your website with untraceable footprints. Some of which are mentioned below."
+      },
+      {
+        "question": "What Are The Benefits Of DMCA Ignored Hosting?​​",
+        "answer": "DMCA ignored hosting may be the right choice for you if you’re looking for a reliable host. This type of hosting service can offer a variety of benefits that can help protect your website and ensure smooth operation. DMCA ignored VPS has one of its main benefits: it offers greater privacy and security for your site. These providers aren’t bound by the Digital Millennium Copyright Act, which means they have more flexibility and freedom in hosting content. This allows you to host any content without fear of legal consequences."
+      },
+      {
+        "question": "How do you handle DMCA complaints?​",
+        "answer": "To provide you with a Best & Cheap DMCA Ignored Server, we created offshore servers in the Netherlands to ignore all the DMCA Takedown notices against your website. In simple words, we do not take any action unless we find anything suspicious."
+      }
+    ],
+    "servicesData1": [
+      {
+        "id": 1,
+        "imgUrl": "/assets/icon/web.png",
+        "title": "New Website?",
+        "description": "Create your website, host it on our servers and scale your business to the next level with just a few clicks!",
+        "buttonText": "Get Started Now",
+        "buttonLink": "#explore",
+        "iconClass": "bi-globe"
+      },
+      {
+        "id": 2,
+        "imgUrl": "/assets/icon/migration.png",
+        "title": "Migration?",
+        "description": "Not happy with your existing service provider? Transfer your website to our quality services at no cost!",
+        "buttonText": "Get Started Now",
+        "buttonLink": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
+        "iconClass": "bi-arrow-repeat"
+      }
+    ],
+    "plansData": [
+        {
+          "id": 1,
+          "title": "SHARED",
+          "description": "Easy and affordable for website growth.",
+          "price": "$3.50",
+          "save": "SAVE 30%",
+          "features": [
+            "1 Website",
+            "1 GB RAM",
+            "10 GB NVMe SSD",
+            "150 GB Bandwidth",
+            "Direct Admin Panel"
+          ],
+          "url": "/offshore-web-hosting/",
+          "popular": false
+        },
+        {
+          "id": 2,
+          "title": "VPS",
+          "description": "Perfect power and resources pair.",
+          "price": "$18.99",
+          "save": "SAVE 14%",
+          "features": [
+            "2 CPU",
+            "4 GB RAM",
+            "50 GB NVMe SSD",
+            "1 TB Bandwidth",
+            "Free Control Panel"
+          ],
+          "url": "/offshore-vps-hosting/",
+          "popular": true
+        },
+        {
+          "id": 3,
+          "title": "DEDICATED",
+          "description": "Perfect Custom Solution for your Needs",
+          "price": "$129",
+          "save": "SAVE 19%",
+          "features": [
+            "Ryzen 9 3900X(12c/24t)",
+            "64 GB RAM DDR4",
+            "960 GB NVMe SSD",
+            "50 TB Bandwidth",
+            "1 IPv4 address"
+          ],
+          "url": "/offshore-dedicated-servers/",
+          "popular": false
+        }
+      ],
+      "featureshome": [
+        {
+          "id": 1,
+          "imgsrc": "/assets/feature/data-privacy.svg",
+          "title": "Data Privacy",
+          "description": "Your website is completely safe in our hands because we understand the value of your privacy. That’s why we use smart features to ensure that you are untraceable on the internet."
+        },
+        {
+          "id": 2,
+          "imgsrc": "/assets/feature/flexibility-of-content.svg",
+          "title": "Flexibility of Content",
+          "description": "Post as much DMCA ignored content on your website as you want without restriction or interruption from our side!"
+        },
+        {
+          "id": 3,
+          "imgsrc": "/assets/feature/antiddos-protection.svg",
+          "title": "Anti-DDoS Protection",
+          "description": "QloudHost uses Anti-DDoS equipped servers to ensure impenetrable security and maximum availability of your website on the internet."
+        },
+        {
+          "id": 4,
+          "imgsrc": "/assets/feature/full-root-access.svg",
+          "title": "Full Root Access",
+          "description": "Enjoy complete control over your server resources and customize it as per preferences without any restrictions or interruptions."
+        },
+        {
+          "id": 5,
+          "imgsrc": "/assets/feature/weekly-backup.svg",
+          "title": "Weekly Backup",
+          "description": "QloudHost has created a smart data backup feature to make your website’s data safer and more secure."
+        },
+        {
+          "id": 6,
+          "imgsrc": "/assets/feature/prioritized-support.svg",
+          "title": "Prioritized Support",
+          "description": "Get instant solutions to your problem with a dedicated team of technical experts working 24*7 to support you at every step of your journey."
+        }
+      ]
+  }
+  

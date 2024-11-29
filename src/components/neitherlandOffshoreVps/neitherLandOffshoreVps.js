@@ -105,7 +105,7 @@ const NeitherLandOffshoreVps = () => {
         title="Powerful Netherlands Offshore VPS"
         description="Affordable VPS Hosting in Amsterdam, Netherlands with Linux & Windows support. Get, sure of high-performance and incredible hosting experience with ightning-fast Server."
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/netherland-offshore-vps.webp'
@@ -121,7 +121,7 @@ const NeitherLandOffshoreVps = () => {
         title="Available Operating Systems"
         description="Work with your desired Operating system without any errors!"
         buttonText="Get Started Now"
-        url='explore'
+        url='#explore'
         panelOptions={[
           { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png' },
           { name: 'RockeyLinux', img: '/assets/icon/rockyLinux.png'},

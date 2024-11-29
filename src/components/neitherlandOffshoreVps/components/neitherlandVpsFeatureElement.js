@@ -27,7 +27,7 @@ const NeitherlandVpFeatureElement = () => {
               Offshore VPS Server. With a single click, you can <Link href='/offshore-dedicated-server/' className="faq-link">upgrade</Link>  or
               downgrade your resources at any time.
             </p>
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>
@@ -52,7 +52,7 @@ const NeitherlandVpFeatureElement = () => {
               your old web hosting, where we find your website data (website
               files or databases, emails, etc.).
             </p>
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>

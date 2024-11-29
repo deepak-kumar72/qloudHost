@@ -34,7 +34,7 @@ const NetherLandStreamingFeature = () => {
               allowing you to concentrate on your media streaming without
               concerns about the technical backend. Stream with confidence!
             </p>
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>
@@ -63,7 +63,7 @@ const NetherLandStreamingFeature = () => {
               ideal solution for all your streaming requirements.{" "}
             </p>
 
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>

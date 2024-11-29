@@ -6,7 +6,7 @@ import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 const RussiaDedicatedPlan = () => {
   return (
     <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5">
+      <div className=" plan-sec mt-5">
       <h2 className="text-center m-auto mb-3">Russia Offshore Dedicated Servers plans</h2>
       <p className="text-center mb-5 planHead-con m-auto">Buy dedicated servers in Russia with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance.
       the cheapest price in the market.</p>

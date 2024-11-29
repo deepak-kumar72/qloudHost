@@ -88,7 +88,7 @@ const NetherlandStreamingServer = () => {
         title="Netherlands Streaming Servers"
         description="Host your media or IPTV site in Amsterdam with powerful Netherlands servers. Enjoy uninterrupted streaming, 100% uptime, white label IP, and unmetered port access."
         button1Text="Get Started Now"
-        button1Link="explore"
+        button1Link="#explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/netherlands-streming-server.webp'
@@ -105,7 +105,7 @@ const NetherlandStreamingServer = () => {
         title="Operating Systems"
         description="Install your desired OS in just a matter of seconds!"
         buttonText="Get Started Now"
-        url='explore'
+        url='#explore'
         panelOptions={[
           { name: 'cPanel', img: '/assets/icon/cPanel.png' },
           { name: 'CyberPanel', img: '/assets/icon/cyberPanel.png'},

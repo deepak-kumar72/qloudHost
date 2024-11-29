@@ -28,7 +28,7 @@ const PrivacyHardwarePage = () => {
               So what are you waiting for? Get your offshore hosting today and
               protect your data privacy with industry-standard security!
             </p>
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>
@@ -55,7 +55,7 @@ const PrivacyHardwarePage = () => {
               Our servers are equipped with a multi-threaded core processor that
               makes any type of website compatible with the servers.
             </p>
-            <Link href="explore" smooth={true} duration={200}>
+            <Link href="#explore" smooth={true} duration={200}>
               <button className="btn start-now-btn mt-3">
                 Get Started Now <FaArrowRight className="ms-2" />
               </button>

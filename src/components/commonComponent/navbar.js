@@ -31,7 +31,7 @@ const Navbar = () => {
       bsOffcanvas.hide();
     }
 
-      // Manually remove the backdrop if it remains
+      
   const backdrop = document.querySelector('.offcanvas-backdrop');
   if (backdrop) {
     backdrop.remove();

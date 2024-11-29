@@ -41,7 +41,7 @@ const FeaturesYouGet = () => {
               {feature}
             </div>
           ))}
-          <Link href='explore'>
+          <Link href='#explore'>
             <button className="btn-primary start-now-btn me-3">
               Launch Your Project
               <FaArrowRight className="ms-4 start-now-icon" />

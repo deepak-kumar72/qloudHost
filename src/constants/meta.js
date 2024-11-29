@@ -1,9 +1,8 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const MetaTags = () => {
-  const location = useLocation();
+  const router = useRouter();
 
   const metaTagsData = {
     "/": {
@@ -769,7 +768,7 @@ const MetaTags = () => {
       description: "Qloudhost is focused on providing the best DMCA ignored hosting services in the market to ensure your full privacy, untraceable footprints and security.",
       keyword: "",
     },
-    "/contact-us/": {
+    "/contact-us": {
       title: "Contact-us- QloudHost",
       description: "Reach out with your questions, concerns and challenges. Or just to say hi. We’ll be happy to chat and help.",
       keyword: "",
@@ -778,20 +777,21 @@ const MetaTags = () => {
     
   };
 
-  const currentMetaTags = metaTagsData[location.pathname] || {};
+  const currentMetaTags = metaTagsData[router.pathname] || {};
 
   return (
-    <Helmet>
-    <link rel="canonical" href={`https://qloudhost.com${location.pathname}`} />
+    <Head>
+    
       <title>{currentMetaTags.title}</title>
       <meta name="description" content={currentMetaTags.description} />
       <meta name="keywords" content={currentMetaTags.keywords} />
+      <link rel="canonical" href={`https://qloudhost.com${router.pathname}`} />
       {currentMetaTags.schema && (
         <script type="application/ld+json">
           {JSON.stringify(currentMetaTags.schema)}
         </script>
       )}
-    </Helmet>
+    </Head>
   );
 };
 
