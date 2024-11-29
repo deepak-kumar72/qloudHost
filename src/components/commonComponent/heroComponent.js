@@ -6,6 +6,8 @@ import { LuShieldCheck } from "react-icons/lu";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import Link from "next/link"; 
 import { MdNotificationsActive } from "react-icons/md";
+import PropTypes from "prop-types";
+
 
 const HeroComponent = ({
   subTitle,
@@ -68,6 +70,20 @@ const HeroComponent = ({
       </div>
     </div>
   );
+};
+
+HeroComponent.propTypes = {
+  subTitle: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  primaryButtonText: PropTypes.string.isRequired,
+  primaryButtonLink: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string),
+};
+
+HeroComponent.defaultProps = {
+  options: [],
 };
 
 export default HeroComponent;
