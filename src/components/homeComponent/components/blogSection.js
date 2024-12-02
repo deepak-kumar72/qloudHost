@@ -16,6 +16,9 @@ const BlogSection = () => {
         </p>
       </header>
 
+      
+        
+  
           <div className="row mb-4">
             
               <div className="col-md-5 mb-4" >
@@ -25,8 +28,7 @@ const BlogSection = () => {
                     className="card-img-top mb-2 h-100"
                     alt='Discover Our Blog'
                     width={1000}
-              height={1000}
-                    
+                    height={1000}
                   />
                   
                 </div>
@@ -48,8 +50,7 @@ const BlogSection = () => {
                     className="card-img-top mb-2 h-100"
                     alt='Discover Our Blog'
                     width={1000}
-              height={1000}
-                    
+                    height={1000}
                   />
                   
                 </div>

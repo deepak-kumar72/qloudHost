@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaPinterest } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Script from 'next/script';
+import GTranslate from '@/constants/Gtranslate';
 
 const Footer = () => {
   const ourServices = [
@@ -94,7 +95,9 @@ const Footer = () => {
 
             {/* <Link href=""><FaYoutube className='social-footer-icon'/></Link> */}
 
-            <div className="gtranslate_wrapper"></div>
+            {/* <div className="gtranslate_wrapper"></div> */}
+
+            <GTranslate/>
             
 
             </div>
@@ -202,7 +205,7 @@ const Footer = () => {
         src="https://embed.tawk.to/638476aeb0d6371309d17453/1giumv6vm"
       />
     
-            <Script id="gtranslate-settings" strategy="afterInteractive">
+            {/* <Script id="gtranslate-settings" strategy="afterInteractive">
                 {`
                     window.gtranslateSettings = {
                         "default_language": "en",
@@ -221,7 +224,7 @@ const Footer = () => {
             <Script
                 src="https://cdn.gtranslate.net/widgets/latest/popup.js"
                 strategy="lazyOnload"
-            />
+            /> */}
     </footer>
   );
 };
