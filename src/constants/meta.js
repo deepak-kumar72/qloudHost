@@ -343,7 +343,7 @@ const MetaTags = () => {
 
 
     "/adult-hosting/": {
-      title: "Cheap Adult Web Hosting✰Buy Adult VPS,Dedicated server",
+      title: " Adult Web Hosting✰Buy Cheap Adult VPS,Dedicated server",
       description: "Buy Powerful Adult Web Hosting Plans with QloudHost. Friendly control Panel, dedicated resources, unlimited bandwidth & Expert support for your Adult Website.",
       keyword: "",
       schema:{
@@ -361,7 +361,7 @@ const MetaTags = () => {
     "url": "https://qloudhost.com/adult-hosting/",
     "priceCurrency": "USD",
     "lowPrice": "18.99",
-    "highPrice": "79.99",
+    "highPrice": "399.99",
     "offerCount": 2
   },
   "aggregateRating": {
