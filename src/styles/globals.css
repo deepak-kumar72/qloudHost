@@ -34,6 +34,19 @@
   src: url('../pages/fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+.gt_switcher-popup{
+  border: 1px solid #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    color: #000;
+}
+
+/* .gt_switcher-popup:hover{
+  background-color: #f6355a;
+  color: #fff;
+} */
+
 
 
 *,

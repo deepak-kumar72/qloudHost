@@ -13,41 +13,44 @@ const MetaTags = () => {
       schema: {
         "@context": "https://schema.org",
         "@graph": [
-          {
-            "@type": "Product",
-            "name": "DMCA Ignored Hosting",
-            "category": "Web Hosting",
-            "url": "https://qloudhost.com",
-            "image": { "@type": "ImageObject", "url": "https://qloudhost.com/assets/Frame/home-dmca-ignored-hosting.webp" },
-            "offers": {
-              "@type": "AggregateOffer",
-              "lowPrice": "3.50",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
-            },
-            "brand": { "@type": "Brand", "name": "Qloudhost" },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "ratingCount": "69",
-              "bestRating": "5",
-              "worstRating": "1.0"
-            }
-          },
-          {
-            "@type": "WebPage",
-            "breadcrumb": {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Web Hosting",
-                  "item": "https://qloudhost.com"
+          
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "DMCA IGNORED HOSTING",
+              "description": "QloudHost :heart: Offer Best DMCA Ignored Hosting Servers at Reasonable Prices to Accelerate Online Growth With 100% Privacy Protection Guaranteed and 24/7 Support.",
+              "image": "https://qloudhost.com/assets/Frame/home-dmca-ignored-hosting.webp",
+              "sku": "DMCA IGNORED HOSTING",
+              "mpn": "DMCA IGNORED HOSTING",
+              "offers": {
+                "@type": "AggregateOffer",
+                "availability": "InStock",
+                "priceValidUntil": "2025-12-31",
+                "url": "https://qloudhost.com/",
+                "priceCurrency": "USD",
+                "lowPrice": "3.50",
+                "highPrice": "399.99",
+                "offerCount": 2
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingCount": 97,
+                "ratingValue": 4.9,
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "brand": {
+                "@type": "Organization",
+                "name": "QLOUDHOST"
+              },
+              "review": {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "QloudHost"
                 }
-              ]
-            }
-          },
+              }
+            },
           {
             "@type": "ProfessionalService",
             "name": "QloudHost",
