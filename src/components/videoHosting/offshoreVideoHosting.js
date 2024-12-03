@@ -91,7 +91,7 @@ const OffshoreVideoHosting = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/DMCA-Offshore-video-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText=""
         options={options}
       />
       <VideoHostingPlan/>

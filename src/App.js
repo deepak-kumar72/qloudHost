@@ -39,7 +39,8 @@ import Contactus from "./components/contactUs/contactus";
 import ScrollToTop from "./constants/scrollToTop";
 import MetaTags from "./constants/meta";
 import TawkToScript from "./constants/tawkTo";
-import Deal from "./components/eventSalePage/deal";
+// import Deal from "./components/eventSalePage/deal";
+import FFmpegHosting from "./components/ffmpegHosting/ffmpegHosting";
 
 
 
@@ -112,7 +113,11 @@ function AppContent() {
             element={<WindowsRdp />}
           />
           <Route
-          path='/deals/black-friday-cyber-monday-web-hosting-deals' element={<Deal/>}></Route>
+            path="/ffmpeg-hosting"
+            element={<FFmpegHosting />}
+          />
+          {/* <Route
+          path='/deals/black-friday-cyber-monday-web-hosting-deals' element={<Deal/>}></Route> */}
           <Route path="/coupons/" element={<Coupons />} />
           <Route path="/affiliates/" element={<Affiliate />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />

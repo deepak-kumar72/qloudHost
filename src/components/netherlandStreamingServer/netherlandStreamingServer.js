@@ -92,7 +92,7 @@ const NetherlandStreamingServer = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/netherlands-streming-server.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText=""
         options={options} // Pass the options to the HeroComponent
       />
       <NetherLandStreamingPlan/>

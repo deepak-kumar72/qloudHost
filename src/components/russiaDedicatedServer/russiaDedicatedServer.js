@@ -109,7 +109,7 @@ const RussiaDedicatedServer = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/russia-offshore-dedicated-server.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText=""
         options={options}
       />
       <RussiaDedicatedPlan/>

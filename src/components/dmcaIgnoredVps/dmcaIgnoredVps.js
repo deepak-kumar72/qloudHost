@@ -8,6 +8,7 @@ import QlodHostServices from "../commonComponent/qlodHostServices";
 import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import WebHostingGurantees from "../offShoreHosting/components/webHostingGurantees";
+import { LuShieldCheck } from "react-icons/lu";
 
 const options = [
   "NVMe SSD Storage",
@@ -152,7 +153,11 @@ const DmcaIgnoredVps = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/dmca-ignored-vps-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
         options={options}
       />
       <DmcaIgnoredVpsPlan />

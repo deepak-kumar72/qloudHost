@@ -7,48 +7,51 @@ const MetaTags = () => {
 
   const metaTagsData = {
     "/": {
-      title: "DMCA Ignored Hosting | 100% Offshore, Cheap, Fast NVMe SSD",
+      title: "DMCA Ignored Hosting| 100% Offshore, Cheap, Fast NVMe SSD",
       description:
         "QloudHost ❤ Offer Best DMCA Ignored Hosting Servers at Reasonable Prices to Accelerate Online Growth With 100% Privacy Protection Guaranteed and 24/7 Support.",
       keywords: "",
       schema: {
         "@context": "https://schema.org",
         "@graph": [
-          {
-            "@type": "Product",
-            "name": "DMCA Ignored Hosting",
-            "category": "Web Hosting",
-            "url": "https://qloudhost.com",
-            "image": { "@type": "ImageObject", "url": "https://qloudhost.com/assets/Frame/home-dmca-ignored-hosting.webp" },
-            "offers": {
-              "@type": "AggregateOffer",
-              "lowPrice": "3.50",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
-            },
-            "brand": { "@type": "Brand", "name": "Qloudhost" },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "ratingCount": "69",
-              "bestRating": "5",
-              "worstRating": "1.0"
-            }
-          },
-          {
-            "@type": "WebPage",
-            "breadcrumb": {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Web Hosting",
-                  "item": "https://qloudhost.com"
+          
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "DMCA IGNORED HOSTING",
+              "description": "QloudHost :heart: Offer Best DMCA Ignored Hosting Servers at Reasonable Prices to Accelerate Online Growth With 100% Privacy Protection Guaranteed and 24/7 Support.",
+              "image": "https://qloudhost.com/assets/Frame/home-dmca-ignored-hosting.webp",
+              "sku": "DMCA IGNORED HOSTING",
+              "mpn": "DMCA IGNORED HOSTING",
+              "offers": {
+                "@type": "AggregateOffer",
+                "availability": "InStock",
+                "priceValidUntil": "2025-12-31",
+                "url": "https://qloudhost.com/",
+                "priceCurrency": "USD",
+                "lowPrice": "3.50",
+                "highPrice": "399.99",
+                "offerCount": 2
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingCount": 97,
+                "ratingValue": 4.9,
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "brand": {
+                "@type": "Organization",
+                "name": "QLOUDHOST"
+              },
+              "review": {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "QloudHost"
                 }
-              ]
-            }
-          },
+              }
+            },
           {
             "@type": "ProfessionalService",
             "name": "QloudHost",
@@ -215,43 +218,44 @@ const MetaTags = () => {
       title: "Buy Best Cheap Offshore Web Hosting✰100% DMCA Ignored, Secure",
       description: "Get the most out of your website with our Best Cheap offshore web hosting. Enjoy reliability & privacy with NVMe SSD, Be Always Online no matter what, Save 10% on Annual Plans.",
       keyword: "",
-      schema:  {
-      "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "OFFSHORE WEB HOSTING",
-  "description": "Get the most out of your website with our Best Cheap offshore web hosting. Enjoy reliability & privacy with NVMe SSD, Be Always Online no matter what, Save 10% on Annual Plans.",
-  "image": "https://qloudhost.com/assets/Frame/dmca-cheap-offshore-web-hosting.webp",
-  "sku": "OFFSHORE WEB HOSTING",
-  "mpn": "OFFSHORE WEB HOSTING",
-  "offers": {
-    "@type": "AggregateOffer",
-    "availability": "InStock",
-    "priceValidUntil": "2025-12-31",
-    "url": "https://qloudhost.com/offshore-web-hosting",
-    "priceCurrency": "USD",
-    "lowPrice": "3.50",
-    "highPrice": "9.09",
-    "offerCount": 2
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingCount": 79,
-    "ratingValue": 4.9,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "brand": {
-    "@type": "Organization",
-    "name": "QloudHost"
-  },
-  "review": {
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": "QloudHost"
+      schema:{
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "OFFSHORE WEB HOSTING",
+        "description": "Get the most out of your website with our Best Cheap offshore web hosting. Enjoy reliability & privacy with NVMe SSD, Be Always Online no matter what, Save 10% on Annual Plans.",
+        "image": "https://qloudhost.com/assets/Frame/dmca-cheap-offshore-web-hosting.webp",
+        "sku": "OFFSHORE WEB HOSTING",
+        "mpn": "OFFSHORE WEB HOSTING",
+        "offers": {
+          "@type": "AggregateOffer",
+          "availability": "InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://qloudhost.com/offshore-web-hosting",
+          "priceCurrency": "USD",
+          "lowPrice": "3.50",
+          "highPrice": "12.98",
+          "offerCount": 2
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingCount": 397,
+          "ratingValue": 4.9,
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "brand": {
+          "@type": "Organization",
+          "name": "QLOUDHOST"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "QloudHost"
+          }
+        }
+      
     }
-  }
-}
       }  ,
 
     "/offshore-wordpress-hosting/": {
@@ -694,7 +698,7 @@ const MetaTags = () => {
   "@type": "Product",
   "name": "OFFSHORE WINDOWS VPS RDP",
   "description": "QloudHost offers best Cheap offshore windows VPS DMCA Ignored servers with 100% privacy protection,root access, 24*7 support.",
-  "image": "https://qloudhost.com/assets/Frame/robust-offshore-windows-vps-hosting.webp",
+  "image": "https://qloudhost.com/assets/Frame/Robust-FFmpeg-Hosting.webp",
   "sku": "OFFSHORE WINDOWS VPS RDP",
   "mpn": "OFFSHORE WINDOWS VPS RDP",
   "offers": {
@@ -728,10 +732,54 @@ const MetaTags = () => {
       }
     },
 
+    "/ffmpeg-hosting":{
+      title: "Affordable FFmpeg Hosting | Fast, Secure & Scalable VPS",
+      description: "Get high-performance best FFmpeg hosting with NVMe SSDs, full root access, and instant setup. Scale your media projects effortlessly with robust security and 24/7 support.",
+      keyword: "FFmpeg hosting, web hosting with FFmpeg, FFmpeg hosting unlimited, FFmpeg web hosting, hosting with FFmpeg, FFmpeg VPS Hosting, FFmpeg Dedicated Server ",
+      schema:{
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "FFMPEG Hosting",
+        "description": "Get high-performance best FFmpeg hosting with NVMe SSDs, full root access, and instant setup. Scale your media projects effortlessly with robust security and 24/7 support.",
+        "image": "https://qloudhost.com/assets/Frame/dmca-cheap-offshore-web-hosting.webp",
+        "sku": "FFMPEG Hosting",
+        "mpn": "FFMPEG Hosting",
+        "offers": {
+          "@type": "AggregateOffer",
+          "availability": "InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://qloudhost.com/ffmpeg-hosting",
+          "priceCurrency": "USD",
+          "lowPrice": "18.99",
+          "highPrice": "79.99",
+          "offerCount": 2
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingCount": 397,
+          "ratingValue": 4.9,
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "brand": {
+          "@type": "Organization",
+          "name": "QLOUDHOST"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "QLOUDHOST"
+          }
+        }
+      }
+    },
+
     "/coupons/": {
       title: "QloudHost Coupon Codes and Promotion- Save Big on DMCA Hostings",
       description: "Save money on your DMCA offshore hosting needs with QloudHost’s exclusive coupon codes. Get access to unbeatable discounts and start saving today!",
       keyword: "",
+     
     },
 
     "/affiliates/": {

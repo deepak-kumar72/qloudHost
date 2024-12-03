@@ -9,6 +9,7 @@ import Testimonials from '../commonComponent/testimonial';
 import NeitherlandVpFeatureElement from './components/neitherlandVpsFeatureElement';
 import { Link } from 'react-router-dom';
 import QloudGuarantees from '../adultHosting/components/qloudGurantees';
+import { LuShieldCheck } from "react-icons/lu";
 
 const options = [
   "NVMe SSD Storage",
@@ -109,7 +110,11 @@ const NeitherLandOffshoreVps = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/netherland-offshore-vps.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
         options={options}
       />
       <NeitherLandOffshoreVpsPlan/>

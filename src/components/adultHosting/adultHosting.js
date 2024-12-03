@@ -11,6 +11,7 @@ import FAQsSection from '../commonComponent/faqSection';
 import AdultHostingFeatureElement from './components/AdultHostingFeatureElement';
 import { Link } from 'react-router-dom';
 import QloudGuarantees from './components/qloudGurantees';
+import { LuShieldCheck } from "react-icons/lu";
 
 const options = [
   "Dedicated IP",
@@ -100,7 +101,11 @@ const AdultHosting = () => {
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/high-performance-adult-vps-and-dedicated-server.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
          options={options} // Pass the options to the HeroComponent
       />
       <AdultHostingPlans/>

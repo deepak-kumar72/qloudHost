@@ -41,6 +41,7 @@ color: #0D121F;
 .offshoreVps-features{
         font-size: 15px;
         font-weight: 500;
+        
     }
 
     .vps-plan-btn{
@@ -49,19 +50,36 @@ color: #0D121F;
 
 
     .vps-features{
-        background: #FAFAFA;
+        background: #fff7f7;
+        padding: 60px 30px;
+        border-radius: 20px;
     }
 
     .vps-features span{
         color: #616365;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 20px;
         
     }
 
     .vps-image{
-        width: 90%;
+        width: 75%;
+    }
+
+    .feature-head{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .vps-feature-heading{
+        font-size: 40px;
+    }
+
+    @media(max-width:786px){
+        .vps-feature-heading{
+            font-size: 30px;
+        }
     }
 
     

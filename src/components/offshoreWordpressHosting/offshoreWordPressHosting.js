@@ -6,6 +6,7 @@ import QlodHostServices from '../commonComponent/qlodHostServices'
 import FAQsSection from '../commonComponent/faqSection'
 import WebHostingGurantees from '../offShoreHosting/components/webHostingGurantees'
 import { Link } from 'react-router-dom'
+import { LuShieldCheck } from "react-icons/lu";
 
 const options = [
   "Dedicated IP",
@@ -89,14 +90,18 @@ const OffshoreWordPressHosting = () => {
     <div>
       <HeroComponent
       subTitle='WordPress Optimized Hosting '
-        title="Enhanced Privacy Offshore WordPress Hosting"
+        title="Buy Offshore WordPress Hosting"
         description="Whether WordPress powers your blog, web App or Business site, our Affordable 100% DMCA Ignored Offshore WordPress Hosting is fully optimised for top speed and reliability."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/offshore-wordpress-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
         options={options} // Pass the options to the HeroComponent
       />
       <OffWordpressPlan />

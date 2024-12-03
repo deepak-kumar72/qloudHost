@@ -8,6 +8,7 @@ import QlodHostServices from '../commonComponent/qlodHostServices';
 import FAQsSection from '../commonComponent/faqSection';
 import Testimonials from '../commonComponent/testimonial';
 import RdpFeatureBanner from './components/rdpfeaturebanner';
+import { LuShieldCheck } from "react-icons/lu";
 
 const options = [
     "Netherlands Location", 
@@ -83,17 +84,21 @@ const options = [
 const WindowsRdp = () => {
   return (
     <div>
-      <HeroComponent
-      subTitle='Offshore Windows VPS RDP'
-        title="Robust Offshore Windows VPS Hosting"
+       <HeroComponent
+        subTitle="Offshore Windows VPS RDP"
+        title="Best Offshore Windows VPS RDP"
         description="Discover blazing-fast, secure offshore Windows VPS hosting with KVM virtualization, NVMe SSDs, and full root access. Instant RDP, seamless app performance, and 24/7 expert support—optimized for your needs."
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
-        button2Link="" // Link for the second button
-        imageSrc='/assets/Frame/robust-offshore-windows-vps-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
-        options={options} 
+        button2Link="" // Link for the second button,
+        imageSrc="/assets/Frame/robust-offshore-windows-vps-hosting.webp"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
+        options={options}
       />
       <WindowsRdpPlan/>
       <ChooseQloudHost/>

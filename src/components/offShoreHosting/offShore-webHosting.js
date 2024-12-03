@@ -8,6 +8,7 @@ import Testimonials from "../commonComponent/testimonial";
 import FAQsSection from "../commonComponent/faqSection";
 import WebHostingGurantees from "./components/webHostingGurantees";
 import { Link } from "react-router-dom";
+import { LuShieldCheck } from "react-icons/lu";
 
 
 const options = [
@@ -115,14 +116,18 @@ const OffShorewebHosting = () => {
     <div>
       <HeroComponent
       subTitle='Buy Offshore Web Hosting'
-        title="100% DMCA Cheap Offshore Web Hosting"
+        title="Best Offshore Web Hosting"
         description="Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands"
         button1Text="Get Started Now"
         button1Link="explore"
         button2Text="Explore Features"
         button2Link="" // Link for the second button
         imageSrc='/assets/Frame/dmca-cheap-offshore-web-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
+        moneyBackText={
+          <>
+            <LuShieldCheck className="me-2" /> 14-Day Money-Back Guarantee
+          </>
+        }
         options={options}
       />
       <OffShoreHostingPlan />

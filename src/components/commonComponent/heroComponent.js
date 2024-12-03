@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import "./common.css";
 import { FaArrowRight } from "react-icons/fa";
-import { LuShieldCheck } from "react-icons/lu";
+
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { Link as ScrollLink } from "react-scroll";
 import { MdNotificationsActive } from "react-icons/md";
@@ -14,6 +14,7 @@ const HeroComponent = ({
   button1Text,
   imageSrc,
   button1Link,
+  moneyBackText,
   options = [],
 }) => {
   const location = useLocation();
@@ -60,8 +61,8 @@ const HeroComponent = ({
                 </ScrollLink>
               </div>
               <div className="money-back-text">
-                <LuShieldCheck className="me-2" />
-                14-Day Money-Back Guarantee
+                
+                {moneyBackText}
               </div>
             </div>
           </div>

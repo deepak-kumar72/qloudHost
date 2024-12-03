@@ -86,7 +86,7 @@ const Navbar = () => {
                     Hosting <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-web-hosting"
@@ -95,7 +95,7 @@ const Navbar = () => {
                         Offshore Hosting
                       </Link>
                     </li>
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-wordpress-hosting/"
@@ -111,7 +111,7 @@ const Navbar = () => {
                     VPS <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-vps-hosting/"
@@ -120,7 +120,7 @@ const Navbar = () => {
                         Offshore VPS
                       </Link>
                     </li>
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-vps-hosting/windows-rdp/"
@@ -137,7 +137,7 @@ const Navbar = () => {
                     Server <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-dedicated-servers/"
@@ -146,7 +146,7 @@ const Navbar = () => {
                         Dedicated Server
                       </Link>
                     </li>
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-streaming-server/"
@@ -155,7 +155,7 @@ const Navbar = () => {
                         Streaming Server
                       </Link>
                     </li>
-                    <li>
+                    <li className="dropdown-option">
                       <Link
                         className="dropdown-item"
                         to="/offshore-video-hosting/"

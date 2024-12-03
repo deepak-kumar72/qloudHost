@@ -120,11 +120,11 @@
 
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0; /* optional, adjusts the dropdown position */
-  opacity: 1;
-    visibility: visible;
+  margin-top: 0; 
+overflow: hidden;
     border-radius: 8px;
     padding: 0px;
+    
 }
 
 .dropdown-item:focus, .dropdown-item:hover{
@@ -135,9 +135,9 @@
 .navbar-nav li a {
   font-family: DM Sans;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #0b100d;
-  padding: 6px 30px 6px 15px;
+  padding: 10px 30px 10px 15px;
 }
 
 .plan-body .card-title span{
@@ -844,5 +844,88 @@ grid-template-rows: repeat(5, 1fr);
     top: 57px;
 }
   
+}
+
+
+
+.dedicated-plan-responsive{
+  overflow: auto;
+}
+
+
+
+@media(max-width:1199px){
+  .plan-table-responsive{
+    width: 1100px;
+  }
+  
+}
+
+.plan-table-responsive{
+  border: 1px solid #ebeef2;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+
+.table-light{
+  border-radius: 10px;
+}
+
+.table-light tr{
+  border-width:0px;
+}
+.table-bordered>:not(caption)>*>* {
+   border-width: 0px;
+}
+
+.plan-table-heading{
+font-size: 18px;
+padding: 20px 5px !important;
+background-color: #f6355a !important;
+color: #fff !important;
+}
+
+th, td{
+border: 1px solid #ebeef2;
+}
+tr:nth-child(even) {background-color: #fff7f7;}
+
+tr:hover{
+background-color: #f8d893;
+}
+
+.setup-fees{
+position: absolute;
+bottom: 0px;
+left: 112px;
+background: #1E2944;
+padding: 0px 8px;
+border-radius: 10px 10px 0px 0px;
+color: #fff;
+}
+
+.plan-table-data{
+padding: 12px 5px !important;
+}
+
+.end-radius{
+border-radius: 0px 10px 0px 0px;
+}
+
+.start-radius{
+border-radius: 10px 0px 0px ;
+}
+
+.table>:not(caption)>*>* {
+background-color: transparent;
+}
+
+table tr td:first-child {
+  padding-left: 15px !important; /* Adjust as needed */
+}
+
+/* Add padding to the last <td> of each row */
+table tr td:last-child {
+  padding-right: 15px !important; /* Adjust as needed */
 }
 
