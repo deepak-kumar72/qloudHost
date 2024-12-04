@@ -41,7 +41,7 @@ const FFmpegTechnicalSpecification = () => {
     <div className="container-fluid mb-4">
       <div className="row justify-content-center text-center mb-4">
         <h2>Full Technical Specifications</h2>
-        <p className='sub-heading'>From professional business to enterprise, we've got you covered!</p>
+        <p className='sub-heading'>From professional business to enterprise, we&apos;ve got you covered!</p>
       </div>
 
       <div className="row">
