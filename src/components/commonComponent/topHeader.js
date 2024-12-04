@@ -11,10 +11,9 @@ const TopHeader = () => {
           <span>
             <Image  src="/assets/fireImage.png" alt="fire" className="me-2" width='15'
               height='15'/>
-            Limited Time Black Friday + Cyber Monday Discount: 
-            <Link href="/deals/black-friday-cyber-monday-web-hosting-deals/" className="link-light">
-            Grab Deal NOW
-            </Link>
+            Save 15% on Offshore DMCA Ignored VPS + 1 Month Free on Annual VPS-<Link href="/dmca-ignored-vps/" className="link-light">
+            Grab Now!
+            </Link>{" "}
             
           </span>
         </div>

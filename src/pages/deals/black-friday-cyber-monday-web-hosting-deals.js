@@ -1,10 +1,10 @@
-import Deal from '@/components/eventSalePage/deal';
+// import Deal from '@/components/eventSalePage/deal';
 import React from 'react'
 
 const DealsPage = () => {
   return (
     <div>
-      <Deal/>
+      {/* <Deal/> */}
     </div>
   )
 }

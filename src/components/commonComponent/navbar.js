@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
-// import { Offcanvas } from "bootstrap"; 
+// import { Offcanvas } from "bootstrap";
+
 
 const Navbar = () => {
 
@@ -24,19 +25,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleCloseOffcanvas = () => {
-    const offcanvasElement = document.getElementById("offcanvasNavbar");
-    const bsOffcanvas = Offcanvas.getInstance(offcanvasElement);
-    if (bsOffcanvas) {
-      bsOffcanvas.hide();
-    }
-
-      
-  const backdrop = document.querySelector('.offcanvas-backdrop');
-  if (backdrop) {
-    backdrop.remove();
-  }
-  };
 
 
   return (
@@ -65,7 +53,7 @@ const Navbar = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                <Link  className="navbar-brand" href="/" onClick={handleCloseOffcanvas}>
+                <Link  className="navbar-brand" href="/" >
                   {/* <Image  src='/assets/logo.svg' alt="logo" width={1000}
               height={1000}/> */}
                 </Link>
@@ -82,7 +70,8 @@ const Navbar = () => {
                 <li className="nav-item dropdown pe-4">
                   <Link
                     className="nav-link nav-option dropdown-toggle"
-                    href=""
+                    href="#"
+                    
                   >
                     Hosting <IoIosArrowDown className="arrow-icon"/>
                   </Link>
@@ -91,7 +80,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-web-hosting"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Offshore Hosting
                       </Link>
@@ -100,7 +89,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-wordpress-hosting/"
-                        onClick={handleCloseOffcanvas}
+                       
                       >
                         Offshore WordPress
                       </Link>
@@ -108,7 +97,7 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li className="nav-item dropdown pe-4">
-                  <Link className="nav-link nav-option dropdown-toggle" href="">
+                  <Link className="nav-link nav-option dropdown-toggle" href="#" >
                     VPS <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
@@ -116,7 +105,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-vps-hosting/"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Offshore VPS
                       </Link>
@@ -125,7 +114,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-vps-hosting/windows-rdp/"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Offshore Windows VPS
                       </Link>
@@ -134,7 +123,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item dropdown pe-4">
-                  <Link className="nav-link nav-option dropdown-toggle" href="#">
+                  <Link className="nav-link nav-option dropdown-toggle" href="#" >
                     Server <IoIosArrowDown className="arrow-icon"/>
                   </Link>
                   <ul className="dropdown-menu">
@@ -142,7 +131,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-dedicated-servers/"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Dedicated Server
                       </Link>
@@ -151,7 +140,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-streaming-server/"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Streaming Server
                       </Link>
@@ -160,7 +149,7 @@ const Navbar = () => {
                       <Link
                         className="dropdown-item"
                         href="/offshore-video-hosting/"
-                        onClick={handleCloseOffcanvas}
+                        
                       >
                         Video Hosting
                       </Link>
@@ -169,18 +158,18 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item pe-4">
-                  <Link className="nav-link nav-option" href="/affiliates/" onClick={handleCloseOffcanvas}>
+                  <Link className="nav-link nav-option" href="/affiliates/" >
                     Affiliate
                   </Link>
                 </li>
 
                 <li className="nav-item pe-4">
-                  <Link className="nav-link nav-option" href="/about/" onClick={handleCloseOffcanvas}>
+                  <Link className="nav-link nav-option" href="/about/" >
                     About
                   </Link>
                 </li>
               </ul>
-              <Link href="https://my.qloudhost.com/login" className="" onClick={handleCloseOffcanvas}>
+              <Link href="https://my.qloudhost.com/login" className="" >
                 <button className="btn signIn-btn nav-signIn">Sign In</button>
               </Link>
             </div>

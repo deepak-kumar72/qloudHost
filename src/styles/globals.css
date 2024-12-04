@@ -65,7 +65,7 @@ body {
 }
 
 .bg {
-  background-color: #000;
+  background-color: #f6355a;
   color: #fff;
 }
 
@@ -494,7 +494,7 @@ height: 30%;
 /* dedicated-Server */
 
 .AffordableCon-card {
-  background: #f74d6e;
+  background: #fff;
   border: 1px solid #fff;
 }
 
@@ -512,13 +512,13 @@ color: #000 !important;
 .affordable-card-title {
   font-size: 20px;
   font-weight: 700;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .affordable-card-desc {
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 
 .dedicated-plan-btn {
@@ -1166,8 +1166,7 @@ grid-row-gap: 0px;
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0; /* optional, adjusts the dropdown position */
-  opacity: 1;
-    visibility: visible;
+  overflow: hidden;
     border-radius: 8px;
     padding: 0px;
 }
@@ -2746,6 +2745,18 @@ color: #0D121F;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
   }
+
+  .table-bordered>:not(caption)>*>*, .table-light tr {
+    border-width: 0;
+}
+
+table tr td:first-child {
+  padding-left: 15px !important;
+}
+
+table tr td:last-child {
+  padding-right: 15px !important;
+}
 
   .table-light{
     border-radius: 10px;
