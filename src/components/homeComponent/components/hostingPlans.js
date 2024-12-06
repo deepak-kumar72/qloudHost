@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
-import homeData from "../../../data/home.json"; // Adjust path as necessary
 
 const HostingPlans = () => {
-  const plansData = homeData.plansData; // Access plansData from the JSON
+  const [plansData, setPlansData] = useState([]); // State to store plans data
+
+  // Function to fetch data dynamically
+  const fetchPlansData = async () => {
+    try {
+      const response = await fetch("/data/home.json"); // Fetch JSON file
+      const data = await response.json();
+      setPlansData(data.plansData); // Set the plans data
+    } catch (error) {
+      console.error("Error fetching plans data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchPlansData(); // Fetch data when the component mounts
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!plansData.length) {
+    return <div>Loading Hosting Plans...</div>;
+  }
 
   return (
     <div className="hosting-plan mb-5">

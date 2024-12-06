@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import homeData from "../../../data/home.json"; // Adjust path as necessary
 
 const QloudHostFeatures = () => {
-  const features = homeData.featureshome; // Access features from the JSON data
+  const [features, setFeatures] = useState([]); // State to store features
+
+  // Fetch data dynamically
+  const getFeaturesData = async () => {
+    try {
+      const response = await fetch("/data/home.json"); // Fetch from public folder
+      const data = await response.json();
+      setFeatures(data.featureshome); // Set features from JSON data
+    } catch (error) {
+      console.error("Error fetching features:", error);
+    }
+  };
+
+  useEffect(() => {
+    getFeaturesData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!features.length) {
+    return <div>Loading features...</div>;
+  }
 
   return (
     <div className="qloudfeatures">
