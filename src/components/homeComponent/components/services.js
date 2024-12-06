@@ -17,9 +17,9 @@ const Services = ({ servicesData }) => {
             <div key={service.id} className="col-md-12 col-lg-6 mb-4">
               <div className="card card-banner h-100 shadow-sm">
                 <div className='service-card d-flex p-4'>
-                  <div className="mb-3 w-50">
-                    <Image src={service.imgUrl} alt={service.title} className='serviceCard-img h-50' width={1000}
-                    height={1000}/>
+                  <div className="mb-3 w-50 ">
+                    <Image src={service.imgUrl} alt={service.title} className=' serviceCard-img h-50' width={1000}
+              height={1000}/>
                   </div>
                   <div>
                     <div className='card-title'>{service.title}</div>

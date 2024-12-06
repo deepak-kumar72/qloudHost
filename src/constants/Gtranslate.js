@@ -25,7 +25,7 @@ const GTranslate = () => {
                 "default_language": "en",
                 "native_language_names": true,
                 "detect_browser_language": true,
-                "url_structure": "sub_directory",
+                
                 "languages": ["en", "de", "it", "es", "ar", "lb", "ru", "bg", "id", "nl", "pt", "lt", "th", "uk", "sv", "ko", "tr", "cs", "ro"],
                 "wrapper_selector": ".gtranslate_wrapper",
                 "flag_style": "3d",
