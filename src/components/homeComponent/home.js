@@ -11,7 +11,7 @@ import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
 import Testimonials from "../commonComponent/testimonial";
-import Link from "next/link";
+
 
 const Home = () => {
   const [data, setData] = useState(); // State to store the JSON data
@@ -37,7 +37,7 @@ const Home = () => {
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent, features, servicesData1, faqsData } = data;
+  const { heroComponent, installationPanel } = data;
 
   return (
     <div>
@@ -47,29 +47,7 @@ const Home = () => {
       <HostingPlans />
       <TechnicalSpecification />
       <QloudHostFeatures />
-      <InstallationPanel
-        title="Fast OS/Admin Panel Installation!"
-        description={
-          <>
-            No matter! Whether you wish to work with Linux, Windows, Cent OS,
-            Debian, or any other popular OS, get it installed on your server
-            with just a few clicks. In addition, our{" "}
-            <Link href="/dmca-ignored-vps/" className="faq-link">
-              DMCA Ignored VPS Hosting
-            </Link>{" "}
-            are compatible with all the control panels available in the market,
-            so you can manage your website files with full control!
-          </>
-        }
-        buttonText="Get Started Now"
-        url="#explore"
-        panelOptions={[
-          { name: "cPanel", img: "/assets/icon/cPanel.png" },
-          { name: "DirectAdmin", img: "/assets/icon/directAdmin.png" },
-          { name: "CyberPanel", img: "/assets/icon/cyberPanel.png" },
-          { name: "Ubuntu", img: "/assets/icon/ubuntu.png" },
-          { name: "Debian", img: "/assets/icon/debain.png" },
-        ]}
+      <InstallationPanel {...installationPanel}
       />
       <QlodHostServices
         heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"

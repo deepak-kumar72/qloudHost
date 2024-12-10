@@ -1,15 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import HeroSection from '../privacyPolicy/heroSection'
 import FairUsagePolicies from './fairUsagePolicies';
 
 const FairUsage = () => {
+  const [data, setData] = useState(null); // State to store JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/fairUsage.json"); // Path to your JSON file in the public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  const { heroComponent } = data;
+
   return (
     <div>
-      <HeroSection
-      subTitle=""
-        title="Fair Usage Policy"
-        description="Our Fair Usage Policy ensures optimal service for all users. We monitor resource usage to prevent excessive consumption that may impact others. Abusive or unfair use of bandwidth, storage, or server resources may result in restrictions. This policy guarantees balanced performance and reliability for everyone."
-        imageSrc='/assets/Frame/heroImg_fair-usage.webp' 
+      <HeroSection {...heroComponent}
       />
       <FairUsagePolicies/>
     </div>

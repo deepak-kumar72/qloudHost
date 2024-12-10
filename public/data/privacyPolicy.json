@@ -1,0 +1,60 @@
+{
+    "heroComponent": {
+      "subTitle": "FASTEST PERFORMANCE",
+      "title": "Privacy Policy",
+      "description": "Get your offshore VPS hosting now! Enjoy instant setup, untraceable footprints, and full data protection for your website. Stay anonymous and secure with our offshore servers, perfect for your privacy needs. Don’t wait—experience ultimate freedom and protection today!",
+      "imageSrc": "/assets/Frame/heroImg_privacy-policy.webp"
+    },
+
+    
+        "Policies": {
+          "intro": "QloudHost respects your privacy and is committed to ensure that you get a safe and secure online experience. This privacy policy applies to all our web products to make sure that you get to experience reliable services.",
+          "sections": [
+            {
+              "title": "Personal identification information",
+              "content": [
+                "Use of QloudHost services includes the acceptance of our privacy policy that you are allowing us to collect some of your identifiable data, such as your Email address and phone number. In addition, we may also collect some of the demographic-related information that may not be unique to you, such as your postcode, age, gender, and other unique information.",
+                "We will collect such information only when the users voluntarily submit the details, which means users can refuse to submit the information on the website.",
+                "For non-personal information, we may collect limited data such as the browser name, IP address, type of computer, and other technical-related data whenever a user interacts with our website."
+              ]
+            },
+            {
+              "title": "Use and disclosure of your information",
+              "content": [
+                "We will collect and use our user information for the following purposes:",
+                {
+                  "list": [
+                    "To improve our operations.",
+                    "Deliver the product and services.",
+                    "Communicate with the user.",
+                    "Improve the quality of our products.",
+                    "Get more reach through you.",
+                    "To perform surveys and promotions.",
+                    "Deal with your enquiry and complaints, request and tickets.",
+                    "Conduct research and development.",
+                    "Process your refund and payments.",
+                    "To maintain processing, invoicing, products and services."
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Assurance of your privacy",
+              "content": [
+                "We use the appropriate measures to collect, process, practice, and protect your data against unauthorized access, alteration, or any disclosure of personal data.",
+                "There is no data leak, making it really tough to trace you back on the internet.",
+                "Our websites and networks are completely secure with industry-standard encryptions or SSL certificates to ensure that you get secured network communication."
+              ]
+            }
+            
+            
+          ],
+         "furtherInfo": {
+            "title": "Further Information",
+            "detail": [
+                { "type": "text", "content": "If the user wishes to access the details about the respective data we have stored or believes that we may not have adhered to our own policies by violating its right to privacy, in that case the user can immediately contact our team at " },
+                { "type": "link", "content": "support@qloudhost.com", "url": "https://qloudhost.com/privacy-policy/" }
+              ]
+          }
+        }  
+}

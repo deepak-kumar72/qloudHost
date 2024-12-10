@@ -1,0 +1,45 @@
+{
+    "heroComponent": {
+      "subTitle": "",
+      "title": "Fair Usage Policy",
+      "description": "Our Fair Usage Policy ensures optimal service for all users. We monitor resource usage to prevent excessive consumption that may impact others. Abusive or unfair use of bandwidth, storage, or server resources may result in restrictions. This policy guarantees balanced performance and reliability for everyone.",
+      "imageSrc": "/assets/Frame/heroImg_fair-usage.webp"
+    },
+    "introduction": "Our primary goal is to protect your privacy and maintain your freedom of speech, with an expectation that the customers will respect our dignity by not violating our Terms of Service and all the policies. QloudHost reserves the right to modify all the policies that relate to our products and services. The use of products and services means that the customer agrees with all the terms, conditions and policies, which will not be violated in any case.",
+    "fairUsagePolicy": {
+      "title": "Our fair usage policy restricts you to the following activities:",
+      "activities": [
+        "Adult content involving real violence.",
+        "Any content that includes violence on animals (any creatures)",
+        "Child pornography",
+        "Any explicit content that involves underage nudity."
+      ],
+      "otherRestrictionsTitle": "Other than the adult website, we restrict the following activities:",
+      "otherRestrictions": [
+        "Ponzi scheme based websites",
+        "Scamming websites",
+        "Pharmaceutical websites without an appropriate license",
+        "Mass mailing websites",
+        "Phishing websites",
+        "Proxy or reverse websites",
+        "Illegal product-containing websites",
+        "Botnet controllers or involved websites",
+        "Sites containing any malicious links",
+        "DDoS attack-abled websites",
+        "Trojan-containing websites",
+        "Malicious Script containers",
+        "Any act of terrorism via a website",
+        "Vulnerability scanners",
+        "SIP scanners",
+        "Any forex related websites",
+        "Sales, distribution or promotion of pirated products",
+        "Password guessing bots, tools or any kind of generators",
+        "Any activity that led to your IP block",
+        "IP spoofing tools containers",
+        "Any other activities that violate our policy"
+      ],
+      "disclaimer": "Usage of our services means the customer agrees to all the points mentioned in all the policies and QloudHost will not be liable in any case if the customer has used our services without carefully reading our policies.",
+      "violationWarning": "If the customer violates any of the above-mentioned points or any point mentioned in the other policies, then it will be considered as illegal and can directly cause account/service termination."
+    }
+  }
+  

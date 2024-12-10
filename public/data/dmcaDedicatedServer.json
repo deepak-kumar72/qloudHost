@@ -1,0 +1,42 @@
+{
+    "heroComponent": {
+      "subTitle": "Adult Web Hosting",
+      "title": "High Performance Adult VPS and Dedicated Servers",
+      "description": "Unlock 100% reliable and secure Adult Hosting in the Netherlands with 99.99% uptime and 24/7 support. Perfect for Adult Tube, Adult Streaming Websites. Host your adult website today!",
+      "button1Text": "Get Started Now",
+      "button1Link": "#explore",
+      "button2Text": "Explore Features",
+      "button2Link": "",
+      "imageSrc": "/assets/Frame/high-performance-adult-vps-and-dedicated-server.webp",
+      "moneyBackText": "<LuShieldCheck /> 14-Day Money-Back Guarantee",
+      "options": [
+        "Flexibility and Control",
+        "Weekly Backup",
+        "Fast, Secure, Reliable",
+        "Multi-Layer Defense"
+      ]
+    },
+
+    "dedicatedPlan": {
+        "title": "DMCA Ignored Dedicated Server Hosting Plans and Price",
+        "description": "DMCA Ignored dedicated servers offer the best performance and the highest level of security for any website or application. Invest in a dedicated server with no resource sharing and experience top-notch performance at an affordable price.",
+        "additionalText": [
+            {
+              "type": "text",
+              "content": ">Looking for high-performance and custom resources? Our friendly "
+            },
+            {
+              "type": "link",
+              "content": "support sales team",
+              "url": ""
+            },
+            { "type": "text", "content": "  is here to help!" },
+            {
+                "type": "link",
+                "content": "Get in touch",
+                "url": ""
+              },
+              { "type": "text", "content": "   with us today." }
+          ]
+      }
+    }

@@ -16,30 +16,369 @@
         "24/7 Technical Support"
       ]
     },
-    "enterpriseGrade": {
-      "heading": "Enterprise-Grade Affordable Offshore Dedicated Servers",
-      "subHeading": "Lease a dependable and cheap dedicated offshore server with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:"
+
+"planSection":{
+  "heading": "Choose Your Offshore Dedicated Server Hosting Plan",
+  "subHeading": "Find your Ideal Managed Offshore Dedicated Servers! Get blazing-fast speed, top-notch security, and maximum uptime for your urgent apps. Our 100% DMCA Ignored hosting plans are designed to support your resource-heavy projects perfectly.",
+  "consultationText":  [
+    { "type": "text", "content": "Looking for high-performance and custom resources? Our friendly " },
+    { "type": "link", "content": "offshore dedicated server", "url": "https://qloudhost.com/blog/what-is-offshore-dedicated-server-hosting/" },
+    { "type": "text", "content": " is here to help! " },
+    { "type": "link", "content": "Get in touch", "url": "/contact-us/" },
+    { "type": "text", "content": " with us today." }
+  ],
+  "plans": [
+    {
+      "id": 1,
+      "name": "Ryzen 9 3900X (12c/24t)",
+      "price": "$129.00",
+      "cpu": "3.8 GHz",
+      "memory": "64 GB DDR4",
+      "storage": "960 GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "yearlyPrice": "$129.00/mo",
+      "save": "SAVE 19%",
+      "url": "https://my.qloudhost.com/store/dedicated/amd-ryzen-9-3900x12c24t"
     },
-    "features": [
+    {
+      "id": 2,
+      "name": "AMD Ryzen 9 5900X(12c/24t)",
+      "price": "$149.00",
+      "yearlyPrice": "$149.00/mo",
+      "cpu": "3.7 GHz",
+      "memory": "64 GB DDR4",
+      "storage": "960 GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 12%",
+      "url": "https://my.qloudhost.com/store/dedicated/ryzen-9-5900x",
+      "popular": true
+    },
+    {
+      "id": 3,
+      "name": "2x Intel Xeon E5- 2620 v2(12c/24t)",
+      "price": "$176.00",
+      "yearlyPrice": "$176.00/mo",
+      "cpu": "2.1-2.6 GHz",
+      "memory": "64 GB DDR4",
+      "storage": "960 GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 12%",
+      "url": "https://my.qloudhost.com/store/dedicated/2x-intel-xeon-e5-2620-v2"
+    },
+    {
+      "id": 4,
+      "name": "Intel Xeon E5-2680 v3(12c/24t)",
+      "price": "$194.00",
+      "yearlyPrice": "$194.00/mo",
+      "cpu": "2.5-3.3 GHz",
+      "memory": "64 GB DDR4",
+      "storage": "960 GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 12%",
+      "url": "https://my.qloudhost.com/store/dedicated/intel-xeon-e5-2680-v3",
+      "bestForStreaming": false
+    },
+    {
+      "id": 5,
+      "name": "Intel Xeon E5-2683 v4(16c/32t)",
+      "price": "$233.00",
+      "yearlyPrice": "$233.00/mo",
+      "cpu": "2.10-3.0 GHz",
+      "memory": "64 GB DDR4",
+      "storage": "960 GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 13%",
+      "url": "https://my.qloudhost.com/store/dedicated/compute-broadwell-ep-intel-xeon-e5-2683-v4",
+      "bestForStreaming": false
+    },
+    {
+      "id": 6,
+      "name": "Dual Intel Xeon E5-2683 v4",
+      "price": "$299.00",
+      "yearlyPrice": "$299.00/mo",
+      "cpu": "2.0-3.0 GHz",
+      "memory": "128GB RAM DDR4",
+      "storage": "2X960GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 15%",
+      "url": "https://my.qloudhost.com/store/dedicated/dual-intel-xeon-e5-2683-v4-2x960gb",
+      "newServer": true
+    },
+    {
+      "id": 7,
+      "name": "Dual Intel Xeon E5-2680 v3",
+      "price": "$299.00",
+      "yearlyPrice": "$299.00/mo",
+      "cpu": "2.0-3.0 GHz",
+      "memory": "128GB RAM DDR4",
+      "storage": "2X960GB NVMe SSD",
+      "bandwidth": "50 TB Transfer",
+      "save": "SAVE 15%",
+      "url": "https://my.qloudhost.com/store/dedicated/dual-intel-xeon-e5-2680-v3-2x192tb",
+      "newServer": true
+    },
+    {
+      "id": 8,
+      "name": "AMD EPYC 7502P (32c/64t)",
+      "price": "$349.00",
+      "yearlyPrice": "$349.00/mo",
+      "cpu": "2.0-3.0 GHz",
+      "memory": "256 GB DDR4 ECC*",
+      "storage": "2×1.92 TB NVMe SSD",
+      "bandwidth": "Unmetered Transfer",
+      "save": "SAVE 30%",
+      "url": "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
+      "bestForStreaming": true
+    },
+    {
+      "id": 9,
+      "name": "Intel Xeon Gold 6230",
+      "price": "$399.00",
+      "yearlyPrice": "$399.00/mo",
+      "cpu": "2.1 GHz",
+      "memory": "256GB RAM DDR4",
+      "storage": "2X1.92TB NVMe SSD",
+      "bandwidth": "100TB Transfer",
+      "save": "SAVE 30%",
+      "url": "https://my.qloudhost.com/store/dedicated/intel-xeon-gold-6230"
+    }
+  ]
+},
+
+"enterPriseGrade": {
+  "heading": "Enterprise-Grade Affordable Offshore Dedicated Servers",
+  "subHeading": "Lease a dependable and cheap dedicated offshore server with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates.Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience:",
+  "features": [
+    "Enterprise-Grade Infrastructure",
+    "99.9% uptime guarantee",
+    "IPv4 and IPv6 connectivity",
+    "Complete Privacy and Security",
+    "Realtime network monitoring",
+    "Reliable hardware",
+    "Stable global connectivity",
+    "Fast and effective support",
+    "Attractive pricing",
+    "Easy control panel"
+  ],
+  "sections": [
+    {
+      "title": "Fast and reliable servers",
+      "description": "We use only top-quality A-grade hardware from top brands such as AMD and Intel for your dedicated server, ensuring you the best reliability and performance."
+    },
+    {
+      "title": "Easy management",
+      "description": "We offer our servers with an administration panel. The control panel can restart, set up your server, and much more, allowing you to manage your server however you wish."
+    },
+    {
+      "title": "Dutch Servers",
+      "description": "QloudHost's servers are hosted in Amsterdam, Netherlands. This guarantees that your connection to the internet is reliable and speedy, and that your information is safe to store at our secure data centres."
+    },
+    {
+      "title": "Fastest NVMe SSD",
+      "description": "Get super-fast performance with blazing-fast NVMe SSD drive storage! Our service comes with guaranteed quality, which is why we use industry-standard equipment to run our servers."
+    }
+  ],
+  "button": {
+    "text": "Get Started Now",
+    "link": "#explore"
+  }
+},
+
+
+"featureHeading":{
+  "Heading":"Why Choose QloudHost Dedicated Offshore Hosting?",
+  "subHeading": "Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas. Utilize advanced technology security measures to ensure accurate information dissemination."
+},
+"features": [
+  {
+    "img": "/assets/serviceImg/powerful-configration.svg",
+    "title": "Powerful Configurations",
+    "description": [
       {
-        "img": "/assets/serviceImg/powerful-configration.svg",
-        "title": "Powerful Configurations",
-        "description": "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control.",
-        "link": ""
-      },
-      {
-        "img": "/assets/serviceImg/full-root-access_1.svg",
-        "title": "Full Root Access",
-        "description": "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption.",
-        "link": ""
+        "type": "text",
+        "content": "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control."
       }
-      
     ],
-    "faqs": [
+    "link": ""
+  },
+  {
+    "img": "/assets/serviceImg/full-root-access_1.svg",
+    "title": "Full Root Access",
+    "description": [
+      {
+        "type": "text",
+        "content": "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption."
+      }
+    ],
+    "link": ""
+  },
+  {
+    "img": "/assets/serviceImg/freesetup.svg",
+    "title": "Free Setup with All Servers",
+    "description": [
+      {
+        "type": "text",
+        "content": "No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!"
+      }
+    ],
+    "link": ""
+  },
+  {
+    "img": "/assets/serviceImg/data-center.svg",
+    "title": "Amsterdam, Netherlands Data Center",
+    "description": [
+      {
+        "type": "text",
+        "content": "We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance."
+      }
+    ],
+    "link": ""
+  },
+  {
+    "img": "/assets/serviceImg/24x7-server-monitoring.svg",
+    "title": "24/7 Server monitoring",
+    "description": [
+      {
+        "type": "text",
+        "content": "We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status."
+      }
+    ],
+    "link": ""
+  },
+  {
+    "img": "/assets/serviceImg/powered-by-direct-admin.svg",
+    "title": "Managed with DirectAdmin",
+    "description": [
+      {
+        "type": "text",
+        "content": "Experience exceptional technical support for your DMCA Ignored Server hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates."
+      }
+    ],
+    "link": ""
+  }
+],
+
+
+"installationPanel": {
+  "title": "Fast OS/Admin Panel Installation!",
+  "description": "No matter! Whether you wish to work with Linux, Windows, Cent OS, Debian or any other popular OS, get it installed on your server with just a few clicks. In addition, Our DMCA Ignored VPS Hostingare compatible with all the Control panels available in the market so that you can manage your website files with full control!",
+  "buttonText": "Get Started Now",
+  "url": "#explore",
+  "panelOptions": [
+    { "name": "cPanel", "img": "/assets/icon/cPanel.png" },
+    { "name": "DirectAdmin", "img": "/assets/icon/directAdmin.png" },
+    { "name": "CyberPanel", "img": "/assets/icon/cyberPanel.png" },
+    { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
+    { "name": "Debian", "img": "/assets/icon/debian.png" }
+  ]
+},
+
+
+"heading": "We've got your new or existing website needs covered!",
+  "servicesData": [
+    
+    {
+      "id": 1,
+      "imgUrl": "/assets/feature/website.svg",
+      "title": "New Website",
+      "description": [
+        "Immediate Activation",
+        "Free installation by a specialist",
+        "FREE Privacy Protection",
+        "Step by step tutorials",
+        "24/7/365 Premium Support"
+      ],
+      "buttonLink": "#hostingPlan",
+      "buttonText": "Get Started"
+    },
+    {
+      "id": 2,
+      "imgUrl": "/assets/icon/existing-website.svg",
+      "title": "Existing Website",
+      "description": [
+        "Free transfer by a specialist",
+        "Zero downtime",
+        "Free databases transfer",
+        "Free Setup",
+        "24/7/365 Premium Support"
+      ],
+      "buttonLink": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
+      "buttonText": "Get Started"
+    }
+  ],
+
+
+
+    "faqsData":  [
       {
         "question": "What is a Offshore dedicated server?",
-        "answer": "An offshore dedicated server is a type of hosting service that provides you full privacy assurance, impenetrable security, and untraceable footprints on the internet!!"
+        "answer": [
+          { "type": "text", "content": "An " },
+          { "type": "link", "content": "offshore dedicated server", "url": "https://qloudhost.com/blog/what-is-offshore-dedicated-server-hosting/" },
+          { "type": "text", "content": " is a type of hosting service that provides you full privacy assurance, impenetrable security and untraceable footprints on the internet!! In addition, dedicated offshore server unmetered come with unmetered resources so that you can post any content on your website as per your wish!!" }
+        ]
+      },
+      {
+        "question": "Can I upgrade my Offshore Virtual Private Server to an Offshore DMCA Ignored dedicated server?",
+        "answer": [
+          { "type": "text", "content": "Yes, We provide completely flexible" },
+          { "type": "link", "content": "offshore VPS servers", "url": "/offshore-vps-hosting/" },
+          { "type": "text", "content": " that can be easily upgraded to as many resources as possible! You just need to" },
+          { "type": "link", "content": "contact our team", "url": "/contact-us/" },
+          { "type": "text", "content": "  of highly trained experts, explain your needs and they will upgrade your servers easily to the best managed dedicated server without any hidden charges." }
+        ]
+      },
+      {
+        "question": "Do you offer free migration for your DMCA Ignored dedicated server?",
+        "answer": [
+          { "type": "text", "content": "Yes, We offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by" },
+          { "type": "link", "content": "our policies", "url": "/privacy-policy/" }
+        ]
+      },
+      {
+        "question": "How many websites can I host on an Offshore dedicated server?",
+        "answer": [
+          { "type": "text", "content": "It totally depends upon your website’s files. For example, if you are planning to host a high-traffic blogging or business website that contains multiple posts, high graphics images and videos, then we will recommend you host only 1 or 2 websites on our " },
+          { "type": "link", "content": "Offshore Server in Netherlands", "url": "/offshore-dedicated-servers/netherlands/" },
+          { "type": "text", "content": " Offshore Location." }
+        ]
+      },
+     
+      {
+        "question": "What can QloudHost Offshore dedicated Hosting be used for?",
+        "answer": [
+          { "type": "text", "content": "QloudHost offshore dedicated hosting provider with high performance at a low price while being suitable for a number of use cases: Hosting business applications and websites, pre-production environments, gaming, Pharmaceutical Websites and more. For resource-intensive production needs, we recommend our next-generation Cheapest Offshore server. These include more services, offering more options, and an advanced network." }
+        ]
+      },
+      {
+        "question": "What are the Benefits of DMCA Offshore dedicated server hosting?",
+        "answer": [
+          { "type": "text", "content": " If you are planning to" },
+          { "type": "link", "content": "host your website without losing your anonymity", "url": "https://qloudhost.com/blog/host-a-website-anonymously/" },
+          { "type": "text", "content": " , then choosing an offshore Dedicated server will be the best pick for you!! Moreover, we mentioned some more points below that will help you to understand everything in detail." },
+          { "type": "list", "content": ["Full privacy assurance", "Unmetered resources", "Full content flexibility", "Full content flexibility", "No arbitrary actions caused", "Freedom of Speech"] },
+          { "type": "text", "content": " See the" },
+          { "type": "link", "content": "benefits of DMCA Offshore Dedicated Servers", "url": "https://qloudhost.com/blog/benefits-of-offshore-dedicated-server-hosting/" },
+          { "type": "text", "content": " and decide for yourself if it’s the right call for you." }
+        ]
+      },
+      {
+        "question": "How do I get started with Offshore dedicated server?",
+        "answer": [
+          { "type": "text", "content": "To get started with our offshore hosting provider, you just need to choose your favourite reliable offshore web hosting plan, enter your authentic details and checkout! Your servers will be ready to use in just a few days, all thanks to our instant activation policy." }
+        ]
+      },
+      {
+        "question": "Does QloudHost provide managed Offshore dedicated servers?",
+        "answer": [
+          { "type": "text", "content": "On account of providing full flexibility and root access with our reliable dedicated server hosting solution, we don’t provide Fully managed dedicated servers. Hence, you completely customise your servers as per your needs and requirements." }
+        ]
+      },
+      {
+        "question": "How long will it take for my cheap dedicated server to be ready?",
+        "answer": [
+          { "type": "text", "content": "As explained above in the above FAQ, we offer our services to the market with an instant activation policy. Hence, after you finished the payment, your DMCA Ignored offshore hosting services will be ready to use in 5-7 Working days." }
+        ]
       }
-      
     ]
   }

@@ -1,0 +1,45 @@
+{
+    "heroSection": {
+      "subTitle": "We’re here 24/7",
+      "title": "CONTACT OUR SUPPORT",
+      "description": "Got questions, concerns, or challenges? Or just want to say hi? We're here to chat and help with anything you need. Don't hesitate to reach out—we're always happy to assist!",
+      "imageSrc": "/assets/Frame/heroImg_contact-us.png"
+      
+    },
+    
+        "support": {
+          "technicalSupport": {
+            "title": "Technical Support",
+            "description": "Get quick solutions to all your hosting concerns through our support chat or helpdesk.",
+            "features": [
+              "24*7 Support",
+              "support@qloudhost.com"
+            ],
+            "ticketLink": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2"
+          },
+          "sales": {
+            "title": "Sales",
+            "description": "Contact our sales team for inquiries about our hosting plans and services.",
+            "email": "support@qloudhost.com",
+            "connectLink": "#"
+          },
+          "billing": {
+            "title": "Contact Billing",
+            "email": "support@qloudhost.com"
+          },
+          "liveChat": {
+            "title": "Live Chat",
+            "description": "Get expert support from our trained team via chat. Log in to your client area for technical help.",
+            "chatLink": "#"
+          },
+          "more": {
+            "title": "Looking for More",
+            "description": "Whatever your hosting needs, we’ve got the perfect solution! Explore our wide range of services and plans, and kickstart your Offshore DMCA Ignored Hosting Server journey with QloudHost today!",
+            "buttonLink": "/about/"
+          }
+        }
+      
+      
+    }
+
+

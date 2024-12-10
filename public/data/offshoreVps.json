@@ -1,0 +1,404 @@
+{
+    "heroComponent": {
+      "subTitle": "Powerful Offshore VPS",
+      "title": "Best Offshore VPS Hostin",
+      "description": "Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times.",
+      "button1Text": "Get Started Now",
+      "button1Link": "#explore",
+      "button2Text": "",
+      "button2Link": "",
+      "imageSrc": "/assets/Frame/offshore-vps-hosting.webp",
+      "moneyBackText": "<LuShieldCheck /> 14-Day Money-Back Guarantee",
+      "options": [
+        "Faster Site Speeds",
+  "Maximum Security",
+  "Choice of Control Panel",
+  "24/7 Expert Support"
+      ]
+    },
+
+   "vpsPlanData": {
+        "oneYearPlans": [
+          {
+            "id": 1,
+            "name": "VPS ENTRY",
+            "price": "$18.99",
+            "yearlyPrice": "$18.99/mo",
+            "save": "Save 14%",
+            "features": [
+              "2 CPU",
+              "4 GB RAM",
+              "50 GB NVMe SSD",
+              "1 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=annually"
+          },
+          {
+            "id": 2,
+            "name": "VPS VALUE",
+            "price": "$46.99",
+            "yearlyPrice": "$46.99/mo",
+            "save": "Save 14%",
+            "features": [
+              "4 CPU",
+              "8 GB RAM",
+              "120 GB NVMe SSD",
+              "1.75 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan&billingcycle=annually",
+            "popular": true
+          },
+          {
+            "id": 3,
+            "name": "VPS BUSINESS",
+            "price": "$55.99",
+            "yearlyPrice": "$55.99/mo",
+            "save": "Save 14%",
+            "features": [
+              "6 CPU",
+              "12 GB RAM",
+              "150 GB NVMe SSD",
+              "2 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan&billingcycle=annually"
+          },
+          {
+            "id": 4,
+            "name": "VPS ENTERPRISE",
+            "price": "$75.99",
+            "yearlyPrice": "$75.99/mo",
+            "save": "Save 14%",
+            "features": [
+              "8 CPU",
+              "16 GB RAM",
+              "200 GB NVMe SSD",
+              "2.5 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan&billingcycle=annually"
+          }
+        ],
+        "sixMonthPlans": [
+          {
+            "id": 5,
+            "name": "VPS ENTRY",
+            "price": "$19.99",
+            "yearlyPrice": "$19.99/mo",
+            "save": "Save 9%",
+            "features": [
+              "2 CPU",
+              "4 GB RAM",
+              "50 GB NVMe SSD",
+              "1 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=semiannually"
+          },
+          {
+            "id": 6,
+            "name": "VPS VALUE",
+            "price": "$48.99",
+            "yearlyPrice": "$48.99/mo",
+            "save": "Save 9%",
+            "features": [
+              "4 CPU",
+              "8 GB RAM",
+              "120 GB NVMe SSD",
+              "1.75 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan&billingcycle=semiannually",
+            "popular": true
+          },
+          {
+            "id": 7,
+            "name": "VPS BUSINESS",
+            "price": "$58.99",
+            "yearlyPrice": "$58.99/mo",
+            "save": "Save 9%",
+            "features": [
+              "6 CPU",
+              "12 GB RAM",
+              "150 GB NVMe SSD",
+              "2 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan&billingcycle=semiannually"
+          },
+          {
+            "id": 8,
+            "name": "VPS ENTERPRISE",
+            "price": "$79.98",
+            "yearlyPrice": "$79.98/mo",
+            "save": "Save 9%",
+            "features": [
+              "8 CPU",
+              "16 GB RAM",
+              "200 GB NVMe SSD",
+              "2.5 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan&billingcycle=semiannually"
+          }
+        ],
+        "threeMonthPlans": [
+          {
+            "id": 9,
+            "name": "VPS ENTRY",
+            "price": "$20.99",
+            "yearlyPrice": "$20.99/mo",
+            "save": "Save 5%",
+            "features": [
+              "2 CPU",
+              "4 GB RAM",
+              "50 GB NVMe SSD",
+              "1 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=quarterly"
+          },
+          {
+            "id": 10,
+            "name": "VPS VALUE",
+            "price": "$51.99",
+            "yearlyPrice": "$51.99/mo",
+            "save": "Save 5%",
+            "features": [
+              "4 CPU",
+              "8 GB RAM",
+              "120 GB NVMe SSD",
+              "1.75 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan&billingcycle=quarterly",
+            "popular": true
+          },
+          {
+            "id": 11,
+            "name": "VPS BUSINESS",
+            "price": "$62.99",
+            "yearlyPrice": "$62.99/mo",
+            "save": "Save 5%",
+            "features": [
+              "6 CPU",
+              "12 GB RAM",
+              "150 GB NVMe SSD",
+              "2 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan&billingcycle=quarterly"
+          },
+          {
+            "id": 12,
+            "name": "VPS ENTERPRISE",
+            "price": "$84.99",
+            "yearlyPrice": "$84.99/mo",
+            "save": "Save 5%",
+            "features": [
+              "8 CPU",
+              "16 GB RAM",
+              "200 GB NVMe SSD",
+              "2.5 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan&billingcycle=quarterly"
+          }
+        ],
+        "oneMonthPlans": [
+          {
+            "id": 13,
+            "name": "VPS ENTRY",
+            "price": "$21.99",
+            "yearlyPrice": "$21.99/mo",
+            "save": "Save 0%",
+            "features": [
+              "2 CPU",
+              "4 GB RAM",
+              "50 GB NVMe SSD",
+              "1 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/entry-plan&billingcycle=monthly"
+          },
+          {
+            "id": 14,
+            "name": "VPS VALUE",
+            "price": "$54.99",
+            "yearlyPrice": "$54.99/mo",
+            "save": "Save 0%",
+            "features": [
+              "4 CPU",
+              "8 GB RAM",
+              "120 GB NVMe SSD",
+              "1.75 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/value-plan&billingcycle=monthly",
+            "popular": true
+          },
+          {
+            "id": 15,
+            "name": "VPS BUSINESS",
+            "price": "$65.99",
+            "yearlyPrice": "$65.99/mo",
+            "save": "Save 0%",
+            "features": [
+              "6 CPU",
+              "12 GB RAM",
+              "150 GB NVMe SSD",
+              "2 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/business-plan&billingcycle=monthly"
+          },
+          {
+            "id": 16,
+            "name": "VPS ENTERPRISE",
+            "price": "$88.99",
+            "yearlyPrice": "$88.99/mo",
+            "save": "Save 0%",
+            "features": [
+              "8 CPU",
+              "16 GB RAM",
+              "200 GB NVMe SSD",
+              "2.5 TB Bandwidth",
+              "Free Control Panel*",
+              "Hosted in Netherlands"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/vps/enterprise-plan&billingcycle=monthly"
+          }
+        ]
+      },
+
+      "installationPanel": {
+        "title":"Available Operating Systems",
+        "description":"Work with your desired Operating system without any errors!",
+        "buttonText":"Get Started Now",
+        "url":"#explore",
+        "panelOptions":[
+          { "name": "AlmaLinux", "img": "/assets/icon/almaLinux.png" },
+          { "name": "Rockey Linux", "img": "/assets/icon/rockyLinux.png"},
+          { "name": "Debian", "img": "/assets/icon/debain.png" },
+          { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png"},
+          { "name": "Windows", "img": "/assets/icon/window-icon.png"}
+        ]
+      
+},
+
+
+"privacy": {
+    "title": "Your Privacy is Our Priority!",
+    "description": [
+      "We understand the value of your privacy and fundamental rights. That’s why we enable you to make your online presence with untraceable footprints and impenetrable security.",
+      "In addition, we provide you services based on Anonymous offshore hosting that let you be anonymous on the internet and guard your data against being tracked.",
+      "So what are you waiting for? Get your offshore hosting today and protect your data privacy with industry-standard security!"
+    ],
+    "ctaText": "Get Started Now",
+    "ctaLink": "#explore",
+    "image": "/assets/feature/your-privacy.webp",
+    "additionalLink": {
+      "url": "https://qloudhost.com/blog/host-a-website-anonymously/",
+      "text": "be anonymous on the internet"
+    }
+  },
+  "hardware": {
+    "title": "Super Performing Enterprise-Grade Hardware",
+    "description": [
+      "No matter how heavy is your website. Experience lightning-fast performance with NVMe SSD storage and the most powerful hardware technology! Along with that, you will get multi-layered security to prevent any unauthorized access to your website.",
+      "Our servers are equipped with a multi-threaded core processor that makes any type of website compatible with the servers."
+    ],
+    "ctaText": "Get Started Now",
+    "ctaLink": "#explore",
+    "image": "/assets/feature/super-performing.webp"
+  },
+
+    "faqsData": [
+      {
+        "question": "What is offshore VPS Hosting?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "Offshore VPS is a special type of virtual private servers that is located outside of your country’s jurisdiction. This means that your data and your server are both physically and legally outside of your country’s control."
+          }
+        ]
+      },
+      {
+        "question": "What is the cost for an offshore VPS Hosting?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "Unlike the other service providers, our focus is on both quality and affordability because we understand the value of your money. That’s why our Cheap offshore hosting plans start with just $18.99/month, making it the most Cheapest Offshore VPS Hosting in the market."
+          }
+        ]
+      },
+      {
+        "question": "Will I be able to upgrade my offshore VPS Server?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "Yes, We provide you with resilient VPS hosting offshore plans which allow you to upgrade your server resources anytime with just a few clicks. In addition, you can also "
+          },
+          {
+            "type": "link",
+            "content": "upgrade your plans",
+            "url": "/offshore-dedicated-server/"
+          },
+          {
+            "type": "text",
+            "content": " to get optimum performance and blazing fast loading speed."
+          }
+        ]
+      },
+      {
+        "question": "I bought your offshore VPS Hosting, when will they be activated?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "QloudHost Offshore Linux and Offshore Windows VPS provides you with an instant setup means that your servers will be ready to use right after you finish the purchase."
+          }
+        ]
+      },
+      {
+        "question": "What are the benefits of Offshore VPS hosting?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "Offshore VPS hosting is becoming increasingly popular for those looking for a reliable and secure hosting solution. By hosting a website or application on a virtual private server located outside of their country of residence, users can benefit from enhanced security, better performance, and greater flexibility. See the benefits of Offshore VPS Hosting Servers and decide for yourself if it’s the right call for you. "
+          },
+          {
+            "type": "link",
+            "content": "Benefits of Offshore VPS Hosting",
+            "url": "https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/"
+          }
+        ]
+      },
+      {
+        "question": "Can I get full admin access to my offshore VPS Hosting Server?",
+        "answer": [
+          {
+            "type": "text",
+            "content": "Definitely, our offshore VPS hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
+          }
+        ]
+      }
+    ]
+  
+}

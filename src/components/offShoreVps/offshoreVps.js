@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroComponent from "../commonComponent/heroComponent";
 import TechnicalSpecification from "../commonComponent/technicalSpecification";
 import OffshoreVpsPlan from "./components/offshoreVpsPlan";
@@ -11,13 +11,6 @@ import FAQsSection from "../commonComponent/faqSection";
 import Link from "next/link";
 import WebHostingGurantees from "../offShoreHosting/components/webHostingGurantees";
 
-
-const options = [
-  "Faster Site Speeds",
-  "Maximum Security",
-  "Choice of Control Panel",
-  "24/7 Expert Support",
-];
 
 const features = [
   {
@@ -64,74 +57,37 @@ const features = [
   },
 ];
 
-const faqsData = [
-  {
-    question: "What is offshore VPS Hosting?",
-    answer:
-      "Offshore VPS is a special type of virtual private servers that is located outside of your country’s jurisdiction. This means that your data and your server are both physically and legally outside of your country’s control.",
-  },
-  {
-    question: "What is the cost for an offshore VPS Hosting?",
-    answer:
-      "Unlike the other service providers, our focus is on both quality and affordability because we understand the value of your money. That’s why our Cheap offshore hosting plans start with just $18.99/month, making it the most Cheapest Offshore VPS Hosting in the market.",
-  },
-  {
-    question: "Will I be able to upgrade my offshore VPS Server?",
-    answer: (
-      <>
-        Yes, We provide you with resilient VPS hosting offshore plans which
-        allow you to upgrade your server resources anytime with just a few
-        clicks. In addition, you can also{" "}
-        <Link href="/offshore-dedicated-server/" className="faq-link">
-          upgrade your plans
-        </Link>{" "}
-        to get optimum performance and blazing fast loading speed.
-      </>
-    ),
-  },
-  {
-    question:
-      "I bought your offshore VPS Hosting, when will they be activated?",
-    answer:
-      "QloudHost Offshore Linux and Offshore Windows VPS provides you with an instant setup means that your servers will be ready to use right after you finish the purchase.",
-  },
-  {
-    question: "What are the benefits of Offshore VPS hosting?",
-    answer: (
-      <>
-        Offshore VPS hosting is becoming increasingly popular for those looking
-        for a reliable and secure hosting solution. By hosting a website or
-        application on a virtual private server located outside of their country
-        of residence, users can benefit from enhanced security, better
-        performance, and greater flexibility. See the benefits of Offshore VPS
-        Hosting Servers and decide for yourself if it’s the right call for you.{" "}
-        <Link href="" className="faq-link">
-          https://qloudhost.com/blog/benefits-of-dmca-ignored-hosting/
-        </Link>
-      </>
-    ),
-  },
-  {
-    question: "Can I get full admin access to my offshore VPS Hosting Server?",
-    answer:
-      "Definitely, our offshore VPS hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks.",
-  },
-];
 
 const OffshoreVps = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/offshoreVps.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  // Destructure data for cleaner usage
+  const { heroComponent, installationPanel } = data;
+
   return (
     <div>
       <HeroComponent
-      subTitle='Powerful Offshore VPS'
-        title="Best Offshore VPS Hosting"
-        description="Reliable Offshore VPS with KVM Virtualization, Dedicated NVMe SSD, and full root access. Enjoy instant setup, untraceable footprints, and complete data protection to host all your applications with blazing-fast loading times."
-        button1Text="Get Started Now"
-        button1Link="#explore"
-        button2Text="Explore Features"
-        button2Link="" // Link for the second button
-        imageSrc='/assets/Frame/offshore-vps-hosting.webp'
-        moneyBackText="14-Day Money-Back Guarantee"
-        options={options}
+          {...heroComponent} 
       />
       <OffshoreVpsPlan />
       <WebHostingGurantees
@@ -139,17 +95,7 @@ const OffshoreVps = () => {
       subHeading="Boost your website performance with world-class Best Offshore hosting DMCA Ignored servers and guaranteed performance."/>
       <TechnicalSpecification />
       <InstallationPanel
-        title="Available Operating Systems"
-        description="Work with your desired Operating system without any errors!"
-        buttonText="Get Started Now"
-        url="#explore"
-        panelOptions={[
-          { name: "AlmaLinux", img: '/assets/icon/almaLinux.png' },
-          { name: "Rockey Linux", img: '/assets/icon/rockyLinux.png'},
-          { name: "Debian", img: '/assets/icon/debain.png' },
-          { name: "Ubuntu", img: '/assets/icon/ubuntu.png'},
-          { name: "Windows", img: '/assets/icon/window-icon.png'},
-        ]}
+       {...installationPanel}
       />
       <PrivacyHardwarePage />
       <QlodHostServices
@@ -159,7 +105,7 @@ const OffshoreVps = () => {
       />
       <FeaturesYouGet />
       <Testimonials />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
     </div>
   );
 };

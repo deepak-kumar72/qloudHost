@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import vpsPlanData from './vpsPlanData'; 
@@ -6,6 +6,28 @@ import vpsPlanData from './vpsPlanData';
 // import { Tooltip } from "bootstrap";
 
 const VpsPlan = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/offshoreVps.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
   // useEffect(() => {
   //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   //   tooltipTriggerList.forEach(tooltipTriggerEl => {

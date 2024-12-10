@@ -1,20 +1,52 @@
-
-  import React from 'react';
-  import Link from "next/link";
-import DedicatedPlan from '../../commonComponent/dedicatedPlan';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import DedicatedPlan from "../../commonComponent/dedicatedPlan";
 
 const DedicatedServerPlan = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/dedicatedServer.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="hosting-plan mb-5">
-      <div className=" plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Choose Your Offshore Dedicated Server Hosting plan</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Find your Ideal Managed Offshore Dedicated Servers! Get blazing-fast speed, top-notch security, and maximum uptime for your urgent apps. Our 100% DMCA Ignored hosting plans are designed to support your resource-heavy projects perfectly.</p>
-      
-        <DedicatedPlan/>
+      <div className="plan-sec mt-5">
+        <h2 className="text-center m-auto mb-3">{data.planSection.heading}</h2>
+        <p className="text-center mb-5 planHead-con m-auto">{data.planSection.subHeading}</p>
+
+        <DedicatedPlan />
 
         <div className="text-center mt-3">
-          <span className="consult">Looking for high-performance and custom resources? Our friendly <Link href="" className="fw-bold">support sales team</Link> is here to help! 
-          <Link href="/contact-us/" className="fw-bold">Get in touch</Link> with us today.</span>
+          <span className="consult">
+          {data.planSection.consultationText.map((part, idx) => {
+                        if (part.type === "text") {
+                          return <span key={idx}>{part.content}</span>;
+                        } else if (part.type === "link") {
+                          return (
+                            <Link key={idx} href={part.url} className="fw-bold">
+                              {part.content}
+                            </Link>
+                          );
+                        } 
+                        return null;
+                      })}
+          </span>
         </div>
       </div>
     </div>
@@ -22,5 +54,3 @@ const DedicatedServerPlan = () => {
 };
 
 export default DedicatedServerPlan;
-
-  
