@@ -1,0 +1,410 @@
+{
+    "heroComponent": {
+      "subTitle": "WordPress Optimized Hosting",
+      "title": "Buy Offshore WordPress Hosting",
+      "description": "Whether WordPress powers your blog, web App or Business site, our Affordable 100% DMCA Ignored Offshore WordPress Hosting is fully optimised for top speed and reliability.",
+      "button1Link": "#explore",
+      "button2Text": "Explore Features",
+      "button2Link": "",
+      "imageSrc": "/assets/Frame/offshore-wordpress-hosting.webp",
+      "moneyBackText": "<LuShieldCheck /> 14-Day Money-Back Guarantee",
+      "options": [
+        "Dedicated IP",
+        "1 Click WP Install",
+        "Weekly Backup",
+        "24/7 Expert Support"
+      ]
+    },
+
+    "wordpressPlan":{
+        "threeYearPlans": [
+          {
+            "id": 1,
+            "title": "WordPress Starter",
+            "description": "The ideal WP Hosting for Website!",
+            "price": "$4.39",
+            "originalPrice": "$4.39/mo",
+            "save": "Save 30%",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=triennially"
+          },
+          {
+            "id": 2,
+            "title": "WordPress Business",
+            "description": "More room to grow your business.",
+            "price": "$6.96",
+            "originalPrice": "$6.96/mo",
+            "save": "Save 30%",
+            "features": [
+              "2 Websites",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-business?billingcycle=triennially&currency=1"
+          },
+          {
+            "id": 3,
+            "title": "WordPress Premium",
+            "description": "Optimized for high-traffic sites.",
+            "price": "$11.89",
+            "originalPrice": "$11.89/mo",
+            "save": "Save 30%",
+            "features": [
+              "10 Websites",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-premium?billingcycle=triennially&currency=1"
+          }
+        ],
+        "oneYearPlans": [
+          {
+            "id": 4,
+            "title": "WordPress Starter",
+            "description": "The ideal WP Hosting for Website!",
+            "price": "$5.02",
+            "originalPrice": "$5.02/mo",
+            "save": "Save 20%",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=annually"
+          },
+          {
+            "id": 5,
+            "title": "WordPress Business",
+            "description": "More room to grow your business.",
+            "price": "$7.95",
+            "originalPrice": "$7.95/mo",
+            "save": "Save 20%",
+            "features": [
+              "2 Websites",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-business?billingcycle=annually&currency=1"
+          },
+          {
+            "id": 6,
+            "title": "WordPress Premium",
+            "description": "Optimized for high-traffic sites.",
+            "price": "$13.59",
+            "originalPrice": "$13.59/mo",
+            "save": "Save 20%",
+            "features": [
+              "10 Websites",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-premium?billingcycle=annually&currency=1"
+          }
+        ],
+        "oneMonthPlans": [
+          {
+            "id": 7,
+            "title": "WordPress Starter",
+            "description": "The ideal WP Hosting for Website!",
+            "price": "$6.28",
+            "originalPrice": "$6.28/mo",
+            "save": "Save 0%",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-starter?billingcycle=monthly"
+          },
+          {
+            "id": 8,
+            "title": "WordPress Business",
+            "description": "More room to grow your business.",
+            "price": "$6.94",
+            "originalPrice": "$9.94/mo",
+            "save": "Save 0%",
+            "features": [
+              "2 Websites",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-business?billingcycle=monthly"
+          },
+          {
+            "id": 9,
+            "title": "WordPress Premium",
+            "description": "Optimized for high-traffic sites.",
+            "price": "$16.98",
+            "originalPrice": "$16.98/mo",
+            "save": "Save 0%",
+            "features": [
+              "10 Websites",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "PreInstalled WordPress",
+              "Support - Chat, Ticket & Email",
+              "Softaculous"
+            ],
+            "url": "https://my.qloudhost.com/store/wordpress-hosting/wp-premium?billingcycle=monthly"
+          }
+        ]
+      },
+
+
+     "wordpressFeature": [
+        {
+          "id": 1,
+          "title": "Free & Effortless WordPress Migration",
+          "description": "Our Web Hosting experts will migrate all your Offshore WordPress websites at a date and time that suits you best, free of charge. Your website will remain live during the transfer. There is nothing we require from you except for login details of your old web hosting, where we find your website data (website files or databases, emails, etc.).",
+          "image": "/assets/feature/free-anf-effortless.webp",
+          "buttonText": "Get Started Now",
+          "buttonLink": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2"
+        },
+        {
+          "id": 2,
+          "title": "DirectAdmin and Softaculous",
+          "description": "No matter how tech-savvy you are, DirectAdmin provides you with everything you require to run your site like a pro. We’ve partnered with the Softaculous auto-installer that allows an easy installation of hundreds of web-based applications such as WordPress, Joomla and many more.",
+          "image": "/assets/feature/direct-admin_2.webp"
+        },
+        {
+          "id": 3,
+          "title": "WordPress Pre-Install & Free SSL Certificates",
+          "description": "WordPress is a popular website platform that allows users to create and manage websites with ease. With pre-installation, the setup process is made even easier as it eliminates the need for manual installation.",
+          "additionalDescription": "Furthermore, QloudHost offshore WordPress hosting plans comes with free SSL (AutoSSL) with our no-cost SSL, your information remains secure and safe.",
+          "image": "/assets/feature/wordpress-pre-install.webp"
+        }
+      ],
+
+      "featureHeading":{
+    "Heading":"What You Get with Your Offshore VPS Server",
+    "subHeading": "Looking for some good reasons to choose Qloudhost?  Here’s the reason of our confidence. "
+  },
+  "features": [
+  {
+    "img": "/assets/serviceImg/one-click-installs.svg",
+    "title": "One-click Installs",
+    "description": [
+      {
+        "type": "text",
+        "content": "Easily install popular apps like WordPress, Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications."
+      }
+    ]
+  },
+  {
+    "img": "/assets/serviceImg/weekly-backup_1.svg",
+    "title": "Weekly Backups",
+    "description": [
+      {
+        "type": "text",
+        "content": "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. For Shared Hosting, we provide alternate day backup for 7 Days.(Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra."
+      }
+    ]
+  },
+  {
+    "img": "/assets/serviceImg/powered-by-direct-admin.svg",
+    "title": "Powered by DirectAdmin",
+    "description": [
+      {
+        "type": "text",
+        "content": "Easily manage your hosting account with our popular and powerful web hosting control panel. Enjoy user-friendly point-and-click management, updated security features, and more."
+      }
+    ]
+  },
+  {
+    "img": "/assets/feature/uptime.svg",
+    "title": "99.9% uptime guaranteed.",
+    "description": [
+      {
+        "type": "text",
+        "content": "Our first priority is provide you industry-leading uptime performance with our business-class hosting solutions. Get a 99.9% uptime guarantee and the peace of mind that your website will always be up and running."
+      }
+    ]
+  },
+  {
+    "img": "/assets/serviceImg/lightning-fast-storage.svg",
+    "title": "Lightning-Fast Storage",
+    "description": [
+      {
+        "type": "text",
+        "content": "Experience lightning-fast data storage with our enterprise-class Nvme SSD storage arrays, which power our shared server plans for reliable performance. Enjoy fast and secure hosting with our state-of-the-art infrastructure."
+      }
+    ]
+  },
+  {
+    "img": "/assets/serviceImg/privacy-protection_1.svg",
+    "title": "100% Privacy Protection",
+    "description": [
+      {
+        "type": "text",
+        "content": "Data privacy is paramount. Our secure servers have advanced security features to protect your website from malicious attacks. Trust us for reliable and secure web hosting solutions."
+      }
+    ]
+  }
+],
+
+      
+      
+
+        "faqsData": [
+          {
+            "question": "What is Offshore WordPress Hosting?",
+            "answer": [
+                {
+                    "type": "link",
+                    "content": "Offshore WordPress hosting",
+                    "url": "/offshore-wordpress-hosting/"
+                  },
+              {
+                "type": "text",
+                "content": " is a type of web hosting where your WordPress website is hosted outside of your country of residence. This means that the hosting company is located in a different country, often with different laws and regulations than your own. This type of hosting is often used by website owners who want to protect their privacy or who need to host content that may not be legal in their own country."
+              }
+             
+            ]
+          },
+          {
+            "question": "How can I set up WordPress hosting?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "It’s simple: "
+              },
+              {
+                "type": "link",
+                "content": "Sign up",
+                "url": "https://my.qloudhost.com/login"
+              },
+              {
+                "type": "text",
+                "content": " , pick the right Offshore WP plan, and let our system do the rest of the work for you. You’ll be immediately redirected to the latest version of the WordPress platform. Through there, log in with your QloudHost DirectAdmin Panel details. Now all you need to do is pick a lightweight WordPress theme and start downloading any of the hundreds of plugins available to start customizing your website."
+              }
+            ]
+          },
+          {
+            "question": "Why should I choose Offshore WordPress hosting?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "Good News, It’s an Easy Process. We offer free Offshore Wordpress hosting migration and all the aspects related to migrating all your files from another web host to QloudHost WP Hosting for free. You simply need to provide us with the details of your current hosting account. For that, you can Just Open a Ticket and provide your previous Hosting Login Details we will transfer them for you free of cost."
+              }
+            ]
+          },
+          {
+            "question": "How do I transfer my WordPress site to QloudHost?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "Good news! It’s an easy process. We offer "
+              },
+              {
+                "type": "link",
+                "content": "free Offshore Wordpress hosting migration",
+                "url": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2"
+             },{
+                "type": "text",
+                "content": "free Offshore Wordpress hosting migration and all the aspects related to migrating all your files from another web host to QloudHost WP Hosting for free. You simply need to provide us with the details of your current hosting account. For that, you can JustOpen a Ticket and provide your previous Hosting Login Details we will transfer them for you free of cost."
+              }
+            ]
+          },
+          {
+            "question": "Is WordPress Premium the right plan for me?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "Absolutely. Whether you are a newbie or an experienced WordPress user, WordPress Premium has everything you need to build and grow your professional WordPress website."
+              }
+            ]
+          },
+          {
+            "question": "Can I get a free SSL certificate with my WordPress hosting plan?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "Yes, we offer free SSL certificates on all our WordPress Hosting Plans, allowing you to install a free SSL certificate on your website right away."
+              }
+            ]
+          },
+          {
+            "question": "What is your money-back guarantee?",
+            "answer": [
+              {
+                "type": "text",
+                "content": "We offer a 14-day money-back guarantee on all plans. Try our reliable and cheap WordPress Offshore hosting, and if it doesn’t suit your needs, we’ll give you a full refund."
+              }
+            ]
+          }
+        ]
+
+}

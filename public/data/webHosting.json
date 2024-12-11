@@ -1,0 +1,432 @@
+{
+    "heroComponent": {
+      "subTitle": "Buy Offshore Web Hosting",
+      "title": "Best Offshore Web Hosting",
+      "description": "Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands",
+      "button1Link": "#explore",
+      "button2Text": "Explore Features",
+      "button2Link": "",
+      "imageSrc": "/assets/Frame/dmca-cheap-offshore-web-hosting.webp",
+      "moneyBackText": "<LuShieldCheck /> 14-Day Money-Back Guarantee",
+      "options": [
+        "NVMe SSD Storage",
+        "100% Privacy",
+        "LiteSpeed Server",
+        "1-Click Install"
+      ]
+    },
+
+   "webHostingPlan": {
+        "threeYearPlans": [
+          {
+            "id": 1,
+            "name": "Basic",
+            "price": "$3.50",
+            "samePrice": "$3.50",
+            "discount": "Save 30%",
+            "duration": "3 Year",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=triennially&currency=1",
+            "popular": false
+          },
+          {
+            "id": 2,
+            "name": "Pro",
+            "price": "$5.50",
+            "samePrice": "$5.50",
+            "discount": "Save 30%",
+            "duration": "3 Year",
+            "features": [
+              "2 Website",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=triennially&currency=1",
+            "popular": true
+          },
+          {
+            "id": 3,
+            "name": "Grow",
+            "price": "$9.09",
+            "samePrice": "$9.09",
+            "discount": "Save 30%",
+            "duration": "3 Year",
+            "features": [
+              "10 Website",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=triennially&currency=1",
+            "popular": false
+          }
+        ],
+        "oneYearPlans": [
+          {
+            "id": 4,
+            "name": "Basic",
+            "price": "$4.00",
+            "samePrice": "$4.00",
+            "discount": "Save 20%",
+            "duration": "1 Year",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=annually&currency=1",
+            "popular": false
+          },
+          {
+            "id": 5,
+            "name": "Pro",
+            "price": "$6.29",
+            "samePrice": "$6.29",
+            "discount": "Save 20%",
+            "duration": "1 Year",
+            "features": [
+              "2 Website",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=annually&currency=1",
+            "popular": true
+          },
+          {
+            "id": 6,
+            "name": "Grow",
+            "price": "$10.39",
+            "samePrice": "$10.39",
+            "discount": "Save 20%",
+            "duration": "1 Year",
+            "features": [
+              "10 Website",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=annually&currency=1",
+            "popular": false
+          }
+        ],
+        "oneMonthPlans": [
+          {
+            "id": 7,
+            "name": "Basic",
+            "price": "$4.99",
+            "samePrice": "$4.99",
+            "discount": "Save 0%",
+            "duration": "1 Month",
+            "features": [
+              "1 Website",
+              "10 GB NVMe SSD",
+              "1 GB RAM",
+              "3 Email",
+              "150 GB Bandwidth",
+              "5 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/basic&billingcycle=monthly&currency=1",
+            "popular": false
+          },
+          {
+            "id": 8,
+            "name": "Pro",
+            "price": "$7.86",
+            "samePrice": "$7.86",
+            "discount": "Save 0%",
+            "duration": "1 Month",
+            "features": [
+              "2 Website",
+              "20 GB NVMe SSD",
+              "2 GB RAM",
+              "5 Email",
+              "300 GB Bandwidth",
+              "10 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/pro&billingcycle=monthly&currency=1",
+            "popular": true
+          },
+          {
+            "id": 9,
+            "name": "Grow",
+            "price": "$12.98",
+            "samePrice": "$12.98",
+            "discount": "Save 0%",
+            "duration": "1 Month",
+            "features": [
+              "10 Website",
+              "50 GB NVMe SSD",
+              "3 GB RAM",
+              "15 Email",
+              "500 GB Bandwidth",
+              "20 Subdomain",
+              "DirectAdmin Panel",
+              "LiteSpeed",
+              "Softaculous 1-click Install",
+              "24*7 Support",
+              "Security"
+            ],
+            "url": "https://my.qloudhost.com/index.php?rp=/store/shared-hostin/grow&billingcycle=monthly&currency=1",
+            "popular": false
+          }
+        ]
+      },
+
+      "webHostingGurantees":{
+        "title": "Web Hosting Guarantees",
+        "subHeading": "Browse our guarantees for fast, secure, and reliable hosting services.",
+        "guarantees": [
+          {
+            "icon": "/assets/feature/ssd.svg",
+            "alt": "SSD Icon",
+            "title": "Fastest NVMe SSD",
+            "description": "Get Super-fast performance with blazing fast NVMe SSD drive storage! Our service comes with guaranteed quality, using industry-standard equipment to run our servers."
+          },
+          {
+            "icon": "/assets/icon/netherlands.svg",
+            "alt": "Netherlands Icon",
+            "title": "Hosted in Netherlands",
+            "description": "We have chosen the best data centers in Netherlands to ensure full privacy and security for your website. It helps you bypass biased country-specific restrictions!"
+          },
+          {
+            "icon": "/assets/icon/money-back.svg",
+            "alt": "Support Icon",
+            "title": "14 Days Money Back",
+            "description": "We understand the value of your hard-earned money! Get full assurance with a 14-day money-back guarantee. And no questions will be asked!"
+          }
+        ]
+      },
+      
+
+        "webHostingfeatures": [
+          {
+            "title": "Simple, Affordable, Hosting You Can Trust",
+            "description": "QloudHost makes offshore web hosting easy! You can expect to exceed your performance expectations with our Fastest Nvme SSD servers, unmetered bandwidth, and other features. All this at a price you will love – get any shared server up and running in under a minute with QloudHost!",
+            "buttonText": "Get Started Now",
+            "buttonLink": "#explore",
+            "image": "/assets/feature/simple-affordable.webp",
+            "alt": "Simple, Affordable, Hosting You Can Trust",
+            "reverseOrder": false
+          },
+          {
+            "title": "Make Your Website Faster with LiteSpeed",
+            "description": "Website Speed is a key factor for growing your site in terms of web visitors, purchase orders, user experience, and SEO. QloudHost Offshore web hosting solutions make it possible for your website to run on the LiteSpeed Web server. This makes it fast and easy to access.",
+            "buttonText": null,
+            "buttonLink": null,
+            "image": "/assets/feature/make-your-website.webp",
+            "alt": "Make Your Website Faster with LiteSpeed",
+            "reverseOrder": true
+          },
+          {
+            "title": "Free Migration Services",
+            "description": "Your website can now be moved for free to QloudHost! Our staff will provide you with a personalized service. Our staff will provide personalized service to you with minimal disruption to your website or email services. Everything related to your site is perfectly replicated, reinstalled and reconfigured on the new server.",
+            "buttonText": "Get Started Now",
+            "buttonLink": "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
+            "image": "/assets/feature/free-migration.webp",
+            "alt": "Free Migration Services",
+            "reverseOrder": false
+          }
+        ],
+
+
+        "featureHeading":{
+            "Heading":"Why Choose QloudHost For Offshore Web Hosting?",
+            "subHeading": "Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "
+          },
+
+            "features": [
+              {
+                "img": "/assets/serviceImg/one-click-installs.svg",
+                "title": "One-click Installs",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "Easily install popular apps like <a href='/offshore-wordpress-hosting/' class=\"faq-link\">WordPress</a>, Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications."
+                  }
+                ],
+                "link": "/read-more"
+              },
+              {
+                "img": "/assets/serviceImg/weekly-backup_1.svg",
+                "title": "Weekly Backups",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "QloudHost has created a smart data backup feature to make your website’s data safer and more secure. For Shared Hosting, we provide alternate day backup for 7 Days. (Included free) Whereas for VPS, Weekly backup available (1 Snapshot per week), will charge extra."
+                  }
+                ],
+                "link": "/read-more"
+              },
+              {
+                "img": "/assets/serviceImg/powered-by-direct-admin.svg",
+                "title": "Powered by DirectAdmin",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "Easily manage your hosting account with our popular and powerful web hosting control panel. Enjoy user-friendly point-and-click management, updated security features, and more."
+                  }
+                ],
+                "link": "/read-more"
+              },
+              {
+                "img": "/assets/feature/uptime.svg",
+                "title": "99.9% uptime guaranteed.",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "Our first priority is to provide you industry-leading uptime performance with our business-class hosting solutions. Get a 99.9% uptime guarantee and the peace of mind that your website will always be up and running."
+                  }
+                ],
+                "link": "/read-more"
+              },
+              {
+                "img": "/assets/serviceImg/lightning-fast-storage.svg",
+                "title": "Lightning-Fast Storage",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "Experience lightning-fast data storage with our enterprise-class Nvme SSD storage arrays, which power our shared server plans for reliable performance. Enjoy fast and secure hosting with our state-of-the-art infrastructure."
+                  }
+                ],
+                "link": "/read-more"
+              },
+              {
+                "img": "/assets/serviceImg/privacy-protection_1.svg",
+                "title": "100% Privacy Protection",
+                "description": [
+                  {
+                    "type": "text",
+                    "content": "Data privacy is paramount. Our secure servers have advanced security features to protect your website from malicious attacks. Trust us for reliable and secure web hosting solutions."
+                  }
+                ],
+                "link": "/read-more"
+              }
+            ],
+          
+            
+      
+
+        "faqsData": [
+          {
+            "question": "What is offshore Web Hosting?",
+            "answer": [
+              { "type": "text", "content": "Offshore web hosting refers to the practice of hosting your website, data, or application in a data center located outside your country of origin. This approach offers numerous benefits, such as enhanced privacy, increased security, and the ability to host content that may be restricted in certain regions. Offshore hosting is particularly useful for those looking to host copyrighted or " },
+              { "type": "link", "content": "DMCA", "url": "/" },
+              { "type": "text", "content": " content, as well as websites that may be vulnerable to hacking attempts. By choosing an offshore web hosting, you can enjoy greater flexibility, increased security, and improved performance for your website or application." }
+            ]
+          },
+          {
+            "question": "How to know which web hosting plan I should choose?",
+            "answer": [
+              { "type": "text", "content": "Before you choose the best shared web hosting plan for your website, there are many things to take into consideration." },
+              { "type": "list", "content": [
+                "What amount of traffic do you expect to see your site receive?",
+                "What information do you need from your website visitors?",
+                "How many websites are you able to host?",
+                "What technical skills are you able to use to manage your website server?",
+                "What is your website storage and bandwidth needs? What extra features/ support do your website require from your hosting plan?"
+              ]}
+            ]
+          },
+          {
+            "question": "What is the difference between Shared vs Offshore VPS Hosting?",
+            "answer": [
+              { "type": "text", "content": "Offshore Web Hosting plans allow you to host your website with other users. This means that your website will not receive a certain amount of resources (RAM or CPU). Offshore VPS Hosting offers more bandwidth and space to handle a greater traffic flow to your website. You can expand your website with " },
+              { "type": "link", "content": "Offshore VPS Hosting", "url": "/offshore-vps-hosting/" },
+              { "type": "text", "content": " servers. This allows you to easily scale up your website as it develops. VPS Hosting gives users more control, so you can modify your control configuration as much as you like." }
+            ]
+          },
+          {
+            "question": "With all these hosting plans, how do I choose the right one?",
+            "answer": [
+              { "type": "text", "content": "If you have a small website or you are just starting out, shared hosting is a good option. However, if you need more power, you may want to consider an " },
+              { "type": "link", "content": "offshore VPS", "url": "/offshore-vps-hosting" },
+              { "type": "text", "content": ". There are many choices available, which can be overwhelming, but we can help you find the best option for your business and website. You can speak with an expert today to get the answers you need." }
+            ]
+          },
+          {
+            "question": "How Can I Upgrade My Account if I Need To?",
+            "answer": [
+              { "type": "text", "content": "QloudHost makes upgrading your web hosting service a breeze. Our " },
+              { "type": "link", "content": "upgrade", "url": "/offshore-vps-hosting/" },
+              { "type": "text", "content": " process is seamless, ensuring that your website remains accessible without any downtime. Rest assured that you won’t have to deal with frustrating browsing experiences or revenue loss." }
+            ]
+          },
+          {
+            "question": "Where are your servers located?",
+            "answer": [
+              { "type": "text", "content": "As a leading Best & Cheap offshore web hosting provider, we take pride in delivering top-notch hosting solutions. Our servers are located in the Netherlands, in partnership with a trusted offshore data center." }
+            ]
+          },
+          {
+            "question": "Do You Offer a Script Auto-Installer?",
+            "answer": [
+              { "type": "text", "content": "Yes, " },
+              { "type": "link", "content": "QloudHost", "url": "/" },
+              { "type": "text", "content": " has a custom-developed tool that allows you to install 400+ apps on your website in a One-click. Our auto-installer makes it faster and easier to try out different scripts and find the best ones for your website." }
+            ]
+          }
+        ]
+     
+      
+}

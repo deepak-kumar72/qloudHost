@@ -1,0 +1,62 @@
+{
+    "heroComponent": {
+      "subTitle": "",
+      "title": "About QloudHost",
+      "description": "Founded in 2022, QloudHost has quickly risen to become a top contender in Offshore DMCA Ignored Hosting services. Our mission? To power your business with tailor-made hosting solutions and unbeatable 24/7 customer support. We go beyond expectations, fueled by a skilled team that keeps us leading the pack. Trust QloudHost for reliable, high-performance DMCA Ignored Hosting that drives your success forward!",
+      "imageSrc": "/assets/Frame/about-us.png"
+    },
+
+    "section": {
+        "heading": "Hosting that Respects Your Privacy!",
+        "subheading": "What Makes Us Stand Out From Others?",
+        "paragraphs": [
+          {
+            "content": [
+                { "type": "link", "content": "QloudHost", "url": "/" },
+              { "type": "text", "content": " is focused on providing you with offshore hosting services that respect your right to privacy. And to accomplish that goal, we operate our services with the latest and cutting-edge technologies that ensure you get uncompromised quality. We use the best-in-class data center with industry-standard hardware equipment to ensure you get impenetrable security without compromising performance. " }
+              
+            ]
+          },
+          {
+            "content": [
+              { "type": "text", "content": "QloudHost " },
+              { "type": "link", "content": "offshore hosting", "url": "/offshore-hosting/" },
+              { "type": "text", "content": " is perfect for those who are looking to host their website without losing their privacy or anonymity. But we do not allow customers to post or perform any illegal or illicit activities such as phishing, fraud, scams or anything that violates our terms of service and policies. " }
+            ]
+          },
+          {
+            "content": [
+              { "type": "text", "content": "Growing from a startup to a global player, we have always envisioned going beyond expectations and providing quality that you can rely on!" }
+            ]
+          }
+        ],
+        "image": {
+          "src": "/assets/feature/about-2.png",
+          "alt": "Hosting Privacy"
+        }
+      },
+
+      
+        "data": {
+            "heading": "QloudHost Guarantees",
+            "subHeading":"Boost your website performance with world-class offshore and guaranteed performance dedicated servers",
+          "service":[{
+            "id": 1,
+            "title": "Lightning Fast Website Speed",
+            "description": "Can you imagine the results of the hardwares equipment? Yes, you will get lightning-fast website performance on the internet. In simple words, your website will load much faster than usual!"
+          },
+          {
+            "id": 2,
+            "title": "100% Privacy Protection",
+            "description": "But only speed is enough? No, we understand. That’s why we provide 100% Privacy Protection to ensure you get full anonymity, all thanks to our security features that minimize your visibility on the internet."
+          },
+          {
+            "id": 3,
+            "title": "Dedicated Customer Service",
+            "description": "But what if you are still stuck in your journey? No worries!! Our dedicated team of experts are 24*7 ready to support you and fix your problem or errors in no time!"
+          }
+        ]}
+      
+      
+      }
+      

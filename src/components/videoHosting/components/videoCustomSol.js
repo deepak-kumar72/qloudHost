@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 const VideocustomSolution = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/videohosting.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="py-5 custom-sol mb-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-sm-12  customSol-text">
             <h3 className="mb-4">
-              Need Custom Offshore Video Hosting Servers?
+              {data.VideocustomSolution.Heading}
             </h3>
             <p>
-              Need for Customized DMCA Ignored Offshore Dedicated Servers across
-              your entire Organization. Enjoy unbeatable features, with Offshore
-              Video Hosting for Adult, Tube, and Tutorial Sites and priority
-              support.
+              {data.VideocustomSolution.subHeading}
             </p>
           </div>
           <div className="col-lg-4 col-sm-12 m-auto text-center">

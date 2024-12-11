@@ -1,0 +1,273 @@
+{
+    "heroComponent": {
+        "subTitle": "Russia Offshore Dedicated Server",
+        "title": "Best Cheap Russia Offshore dedicated Server",
+        "description": "Host on our powerful DMCA Ignored Offshore dedicated server inAmsterdam, Netherlands location. Assembled by top engineers, it’s secure, budget-friendly, and robust—ideal for your enterprise’s online presence.",
+        "button1Text": "Get Started Now",
+        "button1Link": "explore",
+        "button2Text": "Explore Features",
+        "button2Link": "",
+        "imageSrc": "/assets/Frame/russia-offshore-dedicated-server.webp",
+        "moneyBackText": "14-Day Money-Back Guarantee",
+        "options": [
+            "Free Migration Available",
+            "Fast NVMe SSD Storage",
+            "Up to 10 Gbps Uplink Port",
+            "24/7 Technical Support"
+        ]
+    },
+    "russiadedicatedplan": {
+        "title": "Russia Offshore Dedicated Servers plans",
+        "description": "Buy dedicated servers in Russia with powerful specs.  Ideal for hosting websites that require a lot of resources or High Performance. the cheapest price in the market.",
+        "consultationText": [
+            {
+                "type": "text",
+                "content": "Looking for high-performance and custom resources? Our friendly"
+            },
+            {
+                "type": "link",
+                "content": "support sales team",
+                "url": ""
+            },
+            {
+                "type": "text",
+                "content": "is here to help!"
+            },
+            {
+                "type": "link",
+                "content": "Get in touch",
+                "url": ""
+            },
+            {
+                "type": "text",
+                "content": "with us today."
+            }
+        ]
+    },
+    "enterPriseGrade": {
+        "heading": "Enterprise-Grade DMCA Ignored Dedicated Servers",
+        "subHeading": "Lease a dependable and cheap dmca ignored dedicated hosting with unmetered resources for your business, and enjoy unparalleled processing power coupled with top-tier security for your critical applications. We provide top-notch hardware, incredibly fast network speeds, and round-the-clock support at budget-friendly rates. Whether you’re hosting a website or scripting a site, choose QloudHost for an exceptional experience: ",
+        "features": [
+            "Enterprise-Grade Infrastructure",
+            "99.9% uptime guarantee",
+            "IPv4 and IPv6 connectivity",
+            "Complete Privacy and Security",
+            "Realtime network monitoring",
+            "Reliable hardware",
+            "Stable global connectivity",
+            "Fast and effective support",
+            "Attractive pricing",
+            "Easy control panel"
+        ],
+        "sections": [
+            {
+                "title": "Fast and reliable servers",
+                "description": "We use only top-quality A-grade hardware from top brands such as AMD and Intel for your dedicated server, ensuring you the best reliability and performance."
+            },
+            {
+                "title": "Easy management",
+                "description": "We offer our servers with an administration panel. The control panel can restart, set up your server, and much more, allowing you to manage your server however you wish."
+            },
+            {
+                "title": "Dutch Servers",
+                "description": "QloudHost's servers are hosted in Amsterdam, Netherlands. This guarantees that your connection to the internet is reliable and speedy, and that your information is safe to store at our secure data centres."
+            },
+            {
+                "title": "Fastest NVMe SSD",
+                "description": "Get super-fast performance with blazing-fast NVMe SSD drive storage! Our service comes with guaranteed quality, which is why we use industry-standard equipment to run our servers."
+            }
+        ],
+        "button": {
+            "text": "Get Started Now",
+            "link": "#explore"
+        }
+    },
+    "featureHeading": {
+        "Heading": "Why Choose QloudHost Dedicated Offshore Hosting?",
+        "subHeading": "Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+    },
+    "features": [
+        {
+            "img": "/assets/serviceImg/powerful-configration.svg",
+            "title": "Powerful Configurations",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "We use multiple server hardware technologies to provide powerful configuration options to choose from. No matter! Whatever plan choosing an offshore dedicated you will get the latest and one of the fastest hardware technologies with full control."
+                }
+            ],
+            "link": ""
+        },
+        {
+            "img": "/assets/serviceImg/full-root-access_1.svg",
+            "title": "Full Root Access",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "QloudHost allows you full root access to configure and modify your server resources to make them more suitable for your website. In addition, you can change the security settings of your servers to enhance your data protection without any restrictions or interruption."
+                }
+            ],
+            "link": ""
+        },
+        {
+            "img": "/assets/serviceImg/freesetup.svg",
+            "title": "Free Setup with All Servers",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "No matter! How high are your configurations? You will get a free server setup with QloudHost offshore Web Hosting servers and no hidden charges. Pay only for what you use!"
+                }
+            ],
+            "link": ""
+        },
+        {
+            "img": "/assets/serviceImg/data-center.svg",
+            "title": "Amsterdam, Netherlands Data Center",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "We offer data center services only in Amsterdam, Netherlands but the location of your website's hosting is crucial for optimal performance. Our data centre access lets you optimize your server resources and improve your website's performance."
+                }
+            ],
+            "link": ""
+        },
+        {
+            "img": "/assets/serviceImg/24x7-server-monitoring.svg",
+            "title": "24/7 Server monitoring",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "We have built smart systems that constantly monitor your website and server to provide you with the automatic upgrade and update notifications. In addition, our onsite team of technical staff will always be there to physically monitor your server status."
+                }
+            ],
+            "link": ""
+        },
+        {
+            "img": "/assets/serviceImg/powered-by-direct-admin.svg",
+            "title": "Managed with DirectAdmin",
+            "description": [
+                {
+                    "type": "text",
+                    "content": "Experience exceptional technical support for your DMCA Ignored Server hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates."
+                }
+            ],
+            "link": ""
+        }
+    ],
+    "installationPanel": {
+        "title": "Fast OS/Admin Panel Installation!",
+        "description": "Revamp high-quality possibilities effectively instead of focusing solely on innovative ideas.Utilize advanced technology security measures to ensure accurate information dissemination.",
+        "buttonText": "Get Started Now",
+        "url": "#explore",
+        "panelOptions": [
+            {
+                "name": "cPanel",
+                "img": "/assets/icon/cPanel.png"
+            },
+            {
+                "name": "DirectAdmin",
+                "img": "/assets/icon/directAdmin.png"
+            },
+            {
+                "name": "CyberPanel",
+                "img": "/assets/icon/cyberPanel.png"
+            },
+            {
+                "name": "Ubuntu",
+                "img": "/assets/icon/ubuntu.png"
+            },
+            {
+                "name": "Debian",
+                "img": "/assets/icon/debain.png"
+            }
+        ]
+    },
+    "faqsData": [
+        {
+            "question": "What is Russia Offshore dedicated servers?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "Russia offshore dedicated servers are like having your own private space for websites or applications, but they’re located in Russia and managed by providers from outside the country. People often choose these servers for a bit of extra privacy, different rules, or to dodge strict regulations back home. They can offer more freedom in terms of content and data handling. However, they might come with their own set of risks like security concerns or not-so-great support, so it’s essential to weigh the pros and cons before jumping in!"
+                }
+            ]
+        },
+        {
+            "question": "Can I upgrade my Dedicated server to higher plan?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "Yes, you can upgrade your current Offshore dedicated server in Russia with your choice custom CPU, RAM, Storage and bandwidth."
+                }
+            ]
+        },
+        {
+            "question": "Do you offer free migration for your Russian Offshore dedicated servers?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "Yes, We do offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have more data than 5GB, then it will be chargeable as guided by our policies."
+                }
+            ]
+        },
+        {
+            "question": "How many Dedicated IP Offered by you?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "We Offer 1 IPv4 with Our Russia offshore dedicated server. Moreover if you need Additional IP Address then open a Support Ticket."
+                }
+            ]
+        },
+        {
+            "question": "What can QloudHost Offshore dedicated Hosting be used for?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "QloudHost Offshore Russia Dedicated Server is used for many resource-intensive production needs -"
+                },
+                {
+                    "type": "list",
+                    "content": [
+                        "Desire for data security",
+                        "Evading government surveillance, and avoiding censorship.",
+                        "Prioritize strong data protection and free speech.",
+                        "Emphasize security and anonymity for the website.",
+                        "Keep host location private.",
+                        "Value speech freedom regardless of location.",
+                        "Prefer hosting in a country with robust internet infrastructure.",
+                        "Useful for blogs, forums, and content prone to censorship.",
+                        "Pharmaceutical companies can use DMCA Ignored servers to comply with hosting rules."
+                    ]
+                }
+            ]
+        },
+        {
+            "question": "How do I get started with Russia Offshore dedicated server?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "To get started with Russia offshore Server, you just need to choose your favourite reliable offshore web hosting plan, enter your authentic details and checkout! Your servers will be ready to use in just a few days, all thanks to our instant activation policy."
+                }
+            ]
+        },
+        {
+            "question": "Does QloudHost provide managed Offshore dedicated servers?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "On account of providing full flexibility and root access with our reliable dedicated server hosting solution, we don’t provide Fully managed dedicated servers. Hence, you completely customise your servers as per your needs and requirements."
+                }
+            ]
+        },
+        {
+            "question": "How long does it take to activate my Offshore Server Russia?",
+            "answer": [
+                {
+                    "type": "text",
+                    "content": "We offer our Shared and VPS services to the market with an instant activation policy, whereas for DMCA Ignored Russia server will be ready to use in 5-7 Working Days."
+                }
+            ]
+        }
+    ]
+}

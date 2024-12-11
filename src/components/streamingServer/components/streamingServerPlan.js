@@ -1,35 +1,32 @@
 
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
-
-const streamingplansData = [
-    {
-      id: 1,
-      name: 'AMD EPYC 7502P (32c/64t)',
-      price: '$349.00',
-      time: '/month',
-      yearlyPrice: "$499.00/mo",
-      save: "Save30%",
-      features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '2×1.92 TB NVMe SSD', 'Unmetered Transfer', '1 Gbit Port Speed', '1 IPv4 IP Address'],
-      url: "https://my.qloudhost.com/store/dedicated/amd-epyc-7502p",
-      popular: true
-    },
-    {
-      id: 2,
-      name: 'AMD EPYC 7551P(32c/64t)',
-      yearlyPrice: "",
-      save: "",
-      features: ['2.0-3.0 GHz', '256 GB DDR4 ECC*', '100 TB Transfer', '2x 1.92 TB NVMe SSD', '1 Gbit Port Speed', '1 IPv4 IP Address'],
-      url: "https://my.qloudhost.com/submitticket.php?step=2&deptid=2",
-      onDemand: true
-      
-    },   
-  ];
   
 
 const StreamingServerPlan = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/streaming.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
@@ -37,7 +34,7 @@ const StreamingServerPlan = () => {
       <p className="text-center mb-5 planHead-con m-auto">Tell us your needs, and we will prepare a Best offshore streaming servers according to your needs.</p>
       
         <div className="row qloudHost-plan streaming-plan justify-content-center m-auto" id='explore'>
-          {streamingplansData.map((plan) => (
+          {data.streamingplansData.map((plan) => (
             <div key={plan.id} className="col-12 col-md-6 col-lg-6 explore-plan-col">
             <div
                 className={`${plan.popular ? "popular-qloudhost-card h-100 position-relative" : "card-body offshore-plan-body position-relative h-100"}`}

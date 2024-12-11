@@ -41,44 +41,76 @@
         "heading": "Why Choose QloudHost for Your DMCA Ignored Hosting Needs?",
         "content": "Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!",
 
-        "features": [
-          {
-            "img": "/assets/serviceImg/free-registration.svg",
-            "title": "Free Registration",
-            "description": "Anyone can join our affiliate programme, refer to their audience or friends and earn real money directly to their bank account under a transparent method.",
-            "link": ""
-          },
-          {
-            "img": "/assets/serviceImg/high-conversion-rate.svg",
-            "title": "High Conversion Rate",
-            "description": "Since we are a reputed brand people prefer our services more than any other service provider. That service has a really impressive conversion rate.",
-            "link": ""
-          },
-          {
-            "img": "/assets/serviceImg/advanced-tracking-url.svg",
-            "title": "Advanced Tracking URLs",
-            "description": "We provide you with powerful Real time tracking tools that will provide you insightful report with every details so that you can monitor your progress and withdraw your amount.",
-            "link": ""
-          },
-          {
-            "img": "/assets/serviceImg/eye-catchy-ads.svg",
-            "title": "Eye-Catchy Ads Banners",
-            "description": "You will also get attractive ad banners that you can use on your blog, video or any content to promote our services and gain more audience.",
-            "link": ""
-          },
-          {
-            "img": "/assets/serviceImg/easy-to-use.svg",
-            "title": "Easy to Use Dashboard",
-            "description": "We have built our affiliate dashboard very easy to use and well labeled. Hence no matter whether you are a beginner or a pro marketer, you can easily start your earnings.",
-            "link": ""
-          },
-          {
-            "img": "/assets/serviceImg/affiliate-support.svg",
-            "title": "24/7 Affiliate Support",
-            "description": "But what if you are still stuck in your journey? Well, No problem! We will provide you with a dedicated affiliate manager that guides you at every step of your journey.",
-            "link": ""
-          }
-        ]
+          "features": [
+            {
+              "img": "/assets/serviceImg/free-registration.svg",
+              "title": "Free Registration",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "Anyone can join our affiliate programme, refer to their audience or friends and earn real money directly to their bank account under a transparent method."
+                }
+              ],
+              "link": ""
+            },
+            {
+              "img": "/assets/serviceImg/high-conversion-rate.svg",
+              "title": "High Conversion Rate",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "Since we are a reputed brand people prefer our services more than any other service provider. That service has a really impressive conversion rate."
+                }
+              ],
+              "link": ""
+            },
+            {
+              "img": "/assets/serviceImg/advanced-tracking-url.svg",
+              "title": "Advanced Tracking URLs",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "We provide you with powerful Real time tracking tools that will provide you insightful report with every details so that you can monitor your progress and withdraw your amount."
+                }
+              ],
+              "link": ""
+            },
+            {
+              "img": "/assets/serviceImg/eye-catchy-ads.svg",
+              "title": "Eye-Catchy Ads Banners",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "You will also get attractive ad banners that you can use on your blog, video or any content to promote our services and gain more audience."
+                }
+              ],
+              "link": ""
+            },
+            {
+              "img": "/assets/serviceImg/easy-to-use.svg",
+              "title": "Easy to Use Dashboard",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "We have built our affiliate dashboard very easy to use and well labeled. Hence no matter whether you are a beginner or a pro marketer, you can easily start your earnings."
+                }
+              ],
+              "link": ""
+            },
+            {
+              "img": "/assets/serviceImg/affiliate-support.svg",
+              "title": "24/7 Affiliate Support",
+              "description": [
+                {
+                  "type": "text",
+                  "content": "But what if you are still stuck in your journey? Well, No problem! We will provide you with a dedicated affiliate manager that guides you at every step of your journey."
+                }
+              ],
+              "link": ""
+            }
+          ]
+        
+        
       },
  
         "faqs": [

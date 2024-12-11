@@ -42,9 +42,9 @@ const DedicatedServerNetherland = () => {
         heading={data.enterPriseGrade.heading}
         subHeading={data.enterPriseGrade.subHeading}
       />
-      <QlodHostServices       heading={data.featureHeading.Heading}
-      content={data.featureHeading.subHeading}
-      features={data.features}
+      <QlodHostServices heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
+        features={data.features}
 
       />
       <InstallationPanel {...installationPanel} />

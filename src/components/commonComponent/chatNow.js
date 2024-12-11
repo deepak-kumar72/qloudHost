@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from "next/link";
 import { FaArrowRight } from 'react-icons/fa';
-import '../commonComponent/common.css'
 
 
 const ChatNow = () => {

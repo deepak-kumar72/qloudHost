@@ -11,6 +11,7 @@ import Resources from "./components/resources";
 import FAQsSection from "../commonComponent/faqSection";
 import BlogSection from "./components/blogSection";
 import Testimonials from "../commonComponent/testimonial";
+import ChatNow from "../commonComponent/chatNow";
 
 
 const Home = () => {
@@ -50,8 +51,8 @@ const Home = () => {
       <InstallationPanel {...installationPanel}
       />
       <QlodHostServices
-        heading="Why Choose QloudHost for Your DMCA Ignored Hosting Needs?"
-        content="Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+         heading={data.featureHeading.Heading}
+         content={data.featureHeading.subHeading}
         features={data.features} // Use JSON data
       />
       <Services servicesData={data.servicesData1} /> {/* Use JSON data */}
@@ -59,6 +60,7 @@ const Home = () => {
       <Resources />
       <Testimonials />
       <FAQsSection faqs={data.faqsData} /> {/* Use JSON data */}
+      <ChatNow/>
     </div>
   );
 };

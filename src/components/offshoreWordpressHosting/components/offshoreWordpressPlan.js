@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
-import plansData from "./plansData";
 
 
 const OffWordpressPlan = () => {
+  const [data, setData] = useState(null);
+
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/wordprssHosting.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
@@ -34,7 +53,7 @@ const OffWordpressPlan = () => {
           {/* 3 Year Plan */}
           <div className="tab-pane fade show active" id="pills-three-year" role="tabpanel" aria-labelledby="pills-three-year-tab" tabindex="0">
           <div className="row home-plan justify-content-center" id="explore">
-          {plansData.threeYearPlans.map((plan) => (
+          {data.wordpressPlan.threeYearPlans.map((plan) => (
             <div
               key={plan.id}
               className="col-12 col-md-6 col-lg-4  mb-4 explore-plan-col"
@@ -89,7 +108,7 @@ const OffWordpressPlan = () => {
           {/* 1 Year Plan */}
           <div className="tab-pane fade" id="pills-one-year" role="tabpanel" aria-labelledby="pills-one-year-tab" tabindex="0">
           <div className="row home-plan justify-content-center" id="explore">
-          {plansData.oneYearPlans.map((plan) => (
+          {data.wordpressPlan.oneYearPlans.map((plan) => (
             <div
               key={plan.id}
               className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col"
@@ -143,7 +162,7 @@ const OffWordpressPlan = () => {
           {/* 1 Month Plan */}
           <div className="tab-pane fade" id="pills-one-month" role="tabpanel" aria-labelledby="pills-one-month-tab" tabindex="0">
           <div className="row home-plan justify-content-center" id="explore">
-          {plansData.oneMonthPlans.map((plan) => (
+          {data.wordpressPlan.oneMonthPlans.map((plan) => (
             <div
               key={plan.id}
               className="col-12 col-md-6 col-lg-4   mb-4 explore-plan-col"

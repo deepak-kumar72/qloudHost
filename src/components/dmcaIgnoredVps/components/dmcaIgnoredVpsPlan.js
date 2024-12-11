@@ -1,22 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import VpsPlan from '../../commonComponent/vpsPlan';
 
 
 
 const DmcaIgnoredVpsPlan = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/dmcaIgnoredVps.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="hosting-plan mb-5">
     <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">Best Cheap DMCA Ignored VPS Hosting Plans</h2>
-      <p className="text-center mb-5 planHead-con m-auto">Get unbeatable performance with our Best Cheap offshore DMCA Ignored VPS hosting Servers without paying any extra bucks! Pay only for what you use!
-      Pay only for what you use</p>
+      <h2 className="text-center m-auto mb-3">{data.dmcavpsPlan.title}</h2>
+      <p className="text-center mb-5 planHead-con m-auto">{data.dmcavpsPlan.description}</p>
       
       <VpsPlan/>
       
       <div className="text-center mt-3">
-        <span className="consult">Looking for more power? Check our DMCA <Link href="" className=" fw-bold">Ignored OffShore Dedicated Server </Link>Plans</span>
+        <span className="consult">
+        {data.dmcavpsPlan.additionalText.map((part, idx) => {
+            if (part.type === "text") {
+              return <span key={idx}>{part.content}</span>;
+            } else if (part.type === "link") {
+              return (
+                <Link key={idx} href={part.url} className="faq-link">
+                  {part.content}
+                </Link>
+              );
+            }
+            return null;
+          })}
+        </span>
       </div>
     </div>
     </div>

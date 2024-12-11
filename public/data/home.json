@@ -119,43 +119,73 @@
           { "name": "DirectAdmin", "img": "/assets/icon/directAdmin.png" },
           { "name": "CyberPanel", "img": "/assets/icon/cyberPanel.png" },
           { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
-          { "name": "Debian", "img": "/assets/icon/debian.png" }
+          { "name": "Debian", "img": "/assets/icon/debain.png" }
         ]
       },
 
-    "features": [
-      {
-        "img": "/assets/feature/hosted-in-netherlands.svg",
-        "title": "Hosted in Netherlands",
-        "description": "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet. Our carefully chosen data centers in the Netherlands ensure that your site stays safe and private, while also allowing you to bypass country-specific restrictions.",
-        "link": ""
-      },
-      {
-        "img": "/assets/feature/ssd.svg",
-        "title": "Fastest SSD Servers",
-        "description": "Experience lightning-fast performance and boost your website’s rankings and conversion rates with our NVMe SSD drive storage! Rest assured, we only use top-of-the-line industry-standard equipment to power our servers, guaranteeing quality service for our valued clients.",
-        "link": ""
-      },
-      {
-        "img": "/assets/feature/free-website-migration.svg",
-        "title": "Free Website Migration",
-        "description": "If you already have a website, let us make your life easier by transferring it for free! Don’t worry if you’ve had a bad experience with your previous service provider, our dedicated team of technical experts can migrate your website to quality services without any data loss. Just ask us how!",
-        "link": ""
-      },
-      {
-        "img": "/assets/feature/money-back-guarantee.svg",
-        "title": "Money-Back Gurantee",
-        "description": "We understand how important it is to invest your hard-earned money wisely. That’s why we offer a 14-day money-back guarantee on our high-speed hosting service – so you can try it out completely risk-free! Choose us with confidence and experience the difference!",
-        "link": ""
-      },
-      {
-        "img": "/assets/feature/uptime.svg",
-        "title": "99.9% Uptime Commitment",
-        "description": "Our DMCA Ignored Hosting guarantees an impressive 99.9% uptime, thanks to our solid infrastructure & enterprise-grade servers, strict security protocols, and industry-leading hardware and software components. Trust us to meet all of your hosting needs and exceed your expectations!",
-        "link": ""
-      }
-    ],
+      "featureHeading":{
+    "Heading":"Why Choose QloudHost for Your DMCA Ignored Hosting Needs?",
+    "subHeading": "Experience our superior support, robust infrastructure, and unmatched reliability. We are the trusted choice for DMCA Ignored critical websites and apps. Count on us to deliver excellence every step of the way. Join our satisfied customers today!"
+  },
 
+        "features": [
+          {
+            "img": "/assets/feature/hosted-in-netherlands.svg",
+            "title": "Hosted in Netherlands",
+            "description": [
+              {
+                "type": "text",
+                "content": "With our DMCA Ignored Hosting, we offer top-notch security and privacy for your website on the internet. Our carefully chosen data centers in the Netherlands ensure that your site stays safe and private, while also allowing you to bypass country-specific restrictions."
+              }
+            ],
+            "link": ""
+          },
+          {
+            "img": "/assets/feature/ssd.svg",
+            "title": "Fastest SSD Servers",
+            "description": [
+              {
+                "type": "text",
+                "content": "Experience lightning-fast performance and boost your website’s rankings and conversion rates with our NVMe SSD drive storage! Rest assured, we only use top-of-the-line industry-standard equipment to power our servers, guaranteeing quality service for our valued clients."
+              }
+            ],
+            "link": ""
+          },
+          {
+            "img": "/assets/feature/free-website-migration.svg",
+            "title": "Free Website Migration",
+            "description": [
+              {
+                "type": "text",
+                "content": "If you already have a website, let us make your life easier by transferring it for free! Don’t worry if you’ve had a bad experience with your previous service provider, our dedicated team of technical experts can migrate your website to quality services without any data loss. Just ask us how!"
+              }
+            ],
+            "link": ""
+          },
+          {
+            "img": "/assets/feature/money-back-guarantee.svg",
+            "title": "Money-Back Guarantee",
+            "description": [
+              {
+                "type": "text",
+                "content": "We understand how important it is to invest your hard-earned money wisely. That’s why we offer a 14-day money-back guarantee on our high-speed hosting service – so you can try it out completely risk-free! Choose us with confidence and experience the difference!"
+              }
+            ],
+            "link": ""
+          },
+          {
+            "img": "/assets/feature/uptime.svg",
+            "title": "99.9% Uptime Commitment",
+            "description": [
+              {
+                "type": "text",
+                "content": "Our DMCA Ignored Hosting guarantees an impressive 99.9% uptime, thanks to our solid infrastructure & enterprise-grade servers, strict security protocols, and industry-leading hardware and software components. Trust us to meet all of your hosting needs and exceed your expectations!"
+              }
+            ],
+            "link": ""
+          }
+        ],
+            
     "servicesData1": [
       {
         "id": 1,
@@ -213,6 +243,62 @@
       ]
     }
   ],
+
+  "testimonials": {
+    "heading": "What Our Clients Said About Us",
+    "subHeading": "We are loved by marketers, agencies, small business owners, and many more. Our customers’ testimonials are the best social proof we can get!",
+    "data": [
+      {
+        "imgUrl": "/assets/testimonial1.png",
+        "name": "Peters",
+        "role": "Qloud Host is the best Offshore hosting…",
+        "feedback": "Qloud Host is the best Offshore hosting one will always desire to have. Their support is always very much ready to help most especially Isha who handled my little hitches like a professional that he is. I will always recommend Qloud Host at all times to friends and Family."
+      },
+      {
+        "imgUrl": "/assets/testimonial2.png",
+        "name": "Vihari Anand",
+        "role": "qloud host is the best hosting service…",
+        "feedback": "qloud host is the best hosting service provides excellent when its matter of safety and security. isha pandey guiding me in and every step to make the hosting process simple and succesful. she is best in handling the customer issues 24x7."
+      },
+      {
+        "imgUrl": "/assets/testimonial3.png",
+        "name": "With Niolex",
+        "role": "These guys are excellent",
+        "feedback": "These guys are excellent. After purchasing the service yawin has assigned me a dedicated support member who setup my server in quick and helped me to setup my apps. Any issue that i had was resolved quick. Their speed is very developer friendly. I recommend them unreservedly."
+      },
+      {
+        "imgUrl": "/assets/testimonial4.png",
+        "name": "Joram Dymisster",
+        "role": "BEST HOSTING SERVICE",
+        "feedback": "Thanks to the Ranjeet,Aisha and Whole Team of Qloudhost.Am happy with there support and understanding.At some point i was having problems with my payment gateway.I ask them and they agree to extend my overdue invoice time to let me solve the problem without suspend my services."
+      },
+      {
+        "imgUrl": "/assets/testimonial5.png",
+        "name": "Adam Johnson",
+        "role": "Qloud host is the best",
+        "feedback": "Qloud is the best hosting service. Servers are super fast, the support team is fantastic just a fantastic service you also do not have to wait for someone to activate the service after purchase the system immediately activates it for you which is amazing and also I love the pricing. Highly recommended A++++++++"
+      },
+      {
+        "imgUrl": "/assets/testimonial6.png",
+        "name": "Lucifer XVI",
+        "role": "Definitely would suggest to other friends of mine who have their own companies",
+        "feedback": "Well the server was never really out of order except for once when I was not even able to login or even open the site. So I figured that there must be some maintenance going on. I was still able to access my admin panel so all is good."
+      },
+      {
+        "imgUrl": "/assets/testimonial7.png",
+        "name": "ADITYA KUMAR",
+        "role": "Great server speed & affordable",
+        "feedback": "These servers are fast and there team even resolved my plugin issues.I was hesitant at first, as not a well known company. But the dedicated servers were so cheap that I purchased just to give it a shot. Now I regret wasting so much more money on less powerful vps servers for so long."
+      },
+      {
+        "imgUrl": "/assets/testimonial8.png",
+        "name": "With Niolex",
+        "role": "These guys are excellent",
+        "feedback": "These guys are excellent. After purchasing the service yawin has assigned me a dedicated support member who setup my server in quick and helped me to setup my apps. Any issue that i had was resolved quick. Their speed is very developer friendly. I recommend them unreservedly."
+      }
+    ]
+  },
+    
 
     "faqsData":  [
         {
