@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
-import vpsPlanData from './vpsPlanData'; 
 // import { useEffect } from 'react';
 // import { Tooltip } from "bootstrap";
 
@@ -64,7 +63,7 @@ const VpsPlan = () => {
             className="row offshoreVps-plan justify-content-center"
             id="explore"
           >
-            {vpsPlanData.oneYearPlans.map((plan) => (
+            {data.vpsPlanData.oneYearPlans.map((plan) => (
               <div
                 key={plan.id}
                 className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col"
@@ -125,7 +124,7 @@ const VpsPlan = () => {
             className="row offshoreVps-plan justify-content-center"
             id="explore"
           >
-            {vpsPlanData.sixMonthPlans.map((plan) => (
+            {data.vpsPlanData.sixMonthPlans.map((plan) => (
               <div
                 key={plan.id}
                 className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col"
@@ -176,7 +175,7 @@ const VpsPlan = () => {
             className="row offshoreVps-plan justify-content-center"
             id="explore"
           >
-            {vpsPlanData.threeMonthPlans.map((plan) => (
+            {data.vpsPlanData.threeMonthPlans.map((plan) => (
               <div
                 key={plan.id}
                 className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col"
@@ -225,7 +224,7 @@ const VpsPlan = () => {
             className="row offshoreVps-plan justify-content-center"
             id="explore"
           >
-            {vpsPlanData.oneMonthPlans.map((plan) => (
+            {data.vpsPlanData.oneMonthPlans.map((plan) => (
               <div
                 key={plan.id}
                 className="col-12 col-md-6 col-lg-3   mb-4 explore-plan-col"

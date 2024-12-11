@@ -80,34 +80,40 @@ const Questions = ({ faqs }) => {
                     }`}
                   >
                     <div className="accordion-body">
-                    {Array.isArray(faq.answer) ? (
-    faq.answer.map((part, idx) => {
-      if (part.type === "text") {
-        // Render text content
-        return <span key={idx}>{part.content}</span>;
-      } else if (part.type === "link") {
-        // Render a link
-        return (
-          <Link key={idx} href={part.url} className="faq-link">
-            {part.content}
-          </Link>
-        );
-      } else if (part.type === "list") {
-        // Render a list only if the content is an array
-        return (
-          <ul key={idx}>
-            {Array.isArray(part.content) &&
-              part.content.map((item, liIdx) => <li key={liIdx}>{item}</li>)}
-          </ul>
-        );
-      }
-      // Fallback for unknown types
-      return null;
-    })
-  ) : (
-    // Fallback for invalid or missing answer data
-    <span>No answer available.</span>
-  )}
+                      {Array.isArray(faq.answer) ? (
+                        faq.answer.map((part, idx) => {
+                          if (part.type === "text") {
+                            // Render text content
+                            return <span key={idx}>{part.content}</span>;
+                          } else if (part.type === "link") {
+                            // Render a link
+                            return (
+                              <Link
+                                key={idx}
+                                href={part.url}
+                                className="faq-link"
+                              >
+                                {part.content}
+                              </Link>
+                            );
+                          } else if (part.type === "list") {
+                            // Render a list only if the content is an array
+                            return (
+                              <ul key={idx}>
+                                {Array.isArray(part.content) &&
+                                  part.content.map((item, liIdx) => (
+                                    <li key={liIdx}>{item}</li>
+                                  ))}
+                              </ul>
+                            );
+                          }
+                          // Fallback for unknown types
+                          return null;
+                        })
+                      ) : (
+                        // Fallback for invalid or missing answer data
+                        <span>No answer available.</span>
+                      )}
                     </div>
                   </div>
                 </div>

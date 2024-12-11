@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import dedicatedplansData from './dedicatedPlanData'
 import Link from "next/link";
 
 const DedicatedPlan = () => {
@@ -43,7 +42,7 @@ const DedicatedPlan = () => {
                         </tr>
                     </thead>
                     <tbody>
-                    {dedicatedplansData.map((plan) => (
+                    {data.planSection.plans.map((plan) => (
                             <tr key={plan.id}>
                                 <td className='text-start position-relative plan-table-data'>
                                     {plan.name}

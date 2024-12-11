@@ -19,12 +19,9 @@ const Footer = () => {
         { name: "Offshore Dedicated Server", href: "/offshore-dedicated-servers/" },
         { name: "Offshore Video Hosting", href: "/offshore-video-hosting/" },
         { name: "Offshore Streaming Server", href: "/offshore-streaming-server/" },
-        { name: "Adult Hosting", href: "/adult-hosting/" },
         { name: "DMCA Ignored VPS", href: "/dmca-ignored-vps/" },
         { name: "Netherlands Offshore VPS", href: "/offshore-vps-hosting/netherlands/" },
-        { name: "High Performance VPS", href: "/high-performance-vps-hosting/" },
         { name: "DMCA Ignored Dedicated Servers", href: "/dmca-ignored-dedicated-servers/" },
-        { name: "Offshore Windows RDP", href: "/offshore-vps-hosting/windows-rdp" },
 
       ],
     },
@@ -40,7 +37,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "My Account",
+      title: "Earn Money",
       links: [
         { name: "Become an affilliate", href: "https://my.qloudhost.com/register.php" },
         { name: "Affiliate Login", href: "https://my.qloudhost.com/login" },
@@ -75,6 +72,17 @@ const Footer = () => {
       ],
     },
   ];
+  const specialHosting =[
+    {
+      title: "Special Hosting",
+      links:[
+        { name: "Adult Hosting", href: "/adult-hosting/" },
+        { name: "High Performance VPS", href: "/high-performance-vps-hosting/" },
+        { name: "Offshore Windows RDP", href: "/offshore-vps-hosting/windows-rdp" },
+        { name: "FFmpeg Hosting", href: "/ffmpeg-hosting/"},
+      ]
+    }
+  ]
 
   return (
     <footer className="text-light pt-5 footer-sec">
@@ -114,7 +122,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               {ourServices[0].links.map((link, index) => (
                 <li key={index}>
-                {/* <Image src={maskgroup} alt='' className='me-1'/> */}
+                
                   <Link  href={link.href} className="text-light text-decoration-none footer-menu">
                     {link.name}
                   </Link>
@@ -124,6 +132,17 @@ const Footer = () => {
           </div>
 
           <div className="col-5 col-lg-3 mb-4">
+          <h5 className='menu-head'>Special Hosting</h5>
+           <ul className="list-unstyled">
+              {specialHosting[0].links.map((link, index) => (
+                <li key={index} >
+                {/* <img src={maskgroup} alt='' className='me-1'/> */}
+                  <Link href={link.href} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
             <h5 className='menu-head'>{myAccount[0].title}</h5>
             <ul className="list-unstyled">
               {myAccount[0].links.map((link, index) => (
@@ -135,17 +154,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <h5 className='menu-head mt-7'>{myAccount[1].title}</h5>
-            <ul className="list-unstyled">
-              {myAccount[1].links.map((link, index) => (
-                <li key={index} >
-                {/* <Image src={maskgroup} alt='' className='me-1'/> */}
-                  <Link href={link.href} className="text-light text-decoration-none footer-menu">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            
 
 
           </div>
@@ -156,6 +165,18 @@ const Footer = () => {
               {Policies[0].links.map((link, index) => (
                 <li key={index} >
                 {/* <Image src={maskgroup} alt='' className='me-1 '/> */}
+                  <Link href={link.href} className="text-light text-decoration-none footer-menu">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h5 className='menu-head mt-7'>{myAccount[1].title}</h5>
+            <ul className="list-unstyled">
+              {myAccount[1].links.map((link, index) => (
+                <li key={index} >
+                {/* <Image src={maskgroup} alt='' className='me-1'/> */}
                   <Link href={link.href} className="text-light text-decoration-none footer-menu">
                     {link.name}
                   </Link>
