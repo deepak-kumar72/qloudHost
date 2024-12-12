@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import VpsPlan from "../../commonComponent/vpsPlan";
+import VpsPlan from "../commonComponent/vpsPlan";
+// import VpsPlan from "../../commonComponent/vpsPlan";
 
 const AdultHostingPlans = () => {
   const [data, setData] = useState(); // State to store the JSON data
@@ -45,8 +46,8 @@ const AdultHostingPlans = () => {
             return null;
           })}
         </p>
-
-        <VpsPlan />
+          <VpsPlan/>
+        
         <div className="text-center mt-3">
           <span className="consult">
           {data.vpsPlan.additionalText.map((part, idx) => {

@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import VpsPlan from "../../commonComponent/vpsPlan";
+import VpsPlan from "../commonComponent/vpsPlan";
 
 
 
-const NeitherLandOffshoreVpsPlan = () => {
+const WindowsRdpPlan = () => {
 
   const [data, setData] = useState(); // State to store the JSON data
 
   // Fetch data dynamically
   const getData = async () => {
     try {
-      const response = await fetch("/data/vpsneitherlandoffshore.json"); // Fetch from public folder
+      const response = await fetch("/data/windowrdp.json"); // Fetch from public folder
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
@@ -32,16 +32,18 @@ const NeitherLandOffshoreVpsPlan = () => {
     <div className="hosting-plan mb-5">
       <div className="container plan-sec mt-5">
         <h2 className="text-center m-auto mb-3">
-          {data.neitherlandoffshorevpsplan.title}
+          {data.WindowsRdpPlan.title}
         </h2>
         <p className="text-center mb-5 planHead-con m-auto">
-          {data.neitherlandoffshorevpsplan.description}
+          {data.WindowsRdpPlan.description}
         </p>
 
         <VpsPlan />
 
+
+
         <div className="text-center mt-3">
-          <span className="consult">{data.neitherlandoffshorevpsplan.consultationText.map((part, idx) => {
+          <span className="consult">{data.WindowsRdpPlan.consultationText.map((part, idx) => {
             if (part.type === "text") {
               return <span key={idx}>{part.content}</span>;
             } else if (part.type === "link") {
@@ -59,4 +61,4 @@ const NeitherLandOffshoreVpsPlan = () => {
   );
 };
 
-export default NeitherLandOffshoreVpsPlan;
+export default WindowsRdpPlan;

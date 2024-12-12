@@ -70,6 +70,35 @@
             "url": "https://my.qloudhost.com/store/dedicated/intel-xeon-gold-6230"
           }
         ],
+
+        "featuresElement": [
+          {
+            "image": "/assets/feature/netherlands-streaming-server.webp",
+            "alt": "Guaranteed protection in the Netherlands",
+            "title": "Guaranteed protection in the Netherlands",
+            "descriptions": [
+              "QloudHost presents a diverse selection of Netherlands Media Streaming Servers featuring cutting-edge hardware. Our servers are finely tuned for robust load balancing and unmetered resources, ensuring your dependable streaming services.",
+              "QloudHost offers user-friendly services with automated features, allowing you to concentrate on your media streaming without concerns about the technical backend. Stream with confidence!"
+            ],
+            "button": {
+              "text": "Get Started Now",
+              "link": "#explore"
+            }
+          },
+          {
+            "image": "/assets/feature/netherlands-streaming-server-02.webp",
+            "alt": "DMCA Ignored Streaming Server",
+            "title": "DMCA Ignored Streaming Server",
+            "descriptions": [
+              "QloudHost offers top-notch offshore Netherlands servers for global audio and video streaming. Our DMCA-compliant offshore streaming servers are not only cost-effective but also deliver superior speed and reliability compared to other providers.",
+              "Our dedicated streaming servers operate on our purpose-built network, meticulously configured for high-quality video streaming, video on demand, Offshore IPTV services, and high-traffic projects. QloudHost’s DMCA-ignored streaming servers are your ideal solution for all your streaming requirements."
+            ],
+            "button": {
+              "text": "Get Started Now",
+              "link": "#explore"
+            }
+          }
+        ],
       
 
     "featureHeading":{

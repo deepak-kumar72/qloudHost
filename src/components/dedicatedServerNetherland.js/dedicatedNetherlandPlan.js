@@ -1,8 +1,8 @@
 
 import React from 'react';
 import Link from "next/link";
+import DedicatedPlan from '../commonComponent/dedicatedPlan';
 
-import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 
 const DedicatedNetherlandPlan = () => {
   return (

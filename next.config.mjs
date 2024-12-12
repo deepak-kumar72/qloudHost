@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true, // Keep this setting as is
-
+trailingSlash: true,
   // Enable internationalized routing for GTranslate
   i18n: {
     locales: [

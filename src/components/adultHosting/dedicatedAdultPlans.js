@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from "react";
+import DedicatedPlan from "../commonComponent/dedicatedPlan";
 
-import DedicatedPlan from '../../commonComponent/dedicatedPlan';
+// import DedicatedPlan from '../../commonComponent/dedicatedPlan';
 
 const DedicatedAdultPlan = () => {
   const [data, setData] = useState(); // State to store the JSON data
@@ -32,8 +33,7 @@ const DedicatedAdultPlan = () => {
       <h2 className="text-center m-auto mb-3">{data.dedicatedPlan.title}</h2>
       <p className="text-center mb-5 planHead-con m-auto">{data.dedicatedPlan.description}</p>
       
-      <DedicatedPlan/>
-       
+       <DedicatedPlan/>
       </div>
     </div>
   );

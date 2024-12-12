@@ -1,12 +1,64 @@
-import React from 'react'
-import DedicatedServer from '@/components/dedicatedServer/dedicatedServer'
+import EnterpriseGrade from '@/components/commonComponent/enterpriseGrade';
+import HeroComponent from '@/components/commonComponent/heroComponent';
+import InstallationPanel from '@/components/commonComponent/installationPanel';
+import QlodHostServices from '@/components/commonComponent/qlodHostServices';
+import Testimonials from '@/components/commonComponent/testimonial';
+import WebsiteCover from '@/components/commonComponent/websiteCover';
+import DedicatedServerPlan from '@/components/dedicatedServer/dedicatedServerPlan';
+import DedicatedHostingSolution from '@/components/dmcaDedicatedServers/dedicatedHostingSolution';
+import FAQsSection from "@/components/commonComponent/faqSection";
+import React, { useState, useEffect } from "react";
+import ChatNow from '@/components/commonComponent/chatNow';
 
 const Dedicated = () => {
+  const [data, setData] = useState(); // State to store the JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/dedicatedServer.json"); // Fetch from public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  // Destructure data for cleaner usage
+  const { heroComponent, installationPanel } = data;
   return (
     <div>
-      <DedicatedServer/>
+        <HeroComponent {...heroComponent}
+      />
+      <DedicatedServerPlan />
+      <EnterpriseGrade
+      heading={data.enterPriseGrade.heading}
+      subHeading={data.enterPriseGrade.subHeading}
+      />
+      <QlodHostServices
+      heading={data.featureHeading.Heading}
+      content={data.featureHeading.subHeading}
+      features={data.features}
+      />
+      <DedicatedHostingSolution />
+      <InstallationPanel {...installationPanel}
+      />
+      <WebsiteCover />
+      <Testimonials/>
+      <FAQsSection faqs={data.faqsData} />
+      <ChatNow/>
     </div>
   )
 }
 
 export default Dedicated
+

@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import VpsPlan from '../../commonComponent/vpsPlan';
+import VpsPlan from "../commonComponent/vpsPlan";
 
 
 
-const DmcaIgnoredVpsPlan = () => {
+
+const NeitherLandOffshoreVpsPlan = () => {
+
   const [data, setData] = useState(); // State to store the JSON data
 
   // Fetch data dynamically
   const getData = async () => {
     try {
-      const response = await fetch("/data/dmcaIgnoredVps.json"); // Fetch from public folder
+      const response = await fetch("/data/vpsneitherlandoffshore.json"); // Fetch from public folder
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
@@ -29,15 +31,18 @@ const DmcaIgnoredVpsPlan = () => {
 
   return (
     <div className="hosting-plan mb-5">
-    <div className="container plan-sec mt-5">
-      <h2 className="text-center m-auto mb-3">{data.dmcavpsPlan.title}</h2>
-      <p className="text-center mb-5 planHead-con m-auto">{data.dmcavpsPlan.description}</p>
-      
-      <VpsPlan/>
-      
-      <div className="text-center mt-3">
-        <span className="consult">
-        {data.dmcavpsPlan.additionalText.map((part, idx) => {
+      <div className="container plan-sec mt-5">
+        <h2 className="text-center m-auto mb-3">
+          {data.neitherlandoffshorevpsplan.title}
+        </h2>
+        <p className="text-center mb-5 planHead-con m-auto">
+          {data.neitherlandoffshorevpsplan.description}
+        </p>
+
+        <VpsPlan/>
+
+        <div className="text-center mt-3">
+          <span className="consult">{data.neitherlandoffshorevpsplan.consultationText.map((part, idx) => {
             if (part.type === "text") {
               return <span key={idx}>{part.content}</span>;
             } else if (part.type === "link") {
@@ -48,12 +53,11 @@ const DmcaIgnoredVpsPlan = () => {
               );
             }
             return null;
-          })}
-        </span>
+          })}  </span>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
 
-export default DmcaIgnoredVpsPlan
+export default NeitherLandOffshoreVpsPlan;

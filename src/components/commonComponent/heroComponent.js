@@ -29,7 +29,7 @@ const HeroComponent = ({
         <div className="row">
           <div className="col-md-6 m-auto">
             <div className="hero-content">
-              {router.pathname !== "/coupons/" && (
+              {router.pathname !== "/coupons" && (
                 <h4 className="mb-3 hero-subTitle">
                   <MdNotificationsActive className="me-2 sub-title-icon" />
                   {subTitle}

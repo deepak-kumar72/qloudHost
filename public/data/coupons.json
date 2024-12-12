@@ -2,6 +2,7 @@
     "heroComponent": {
       "title": "QloudHost Coupon Codes and Promotion",
       "description": "Save big on DMCA Ignored web hosting with QloudHost! Check out our coupon codes and promotions for discounts on shared, VPS Servers. Don’t miss out – check out QloudHost today!",
+      "button1Text": "Get Started Now",
       "button1Link": "#explore",
       "button2Text": "Explore Coupons",
       "button2Link": "",
@@ -37,6 +38,13 @@
         "subTitle": "(New Customers Only)",
         "buttonText": "SAVEBIG"
       }
-    ]
+    ],
+    "moneyBack":{
+      "title": "14-Day Money-Back Guarantee",
+      "description": "Customer satisfaction is guaranteed! Get a hassle-free refund within 14 days if you’re not 100% happy with our service. Our seamless process ensures risk-free hosting.",
+      "buttonText": "Get Started Now",
+      "buttonLink": "/"
+    }
+    
   }
   

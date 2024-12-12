@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import VpsPlan from "../../commonComponent/vpsPlan";
+import VpsPlan from '../commonComponent/vpsPlan';
 
 
 
-const HighPerformanceVpsPlan = () => {
+const DmcaIgnoredVpsPlan = () => {
   const [data, setData] = useState(); // State to store the JSON data
 
   // Fetch data dynamically
   const getData = async () => {
     try {
-      const response = await fetch("/data/highPerformanceVps.json"); // Fetch from public folder
+      const response = await fetch("/data/dmcaIgnoredVps.json"); // Fetch from public folder
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
@@ -29,19 +29,15 @@ const HighPerformanceVpsPlan = () => {
 
   return (
     <div className="hosting-plan mb-5">
-      <div className="container plan-sec mt-5">
-        <h2 className="text-center m-auto mb-3">
-          {data.highPerformancevpsPlan.title}
-        </h2>
-        <p className="text-center mb-5 planHead-con m-auto">
-        {data.highPerformancevpsPlan.description}
-        </p>
-        <VpsPlan/>
-        {/* vps Plan Data */}
-
-        
-        <div className="text-center mt-3">
-          <span className="consult"> {data.highPerformancevpsPlan.additionalText.map((part, idx) => {
+    <div className="container plan-sec mt-5">
+      <h2 className="text-center m-auto mb-3">{data.dmcavpsPlan.title}</h2>
+      <p className="text-center mb-5 planHead-con m-auto">{data.dmcavpsPlan.description}</p>
+      
+      <VpsPlan/>
+      
+      <div className="text-center mt-3">
+        <span className="consult">
+        {data.dmcavpsPlan.additionalText.map((part, idx) => {
             if (part.type === "text") {
               return <span key={idx}>{part.content}</span>;
             } else if (part.type === "link") {
@@ -53,11 +49,11 @@ const HighPerformanceVpsPlan = () => {
             }
             return null;
           })}
-          </span>
-        </div>
+        </span>
       </div>
+    </div>
     </div>
   );
 };
 
-export default HighPerformanceVpsPlan;
+export default DmcaIgnoredVpsPlan

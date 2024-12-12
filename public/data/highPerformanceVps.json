@@ -55,6 +55,37 @@
   ]
 },
 
+
+"featuresElement": [
+    {
+      "image": "/assets/feature/lighting-fast-loading-speed.webp",
+      "alt": "Lightning Fast Loading Speed",
+      "title": "Lightning Fast Loading Speed",
+      "description": "Speed is a simple yet powerful benefit you’ll enjoy with our high performance VPS hosting. A quick-loading website means your competitors won’t stand a chance at wooing away your potential customers.",
+      "button": {
+        "text": "Get Started Now",
+        "link": "#explore"
+      }
+    },
+    {
+      "image": "/assets/feature/top-notch-security.webp",
+      "alt": "Top-notch Security",
+      "title": "Top-notch Security",
+      "description": "We rely on KVM virtualisation platforms, known for their top-notch security. Your Virtual Machine is tucked safely in a secure jail environment, ensuring that your workload remains private and inaccessible to other virtual servers on the same node. Rest easy; your data is safe with us!",
+      "button": null
+    },
+    {
+      "image": "/assets/feature/99-uptime.webp",
+      "alt": "99.9% Uptime Guarantee",
+      "title": "99.9% Uptime Guarantee",
+      "description": "You can count on a 99.9% uptime guarantee with our high performance VPS hosting service! Our virtual private servers are equipped with top-notch SSD storage, ensuring smooth and flawless performance.",
+      "button": {
+        "text": "Get Started Now",
+        "link": "#explore"
+      }
+    }
+  ],
+
 "featureHeading":{
     "Heading":"What You Get with Your High Performance VPS Server",
     "subHeading": "Looking for some good reasons to choose QloudHost? Here’s the reason of our confidence. "

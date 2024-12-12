@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import DedicatedPlan from '../../commonComponent/dedicatedPlan';
+import DedicatedPlan from '../commonComponent/dedicatedPlan';
 import Link from "next/link";
 
 const VideoHostingPlan = () => {

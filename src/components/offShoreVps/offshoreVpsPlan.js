@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import VpsPlan from "../../commonComponent/vpsPlan";
+import VpsPlan from "../commonComponent/vpsPlan";
+
 
 
 

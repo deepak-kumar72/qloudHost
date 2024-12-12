@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import DedicatedPlan from "../../commonComponent/dedicatedPlan";
+import DedicatedPlan from "../commonComponent/dedicatedPlan";
 
 const DedicatedServerPlan = () => {
   const [data, setData] = useState(); // State to store the JSON data

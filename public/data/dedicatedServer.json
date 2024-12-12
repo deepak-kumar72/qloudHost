@@ -269,7 +269,7 @@
     { "name": "DirectAdmin", "img": "/assets/icon/directAdmin.png" },
     { "name": "CyberPanel", "img": "/assets/icon/cyberPanel.png" },
     { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
-    { "name": "Debian", "img": "/assets/icon/debian.png" }
+    { "name": "Debian", "img": "/assets/icon/debain.png" }
   ]
 },
 

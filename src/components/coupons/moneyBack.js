@@ -1,24 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
+
 const MoneyBack = () => {
+  const [data, setData] = useState(null); // State to store JSON data
+
+  // Fetch data dynamically
+  const getData = async () => {
+    try {
+      const response = await fetch("/data/coupons.json"); // Path to your JSON file in the public folder
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Show a loader or fallback UI until data is loaded
+  if (!data) {
+    return <div></div>;
+  }
+
   return (
     <div className="py-5">
       <div className="container">
         <div className="row">
           <div className="col-md-7 chat-sec">
-            <h3>14-Day Money-Back Guarantee</h3>
-            <p>
-              Customer satisfaction is guaranteed! Get a hassle-free refund
-              within 14 days if you’re not 100% happy with our service. Our
-              seamless process ensures risk-free hosting.
-            </p>
+            <h3>{data.moneyBack.title}</h3>
+            <p>{data.moneyBack.description}</p>
           </div>
           <div className="col-md-5 m-auto text-center">
-            <Link href="/">
-              <button className=" start-now-btn">
-                Get Started Now
+            <Link href={data.moneyBack.buttonLink}>
+              <button className="start-now-btn">
+                {data.moneyBack.buttonText}
                 <FaArrowRight className="ms-2" />
               </button>
             </Link>
