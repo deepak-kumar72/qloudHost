@@ -28,7 +28,7 @@ const VpsNetherlands = () => {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   const { heroComponent, installationPanel } = data;

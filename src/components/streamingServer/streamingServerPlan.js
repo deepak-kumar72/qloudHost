@@ -25,7 +25,7 @@ const StreamingServerPlan = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
   return (
     <div className="hosting-plan mb-5">

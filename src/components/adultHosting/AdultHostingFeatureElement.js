@@ -23,7 +23,7 @@ const AdultHostingFeatureElement = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (

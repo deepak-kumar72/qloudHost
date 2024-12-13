@@ -23,7 +23,7 @@ const OffshoreFeatureElement = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
@@ -32,7 +32,7 @@ const OffshoreFeatureElement = () => {
         {data.webHostingfeatures.map((feature, index) => (
           <div
             key={index}
-            className={`row align-items-center mb-5 ${
+            className={`row align-items-center mb-2 ${
               feature.reverseOrder ? "flex-row-reverse" : ""
             }`}
           >

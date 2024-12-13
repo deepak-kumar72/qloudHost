@@ -22,14 +22,14 @@ const WordpressFeatureElement = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
     <div className="privacy-hardware-container mt-5">
       <div className="container">
         {data.wordpressFeature.map((item) => (
-          <div className="row align-items-center mb-3" key={item.id}>
+          <div className="row align-items-center mb-1" key={item.id}>
             <div
               className={`col-md-6 mb-4 text-center ${
                 item.id % 2 === 0 ? "order-md-2" : ""

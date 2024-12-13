@@ -53,7 +53,8 @@
             "title": "Further Information",
             "detail": [
                 { "type": "text", "content": "If the user wishes to access the details about the respective data we have stored or believes that we may not have adhered to our own policies by violating its right to privacy, in that case the user can immediately contact our team at " },
-                { "type": "link", "content": "support@qloudhost.com", "url": "https://qloudhost.com/privacy-policy/" }
+                { "type": "link", "content": "support@qloudhost.com", "url": "https://qloudhost.com/privacy-policy/" },
+                { "type": "text", "content": " and find a solution regarding its concerns." }
               ]
           }
         }  

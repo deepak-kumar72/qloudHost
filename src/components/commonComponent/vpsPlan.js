@@ -24,7 +24,7 @@ const VpsPlan = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   // useEffect(() => {
@@ -36,7 +36,7 @@ const VpsPlan = () => {
   //   });
   // }, []);
     return (
-        <div className="container plan-sec mt-5">
+        <div className="container plan-sec mt-5" id="explore">
 
 <div className="row nav nav-pills mb-5 plan-group-btn" id="pills-tab" role="tablist">
           <div className="col-6 col-md-3 nav-item px-3 mb-3" role="presentation">
@@ -81,7 +81,7 @@ const VpsPlan = () => {
                     </div>
                   )}
                   <h5 className="card-title mt-3 mb-3">{plan.name}</h5>
-                  <h3 className="card-price vps-plan-price mb-5">
+                  <h3 className="card-price vps-plan-price mb-4">
                     {plan.price} <span className="price-unit">/month</span>
                   </h3>
                   <p className="save save-badge">{plan.save}</p>

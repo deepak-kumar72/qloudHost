@@ -22,7 +22,7 @@ const HostingPlans = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!plansData.length) {
-    return <div>Loading Hosting Plans...</div>;
+    return <div></div>;
   }
 
   return (

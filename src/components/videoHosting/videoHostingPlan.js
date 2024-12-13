@@ -23,11 +23,11 @@ const VideoHostingPlan = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
-    <div className=" hosting-plan mb-5">
+    <div className=" hosting-plan mb-5" id="explore">
       <div className=" plan-sec mt-5">
         <h2 className="text-center m-auto mb-3"> {data.VideoHostingPlan.title}</h2>
         <p className="text-center mb-5 planHead-con m-auto">{data.VideoHostingPlan.description}</p>

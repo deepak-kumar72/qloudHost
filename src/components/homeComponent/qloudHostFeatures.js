@@ -21,7 +21,7 @@ const QloudHostFeatures = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!features.length) {
-    return <div>Loading features...</div>;
+    return <div></div>;
   }
 
   return (

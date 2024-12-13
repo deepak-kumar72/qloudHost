@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router"; // Replace useLocation with useRouter
+import { useRouter } from "next/router"; 
 import { FaArrowRight } from "react-icons/fa";
 import { LuShieldCheck } from "react-icons/lu";
 import { FaRegCircleCheck } from "react-icons/fa6";
@@ -61,8 +61,8 @@ const HeroComponent = ({
           </div>
           <div className="col-md-6 m-auto">
             <div className="hero-image-container position-relative text-end w-100 h-100">
-              <Image  src={imageSrc} alt={title} className="hero-frame h-100" width={1000}
-              height={1000}/>
+              <Image  src={imageSrc} alt={title} className="hero-frame h-100 w-100" width={1000}
+              height={1000} priority/>
               <div className="features"></div>
             </div>
           </div>
@@ -72,18 +72,18 @@ const HeroComponent = ({
   );
 };
 
-HeroComponent.propTypes = {
-  subTitle: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  primaryButtonText: PropTypes.string.isRequired,
-  primaryButtonLink: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string),
-};
+// HeroComponent.propTypes = {
+//   subTitle: PropTypes.string,
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   primaryButtonText: PropTypes.string.isRequired,
+//   primaryButtonLink: PropTypes.string.isRequired,
+//   imageSrc: PropTypes.string.isRequired,
+//   options: PropTypes.arrayOf(PropTypes.string),
+// };
 
-HeroComponent.defaultProps = {
-  options: [],
-};
+// HeroComponent.defaultProps = {
+//   options: [],
+// };
 
 export default HeroComponent;

@@ -23,7 +23,7 @@ const RdpFeatureBanner = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
@@ -48,9 +48,9 @@ const RdpFeatureBanner = () => {
         {/* Features List */}
         <div className="col-lg-7">
           {data.featureList.map((feature, index) => (
-            <div className="mb-4" key={index}>
-              <h5>{feature.featureTitle}</h5>
-              <p>{feature.description}</p>
+            <div className="mb-3" key={index}>
+              
+              <p><span className="vps-feature-opt">{feature.featureTitle}</span>{feature.description}</p>
             </div>
           ))}
           <Link href="#explore" smooth={true} duration={200}>

@@ -48,7 +48,7 @@
   "url": "#explore",
   "panelOptions": [
     { "name": "AlmaLinux", "img": "/assets/icon/almaLinux.png" },
-    { "name": "RockyLinuc", "img": "/assets/icon/rockyLinux.png" },
+    { "name": "RockyLinux", "img": "/assets/icon/rockyLinux.png" },
     { "name": "Debian", "img": "/assets/icon/debain.png" },
     { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
     { "name": "Windows", "img": "/assets/icon/window-icon.png" }
@@ -150,7 +150,7 @@
       "description": [
         {
           "type": "text",
-          "content": "Had a really bad experience with your previous service provider? Don’t worry! We have built a"
+          "content": "Had a really bad experience with your previous service provider? Don’t worry! We have built a "
         },
         {
           "type": "link",
@@ -159,7 +159,7 @@
         },
         {
           "type": "text",
-          "content": "of technical experts to migrate your website to quality services without causing any data loss."
+          "content": " of technical experts to migrate your website to quality services without causing any data loss."
         }
       ],
       "link": ""

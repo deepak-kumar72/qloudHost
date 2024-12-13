@@ -18,8 +18,8 @@
     },
 
     "dedicatedPlan": {
-        "title": "DMCA Ignored Dedicated Server Hosting Plans and Price",
-        "description": "DMCA Ignored dedicated servers offer the best performance and the highest level of security for any website or application. Invest in a dedicated server with no resource sharing and experience top-notch performance at an affordable price.",
+        "title": "DMCA Ignored Dedicated Server Hosting Plans and Prices",
+        "description": "DMCA Ignored dedicated servers offer the best performance and the highest level of security for any website or application. Invest in a dedicated server with no resource sharing and experience top-notch performance at an affordable price. the cheapest price in the market.",
         "additionalText": [
             {
               "type": "text",
@@ -108,13 +108,18 @@
         "description": [
           {
             "type": "text",
-            "content": "Experience exceptional technical support for your DMCA Ignored Hosting hosting, VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates."
+            "content": "Experience exceptional technical support for your "
           },
           {
             "type": "link",
             "url": "/",
             "content": "DMCA Ignored Hosting"
+          },
+          {
+            "type": "text",
+            "content": " , VPS and dedicated offshore server offer with a top-notch team. Ensuring your server is managed with DirectAdmin and receive timely security patches, OS updates, and other necessary updates."
           }
+
         ]
       }
     ],
@@ -148,7 +153,7 @@
           { "name": "DirectAdmin", "img": "/assets/icon/directAdmin.png" },
           { "name": "CyberPanel", "img": "/assets/icon/cyberPanel.png" },
           { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
-          { "name": "Debian", "img": "/assets/icon/debian.png" }
+          { "name": "Debian", "img": "/assets/icon/debain.png" }
         ]
       },
 
@@ -167,7 +172,7 @@
           "answer": [
             {
               "type": "text",
-              "content": "Yes, we provide completely flexible offshore VPS servers that can be easily upgraded to as many resources as possible! You just need to contact our team of highly trained experts, explain your needs, and they will upgrade your servers easily to the best managed DMCA Ignored dedicated server without any hidden charges."
+              "content": "Yes, we provide completely flexible "
             },
             {
               "type": "link",
@@ -175,9 +180,19 @@
               "content": "offshore VPS servers"
             },
             {
+              "type": "text",
+              "content": " that can be easily upgraded to as many resources as possible! You just need to "
+            },
+
+
+            {
               "type": "link",
               "url": "/contact-us/",
               "content": "contact our team"
+            },
+            {
+              "type": "text",
+              "content": " of highly trained experts, explain your needs, and they will upgrade your servers easily to the best managed DMCA Ignored dedicated server without any hidden charges."
             }
           ]
         },
@@ -186,7 +201,7 @@
           "answer": [
             {
               "type": "text",
-              "content": "Yes, we offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our policies."
+              "content": "Yes, we offer completely free-of-cost migration for up to 5 GB* without causing any data loss. Moreover, we do not put any additional charges or hidden charges, but in case your website files have surpassed 5GB of data, then it will be chargeable as guided by our "
             },
             {
               "type": "link",
@@ -218,7 +233,16 @@
           "answer": [
             {
               "type": "text",
-              "content": "If you are planning to host your website without losing your anonymity, then choosing an offshore DMCA Dedicated server will be the best pick for you! Moreover, we mentioned some more points below that will help you to understand everything in detail."
+              "content": "If you are planning to"
+            },
+            {
+              "type": "link",
+              "url": "https://qloudhost.com/blog/host-a-website-anonymously/",
+              "content": "host your website without losing your anonymity"
+            },
+            {
+              "type": "text",
+              "content": ", then choosing an offshore DMCA Dedicated server will be the best pick for you! Moreover, we mentioned some more points below that will help you to understand everything in detail."
             },
             {
               "type": "list",
@@ -232,14 +256,18 @@
               ]
             },
             {
-              "type": "link",
-              "url": "https://qloudhost.com/blog/host-a-website-anonymously/",
-              "content": "host your website without losing your anonymity"
+              "type": "text",
+              "content": "See the"
             },
+            
             {
               "type": "link",
               "url": "https://qloudhost.com/blog/benefits-of-offshore-dedicated-server-hosting/",
               "content": "benefits of DMCA Dedicated Servers"
+            },
+            {
+              "type": "text",
+              "content": "and decide for yourself if it’s the right call for you."
             }
           ]
         },

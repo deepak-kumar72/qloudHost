@@ -21,7 +21,7 @@ const GetPaidMethod = () => {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;  // Handle loading state
+    return <div></div>;  // Handle loading state
   }
 
   // Destructure the data

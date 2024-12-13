@@ -7,58 +7,56 @@ import WebsiteCover from '@/components/commonComponent/websiteCover';
 import DedicatedServerPlan from '@/components/dedicatedServer/dedicatedServerPlan';
 import DedicatedHostingSolution from '@/components/dmcaDedicatedServers/dedicatedHostingSolution';
 import FAQsSection from "@/components/commonComponent/faqSection";
-import React, { useState, useEffect } from "react";
 import ChatNow from '@/components/commonComponent/chatNow';
+import fs from 'fs';
+import path from 'path';
 
-const Dedicated = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder or project directory
+    const filePath = path.join(process.cwd(), 'public', 'data', 'dedicatedServer.json');
+    const jsonData = fs.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/dedicatedServer.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const Dedicated = ({ data }) => {
+  // Show fallback UI if data is missing
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Error loading page data.</div>;
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel } = data;
+  const { heroComponent, installationPanel, enterPriseGrade, featureHeading, features, faqsData } = data;
+
   return (
     <div>
-        <HeroComponent {...heroComponent}
-      />
+      <HeroComponent {...heroComponent} />
       <DedicatedServerPlan />
       <EnterpriseGrade
-      heading={data.enterPriseGrade.heading}
-      subHeading={data.enterPriseGrade.subHeading}
+        heading={enterPriseGrade.heading}
+        subHeading={enterPriseGrade.subHeading}
       />
       <QlodHostServices
-      heading={data.featureHeading.Heading}
-      content={data.featureHeading.subHeading}
-      features={data.features}
+        heading={featureHeading.Heading}
+        content={featureHeading.subHeading}
+        features={features}
       />
       <DedicatedHostingSolution />
-      <InstallationPanel {...installationPanel}
-      />
+      <InstallationPanel {...installationPanel} />
       <WebsiteCover />
-      <Testimonials/>
-      <FAQsSection faqs={data.faqsData} />
-      <ChatNow/>
+      <Testimonials />
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default Dedicated
-
+export default Dedicated;

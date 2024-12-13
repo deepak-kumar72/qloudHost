@@ -189,11 +189,7 @@ h2 {
   font-weight: 400;
   color: #f6355a;
 }
-.hero-frame {
-  right: 0px;
-  top: 146px;
-  width: 37%;
-}
+
 
 .hero-image {
   width: 75%;
@@ -1203,11 +1199,6 @@ border: 1px solid #f6355a;
 color:#f6355a
 }
 
-.hero-frame {
-  width: 100%;
-}
-
-
 .footer-sec {
   background: #0d121f;
   overflow: hidden;
@@ -1640,9 +1631,15 @@ margin: auto;
 }
 
 .enterprise-btn{
+  background-color: #1E2944;
+  color: #fff;
+  text-decoration: none;
+}
+
+.enterprise-btn:hover{
   background-color: #fff;
   color: #f6355a;
-  text-decoration: none;
+  border: 1px solid #f6355a;
 }
 
 .btn-primary{
@@ -2699,10 +2696,16 @@ color: #0D121F;
       border-radius: 20px;
   }
 
-  .vps-features span{
+  .vps-features p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #616365;
+  }
+
+  .vps-feature-opt{
       color: #616365;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 600 !important;
       line-height: 20px;
       
   }

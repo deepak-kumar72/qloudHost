@@ -4,6 +4,7 @@
       "title": "Best Offshore Web Hosting",
       "description": "Boost your online presence with LiteSpeed optimized offshore web hosting, high-class security, and 24/7 expert support from a reliable and trusted DMCA Ignored web hosting company Hosted in Amsterdam, Netherlands",
       "button1Link": "#explore",
+      "button1Text": "Get Started Now",
       "button2Text": "Explore Features",
       "button2Link": "",
       "imageSrc": "/assets/Frame/dmca-cheap-offshore-web-hosting.webp",
@@ -301,7 +302,12 @@
                 "description": [
                   {
                     "type": "text",
-                    "content": "Easily install popular apps like <a href='/offshore-wordpress-hosting/' class=\"faq-link\">WordPress</a>, Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications."
+                    "content": "Easily install popular apps like "
+                  },
+                  { "type": "link", "content": "WordPress", "url": "/offshore-wordpress-hosting/" },
+                  {
+                    "type": "text",
+                    "content": ", Joomla, and Drupal with our one-click web hosting service. Enjoy fast performance and seamless integration with your favorite applications."
                   }
                 ],
                 "link": "/read-more"
@@ -370,7 +376,8 @@
           {
             "question": "What is offshore Web Hosting?",
             "answer": [
-              { "type": "text", "content": "Offshore web hosting refers to the practice of hosting your website, data, or application in a data center located outside your country of origin. This approach offers numerous benefits, such as enhanced privacy, increased security, and the ability to host content that may be restricted in certain regions. Offshore hosting is particularly useful for those looking to host copyrighted or " },
+              { "type": "link", "content": "Offshore web hosting", "url": "/offshore-web-hosting/" },
+              { "type": "text", "content": " refers to the practice of hosting your website, data, or application in a data center located outside your country of origin. This approach offers numerous benefits, such as enhanced privacy, increased security, and the ability to host content that may be restricted in certain regions. Offshore hosting is particularly useful for those looking to host copyrighted or " },
               { "type": "link", "content": "DMCA", "url": "/" },
               { "type": "text", "content": " content, as well as websites that may be vulnerable to hacking attempts. By choosing an offshore web hosting, you can enjoy greater flexibility, increased security, and improved performance for your website or application." }
             ]

@@ -24,7 +24,7 @@ const HeroSection = ({
               <Image
                 src={imageSrc}
                 alt="frame"
-                className="hero-frame h-100"
+                className="hero-frame h-100 w-100"
                 width={1000}
                 height={1000}
               />

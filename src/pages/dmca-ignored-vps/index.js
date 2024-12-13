@@ -8,6 +8,7 @@ import React, { useState, useEffect } from "react";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
 import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantees";
+import DmcaIgnoredVpsPlan from "@/components/dmcaIgnoredVps/dmcaIgnoredVpsPlan";
 
 const DmcaVps = () => {
   const [data, setData] = useState(); // State to store the JSON data
@@ -29,14 +30,15 @@ const DmcaVps = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   // Destructure data for cleaner usage
   const { heroComponent, installationPanel, hostingGurantees } = data;
   return (
     <div>
-      <HeroComponent{...heroComponent} />
+      <HeroComponent {...heroComponent} />
+      <DmcaIgnoredVpsPlan/>
 <WebHostingGurantees {...hostingGurantees}
 />
 <TechnicalSpecification />

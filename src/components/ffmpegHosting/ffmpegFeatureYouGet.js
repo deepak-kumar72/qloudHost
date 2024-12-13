@@ -23,7 +23,7 @@ const FFmpegFeaturesYouGet = () => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
@@ -49,9 +49,9 @@ const FFmpegFeaturesYouGet = () => {
         {/* Features List */}
         <div className="col-lg-7">
           {data.featuresFeatureGet.map((feature, index) => (
-            <div className="mb-4" key={index}>
+            <div className="mb-3" key={index}>
               <span>
-                <span className="feature-head">{feature.heading}</span>:{" "}
+                <span className="vps-feature-opt me-2">{feature.heading}</span>:{" "}
                 {feature.description}
               </span>
             </div>

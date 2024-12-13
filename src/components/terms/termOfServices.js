@@ -11,7 +11,7 @@ const TermOfServices = () => {
       .catch(error => console.error('Error loading the JSON data:', error));
   }, []);
 
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <div></div>;
 
 
   return (

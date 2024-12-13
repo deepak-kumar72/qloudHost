@@ -49,7 +49,7 @@
   "url": "#explore",
   "panelOptions": [
     { "name": "AlmaLinux", "img": "/assets/icon/almaLinux.png" },
-    { "name": "RockeyLinuc", "img": "/assets/icon/rockyLinux.png" },
+    { "name": "RockeyLinux", "img": "/assets/icon/rockyLinux.png" },
     { "name": "Debian", "img": "/assets/icon/debain.png" },
     { "name": "Ubuntu", "img": "/assets/icon/ubuntu.png" },
     { "name": "Windows", "img": "/assets/icon/window-icon.png" }

@@ -31,7 +31,7 @@
             },
             {
                 "type": "text",
-                "content": "is here to help!"
+                "content": " is here to help!"
             },
             {
                 "type": "link",
@@ -40,7 +40,7 @@
             },
             {
                 "type": "text",
-                "content": "with us today"
+                "content": " with us today"
             }
         ]
     },
@@ -179,7 +179,16 @@
             "answer": [
                 {
                     "type": "text",
-                    "content": "Video hosting is nothing but an optimized server, especially for video streaming websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience!"
+                    "content": "Video hosting is nothing but an optimized server, especially for"
+                },
+                {
+                    "type": "link",
+                    "content": "video streaming",
+                    "url": "/offshore-streaming-server/"
+                  },
+                {
+                    "type": "text",
+                    "content": "websites or OTT kind of platforms. For example, there are many movie streaming websites that offer paid as well as free movies to watch or download. These websites use video hosting services to host their website and get a bufferless experience!"
                 }
             ]
         },
@@ -206,7 +215,15 @@
             "answer": [
                 {
                     "type": "text",
-                    "content": "Definitely, our offshore hosting servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
+                    "content": "Definitely, our "
+                },{
+                    "type": "link",
+                    "content": "offshore hosting",
+                    "url": "/offshore-vps-hosting/"
+                  },
+                  {
+                    "type": "text",
+                    "content": " servers come with full root access, which provides you with the ability to customize your files and resources as per your needs. In addition, you can also create, modify, upgrade or delete your website with just a few clicks."
                 }
             ]
         },

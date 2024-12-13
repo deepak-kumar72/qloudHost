@@ -15,7 +15,8 @@
             "description": "Customers agree to pay QloudHost the fees charged by the QloudHost, and it includes the following:",
             "items": [
               "Products and services during the initial and for any renewal terms.",
-              "Certain limited services may not be listed on the product’s list of QloudHost but come under the services such as add-ons, emergency services or any supplemental services."
+              "Certain limited services may not be listed on the product’s list of QloudHost but come under the services such as add-ons, emergency services or any supplemental services.",
+              "Customers authorize QloudHost to perform such services on its behalf and agree to pay for the supplement, emergency services and add-ons."
             ]
           },
           {
@@ -46,7 +47,10 @@
           },
           {
             "title": "Vulnerabilities and updates",
-            "content": "All the customers agree to allow QloudHost to launch forced updates and close all the vulnerabilities in any possible ways to ensure the security and safety of both the client and server. In addition, QloudHost reserves complete authority and unrestricted rights to take all the necessary steps, methods and techniques to remove the vulnerabilities that can threaten the other account holders or be used to perform cyber attacks on our servers."
+            "items": [
+              "All the customers agree to allow QloudHost to launch forced updates and close all the vulnerabilities in any possible ways to ensure the security and safety of both the client and server. In addition, QloudHost reserves complete authority and unrestricted rights to take all the necessary steps, methods and techniques to remove the vulnerabilities that can threaten the other account holders or be used to perform cyber attacks on our servers."
+              
+            ]
           },
           {
             "title": "Fees and payment",
@@ -57,7 +61,7 @@
           },
           {
             "title": "Invoice notification",
-            "content": "QloudHost will send any invoices to the main email account of the owner based on the service terms. But we cannot guarantee that this email will drop in the inbox of the customer’s email. As an option, we provide the Customer a Client client area where the service invoices can be reviewed and paid."
+            "items": ["QloudHost will send any invoices to the main email account of the owner based on the service terms. But we cannot guarantee that this email will drop in the inbox of the customer’s email. As an option, we provide the Customer a Client client area where the service invoices can be reviewed and paid."]
           },
           {
             "title": "Account Termination/Suspension",
@@ -76,11 +80,11 @@
           },
           {
             "title": "Limited warranty",
-            "content": "Any Guarantees or warranties related to our products and services will be null and void if the customer breaks this agreement either intentionally or non-intentionally."
+            "items": ["Any Guarantees or warranties related to our products and services will be null and void if the customer breaks this agreement either intentionally or non-intentionally."]
           },
           {
             "title": "Disclaimer of actions caused under the control of a third party",
-            "content": "The customer agrees to not share personal, technical or any other QloudHost-related data to any third party and will maintain this agreement with full force otherwise, its consequences will directly cause the termination of the respective customer’s account."
+            "items": ["The customer agrees to not share personal, technical or any other QloudHost-related data to any third party and will maintain this agreement with full force otherwise, its consequences will directly cause the termination of the respective customer’s account."]
           },
           {
             "title": "Limitations of liabilities",

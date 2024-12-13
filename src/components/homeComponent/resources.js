@@ -20,7 +20,7 @@ const Resources = () => {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   const { qloudhostPlans } = data;
