@@ -1,7 +1,4 @@
-// pages/index.js
-// import Home from "../components/homeComponent/home";
-import React, { useState, useEffect } from "react";
-import '../styles/Home.module.css'
+import React from "react";
 import HeroComponent from "@/components/commonComponent/heroComponent";
 import HostingPlans from "@/components/homeComponent/hostingPlans";
 import TechnicalSpecification from "@/components/commonComponent/technicalSpecification";
@@ -14,33 +11,40 @@ import Resources from "@/components/homeComponent/resources";
 import Testimonials from "@/components/commonComponent/testimonial";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder or project directory
+    const filePath = path.join(process.cwd(), "public", "data", "home.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-export default function HomePage() {
-  const [data, setData] = useState(); // State to store the JSON data
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/home.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+export default function HomePage({ data }) {
+  // Show fallback UI if data is missing
   if (!data) {
-    return <div></div>;
+    return <div>Error loading page data.</div>;
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel } = data;
+  const {
+    heroComponent,
+    installationPanel,
+    featureHeading,
+    features,
+    servicesData1,
+    faqsData,
+  } = data;
 
   return (
     <div>
@@ -48,19 +52,18 @@ export default function HomePage() {
       <HostingPlans />
       <TechnicalSpecification />
       <QloudHostFeatures />
-      <InstallationPanel {...installationPanel}
-      />
+      <InstallationPanel {...installationPanel} />
       <QlodHostServices
-         heading={data.featureHeading.Heading}
-         content={data.featureHeading.subHeading}
-        features={data.features} // Use JSON data
+        heading={featureHeading.Heading}
+        content={featureHeading.subHeading}
+        features={features}
       />
-      <Services servicesData={data.servicesData1} /> {/* Use JSON data */}
+      <Services servicesData={servicesData1} />
       <BlogSection />
       <Resources />
       <Testimonials />
-      <FAQsSection faqs={data.faqsData} />
-      <ChatNow/>
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
+  );
 }

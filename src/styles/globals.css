@@ -345,8 +345,8 @@ h2 {
 }
 
 .qloudService-img{
-width: 30%;
-height: 30%;
+width: 100px;
+height: 100px;
 }
 .qloudservice-desc{
   height: 70%;
@@ -1290,7 +1290,7 @@ font-weight: 400;
 }
 
 .start-now {
-  padding: 6px 20px;
+  padding: 6px 16px;
 }
 .start-now a {
   font-size: 12px;
@@ -1613,7 +1613,8 @@ color: #596780;
 }
 
 .serviceCard-img{
-  width: 80%;
+  width: 80px;
+  height: 80px;
 }
 
 .cover-opt{
@@ -2743,6 +2744,7 @@ color: #0D121F;
     
   }
 
+  
   .plan-table-responsive{
     border: 1px solid #ebeef2;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
