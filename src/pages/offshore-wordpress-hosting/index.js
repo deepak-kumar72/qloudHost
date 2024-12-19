@@ -3,56 +3,55 @@ import QlodHostServices from "@/components/commonComponent/qlodHostServices";
 import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantees";
 import OffWordpressPlan from "@/components/offshoreWordpressHosting/offshoreWordpressPlan";
 import WordpressFeatureElement from "@/components/offshoreWordpressHosting/wordpressFeatureElement";
-import React, { useState, useEffect } from "react";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
-const Wordpress= () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Read JSON file from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "wordprssHosting.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/wordprssHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    return {
+      props: { data }, // Pass the data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const Wordpress = ({ data }) => {
+  // Fallback if no data is provided
   if (!data) {
     return <div></div>;
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent} = data;
+  const { heroComponent, featureHeading, features, faqsData } = data;
+
   return (
     <div>
-      <HeroComponent
-     {...heroComponent}
-      />
+      <HeroComponent {...heroComponent} />
       <OffWordpressPlan />
       <WebHostingGurantees
-      title='QloudHost Guarantees'
+        title="QloudHost Guarantees"
         subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
-      <WordpressFeatureElement/>
+      <WordpressFeatureElement />
       <QlodHostServices
-            heading={data.featureHeading.Heading}
-      content={data.featureHeading.subHeading}
-      features={data.features} />
-      <FAQsSection
-        faqs={data.faqsData} 
+        heading={featureHeading.Heading}
+        content={featureHeading.subHeading}
+        features={features}
       />
-      <ChatNow/>
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default Wordpress
+export default Wordpress;

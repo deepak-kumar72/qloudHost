@@ -1,28 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
-const HostingPlans = () => {
-  const [plansData, setPlansData] = useState([]); // State to store plans data
-
-  // Function to fetch data dynamically
-  const fetchPlansData = async () => {
-    try {
-      const response = await fetch("/data/home.json"); // Fetch JSON file
-      const data = await response.json();
-      setPlansData(data.plansData); // Set the plans data
-    } catch (error) {
-      console.error("Error fetching plans data:", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchPlansData(); // Fetch data when the component mounts
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!plansData.length) {
-    return <div></div>;
+export default function HostingPlans({ plansData }) {
+  // Show a loader or fallback UI if data is missing
+  if (!plansData || !plansData.length) {
+    return <div>Error loading hosting plans data.</div>;
   }
 
   return (
@@ -87,7 +70,7 @@ const HostingPlans = () => {
         <div className="text-center mt-3">
           <span className="consult">
             Not sure which Offshore DMCA Ignored hosting plan is right for you?
-            We can help.{" "}
+            We can help. {" "}
             <Link href="/contact-us/" className="fw-bold">
               GET FREE CONSULTATION NOW
             </Link>
@@ -96,6 +79,4 @@ const HostingPlans = () => {
       </div>
     </div>
   );
-};
-
-export default HostingPlans;
+}

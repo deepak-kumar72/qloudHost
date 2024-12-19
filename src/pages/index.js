@@ -49,7 +49,7 @@ export default function HomePage({ data }) {
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <HostingPlans />
+      <HostingPlans plansData={data.plansData}  />
       <TechnicalSpecification />
       <QloudHostFeatures />
       <InstallationPanel {...installationPanel} />
