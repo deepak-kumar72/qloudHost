@@ -6,55 +6,52 @@ import AvailableWos from "@/components/windowsRdp/availabelWos";
 import ChooseQloudHost from "@/components/windowsRdp/chooseQloudHost";
 import RdpFeatureBanner from "@/components/windowsRdp/rdpfeaturebanner";
 import WindowsRdpPlan from "@/components/windowsRdp/windowsRdpPlan";
-import React, { useState, useEffect } from "react";
 import FAQsSection from "@/components/commonComponent/faqSection";
+import fs from "fs";
+import path from "path";
 
-const WindowsVps = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "windowrdp.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/windowrdp.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!data) {
-    return <div></div>;
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
   }
-
-  // Destructure data for cleaner usage
-  const { heroComponent} = data;
-  return (
-    <div>
-       <HeroComponent {...heroComponent} />
-      <WindowsRdpPlan />
-
-      <ChooseQloudHost />
-      <TechnicalSpecification />
-      <AvailableWos/>
-
-      <QlodHostServices
-        heading={data.featureHeading.Heading}
-        content={data.featureHeading.subHeading}
-        features={data.features}
-      />
-
-      <RdpFeatureBanner />
-
-      <Testimonials/>
-      <FAQsSection faqs={data.faqsData} />
-    </div>
-  )
 }
 
-export default WindowsVps
+const WindowsVps = ({ data }) => {
+  // Destructure data for cleaner usage
+  const { heroComponent, featureHeading, faqsData } = data;
+
+  if (!data) {
+    return <div>Loading...</div>; // Show a loading state in case data is unavailable
+  }
+
+  return (
+    <div>
+      <HeroComponent {...heroComponent} />
+      <WindowsRdpPlan />
+      <ChooseQloudHost />
+      <TechnicalSpecification />
+      <AvailableWos />
+      <QlodHostServices
+        heading={featureHeading?.Heading}
+        content={featureHeading?.subHeading}
+        features={data.features}
+      />
+      <RdpFeatureBanner />
+      <Testimonials />
+      <FAQsSection faqs={faqsData} />
+    </div>
+  );
+};
+
+export default WindowsVps;

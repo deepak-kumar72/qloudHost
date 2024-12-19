@@ -1,4 +1,3 @@
-
 import AdultHostingFeatureElement from '@/components/adultHosting/AdultHostingFeatureElement';
 import AdultHostingPlans from '@/components/adultHosting/adultHostingPlans';
 import DedicatedAdultPlan from '@/components/adultHosting/dedicatedAdultPlans';
@@ -10,60 +9,56 @@ import TechnicalSpecification from '@/components/commonComponent/technicalSpecif
 import Testimonials from '@/components/commonComponent/testimonial';
 import CustomSolution from '@/components/streamingServer/customSolution';
 import FAQsSection from "@/components/commonComponent/faqSection";
-import React, { useState, useEffect } from "react";
 import ChatNow from '@/components/commonComponent/chatNow';
+import fs from 'fs';
+import path from 'path';
 
-const Adult = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), 'public', 'data', 'adultHosting.json');
+    const jsonData = fs.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/adultHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error('Error reading JSON file:', error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const Adult = ({ data }) => {
+  // Show fallback UI if data is missing
   if (!data) {
     return <div></div>;
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel, qloudHostGurantees, customSol} = data;
+  const { heroComponent, installationPanel, qloudHostGurantees, customSol } = data;
+
   return (
     <div>
-       <HeroComponent {...heroComponent}
-      />
-      <AdultHostingPlans/>
-      <DedicatedAdultPlan/>
-      <CustomSolution {...customSol}
-      />
-      <QloudGuarantees subHeading={qloudHostGurantees.subHeading}
-      />
-      <TechnicalSpecification/>
-      <InstallationPanel
-       {...installationPanel}
-      />
-      <AdultHostingFeatureElement/>
+      <HeroComponent {...heroComponent} />
+      <AdultHostingPlans />
+      <DedicatedAdultPlan />
+      <CustomSolution {...customSol} />
+      <QloudGuarantees subHeading={qloudHostGurantees.subHeading} />
+      <TechnicalSpecification />
+      <InstallationPanel {...installationPanel} />
+      <AdultHostingFeatureElement />
       <QlodHostServices
-       heading={data.featureHeading.Heading}
-      content={data.featureHeading.subHeading}
-      features={data.features} />
-      <Testimonials/>
-      <FAQsSection
-      faqs={data.faqsData} 
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
+        features={data.features}
       />
-      <ChatNow/>
+      <Testimonials />
+      <FAQsSection faqs={data.faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
 export default Adult;

@@ -33,7 +33,7 @@ export async function getStaticProps() {
 export default function HomePage({ data }) {
   // Show fallback UI if data is missing
   if (!data) {
-    return <div>Error loading page data.</div>;
+    return <div></div>;
   }
 
   // Destructure data for cleaner usage

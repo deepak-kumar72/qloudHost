@@ -8,60 +8,53 @@ import FeaturesYouGet from "@/components/offShoreVps/featuresYouGet";
 import OffshoreVpsPlan from "@/components/offShoreVps/offshoreVpsPlan";
 import PrivacyHardwarePage from "@/components/offShoreVps/privacyHardwarePage";
 import FAQsSection from "@/components/commonComponent/faqSection";
-import React, { useState, useEffect } from "react";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
-const VpsHosting = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "offshoreVps.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/offshoreVps.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!data) {
-    return <div></div>;
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
   }
+}
 
+const VpsHosting = ({ data }) => {
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel } = data;
+  const { heroComponent, installationPanel, featureHeading, faqsData } = data;
 
   return (
     <div>
-       <HeroComponent
-          {...heroComponent} 
-      />
-      <OffshoreVpsPlan/>
+      <HeroComponent {...heroComponent} />
+      <OffshoreVpsPlan />
       <WebHostingGurantees
-      title='Why choose QloudHost as your Offshore VPS provider?'
-      subHeading="Boost your website performance with world-class Best Offshore hosting DMCA Ignored servers and guaranteed performance."/>
-      <TechnicalSpecification />
-      <InstallationPanel
-       {...installationPanel}
+        title="Why choose QloudHost as your Offshore VPS provider?"
+        subHeading="Boost your website performance with world-class Best Offshore hosting DMCA Ignored servers and guaranteed performance."
       />
+      <TechnicalSpecification />
+      <InstallationPanel {...installationPanel} />
       <PrivacyHardwarePage />
       <QlodHostServices
-        heading={data.featureHeading.Heading}
-         content={data.featureHeading.subHeading}
+        heading={featureHeading?.Heading}
+        content={featureHeading?.subHeading}
         features={data.features}
       />
       <FeaturesYouGet />
       <Testimonials />
-      <FAQsSection faqs={data.faqsData} />
-      <ChatNow/>
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default VpsHosting
+export default VpsHosting;

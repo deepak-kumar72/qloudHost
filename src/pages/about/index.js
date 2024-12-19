@@ -1,48 +1,46 @@
-
 import AboutFeatures from '@/components/aboutQloudhost/aboutFeature';
 import QloudHostGurantees from '@/components/aboutQloudhost/qloudHostGurantees';
 import TechnologyPartners from '@/components/aboutQloudhost/technologyPartners';
 import Resources from '@/components/homeComponent/resources';
 import HeroSection from '@/components/privacyPolicy/heroSection';
-import React, { useState, useEffect } from "react";
+import fs from 'fs';
+import path from 'path';
 
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), 'public', 'data', 'about.json');
+    const jsonData = fs.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(jsonData);
 
-const AboutPage = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error('Error reading JSON file:', error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/about.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const AboutPage = ({ data }) => {
+  // Show fallback UI if data is missing
   if (!data) {
     return <div></div>;
   }
 
   // Destructure data for cleaner usage
-  const { heroComponent} = data;
+  const { heroComponent } = data;
+
   return (
     <div>
-      <HeroSection
-      {...heroComponent}    
-      />
-      <AboutFeatures/>
-      <QloudHostGurantees/>
-      <TechnologyPartners/>
+      <HeroSection {...heroComponent} />
+      <AboutFeatures />
+      <QloudHostGurantees />
+      <TechnologyPartners />
       <Resources />
     </div>
-  )
-}
+  );
+};
 
 export default AboutPage;

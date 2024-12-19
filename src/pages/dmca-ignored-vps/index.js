@@ -4,58 +4,52 @@ import QlodHostServices from "@/components/commonComponent/qlodHostServices";
 import TechnicalSpecification from "@/components/commonComponent/technicalSpecification";
 import Testimonials from "@/components/commonComponent/testimonial";
 import DmcaFeatureElement from "@/components/dmcaIgnoredVps/dmcaFeatureElement";
-import React, { useState, useEffect } from "react";
-import FAQsSection from "@/components/commonComponent/faqSection";
-import ChatNow from "@/components/commonComponent/chatNow";
 import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantees";
 import DmcaIgnoredVpsPlan from "@/components/dmcaIgnoredVps/dmcaIgnoredVpsPlan";
+import FAQsSection from "@/components/commonComponent/faqSection";
+import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
-const DmcaVps = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "dmcaIgnoredVps.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/dmcaIgnoredVps.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!data) {
-    return <div></div>;
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
   }
+}
 
+const DmcaVps = ({ data }) => {
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel, hostingGurantees } = data;
+  const { heroComponent, installationPanel, hostingGurantees, featureHeading, features, faqsData } = data;
+
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <DmcaIgnoredVpsPlan/>
-<WebHostingGurantees {...hostingGurantees}
-/>
-<TechnicalSpecification />
-<InstallationPanel
-{...installationPanel}
-/>
-<DmcaFeatureElement />
-<QlodHostServices
-heading={data.featureHeading.Heading}
-content={data.featureHeading.subHeading}
-features={data.features}
-/>
-<Testimonials />
-<FAQsSection faqs={data.faqsData} />
-<ChatNow/>
+      <DmcaIgnoredVpsPlan />
+      <WebHostingGurantees {...hostingGurantees} />
+      <TechnicalSpecification />
+      <InstallationPanel {...installationPanel} />
+      <DmcaFeatureElement />
+      <QlodHostServices
+        heading={featureHeading.Heading}
+        content={featureHeading.subHeading}
+        features={features}
+      />
+      <Testimonials />
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default DmcaVps
+export default DmcaVps;

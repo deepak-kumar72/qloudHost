@@ -6,62 +6,50 @@ import Guarantees from "@/components/streamingServer/qloudHostGurantees";
 import VideocustomSolution from "@/components/videoHosting/videoCustomSol";
 import VideoHostingFeatureElement from "@/components/videoHosting/videoHostingFeatureElement";
 import VideoHostingPlan from "@/components/videoHosting/videoHostingPlan";
-import React, { useState, useEffect } from "react";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
-const OffshoreVideo = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "videohosting.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/videohosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!data) {
-    return <div></div>;
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
   }
-
-  // Destructure data for cleaner usage
-  const { heroComponent, installationPanel } = data;
-  return (
-    <div>
-       <HeroComponent {...heroComponent} />
-
-<VideoHostingPlan />
-
-<VideocustomSolution />
-
-<Guarantees
-  subHeading={data.Guarantees.subHeading}
-/>
-<TechnicalSpecification />
-
-<InstallationPanel {...installationPanel}
-/>
-
-<VideoHostingFeatureElement />
-
-<QlodHostServices
-  heading={data.featureHeading.Heading}
-  content={data.featureHeading.subHeading}
-  features={data.features}
-/>
-<FAQsSection faqs={data.faqsData} />
-<ChatNow/>
-    </div>
-  )
 }
 
-export default OffshoreVideo
+const OffshoreVideo = ({ data }) => {
+  // Destructure data for cleaner usage
+  const { heroComponent, installationPanel, featureHeading, faqsData } = data;
+
+  return (
+    <div>
+      <HeroComponent {...heroComponent} />
+      <VideoHostingPlan />
+      <VideocustomSolution />
+      <Guarantees subHeading={data.Guarantees.subHeading} />
+      <TechnicalSpecification />
+      <InstallationPanel {...installationPanel} />
+      <VideoHostingFeatureElement />
+      <QlodHostServices
+        heading={featureHeading?.Heading}
+        content={featureHeading?.subHeading}
+        features={data.features}
+      />
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
+    </div>
+  );
+};
+
+export default OffshoreVideo;

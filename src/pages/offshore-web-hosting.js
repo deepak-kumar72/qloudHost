@@ -5,56 +5,56 @@ import Testimonials from "@/components/commonComponent/testimonial";
 import OffshoreFeatureElement from "@/components/offShoreHosting/offshoreFeatureElement";
 import OffShoreHostingPlan from "@/components/offShoreHosting/offShoreHostingPlan";
 import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantees";
-import React, { useState, useEffect } from "react";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "webHosting.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-const Offshorewebhosting = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/webHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+const Offshorewebhosting = ({ data }) => {
   // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div></div>;
+    return <div>Loading...</div>; // Show loading state in case of an error
   }
 
-  // Destructure data for cleaner usage
-  const { heroComponent} = data;
+  const { heroComponent } = data;
+
   return (
     <div>
-      <HeroComponent {...heroComponent}
-      />
+      <HeroComponent {...heroComponent} />
       <OffShoreHostingPlan />
       <WebHostingGurantees
-      title='QloudHost Guarantees'
-      subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations." />
+        title="QloudHost Guarantees"
+        subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
+      />
       <TechnicalSpecification />
       <OffshoreFeatureElement />
       <QlodHostServices
-      heading={data.featureHeading.Heading}
-      content={data.featureHeading.subHeading}
-      features={data.features}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
+        features={data.features}
       />
       <Testimonials />
-      <FAQsSection faqs={data.faqsData}  />
-      <ChatNow/>
+      <FAQsSection faqs={data.faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default Offshorewebhosting
+export default Offshorewebhosting;

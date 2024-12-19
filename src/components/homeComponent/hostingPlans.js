@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa6";
 export default function HostingPlans({ plansData }) {
   // Show a loader or fallback UI if data is missing
   if (!plansData || !plansData.length) {
-    return <div>Error loading hosting plans data.</div>;
+    return <div></div>;
   }
 
   return (

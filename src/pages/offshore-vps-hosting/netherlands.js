@@ -7,52 +7,55 @@ import Testimonials from "@/components/commonComponent/testimonial";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import NeitherlandVpFeatureElement from "@/components/neitherlandOffshoreVps/neitherlandVpsFeatureElement";
 import NeitherLandOffshoreVpsPlan from "@/components/neitherlandOffshoreVps/neitherlandVpsPlan";
-import React, { useState, useEffect } from "react";
 import ChatNow from "@/components/commonComponent/chatNow";
+import fs from "fs";
+import path from "path";
 
-const VpsNetherlands = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Fetch data at build time using getStaticProps
+export async function getStaticProps() {
+  try {
+    // Fetch JSON data from the public folder
+    const filePath = path.join(process.cwd(), "public", "data", "vpsneitherlandoffshore.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
 
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/vpsneitherlandoffshore.json");
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    return {
+      props: { data }, // Pass data as props
+    };
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+}
 
-  useEffect(() => {
-    getData();
-  }, []);
+const VpsNetherlands = ({ data }) => {
+  // Destructure data for cleaner usage
+  const { heroComponent, installationPanel, featureHeading, faqsData } = data;
 
   if (!data) {
-    return <div></div>;
+    return <div>Loading...</div>; // Show a loading state in case data is unavailable
   }
 
-  const { heroComponent, installationPanel } = data;
   return (
     <div>
-       <HeroComponent {...heroComponent} />
+      <HeroComponent {...heroComponent} />
       <NeitherLandOffshoreVpsPlan />
-
       <QloudGuarantees
         subHeading="Boost your website performance with world-class Best & Cheap Netherlands offshore VPS Hosting servers and guaranteed performance."
       />
       <TechnicalSpecification />
-      <InstallationPanel {...installationPanel}
-      />
-      <NeitherlandVpFeatureElement/>
+      <InstallationPanel {...installationPanel} />
+      <NeitherlandVpFeatureElement />
       <QlodHostServices
-         heading={data.featureHeading.Heading}
-         content={data.featureHeading.subHeading}
-        features={data.features} />
+        heading={featureHeading?.Heading}
+        content={featureHeading?.subHeading}
+        features={data.features}
+      />
       <Testimonials />
-      <FAQsSection faqs={data.faqsData} />
-      <ChatNow/>
+      <FAQsSection faqs={faqsData} />
+      <ChatNow />
     </div>
-  )
-}
+  );
+};
 
-export default VpsNetherlands
+export default VpsNetherlands;
