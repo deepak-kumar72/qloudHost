@@ -5,25 +5,19 @@ import OffWordpressPlan from "@/components/offshoreWordpressHosting/offshoreWord
 import WordpressFeatureElement from "@/components/offshoreWordpressHosting/wordpressFeatureElement";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
+import React from "react";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Read JSON file from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "wordprssHosting.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass the data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/wordprssHosting.json"); // Adjust URL as needed
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const Wordpress = ({ data }) => {
   // Fallback if no data is provided
@@ -37,12 +31,12 @@ const Wordpress = ({ data }) => {
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <OffWordpressPlan />
-      <WebHostingGurantees
+      <OffWordpressPlan data={data}/>
+      <WebHostingGurantees 
         title="QloudHost Guarantees"
         subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
-      <WordpressFeatureElement />
+      <WordpressFeatureElement data={data}/>
       <QlodHostServices
         heading={featureHeading.Heading}
         content={featureHeading.subHeading}

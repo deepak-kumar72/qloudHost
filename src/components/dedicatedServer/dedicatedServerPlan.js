@@ -28,24 +28,26 @@ const DedicatedServerPlan = () => {
     <div className="hosting-plan mb-5" id="explore">
       <div className="plan-sec mt-5">
         <h2 className="text-center m-auto mb-3">{data.planSection.heading}</h2>
-        <p className="text-center mb-5 planHead-con m-auto">{data.planSection.subHeading}</p>
+        <p className="text-center mb-5 planHead-con m-auto">
+          {data.planSection.subHeading}
+        </p>
 
         <DedicatedPlan />
 
         <div className="text-center mt-3">
           <span className="consult">
-          {data.planSection.consultationText.map((part, idx) => {
-                        if (part.type === "text") {
-                          return <span key={idx}>{part.content}</span>;
-                        } else if (part.type === "link") {
-                          return (
-                            <Link key={idx} href={part.url} className="fw-bold">
-                              {part.content}
-                            </Link>
-                          );
-                        } 
-                        return null;
-                      })}
+            {data.planSection.consultationText.map((part, idx) => {
+              if (part.type === "text") {
+                return <span key={idx}>{part.content}</span>;
+              } else if (part.type === "link") {
+                return (
+                  <Link key={idx} href={part.url} className="fw-bold">
+                    {part.content}
+                  </Link>
+                );
+              }
+              return null;
+            })}
           </span>
         </div>
       </div>

@@ -3,30 +3,21 @@ import QloudHostGurantees from '@/components/aboutQloudhost/qloudHostGurantees';
 import TechnologyPartners from '@/components/aboutQloudhost/technologyPartners';
 import Resources from '@/components/homeComponent/resources';
 import HeroSection from '@/components/privacyPolicy/heroSection';
-import fs from 'fs';
-import path from 'path';
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), 'public', 'data', 'about.json');
-    const jsonData = fs.readFileSync(filePath, 'utf-8');
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/about.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error('Error reading JSON file:', error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const AboutPage = ({ data }) => {
-  // Show fallback UI if data is missing
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   // Destructure data for cleaner usage
@@ -35,8 +26,8 @@ const AboutPage = ({ data }) => {
   return (
     <div>
       <HeroSection {...heroComponent} />
-      <AboutFeatures />
-      <QloudHostGurantees />
+      <AboutFeatures data={data}/>
+      <QloudHostGurantees data={data}/>
       <TechnologyPartners />
       <Resources />
     </div>

@@ -1,28 +1,20 @@
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const AboutFeatures = () => {
-  const [data, setData] = useState(null); // State to store the JSON data
+export const getServerSideProps = async () => {
+  try {
+    const response = await fetch("https://qloudhost.com/data/about.json");
+    const data = await response.json();
+    return { props: { data } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
+  }
+};
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/about.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const AboutFeatures = ({ data }) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   const { section } = data;

@@ -1,36 +1,31 @@
 import HeroComponent from "@/components/commonComponent/heroComponent";
 import CouponCard from "@/components/coupons/couponcard";
 import MoneyBack from "@/components/coupons/moneyBack";
-import React, { useState, useEffect } from "react";
+import ContactUs from "../contact-us";
 
-const Coupon = () => {
-  const [data, setData] = useState(null); // State to store JSON data
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
+  try {
+    const response = await fetch("https://qloudhost.com/data/coupons.json");
+    const data = await response.json();
+    return { props: { data } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
+  }
+};
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/coupons.json"); // Path to your JSON file in the public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const Coupon = ({ data }) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   // Destructure data for cleaner usage
   const { heroComponent, coupons } = data;
+
   return (
     <div>
-       <HeroComponent
+      <HeroComponent
         title={heroComponent.title}
         description={heroComponent.description}
         button1Text={heroComponent.button1Text}
@@ -40,7 +35,7 @@ const Coupon = () => {
         imageSrc={heroComponent.imageSrc}
         moneyBackText={heroComponent.moneyBackText}
       />
-      
+
       {coupons.map((coupon, index) => (
         <CouponCard
           key={index}
@@ -52,9 +47,10 @@ const Coupon = () => {
         />
       ))}
 
-      <MoneyBack />
+      <MoneyBack data={data}/>
+      <ContactUs/>
     </div>
-  )
-}
+  );
+};
 
-export default Coupon
+export default Coupon;

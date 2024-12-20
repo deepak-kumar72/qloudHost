@@ -10,30 +10,22 @@ import Testimonials from '@/components/commonComponent/testimonial';
 import CustomSolution from '@/components/streamingServer/customSolution';
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from '@/components/commonComponent/chatNow';
-import fs from 'fs';
-import path from 'path';
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), 'public', 'data', 'adultHosting.json');
-    const jsonData = fs.readFileSync(filePath, 'utf-8');
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/adultHosting.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error('Error reading JSON file:', error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const Adult = ({ data }) => {
-  // Show fallback UI if data is missing
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   // Destructure data for cleaner usage
@@ -42,13 +34,13 @@ const Adult = ({ data }) => {
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <AdultHostingPlans />
-      <DedicatedAdultPlan />
+      <AdultHostingPlans data={data}/>
+      <DedicatedAdultPlan data={data}/>
       <CustomSolution {...customSol} />
       <QloudGuarantees subHeading={qloudHostGurantees.subHeading} />
       <TechnicalSpecification />
       <InstallationPanel {...installationPanel} />
-      <AdultHostingFeatureElement />
+      <AdultHostingFeatureElement data={data}/>
       <QlodHostServices
         heading={data.featureHeading.Heading}
         content={data.featureHeading.subHeading}

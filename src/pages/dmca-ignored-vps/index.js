@@ -8,29 +8,26 @@ import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantee
 import DmcaIgnoredVpsPlan from "@/components/dmcaIgnoredVps/dmcaIgnoredVpsPlan";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "dmcaIgnoredVps.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/dmcaIgnoredVps.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const DmcaVps = ({ data }) => {
+  if (!data) {
+    return <div></div>; // Fallback UI if data is not available
+  }
+
   // Destructure data for cleaner usage
-  const { heroComponent, installationPanel, hostingGurantees, featureHeading, features, faqsData } = data;
+  const { heroComponent, installationPanel, hostingGurantees } = data;
 
   return (
     <div>
@@ -41,12 +38,12 @@ const DmcaVps = ({ data }) => {
       <InstallationPanel {...installationPanel} />
       <DmcaFeatureElement />
       <QlodHostServices
-        heading={featureHeading.Heading}
-        content={featureHeading.subHeading}
-        features={features}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
+        features={data.features}
       />
       <Testimonials />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
       <ChatNow />
     </div>
   );

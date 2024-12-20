@@ -3,23 +3,8 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
 
-const OffWordpressPlan = () => {
-  const [data, setData] = useState(null);
-
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/wordprssHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+const OffWordpressPlan = ({data}) => {
+  
   // Show a loader or fallback UI until data is loaded
   if (!data) {
     return <div></div>;

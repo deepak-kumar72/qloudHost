@@ -1,29 +1,23 @@
 import HeroSection from "@/components/privacyPolicy/heroSection";
 import RefundPolicies from "@/components/refundPolicy/refundPolicies";
-import fs from "fs";
-import path from "path";
+import React from "react";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "refund.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/refund.json"); // Adjust URL as needed
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const RefundPolicy = ({ data }) => {
-  // Show a loader or fallback UI until data is loaded
+  // Fallback if no data is provided
   if (!data) {
-    return <div>Loading...</div>; // Show loading state in case of an error
+    return <div></div>;
   }
 
   const { heroComponent } = data;
@@ -31,7 +25,7 @@ const RefundPolicy = ({ data }) => {
   return (
     <div>
       <HeroSection {...heroComponent} />
-      <RefundPolicies />
+      <RefundPolicies data={data}/>
     </div>
   );
 };

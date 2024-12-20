@@ -11,29 +11,23 @@ import Resources from "@/components/homeComponent/resources";
 import Testimonials from "@/components/commonComponent/testimonial";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder or project directory
-    const filePath = path.join(process.cwd(), "public", "data", "home.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/home.json"); // Adjust URL as needed
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
-export default function HomePage({ data }) {
-  // Show fallback UI if data is missing
+const HomePage = ({ data }) => {
+  // Fallback if no data is provided
   if (!data) {
-    return <div></div>;
+    return <div>Error loading page data.</div>;
   }
 
   // Destructure data for cleaner usage
@@ -49,7 +43,7 @@ export default function HomePage({ data }) {
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <HostingPlans plansData={data.plansData}  />
+      <HostingPlans plansData={data.plansData} />
       <TechnicalSpecification />
       <QloudHostFeatures />
       <InstallationPanel {...installationPanel} />
@@ -66,4 +60,6 @@ export default function HomePage({ data }) {
       <ChatNow />
     </div>
   );
-}
+};
+
+export default HomePage;

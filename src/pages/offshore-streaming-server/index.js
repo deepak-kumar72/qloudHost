@@ -10,40 +10,37 @@ import StreamingServerPlan from "@/components/streamingServer/streamingServerPla
 import StreamingServerQuality from "@/components/streamingServer/streamingServerQuality";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "streaming.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/streaming.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const StreamingServer = ({ data }) => {
-  // Destructure data for cleaner usage
-  const { heroComponent, featureHeading, installationPanel, faqsData } = data;
+  if (!data) {
+    return <div></div>; // Fallback UI if data is not available
+  }
+
+  const { heroComponent } = data;
 
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <StreamingServerPlan />
+      <StreamingServerPlan data={data}/>
       <CustomSolution
         solTitle="Need Custom Solution Media Streaming Offshore Servers"
         solText="Server solutions that scale with your business to deliver exceptional performance on even the most demanding Streaming, IPTV media streaming projects."
       />
       <Guarantees
-        subHeading="Boost your website performance with world-class Best & Cheap offshore streaming servers and guaranteed performance."
+        subHeading="Boost your website performance with world-class Best & Cheap offshore streaming servers
+        and guaranteed performance."
       />
       <TechnicalSpecification />
       <InstallationPanel
@@ -52,22 +49,22 @@ const StreamingServer = ({ data }) => {
         buttonText="Get Started Now"
         url="#explore"
         panelOptions={[
-          { name: "AlmaLinux", img: "/assets/icon/almaLinux.png" },
-          { name: "Rocky Linux", img: "/assets/icon/rockyLinux.png" },
-          { name: "Debian", img: "/assets/icon/debain.png" },
-          { name: "Ubuntu", img: "/assets/icon/ubuntu.png" },
-          { name: "Windows", img: "/assets/icon/window-icon.png" },
+          { name: 'AlmaLinux', img: '/assets/icon/almaLinux.png' },
+          { name: 'Rocky Linux', img: '/assets/icon/rockyLinux.png' },
+          { name: 'Debian', img: '/assets/icon/debain.png' },
+          { name: 'Ubuntu', img: '/assets/icon/ubuntu.png' },
+          { name: 'Windows', img: '/assets/icon/window-icon.png' },
         ]}
       />
       <StreamingServerQuality />
       <QlodHostServices
-        heading={featureHeading?.Heading}
-        content={featureHeading?.subHeading}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
         features={data.features}
       />
       <PopularStreamingUse />
       <Testimonials />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
       <ChatNow />
     </div>
   );

@@ -8,29 +8,25 @@ import VideoHostingFeatureElement from "@/components/videoHosting/videoHostingFe
 import VideoHostingPlan from "@/components/videoHosting/videoHostingPlan";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "videohosting.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/videohosting.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const OffshoreVideo = ({ data }) => {
-  // Destructure data for cleaner usage
-  const { heroComponent, installationPanel, featureHeading, faqsData } = data;
+  if (!data) {
+    return <div></div>; // Fallback UI if data is not available
+  }
+
+  const { heroComponent, installationPanel } = data;
 
   return (
     <div>
@@ -42,11 +38,11 @@ const OffshoreVideo = ({ data }) => {
       <InstallationPanel {...installationPanel} />
       <VideoHostingFeatureElement />
       <QlodHostServices
-        heading={featureHeading?.Heading}
-        content={featureHeading?.subHeading}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
         features={data.features}
       />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
       <ChatNow />
     </div>
   );

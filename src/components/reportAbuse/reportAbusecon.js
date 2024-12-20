@@ -1,25 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 
-const ReportAbusecon = () => {
-  const [data, setData] = useState(null); // State to store JSON data
+// Server-side data fetching using getServerSideProps
+// export const getServerSideProps = async () => {
+//   try {
+//     const response = await fetch("https://yourdomain.com/data/reportAbuse.json"); // Adjust URL as needed
+//     const data = await response.json();
+//     return { props: { data } };
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//     return { props: { data: null } };
+//   }
+// };
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/reportAbuse.json"); // Path to your JSON file in the public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const ReportAbusecon = ({ data }) => {
+  // Fallback if no data is provided
   if (!data) {
     return <div></div>;
   }

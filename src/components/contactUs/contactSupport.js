@@ -4,27 +4,9 @@ import { FaCheck } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import Image from "next/image";
 
-const ContactSupport = () => {
-  const [data, setData] = useState(null); // State to store JSON data
-
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/contactUs.json"); // Path to your JSON file in the public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const ContactSupport = ({data}) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   return (

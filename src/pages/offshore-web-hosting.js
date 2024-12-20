@@ -7,51 +7,42 @@ import OffShoreHostingPlan from "@/components/offShoreHosting/offShoreHostingPla
 import WebHostingGurantees from "@/components/offShoreHosting/webHostingGurantees";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "webHosting.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/webHosting.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const Offshorewebhosting = ({ data }) => {
-  // Show a loader or fallback UI until data is loaded
   if (!data) {
-    return <div>Loading...</div>; // Show loading state in case of an error
+    return <div></div>; // Better fallback UI
   }
 
-  const { heroComponent } = data;
+  const { heroComponent, featureHeading, features, faqsData } = data;
 
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <OffShoreHostingPlan />
-      <WebHostingGurantees
+      <OffShoreHostingPlan data={data}/>
+      <WebHostingGurantees 
         title="QloudHost Guarantees"
         subHeading="Allow our Best & Cheap Offshore hosting in Netherlands to exceed your expectations."
       />
       <TechnicalSpecification />
-      <OffshoreFeatureElement />
+      <OffshoreFeatureElement data={data}/>
       <QlodHostServices
-        heading={data.featureHeading.Heading}
-        content={data.featureHeading.subHeading}
-        features={data.features}
+        heading={featureHeading.Heading}
+        content={featureHeading.subHeading}
+        features={features}
       />
       <Testimonials />
-      <FAQsSection faqs={data.faqsData} />
+      <FAQsSection faqs={faqsData} />
       <ChatNow />
     </div>
   );

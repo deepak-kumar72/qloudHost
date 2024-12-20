@@ -1,29 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
-const AdultHostingFeatureElement = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
+  try {
+    const response = await fetch("https://qloudhost.com/data/adultHosting.json");
+    const data = await response.json();
+    return { props: { data } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
+  }
+};
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/adultHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const AdultHostingFeatureElement = ({ data }) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   return (
@@ -45,12 +39,6 @@ const AdultHostingFeatureElement = () => {
               {feature.description.map((text, i) => (
                 <p key={i}>{text}</p>
               ))}
-              {/* {feature.link && (
-                <p>
-                  At any scale, we deliver high performance with our Netherlands Adult VPS & Dedicated Servers. With a single click, you can 
-                  <Link href={feature.link} className='faq-link'> upgrade </Link> or downgrade your resources at any time.
-                </p>
-              )} */}
               <Link href="#explore" smooth={true} duration={200}>
                 <button className="btn start-now-btn mt-3">
                   Get Started Now <FaArrowRight className="ms-2" />

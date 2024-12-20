@@ -8,38 +8,30 @@ import DedicatedServerPlan from '@/components/dedicatedServer/dedicatedServerPla
 import DedicatedHostingSolution from '@/components/dmcaDedicatedServers/dedicatedHostingSolution';
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from '@/components/commonComponent/chatNow';
-import fs from 'fs';
-import path from 'path';
 
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder or project directory
-    const filePath = path.join(process.cwd(), 'public', 'data', 'dedicatedServer.json');
-    const jsonData = fs.readFileSync(filePath, 'utf-8');
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/dedicatedServer.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const Dedicated = ({ data }) => {
-  // Show fallback UI if data is missing
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
-  // Destructure data for cleaner usage
   const { heroComponent, installationPanel, enterPriseGrade, featureHeading, features, faqsData } = data;
 
   return (
     <div>
       <HeroComponent {...heroComponent} />
-      <DedicatedServerPlan />
+      <DedicatedServerPlan data={data}/>
       <EnterpriseGrade
         heading={enterPriseGrade.heading}
         subHeading={enterPriseGrade.subHeading}

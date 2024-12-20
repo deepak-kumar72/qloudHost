@@ -1,29 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import VpsPlan from "../commonComponent/vpsPlan";
-// import VpsPlan from "../../commonComponent/vpsPlan";
 
-const AdultHostingPlans = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+// Server-side data fetching using getServerSideProps
+// export const getServerSideProps = async () => {
+//   try {
+//     const response = await fetch("https://qloudhost.com/data/adultHosting.json");
+//     const data = await response.json();
+//     return { props: { data } };
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//     return { props: { data: null } };
+//   }
+// };
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/adultHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const AdultHostingPlans = ({ data }) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Fallback UI if data is not available
   }
 
   return (
@@ -46,23 +39,23 @@ const AdultHostingPlans = () => {
             return null;
           })}
         </p>
-          <VpsPlan/>
         
+        <VpsPlan />
+
         <div className="text-center mt-3">
           <span className="consult">
-          {data.vpsPlan.additionalText.map((part, idx) => {
-            if (part.type === "text") {
-              return <span key={idx}>{part.content}</span>;
-            } else if (part.type === "link") {
-              return (
-                <Link key={idx} href={part.url} className="faq-link">
-                  {part.content}
-                </Link>
-              );
-            }
-            return null;
-          })}
-            
+            {data.vpsPlan.additionalText.map((part, idx) => {
+              if (part.type === "text") {
+                return <span key={idx}>{part.content}</span>;
+              } else if (part.type === "link") {
+                return (
+                  <Link key={idx} href={part.url} className="faq-link">
+                    {part.content}
+                  </Link>
+                );
+              }
+              return null;
+            })}
           </span>
         </div>
       </div>

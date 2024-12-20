@@ -7,33 +7,25 @@ import ChooseQloudHost from "@/components/windowsRdp/chooseQloudHost";
 import RdpFeatureBanner from "@/components/windowsRdp/rdpfeaturebanner";
 import WindowsRdpPlan from "@/components/windowsRdp/windowsRdpPlan";
 import FAQsSection from "@/components/commonComponent/faqSection";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "windowrdp.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/windowrdp.json"); // Adjust the URL as necessary
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const WindowsVps = ({ data }) => {
-  // Destructure data for cleaner usage
-  const { heroComponent, featureHeading, faqsData } = data;
-
   if (!data) {
-    return <div>Loading...</div>; // Show a loading state in case data is unavailable
+    return <div></div>; // Fallback UI if data is not available
   }
+
+  const { heroComponent } = data;
 
   return (
     <div>
@@ -43,13 +35,13 @@ const WindowsVps = ({ data }) => {
       <TechnicalSpecification />
       <AvailableWos />
       <QlodHostServices
-        heading={featureHeading?.Heading}
-        content={featureHeading?.subHeading}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
         features={data.features}
       />
-      <RdpFeatureBanner />
+      <RdpFeatureBanner data={data}/>
       <Testimonials />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
     </div>
   );
 };

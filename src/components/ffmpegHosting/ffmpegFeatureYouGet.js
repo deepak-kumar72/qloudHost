@@ -3,23 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
-const FFmpegFeaturesYouGet = () => {
-  const [data, setData] = useState(); // State to store the JSON data
-
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/ffmpegHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+const FFmpegFeaturesYouGet = ({data}) => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {

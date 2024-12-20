@@ -9,29 +9,25 @@ import PopularStreamingUse from "@/components/streamingServer/popularStreamingUs
 import Guarantees from "@/components/streamingServer/qloudHostGurantees";
 import FAQsSection from "@/components/commonComponent/faqSection";
 import ChatNow from "@/components/commonComponent/chatNow";
-import fs from "fs";
-import path from "path";
 
-// Fetch data at build time using getStaticProps
-export async function getStaticProps() {
+// Server-side data fetching using getServerSideProps
+export const getServerSideProps = async () => {
   try {
-    // Fetch JSON data from the public folder
-    const filePath = path.join(process.cwd(), "public", "data", "netherlandStreaming.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-
-    return {
-      props: { data }, // Pass data as props
-    };
+    const response = await fetch("https://qloudhost.com/data/netherlandStreaming.json");
+    const data = await response.json();
+    return { props: { data } };
   } catch (error) {
-    console.error("Error reading JSON file:", error);
-    return { props: { data: null } }; // Handle errors gracefully
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
   }
-}
+};
 
 const NetherlandStreaming = ({ data }) => {
-  // Destructure data for cleaner usage
-  const { heroComponent, featureHeading, faqsData } = data;
+  if (!data) {
+    return <div></div>; // Fallback UI if data is not available
+  }
+
+  const { heroComponent } = data;
 
   return (
     <div>
@@ -39,7 +35,7 @@ const NetherlandStreaming = ({ data }) => {
       <NetherLandStreamingPlan />
       <OpenTicket />
       <Guarantees
-        subHeading="Boost your website performance with world-class Best & Cheap Netherlands streaming servers and guaranteed performance."
+        subHeading='Boost your website performance with world-class Best & Cheap Netherlands streaming servers and guaranteed performance.'
       />
       <TechnicalSpecification />
       <InstallationPanel
@@ -48,21 +44,21 @@ const NetherlandStreaming = ({ data }) => {
         buttonText="Get Started Now"
         url="#explore"
         panelOptions={[
-          { name: "cPanel", img: "/assets/icon/cPanel.png" },
-          { name: "CyberPanel", img: "/assets/icon/cyberPanel.png" },
-          { name: "Ubuntu", img: "/assets/icon/ubuntu.png" },
-          { name: "Windows", img: "/assets/icon/window-icon.png" },
-          { name: "Debian", img: "/assets/icon/debain.png" },
+          { name: 'cPanel', img: '/assets/icon/cPanel.png' },
+          { name: 'CyberPanel', img: '/assets/icon/cyberPanel.png' },
+          { name: 'Ubuntu', img: '/assets/icon/ubuntu.png' },
+          { name: 'Windows', img: '/assets/icon/window-icon.png' },
+          { name: 'Debian', img: '/assets/icon/debain.png' },
         ]}
       />
       <NetherLandStreamingFeature />
       <QlodHostServices
-        heading={featureHeading?.Heading}
-        content={featureHeading?.subHeading}
+        heading={data.featureHeading.Heading}
+        content={data.featureHeading.subHeading}
         features={data.features}
       />
       <PopularStreamingUse />
-      <FAQsSection faqs={faqsData} />
+      <FAQsSection faqs={data.faqsData} />
       <ChatNow />
     </div>
   );

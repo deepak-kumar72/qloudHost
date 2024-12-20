@@ -1,27 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-const QloudHostFeatures = () => {
-  const [features, setFeatures] = useState([]); // State to store features
-
-  // Fetch data dynamically
-  const getFeaturesData = async () => {
-    try {
-      const response = await fetch("/data/home.json"); // Fetch from public folder
-      const data = await response.json();
-      setFeatures(data.featureshome); // Set features from JSON data
-    } catch (error) {
-      console.error("Error fetching features:", error);
-    }
-  };
-
-  useEffect(() => {
-    getFeaturesData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
-  if (!features.length) {
-    return <div></div>;
+const QloudHostFeatures = ({data}) => {
+  if (!data) {
+    return <div></div>; // Fallback UI if data is not available
   }
 
   return (
@@ -32,7 +14,7 @@ const QloudHostFeatures = () => {
           Enjoy your privacy on the internet with our powerful features that let you host your website with impenetrable security.
         </p>
         <div className="row g-3 feature-row m-auto pb-5">
-          {features.map((feature) => (
+          {data.features.map((feature) => (
             <div key={feature.id} className="col-12 col-md-6 col-lg-4">
               <div className="feature-card">
                 <Image

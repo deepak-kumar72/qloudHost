@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from "react";
+
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 
-const WordpressFeatureElement = () => {
-  const [data, setData] = useState(null);
-
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/wordprssHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+const WordpressFeatureElement = ({data}) => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {

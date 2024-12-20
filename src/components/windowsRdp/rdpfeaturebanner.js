@@ -3,23 +3,8 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 
-const RdpFeatureBanner = () => {
-  const [data, setData] = useState(); // State to store the JSON data
-
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/windowrdp.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+const RdpFeatureBanner = ({data}) => {
+  
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {

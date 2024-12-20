@@ -1,35 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
-const OffshoreFeatureElement = () => {
-  const [data, setData] = useState(); // State to store the JSON data
+export const getServerSideProps = async () => {
+  try {
+    const response = await fetch("https://qloudhost.com/data/webHosting.json"); // Replace with your actual URL
+    const data = await response.json();
+    return { props: { data } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { data: null } };
+  }
+};
 
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/webHosting.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  // Show a loader or fallback UI until data is loaded
+const OffshoreFeatureElement = ({ data }) => {
   if (!data) {
-    return <div></div>;
+    return <div></div>; // Better fallback UI
   }
 
-  return (
+  const FeatureSection = ({ features }) => (
     <div className="privacy-hardware-container mt-5">
       <div className="container">
-        {data.webHostingfeatures.map((feature, index) => (
+        {features.map((feature, index) => (
           <div
             key={index}
             className={`row align-items-center mb-2 ${
@@ -61,6 +54,8 @@ const OffshoreFeatureElement = () => {
       </div>
     </div>
   );
+
+  return <FeatureSection features={data.webHostingfeatures} />;
 };
 
 export default OffshoreFeatureElement;

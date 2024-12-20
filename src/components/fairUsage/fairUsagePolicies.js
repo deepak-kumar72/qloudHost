@@ -1,23 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 
-const FairUsagePolicies = () => {
-  const [data, setData] = useState(null); // State to store the JSON data
-
-  // Fetch data dynamically
-  const getData = async () => {
-    try {
-      const response = await fetch("/data/fairUsage.json"); // Fetch from public folder
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+const FairUsagePolicies = ({data}) => {
 
   // Show a loader or fallback UI until data is loaded
   if (!data) {
