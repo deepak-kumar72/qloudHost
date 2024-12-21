@@ -127,7 +127,7 @@ const MetaTags = () => {
      },
  
     "/offshore-dedicated-servers": {
-      title: "Buy Cheap Offshore Dedicated Servers✰Free setup,Unmetered",
+      title: "Offshore Dedicated Servers✰Best Cheap & Free setup,Unmetered",
       description:
         "Maximize your website’s speed and security with our best & Cheap offshore dedicated servers dmca ignored. Get power & reliability with your business needs to succeed.",
       keyword: "",
@@ -344,7 +344,7 @@ const MetaTags = () => {
 
 
     "/adult-hosting": {
-      title: "Cheap Adult Web Hosting✰Buy Adult VPS,Dedicated server",
+      title: "Adult Web Hosting✰Buy Cheap Adult VPS,Dedicated server",
       description: "Buy Powerful Adult Web Hosting Plans with QloudHost. Friendly control Panel, dedicated resources, unlimited bandwidth & Expert support for your Adult Website.",
       keyword: "",
       schema:{
