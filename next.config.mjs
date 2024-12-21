@@ -6,10 +6,18 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/blog/:path*',
-        destination: 'https://blog.qloudhost.com/:path*', // Redirect to WordPress blog with path forwarding
-        permanent: true, // Set to true for a 301 redirect
+        source: '/', // Match root of the blog.qloudhost.com domain
+        has: [
+          {
+            type: 'host',
+            value: 'blog.qloudhost.com', // Check if host matches blog.qloudhost.com
+          },
+        ],
+        destination: 'https://qloudhost.com/blog/', // Redirect here
+        permanent: true, // Indicates a 301 permanent redirect
       },
     ];
   },
 };
+
+export default nextConfig;
