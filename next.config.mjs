@@ -13,7 +13,7 @@ const nextConfig = {
             value: 'blog.qloudhost.com', // Check if host matches blog.qloudhost.com
           },
         ],
-        destination: 'https://qloudhost.com/blog/', // Redirect here
+        destination: 'http://test.qloudhost.com/blog/', // Redirect here
         permanent: true, // Indicates a 301 permanent redirect
       },
     ];
